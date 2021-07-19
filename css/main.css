@@ -2063,10 +2063,14 @@ button {
     display: flex;
     column-gap: 20px;
   }
-  .header-contacts li {
+  .header-contacts__flex {
     display: flex;
     align-items: center;
     column-gap: 10px;
+  }
+  .header-contacts a {
+    text-decoration: none;
+    color: inherit;
   }
   .header-contacts__text {
     font-size: 12px;

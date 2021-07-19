@@ -2301,10 +2301,15 @@ button {
             display: flex;
             column-gap: 20px;
 
-            li {
+            &__flex {
                 display: flex;
                 align-items: center;
                 column-gap: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
             }
 
             &__text {
