@@ -1220,6 +1220,86 @@ button {
 }
 /* end -------------------------------------------- director section ---------------------------------------------------- */
 
+/* start ------------------------------------------ categories section -------------------------------------------------- */
+.categories {
+    &-section {
+        margin-bottom: 55px;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 41px;
+
+    li {
+        margin-bottom: 35px;
+        text-align: center;
+        width: 44%;
+
+        &:hover {
+            .categories {
+                &__img {
+                    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: inherit;   
+    }
+
+    &__img {
+        margin-bottom: 18px;
+        width: 150px;
+        transition: filter 0.3s ease;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-size: 19px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    &__price {
+        margin-bottom: 18px;
+
+        &-text {
+            font-size: 18px;
+
+            .orange {
+                font-weight: 500;
+            }
+        }
+
+        &-small {
+            font-size: 13px;
+            color: #ABABAB;
+        }
+    }
+
+    &__number {
+        font-size: 28px;
+    }
+
+    &__offer {
+        padding: 7px 17px;
+        background-color: #F9F9F9;
+        border-radius: 3px;
+
+        &-small {
+            margin-bottom: 4px;
+        }
+
+        &-big {
+            font-weight: 500;
+        }
+    }
+}
+/* end -------------------------------------------- categories section -------------------------------------------------- */
+
 @media (min-width: 768px) {
     /* start -------------------------------------------- basic --------------------------------------------------------- */
     .container {

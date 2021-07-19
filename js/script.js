@@ -34,14 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     tab.classList.remove('active');
                 });
                 this.classList.add('active');
-                const tabName = this.dataset.tab;
-                if (tabName === 'tab-2') {
-                    scheduleMap.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A3ad4a51068ad1ee5ce25ede9c6549d2e7fb173a35e1eb54dfa3567bc46f1afaf&amp;source=constructor';
-                    scheduleContacts.textContent = 'г. Тольятти, ул Горького 92, 3 этаж, офис 204';      
-                } else {
-                    scheduleMap.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ae84eb459019bbc70962b3d3e47a966dfe5256a511fd5f2efa6fe33f3d3753080&amp;source=constructor';
-                    scheduleContacts.textContent = 'г. Тольятти, ул Заставная 54, 2 этаж, офис 207';      
-                }
+                const dataAddr = this.dataset.addr;
+                const dataMap = this.dataset.map;
+
+                scheduleContacts.textContent = dataAddr;
+                scheduleMap.src = dataMap;
+
+                // const tabName = this.dataset.tab;
+                // if (tabName === 'tab-2') {
+                //     scheduleMap.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A3ad4a51068ad1ee5ce25ede9c6549d2e7fb173a35e1eb54dfa3567bc46f1afaf&amp;source=constructor';
+                //     scheduleContacts.textContent = 'г. Тольятти, ул Горького 92, 3 этаж, офис 204';      
+                // } else {
+                //     scheduleMap.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ae84eb459019bbc70962b3d3e47a966dfe5256a511fd5f2efa6fe33f3d3753080&amp;source=constructor';
+                //     scheduleContacts.textContent = 'г. Тольятти, ул Заставная 54, 2 этаж, офис 207';      
+                // }
             });
         });
     }

@@ -1188,6 +1188,82 @@ button {
 }
 
 /* end -------------------------------------------- director section ---------------------------------------------------- */
+/* start ------------------------------------------ categories section -------------------------------------------------- */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 41px;
+}
+
+.categories-section {
+  margin-bottom: 55px;
+}
+
+.categories li {
+  margin-bottom: 35px;
+  text-align: center;
+  width: 44%;
+}
+
+.categories li:hover .categories__img {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.categories__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.categories__img {
+  margin-bottom: 18px;
+  width: 150px;
+  transition: filter 0.3s ease;
+}
+
+.categories__title {
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.categories__price {
+  margin-bottom: 18px;
+}
+
+.categories__price-text {
+  font-size: 18px;
+}
+
+.categories__price-text .orange {
+  font-weight: 500;
+}
+
+.categories__price-small {
+  font-size: 13px;
+  color: #ABABAB;
+}
+
+.categories__number {
+  font-size: 28px;
+}
+
+.categories__offer {
+  padding: 7px 17px;
+  background-color: #F9F9F9;
+  border-radius: 3px;
+}
+
+.categories__offer-small {
+  margin-bottom: 4px;
+}
+
+.categories__offer-big {
+  font-weight: 500;
+}
+
+/* end -------------------------------------------- categories section -------------------------------------------------- */
 @media (min-width: 768px) {
   /* start -------------------------------------------- basic --------------------------------------------------------- */
   .container {
@@ -2051,4 +2127,4 @@ button {
   }
   /* end -------------------------------------------- director section----------------------------------------------- */
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
