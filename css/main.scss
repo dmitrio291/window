@@ -152,6 +152,18 @@ button {
         text-align: center;
         border-bottom: 2px solid #ABABAB;
         color: #CDCDCD;
+
+        &--transparent {
+            background-color: transparent;
+        }
+    }
+
+    &__btn {
+        &--orange {
+            background-color: #F5F5F5;
+            border: 2px solid #F26422;
+            color: #F26422;
+        }
     }
 }
 
@@ -1158,6 +1170,10 @@ button {
         margin-bottom: 55px;
     }
 
+    &-box {
+        background-color: #F5F5F5;
+    }
+
     &__text {
         margin-bottom: 20px;
         position: relative;
@@ -1216,6 +1232,23 @@ button {
         width: 81px;
         height: 81px;
         border-radius: 50%;
+    }
+}
+
+.director-form {
+    padding: 75px 35px 0 30px;
+
+    &__title {
+        margin-bottom: 28px;
+        text-align: left;
+    }
+
+    &__info {
+        line-height: 21px;
+
+        span {
+            font-weight: 500;
+        }
     }
 }
 /* end -------------------------------------------- director section ---------------------------------------------------- */
@@ -1306,14 +1339,14 @@ button {
 /* end -------------------------------------------- categories section -------------------------------------------------- */
 
 @media (min-width: 768px) {
-    /* start -------------------------------------------- basic --------------------------------------------------------- */
+    /* start -------------------------------------------- basic -------------------------------------------------------*/
     .container {
         margin-left: 30px;
         margin-right: 30px;
     }
-    /* end -------------------------------------------- basic ----------------------------------------------------------- */
+    /* end -------------------------------------------- basic -------------------------------------------------------- */
 
-    /* start -------------------------------------------- basic --------------------------------------------------------- */
+    /* start -------------------------------------------- basic ------------------------------------------------------ */
     .title {
         margin-bottom: 50px;
         font-size: 32px;
@@ -1936,6 +1969,32 @@ button {
             order: -1;
         }
     }
+
+    .director-form {
+        &__title {
+            margin-bottom: 56px;
+        }
+
+        &__info {
+            margin-bottom: 44px;
+            font-size: 18px;
+        }
+
+        .form {
+            margin-bottom: 0;
+            display: flex;
+            column-gap: 20px;
+
+            &__phone {
+                min-width: 238px;
+                margin-bottom: 0;
+            }
+
+            &__btn {
+                min-width: 238px;
+            }
+        }
+    }
     /* end -------------------------------------------- director section----------------------------------------------- */
 
     /* end -------------------------------------------- categories section -------------------------------------------- */
@@ -2423,6 +2482,28 @@ button {
         padding: 50px 69px 40px 40px;
         column-gap: 55px;
 
+        &-box {
+            .director {
+                padding-top: 37px;
+                padding-right: 50px;
+                column-gap: 67px;
+
+                &__text {
+                    padding: 42px;
+                }
+
+                &__img {
+                    margin-bottom: 15px;
+                    width: 168px;
+                    height: 168px;
+                }
+
+                &__right {
+                    margin-top: -29px;
+                }
+            }
+        }
+
         &__left {
             width: 77.1%;
         }
@@ -2439,6 +2520,10 @@ button {
 
         &__right {
             width: 16.5%;
+        }
+
+        &__content { 
+            transform: translateX(-15px);
         }
 
         &__img {
@@ -2464,6 +2549,17 @@ button {
         .director {
             &__right {
                 width: 20.6%;
+            }
+        }
+    }
+
+    .director-form {
+        padding-left: 42px;
+
+        .form {
+            &__phone,
+            &__btn {
+                min-width: 250px;
             }
         }
     }

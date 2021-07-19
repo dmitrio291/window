@@ -139,6 +139,16 @@ button {
   color: #CDCDCD;
 }
 
+.form__phone--transparent {
+  background-color: transparent;
+}
+
+.form__btn--orange {
+  background-color: #F5F5F5;
+  border: 2px solid #F26422;
+  color: #F26422;
+}
+
 .form__phone::-webkit-input-placeholder {
   color: #CDCDCD;
 }
@@ -1127,6 +1137,10 @@ button {
   margin-bottom: 55px;
 }
 
+.director-box {
+  background-color: #F5F5F5;
+}
+
 .director__text {
   margin-bottom: 20px;
   position: relative;
@@ -1185,6 +1199,23 @@ button {
   width: 81px;
   height: 81px;
   border-radius: 50%;
+}
+
+.director-form {
+  padding: 75px 35px 0 30px;
+}
+
+.director-form__title {
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.director-form__info {
+  line-height: 21px;
+}
+
+.director-form__info span {
+  font-weight: 500;
 }
 
 /* end -------------------------------------------- director section ---------------------------------------------------- */
@@ -1269,13 +1300,13 @@ button {
 
 /* end -------------------------------------------- categories section -------------------------------------------------- */
 @media (min-width: 768px) {
-  /* start -------------------------------------------- basic --------------------------------------------------------- */
+  /* start -------------------------------------------- basic -------------------------------------------------------*/
   .container {
     margin-left: 30px;
     margin-right: 30px;
   }
-  /* end -------------------------------------------- basic ----------------------------------------------------------- */
-  /* start -------------------------------------------- basic --------------------------------------------------------- */
+  /* end -------------------------------------------- basic -------------------------------------------------------- */
+  /* start -------------------------------------------- basic ------------------------------------------------------ */
   .title {
     margin-bottom: 50px;
     font-size: 32px;
@@ -1756,6 +1787,25 @@ button {
     height: 100px;
     order: -1;
   }
+  .director-form__title {
+    margin-bottom: 56px;
+  }
+  .director-form__info {
+    margin-bottom: 44px;
+    font-size: 18px;
+  }
+  .director-form .form {
+    margin-bottom: 0;
+    display: flex;
+    column-gap: 20px;
+  }
+  .director-form .form__phone {
+    min-width: 238px;
+    margin-bottom: 0;
+  }
+  .director-form .form__btn {
+    min-width: 238px;
+  }
   /* end -------------------------------------------- director section----------------------------------------------- */
   /* end -------------------------------------------- categories section -------------------------------------------- */
   .categories {
@@ -2108,6 +2158,22 @@ button {
     padding: 50px 69px 40px 40px;
     column-gap: 55px;
   }
+  .director-box .director {
+    padding-top: 37px;
+    padding-right: 50px;
+    column-gap: 67px;
+  }
+  .director-box .director__text {
+    padding: 42px;
+  }
+  .director-box .director__img {
+    margin-bottom: 15px;
+    width: 168px;
+    height: 168px;
+  }
+  .director-box .director__right {
+    margin-top: -29px;
+  }
   .director__left {
     width: 77.1%;
   }
@@ -2121,6 +2187,9 @@ button {
   }
   .director__right {
     width: 16.5%;
+  }
+  .director__content {
+    transform: translateX(-15px);
   }
   .director__img {
     width: 137px;
@@ -2137,6 +2206,12 @@ button {
   }
   .director--dmitriev .director__right {
     width: 20.6%;
+  }
+  .director-form {
+    padding-left: 42px;
+  }
+  .director-form .form__phone, .director-form .form__btn {
+    min-width: 250px;
   }
   /* end -------------------------------------------- director section----------------------------------------------- */
   /* start------------------------------------------ categories section ---------------------------------------------- */
