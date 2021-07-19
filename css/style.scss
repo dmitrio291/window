@@ -1,0 +1,2376 @@
+@font-face {
+    font-display: swap;
+	font-family: "Core Sans N";
+	src: url("../fonts/CoreSansN/CoreSansN-35Light.eot");
+	src: url("../fonts/CoreSansN/CoreSansN-35Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoreSansN/CoreSansN-35Light.woff") format("woff"),
+        url("../fonts/CoreSansN/CoreSansN-35Light.woff2") format("woff2"),
+		url("../fonts/CoreSansN/CoreSansN-35Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+    font-display: swap;
+	font-family: "Core Sans N";
+	src: url("../fonts/CoreSansN/CoreSansN-45Regular.eot");
+	src: url("../fonts/CoreSansN/CoreSansN-45Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoreSansN/CoreSansN-45Regular.woff") format("woff"),
+        url("../fonts/CoreSansN/CoreSansN-45Regular.woff2") format("woff2"),
+		url("../fonts/CoreSansN/CoreSansN-45Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+    font-display: swap;
+	font-family: "Core Sans N";
+	src: url("../fonts/CoreSansN/CoreSansN-55Medium.eot");
+	src: url("../fonts/CoreSansN/CoreSansN-55Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoreSansN/CoreSansN-55Medium.woff") format("woff"),
+        url("../fonts/CoreSansN/CoreSansN-55Medium.woff2") format("woff2"),
+		url("../fonts/CoreSansN/CoreSansN-55Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+    font-display: swap;
+	font-family: "Core Sans N";
+	src: url("../fonts/CoreSansN/CoreSansN-65Bold.eot");
+	src: url("../fonts/CoreSansN/CoreSansN-65Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoreSansN/CoreSansN-65Bold.woff") format("woff"),
+        url("../fonts/CoreSansN/CoreSansN-65Bold.woff2") format("woff2"),
+		url("../fonts/CoreSansN/CoreSansN-65Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+    font-display: swap;
+	font-family: "Core Sans N";
+	src: url("../fonts/CoreSansN/CoreSansN-75ExtraBold.eot");
+	src: url("../fonts/CoreSansN/CoreSansN-75ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/CoreSansN/CoreSansN-75ExtraBold.woff") format("woff"),
+        url("../fonts/CoreSansN/CoreSansN-75ExtraBold.woff2") format("woff2"),
+		url("../fonts/CoreSansN/CoreSansN-75ExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 800;
+}
+
+/* start -------------------------------------------- basic --------------------------------------------- */
+body {
+    font-family: "Core Sans N", sans-serif;
+    font-weight: 400;
+    color: #48494B;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+button,
+input {
+    border: none;
+}
+
+button {
+    background-color: transparent;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+
+.btn {
+    min-height: 40px;
+    background-color: #F26422;
+    color: #FFFFFF;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn--white {
+    background-color: #fff;
+    color: #F26422;
+}
+
+.orange {
+    color: #F26422;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    max-width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    &__phone,
+    &__btn {
+        display: block;
+        width: 100%;
+    }
+
+    &__phone {
+        margin-bottom: 14px;
+        min-height: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #ffffff;
+        text-align: center;
+        border-bottom: 2px solid #ABABAB;
+        color: #CDCDCD;
+    }
+}
+
+.form__phone::-webkit-input-placeholder { color: #CDCDCD; }
+.form__phone:-moz-placeholder { color: #CDCDCD; } /* FF 4-18 */
+.form__phone::-moz-placeholder { color: #CDCDCD; } /* FF 19+ */
+.form__phone:-ms-input-placeholder { color: #CDCDCD; } /* IE 10+ */
+
+.form__phone:focus::-webkit-input-placeholder { color: transparent; }
+.form__phone:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+.form__phone:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+.form__phone:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+/* start -------------------------------------------- basic ------------------------------------------------------------ */
+
+/* start -------------------------------------------- measuring section ------------------------------------------------ */
+.measuring {
+    position: relative;
+    background-image: url('../img/measuring-bg-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(240, 250, 255, 0.75);
+    }
+
+    &__content {
+        padding: 55px 15px;
+        position: relative;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        padding-right: 13px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    &__title {
+        margin-bottom: 27px;
+        line-height: 28px;
+    }
+
+    &__warning {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    &--contacts {
+        .measuring {
+            &__title {
+                margin-bottom: 17px;   
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 27px;
+        font-size: 18.4px;
+    }
+
+    &__info {
+        margin-bottom: 24px;
+        line-height: 23px;
+
+        span {
+            display: block;
+        }
+    }
+}
+/* end -------------------------------------------- measuring section -------------------------------------------------- */
+
+/* start -------------------------------------------- schedule section ------------------------------------------------- */
+.schedule {
+    &-section {
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+
+    &__tabs {
+        margin-bottom: 35px;
+    }
+
+    &__tab {
+        &.active {
+            span {
+                color: #F26422;
+                border-bottom: 1px solid #F26422;
+            }
+        }
+
+        span {
+            color: #CDCDCD;
+            font-size: 18px;
+            border-bottom: 1px solid #CDCDCD;
+            cursor: pointer;
+        }
+
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content {
+        margin-bottom: 30px;
+    }
+
+    &__small {
+        margin-bottom: 10px;
+        color: #CDCDCD;
+    }
+
+    &__big {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    &__map {
+        margin-bottom: 45px;
+
+        iframe {
+            width: 100%;
+            min-height: 177px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+        font-size: 19px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+
+    &__text {
+        line-height: 21px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.work-schedule {
+    margin-bottom: 35px;
+
+    li {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 23px;
+            height: 23px;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 1px solid #ABABAB;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__time-icon::before {
+        background-image: url('../img/schedule-time-icon.svg');
+    }
+
+    &__phone-icon::before {
+        background-image: url('../img/schedule-phone-icon.svg');
+    }
+
+    &__email-icon::before {
+        background-image: url('../img/schedule-email-icon.svg');
+    }
+
+    &__contacts-icon::before {
+        background-image: url('../img/schedule-contacts-icon.svg');
+    }
+
+    &__schedule {
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__phone,
+    &__email {
+        text-decoration: none;
+    }
+
+    &__phone {
+        font-size: 25px;
+    }
+
+    &__email {
+        border-bottom: 1px solid #F26422;
+    }
+
+    &__contacts {
+        max-width: 230px;
+        line-height: 21px;
+    }
+}
+/* end -------------------------------------------- schedule section ---------------------------------------------------- */
+
+/* start -------------------------------------------- free consultation section ----------------------------------------- */
+.free-consultation {
+    padding: 30px 15px;
+    background-color: #F26422;
+    border-radius: 3px;
+
+    &-section {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    &__title {
+        margin-bottom: 18px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__title,
+    &__text {
+        color:#ffffff;
+    }
+
+    &__text {
+        margin-bottom: 27px;
+    }
+
+    &__phone {
+        margin-bottom: 11px;
+
+        &-link {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+
+    &__whatsapp-link {
+        display: block;
+        position: relative;
+        margin-left: 5px;
+        padding: 4px 10px 4px 33px;
+        max-width: 200px;
+        font-size: 12px;
+        margin-bottom: 35px;
+        text-decoration: none;
+        background-color: #E1EFD0;
+        color: #243542;
+        border-radius: 5px;
+        letter-spacing: -0.1px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -7px;
+            width: 30px;
+            height: 30px;
+            background: url("../img/consultation-phone-icon.png");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__work-schedule {
+        color:#ffffff;
+        margin-bottom: 32px;
+    }
+
+    &__about {
+        margin-bottom: 34px;
+
+        &-text {
+            position: relative;
+            padding: 15px 33px;
+            max-width: 313px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            line-height: 19px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                right: 73px;
+                border-style: solid;
+                border-width: 0 23px 23px 0;
+                border-color: transparent  #fff transparent transparent;
+            }
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 261px;
+            margin-left: auto;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        &-content {
+            text-align: right;
+        }
+
+        &-name,
+        &-position {
+            color: #ffffff;
+        }
+
+        &-name {
+            margin-bottom: 4px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        &-position {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        max-width: 315px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+    }
+}
+/* end -------------------------------------------- free consultation section ------------------------------------------- */
+
+/* start -------------------------------------------- accordion section ------------------------------------------------- */
+.accordion {
+    &-section {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        background-color: #F9F9F9;
+    }
+
+    &-box {
+        &__title {
+            margin-bottom: 39px;
+        }
+
+        &__info {
+            margin-bottom: 26px;
+            line-height: 21px;
+        }
+    }
+
+    &__item {
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        background-color: #ffffff;
+
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+    }
+
+    &__toggle {
+        width: 100%;
+        padding: 19px 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 500;
+        color: #48494B;
+        cursor: pointer;
+        outline: none;
+        line-height: 21px;
+
+        &.active {
+            .accordion__plus {
+                width: 25px;
+                height: 25px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &__plus {
+        display: inline-block;
+        position: relative;
+        width: 24px;
+        height: 24px;;
+        flex-shrink: 0;
+        pointer-events: none;
+
+        &::before,
+        &::after {
+            content: "";
+            position:absolute;
+            background:#F26422;
+        }
+
+        &::before {
+            left: 50%;
+            top: 5px;
+            bottom: 5px;
+            width: 3px;
+            transform:translateX(-50%);
+        }
+
+        &::after {
+            top: 50%;
+            left: 5px;
+            right: 5px;
+            height: 3px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__content {
+        padding-left: 15px;
+        padding-right: 32px;
+        padding-bottom: 20px;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__list {
+        &.mb {
+            margin-bottom: 20px;
+        }
+
+        li {
+            display: flex;
+            padding-left: 10px;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 11px;
+            width: 5px;
+            height: 5px;
+            background-color: #48494B;
+            border-radius: 50%;
+            flex-shrink: 0;
+            transform: translateY(7px);
+          }  
+        }
+    }
+
+    &__text {
+        line-height: 21px;
+
+        &.bold {
+            font-weight: 500;
+        }
+    }
+
+    &__description {
+        margin-bottom: 17px;
+        line-height: 19px;
+    }
+}
+/* end -------------------------------------------- accordion section --------------------------------------------------- */
+
+/* start -------------------------------------------- customers section ------------------------------------------------- */
+.customers {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/customers-bg-small.jpg');
+    border-radius: 3px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(249, 249, 249, 0.85);
+    }
+
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__content {
+        position: relative;
+        padding: 56px 15px;
+    }
+
+    &__title {
+        margin-bottom: 27px;
+        font-size: 24px;
+
+        .orange {
+            margin-right: 8px;
+            font-size: 35px;
+        }
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        line-height: 21px;
+    }
+
+    &__icon {
+        width: 47px;
+        height: 47px;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    &__left {
+        margin-bottom: 20px;
+
+        .customers {
+            &__number {
+                color: #7ACD56;
+            }
+        }
+    }
+
+    &__right {
+        .customers {
+            &__number {
+                color: #F7C858;
+            }
+        }
+    }
+
+    &__number {
+        display: block;
+        margin-bottom: 3px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+/* end -------------------------------------------- customers section --------------------------------------------------- */
+
+/* start ------------------------------------------ benefit section ----------------------------------------------------- */
+.benefit {
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__img {
+        position: relative;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 35px;
+        margin-bottom: 10px;
+        background-color: #F0FAFF;
+        border-radius: 3px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            width: 80px;
+            height: 100%;
+            background: linear-gradient(270deg, #F0FAFF 40%, rgba(240, 250, 255, 0) 100%);
+        }
+    }
+
+    &__title {
+        max-width: 250px;
+        margin-left: 15px;
+        margin-bottom: 26px;
+        font-size: 25px;
+    }
+
+    &__img-box {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 160px;
+            background: linear-gradient(180deg, #F1FBFE 0%, rgba(241, 251, 255, 0) 100%);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        li {
+            padding: 10px;
+            width: 47.8%;
+            background-color: #F0FAFF;
+            border-radius: 3px;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 57px;
+        height: 57px;
+        border: 2px solid #F26422;
+        border-radius: 50%; 
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        margin-bottom: 17px;
+        font-size: 14px;
+        font-weight: 500;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #F26422;
+        }
+    }
+
+    &__saving,
+    &__price {
+        display: block;
+    }
+
+    &__saving {
+        margin-bottom: 7px;
+        font-size: 12px;
+        color: #ABABAB;
+    }
+
+    &__price {
+        font-size: 22px;
+    }
+
+    &__ruble {
+        margin-left: 2px;
+        font-size: 16px;
+    }
+}
+/* end -------------------------------------------- benefit section ----------------------------------------------------- */
+
+/* start------------------------------------------ delivery section ----------------------------------------------------- */
+.delivery {
+    background-color: #F9F9F9;
+    border-radius: 3px;
+
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__content {
+        padding: 55px 15px 15px;
+    }   
+
+    &__title {
+        margin-bottom: 25px;
+        text-align: left;
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__text {
+        margin-bottom: 65px;
+        line-height: 25px;
+
+        .orange {
+            font-weight: 500;
+        }
+    }
+
+    &__img {
+        background-image: url('../img/delivery-bg-small.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+
+        position: relative;
+        min-height: 197px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(180deg, #F9F9F9 21%, rgba(249, 249, 249, 0) 100%);
+        }
+
+        img {
+            margin-top: 27px;
+            width: 100%;
+        }
+    }
+
+    &__hint {
+        position: absolute;
+        top: -45px;
+        right: 5%;
+        z-index: 1;
+        width: 173px;
+        padding: 5px;
+        font-weight: 500;
+        background-color: #ffffff;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 3px;
+        text-align: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 43%;
+            width: 0;
+            height: 0;
+            border-width: 14px 5px 0 9px;
+            border-color: #FFFFFFFF transparent transparent transparent;
+            border-style: solid;
+            transform: rotate(26deg)
+        }
+    }
+}
+/* end -------------------------------------------- delivery section ---------------------------------------------------- */
+
+/* start -------------------------------------------- payment section --------------------------------------------------- */
+.payment {
+    border-radius: 3px;
+    background-color: #F3FCFE;
+    background-repeat: no-repeat;
+    background-image: url('../img/payment-gradient-small.svg');
+    background-position: right bottom;
+
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__content {
+        padding: 55px 15px 75px;
+    }
+
+    &__title {
+        text-align: left;
+    }
+
+    &__description {
+        margin-bottom: 28px;
+        line-height: 21px;
+    }
+
+    &__list {
+        margin-bottom: 27px;
+
+        li {
+            display: flex;
+            align-items: center;
+            column-gap: 25px;
+
+            &:not(:last-child) {
+                padding-bottom: 19px;
+                margin-bottom: 22px;
+                border-bottom: 1px solid #ABABAB;
+            }
+
+            &:first-child,
+            &:last-child {
+                .payment {
+                    &__text {
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    &__text {
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    &__small {
+        font-size: 16px;
+        font-weight: 400;
+
+        .orange {
+            font-weight: 500;
+        }
+
+        &.block {
+            display: block;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        max-width: 315px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* end -------------------------------------------- payment section ---------------------------------------------------- */
+
+/* start------------------------------------------- advantages section ------------------------------------------------- */
+.advantages {
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__content {
+        position: relative;
+        padding: 25px 15px;
+        margin-bottom: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../img/advantages-small-1.jpg');
+        border-radius: 3px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+        }        
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 19px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 17px;
+
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        li {
+            position: relative;
+            padding: 15px 10px 17px 15px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 47.83%;
+            min-height: 165px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.85);
+            } 
+            
+            &:first-child {
+                background-image: url('../img/advantages-small-2.jpg');
+
+                .advantages {
+                    &__icon {
+                        width: 33px;
+                        height: 33px;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                background-image: url('../img/advantages-small-3.jpg');
+
+                .advantages {
+                    &__icon {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                background-image: url('../img/advantages-small-4.jpg');
+            }
+
+            &:last-child {
+                background-image: url('../img/advantages-small-5.jpg');
+            }
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 18px;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        border: 2px solid #F26422;
+    }
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    &__text {
+        font-weight: 500;
+        line-height: 19px;
+    }
+}
+/* end -------------------------------------------- advantages section -------------------------------------------------- */
+
+/* start------------------------------------------- director section ---------------------------------------------------- */
+.director {
+    padding: 30px 15px;
+    background-color: #F5F5F5;
+    border-radius: 3px;
+
+    &-section {
+        margin-bottom: 55px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        position: relative;
+        padding: 20px;
+        line-height: 21px;
+        border-radius: 6px;
+        background-color: #ffffff;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            right: 26%;
+            width: 0;
+            height: 0;
+            border-width: 24px 11px 0 12px;
+            border-color: #FFFFFFFF transparent transparent transparent;
+            border-style: solid;
+            transform: rotate(-20deg);
+        }
+
+        .orange {
+            border-bottom: 1px solid #F26422;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 21px;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &__position {
+        font-size: 12px;
+        text-align: right;
+        line-height: 15px;
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__img {
+        width: 81px;
+        height: 81px;
+        border-radius: 50%;
+    }
+}
+/* end -------------------------------------------- director section ---------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* start -------------------------------------------- basic --------------------------------------------------------- */
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    /* end -------------------------------------------- basic ----------------------------------------------------------- */
+
+    /* start -------------------------------------------- basic --------------------------------------------------------- */
+    .title {
+        margin-bottom: 50px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .form {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    /* end -------------------------------------------- basic ---------------------------------------------------------- */
+
+    /* start -------------------------------------------- measuring section -------------------------------------------- */
+    .measuring {
+        display: flex;
+        background-image: none;
+
+        &::before {
+            display: none;
+        }
+
+        &__content {
+            width: 47%;
+            padding: 76px 0 76px 30px;
+            background-color: #F0FAFF;           
+        }
+
+        &__text,
+        &__title,
+        .form,
+        &__warning {
+            position: relative;
+        }
+
+        &__text {
+            margin-bottom: 29px;
+            padding-right: 10px;
+        }
+
+        &__title {
+            margin-bottom: 33px;
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        &__word {
+            display: block;
+        }
+
+        &__img {
+            position: relative;
+            width: 53%;
+            background-image: url('../img/measuring-bg-middle.jpg');
+            background-size: cover;
+            background-position-x: 90%;
+            background-repeat: no-repeat;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80px;
+                height: 100%;
+                background: linear-gradient(90deg, #F0FAFF 0%, rgba(240, 250, 255, 0) 100%);
+            } 
+        }
+
+        &--contacts {
+            .measuring {
+                &__content {
+                    width: 62%;
+                }
+
+                &__title {
+                    margin-bottom: 21px;
+                }
+
+                &__img {
+                    background-position-x: 30%;
+
+                    &::before {
+                        width: 51px;
+                    }
+                }                
+            }
+
+            .form {
+                max-width: 362px;
+            }
+        }
+
+        &__subtitle {
+            margin-bottom: 31px;
+            font-size: 20.4px;
+        }
+
+        &__info {
+            margin-bottom: 32px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    /* end -------------------------------------------- measuring section ------------------------------------------- */
+
+    /* start -------------------------------------------- schedule section ------------------------------------------ */
+    .schedule {
+        &__tabs {
+            display: flex;
+        }
+
+        &__tab {
+            &:first-child {
+                margin-right: 57px;
+            }
+        }
+
+        &__map {
+            margin-bottom: 60px;
+
+            iframe {
+                min-height: 363px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 21px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    .work-schedule {
+        margin-bottom: 50px;
+    }
+    /* end -------------------------------------------- schedule section -------------------------------------------- */
+
+    /* start -------------------------------------------- free consultation section --------------------------------- */
+    .free-consultation {
+        display: grid;
+        grid-template-areas: 
+            'free-consultation__title free-consultation__title'
+            'free-consultation__text free-consultation__text'
+            'free-consultation__phone free-consultation__about'
+            'free-consultation__whatsapp-link free-consultation__about'
+            'free-consultation__work-schedule free-consultation__about'
+            'free-consultation__button free-consultation__about';
+        grid-template-rows: 53px 46px 46px 40px 47px 40px;
+        padding: 37px 31px;
+
+        &__title {
+            font-size: 32px;
+            grid-area: free-consultation__title;
+        }
+
+        &__text {
+            grid-area: free-consultation__text;
+            font-size: 18px;
+
+            .free-consultation {
+                &__work-schedule {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__work-schedule {
+            grid-area: free-consultation__work-schedule;
+            font-size: 18px;
+        }
+
+        &__phone {
+            grid-area: free-consultation__phone;
+
+            &-link {
+                font-size: 32px;
+            }
+        }
+        
+        &__whatsapp-link {
+            grid-area: free-consultation__whatsapp-link;
+            min-height: 21px;
+        }
+
+        &__about {
+            grid-area: free-consultation__about;
+            margin-top: -17px;
+
+            &-box,
+            &-text {
+                margin-left: auto;
+            }
+
+            &-box {
+                max-width: 213px;
+            }
+
+            &-content {
+                max-width: 119px;
+            }
+
+            &-position {
+                line-height: 15px;
+            }
+
+            &-text {
+                margin-bottom: 18px;
+                padding: 15px;
+                max-width: 207px;
+                line-height: 21px;
+
+                &::after {
+                    right: 70px;
+                }
+            }
+        }
+
+        &__btn {
+            grid-area: free-consultation__button;
+            margin: 0;
+            max-width: 306px;
+        }
+      }
+    /* end -------------------------------------------- free consultation section ------------------------------------ */
+
+    /* start -------------------------------------------- accordion section ------------------------------------------ */
+    .accordion {
+        &-section {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+
+        &-box {
+            &__title {
+                margin-bottom: 56px;
+            }
+
+            &__info {
+                margin-bottom: 43px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 18px;
+            }
+        }
+
+        &__toggle {
+            padding: 25px 30px;
+            font-size: 21px;
+            line-height: 25px;
+        }
+
+        &__content {
+            padding-left: 30px;
+            padding-right: 54px;
+        }
+
+        &__text,
+        &__description {
+            font-size: 18px;
+        }
+
+        &__text {
+            line-height: 25px;
+        }
+
+        &__description {
+            margin-bottom: 9px;
+            line-height: 37px;
+        }
+
+        &__list {
+            li {
+                &::before {
+                    transform: translateY(10px);
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- accordion section -------------------------------------------- */
+
+    /* start -------------------------------------------- customers section ------------------------------------------ */
+    .customers {
+        background-image: none;
+        display: flex;
+        min-height: 411px;
+
+        &::before {
+            display: none;
+        }
+
+        &__content {
+            width: 40%;
+            background-color: #F9F9F9;
+        }
+
+        &__box {
+            position: absolute;
+            top: 65px;
+            left: 32px;
+            z-index: 1;
+            min-width: 450px;
+        }
+
+        &__title {
+            margin-bottom: 29px;
+            font-size: 32px;
+
+            .orange {
+                font-size: 45px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 32px;
+            padding-right: 87px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        &__icons {
+            display: flex;
+            column-gap: 24px;
+        }
+
+        &__bg {
+            position: relative;
+            width: 60%;
+            background-image: url('../img/customers-bg-middle.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(89deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+    /* end -------------------------------------------- customers section ------------------------------------------- */
+
+    /* start ------------------------------------------ benefit section --------------------------------------------- */
+    .benefit {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+
+        &-section {
+            margin-bottom: 45px;
+        }
+
+        &__img {
+            max-width: none;
+            padding-top: 20px;
+            margin-bottom: 0;
+            width: 50%;
+        }
+
+        &__title {
+            margin-bottom: 18px;
+            margin-left: 25px;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        &__list {
+            width: 50%;
+
+            li {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__icon {
+            margin-bottom: 12px;
+            width: 50px;
+            height: 50px;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 14px;
+        }
+
+        &__saving {
+            margin-bottom: 4px;
+        }
+
+        &__price {
+            margin-top: auto;
+            font-size: 27px;
+            transform: translateY(-9px);
+        }
+
+        &__ruble {
+            margin-left: 1px;
+        }
+    }
+    /* end ------------------------------------------ benefit section ----------------------------------------------- */
+
+    /* start -------------------------------------------- delivery section ------------------------------------------ */
+    .delivery {
+        min-height: 327px;
+        display: flex;
+
+        &-section {
+            margin-bottom: 45px;
+        }
+
+        &__content {
+            width: 51%;
+            padding: 75px 0px 75px 30px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__text {
+            padding-right: 42px;
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+
+        &__img {
+            min-height: auto;
+            width: 49%;
+            background-image: url("../img/delivery-bg-middle.jpg");
+
+            &::before {
+                width: 138px;
+                height: 100%;
+                background: linear-gradient(90deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+            }
+
+            img {
+                margin-top: 0;
+                min-width: 447px;
+                position: absolute;
+                right: 0;
+                top: 14%;
+            }
+        }
+
+        &__hint {
+            right: 4.5%;
+            top: 12.7%;
+
+            &::before {
+                bottom: -8px;
+                right: 46%;
+                border-width: 11px 3px 0 6px;
+            }
+        }
+    }
+    /* end -------------------------------------------- delivery section ---------------------------------------------- */
+
+    /* start -------------------------------------------- payment section --------------------------------------------- */
+    .payment {
+        background-image: url("../img/payment-bg-small.png");
+        background-position: center;
+        background-size: cover;
+
+        &-section {
+            margin-bottom: 45px;
+        }
+
+        &__content {
+            padding: 69px 24px 75px;
+            max-width: 430px;
+            margin-left: auto;
+        }
+
+        &__title {
+            margin-bottom: 34px;
+        }
+
+        &__description,
+        &__small {
+            font-size: 18px;
+        }
+
+        &__description {
+            margin-bottom: 39px;
+            line-height: 25px;
+        }
+
+        &__list {
+            margin-bottom: 42px;
+            
+            li {
+                column-gap: 36px;
+
+                &:not(:last-child) {
+                    padding-bottom: 21px;
+                }
+            }
+        }
+
+        &__icon {
+            width: 44px;
+            height: 44px;
+        }
+
+        &__text {
+            font-size: 21px;
+        }
+
+        &__small {
+            &.block {
+                margin-top: 4px;
+            }
+        }
+
+        &__btn {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 346px;
+        }
+    }
+    /* end -------------------------------------------- payment section ---------------------------------------------- */
+
+    /* start -------------------------------------------- advantages section ----------------------------------------- */
+    .advantages {
+        max-width: 708px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+
+        &-section {
+            margin-bottom: 45px;
+        }
+
+        &__content {
+            width: 50%;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 0;
+        }
+
+        &__title {
+            margin-bottom: 19px;
+            font-size: 22px;
+            line-height: 25px;
+        }
+
+        &__list {
+            width: 50%;
+            gap: 20px;
+            
+            li {
+                padding: 15px 10px 17px 9px;
+                width: 47%;
+            }
+        }
+
+        &__img {
+            margin-bottom: 14px;
+        }
+    }
+    /* end -------------------------------------------- advantages section ------------------------------------------- */
+
+    /* start -------------------------------------------- director section-------------------------------------------- */
+    .director {
+        display: flex;
+        column-gap: 31px;
+        align-items: start;
+        padding: 40px 35px 40px 30px;
+
+        &__left {
+            width: 94%;
+        }
+
+        &__text {
+            padding: 30px;
+            font-size: 18px;
+            line-height: 25px;
+
+            &::before {
+                bottom: 34.3%;
+                right: -18px;
+                border-width: 27px 18px 0 8px;
+                transform: rotate(-121deg);
+            }
+        }
+
+        &__right {
+            width: 22%;
+            flex-direction: column;
+        }
+
+        &__position {
+            text-align: left;
+        }
+
+        &__img {
+            margin-bottom: 21px;
+            width: 100px;
+            height: 100px;
+            order: -1;
+        }
+    }
+    /* end -------------------------------------------- director section----------------------------------------------- */
+}
+
+@media (min-width: 1024px) {
+    /* start -------------------------------------------- basic -------------------------------------------------------- */
+    .container {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* end -------------------------------------------- basic ----------------------------------------------------------- */
+
+    /* start -------------------------------------------- measuring section --------------------------------------------- */
+    .measuring {
+        margin-bottom: 45px;
+
+        &__content {
+            width: 55%;
+            padding: 75px 0 75px 40px;
+        }
+
+        &__text {
+            padding-right: 0;
+            margin-bottom: 39px;
+            font-size: 21px;
+        }
+
+        &__title {
+            margin-bottom: 42px;
+            font-weight: 500;
+        }
+
+        &__word {
+            display: inline-block;
+        }
+
+        .form {    
+            &__phone,
+            &__btn {
+                min-width: 221px;
+            }
+    
+            &__phone {
+                margin-bottom: 0;
+            }
+        }
+
+        .form--flex {
+            display: flex;
+            column-gap: 20px;
+        }
+
+        &__img {
+            width: 50%;
+            background-image: url('../img/measuring-bg-big.jpg');
+            background-position-x: 100%;
+        }
+
+        &--contacts {
+            .measuring {
+                &__content {
+                    width: 43%;
+                }
+
+                &__title {
+                    font-weight: 700;
+                }
+
+                &__img {
+                    width: 57%;
+                    background-image: url("../img/measuring-contacts-bg-big.jpg");
+                    background-position-x: 100%;
+
+                    &::before {
+                        width: 82px;
+                    }
+                }
+            }
+
+            .form {
+                max-width: 348px;
+
+                &__phone {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        &__info {
+            margin-bottom: 31px;
+        }
+    }
+    /* end -------------------------------------------- measuring section --------------------------------------------- */
+
+    /* start -------------------------------------------- schedule section -------------------------------------------- */
+    .schedule {
+        &__box {
+            display: grid;
+            grid-template-columns: 272px 633px;
+            column-gap: 55px;
+        }
+
+        &__tabs,
+        &__content,
+        &__map {
+            margin-bottom: 0;
+        }
+
+        &__tabs {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+
+        &__content {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+
+        &__map {
+            iframe {
+                min-height: 266px;
+            }
+        }
+
+        &__about {
+            margin-top: 75px;
+            grid-column: span 2;
+        }
+    }
+
+    .work-schedule {
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+    /* end -------------------------------------------- schedule section ---------------------------------------------- */
+
+    /* start -------------------------------------------- free consultation section ----------------------------------- */
+    .free-consultation {
+        padding: 58px 40px;
+
+        &__about {
+            margin-top: -30px;
+
+            &-text,
+            &-name,
+            &-position {
+                font-size: 18px;
+            }
+
+            &-text {
+                margin-bottom: 37px;
+                max-width: 380px;
+                padding: 18px 47px;
+                line-height: 25px;
+
+                &::after {
+                    right: 66px;
+                }
+            }
+
+            &-box {
+                max-width: 341px;
+            }
+
+            &-content {
+                max-width: none;
+            }
+        }
+    }
+    /* end -------------------------------------------- free consultation section ------------------------------------- */
+
+    /* start -------------------------------------------- accordion section ------------------------------------------- */
+    .accordion {
+        &-section {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__toggle {
+            padding: 25px 24px 25px 40px;
+        }
+
+        &__content {
+            padding-left: 40px;
+            padding-right: 64px;
+            padding-bottom: 28px;
+        }
+
+        &__description {
+            line-height: 32px;
+        }
+    }
+    /* end -------------------------------------------- accordion section --------------------------------------------- */
+
+    /* start ------------------------------------------ customers section --------------------------------------------- */
+    .customers {
+        margin-bottom: 100px;
+
+        &__content {
+            width: 47%;
+        }
+
+        &__box {
+            min-width: 454px;
+        }
+
+        &__title {
+            margin-bottom: 38px;
+        }
+
+        &__text {
+            margin-bottom: 42px;
+            padding-right: 0;
+        }
+
+        &__icons {
+            justify-content: space-between;
+        }
+
+        &__icon {
+            width: 61px;
+            height: 61px;
+        }
+
+        &__left,
+        &__right {
+            column-gap: 25px;
+        }
+
+        &__number {
+            font-size: 32px;
+        }
+
+        &__statistics-text {
+            font-size: 18px;
+        }
+
+        &__bg {
+            width: 53%;
+            background-image: url('../img/customers-bg-big.jpg');
+        }
+    }
+    /* end -------------------------------------------- customers section --------------------------------------------- */
+
+    /* start ------------------------------------------ benefit section ----------------------------------------------- */
+    .benefit {
+        &-section {
+            margin-bottom: 60px;
+        }
+
+        &__img {
+            padding-top: 33px;
+        }
+
+        &__title {
+            margin-bottom: 23px;
+            margin-left: 40px;
+            font-size: 40px;
+        }
+
+        &__list {
+            li {
+                padding: 20px;
+            }
+        }
+
+        &__icon {
+            margin-bottom: 15px;
+            width: 78px;
+            height: 78px;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 22px;
+            font-size: 18px;
+
+            &::before {
+                bottom: -10px;
+            }
+        }
+
+        &__saving {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        &__price {
+            font-size: 32px;
+            transform: translateY(4px);
+        }
+
+        &__ruble {
+            font-size: 21px;
+        }
+    }
+    /* end ------------------------------------------ benefit section ------------------------------------------------- */
+
+    /* start -------------------------------------------- delivery section -------------------------------------------- */
+    .delivery {
+        &-section {
+            margin-bottom: 60px;
+        }
+
+        &__content {
+            padding: 73px 0px 75px 38px;
+            width: 45%;
+        }
+
+        &__text {
+            padding-right: 61px;
+        }
+
+        &__hint {
+            padding: 5px;
+            right: 5.4%;
+            top: 12.3%;
+
+            &::before {
+                right: 47%;
+            }
+        }
+
+        &__img {
+            width: 65%;
+            background-image: url("../img/delivery-bg-big.jpg");
+
+            img {
+                min-width: 638px;
+                right: 0.4%;
+                top: 13.6%;
+            }
+        }
+    }
+    /* end -------------------------------------------- delivery section ---------------------------------------------- */
+
+    /* start -------------------------------------------- payment section --------------------------------------------- */
+    .payment {
+        background-image: url("../img/payment-bg-big.png");
+
+        &__content {
+            padding-top: 72px;
+            max-width: 578px;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+            font-size: 40px;
+        }
+
+        &__description {
+            margin-bottom: 49px;
+        }
+
+        &__list {
+            margin-bottom: 49px;
+
+            li {
+                &:not(:last-child) {
+                    padding-bottom: 22px;
+                    margin-bottom: 19px;
+                }
+
+                &:first-child,
+                &:last-child {
+                    .payment {
+                        &__text {
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__text {
+            .payment {
+                &__small {
+                    display: block;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- payment section ---------------------------------------------- */
+
+    /* start -------------------------------------------- advantages section ----------------------------------------- */
+    .advantages {
+        &__content {
+            padding: 40px 40px 33px;
+            background-image: url("../img/advantages-big-1.jpg");
+        }
+
+        &__title {
+            margin-bottom: 32px;
+            font-size: 32px;
+            line-height: 35px;
+
+        }
+
+        &__description {
+            font-size: 18px;
+            line-height: 22px;
+
+            &:not(:last-child) {
+                margin-bottom: 22px;
+            }
+        }
+
+        &__list {
+            li {
+                padding: 30px 10px 18px 19px;
+
+                &:first-child {
+                    background-image: url("../img/advantages-big-2.jpg");
+
+                    .advantages {
+                        &__icon {
+                            width: 45px;
+                            height: 45px;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    background-image: url("../img/advantages-big-3.jpg");
+
+                    .advantages {
+                        &__icon {
+                            width: 45px;
+                            height: 45px;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    background-image: url("../img/advantages-big-4.jpg");
+                }
+
+                &:last-child {
+                    background-image: url("../img/advantages-big-5.jpg");
+                }
+            }
+        }
+
+        &__img {
+            margin-bottom: 19px;
+            width: 78px;
+            height: 78px;
+        }
+
+        &__icon {
+            width: 45px;
+            height: 45px;
+        }
+
+        &__text {
+            font-size: 21px;
+            line-height: 25px;
+        }
+    }
+    /* end -------------------------------------------- advantages section ------------------------------------------- */
+
+    /* start -------------------------------------------- director section--------------------------------------------- */
+    .director {
+        padding: 50px 69px 40px 40px;
+        column-gap: 55px;
+
+        &__left {
+            width: 77.1%;
+        }
+
+        &__text {
+            padding: 40px;
+            font-size: 21px;
+            line-height: 30px;
+
+            &::before {
+                bottom: 66.8%;
+            }
+        }
+
+        &__right {
+            width: 16.5%;
+        }
+
+        &__img {
+            width: 137px;
+            height: 137px;
+        }
+
+        &__name,
+        &__position {
+            font-size: 18px;
+        }
+
+        &__name {
+            margin-bottom: 14px;
+        }
+
+        &__position {
+            line-height: 22px;
+        }
+    }
+
+    .director--dmitriev {
+        .director {
+            &__right {
+                width: 20.6%;
+            }
+        }
+    }
+    /* end -------------------------------------------- director section----------------------------------------------- */
+}
+
