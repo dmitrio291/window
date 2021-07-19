@@ -343,6 +343,9 @@ button {
 
     &__schedule {
         &:first-child {
+        }
+
+        &-work {
             margin-bottom: 10px;
         }
     }
@@ -1222,6 +1225,10 @@ button {
 
 /* start ------------------------------------------ categories section -------------------------------------------------- */
 .categories {
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+
     &-section {
         margin-bottom: 55px;
     }
@@ -1932,6 +1939,9 @@ button {
         }
     }
     /* end -------------------------------------------- director section----------------------------------------------- */
+
+    /* end -------------------------------------------- categories section -------------------------------------------- */
+    /* end -------------------------------------------- categories section -------------------------------------------- */
 }
 
 @media (min-width: 1024px) {

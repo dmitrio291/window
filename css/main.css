@@ -344,7 +344,7 @@ button {
   background-image: url("../img/schedule-contacts-icon.svg");
 }
 
-.work-schedule__schedule:first-child {
+.work-schedule__schedule-work {
   margin-bottom: 10px;
 }
 
@@ -1190,6 +1190,9 @@ button {
 /* end -------------------------------------------- director section ---------------------------------------------------- */
 /* start ------------------------------------------ categories section -------------------------------------------------- */
 .categories {
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   column-gap: 41px;
@@ -1753,6 +1756,8 @@ button {
     order: -1;
   }
   /* end -------------------------------------------- director section----------------------------------------------- */
+  /* end -------------------------------------------- categories section -------------------------------------------- */
+  /* end -------------------------------------------- categories section -------------------------------------------- */
 }
 
 @media (min-width: 1024px) {
