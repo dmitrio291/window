@@ -1206,6 +1206,7 @@ button {
   margin-bottom: 35px;
   text-align: center;
   width: 44%;
+  cursor: pointer;
 }
 
 .categories li:hover .categories__img {
@@ -1757,7 +1758,14 @@ button {
   }
   /* end -------------------------------------------- director section----------------------------------------------- */
   /* end -------------------------------------------- categories section -------------------------------------------- */
-  /* end -------------------------------------------- categories section -------------------------------------------- */
+  .categories {
+    max-width: 708px;
+    column-gap: 28px;
+  }
+  .categories li {
+    width: 22%;
+  }
+  /* end -------------------------------------------- categories section --------------------------------------------- */
 }
 
 @media (min-width: 1024px) {
@@ -2131,5 +2139,19 @@ button {
     width: 20.6%;
   }
   /* end -------------------------------------------- director section----------------------------------------------- */
+  /* start------------------------------------------ categories section ---------------------------------------------- */
+  .categories {
+    max-width: 960px;
+  }
+  .categories li {
+    width: 22.8%;
+  }
+  .categories__img {
+    width: 200px;
+  }
+  .categories__title {
+    margin-bottom: 10px;
+  }
+  /* end -------------------------------------------- categories section --------------------------------------------- */
 }
 /*# sourceMappingURL=main.css.map */
