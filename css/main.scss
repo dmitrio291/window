@@ -461,11 +461,170 @@ button {
         &__btn {
             &:first-child {
                 margin-bottom: 10px;
+                background-color: #ffffff;
             }
         }
     }
 } 
 /* end -------------------------------------------- header popup ------------------------------------------------------- */
+
+/* start ------------------------------------------ banner section ----------------------------------------------------- */
+.banner {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    background-color: #ffffff;
+
+    &-section {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 55px;
+    }
+
+    &__img {
+        position: relative;
+
+        &-img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 18px;
+        right: 15px;
+        width: 100px;
+        height: 100px;
+    }
+
+    &__content {
+        padding: 18px 35px 29px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    &__subtitle,
+    &__price,
+    &__text,
+    &__info {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+    }
+
+    &__price {
+        margin-bottom: 15px;
+        font-size: 41px;
+        font-weight: 700;
+
+        span {
+            font-size: 29px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 15px;
+        line-height: 21px;
+
+        .orange {
+            display: block;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        max-width: 274px;
+        width: 100%;
+    }
+
+    .form {
+        &__phone {
+            display: none;
+        }
+    }
+}
+/* end -------------------------------------------- banner section ----------------------------------------------------- */
+
+/* end -------------------------------------------- banner windows section --------------------------------------------- */
+.banner-windows {
+    position: relative;
+    color: #ffffff;
+
+    &-section {
+        padding: 55px 0;
+        margin-bottom: 45px;
+        position: relative;
+        background-image: url('../img/banner-bg-small.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 3px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        text-align: left;
+        font-weight: 700;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__list {
+        margin-bottom: 37px;
+
+        li {
+            padding-left: 22px;
+            position: relative;
+            font-weight: 500;
+            line-height: 19px;
+
+            &::before {
+                content: '.';
+                position: absolute;
+                top: -8px;
+                left: 7px;
+                font-size: 30px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__btn {
+        max-width: 296px;
+        width: 100%;
+    }
+
+    &__icon {
+        display: none;
+    }
+}
+/* end -------------------------------------------- banner windows section --------------------------------------------- */
 
 /* start -------------------------------------------- warning section -------------------------------------------------- */
 .warning {
@@ -1766,6 +1925,159 @@ button {
     }
     /* end -------------------------------------------- header popup --------------------------------------------------- */
 
+    /* start ------------------------------------------ banner section ------------------------------------------------- */
+    .banner {
+        display: flex;
+        flex-direction: row-reverse;
+        box-shadow: none;
+
+        &-section {
+            margin-bottom: 75px;
+            max-width: none;
+        }
+
+        &__img {
+            width: 50%;
+        }
+
+        &__icon {
+            bottom: 26px;
+            width: 136px;
+            height: 136px;
+        }
+
+        &__content {
+            position: relative;
+            width: 58%;
+            padding: 23px 55px 35px;
+            background-image: url('../img/banner-middle-2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+        }
+
+        &__box {
+            position: relative;
+        }
+
+        &__title {
+            margin-bottom: 12px;
+            font-size: 27px;
+        }
+
+        &__subtitle {
+            margin-bottom: 11px;
+            font-size: 21px;
+        }
+
+        &__price {
+            margin-bottom: 7px;
+            font-size: 62px;
+            
+            span {
+                font-size: 42px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 17px;
+            font-size: 21px;
+            line-height: 25px;
+        }
+
+        .form {
+            margin-bottom: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+
+            &__phone {
+                margin-bottom: 9px;
+                display: block;
+            }
+        }
+
+        &__form-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__btn {
+            max-width: none;
+        }
+
+        &__text {
+            order: -1;
+        }
+
+        &__info {
+            font-size: 18px;
+        }
+    }
+    /* end ------------------------------------------ banner section --------------------------------------------------- */
+
+    /* start -------------------------------------------- banner windows section --------------------------------------- */
+    .banner-windows {
+        padding-right: 41%;
+
+        &-section {
+            background-image: url("../img/banner-bg-middle.jpg");
+
+            &::before {
+                width: 90%;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
+            }
+        }
+
+        &__icon {
+            position: absolute;
+            bottom: 27px;
+            right: 20px;
+            display: block;
+        }
+
+        &__list {
+            margin-bottom: 32px;
+
+            li {
+                padding-left: 28px;
+                line-height: 21px;
+
+                &::before {
+                    left: 9px;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- banner windows section ----------------------------------------- */
+
+    /* start -------------------------------------------- banner windows section --------------------------------------- */
+    .banner-windows {
+        &-section {
+            margin-bottom: 75px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__list {
+            li {
+                font-size: 18px;   
+            }
+        }
+    }
+    /* end -------------------------------------------- banner windows section ----------------------------------------- */
+
     /* start -------------------------------------------- warning section ---------------------------------------------- */
     .warning {
         &__text {
@@ -2497,6 +2809,61 @@ button {
         display: none;
     }
     /* end -------------------------------------------- header section ------------------------------------------------- */
+
+    /* start ------------------------------------------ banner section ------------------------------------------------- */
+    .banner {
+        &__img {
+            width: 52%;
+        }
+
+        &__icon {
+            right: 24px;
+        }
+
+        &__content {
+            background-image: url("../img/banner-big-2.jpg");
+            padding: 28px 99px 33px;
+            width: 50%;
+        }
+
+        &__title {
+            margin-bottom: 9px;
+            font-size: 32px;
+        }
+    }
+    /* end ------------------------------------------ banner section --------------------------------------------------- */
+
+    /* start -------------------------------------------- banner windows section --------------------------------------- */
+    .banner-windows {
+        padding-right: 49%;
+
+        &-section {
+            padding: 27px 0 31px 6px;
+            background-image: url("../img/banner-bg-big.jpg");
+
+            &::before {
+                width: 83%;
+            }
+        }
+
+        &__title {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        &__list {
+            li {
+                padding-left: 33px;
+                font-size: 21px;
+                line-height: 25px;
+
+                &::before {
+                    left: 12px;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- banner windows section ----------------------------------------- */
 
     /* start -------------------------------------------- measuring section -------------------------------------------- */
     .measuring {
