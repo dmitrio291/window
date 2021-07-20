@@ -85,6 +85,7 @@ h6 {
 button,
 input {
     border: none;
+    outline: none;
 }
 
 button {
@@ -317,6 +318,154 @@ button {
     }
 }
 /* end -------------------------------------------- header section------------------------------------------------------ */
+
+/* start ------------------------------------------ header popup ------------------------------------------------------- */
+.header-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 69px;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #ffffff;
+
+    &__content {
+        position: relative;
+        width: calc(100% - 60px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top: -10.1%;
+        right: 2.4%;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 2px;
+            background-color: #ABABAB;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__nav {
+        display: block;
+        margin-bottom: 30px;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+
+    &__list {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            &:nth-child(5) {
+                margin-top: 28px;
+                margin-bottom: 26px;
+
+                a {                    
+                    display: inline-flex;
+                    align-items: center;
+                    column-gap: 18px;
+                }
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+
+    &__calc {
+        li {
+            display: flex;
+            align-items: center;
+            column-gap: 18px;
+        }
+
+        .calc {
+            &__text {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__icon {
+        &-1 {
+            width: 35px;
+            height: 35px;
+        }
+
+        &-2 {
+            width: 41px;
+            height: 34px;
+        }
+    }
+
+    &__contacts {
+        min-width: 315px;
+        max-width: 315px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 30px;
+
+        li {
+            &:first-child {
+                max-width: 140px;
+            }
+
+            &:last-child {
+                max-width: 128px;
+            }
+        }
+
+        &-text {
+            .green {
+                color: #21A515;
+                border-bottom: 1px solid #21A515;
+            }
+        }
+    }
+
+    &__flex {
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .form {
+        margin-bottom: 0;
+
+        &__btn {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+} 
+/* end -------------------------------------------- header popup ------------------------------------------------------- */
 
 /* start -------------------------------------------- warning section -------------------------------------------------- */
 .warning {
@@ -1496,7 +1645,7 @@ button {
         }
     }
 }
-/* end -------------------------------------------- categories section -------------------------------------------------- */
+/* end -------------------------------------------- categories section ------------------------------------------------ */
 
 @media (min-width: 768px) {
     /* start -------------------------------------------- basic -------------------------------------------------------*/
@@ -1604,6 +1753,18 @@ button {
         }
     }
     /* end -------------------------------------------- header section ------------------------------------------------- */
+
+    /* start ------------------------------------------ header popup --------------------------------------------------- */
+    .header-popup {
+        max-width: 375px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+        &__close {
+            top: -9.8%;
+            right: 7.3%;
+        }
+    }
+    /* end -------------------------------------------- header popup --------------------------------------------------- */
 
     /* start -------------------------------------------- warning section ---------------------------------------------- */
     .warning {

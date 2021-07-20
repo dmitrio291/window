@@ -16,6 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    /* start -------------------------------- Скрипты для секции .header -------------------------------------------- */
+    const burgers = document.querySelectorAll('.burger');
+    const headerPopup = document.querySelector('.header-popup');
+    const headerPopupClose = headerPopup.querySelector('.header-popup__close');
+
+    burgers.forEach(burger => {
+        burger.addEventListener('click', () => {
+            headerPopup.style.display = 'block';
+            headerPopupClose.addEventListener('click', () => headerPopup.style.display = 'none');
+        });
+    });
+    /* end -------------------------------- Скрипты для секции .header ---------------------------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
     const accordionToggles = document.querySelectorAll('.accordion__toggle');
     
@@ -39,15 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 scheduleContacts.textContent = dataAddr;
                 scheduleMap.src = dataMap;
-
-                // const tabName = this.dataset.tab;
-                // if (tabName === 'tab-2') {
-                //     scheduleMap.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A3ad4a51068ad1ee5ce25ede9c6549d2e7fb173a35e1eb54dfa3567bc46f1afaf&amp;source=constructor';
-                //     scheduleContacts.textContent = 'г. Тольятти, ул Горького 92, 3 этаж, офис 204';      
-                // } else {
-                //     scheduleMap.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3Ae84eb459019bbc70962b3d3e47a966dfe5256a511fd5f2efa6fe33f3d3753080&amp;source=constructor';
-                //     scheduleContacts.textContent = 'г. Тольятти, ул Заставная 54, 2 этаж, офис 207';      
-                // }
             });
         });
     }
