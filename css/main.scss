@@ -2027,9 +2027,12 @@ button {
 
     /* start -------------------------------------------- banner windows section --------------------------------------- */
     .banner-windows {
-        padding-right: 41%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
 
         &-section {
+            margin-bottom: 75px;
             background-image: url("../img/banner-bg-middle.jpg");
 
             &::before {
@@ -2038,10 +2041,15 @@ button {
             }
         }
 
+        &__left {
+            max-width: 396px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
         &__icon {
-            position: absolute;
-            bottom: 27px;
-            right: 20px;
             display: block;
         }
 
@@ -2049,30 +2057,13 @@ button {
             margin-bottom: 32px;
 
             li {
+                font-size: 18px;   
                 padding-left: 28px;
                 line-height: 21px;
 
                 &::before {
                     left: 9px;
                 }
-            }
-        }
-    }
-    /* end -------------------------------------------- banner windows section ----------------------------------------- */
-
-    /* start -------------------------------------------- banner windows section --------------------------------------- */
-    .banner-windows {
-        &-section {
-            margin-bottom: 75px;
-        }
-
-        &__title {
-            margin-bottom: 30px;
-        }
-
-        &__list {
-            li {
-                font-size: 18px;   
             }
         }
     }
@@ -2835,8 +2826,6 @@ button {
 
     /* start -------------------------------------------- banner windows section --------------------------------------- */
     .banner-windows {
-        padding-right: 49%;
-
         &-section {
             padding: 27px 0 31px 6px;
             background-image: url("../img/banner-bg-big.jpg");
@@ -2844,6 +2833,10 @@ button {
             &::before {
                 width: 83%;
             }
+        }
+
+        &__left {
+            max-width: 400px;
         }
 
         &__title {

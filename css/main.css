@@ -1909,41 +1909,37 @@ button {
   /* end ------------------------------------------ banner section --------------------------------------------------- */
   /* start -------------------------------------------- banner windows section --------------------------------------- */
   .banner-windows {
-    padding-right: 41%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
   .banner-windows-section {
+    margin-bottom: 75px;
     background-image: url("../img/banner-bg-middle.jpg");
   }
   .banner-windows-section::before {
     width: 90%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
   }
+  .banner-windows__left {
+    max-width: 396px;
+  }
+  .banner-windows__title {
+    margin-bottom: 30px;
+  }
   .banner-windows__icon {
-    position: absolute;
-    bottom: 27px;
-    right: 20px;
     display: block;
   }
   .banner-windows__list {
     margin-bottom: 32px;
   }
   .banner-windows__list li {
+    font-size: 18px;
     padding-left: 28px;
     line-height: 21px;
   }
   .banner-windows__list li::before {
     left: 9px;
-  }
-  /* end -------------------------------------------- banner windows section ----------------------------------------- */
-  /* start -------------------------------------------- banner windows section --------------------------------------- */
-  .banner-windows-section {
-    margin-bottom: 75px;
-  }
-  .banner-windows__title {
-    margin-bottom: 30px;
-  }
-  .banner-windows__list li {
-    font-size: 18px;
   }
   /* end -------------------------------------------- banner windows section ----------------------------------------- */
   /* start -------------------------------------------- warning section ---------------------------------------------- */
@@ -2520,15 +2516,15 @@ button {
   }
   /* end ------------------------------------------ banner section --------------------------------------------------- */
   /* start -------------------------------------------- banner windows section --------------------------------------- */
-  .banner-windows {
-    padding-right: 49%;
-  }
   .banner-windows-section {
     padding: 27px 0 31px 6px;
     background-image: url("../img/banner-bg-big.jpg");
   }
   .banner-windows-section::before {
     width: 83%;
+  }
+  .banner-windows__left {
+    max-width: 400px;
   }
   .banner-windows__title {
     font-size: 40px;
