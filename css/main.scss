@@ -468,6 +468,26 @@ button {
 } 
 /* end -------------------------------------------- header popup ------------------------------------------------------- */
 
+/* start -------------------------------------------- warning section -------------------------------------------------- */
+.warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color:#D8F5E3;
+    
+    &__text {
+        font-size: 14px;
+    }
+
+    &__bold {
+        font-weight: 500;
+    }
+}
+/* end -------------------------------------------- warning section ---------------------------------------------------- */
+
 /* start ------------------------------------------ banner section ----------------------------------------------------- */
 .banner {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -626,25 +646,191 @@ button {
 }
 /* end -------------------------------------------- banner windows section --------------------------------------------- */
 
-/* start -------------------------------------------- warning section -------------------------------------------------- */
-.warning {
+/* start ------------------------------------------ categories section -------------------------------------------------- */
+.categories {
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-section {
+        margin-bottom: 55px;
+    }
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
-    padding: 15px;
-    margin-bottom: 30px;
-    background-color:#D8F5E3;
-    
+    flex-wrap: wrap;
+    column-gap: 41px;
+
+    li {
+        margin-bottom: 35px;
+        text-align: center;
+        width: 44%;
+        cursor: pointer;
+
+        &:hover {
+            .categories {
+                &__img {
+                    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: inherit;   
+    }
+
+    &__img {
+        margin-bottom: 18px;
+        width: 150px;
+        transition: filter 0.3s ease;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-size: 19px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    &__price {
+        margin-bottom: 18px;
+
+        &-text {
+            font-size: 18px;
+
+            .orange {
+                font-weight: 500;
+            }
+        }
+
+        &-small {
+            font-size: 13px;
+            color: #ABABAB;
+        }
+    }
+
+    &__number {
+        font-size: 28px;
+    }
+
+    &__offer {
+        padding: 7px 17px;
+        background-color: #F9F9F9;
+        border-radius: 3px;
+
+        &-small {
+            margin-bottom: 4px;
+        }
+
+        &-big {
+            font-weight: 500;
+        }
+    }
+}
+/* end -------------------------------------------- categories section -------------------------------------------------- */
+
+/* start------------------------------------------- director section ---------------------------------------------------- */
+.director {
+    padding: 30px 15px;
+    background-color: #F5F5F5;
+    border-radius: 3px;
+
+    &-section {
+        margin-bottom: 55px;
+    }
+
+    &-box {
+        background-color: #F5F5F5;
+    }
+
     &__text {
+        margin-bottom: 20px;
+        position: relative;
+        padding: 20px;
+        line-height: 21px;
+        border-radius: 6px;
+        background-color: #ffffff;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            right: 26%;
+            width: 0;
+            height: 0;
+            border-width: 24px 11px 0 12px;
+            border-color: #FFFFFFFF transparent transparent transparent;
+            border-style: solid;
+            transform: rotate(-20deg);
+        }
+
+        .orange {
+            border-bottom: 1px solid #F26422;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 21px;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-weight: 500;
         font-size: 14px;
     }
 
-    &__bold {
-        font-weight: 500;
+    &__position {
+        font-size: 12px;
+        text-align: right;
+        line-height: 15px;
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__img {
+        width: 81px;
+        height: 81px;
+        border-radius: 50%;
     }
 }
-/* end -------------------------------------------- warning section ---------------------------------------------------- */
+
+.director-form {
+    padding: 75px 35px 0 30px;
+
+    &__title {
+        margin-bottom: 28px;
+        text-align: left;
+    }
+
+    &__info {
+        line-height: 21px;
+
+        span {
+            font-weight: 500;
+        }
+    }
+}
+/* end -------------------------------------------- director section ---------------------------------------------------- */
+
+/* start -------------------------------------------- best price section ------------------------------------------------ */
+.best-price {
+    &-section {
+        display: none;
+    }
+}
+/* end -------------------------------------------- best price section -------------------------------------------------- */
 
 /* start -------------------------------------------- measuring section ------------------------------------------------ */
 .measuring {
@@ -709,143 +895,6 @@ button {
     }
 }
 /* end -------------------------------------------- measuring section -------------------------------------------------- */
-
-/* start -------------------------------------------- schedule section ------------------------------------------------- */
-.schedule {
-    &-section {
-        padding-top: 40px;
-        padding-bottom: 55px;
-    }
-
-    &__tabs {
-        margin-bottom: 35px;
-    }
-
-    &__tab {
-        &.active {
-            span {
-                color: #F26422;
-                border-bottom: 1px solid #F26422;
-            }
-        }
-
-        span {
-            color: #CDCDCD;
-            font-size: 18px;
-            border-bottom: 1px solid #CDCDCD;
-            cursor: pointer;
-        }
-
-        &:first-child {
-            margin-bottom: 20px;
-        }
-    }
-
-    &__content {
-        margin-bottom: 30px;
-    }
-
-    &__small {
-        margin-bottom: 10px;
-        color: #CDCDCD;
-    }
-
-    &__big {
-        font-size: 30px;
-        font-weight: 400;
-    }
-
-    &__map {
-        margin-bottom: 45px;
-
-        iframe {
-            width: 100%;
-            min-height: 177px;
-        }
-    }
-
-    &__subtitle {
-        margin-bottom: 20px;
-        font-size: 19px;
-        line-height: 24px;
-        font-weight: 500;
-    }
-
-    &__text {
-        line-height: 21px;
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
-    }
-}
-
-.work-schedule {
-    margin-bottom: 35px;
-
-    li {
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        &::before {
-            content: '';
-            display: inline-block;
-            width: 23px;
-            height: 23px;
-            margin-right: 20px;
-            border-radius: 50%;
-            border: 1px solid #ABABAB;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    }
-
-    li:not(:last-child) {
-        margin-bottom: 30px;
-    }
-
-    &__time-icon::before {
-        background-image: url('../img/schedule-time-icon.svg');
-    }
-
-    &__phone-icon::before {
-        background-image: url('../img/schedule-phone-icon.svg');
-    }
-
-    &__email-icon::before {
-        background-image: url('../img/schedule-email-icon.svg');
-    }
-
-    &__contacts-icon::before {
-        background-image: url('../img/schedule-contacts-icon.svg');
-    }
-
-    &__schedule {
-        &-work {
-            margin-bottom: 10px;
-        }
-    }
-
-    &__phone,
-    &__email {
-        text-decoration: none;
-    }
-
-    &__phone {
-        font-size: 25px;
-    }
-
-    &__email {
-        border-bottom: 1px solid #F26422;
-    }
-
-    &__contacts {
-        max-width: 230px;
-        line-height: 21px;
-    }
-}
-/* end -------------------------------------------- schedule section ---------------------------------------------------- */
 
 /* start -------------------------------------------- free consultation section ----------------------------------------- */
 .free-consultation {
@@ -1626,185 +1675,144 @@ button {
         line-height: 19px;
     }
 }
-/* end -------------------------------------------- advantages section -------------------------------------------------- */
+/* end -------------------------------------------- advantages section --------------------------------------------------*/
 
-/* start------------------------------------------- director section ---------------------------------------------------- */
-.director {
-    padding: 30px 15px;
-    background-color: #F5F5F5;
-    border-radius: 3px;
-
+/* start -------------------------------------------- schedule section ------------------------------------------------- */
+.schedule {
     &-section {
-        margin-bottom: 55px;
+        padding-top: 40px;
+        padding-bottom: 55px;
     }
 
-    &-box {
-        background-color: #F5F5F5;
+    &__tabs {
+        margin-bottom: 35px;
+    }
+
+    &__tab {
+        &.active {
+            span {
+                color: #F26422;
+                border-bottom: 1px solid #F26422;
+            }
+        }
+
+        span {
+            color: #CDCDCD;
+            font-size: 18px;
+            border-bottom: 1px solid #CDCDCD;
+            cursor: pointer;
+        }
+
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content {
+        margin-bottom: 30px;
+    }
+
+    &__small {
+        margin-bottom: 10px;
+        color: #CDCDCD;
+    }
+
+    &__big {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    &__map {
+        margin-bottom: 45px;
+
+        iframe {
+            width: 100%;
+            min-height: 177px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+        font-size: 19px;
+        line-height: 24px;
+        font-weight: 500;
     }
 
     &__text {
-        margin-bottom: 20px;
-        position: relative;
-        padding: 20px;
         line-height: 21px;
-        border-radius: 6px;
-        background-color: #ffffff;
-        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.work-schedule {
+    margin-bottom: 35px;
+
+    li {
+        position: relative;
+        display: flex;
+        align-items: center;
 
         &::before {
             content: '';
-            position: absolute;
-            bottom: -20px;
-            right: 26%;
-            width: 0;
-            height: 0;
-            border-width: 24px 11px 0 12px;
-            border-color: #FFFFFFFF transparent transparent transparent;
-            border-style: solid;
-            transform: rotate(-20deg);
-        }
-
-        .orange {
-            border-bottom: 1px solid #F26422;
-        }
-
-        a {
-            text-decoration: none;
+            display: inline-block;
+            width: 23px;
+            height: 23px;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 1px solid #ABABAB;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
-    &__right {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        column-gap: 21px;
+    li:not(:last-child) {
+        margin-bottom: 30px;
     }
 
-    &__name {
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 14px;
+    &__time-icon::before {
+        background-image: url('../img/schedule-time-icon.svg');
     }
 
-    &__position {
-        font-size: 12px;
-        text-align: right;
-        line-height: 15px;
+    &__phone-icon::before {
+        background-image: url('../img/schedule-phone-icon.svg');
+    }
 
-        .block {
-            display: block;
+    &__email-icon::before {
+        background-image: url('../img/schedule-email-icon.svg');
+    }
+
+    &__contacts-icon::before {
+        background-image: url('../img/schedule-contacts-icon.svg');
+    }
+
+    &__schedule {
+        &-work {
+            margin-bottom: 10px;
         }
     }
 
-    &__img {
-        width: 81px;
-        height: 81px;
-        border-radius: 50%;
-    }
-}
-
-.director-form {
-    padding: 75px 35px 0 30px;
-
-    &__title {
-        margin-bottom: 28px;
-        text-align: left;
-    }
-
-    &__info {
-        line-height: 21px;
-
-        span {
-            font-weight: 500;
-        }
-    }
-}
-/* end -------------------------------------------- director section ---------------------------------------------------- */
-
-/* start ------------------------------------------ categories section -------------------------------------------------- */
-.categories {
-    max-width: 345px;
-    margin-left: auto;
-    margin-right: auto;
-
-    &-section {
-        margin-bottom: 55px;
-    }
-
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 41px;
-
-    li {
-        margin-bottom: 35px;
-        text-align: center;
-        width: 44%;
-        cursor: pointer;
-
-        &:hover {
-            .categories {
-                &__img {
-                    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
-                }
-            }
-        }
-    }
-
-    &__link {
-        display: block;
+    &__phone,
+    &__email {
         text-decoration: none;
-        color: inherit;   
     }
 
-    &__img {
-        margin-bottom: 18px;
-        width: 150px;
-        transition: filter 0.3s ease;
+    &__phone {
+        font-size: 25px;
     }
 
-    &__title {
-        margin-bottom: 15px;
-        font-size: 19px;
-        font-weight: 500;
-        text-decoration: underline;
+    &__email {
+        border-bottom: 1px solid #F26422;
     }
 
-    &__price {
-        margin-bottom: 18px;
-
-        &-text {
-            font-size: 18px;
-
-            .orange {
-                font-weight: 500;
-            }
-        }
-
-        &-small {
-            font-size: 13px;
-            color: #ABABAB;
-        }
-    }
-
-    &__number {
-        font-size: 28px;
-    }
-
-    &__offer {
-        padding: 7px 17px;
-        background-color: #F9F9F9;
-        border-radius: 3px;
-
-        &-small {
-            margin-bottom: 4px;
-        }
-
-        &-big {
-            font-weight: 500;
-        }
+    &__contacts {
+        max-width: 230px;
+        line-height: 21px;
     }
 }
-/* end -------------------------------------------- categories section ------------------------------------------------ */
+/* end -------------------------------------------- schedule section ---------------------------------------------------- */
 
 @media (min-width: 768px) {
     /* start -------------------------------------------- basic -------------------------------------------------------*/
@@ -1924,6 +1932,14 @@ button {
         }
     }
     /* end -------------------------------------------- header popup --------------------------------------------------- */
+
+    /* start -------------------------------------------- warning section ---------------------------------------------- */
+    .warning {
+        &__text {
+            font-size: 18px;
+        }
+    }
+    /* end -------------------------------------------- warning section ------------------------------------------------ */
 
     /* start ------------------------------------------ banner section ------------------------------------------------- */
     .banner {
@@ -2069,13 +2085,154 @@ button {
     }
     /* end -------------------------------------------- banner windows section ----------------------------------------- */
 
-    /* start -------------------------------------------- warning section ---------------------------------------------- */
-    .warning {
-        &__text {
-            font-size: 18px;
+    /* end -------------------------------------------- categories section -------------------------------------------- */
+    .categories {
+        max-width: 708px;
+        column-gap: 28px;
+
+        li {
+            width: 22%;
         }
     }
-    /* end -------------------------------------------- warning section ---------------------------------------------- */
+    /* end -------------------------------------------- categories section --------------------------------------------- */
+
+    /* start -------------------------------------------- director section-------------------------------------------- */
+    .director {
+        display: flex;
+        column-gap: 31px;
+        align-items: start;
+        padding: 40px 35px 40px 30px;
+
+        &__left {
+            width: 94%;
+        }
+
+        &__text {
+            padding: 30px;
+            font-size: 18px;
+            line-height: 25px;
+
+            &::before {
+                bottom: 34.3%;
+                right: -18px;
+                border-width: 27px 18px 0 8px;
+                transform: rotate(-121deg);
+            }
+        }
+
+        &__right {
+            width: 22%;
+            flex-direction: column;
+        }
+
+        &__position {
+            text-align: left;
+        }
+
+        &__img {
+            margin-bottom: 21px;
+            width: 100px;
+            height: 100px;
+            order: -1;
+        }
+    }
+
+    .director-form {
+        &__title {
+            margin-bottom: 56px;
+        }
+
+        &__info {
+            margin-bottom: 44px;
+            font-size: 18px;
+        }
+
+        .form {
+            margin-bottom: 0;
+            display: flex;
+            column-gap: 20px;
+
+            &__phone {
+                min-width: 238px;
+                margin-bottom: 0;
+            }
+
+            &__btn {
+                min-width: 238px;
+            }
+        }
+    }
+    /* end -------------------------------------------- director section----------------------------------------------- */
+
+    /* start -------------------------------------------- best price section ------------------------------------------ */
+    .best-price {
+        position: relative;
+        padding-left: 25px;
+        padding-right: 25px;
+        min-height: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F9F9F9;
+        border-radius: 3px;
+
+        &-section {
+            margin-bottom: 75px;
+            display: block;
+        }
+
+        .title {
+            font-weight: 700;
+        }
+
+        &__title {
+            &-1 {
+                max-width: 161px;
+                margin-bottom: 0;
+                position: relative;
+                z-index: 1;
+                font-size: 35px;
+                text-align: left;
+                line-height: 40px;
+            }
+
+            &-2 {
+                margin-bottom: 11px;
+                font-size: 32px;
+                text-align: right;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            bottom: 0;
+            left: 42%;
+            transform: translateX(-50%);
+        }
+
+        &__content {
+            position: relative;
+            z-index: 1;
+            max-width: 356px;
+            text-align: right;
+        }
+
+        &__subtitle {
+            margin-bottom: 11px;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+
+        &__text {
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 13px;
+            max-width: 223px;
+            margin-left: auto;
+        }
+    }
+    /* end -------------------------------------------- best price section --------------------------------------------- */
 
     /* start -------------------------------------------- measuring section -------------------------------------------- */
     .measuring {
@@ -2168,42 +2325,7 @@ button {
             line-height: 25px;
         }
     }
-    /* end -------------------------------------------- measuring section ------------------------------------------- */
-
-    /* start -------------------------------------------- schedule section ------------------------------------------ */
-    .schedule {
-        &__tabs {
-            display: flex;
-        }
-
-        &__tab {
-            &:first-child {
-                margin-right: 57px;
-            }
-        }
-
-        &__map {
-            margin-bottom: 60px;
-
-            iframe {
-                min-height: 363px;
-            }
-        }
-
-        &__subtitle {
-            font-size: 21px;
-        }
-
-        &__text {
-            font-size: 18px;
-            line-height: 25px;
-        }
-    }
-
-    .work-schedule {
-        margin-bottom: 50px;
-    }
-    /* end -------------------------------------------- schedule section -------------------------------------------- */
+    /* end -------------------------------------------- measuring section ---------------------------------------------- */
 
     /* start -------------------------------------------- free consultation section --------------------------------- */
     .free-consultation {
@@ -2646,84 +2768,40 @@ button {
     }
     /* end -------------------------------------------- advantages section ------------------------------------------- */
 
-    /* start -------------------------------------------- director section-------------------------------------------- */
-    .director {
-        display: flex;
-        column-gap: 31px;
-        align-items: start;
-        padding: 40px 35px 40px 30px;
+    /* start -------------------------------------------- schedule section ------------------------------------------ */
+    .schedule {
+        &__tabs {
+            display: flex;
+        }
 
-        &__left {
-            width: 94%;
+        &__tab {
+            &:first-child {
+                margin-right: 57px;
+            }
+        }
+
+        &__map {
+            margin-bottom: 60px;
+
+            iframe {
+                min-height: 363px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 21px;
         }
 
         &__text {
-            padding: 30px;
             font-size: 18px;
             line-height: 25px;
-
-            &::before {
-                bottom: 34.3%;
-                right: -18px;
-                border-width: 27px 18px 0 8px;
-                transform: rotate(-121deg);
-            }
-        }
-
-        &__right {
-            width: 22%;
-            flex-direction: column;
-        }
-
-        &__position {
-            text-align: left;
-        }
-
-        &__img {
-            margin-bottom: 21px;
-            width: 100px;
-            height: 100px;
-            order: -1;
         }
     }
 
-    .director-form {
-        &__title {
-            margin-bottom: 56px;
-        }
-
-        &__info {
-            margin-bottom: 44px;
-            font-size: 18px;
-        }
-
-        .form {
-            margin-bottom: 0;
-            display: flex;
-            column-gap: 20px;
-
-            &__phone {
-                min-width: 238px;
-                margin-bottom: 0;
-            }
-
-            &__btn {
-                min-width: 238px;
-            }
-        }
+    .work-schedule {
+        margin-bottom: 50px;
     }
-    /* end -------------------------------------------- director section----------------------------------------------- */
-
-    /* end -------------------------------------------- categories section -------------------------------------------- */
-    .categories {
-        max-width: 708px;
-        column-gap: 28px;
-
-        li {
-            width: 22%;
-        }
-    }
-    /* end -------------------------------------------- categories section --------------------------------------------- */
+    /* end -------------------------------------------- schedule section -------------------------------------------- */
 }
 
 @media (min-width: 1024px) {
@@ -2734,14 +2812,6 @@ button {
         margin-right: auto;
     }
     /* end -------------------------------------------- basic --------------------------------------------------------- */
-
-    /* start -------------------------------------------- warning section ---------------------------------------------- */
-    .warning {
-        &__text {
-            font-size: 18px;
-        }
-    }
-    /* end -------------------------------------------- warning section ------------------------------------------------ */
 
     /* start -------------------------------------------- header section ----------------------------------------------- */
     .header {
@@ -2801,6 +2871,14 @@ button {
     }
     /* end -------------------------------------------- header section ------------------------------------------------- */
 
+    /* start -------------------------------------------- warning section ---------------------------------------------- */
+    .warning {
+        &__text {
+            font-size: 18px;
+        }
+    }
+    /* end -------------------------------------------- warning section ------------------------------------------------ */
+
     /* start ------------------------------------------ banner section ------------------------------------------------- */
     .banner {
         &__img {
@@ -2857,6 +2935,153 @@ button {
         }
     }
     /* end -------------------------------------------- banner windows section ----------------------------------------- */
+
+    /* start------------------------------------------ categories section ---------------------------------------------- */
+    .categories {
+        max-width: 960px;
+
+        li {
+            width: 22.8%;
+        }
+
+        &__img {
+            width: 200px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
+    /* end -------------------------------------------- categories section --------------------------------------------- */
+
+     /* start -------------------------------------------- director section--------------------------------------------- */
+     .director {
+        padding: 50px 69px 40px 40px;
+        column-gap: 55px;
+
+        &-box {
+            .director {
+                padding-top: 37px;
+                padding-right: 50px;
+                column-gap: 67px;
+
+                &__text {
+                    padding: 42px;
+                }
+
+                &__img {
+                    margin-bottom: 15px;
+                    width: 168px;
+                    height: 168px;
+                }
+
+                &__right {
+                    margin-top: -29px;
+                }
+            }
+        }
+
+        &__left {
+            width: 77.1%;
+        }
+
+        &__text {
+            padding: 40px;
+            font-size: 21px;
+            line-height: 30px;
+
+            &::before {
+                bottom: 66.8%;
+            }
+        }
+
+        &__right {
+            width: 16.5%;
+        }
+
+        &__content { 
+            transform: translateX(-15px);
+        }
+
+        &__img {
+            width: 137px;
+            height: 137px;
+        }
+
+        &__name,
+        &__position {
+            font-size: 18px;
+        }
+
+        &__name {
+            margin-bottom: 14px;
+        }
+
+        &__position {
+            line-height: 22px;
+        }
+    }
+
+    .director--dmitriev {
+        .director {
+            &__right {
+                width: 20.6%;
+            }
+        }
+    }
+
+    .director-form {
+        padding-left: 42px;
+
+        .form {
+            &__phone,
+            &__btn {
+                min-width: 250px;
+            }
+        }
+    }
+    /* end -------------------------------------------- director section------------------------------------------------ */
+
+    /* start -------------------------------------------- best price section ------------------------------------------ */
+    .best-price {
+        padding-left: 37px;
+        padding-right: 44px;
+        min-height: 280px;
+
+        &-section {
+            margin-bottom: 100px;
+        }
+
+        &__title {
+            &-1 {
+                margin-top: -14px;
+                max-width: 205px;
+                font-size: 40px;
+                line-height: 45px;
+            }
+
+            &-2 {
+                margin-bottom: 19px;
+            }
+        }
+
+        &__content {
+            margin-top: -8px;
+        }
+
+        &__subtitle {
+            margin-bottom: 14px;
+        }
+
+        &__text {
+            line-height: 15px;
+        }
+
+        &__img {
+            left: 45.5%;
+        }
+    }
+    /* end -------------------------------------------- best price section -------------------------------------------- */
 
     /* start -------------------------------------------- measuring section -------------------------------------------- */
     .measuring {
@@ -2939,48 +3164,6 @@ button {
         }
     }
     /* end -------------------------------------------- measuring section --------------------------------------------- */
-
-    /* start -------------------------------------------- schedule section -------------------------------------------- */
-    .schedule {
-        &__box {
-            display: grid;
-            grid-template-columns: 272px 633px;
-            column-gap: 55px;
-        }
-
-        &__tabs,
-        &__content,
-        &__map {
-            margin-bottom: 0;
-        }
-
-        &__tabs {
-            grid-row: 1 / 2;
-            grid-column: 2 / 3;
-        }
-
-        &__content {
-            grid-row: 1 / 2;
-            grid-column: 1 / 2;
-        }
-
-        &__map {
-            iframe {
-                min-height: 266px;
-            }
-        }
-
-        &__about {
-            margin-top: 75px;
-            grid-column: span 2;
-        }
-    }
-
-    .work-schedule {
-        align-self: flex-end;
-        margin-bottom: 0;
-    }
-    /* end -------------------------------------------- schedule section ---------------------------------------------- */
 
     /* start -------------------------------------------- free consultation section ----------------------------------- */
     .free-consultation {
@@ -3317,111 +3500,47 @@ button {
     }
     /* end -------------------------------------------- advantages section ------------------------------------------- */
 
-    /* start -------------------------------------------- director section--------------------------------------------- */
-    .director {
-        padding: 50px 69px 40px 40px;
-        column-gap: 55px;
+    /* start -------------------------------------------- schedule section -------------------------------------------- */
+    .schedule {
+        &__box {
+            display: grid;
+            grid-template-columns: 272px 633px;
+            column-gap: 55px;
+        }
 
-        &-box {
-            .director {
-                padding-top: 37px;
-                padding-right: 50px;
-                column-gap: 67px;
+        &__tabs,
+        &__content,
+        &__map {
+            margin-bottom: 0;
+        }
 
-                &__text {
-                    padding: 42px;
-                }
+        &__tabs {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
 
-                &__img {
-                    margin-bottom: 15px;
-                    width: 168px;
-                    height: 168px;
-                }
+        &__content {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
 
-                &__right {
-                    margin-top: -29px;
-                }
+        &__map {
+            iframe {
+                min-height: 266px;
             }
         }
 
-        &__left {
-            width: 77.1%;
-        }
-
-        &__text {
-            padding: 40px;
-            font-size: 21px;
-            line-height: 30px;
-
-            &::before {
-                bottom: 66.8%;
-            }
-        }
-
-        &__right {
-            width: 16.5%;
-        }
-
-        &__content { 
-            transform: translateX(-15px);
-        }
-
-        &__img {
-            width: 137px;
-            height: 137px;
-        }
-
-        &__name,
-        &__position {
-            font-size: 18px;
-        }
-
-        &__name {
-            margin-bottom: 14px;
-        }
-
-        &__position {
-            line-height: 22px;
+        &__about {
+            margin-top: 75px;
+            grid-column: span 2;
         }
     }
 
-    .director--dmitriev {
-        .director {
-            &__right {
-                width: 20.6%;
-            }
-        }
+    .work-schedule {
+        align-self: flex-end;
+        margin-bottom: 0;
     }
-
-    .director-form {
-        padding-left: 42px;
-
-        .form {
-            &__phone,
-            &__btn {
-                min-width: 250px;
-            }
-        }
-    }
-    /* end -------------------------------------------- director section----------------------------------------------- */
-
-    /* start------------------------------------------ categories section ---------------------------------------------- */
-    .categories {
-        max-width: 960px;
-
-        li {
-            width: 22.8%;
-        }
-
-        &__img {
-            width: 200px;
-        }
-
-        &__title {
-            margin-bottom: 10px;
-        }
-    }
-    /* end -------------------------------------------- categories section --------------------------------------------- */
+    /* end -------------------------------------------- schedule section ---------------------------------------------- */
 }
 
 @media (min-width: 1200px) {

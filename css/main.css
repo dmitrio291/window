@@ -448,6 +448,26 @@ button {
 }
 
 /* end -------------------------------------------- header popup ------------------------------------------------------- */
+/* start -------------------------------------------- warning section -------------------------------------------------- */
+.warning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: #D8F5E3;
+}
+
+.warning__text {
+  font-size: 14px;
+}
+
+.warning__bold {
+  font-weight: 500;
+}
+
+/* end -------------------------------------------- warning section ---------------------------------------------------- */
 /* start ------------------------------------------ banner section ----------------------------------------------------- */
 .banner {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -601,26 +621,185 @@ button {
 }
 
 /* end -------------------------------------------- banner windows section --------------------------------------------- */
-/* start -------------------------------------------- warning section -------------------------------------------------- */
-.warning {
+/* start ------------------------------------------ categories section -------------------------------------------------- */
+.categories {
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 20px;
-  padding: 15px;
-  margin-bottom: 30px;
-  background-color: #D8F5E3;
+  flex-wrap: wrap;
+  column-gap: 41px;
 }
 
-.warning__text {
-  font-size: 14px;
+.categories-section {
+  margin-bottom: 55px;
 }
 
-.warning__bold {
+.categories li {
+  margin-bottom: 35px;
+  text-align: center;
+  width: 44%;
+  cursor: pointer;
+}
+
+.categories li:hover .categories__img {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.categories__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.categories__img {
+  margin-bottom: 18px;
+  width: 150px;
+  transition: filter 0.3s ease;
+}
+
+.categories__title {
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.categories__price {
+  margin-bottom: 18px;
+}
+
+.categories__price-text {
+  font-size: 18px;
+}
+
+.categories__price-text .orange {
   font-weight: 500;
 }
 
-/* end -------------------------------------------- warning section ---------------------------------------------------- */
+.categories__price-small {
+  font-size: 13px;
+  color: #ABABAB;
+}
+
+.categories__number {
+  font-size: 28px;
+}
+
+.categories__offer {
+  padding: 7px 17px;
+  background-color: #F9F9F9;
+  border-radius: 3px;
+}
+
+.categories__offer-small {
+  margin-bottom: 4px;
+}
+
+.categories__offer-big {
+  font-weight: 500;
+}
+
+/* end -------------------------------------------- categories section -------------------------------------------------- */
+/* start------------------------------------------- director section ---------------------------------------------------- */
+.director {
+  padding: 30px 15px;
+  background-color: #F5F5F5;
+  border-radius: 3px;
+}
+
+.director-section {
+  margin-bottom: 55px;
+}
+
+.director-box {
+  background-color: #F5F5F5;
+}
+
+.director__text {
+  margin-bottom: 20px;
+  position: relative;
+  padding: 20px;
+  line-height: 21px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.director__text::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 26%;
+  width: 0;
+  height: 0;
+  border-width: 24px 11px 0 12px;
+  border-color: #FFFFFFFF transparent transparent transparent;
+  border-style: solid;
+  transform: rotate(-20deg);
+}
+
+.director__text .orange {
+  border-bottom: 1px solid #F26422;
+}
+
+.director__text a {
+  text-decoration: none;
+}
+
+.director__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 21px;
+}
+
+.director__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.director__position {
+  font-size: 12px;
+  text-align: right;
+  line-height: 15px;
+}
+
+.director__position .block {
+  display: block;
+}
+
+.director__img {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+}
+
+.director-form {
+  padding: 75px 35px 0 30px;
+}
+
+.director-form__title {
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.director-form__info {
+  line-height: 21px;
+}
+
+.director-form__info span {
+  font-weight: 500;
+}
+
+/* end -------------------------------------------- director section ---------------------------------------------------- */
+/* start -------------------------------------------- best price section ------------------------------------------------ */
+.best-price-section {
+  display: none;
+}
+
+/* end -------------------------------------------- best price section -------------------------------------------------- */
 /* start -------------------------------------------- measuring section ------------------------------------------------ */
 .measuring {
   position: relative;
@@ -681,134 +860,6 @@ button {
 }
 
 /* end -------------------------------------------- measuring section -------------------------------------------------- */
-/* start -------------------------------------------- schedule section ------------------------------------------------- */
-.schedule-section {
-  padding-top: 40px;
-  padding-bottom: 55px;
-}
-
-.schedule__tabs {
-  margin-bottom: 35px;
-}
-
-.schedule__tab.active span {
-  color: #F26422;
-  border-bottom: 1px solid #F26422;
-}
-
-.schedule__tab span {
-  color: #CDCDCD;
-  font-size: 18px;
-  border-bottom: 1px solid #CDCDCD;
-  cursor: pointer;
-}
-
-.schedule__tab:first-child {
-  margin-bottom: 20px;
-}
-
-.schedule__content {
-  margin-bottom: 30px;
-}
-
-.schedule__small {
-  margin-bottom: 10px;
-  color: #CDCDCD;
-}
-
-.schedule__big {
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.schedule__map {
-  margin-bottom: 45px;
-}
-
-.schedule__map iframe {
-  width: 100%;
-  min-height: 177px;
-}
-
-.schedule__subtitle {
-  margin-bottom: 20px;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 500;
-}
-
-.schedule__text {
-  line-height: 21px;
-}
-
-.schedule__text:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.work-schedule {
-  margin-bottom: 35px;
-}
-
-.work-schedule li {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.work-schedule li::before {
-  content: '';
-  display: inline-block;
-  width: 23px;
-  height: 23px;
-  margin-right: 20px;
-  border-radius: 50%;
-  border: 1px solid #ABABAB;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.work-schedule li:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.work-schedule__time-icon::before {
-  background-image: url("../img/schedule-time-icon.svg");
-}
-
-.work-schedule__phone-icon::before {
-  background-image: url("../img/schedule-phone-icon.svg");
-}
-
-.work-schedule__email-icon::before {
-  background-image: url("../img/schedule-email-icon.svg");
-}
-
-.work-schedule__contacts-icon::before {
-  background-image: url("../img/schedule-contacts-icon.svg");
-}
-
-.work-schedule__schedule-work {
-  margin-bottom: 10px;
-}
-
-.work-schedule__phone, .work-schedule__email {
-  text-decoration: none;
-}
-
-.work-schedule__phone {
-  font-size: 25px;
-}
-
-.work-schedule__email {
-  border-bottom: 1px solid #F26422;
-}
-
-.work-schedule__contacts {
-  max-width: 230px;
-  line-height: 21px;
-}
-
-/* end -------------------------------------------- schedule section ---------------------------------------------------- */
 /* start -------------------------------------------- free consultation section ----------------------------------------- */
 .free-consultation {
   padding: 30px 15px;
@@ -1558,180 +1609,135 @@ button {
   line-height: 19px;
 }
 
-/* end -------------------------------------------- advantages section -------------------------------------------------- */
-/* start------------------------------------------- director section ---------------------------------------------------- */
-.director {
-  padding: 30px 15px;
-  background-color: #F5F5F5;
-  border-radius: 3px;
+/* end -------------------------------------------- advantages section --------------------------------------------------*/
+/* start -------------------------------------------- schedule section ------------------------------------------------- */
+.schedule-section {
+  padding-top: 40px;
+  padding-bottom: 55px;
 }
 
-.director-section {
-  margin-bottom: 55px;
+.schedule__tabs {
+  margin-bottom: 35px;
 }
 
-.director-box {
-  background-color: #F5F5F5;
-}
-
-.director__text {
-  margin-bottom: 20px;
-  position: relative;
-  padding: 20px;
-  line-height: 21px;
-  border-radius: 6px;
-  background-color: #ffffff;
-  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-}
-
-.director__text::before {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  right: 26%;
-  width: 0;
-  height: 0;
-  border-width: 24px 11px 0 12px;
-  border-color: #FFFFFFFF transparent transparent transparent;
-  border-style: solid;
-  transform: rotate(-20deg);
-}
-
-.director__text .orange {
+.schedule__tab.active span {
+  color: #F26422;
   border-bottom: 1px solid #F26422;
 }
 
-.director__text a {
-  text-decoration: none;
-}
-
-.director__right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  column-gap: 21px;
-}
-
-.director__name {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.director__position {
-  font-size: 12px;
-  text-align: right;
-  line-height: 15px;
-}
-
-.director__position .block {
-  display: block;
-}
-
-.director__img {
-  width: 81px;
-  height: 81px;
-  border-radius: 50%;
-}
-
-.director-form {
-  padding: 75px 35px 0 30px;
-}
-
-.director-form__title {
-  margin-bottom: 28px;
-  text-align: left;
-}
-
-.director-form__info {
-  line-height: 21px;
-}
-
-.director-form__info span {
-  font-weight: 500;
-}
-
-/* end -------------------------------------------- director section ---------------------------------------------------- */
-/* start ------------------------------------------ categories section -------------------------------------------------- */
-.categories {
-  max-width: 345px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 41px;
-}
-
-.categories-section {
-  margin-bottom: 55px;
-}
-
-.categories li {
-  margin-bottom: 35px;
-  text-align: center;
-  width: 44%;
+.schedule__tab span {
+  color: #CDCDCD;
+  font-size: 18px;
+  border-bottom: 1px solid #CDCDCD;
   cursor: pointer;
 }
 
-.categories li:hover .categories__img {
-  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+.schedule__tab:first-child {
+  margin-bottom: 20px;
 }
 
-.categories__link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+.schedule__content {
+  margin-bottom: 30px;
 }
 
-.categories__img {
-  margin-bottom: 18px;
-  width: 150px;
-  transition: filter 0.3s ease;
+.schedule__small {
+  margin-bottom: 10px;
+  color: #CDCDCD;
 }
 
-.categories__title {
-  margin-bottom: 15px;
+.schedule__big {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.schedule__map {
+  margin-bottom: 45px;
+}
+
+.schedule__map iframe {
+  width: 100%;
+  min-height: 177px;
+}
+
+.schedule__subtitle {
+  margin-bottom: 20px;
   font-size: 19px;
-  font-weight: 500;
-  text-decoration: underline;
-}
-
-.categories__price {
-  margin-bottom: 18px;
-}
-
-.categories__price-text {
-  font-size: 18px;
-}
-
-.categories__price-text .orange {
+  line-height: 24px;
   font-weight: 500;
 }
 
-.categories__price-small {
-  font-size: 13px;
-  color: #ABABAB;
+.schedule__text {
+  line-height: 21px;
 }
 
-.categories__number {
-  font-size: 28px;
+.schedule__text:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-.categories__offer {
-  padding: 7px 17px;
-  background-color: #F9F9F9;
-  border-radius: 3px;
+.work-schedule {
+  margin-bottom: 35px;
 }
 
-.categories__offer-small {
-  margin-bottom: 4px;
+.work-schedule li {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.categories__offer-big {
-  font-weight: 500;
+.work-schedule li::before {
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 1px solid #ABABAB;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* end -------------------------------------------- categories section ------------------------------------------------ */
+.work-schedule li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.work-schedule__time-icon::before {
+  background-image: url("../img/schedule-time-icon.svg");
+}
+
+.work-schedule__phone-icon::before {
+  background-image: url("../img/schedule-phone-icon.svg");
+}
+
+.work-schedule__email-icon::before {
+  background-image: url("../img/schedule-email-icon.svg");
+}
+
+.work-schedule__contacts-icon::before {
+  background-image: url("../img/schedule-contacts-icon.svg");
+}
+
+.work-schedule__schedule-work {
+  margin-bottom: 10px;
+}
+
+.work-schedule__phone, .work-schedule__email {
+  text-decoration: none;
+}
+
+.work-schedule__phone {
+  font-size: 25px;
+}
+
+.work-schedule__email {
+  border-bottom: 1px solid #F26422;
+}
+
+.work-schedule__contacts {
+  max-width: 230px;
+  line-height: 21px;
+}
+
+/* end -------------------------------------------- schedule section ---------------------------------------------------- */
 @media (min-width: 768px) {
   /* start -------------------------------------------- basic -------------------------------------------------------*/
   .container {
@@ -1825,6 +1831,11 @@ button {
     right: 7.3%;
   }
   /* end -------------------------------------------- header popup --------------------------------------------------- */
+  /* start -------------------------------------------- warning section ---------------------------------------------- */
+  .warning__text {
+    font-size: 18px;
+  }
+  /* end -------------------------------------------- warning section ------------------------------------------------ */
   /* start ------------------------------------------ banner section ------------------------------------------------- */
   .banner {
     display: flex;
@@ -1942,11 +1953,128 @@ button {
     left: 9px;
   }
   /* end -------------------------------------------- banner windows section ----------------------------------------- */
-  /* start -------------------------------------------- warning section ---------------------------------------------- */
-  .warning__text {
+  /* end -------------------------------------------- categories section -------------------------------------------- */
+  .categories {
+    max-width: 708px;
+    column-gap: 28px;
+  }
+  .categories li {
+    width: 22%;
+  }
+  /* end -------------------------------------------- categories section --------------------------------------------- */
+  /* start -------------------------------------------- director section-------------------------------------------- */
+  .director {
+    display: flex;
+    column-gap: 31px;
+    align-items: start;
+    padding: 40px 35px 40px 30px;
+  }
+  .director__left {
+    width: 94%;
+  }
+  .director__text {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .director__text::before {
+    bottom: 34.3%;
+    right: -18px;
+    border-width: 27px 18px 0 8px;
+    transform: rotate(-121deg);
+  }
+  .director__right {
+    width: 22%;
+    flex-direction: column;
+  }
+  .director__position {
+    text-align: left;
+  }
+  .director__img {
+    margin-bottom: 21px;
+    width: 100px;
+    height: 100px;
+    order: -1;
+  }
+  .director-form__title {
+    margin-bottom: 56px;
+  }
+  .director-form__info {
+    margin-bottom: 44px;
     font-size: 18px;
   }
-  /* end -------------------------------------------- warning section ---------------------------------------------- */
+  .director-form .form {
+    margin-bottom: 0;
+    display: flex;
+    column-gap: 20px;
+  }
+  .director-form .form__phone {
+    min-width: 238px;
+    margin-bottom: 0;
+  }
+  .director-form .form__btn {
+    min-width: 238px;
+  }
+  /* end -------------------------------------------- director section----------------------------------------------- */
+  /* start -------------------------------------------- best price section ------------------------------------------ */
+  .best-price {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    border-radius: 3px;
+  }
+  .best-price-section {
+    margin-bottom: 75px;
+    display: block;
+  }
+  .best-price .title {
+    font-weight: 700;
+  }
+  .best-price__title-1 {
+    max-width: 161px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 35px;
+    text-align: left;
+    line-height: 40px;
+  }
+  .best-price__title-2 {
+    margin-bottom: 11px;
+    font-size: 32px;
+    text-align: right;
+  }
+  .best-price__img {
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    transform: translateX(-50%);
+  }
+  .best-price__content {
+    position: relative;
+    z-index: 1;
+    max-width: 356px;
+    text-align: right;
+  }
+  .best-price__subtitle {
+    margin-bottom: 11px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  .best-price__text {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 13px;
+    max-width: 223px;
+    margin-left: auto;
+  }
+  /* end -------------------------------------------- best price section --------------------------------------------- */
   /* start -------------------------------------------- measuring section -------------------------------------------- */
   .measuring {
     display: flex;
@@ -2017,31 +2145,7 @@ button {
     font-size: 18px;
     line-height: 25px;
   }
-  /* end -------------------------------------------- measuring section ------------------------------------------- */
-  /* start -------------------------------------------- schedule section ------------------------------------------ */
-  .schedule__tabs {
-    display: flex;
-  }
-  .schedule__tab:first-child {
-    margin-right: 57px;
-  }
-  .schedule__map {
-    margin-bottom: 60px;
-  }
-  .schedule__map iframe {
-    min-height: 363px;
-  }
-  .schedule__subtitle {
-    font-size: 21px;
-  }
-  .schedule__text {
-    font-size: 18px;
-    line-height: 25px;
-  }
-  .work-schedule {
-    margin-bottom: 50px;
-  }
-  /* end -------------------------------------------- schedule section -------------------------------------------- */
+  /* end -------------------------------------------- measuring section ---------------------------------------------- */
   /* start -------------------------------------------- free consultation section --------------------------------- */
   .free-consultation {
     display: grid;
@@ -2382,69 +2486,30 @@ button {
     margin-bottom: 14px;
   }
   /* end -------------------------------------------- advantages section ------------------------------------------- */
-  /* start -------------------------------------------- director section-------------------------------------------- */
-  .director {
+  /* start -------------------------------------------- schedule section ------------------------------------------ */
+  .schedule__tabs {
     display: flex;
-    column-gap: 31px;
-    align-items: start;
-    padding: 40px 35px 40px 30px;
   }
-  .director__left {
-    width: 94%;
+  .schedule__tab:first-child {
+    margin-right: 57px;
   }
-  .director__text {
-    padding: 30px;
+  .schedule__map {
+    margin-bottom: 60px;
+  }
+  .schedule__map iframe {
+    min-height: 363px;
+  }
+  .schedule__subtitle {
+    font-size: 21px;
+  }
+  .schedule__text {
     font-size: 18px;
     line-height: 25px;
   }
-  .director__text::before {
-    bottom: 34.3%;
-    right: -18px;
-    border-width: 27px 18px 0 8px;
-    transform: rotate(-121deg);
+  .work-schedule {
+    margin-bottom: 50px;
   }
-  .director__right {
-    width: 22%;
-    flex-direction: column;
-  }
-  .director__position {
-    text-align: left;
-  }
-  .director__img {
-    margin-bottom: 21px;
-    width: 100px;
-    height: 100px;
-    order: -1;
-  }
-  .director-form__title {
-    margin-bottom: 56px;
-  }
-  .director-form__info {
-    margin-bottom: 44px;
-    font-size: 18px;
-  }
-  .director-form .form {
-    margin-bottom: 0;
-    display: flex;
-    column-gap: 20px;
-  }
-  .director-form .form__phone {
-    min-width: 238px;
-    margin-bottom: 0;
-  }
-  .director-form .form__btn {
-    min-width: 238px;
-  }
-  /* end -------------------------------------------- director section----------------------------------------------- */
-  /* end -------------------------------------------- categories section -------------------------------------------- */
-  .categories {
-    max-width: 708px;
-    column-gap: 28px;
-  }
-  .categories li {
-    width: 22%;
-  }
-  /* end -------------------------------------------- categories section --------------------------------------------- */
+  /* end -------------------------------------------- schedule section -------------------------------------------- */
 }
 
 @media (min-width: 1024px) {
@@ -2455,11 +2520,6 @@ button {
     margin-right: auto;
   }
   /* end -------------------------------------------- basic --------------------------------------------------------- */
-  /* start -------------------------------------------- warning section ---------------------------------------------- */
-  .warning__text {
-    font-size: 18px;
-  }
-  /* end -------------------------------------------- warning section ------------------------------------------------ */
   /* start -------------------------------------------- header section ----------------------------------------------- */
   .header .calc {
     column-gap: 30px;
@@ -2498,6 +2558,11 @@ button {
     display: none;
   }
   /* end -------------------------------------------- header section ------------------------------------------------- */
+  /* start -------------------------------------------- warning section ---------------------------------------------- */
+  .warning__text {
+    font-size: 18px;
+  }
+  /* end -------------------------------------------- warning section ------------------------------------------------ */
   /* start ------------------------------------------ banner section ------------------------------------------------- */
   .banner__img {
     width: 52%;
@@ -2539,6 +2604,112 @@ button {
     left: 12px;
   }
   /* end -------------------------------------------- banner windows section ----------------------------------------- */
+  /* start------------------------------------------ categories section ---------------------------------------------- */
+  .categories {
+    max-width: 960px;
+  }
+  .categories li {
+    width: 22.8%;
+  }
+  .categories__img {
+    width: 200px;
+  }
+  .categories__title {
+    margin-bottom: 10px;
+  }
+  /* end -------------------------------------------- categories section --------------------------------------------- */
+  /* start -------------------------------------------- director section--------------------------------------------- */
+  .director {
+    padding: 50px 69px 40px 40px;
+    column-gap: 55px;
+  }
+  .director-box .director {
+    padding-top: 37px;
+    padding-right: 50px;
+    column-gap: 67px;
+  }
+  .director-box .director__text {
+    padding: 42px;
+  }
+  .director-box .director__img {
+    margin-bottom: 15px;
+    width: 168px;
+    height: 168px;
+  }
+  .director-box .director__right {
+    margin-top: -29px;
+  }
+  .director__left {
+    width: 77.1%;
+  }
+  .director__text {
+    padding: 40px;
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .director__text::before {
+    bottom: 66.8%;
+  }
+  .director__right {
+    width: 16.5%;
+  }
+  .director__content {
+    transform: translateX(-15px);
+  }
+  .director__img {
+    width: 137px;
+    height: 137px;
+  }
+  .director__name, .director__position {
+    font-size: 18px;
+  }
+  .director__name {
+    margin-bottom: 14px;
+  }
+  .director__position {
+    line-height: 22px;
+  }
+  .director--dmitriev .director__right {
+    width: 20.6%;
+  }
+  .director-form {
+    padding-left: 42px;
+  }
+  .director-form .form__phone, .director-form .form__btn {
+    min-width: 250px;
+  }
+  /* end -------------------------------------------- director section------------------------------------------------ */
+  /* start -------------------------------------------- best price section ------------------------------------------ */
+  .best-price {
+    padding-left: 37px;
+    padding-right: 44px;
+    min-height: 280px;
+  }
+  .best-price-section {
+    margin-bottom: 100px;
+  }
+  .best-price__title-1 {
+    margin-top: -14px;
+    max-width: 205px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .best-price__title-2 {
+    margin-bottom: 19px;
+  }
+  .best-price__content {
+    margin-top: -8px;
+  }
+  .best-price__subtitle {
+    margin-bottom: 14px;
+  }
+  .best-price__text {
+    line-height: 15px;
+  }
+  .best-price__img {
+    left: 45.5%;
+  }
+  /* end -------------------------------------------- best price section -------------------------------------------- */
   /* start -------------------------------------------- measuring section -------------------------------------------- */
   .measuring {
     margin-bottom: 45px;
@@ -2598,35 +2769,6 @@ button {
     margin-bottom: 31px;
   }
   /* end -------------------------------------------- measuring section --------------------------------------------- */
-  /* start -------------------------------------------- schedule section -------------------------------------------- */
-  .schedule__box {
-    display: grid;
-    grid-template-columns: 272px 633px;
-    column-gap: 55px;
-  }
-  .schedule__tabs, .schedule__content, .schedule__map {
-    margin-bottom: 0;
-  }
-  .schedule__tabs {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-  .schedule__content {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-  }
-  .schedule__map iframe {
-    min-height: 266px;
-  }
-  .schedule__about {
-    margin-top: 75px;
-    grid-column: span 2;
-  }
-  .work-schedule {
-    align-self: flex-end;
-    margin-bottom: 0;
-  }
-  /* end -------------------------------------------- schedule section ---------------------------------------------- */
   /* start -------------------------------------------- free consultation section ----------------------------------- */
   .free-consultation {
     padding: 58px 40px;
@@ -2866,81 +3008,35 @@ button {
     line-height: 25px;
   }
   /* end -------------------------------------------- advantages section ------------------------------------------- */
-  /* start -------------------------------------------- director section--------------------------------------------- */
-  .director {
-    padding: 50px 69px 40px 40px;
+  /* start -------------------------------------------- schedule section -------------------------------------------- */
+  .schedule__box {
+    display: grid;
+    grid-template-columns: 272px 633px;
     column-gap: 55px;
   }
-  .director-box .director {
-    padding-top: 37px;
-    padding-right: 50px;
-    column-gap: 67px;
+  .schedule__tabs, .schedule__content, .schedule__map {
+    margin-bottom: 0;
   }
-  .director-box .director__text {
-    padding: 42px;
+  .schedule__tabs {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
   }
-  .director-box .director__img {
-    margin-bottom: 15px;
-    width: 168px;
-    height: 168px;
+  .schedule__content {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
   }
-  .director-box .director__right {
-    margin-top: -29px;
+  .schedule__map iframe {
+    min-height: 266px;
   }
-  .director__left {
-    width: 77.1%;
+  .schedule__about {
+    margin-top: 75px;
+    grid-column: span 2;
   }
-  .director__text {
-    padding: 40px;
-    font-size: 21px;
-    line-height: 30px;
+  .work-schedule {
+    align-self: flex-end;
+    margin-bottom: 0;
   }
-  .director__text::before {
-    bottom: 66.8%;
-  }
-  .director__right {
-    width: 16.5%;
-  }
-  .director__content {
-    transform: translateX(-15px);
-  }
-  .director__img {
-    width: 137px;
-    height: 137px;
-  }
-  .director__name, .director__position {
-    font-size: 18px;
-  }
-  .director__name {
-    margin-bottom: 14px;
-  }
-  .director__position {
-    line-height: 22px;
-  }
-  .director--dmitriev .director__right {
-    width: 20.6%;
-  }
-  .director-form {
-    padding-left: 42px;
-  }
-  .director-form .form__phone, .director-form .form__btn {
-    min-width: 250px;
-  }
-  /* end -------------------------------------------- director section----------------------------------------------- */
-  /* start------------------------------------------ categories section ---------------------------------------------- */
-  .categories {
-    max-width: 960px;
-  }
-  .categories li {
-    width: 22.8%;
-  }
-  .categories__img {
-    width: 200px;
-  }
-  .categories__title {
-    margin-bottom: 10px;
-  }
-  /* end -------------------------------------------- categories section --------------------------------------------- */
+  /* end -------------------------------------------- schedule section ---------------------------------------------- */
 }
 
 @media (min-width: 1200px) {
