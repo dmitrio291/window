@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-display: swap;
   font-family: "Core Sans N";
@@ -100,6 +101,12 @@ button {
 
 .btn--white {
   background-color: #fff;
+  color: #F26422;
+}
+
+.btn--orange {
+  background-color: transparent;
+  border: 2px solid #F26422;
   color: #F26422;
 }
 
@@ -642,6 +649,10 @@ button {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
 }
 
+.categories li:hover .categories__title {
+  color: #F26422;
+}
+
 .categories__link {
   display: block;
   text-decoration: none;
@@ -659,6 +670,7 @@ button {
   font-size: 19px;
   font-weight: 500;
   text-decoration: underline;
+  transition: 0.3s ease;
 }
 
 .categories__price {
@@ -790,6 +802,260 @@ button {
 }
 
 /* end -------------------------------------------- director section ---------------------------------------------------- */
+/* start ------------------------------------------ offer section ------------------------------------------------------- */
+.offer {
+  padding: 55px 15px;
+  background-color: #F0FAFF;
+  border-radius: 3px;
+}
+
+.offer-section {
+  margin-bottom: 35px;
+}
+
+.offer__title {
+  padding-bottom: 38px;
+  margin-bottom: 25px;
+  text-align: left;
+  border-bottom: 1px solid #ABABAB;
+}
+
+.offer__box {
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer__subtitle {
+  margin-bottom: 26px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.offer__subtitle .orange {
+  display: block;
+}
+
+.offer-big {
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.offer-big__img {
+  max-width: 100%;
+}
+
+.offer-big__item {
+  position: absolute;
+}
+
+.offer-big__item:first-of-type {
+  top: 107px;
+  left: 55px;
+  max-width: 109px;
+}
+
+.offer-big__item:nth-of-type(2) {
+  top: 78px;
+  left: 181px;
+  max-width: 102px;
+}
+
+.offer-big__item:nth-of-type(3) {
+  bottom: 52px;
+  left: 163px;
+  max-width: 109px;
+}
+
+.offer-big__content {
+  margin-bottom: 4px;
+}
+
+.offer-big__discount {
+  position: absolute;
+  bottom: 14px;
+  left: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 97px;
+  height: 97px;
+  border: 1.5px solid #F26422;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #F26422;
+}
+
+.offer-big__logo {
+  margin-bottom: 7px;
+  margin-top: 5px;
+  max-width: 57px;
+}
+
+.offer-big__text {
+  position: relative;
+  font-size: 15px;
+}
+
+.offer-big__text::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #F26422;
+  border-radius: 20px;
+}
+
+.offer-big__percent {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.offer-text {
+  display: inline-block;
+  padding: 1.5px 4px;
+  font-size: 12px;
+  line-height: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.offer-text span {
+  position: relative;
+}
+
+.offer-text span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #F26422;
+}
+
+.offer-text-2 {
+  padding: 1.5px 4px;
+  background-color: #ABABAB;
+  color: #ffffff;
+  font-size: 10px;
+  text-align: center;
+}
+
+.offer-price {
+  padding: 2px 4px;
+  background-color: #F26422;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.offer-price::before {
+  content: 'от';
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.offer-price::after {
+  content: '₽';
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.offer-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.offer-list li {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.offer-list li:first-child .offer-list__content {
+  position: absolute;
+  bottom: 31px;
+  right: 0;
+}
+
+.offer-list li:nth-child(2) .offer-list__prices {
+  left: 7px;
+}
+
+.offer-list li:nth-child(5), .offer-list li:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.offer-list__img {
+  display: block;
+  margin-bottom: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer-list__prices {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  min-width: 85px;
+}
+
+.offer-list__content {
+  max-width: 101px;
+}
+
+.offer-list .offer-text-2 {
+  margin-bottom: 3px;
+}
+
+.offer-list__bonus {
+  font-size: 12px;
+}
+
+.offer-advantages {
+  margin-bottom: 27px;
+}
+
+.offer-advantages li {
+  display: flex;
+  column-gap: 8px;
+}
+
+.offer-advantages li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.offer-advantages .bold {
+  font-weight: 500;
+}
+
+.offer-info__content {
+  margin-bottom: 25px;
+}
+
+.offer-info__title {
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.offer-info__text {
+  font-size: 14px;
+}
+
+.offer-info__btn {
+  width: 100%;
+}
+
+/* end -------------------------------------------- offer section ------------------------------------------------------- */
 /* start -------------------------------------------- best price section ------------------------------------------------ */
 .best-price-section {
   display: none;
@@ -1954,7 +2220,7 @@ button {
     left: 9px;
   }
   /* end -------------------------------------------- banner windows section ----------------------------------------- */
-  /* end -------------------------------------------- categories section -------------------------------------------- */
+  /* end -------------------------------------------- categories section --------------------------------------------- */
   .categories {
     max-width: 708px;
     column-gap: 28px;
@@ -1963,7 +2229,7 @@ button {
     width: 22%;
   }
   /* end -------------------------------------------- categories section --------------------------------------------- */
-  /* start -------------------------------------------- director section-------------------------------------------- */
+  /* start -------------------------------------------- director section---------------------------------------------- */
   .director {
     display: flex;
     column-gap: 31px;
@@ -2017,6 +2283,80 @@ button {
     min-width: 238px;
   }
   /* end -------------------------------------------- director section----------------------------------------------- */
+  /* start ------------------------------------------ offer section -------------------------------------------------- */
+  .offer {
+    padding: 70px 30px;
+  }
+  .offer-section {
+    margin-bottom: 45px;
+  }
+  .offer__title {
+    margin-bottom: 18px;
+    padding-bottom: 42px;
+  }
+  .offer__box {
+    max-width: 648px;
+    display: grid;
+    column-gap: 34px;
+    grid-template-areas: 'offer-img offer-subtitle' 'offer-img offer-list' 'offer-advantages offer-list' 'offer-info offer-list';
+  }
+  .offer-big {
+    grid-area: offer-img;
+    margin-top: 13px;
+    width: 306px;
+  }
+  .offer-big__item:first-of-type {
+    top: 100px;
+    left: 46px;
+  }
+  .offer-big__item:nth-of-type(2) {
+    top: 70px;
+    left: 172px;
+  }
+  .offer-big__item:nth-of-type(3) {
+    bottom: 56px;
+    left: 154px;
+  }
+  .offer-big__discount {
+    bottom: 19px;
+    left: 19px;
+    width: 92px;
+    height: 92px;
+  }
+  .offer-big__text {
+    font-size: 14px;
+  }
+  .offer-big__percent {
+    font-size: 27px;
+  }
+  .offer__subtitle {
+    grid-area: offer-subtitle;
+    margin-bottom: 21px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .offer-list {
+    grid-area: offer-list;
+    margin-bottom: 0;
+  }
+  .offer-list li {
+    margin-bottom: 19px;
+  }
+  .offer-advantages {
+    grid-area: offer-advantages;
+    margin-bottom: 30px;
+  }
+  .offer-info {
+    grid-area: offer-info;
+  }
+  .offer-info__content {
+    margin-bottom: 31px;
+  }
+  .offer-info__title {
+    margin-bottom: 6px;
+  }
+  /* end ------------------------------------------ offer section ---------------------------------------------------- */
   /* start -------------------------------------------- best price section ------------------------------------------ */
   .best-price {
     position: relative;
@@ -2680,6 +3020,124 @@ button {
     min-width: 250px;
   }
   /* end -------------------------------------------- director section------------------------------------------------ */
+  /* start ------------------------------------------ offer section -------------------------------------------------- */
+  .offer {
+    padding: 75px 40px;
+  }
+  .offer-section {
+    margin-bottom: 60px;
+  }
+  .offer__title {
+    padding-bottom: 45px;
+  }
+  .offer__box {
+    position: relative;
+    max-width: none;
+    grid-template-areas: 'offer-img offer-subtitle' 'offer-img offer-list' 'offer-img offer-list' 'offer-info offer-info' 'offer-advantages offer-advantages';
+  }
+  .offer-big {
+    margin-top: 26px;
+    width: 321px;
+  }
+  .offer-big__item:first-of-type {
+    top: 109px;
+    left: 62px;
+  }
+  .offer-big__item:nth-of-type(2) {
+    top: 79px;
+    left: 188px;
+  }
+  .offer-big__item:nth-of-type(3) {
+    bottom: 55px;
+    left: 161px;
+  }
+  .offer-big__discount {
+    bottom: 16px;
+    width: 100px;
+    height: 100px;
+  }
+  .offer-big__logo {
+    max-width: 62px;
+  }
+  .offer-big__text {
+    font-size: 15px;
+  }
+  .offer-big__percent {
+    font-size: 30px;
+  }
+  .offer__subtitle .orange {
+    display: inline-block;
+  }
+  .offer-list {
+    justify-content: flex-end;
+  }
+  .offer-list li {
+    margin-top: -16px;
+    margin-bottom: -11px;
+  }
+  .offer-list li:first-child {
+    order: 1;
+  }
+  .offer-list li:first-child .offer-list__content {
+    bottom: 45px;
+    right: -3px;
+  }
+  .offer-list li:nth-child(2) {
+    order: 5;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .offer-list li:nth-child(3) {
+    order: 4;
+  }
+  .offer-list li:nth-child(4) {
+    order: 3;
+  }
+  .offer-list li:nth-child(5) {
+    order: 2;
+    margin-left: 41px;
+    margin-right: 35px;
+  }
+  .offer-list li:last-child {
+    order: 6;
+  }
+  .offer-list__content {
+    margin-top: 6px;
+  }
+  .offer-advantages {
+    position: absolute;
+    bottom: 74px;
+    left: 280px;
+  }
+  .offer-advantages li {
+    flex-direction: row-reverse;
+  }
+  .offer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 23px;
+  }
+  .offer-info__content {
+    margin-bottom: 0;
+    margin-left: 16px;
+    min-width: 475px;
+  }
+  .offer-info__title {
+    margin-bottom: 5px;
+    font-size: 32px;
+  }
+  .offer-info__text {
+    margin-bottom: 4px;
+    margin-right: 5px;
+    font-size: 16px;
+    text-align: right;
+  }
+  .offer-info__btn {
+    max-width: 361px;
+  }
+  /* end ------------------------------------------ offer section ---------------------------------------------------- */
   /* start -------------------------------------------- best price section ------------------------------------------ */
   .best-price {
     padding-left: 37px;
