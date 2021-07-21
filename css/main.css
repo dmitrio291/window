@@ -208,10 +208,6 @@ button {
   display: none;
 }
 
-.header .calc li {
-  cursor: pointer;
-}
-
 .header-contacts li:not(:last-child) {
   cursor: pointer;
 }
@@ -1769,6 +1765,11 @@ button {
   }
   .header .calc li:last-child {
     display: none;
+  }
+  .header .calc__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
   }
   .header .calc__text {
     display: block;

@@ -200,12 +200,6 @@ button {
         display: none;
     }
 
-    .calc {
-        li {
-            cursor: pointer;
-        }
-    }
-
     &-contacts {
         li {
             &:not(:last-child) {
@@ -1851,6 +1845,12 @@ button {
                 &:last-child {
                     display: none;
                 }
+            }
+
+            &__link {
+                display: block;
+                text-decoration: none;
+                color: inherit;
             }
 
             &__text {
