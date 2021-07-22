@@ -307,19 +307,19 @@ button {
 }
 
 .phone {
-  display: block;
-  text-decoration: none;
-  color: inherit;
   text-align: right;
 }
 
 .phone .block {
   display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .phone .orange {
   font-size: 12px;
   border-bottom: 1px solid #F26422;
+  cursor: pointer;
 }
 
 .burger {
