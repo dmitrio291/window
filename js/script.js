@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 slideClass: 'windows-factory__slide',
                 wrapperClass: 'windows-factory__wrap',
                 pagination: {
-                    el: '.slider-controls__pagination',
+                    el: '.windows-factory__pagination',
                     type: 'bullets',
                     clickable: true
                 },
                 loop: true,
                 navigation: {
-                    nextEl: '.slider-controls__next',
-                    prevEl: '.slider-controls__prev'
+                    nextEl: '.windows-factory__next',
+                    prevEl: '.windows-factory__prev'
                 },
                 breakpoints: {
                     768: {
@@ -62,30 +62,39 @@ document.addEventListener('DOMContentLoaded', () => {
             windowsFactorySlider.dataset.mobile  = 'false';
         }
     }
-
-    // if (windowsFactorySlider) {
-    //     const swiper = new Swiper(windowsFactorySlider, {
-    //         slidesPerView: 1,
-    //         slideClass: 'windows-factory__slide',
-    //         wrapperClass: 'windows-factory__wrap',
-    //         pagination: {
-    //             el: '.windows-factory__pagination',
-    //             type: 'bullets',
-    //             clickable: true
-    //         },
-    //         loop: true,
-    //         navigation: {
-    //             nextEl: '.windows-factory__next',
-    //             prevEl: '.windows-factory__prev'
-    //         },
-    //         breakpoints: {
-    //             768: {
-    //                 slidesPerView: 2
-    //             }
-    //         }
-    //     }); 
-    // }
     /* end ---------------------------------- Скрипты для секции .windows-factory-section --------------------------- */
+
+    /* start ---------------------------------- Скрипты для секции .discounts-section ------------------------------- */
+    const discountsSlider = document.querySelector('.discounts-slider');
+
+    if (discountsSlider) {
+        const discountsSwiper = new Swiper(discountsSlider, {
+            slidesPerView: 1.25,
+            autoHeight: true,
+            spaceBetween: 1,
+            slideClass: 'discounts-slider__slide',
+            wrapperClass: 'discounts-slider__wrap',
+            pagination: {
+                el: '.discounts-slider__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.discounts-slider__next',
+                prevEl: '.discounts-slider__prev'
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.6
+                },
+                1024: {
+                    slidesPerView: 3.4
+                }
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .discounts-section --------------------------------- */
 
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
     const accordionToggles = document.querySelectorAll('.accordion__toggle');

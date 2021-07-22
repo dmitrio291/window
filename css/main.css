@@ -202,7 +202,6 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
-  max-width: 253px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -212,6 +211,7 @@ button {
   height: 15px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .slider-controls__prev {
@@ -1264,6 +1264,10 @@ button {
   width: 100%;
 }
 
+.windows-factory .slider-controls {
+  max-width: 253px;
+}
+
 /* end ------------------------------------------- windows-factory section ---------------------------------------------- */
 /* start ------------------------------------------- installment section ------------------------------------------------ */
 .installment-section {
@@ -1418,6 +1422,120 @@ button {
 }
 
 /* end ------------------------------------------- installment section -------------------------------------------------- */
+/* start -------------------------------------------- discounts section ------------------------------------------------- */
+.discounts {
+  padding: 55px 0 55px 15px;
+  background-color: #F0FAFF;
+  border-radius: 3px;
+}
+
+.discounts-section {
+  margin-bottom: 55px;
+}
+
+.discounts__title {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.discounts__text {
+  margin-bottom: 18px;
+  line-height: 21px;
+}
+
+.discounts-slider {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.discounts-slider__wrap {
+  display: flex;
+}
+
+.discounts-slider__slide {
+  height: 100%;
+  flex-shrink: 0;
+  padding: 9px;
+}
+
+.discounts-slider__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.discounts-slider__img {
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.discounts-slider__small {
+  margin-bottom: 12px;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  color: #ABABAB;
+}
+
+.discounts-slider__bold {
+  margin-bottom: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.discounts-slider__title {
+  margin-bottom: 6px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.discounts-slider__text {
+  margin-bottom: 22px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.discounts-slider__btn {
+  max-width: 215px;
+  margin-top: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.discounts-slider__btn:hover {
+  background-color: #F26422;
+  color: #ffffff;
+}
+
+.discounts-slider__prev {
+  margin-left: 9px;
+}
+
+.discounts-slider__next {
+  margin-right: 9px;
+}
+
+.discounts .slider-controls {
+  max-width: 500px;
+}
+
+.discounts__btn {
+  display: block;
+  width: 100%;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* end -------------------------------------------- discounts section --------------------------------------------------- */
 /* start -------------------------------------------- best price section ------------------------------------------------ */
 .best-price-section {
   display: none;
@@ -2898,6 +3016,36 @@ button {
     display: block;
   }
   /* end ------------------------------------------- installment section -------------------------------------------- */
+  /* start -------------------------------------------- discounts section ------------------------------------------- */
+  .discounts {
+    padding: 70px 0 70px 30px;
+  }
+  .discounts-section {
+    margin-bottom: 75px;
+  }
+  .discounts__title {
+    margin-bottom: 54px;
+  }
+  .discounts__text {
+    padding-right: 24px;
+  }
+  .discounts-slider {
+    margin-bottom: 45px;
+    max-width: none;
+  }
+  .discounts__text {
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .discounts__btn {
+    max-width: 257px;
+  }
+  .discounts .slider-controls {
+    margin-bottom: 43px;
+    max-width: 334px;
+  }
+  /* end -------------------------------------------- discounts section --------------------------------------------- */
   /* start -------------------------------------------- best price section ------------------------------------------ */
   .best-price {
     position: relative;
@@ -3722,6 +3870,14 @@ button {
     margin-bottom: 60px;
   }
   /* end ------------------------------------------- installment section -------------------------------------------- */
+  /* start ------------------------------------------- discounts section ------------------------------------------- */
+  .discounts {
+    padding-left: 38px;
+  }
+  .discounts-section {
+    margin-bottom: 100px;
+  }
+  /* end ------------------------------------------- discounts section -------------------------------------------- */
   /* start -------------------------------------------- best price section ------------------------------------------ */
   .best-price {
     padding-left: 37px;
