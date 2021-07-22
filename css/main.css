@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* start -------------------------------------------- fonts --------------------------------------------- */
 @font-face {
   font-display: swap;
   font-family: "Core Sans N";
@@ -44,6 +45,7 @@
   font-weight: 800;
 }
 
+/* end -------------------------------------------- fonts --------------------------------------------- */
 /* start -------------------------------------------- basic --------------------------------------------- */
 body {
   font-family: "Core Sans N", sans-serif;
@@ -195,6 +197,53 @@ button {
 }
 
 /* IE 10+ */
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  max-width: 253px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-controls__prev, .slider-controls__next {
+  width: 46px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-controls__prev {
+  background-image: url("../img/arrow-left.svg");
+}
+
+.slider-controls__next {
+  background-image: url("../img/arrow-right.svg");
+}
+
+.slider-controls__pagination {
+  display: flex;
+  align-items: center;
+}
+
+.slider-controls__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #CDCDCD;
+  opacity: 1;
+}
+
+.slider-controls__pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 11px;
+}
+
+.slider-controls__pagination .swiper-pagination-bullet-active {
+  width: 15px;
+  height: 15px;
+  background-color: #F26422;
+}
+
 /* end ---------------------------------------------- basic ------------------------------------------------------------ */
 /* start -------------------------------------------- header section---------------------------------------------------- */
 .header {
@@ -1071,6 +1120,150 @@ button {
 }
 
 /* end -------------------------------------------- about section ------------------------------------------------------- */
+/* start ----------------------------------------- windows-factory section ---------------------------------------------- */
+.windows-factory {
+  position: relative;
+  background-color: #F9F9F9;
+  padding: 55px 15px;
+}
+
+.windows-factory-section {
+  margin-bottom: 35px;
+}
+
+.windows-factory__box {
+  position: relative;
+}
+
+.windows-factory__slider, .windows-factory__btn {
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.windows-factory__slider {
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.windows-factory__wrap {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  flex-wrap: nowrap;
+}
+
+.windows-factory__slide {
+  flex-shrink: 0;
+}
+
+.windows-factory__slide.padding {
+  padding: 9px;
+}
+
+.windows-factory__content.border-right {
+  border-right: 1px solid #CDCDCD;
+}
+
+.windows-factory__content.helper {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.windows-factory__content.helper .windows-factory__list li {
+  justify-content: space-between;
+}
+
+.windows-factory__content.helper .windows-factory__text {
+  color: #48494B;
+}
+
+.windows-factory__content.helper .windows-factory__bold {
+  font-size: 21px;
+}
+
+.windows-factory__content.helper .windows-factory__price {
+  font-size: 28px;
+}
+
+.windows-factory__content.helper .windows-factory__price::before, .windows-factory__content.helper .windows-factory__price::after {
+  color: #ABABAB;
+}
+
+.windows-factory__logo {
+  text-align: center;
+  padding: 20px 20px 7px;
+}
+
+.windows-factory__title {
+  font-size: 18px;
+  padding: 19px 20px 16px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.windows-factory__list li {
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 22px;
+}
+
+.windows-factory__text {
+  font-size: 14px;
+  color: #ABABAB;
+}
+
+.windows-factory__icon {
+  margin-top: -6px;
+  position: relative;
+  top: 3px;
+}
+
+.windows-factory__bold {
+  font-size: 18px;
+}
+
+.windows-factory__bold.before {
+  position: relative;
+}
+
+.windows-factory__bold.before::before {
+  content: 'от';
+  margin-right: 8px;
+  font-size: 18px;
+  color: #ABABAB;
+}
+
+.windows-factory__price {
+  position: relative;
+  font-size: 21px;
+}
+
+.windows-factory__price::before, .windows-factory__price::after {
+  font-size: 18px;
+}
+
+.windows-factory__price::before {
+  content: 'от';
+  margin-right: 9px;
+}
+
+.windows-factory__price::after {
+  content: '₽';
+  margin-left: 6px;
+}
+
+.windows-factory__btn {
+  display: block;
+  width: 100%;
+}
+
+/* end ------------------------------------------- windows-factory section ---------------------------------------------- */
 /* start -------------------------------------------- best price section ------------------------------------------------ */
 .best-price-section {
   display: none;
@@ -2384,6 +2577,29 @@ button {
     line-height: 25px;
   }
   /* end ------------------------------------------- about section---------------------------------------------------- */
+  /* start ----------------------------------------- windows-factory section ---------------------------------------- */
+  .windows-factory-section {
+    margin-bottom: 45px;
+  }
+  .windows-factory__slider {
+    margin-bottom: 31px;
+    max-width: 670px;
+  }
+  .windows-factory__list li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .windows-factory__list li:not(:last-child) {
+    border-bottom: 1px solid #CDCDCD;
+  }
+  .windows-factory__content.helper .windows-factory__list li {
+    padding-top: 13.2px;
+    padding-bottom: 13.2px;
+  }
+  .windows-factory__btn {
+    max-width: 290px;
+  }
+  /* end ----------------------------------------- windows-factory section ------------------------------------------ */
   /* start -------------------------------------------- best price section ------------------------------------------ */
   .best-price {
     position: relative;
@@ -3165,6 +3381,32 @@ button {
     max-width: 361px;
   }
   /* end ------------------------------------------ offer section ---------------------------------------------------- */
+  /* start ----------------------------------------- windows-factory section ----------------------------------------- */
+  .windows-factory {
+    padding: 75px 40px 75px 20px;
+  }
+  .windows-factory-section {
+    margin-bottom: 59px;
+  }
+  .windows-factory__slider {
+    margin-bottom: 22px;
+    max-width: none;
+  }
+  .windows-factory__slide {
+    min-width: 300px;
+  }
+  .windows-factory__slide:first-child {
+    transform: translateX(9px);
+  }
+  .windows-factory__btn {
+    max-width: 287px;
+    margin-left: 16px;
+    margin-right: 0;
+  }
+  .windows-factory .slider-controls {
+    display: none;
+  }
+  /* end ----------------------------------------- windows-factory section ------------------------------------------- */
   /* start -------------------------------------------- best price section ------------------------------------------ */
   .best-price {
     padding-left: 37px;

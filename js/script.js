@@ -29,6 +29,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     /* end -------------------------------- Скрипты для секции .header ---------------------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .windows-factory-section ------------------------- */
+    const windowsFactorySlider = document.querySelector('.windows-factory__slider');
+
+    if (windowsFactorySlider) {
+        if (window.innerWidth <= 1023 && windowsFactorySlider.dataset.mobile === 'false') {
+            const windowsFactorySwiper = new Swiper(windowsFactorySlider, {
+                slidesPerView: 1,
+                slideClass: 'windows-factory__slide',
+                wrapperClass: 'windows-factory__wrap',
+                pagination: {
+                    el: '.slider-controls__pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                loop: true,
+                navigation: {
+                    nextEl: '.slider-controls__next',
+                    prevEl: '.slider-controls__prev'
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2
+                    }
+                }
+            });
+
+            windowsFactorySlider.dataset.mobile = 'true';
+        }
+
+        if (window.innerWidth > 1023) {
+            windowsFactorySlider.dataset.mobile  = 'false';
+        }
+    }
+
+    // if (windowsFactorySlider) {
+    //     const swiper = new Swiper(windowsFactorySlider, {
+    //         slidesPerView: 1,
+    //         slideClass: 'windows-factory__slide',
+    //         wrapperClass: 'windows-factory__wrap',
+    //         pagination: {
+    //             el: '.windows-factory__pagination',
+    //             type: 'bullets',
+    //             clickable: true
+    //         },
+    //         loop: true,
+    //         navigation: {
+    //             nextEl: '.windows-factory__next',
+    //             prevEl: '.windows-factory__prev'
+    //         },
+    //         breakpoints: {
+    //             768: {
+    //                 slidesPerView: 2
+    //             }
+    //         }
+    //     }); 
+    // }
+    /* end ---------------------------------- Скрипты для секции .windows-factory-section --------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
     const accordionToggles = document.querySelectorAll('.accordion__toggle');
     
