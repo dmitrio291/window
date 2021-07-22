@@ -379,6 +379,7 @@ button {
     padding-bottom: 30px;
     width: 100%;
     background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 
     &__content {
         position: relative;
@@ -1314,6 +1315,165 @@ button {
     }
 }
 /* end ------------------------------------------- windows-factory section ---------------------------------------------- */
+
+/* start ------------------------------------------- installment section ------------------------------------------------ */
+.installment {
+    &-section {
+        margin-bottom: 35px;
+
+        .installment {
+            background-color: #F9F9F9;
+            border-radius: 3px;
+        }
+    }
+
+    &__content {
+        padding: 55px 15px 11px;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+        text-align: left;
+
+        .orange {
+            display: block;
+        }
+    }
+
+    &__text {
+        padding-right: 18px;
+        margin-bottom: 24px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    &-list {
+        margin-bottom: 27px;
+
+        li {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1.5px solid #CDCDCD;
+
+            img {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+
+    &__accent {
+        margin-bottom: 27px;
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+    }
+
+    &__img {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(180deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .form {
+        &__btn {
+            margin-bottom: 15px;
+        }
+    }
+
+    // 2-ой вариант
+    &-windows-section {
+        position: relative;
+        margin-bottom: 35px;
+        background-image: url('../img/installment-bg-small.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90.11deg, #FFFFFF 0.09%, rgba(255, 255, 255, 0) 99.9%);
+        }
+
+        .installment {
+            padding: 55px 15px;
+            position: relative;
+
+            &__title {
+                margin-bottom: 16px;
+                font-weight: 700;
+            }
+
+            &__accent {
+                &:first-of-type {
+                    margin-bottom: 21px;
+                }
+
+                &:nth-of-type(2) {
+                    margin-bottom: 24px;
+                }
+
+                line-height: 21px;
+            }
+
+            &__text {
+                margin-bottom: 26px;
+                font-size: 22px;
+            }
+        }
+
+        .container {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .form {
+            max-width: 345px;
+        }
+    }
+
+    &__girl-img {
+        display: none;
+    }
+}
+/* end ------------------------------------------- installment section -------------------------------------------------- */
+
 
 /* start -------------------------------------------- best price section ------------------------------------------------ */
 .best-price {
@@ -2421,7 +2581,6 @@ button {
     /* start ------------------------------------------ header popup --------------------------------------------------- */
     .header-popup {
         max-width: 375px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 
         &__close {
             top: -9.8%;
@@ -2816,6 +2975,193 @@ button {
         }
     }
     /* end ----------------------------------------- windows-factory section ------------------------------------------ */
+
+    /* start ------------------------------------------- installment section ------------------------------------------ */
+    .installment {
+        &-section {
+            margin-bottom: 45px;
+
+            .installment {
+                display: flex;
+            }
+        }
+
+        &__wrap {
+            position: relative;
+            width: 60%;
+        }
+
+        &__content {
+            position: absolute;
+            top: 71px;
+            left: 30px;
+            z-index: 1;
+            min-width: 550px;
+            padding: 0;
+        }
+
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__text {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 13px;
+
+            li {               
+                max-width: 225px;
+                margin-bottom: 29px;
+
+                &:last-child {
+                    margin-bottom: 31px;
+                }
+
+                &:nth-child(1) {
+                    order: 1;
+                }
+
+                &:nth-child(2) {
+                    order: 3;
+                }
+
+                &:nth-child(3) {
+                    order: 2;
+                }
+
+                &:nth-child(4) {
+                    order: 4;
+                }
+            }
+
+            &__img {
+                flex-shrink: 0;
+                width: 40px;
+                height: 40px;
+
+                img {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+
+            &__text {
+                font-size: 18px;
+            }
+        }
+
+        &__accent {
+            margin-bottom: 34px;
+            font-size: 18px;
+        }
+
+        &__img {
+            width: 90%;
+            max-height: 580px;
+
+            &::before {
+                background: linear-gradient(90deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+                height: 100%;
+                width: 196px;
+            }
+        }
+
+        .form {
+            display: flex;
+            column-gap: 20px;
+            margin-bottom: 0;
+
+            &__btn {
+                margin-bottom: 0;
+            }
+
+            .btn {
+                min-width: 225px;
+            }
+        }
+
+        // 2-ой вариант
+        &-windows-section {
+            margin-bottom: 45px;
+            background-image: url("../img/installment-bg-middle.jpg");
+            position: relative;
+
+            .installment {
+                padding: 73px 30px;
+                margin-left: auto;
+                margin-right: auto;
+
+                &-list {
+                    margin-bottom: 0;
+
+                    li {
+                        max-width: 199px;
+                        margin-bottom: 29px;
+                    }
+
+                    &__text {                        
+                        font-size: 16px;
+                    }
+
+                    &__img {
+                        width: 35px;
+                        height: 35px;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+
+                &__accent {
+                    line-height: 25px;
+
+                    &:first-of-type {
+                        margin-bottom: 24px;
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 30px;
+                        padding-right: 13px;
+                    }
+                }
+
+                &__text {
+                    margin-bottom: 30px;
+                    font-size: 27px;
+                    line-height: 35px;
+                }
+
+                .form .btn {
+                    min-width: 192px;
+                }
+            }
+
+            .form {
+                &__btn {
+                    background-color: #ffffff;
+                }
+            }
+        }
+
+        &__left {
+            max-width: 422px;
+        }
+
+        &__girl-img {
+            position: absolute;
+            bottom: 0;
+            right: 30px;
+            display: block;
+        }
+    }
+    /* end ------------------------------------------- installment section -------------------------------------------- */
 
     /* start -------------------------------------------- best price section ------------------------------------------ */
     .best-price {
@@ -3887,6 +4233,31 @@ button {
     }
     /* end ----------------------------------------- windows-factory section ------------------------------------------- */
 
+    /* start ------------------------------------------- installment section ------------------------------------------ */
+    .installment {
+        &-section {
+            margin-bottom: 60px;
+        }
+
+        &__wrap {
+            width: 72%;
+        }
+
+        &__content {
+            left: 39px;
+        }
+
+        &__img {
+            width: 73%;
+        }
+
+        // 2-ой вариант
+        &-windows-section {
+            margin-bottom: 60px;
+        }
+    }
+    /* end ------------------------------------------- installment section -------------------------------------------- */
+
     /* start -------------------------------------------- best price section ------------------------------------------ */
     .best-price {
         padding-left: 37px;
@@ -4420,3 +4791,61 @@ button {
     }
     /* end -------------------------------------------- header section ------------------------------------------------- */
 }   
+
+@media (min-width: 1400px) {
+     /* start -------------------------------------------- installment section ---------------------------------------- */
+    //  2-ой вариант
+    .installment {
+        &-windows-section {
+            background-image: url("../img/installment-bg-big.jpg");
+            background-position: 270px 0;
+
+            &::before {
+                width: 59%;
+                background: linear-gradient(90.11deg, #FFFFFF 80.09%, rgba(255, 255, 255, 0) 99.9%);
+            }
+
+            .installment {
+                &__title {
+                    margin-bottom: 21px;
+                    font-size: 40px;
+                }
+
+                &__text {
+                    font-size: 32px;
+                    line-height: 45px;
+                }
+
+                &-list {
+                    margin-bottom: 12px;
+
+                    li {
+                        max-width: 225px;
+                    }
+
+                    &__text {
+                        font-size: 18px;
+                    }
+
+                    &__img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                .form .btn {
+                    min-width: 225px;
+                }
+            }
+        }
+
+        &__left {
+            max-width: 515px;
+        }
+
+        &__girl-img {
+            right: -31px;
+        }
+    }
+    /* end -------------------------------------------- installment section -------------------------------------------- */
+}
