@@ -2545,6 +2545,80 @@ button {
 }
 
 /* start -------------------------------------------- statistic section ------------------------------------------------ */
+/* start -------------------------------------------- sincere service section ------------------------------------------ */
+.sincere-service {
+  padding: 55px 15px;
+  position: relative;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url("../img/sincere-service-small.jpg");
+  color: #ffffff;
+}
+
+.sincere-service::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sincere-service__list {
+  position: relative;
+}
+
+.sincere-service__list li {
+  margin-bottom: 25px;
+}
+
+.sincere-service__content {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 15px;
+}
+
+.sincere-service__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.sincere-service__img::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #F26422;
+  border-radius: 50%;
+}
+
+.sincere-service__img img {
+  width: 22px;
+  height: 22px;
+}
+
+.sincere-service__title {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.sincere-service__text {
+  line-height: 21px;
+}
+
+/* end -------------------------------------------- sincere-service section -------------------------------------------- */
 /* start -------------------------------------------- schedule section ------------------------------------------------- */
 .schedule-section {
   padding-top: 40px;
@@ -3825,6 +3899,26 @@ button {
     line-height: 25px;
   }
   /* end -------------------------------------------- statistic section --------------------------------------------- */
+  /* start -------------------------------------------- sincere service section ------------------------------------- */
+  .sincere-service {
+    padding: 77px 30px 48px;
+    background-image: url("../img/sincere-service-middle.jpg");
+  }
+  .sincere-service::before {
+    width: 70%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
+  }
+  .sincere-service__list {
+    padding-right: 272px;
+  }
+  .sincere-service__list li {
+    margin-bottom: 28px;
+  }
+  .sincere-service__content {
+    margin-bottom: 17px;
+    column-gap: 28px;
+  }
+  /* end -------------------------------------------- sincere service section --------------------------------------- */
   /* start -------------------------------------------- schedule section ------------------------------------------- */
   .schedule__tabs {
     display: flex;
@@ -4582,7 +4676,46 @@ button {
   .statistic__list li:last-child {
     padding-left: 37px;
   }
-  /* end -------------------------------------------- statistic section ------------------------------------------ */
+  /* end -------------------------------------------- statistic section -------------------------------------------- */
+  /* start -------------------------------------------- sincere service section ------------------------------------- */
+  .sincere-service {
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-bottom: 56px;
+    background-image: url("../img/sincere-service-big.jpg");
+  }
+  .sincere-service::before {
+    width: 80%;
+  }
+  .sincere-service__img {
+    width: 45px;
+    height: 45px;
+  }
+  .sincere-service__img::before {
+    width: 50px;
+    height: 50px;
+  }
+  .sincere-service__img img {
+    width: 30px;
+    height: 30px;
+  }
+  .sincere-service__title {
+    font-size: 21px;
+  }
+  .sincere-service__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .sincere-service__list {
+    padding-right: 370px;
+  }
+  .sincere-service__list li {
+    margin-bottom: 23px;
+  }
+  .sincere-service__content {
+    column-gap: 36px;
+  }
+  /* end -------------------------------------------- sincere service section --------------------------------------- */
   /* start -------------------------------------------- schedule section -------------------------------------------- */
   .schedule__box {
     display: grid;
