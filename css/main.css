@@ -2411,6 +2411,83 @@ button {
 }
 
 /* end------------------------------------------- making-windows section ----------------------------------------------- */
+/* start----------------------------------------- any forms section ---------------------------------------------------- */
+.any-forms-section {
+  margin-bottom: 55px;
+}
+
+.any-forms__title {
+  margin-bottom: 38px;
+}
+
+.any-forms__text {
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.any-forms__img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.any-forms__img--1 {
+  width: 125px;
+}
+
+.any-forms__img--2 {
+  width: 155px;
+  transform: translateX(-9px);
+}
+
+.any-forms__img--3 {
+  width: 118px;
+}
+
+.any-forms__img--4 {
+  width: 153px;
+  transform: translateX(-8px);
+}
+
+.any-forms__list {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 27px;
+}
+
+.any-forms__list li {
+  width: 42%;
+}
+
+.any-forms__price {
+  text-align: center;
+  font-size: 23px;
+}
+
+.any-forms__price::before, .any-forms__price::after {
+  font-size: 16px;
+  color: #CDCDCD;
+}
+
+.any-forms__price::before {
+  content: 'от';
+  margin-right: 7px;
+}
+
+.any-forms__price::after {
+  content: '₽';
+  margin-left: 7px;
+}
+
+/* end------------------------------------------- any forms section ---------------------------------------------------- */
 /* start -------------------------------------------- schedule section ------------------------------------------------- */
 .schedule-section {
   padding-top: 40px;
@@ -3604,6 +3681,37 @@ button {
     transform: translateY(-7px);
   }
   /* end------------------------------------------- making windows section ----------------------------------------- */
+  /* start----------------------------------------- any forms section ---------------------------------------------- */
+  .any-forms-section {
+    margin-bottom: 75px;
+  }
+  .any-forms__title {
+    margin-bottom: 54px;
+  }
+  .any-forms__text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .any-forms__list {
+    max-width: 708px;
+  }
+  .any-forms__list li {
+    width: auto;
+  }
+  .any-forms__list li:nth-child(2) .any-forms__price {
+    transform: translateX(-7px);
+  }
+  .any-forms__list li:nth-child(3) .any-forms__price {
+    transform: translateX(-10px);
+  }
+  .any-forms__img--3 {
+    transform: translateX(-11px);
+  }
+  .any-forms__img--4 {
+    transform: translateX(0);
+  }
+  /* end----------------------------------------- any forms section ------------------------------------------------ */
   /* start -------------------------------------------- schedule section ------------------------------------------ */
   .schedule__tabs {
     display: flex;
@@ -4295,6 +4403,39 @@ button {
     line-height: 25px;
   }
   /* end -------------------------------------------- advantages section ------------------------------------------- */
+  /* start -------------------------------------------- any forms section ------------------------------------------ */
+  .any-forms-section {
+    margin-bottom: 100px;
+  }
+  .any-forms__text {
+    margin-bottom: 54px;
+  }
+  .any-forms__list {
+    max-width: none;
+  }
+  .any-forms__img {
+    margin-bottom: 24px;
+  }
+  .any-forms__img--1 {
+    width: 169px;
+  }
+  .any-forms__img--2 {
+    width: 210px;
+  }
+  .any-forms__img--3 {
+    width: 160px;
+    transform: translateX(-12px);
+  }
+  .any-forms__img--4 {
+    width: 210px;
+  }
+  .any-forms__price {
+    font-size: 32px;
+  }
+  .any-forms__price::before, .any-forms__price::after {
+    font-size: 21px;
+  }
+  /* end -------------------------------------------- any forms section -------------------------------------------- */
   /* start -------------------------------------------- schedule section -------------------------------------------- */
   .schedule__box {
     display: grid;

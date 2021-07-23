@@ -2505,6 +2505,86 @@ button {
 }
 /* end------------------------------------------- making-windows section ----------------------------------------------- */
 
+/* start----------------------------------------- any forms section ---------------------------------------------------- */
+.any-forms {
+    &-section {
+        margin-bottom: 55px;
+    }
+
+    &__title {
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        margin-bottom: 35px;
+        text-align: center;
+        line-height: 21px;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 18px;
+
+        &--1 {
+            width: 125px;
+        }
+
+        &--2 {
+            width: 155px;
+            transform: translateX(-9px);
+        }
+
+        &--3 {
+            width: 118px;
+        }
+
+        &--4 {
+            width: 153px;
+            transform: translateX(-8px);
+        }
+    }
+
+    &__list {
+        max-width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 27px;
+
+        li {
+            width: 42%;
+        }
+    }
+
+    &__price {
+        text-align: center;
+        font-size: 23px;
+
+        &::before,
+        &::after {
+            font-size: 16px;
+            color: #CDCDCD;
+        }
+
+        &::before {
+            content: 'от';
+            margin-right: 7px;
+        }
+
+        &::after {
+            content: '₽';
+            margin-left: 7px;
+        }
+    }
+}
+/* end------------------------------------------- any forms section ---------------------------------------------------- */
+
 /* start -------------------------------------------- schedule section ------------------------------------------------- */
 .schedule {
     &-section {
@@ -4018,6 +4098,58 @@ button {
     }
     /* end------------------------------------------- making windows section ----------------------------------------- */
 
+    /* start----------------------------------------- any forms section ---------------------------------------------- */
+    .any-forms {
+        &-section {
+            margin-bottom: 75px;
+        }
+
+        &__title {
+            margin-bottom: 54px;
+        }
+
+        &__text {
+            margin-bottom: 40px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        &__list {
+            max-width: 708px;
+
+            li {
+                width: auto;
+
+                &:nth-child(2) {
+                    .any-forms {
+                        &__price {
+                            transform: translateX(-7px);
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .any-forms {
+                        &__price {
+                            transform: translateX(-10px);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__img {
+            &--3 {
+                transform: translateX(-11px);
+            }
+
+            &--4 {
+                transform: translateX(0);
+            }
+        }
+    }
+    /* end----------------------------------------- any forms section ------------------------------------------------ */
+
     /* start -------------------------------------------- schedule section ------------------------------------------ */
     .schedule {
         &__tabs {
@@ -4976,6 +5108,52 @@ button {
         }
     }
     /* end -------------------------------------------- advantages section ------------------------------------------- */
+
+    /* start -------------------------------------------- any forms section ------------------------------------------ */
+    .any-forms {
+        &-section {
+            margin-bottom: 100px;
+        }
+
+        &__text {
+            margin-bottom: 54px;
+        }
+
+        &__list {
+            max-width: none;
+        }
+
+        &__img {
+            margin-bottom: 24px;
+
+            &--1 {
+                width: 169px;
+            }
+
+            &--2 {
+                width: 210px;
+            }
+
+            &--3 {
+                width: 160px;
+                transform: translateX(-12px);
+            }
+
+            &--4 {
+                width: 210px;
+            }
+        }
+
+        &__price {
+            font-size: 32px;
+
+            &::before,
+            &::after {
+                font-size: 21px;
+            }
+        }
+    }
+    /* end -------------------------------------------- any forms section -------------------------------------------- */
 
     /* start -------------------------------------------- schedule section -------------------------------------------- */
     .schedule {
