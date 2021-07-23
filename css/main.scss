@@ -2446,6 +2446,65 @@ button {
 }
 /* end -------------------------------------------- advantages section --------------------------------------------------*/
 
+/* start------------------------------------------- making windows section --------------------------------------------- */
+.making-windows {
+    position: relative;
+    z-index: 1;
+
+    &-section {
+        position: relative;
+        padding-top: 115px;
+        padding-bottom: 115px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/making-windows-small.jpg');
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 76%;
+            background: linear-gradient(180deg, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(0, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+
+    &__titles {
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-weight: 400;
+
+        &:first-child {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        display: block;
+        max-width: 345px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* end------------------------------------------- making-windows section ----------------------------------------------- */
+
 /* start -------------------------------------------- schedule section ------------------------------------------------- */
 .schedule {
     &-section {
@@ -3923,6 +3982,42 @@ button {
     }
     /* end -------------------------------------------- advantages section ------------------------------------------- */
 
+    /* start------------------------------------------- making windows section --------------------------------------- */
+    .making-windows {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        column-gap: 38px;
+
+        &-section {
+            margin-bottom: 45px;
+            padding-top: 115px;
+            padding-bottom: 115px;
+            background-image: url("../img/making-windows-middle.jpg");
+        }
+
+        &__titles,
+        &__title {
+            margin-bottom: 0;
+        }  
+
+        &__title {
+            font-size: 32px;
+
+            &:first-child {
+                margin-bottom: 28px;
+            }
+        }
+
+        &__btn {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 224px;
+            transform: translateY(-7px);
+        }
+    }
+    /* end------------------------------------------- making windows section ----------------------------------------- */
+
     /* start -------------------------------------------- schedule section ------------------------------------------ */
     .schedule {
         &__tabs {
@@ -5014,4 +5109,23 @@ button {
         }
     }
     /* end -------------------------------------------- installment section -------------------------------------------- */
+
+    /* start------------------------------------------- making windows section --------------------------------------- */
+    .making-windows {
+        &-section {
+            margin-bottom: 60px;
+            background-image: url("../img/making-windows-big.jpg");
+        }
+
+        &__title {
+            &:first-child {
+                margin-bottom: 38px;
+            }
+        }
+
+        &__btn {
+            max-width: 307px;
+        }
+    }
+    /* end------------------------------------------- making windows section ----------------------------------------- */
 }
