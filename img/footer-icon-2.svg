@@ -1,0 +1,29 @@
+<svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1" fill="white">
+<rect x="0.21875" width="27.5625" height="2.28629" rx="0.3"/>
+</mask>
+<rect x="0.21875" width="27.5625" height="2.28629" rx="0.3" stroke="#ABABAB" stroke-width="1.2" mask="url(#path-1-inside-1)"/>
+<mask id="path-2-inside-2" fill="white">
+<rect y="16.0039" width="28" height="2.06855" rx="0.3"/>
+</mask>
+<rect y="16.0039" width="28" height="2.06855" rx="0.3" stroke="#ABABAB" stroke-width="1.2" mask="url(#path-2-inside-2)"/>
+<path d="M11.59 2.01101V16.306H2.15938V2.01094L11.59 2.01101Z" stroke="#ABABAB" stroke-width="0.6"/>
+<rect x="3.47188" y="3.675" width="6.8375" height="10.7226" stroke="#ABABAB" stroke-width="0.6"/>
+<mask id="path-5-inside-3" fill="white">
+<rect x="7.98438" y="11.3223" width="2.625" height="1.52419" rx="0.3"/>
+</mask>
+<rect x="7.98438" y="11.3223" width="2.625" height="1.52419" rx="0.3" stroke="#ABABAB" stroke-width="1.2" mask="url(#path-5-inside-3)"/>
+<path d="M11.5656 2.00703L25.7312 2.00703V16.3091L11.5656 16.3316V2.00703Z" stroke="#ABABAB" stroke-width="0.6"/>
+<rect x="13.3156" y="3.89375" width="10.8844" height="10.5048" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M1.72188 17.8V17.8H26.2781V26.6999H1.72187L1.72188 17.8Z" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M3.55469 19.7051L3.55444 25.2575" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M10.5 19.7051V25.2574" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M17.3906 19.7051V25.2573" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M5.90625 19.7051V25.2574" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M12.8516 19.7051V25.2575" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M19.7422 19.7051L19.7419 25.257" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M8.20312 19.7051V25.2575" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M15.1484 19.7051V25.2574" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M22.0391 19.7051L22.0388 25.2575" stroke="#ABABAB" stroke-width="0.6"/>
+<path d="M24.2812 19.7051V25.2574" stroke="#ABABAB" stroke-width="0.6"/>
+</svg>

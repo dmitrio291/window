@@ -58,6 +58,18 @@
 	font-style: normal;
 	font-weight: 800;
 }
+
+@font-face {
+    font-display: swap;
+	font-family: "Montserrat";
+	src: url("../fonts/Montserrat/Montserrat-Medium.eot");
+	src: url("../fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"),
+        url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"),
+		url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
 /* end -------------------------------------------- fonts --------------------------------------------- */
 
 /* start -------------------------------------------- basic --------------------------------------------- */
@@ -2851,7 +2863,140 @@ button {
         line-height: 21px;
     }
 }
-/* end -------------------------------------------- schedule section ---------------------------------------------------- */
+/* end -------------------------------------------- schedule section --------------------------------------------------- */
+
+/* start -------------------------------------------- footer ----------------------------------------------------------- */
+.footer {
+    background-color: #F9F9F9;
+
+    &__menu {
+        padding: 22px 10px;
+        border-bottom: 1px solid #ABABAB;;
+    }
+
+    &-nav {
+        &__list {
+            max-width: 325px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+
+        li {
+            width: 38.7%;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            text-decoration: none;
+            color: #48494B;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 15px;
+
+            .block {
+                display: block;
+            }
+        }
+    }
+
+    &__contacts {
+        padding: 22px 10px;
+        border-bottom: 1px solid #ABABAB;
+    }
+
+    &-contacts {
+        max-width: 325px;
+        margin-left: auto;
+        margin-right: auto;
+
+        li {
+            &:first-child {
+                display: flex;
+                column-gap: 15px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 19px;
+            }
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__links {
+            display: flex;
+            column-gap: 10px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+
+            &.orange {
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            &.border {
+                border-bottom: 1px solid #F26422;
+            }
+        }
+    }
+
+    &__payment {
+        padding: 22px 10px;
+
+        &-text {
+            display: none;
+        }
+    }
+
+    &-payment {
+        margin-bottom: 12px;
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__inner {
+        max-width: 325px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__copyright {
+        font-family: "Montserrat", sans-serif;
+        color: #AAAAAA;
+        font-size: 12px;
+        font-weight: 500;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            vertical-align: bottom;
+            margin-right: 10px;
+            width: 14px;
+            height: 14px;
+            background-image: url('../img/footer-copy.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+/* end -------------------------------------------- footer ------------------------------------------------------------- */
 
 @media (min-width: 768px) {
     /* start -------------------------------------------- basic -------------------------------------------------------*/
@@ -4413,6 +4558,113 @@ button {
         margin-bottom: 50px;
     }
     /* end -------------------------------------------- schedule section -------------------------------------------- */
+
+    /* start -------------------------------------------- footer ----------------------------------------------------- */
+    .footer {
+        &__menu {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-nav {
+            &__list {
+                max-width: none;
+            }
+
+            li {
+                width: auto;
+            }
+
+            a {
+                align-items: flex-end;
+            }
+        }
+
+        &__contacts {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-contacts {
+            max-width: none;
+            display: flex;
+            justify-content: space-between;
+
+            li {              
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                }
+
+                &:first-child {
+                    order: 2;
+                    width: 183px;
+                    align-items: flex-start;
+                }
+
+                &:nth-child(2) {
+                    order: 1;
+                    width: 230px;
+                }
+
+                &:last-child {
+                    order: 3;
+                    width: 170px;
+                    text-align: right;
+                }
+            }
+
+            &__icon {
+                margin-top: 3px;
+            }
+
+            &__box {
+                display: block;
+            }
+
+            &__links {
+                column-gap: 12px;
+            }
+        }
+
+        &__inner {
+            max-width: none;
+        }
+
+        &__box {
+            display: flex;
+            column-gap: 33px;
+            margin-bottom: 7px;
+        }
+
+        &__payment {
+            margin-top: 2px;
+            padding: 16px 0;
+
+            &-text {
+                display: block;
+                font-size: 14px;
+            }
+        }
+
+        &-payment {
+            margin-bottom: 0;
+            column-gap: 15px;
+        }
+
+        &__copyright {
+            font-family: 'Core Sans N';
+            font-size: 10px;
+            font-weight: 400;
+
+            &::before {
+                margin-right: 6px;
+                vertical-align: top;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+    /* end ------------------------------------------- footer -------------------------------------------------------- */
 }
 
 @media (min-width: 1024px) {
