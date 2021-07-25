@@ -2791,10 +2791,7 @@ button {
 .footer-nav__text {
   font-size: 14px;
   line-height: 15px;
-}
-
-.footer-nav__text .block {
-  display: block;
+  max-width: 42px;
 }
 
 .footer__contacts {

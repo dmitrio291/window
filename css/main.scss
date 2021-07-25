@@ -2900,10 +2900,7 @@ button {
         &__text {
             font-size: 14px;
             line-height: 15px;
-
-            .block {
-                display: block;
-            }
+            max-width: 42px;
         }
     }
 
