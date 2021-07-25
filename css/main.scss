@@ -1605,6 +1605,210 @@ button {
 }
 /* end -------------------------------------------- discounts section --------------------------------------------------- */
 
+/* start -------------------------------------------- choose own color section ------------------------------------------ */
+.choose-own-color {
+    margin-bottom: 55px;
+
+    &__container { 
+        position: relative;
+        padding: 55px 15px 25px;
+        border-radius: 3px;
+        
+        &.active {
+            background: url('../img/choose-own-middle-bg1.jpg') no-repeat top 206px right -367px/415px;
+        }
+    }
+
+    .title {
+        margin-bottom: 25px;
+        max-width: 236px;
+        text-align: left;
+    }
+
+    &__desc {
+        margin-bottom: 27px;
+        max-width: 304px;
+        line-height: 21px;
+    }
+
+    &__box,
+    &__content {
+        position: relative;
+    } 
+
+    &__box,
+    &__content {
+        z-index: 1;
+    }
+
+    &__accessory-box {
+        position: absolute;
+        top: 304px;
+        right: 0;
+        width: 114px;
+        height: 409px;
+        background-image: url('../img/choose-own-bg7.png');
+        background-size: 217px;
+        background-repeat: no-repeat;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__box {
+        margin-bottom: 23px;
+    }
+
+    &__content,
+    &__inner {
+        display: flex;
+    }
+
+    &__content {
+        margin-bottom: 24px;
+        align-items: flex-end;
+    }
+
+    &__text {
+        margin-right: 20px;
+        color: #F26422;
+    }
+
+    &__line,
+    &__circle {
+        background-color: #F26422;
+    }
+
+    &__line {
+        position: relative;
+        height: 2px;
+        transform: translateY(-0.3em);
+        flex-grow: 1;
+
+        &--accessory {
+            margin-right: 30px;
+        }
+
+        &--frame {
+            margin-right: 18px;
+        }
+    }
+
+    &__circle,
+    &__circle:after {
+        position: absolute;
+        border-radius: 50%;
+    }   
+
+    &__circle {
+        top: -4px;
+        right: 0;
+        width: 11px;
+        height: 11px;
+
+        &:after {
+            content: '';
+            top: -7px;
+            bottom: -7px;
+            left: -7px;
+            right: -7px;
+            background-color: rgba(242, 100, 34, 0.3);
+        }
+    }
+
+    &__icon {
+        display: block;
+        margin-bottom: 6px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        border: 2px solid transparent;
+        background-size: cover;
+
+        &--1 {
+            background-image: url('../img/choose-own-color-icon1.png');
+        }
+
+        &--2 {
+            background-image: url('../img/choose-own-color-icon2.png');
+        }
+
+        &--3 {
+            background-image: url('../img/choose-own-color-icon3.png');
+        }
+
+        &--4 {
+            background-image: url('../img/choose-own-color-icon4.png');
+        }
+
+        &--5 {
+            background-image: url('../img/choose-own-color-icon5.png');
+        }
+
+        &--6 {
+            background-image: url('../img/choose-own-color-icon6.png');
+        }
+
+        &--7 {
+            background-image: url('../img/choose-own-color-icon7.png');
+        }
+
+        &--8 {
+            background-image: url('../img/choose-own-color-icon8.png');
+        }
+
+        &--9 {
+            background-image: url('../img/choose-own-color-icon9.png');
+        }
+
+        &--10 {
+            background-image: url('../img/choose-own-color-icon10.png');
+        }
+
+        &--11 {
+            background-image: url('../img/choose-own-color-icon11.png');
+        }
+
+        &--12 {
+            background-image: url('../img/choose-own-color-icon12.png');
+        }
+    }
+
+    &__title {
+        letter-spacing: 0.5px;
+    }
+
+    &__inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 234px;
+
+        &--frame .choose-own-color__label.active .choose-own-color__icon,
+        &--accessory .choose-own-color__label.active .choose-own-color__icon {
+            border: 2px solid #F26422;
+        }
+
+        &--frame {
+            max-width: 223px;
+        }
+
+    }
+
+    &__label {
+        margin-bottom: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+/* end -------------------------------------------- choose own color section -------------------------------------------- */
+
 /* start -------------------------------------------- best price section ------------------------------------------------ */
 .best-price {
     &-section {
@@ -3731,6 +3935,83 @@ button {
     }
     /* end -------------------------------------------- discounts section --------------------------------------------- */
 
+    /* start -------------------------------------------- choose own color section ------------------------------------ */
+    .choose-own-color {
+        margin-bottom: 75px;
+
+        &__container {
+            padding: 75px 30px;
+
+            &.active {
+                background: url('../img/choose-own-big-bg1.jpg') no-repeat top 0 right -810px/2256px;
+            }
+        }
+
+        .title {
+            margin-bottom: 41px;
+        }
+
+        &__desc {
+            margin-bottom: 42px;
+            line-height: 25px;
+        }
+
+        &__accessory-box {
+            top: 149px;
+            right: 17px;
+            width: 219px;
+            height: 413px;
+            background-size: 218px;
+        }
+
+        .title {
+            max-width: 400px;
+        }
+
+        &__desc {
+            font-size: 18px;
+            max-width: 470px;
+        }
+
+        &__box {
+            margin-bottom: 18px;
+        }
+
+        &__content {
+            margin-bottom: 22px;
+        }
+
+        &__inner {
+            max-width: 419px;
+        }
+
+        &__text {
+            margin-right: 25px;
+            font-size: 18px;
+        }
+
+        &__line {
+            &--frame {
+                margin-right: 110px;
+            }
+
+            &--accessory {
+                margin-right: 170px;
+            }
+        }
+
+        &__icon {
+            margin-bottom: 11px;
+            width: 58px;
+            height: 58px;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
+    }
+    /* end -------------------------------------------- choose own color section -------------------------------------- */
+
     /* start -------------------------------------------- best price section ------------------------------------------ */
     .best-price {
         position: relative;
@@ -5128,6 +5409,64 @@ button {
          }
      }
       /* end ------------------------------------------- discounts section -------------------------------------------- */
+
+    /* start -------------------------------------------- choose own color section ------------------------------------ */
+    .choose-own-color {
+        margin-bottom: 100px;
+
+        &__container {
+            &.active {
+                background: url('../img/choose-own-big-bg1.jpg') no-repeat top 0 right -674px/2194px;
+            }
+        }
+
+        .title {
+            max-width: none;
+        }
+
+        &__desc {
+            max-width: 570px;
+        }
+
+        &__box {
+            margin-bottom: 13px;
+        }
+
+        &__content {
+            margin-bottom: 32px;
+        }
+
+        &__line {
+            &--frame {
+                margin-right: 204px;
+            }
+
+            &--accessory {
+                margin-right: 267px;
+            }
+        }
+
+        &__inner {
+            max-width: 545px;
+        }
+
+        &__icon {
+            margin-bottom: 15px;
+            width: 65px;
+            height: 65px;
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__accessory-box {
+            right: 118px;
+            top: 143px;
+            background-size: 213px;
+        }
+    }
+    /* end -------------------------------------------- choose own color section -------------------------------------- */
 
     /* start -------------------------------------------- best price section ------------------------------------------ */
     .best-price {

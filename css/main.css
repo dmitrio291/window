@@ -1545,6 +1545,204 @@ button {
 }
 
 /* end -------------------------------------------- discounts section --------------------------------------------------- */
+/* start -------------------------------------------- choose own color section ------------------------------------------ */
+.choose-own-color {
+  margin-bottom: 55px;
+}
+
+.choose-own-color__container {
+  position: relative;
+  padding: 55px 15px 25px;
+  border-radius: 3px;
+}
+
+.choose-own-color__container.active {
+  background: url("../img/choose-own-middle-bg1.jpg") no-repeat top 206px right -367px/415px;
+}
+
+.choose-own-color .title {
+  margin-bottom: 25px;
+  max-width: 236px;
+  text-align: left;
+}
+
+.choose-own-color__desc {
+  margin-bottom: 27px;
+  max-width: 304px;
+  line-height: 21px;
+}
+
+.choose-own-color__box, .choose-own-color__content {
+  position: relative;
+}
+
+.choose-own-color__box, .choose-own-color__content {
+  z-index: 1;
+}
+
+.choose-own-color__accessory-box {
+  position: absolute;
+  top: 304px;
+  right: 0;
+  width: 114px;
+  height: 409px;
+  background-image: url("../img/choose-own-bg7.png");
+  background-size: 217px;
+  background-repeat: no-repeat;
+}
+
+.choose-own-color__input {
+  display: none;
+}
+
+.choose-own-color__icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.choose-own-color__box {
+  margin-bottom: 23px;
+}
+
+.choose-own-color__content, .choose-own-color__inner {
+  display: flex;
+}
+
+.choose-own-color__content {
+  margin-bottom: 24px;
+  align-items: flex-end;
+}
+
+.choose-own-color__text {
+  margin-right: 20px;
+  color: #F26422;
+}
+
+.choose-own-color__line, .choose-own-color__circle {
+  background-color: #F26422;
+}
+
+.choose-own-color__line {
+  position: relative;
+  height: 2px;
+  transform: translateY(-0.3em);
+  flex-grow: 1;
+}
+
+.choose-own-color__line--accessory {
+  margin-right: 30px;
+}
+
+.choose-own-color__line--frame {
+  margin-right: 18px;
+}
+
+.choose-own-color__circle, .choose-own-color__circle:after {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.choose-own-color__circle {
+  top: -4px;
+  right: 0;
+  width: 11px;
+  height: 11px;
+}
+
+.choose-own-color__circle:after {
+  content: '';
+  top: -7px;
+  bottom: -7px;
+  left: -7px;
+  right: -7px;
+  background-color: rgba(242, 100, 34, 0.3);
+}
+
+.choose-own-color__icon {
+  display: block;
+  margin-bottom: 6px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  border: 2px solid transparent;
+  background-size: cover;
+}
+
+.choose-own-color__icon--1 {
+  background-image: url("../img/choose-own-color-icon1.png");
+}
+
+.choose-own-color__icon--2 {
+  background-image: url("../img/choose-own-color-icon2.png");
+}
+
+.choose-own-color__icon--3 {
+  background-image: url("../img/choose-own-color-icon3.png");
+}
+
+.choose-own-color__icon--4 {
+  background-image: url("../img/choose-own-color-icon4.png");
+}
+
+.choose-own-color__icon--5 {
+  background-image: url("../img/choose-own-color-icon5.png");
+}
+
+.choose-own-color__icon--6 {
+  background-image: url("../img/choose-own-color-icon6.png");
+}
+
+.choose-own-color__icon--7 {
+  background-image: url("../img/choose-own-color-icon7.png");
+}
+
+.choose-own-color__icon--8 {
+  background-image: url("../img/choose-own-color-icon8.png");
+}
+
+.choose-own-color__icon--9 {
+  background-image: url("../img/choose-own-color-icon9.png");
+}
+
+.choose-own-color__icon--10 {
+  background-image: url("../img/choose-own-color-icon10.png");
+}
+
+.choose-own-color__icon--11 {
+  background-image: url("../img/choose-own-color-icon11.png");
+}
+
+.choose-own-color__icon--12 {
+  background-image: url("../img/choose-own-color-icon12.png");
+}
+
+.choose-own-color__title {
+  letter-spacing: 0.5px;
+}
+
+.choose-own-color__inner {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 234px;
+}
+
+.choose-own-color__inner--frame .choose-own-color__label.active .choose-own-color__icon,
+.choose-own-color__inner--accessory .choose-own-color__label.active .choose-own-color__icon {
+  border: 2px solid #F26422;
+}
+
+.choose-own-color__inner--frame {
+  max-width: 223px;
+}
+
+.choose-own-color__label {
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* end -------------------------------------------- choose own color section -------------------------------------------- */
 /* start -------------------------------------------- best price section ------------------------------------------------ */
 .best-price-section {
   display: none;
@@ -3448,6 +3646,65 @@ button {
     max-width: 334px;
   }
   /* end -------------------------------------------- discounts section --------------------------------------------- */
+  /* start -------------------------------------------- choose own color section ------------------------------------ */
+  .choose-own-color {
+    margin-bottom: 75px;
+  }
+  .choose-own-color__container {
+    padding: 75px 30px;
+  }
+  .choose-own-color__container.active {
+    background: url("../img/choose-own-big-bg1.jpg") no-repeat top 0 right -810px/2256px;
+  }
+  .choose-own-color .title {
+    margin-bottom: 41px;
+  }
+  .choose-own-color__desc {
+    margin-bottom: 42px;
+    line-height: 25px;
+  }
+  .choose-own-color__accessory-box {
+    top: 149px;
+    right: 17px;
+    width: 219px;
+    height: 413px;
+    background-size: 218px;
+  }
+  .choose-own-color .title {
+    max-width: 400px;
+  }
+  .choose-own-color__desc {
+    font-size: 18px;
+    max-width: 470px;
+  }
+  .choose-own-color__box {
+    margin-bottom: 18px;
+  }
+  .choose-own-color__content {
+    margin-bottom: 22px;
+  }
+  .choose-own-color__inner {
+    max-width: 419px;
+  }
+  .choose-own-color__text {
+    margin-right: 25px;
+    font-size: 18px;
+  }
+  .choose-own-color__line--frame {
+    margin-right: 110px;
+  }
+  .choose-own-color__line--accessory {
+    margin-right: 170px;
+  }
+  .choose-own-color__icon {
+    margin-bottom: 11px;
+    width: 58px;
+    height: 58px;
+  }
+  .choose-own-color__title {
+    font-size: 14px;
+  }
+  /* end -------------------------------------------- choose own color section -------------------------------------- */
   /* start -------------------------------------------- best price section ------------------------------------------ */
   .best-price {
     position: relative;
@@ -4497,6 +4754,48 @@ button {
     margin-bottom: 100px;
   }
   /* end ------------------------------------------- discounts section -------------------------------------------- */
+  /* start -------------------------------------------- choose own color section ------------------------------------ */
+  .choose-own-color {
+    margin-bottom: 100px;
+  }
+  .choose-own-color__container.active {
+    background: url("../img/choose-own-big-bg1.jpg") no-repeat top 0 right -674px/2194px;
+  }
+  .choose-own-color .title {
+    max-width: none;
+  }
+  .choose-own-color__desc {
+    max-width: 570px;
+  }
+  .choose-own-color__box {
+    margin-bottom: 13px;
+  }
+  .choose-own-color__content {
+    margin-bottom: 32px;
+  }
+  .choose-own-color__line--frame {
+    margin-right: 204px;
+  }
+  .choose-own-color__line--accessory {
+    margin-right: 267px;
+  }
+  .choose-own-color__inner {
+    max-width: 545px;
+  }
+  .choose-own-color__icon {
+    margin-bottom: 15px;
+    width: 65px;
+    height: 65px;
+  }
+  .choose-own-color__title {
+    font-size: 16px;
+  }
+  .choose-own-color__accessory-box {
+    right: 118px;
+    top: 143px;
+    background-size: 213px;
+  }
+  /* end -------------------------------------------- choose own color section -------------------------------------- */
   /* start -------------------------------------------- best price section ------------------------------------------ */
   .best-price {
     padding-left: 37px;
