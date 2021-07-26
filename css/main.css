@@ -1545,6 +1545,12 @@ button {
 }
 
 /* end -------------------------------------------- discounts section --------------------------------------------------- */
+/* start ------------------------------------------- profile section ---------------------------------------------------- */
+.profile-section {
+  display: none;
+}
+
+/* end ------------------------------------------- profile section ------------------------------------------------------ */
 /* start -------------------------------------------- choose own color section ------------------------------------------ */
 .choose-own-color {
   margin-bottom: 55px;
@@ -4753,7 +4759,101 @@ button {
   .discounts-section {
     margin-bottom: 100px;
   }
-  /* end ------------------------------------------- discounts section -------------------------------------------- */
+  /* end ------------------------------------------- discounts section ---------------------------------------------- */
+  /* start ------------------------------------------- profile section ---------------------------------------------- */
+  .profile-section {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .profile__wrap {
+    border-bottom: 1px solid #CDCDCD;
+  }
+  .profile__title {
+    margin-bottom: 50px;
+  }
+  .profile-content {
+    margin-bottom: 30px;
+    line-height: 25px;
+  }
+  .profile-content p,
+  .profile-content li {
+    font-size: 18px;
+  }
+  .profile-content li {
+    padding-left: 26px;
+    position: relative;
+  }
+  .profile-content li::before {
+    content: '.';
+    position: absolute;
+    top: -11px;
+    left: 7px;
+    font-size: 36px;
+  }
+  .profile__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .profile__text.mb0 {
+    margin-bottom: 0;
+  }
+  .profile__text.mb-15 {
+    margin-bottom: 19px;
+  }
+  .profile__text .orange {
+    font-weight: 500;
+  }
+  .profile__bold {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .profile__second-title {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+  .profile__box {
+    display: none;
+  }
+  .profile__box.active {
+    display: block;
+  }
+  .profile__btn {
+    display: block;
+    padding: 10.5px 20px;
+    min-width: 216px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    color: #ABABAB;
+    text-align: center;
+    background-color: #F9F9F9;
+    cursor: pointer;
+    border: 1px solid #CDCDCD;
+    border-top: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #F26422;
+  }
+  .profile__btn svg {
+    width: 12px;
+    height: 8px;
+    margin-left: 4px;
+    fill: none;
+    stroke: #F26422;
+    stroke-width: 1.5;
+  }
+  .profile__btn.active {
+    color: #ABABAB;
+  }
+  .profile__btn.active svg {
+    stroke: #ABABAB;
+    transform: rotate(180deg);
+  }
+  /* end ------------------------------------------- profile section ------------------------------------------------ */
   /* start -------------------------------------------- choose own color section ------------------------------------ */
   .choose-own-color {
     margin-bottom: 100px;

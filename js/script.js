@@ -96,6 +96,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .discounts-section --------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .profile-section --------------------------------- */
+    const profileBox = document.querySelector('.profile__box');
+    const profileBtn = document.querySelector('.profile__btn');
+    const profileBtnText = document.querySelector('.profile__btn .text');
+
+    if (profileBtn) {
+        profileBtn.addEventListener('click', () => {
+            profileBox.classList.toggle('active');
+            profileBtn.classList.toggle('active');
+    
+            if (profileBtn.dataset.options === 'hidden') {
+                profileBtnText.textContent = 'Свернуть';
+                profileBtn.dataset.options = 'visible';
+            } else if (profileBtn.dataset.options === 'visible') {
+                profileBtnText.textContent = 'Подробнее';
+                profileBtn.dataset.options = 'hidden';
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .profile-section ----------------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .choose-own-color -------------------------------- */
     const colorsFrame = document.querySelectorAll('[data-frame="frame"]'),
         colorsAccessory = document.querySelectorAll('[data-accessory="accessory"]'),
