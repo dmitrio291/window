@@ -142,47 +142,47 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 if (window.matchMedia("(max-width: 767px)").matches) {
                     if (color.dataset.color === 'cherry') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-middle-bg1.jpg') no-repeat top 206px right -367px/1215px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-1.png') no-repeat top 206px right -336px/520px";
                     } else if (color.dataset.color === 'oak') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-middle-bg2.jpg') no-repeat top 206px right -367px/1215px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-2.png') no-repeat top 206px right -336px/520px";
                     } else if (color.dataset.color === 'chestnut') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-middle-bg3.jpg') no-repeat top 206px right -367px/1215px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-3.png') no-repeat top 206px right -336px/520px";
                     } else if (color.dataset.color === 'pine') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-middle-bg4.jpg') no-repeat top 206px right -367px/1215px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-4.png') no-repeat top 206px right -336px/520px";
                     } else if (color.dataset.color === 'alder') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-middle-bg5.jpg') no-repeat top 206px right -367px/1215px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-5.png') no-repeat top 206px right -336px/520px";
                     } else if (color.dataset.color === 'maple') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-middle-bg6.jpg') no-repeat top 206px right -367px/1215px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-6.png') no-repeat top 206px right -336px/520px";
                     }
                 }
                 if (window.matchMedia("(min-width: 768px) and (max-width: 1023px)").matches) {
                     if (color.dataset.color === 'cherry') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg1.jpg') no-repeat top 0 right -810px/2256px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-1.png') no-repeat top 0 right -105px/329px";
                     } else if (color.dataset.color === 'oak') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg2.jpg') no-repeat top 0 right -810px/2256px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-2.png') no-repeat top 0 right -105px/343px";
                     } else if (color.dataset.color === 'chestnut') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg3.jpg') no-repeat top 0 right -810px/2256px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-3.png') no-repeat top 0 right -105px/356px";
                     } else if (color.dataset.color === 'pine') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg4.jpg') no-repeat top 0 right -810px/2256px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-4.png') no-repeat top 0 right -105px/356px";
                     } else if (color.dataset.color === 'alder') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg5.jpg') no-repeat top 0 right -810px/2256px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-5.png') no-repeat top 0 right -105px/356px";
                     } else if (color.dataset.color === 'maple') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg6.jpg') no-repeat top 0 right -810px/2256px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-6.png') no-repeat top 0 right -105px/356px";
                     }
                 }
                 if (window.matchMedia("(min-width: 1024px)").matches) {
                     if (color.dataset.color === 'cherry') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg1.jpg') no-repeat top 0 right -674px/2194px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-1.png') no-repeat top 0 right 0/322px";
                     } else if (color.dataset.color === 'oak') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg2.jpg') no-repeat top 0 right -674px/2194px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-2.png') no-repeat top 0 right 0/331px";
                     }  else if (color.dataset.color === 'chestnut') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg3.jpg') no-repeat top 0 right -674px/2194px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-3.png') no-repeat top 0 right 0/343px";
                     } else if (color.dataset.color === 'pine') {
-                        chooseOwnColorContainer.style.background = "url('iurl('img/choose-own-big-bg4.jpg') no-repeat top 0 right -674px/2194px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-4.png') no-repeat top 0 right 0/343px";
                     } else if (color.dataset.color === 'alder') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg5.jpg') no-repeat top 0 right -674px/2194px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-5.png') no-repeat top 0 right 0/343px";
                     } else if (color.dataset.color === 'maple') {
-                        chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg6.jpg') no-repeat top 0 right -674px/2194px";
+                        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-6.png') no-repeat top 0 right 0/343px";
                     }                         
                 }                
                 colors.forEach((color) => {
@@ -195,14 +195,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (chooseOwnColorContainer) {
         chooseOwnColorContainer.classList.remove('active');
-        chooseOwnColorContainer.style.background = "url('img/choose-own-middle-bg1.jpg') no-repeat top 206px right -367px/1215px";
+        chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-1.png') no-repeat top 206px right -336px/520px";
         
         if (window.matchMedia("(min-width: 768px)").matches) {
-            chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg1.jpg') no-repeat top 0 right -810px/2256px";                    
+            chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-1.png') no-repeat top 0 right -105px/334px";                    
         }
 
-        if (window.matchMedia("(min-width: 1023px)").matches) {
-            chooseOwnColorContainer.style.background = "url('img/choose-own-big-bg1.jpg') no-repeat top 0 right -674px/2194px";  
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+            chooseOwnColorContainer.style.background = "#F9F9F9 url('img/choose-own-bg-1.png') no-repeat top 0 right 0/322px";  
         }
 
         activeChooseOwnColor(colorsFrame);
