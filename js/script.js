@@ -224,6 +224,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .sketches-section ---------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .reviews-section --------------------------------- */
+    const reviewsSlider = document.querySelector('.reviews-slider');
+    if (reviewsSlider) {
+        const reviewsSwiper = new Swiper(reviewsSlider, {
+            slidesPerView: 1.20,
+            spaceBetween: 10,
+            autoplay: true,
+            slideClass: 'reviews-slider__slide',
+            wrapperClass: 'reviews-slider__wrap',
+            pagination: {
+                el: '.reviews-slider__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.reviews-slider__next',
+                prevEl: '.reviews-slider__prev'
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.4,
+                    spaceBetween: 15
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .reviews-section ----------------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
     const accordionToggles = document.querySelectorAll('.accordion__toggle');
     

@@ -2929,6 +2929,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &-section {
         position: relative;
+        margin-bottom: 55px;
         padding-top: 55px;
         padding-bottom: 55px;
         background-repeat: no-repeat;
@@ -2979,6 +2980,65 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* start -------------------------------------------- statistic section ------------------------------------------------ */
+
+/* start -------------------------------------------- reviews section -------------------------------------------------- */
+.reviews {
+    &-section {
+        margin-bottom: 55px;
+    }
+
+    &__title {
+        margin-bottom: 39px;
+    }
+
+    &-slider {
+        margin-bottom: 21px;
+        overflow: hidden;
+        max-width: 345px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__wrap {
+            display: flex;
+        }
+
+        &__slide {
+            flex-shrink: 0;
+        }
+
+        &__video {
+            margin-bottom: 20px;
+            height: 183px;
+            width: 100%;
+            border: none;
+            border-radius: 3px;
+            background-image: url('../img/reviews-slider-img.jpg');
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 25px;
+
+            &.gray {
+                color: #CDCDCD;
+            }
+        }
+    }
+
+    .slider-controls {
+        max-width: 312px;
+    }
+}
+/* end -------------------------------------------- reviews section ---------------------------------------------------- */
 
 /* start -------------------------------------------- sincere service section ------------------------------------------ */
 .sincere-service {
@@ -4897,6 +4957,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start -------------------------------------------- statistic section ------------------------------------------- */
     .statistic {
         &-section {
+            margin-bottom: 75px;
             padding-top: 75px;
             padding-bottom: 75px;
             background-image: url("../img/statistic-bg-middle.jpg");
@@ -4966,6 +5027,29 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- statistic section --------------------------------------------- */
+
+    /* start -------------------------------------------- reviews section --------------------------------------------- */
+    .reviews {
+        margin-bottom: 75px;
+
+        &__title {
+            margin-bottom: 57px;
+        }
+
+        &-slider {
+            margin-bottom: 32px;
+            max-width: 708px;
+
+            &__video {
+                margin-bottom: 17px;
+            }
+
+            &__text {
+                padding-right: 2px;
+            }
+        }
+    }
+    /* end -------------------------------------------- reviews section ----------------------------------------------- */
 
     /* start -------------------------------------------- sincere service section ------------------------------------- */
     .sincere-service {
@@ -6379,6 +6463,22 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- statistic section -------------------------------------------- */
+
+    /* start -------------------------------------------- reviews section --------------------------------------------- */
+    .reviews {
+        &__title {
+            margin-bottom: 55px;
+        }
+
+        &-slider {
+            max-width: 960px;
+
+            &__video {
+                height: 199px;
+            }
+        }
+    }
+    /* end -------------------------------------------- reviews section ----------------------------------------------- */
 
     /* start -------------------------------------------- sincere service section ------------------------------------- */
     .sincere-service {

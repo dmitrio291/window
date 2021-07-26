@@ -2818,6 +2818,7 @@ input:focus:-ms-input-placeholder {
 
 .statistic-section {
   position: relative;
+  margin-bottom: 55px;
   padding-top: 55px;
   padding-bottom: 55px;
   background-repeat: no-repeat;
@@ -2868,6 +2869,63 @@ input:focus:-ms-input-placeholder {
 }
 
 /* start -------------------------------------------- statistic section ------------------------------------------------ */
+/* start -------------------------------------------- reviews section -------------------------------------------------- */
+.reviews-section {
+  margin-bottom: 55px;
+}
+
+.reviews__title {
+  margin-bottom: 39px;
+}
+
+.reviews-slider {
+  margin-bottom: 21px;
+  overflow: hidden;
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-slider__wrap {
+  display: flex;
+}
+
+.reviews-slider__slide {
+  flex-shrink: 0;
+}
+
+.reviews-slider__video {
+  margin-bottom: 20px;
+  height: 183px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  background-image: url("../img/reviews-slider-img.jpg");
+}
+
+.reviews-slider__video img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.reviews-slider__text {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.reviews-slider__text.gray {
+  color: #CDCDCD;
+}
+
+.reviews .slider-controls {
+  max-width: 312px;
+}
+
+/* end -------------------------------------------- reviews section ---------------------------------------------------- */
 /* start -------------------------------------------- sincere service section ------------------------------------------ */
 .sincere-service {
   padding: 55px 15px;
@@ -4403,6 +4461,7 @@ input:focus:-ms-input-placeholder {
   /* end----------------------------------------- any forms section ------------------------------------------------ */
   /* start -------------------------------------------- statistic section ------------------------------------------- */
   .statistic-section {
+    margin-bottom: 75px;
     padding-top: 75px;
     padding-bottom: 75px;
     background-image: url("../img/statistic-bg-middle.jpg");
@@ -4457,6 +4516,24 @@ input:focus:-ms-input-placeholder {
     line-height: 25px;
   }
   /* end -------------------------------------------- statistic section --------------------------------------------- */
+  /* start -------------------------------------------- reviews section --------------------------------------------- */
+  .reviews {
+    margin-bottom: 75px;
+  }
+  .reviews__title {
+    margin-bottom: 57px;
+  }
+  .reviews-slider {
+    margin-bottom: 32px;
+    max-width: 708px;
+  }
+  .reviews-slider__video {
+    margin-bottom: 17px;
+  }
+  .reviews-slider__text {
+    padding-right: 2px;
+  }
+  /* end -------------------------------------------- reviews section ----------------------------------------------- */
   /* start -------------------------------------------- sincere service section ------------------------------------- */
   .sincere-service {
     padding: 77px 30px 48px;
@@ -5490,6 +5567,17 @@ input:focus:-ms-input-placeholder {
     padding-left: 37px;
   }
   /* end -------------------------------------------- statistic section -------------------------------------------- */
+  /* start -------------------------------------------- reviews section --------------------------------------------- */
+  .reviews__title {
+    margin-bottom: 55px;
+  }
+  .reviews-slider {
+    max-width: 960px;
+  }
+  .reviews-slider__video {
+    height: 199px;
+  }
+  /* end -------------------------------------------- reviews section ----------------------------------------------- */
   /* start -------------------------------------------- sincere service section ------------------------------------- */
   .sincere-service {
     padding-left: 39px;
