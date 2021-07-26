@@ -2992,7 +2992,7 @@ button {
   color: #48494B;
 }
 
-.footer-nav__text {
+.footer-nav .menu-image-title {
   font-size: 14px;
   line-height: 15px;
   max-width: 42px;
