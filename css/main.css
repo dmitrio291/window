@@ -168,40 +168,40 @@ button {
   color: #F26422;
 }
 
-.form__phone::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   color: #CDCDCD;
 }
 
-.form__phone:-moz-placeholder {
+input:-moz-placeholder {
   color: #CDCDCD;
 }
 
 /* FF 4-18 */
-.form__phone::-moz-placeholder {
+input::-moz-placeholder {
   color: #CDCDCD;
 }
 
 /* FF 19+ */
-.form__phone:-ms-input-placeholder {
+input:-ms-input-placeholder {
   color: #CDCDCD;
 }
 
 /* IE 10+ */
-.form__phone:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.form__phone:focus:-moz-placeholder {
+input:focus:-moz-placeholder {
   color: transparent;
 }
 
 /* FF 4-18 */
-.form__phone:focus::-moz-placeholder {
+input:focus::-moz-placeholder {
   color: transparent;
 }
 
 /* FF 19+ */
-.form__phone:focus:-ms-input-placeholder {
+input:focus:-ms-input-placeholder {
   color: transparent;
 }
 
@@ -2624,6 +2624,114 @@ button {
 }
 
 /* end------------------------------------------- making-windows section ----------------------------------------------- */
+/* start------------------------------------------- sketches section --------------------------------------------------- */
+.sketches-section {
+  margin-bottom: 55px;
+}
+
+.sketches-box {
+  padding: 55px 15px;
+  background-color: #F3FCFE;
+  border-radius: 3px;
+}
+
+.sketches__title {
+  margin-bottom: 39px;
+  text-align: left;
+}
+
+.sketches__text {
+  margin-bottom: 15px;
+  line-height: 21px;
+}
+
+.sketches__text:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+.sketches__right {
+  display: none;
+}
+
+.form-sketches__box {
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-sketches__none {
+  display: none;
+}
+
+.form-sketches__phone {
+  padding: 11px 20px;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: #CDCDCD;
+  border-bottom: 1.5px solid #ABABAB;
+  background-color: transparent;
+}
+
+.form-sketches__file {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  max-width: 211px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.form-sketches__icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url("../img/sketches-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-sketches__upload-text {
+  margin-top: -5px;
+  font-size: 18px;
+  border-bottom: 1.5px solid #ABABAB;
+}
+
+.form-sketches__btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-sketches__whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  min-height: 40px;
+  width: 100%;
+  margin-bottom: 25px;
+  text-decoration: none;
+  background-color: #26A918;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-sketches__whatsapp span {
+  margin-top: -3px;
+}
+
+.form-sketches__info {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+/* end------------------------------------------- sketches section ----------------------------------------------------- */
 /* start----------------------------------------- any forms section ---------------------------------------------------- */
 .any-forms-section {
   margin-bottom: 55px;
@@ -4211,6 +4319,55 @@ button {
     transform: translateY(-7px);
   }
   /* end------------------------------------------- making windows section ----------------------------------------- */
+  /* start------------------------------------------- sketches section --------------------------------------------- */
+  .sketches-section {
+    margin-bottom: 75px;
+  }
+  .sketches-box {
+    padding: 75px 30px;
+  }
+  .sketches__title {
+    margin-bottom: 45px;
+  }
+  .sketches__text {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .sketches__text:nth-child(2) {
+    margin-bottom: 32px;
+  }
+  .form-sketches__box {
+    margin-bottom: 13px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 648px;
+  }
+  .form-sketches__phone, .form-sketches__file, .form-sketches__btn, .form-sketches__whatsapp {
+    margin-bottom: 0;
+  }
+  .form-sketches__phone {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    border-bottom-width: 2px;
+  }
+  .form-sketches__file {
+    grid-row: 1 / 2;
+    grid-column: 2 / 2;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .form-sketches__btn {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+  }
+  .form-sketches__whatsapp {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+  }
+  /* end------------------------------------------- sketches section ----------------------------------------------- */
   /* start----------------------------------------- any forms section ---------------------------------------------- */
   .any-forms-section {
     margin-bottom: 75px;
@@ -5238,6 +5395,44 @@ button {
     max-width: 307px;
   }
   /* end------------------------------------------- making windows section ----------------------------------------- */
+  /* start------------------------------------------- sketches section --------------------------------------------- */
+  .sketches {
+    display: flex;
+    column-gap: 40px;
+  }
+  .sketches-section {
+    margin-bottom: 100px;
+  }
+  .sketches-box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .sketches__text {
+    margin-bottom: 29px;
+  }
+  .sketches__right {
+    position: relative;
+    display: block;
+    min-width: 294px;
+  }
+  .sketches__img {
+    padding: 18px 32px 18px 18px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+  .sketches__img img:first-child {
+    display: block;
+    margin-left: 14px;
+  }
+  .sketches__img img:nth-child(2) {
+    position: absolute;
+    top: -16px;
+    right: 9px;
+  }
+  .form-sketches__box {
+    max-width: none;
+  }
+  /* end------------------------------------------- sketches section ----------------------------------------------- */
   /* start -------------------------------------------- any forms section ------------------------------------------ */
   .any-forms-section {
     margin-bottom: 100px;

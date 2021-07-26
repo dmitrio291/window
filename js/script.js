@@ -210,6 +210,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .choose-own-color ---------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .sketches-section---------------------------------- */
+    const sketchesInput = document.querySelector('.form-sketches__none');
+    const sketchesText = document.querySelector('.form-sketches__upload-text');
+    const sketchesIcon = document.querySelector('.form-sketches__icon');
+
+    if (sketchesInput && sketchesText && sketchesIcon) {
+        sketchesInput.addEventListener('change', () => {
+            sketchesText.textContent = 'Эскиз загружен';
+            sketchesText.style.color = '#F26422';
+            sketchesIcon.style.backgroundImage = "url('../img/sketches-icon-3.svg')";
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .sketches-section ---------------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
     const accordionToggles = document.querySelectorAll('.accordion__toggle');
     
