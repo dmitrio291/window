@@ -224,6 +224,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .sketches-section ---------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .windows-slider-section -------------------------- */
+    const windowsSlider = document.querySelector('.windows-slider');
+
+    if (windowsSlider) {
+        if (window.innerWidth <= 1023 && windowsSlider.dataset.mobile === 'false') {
+            const windowsSwiper = new Swiper(windowsSlider, {
+                slidesPerView: 1.15,
+                slideClass: 'windows-slider__slide',
+                wrapperClass: 'windows-slider__wrap',
+                pagination: {
+                    el: '.windows-slider__pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                loop: true,
+                navigation: {
+                    nextEl: '.windows-slider__next',
+                    prevEl: '.windows-slider__prev'
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2.3
+                    }
+                }
+            });
+
+            windowsSlider.dataset.mobile = 'true';
+        }
+
+        if (window.innerWidth > 1023) {
+            windowsSlider.dataset.mobile  = 'false';
+        }
+    }
+    /* end ---------------------------------- Скрипты для секции .windows-slider-section ---------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .reviews-section --------------------------------- */
     const reviewsSlider = document.querySelector('.reviews-slider');
     if (reviewsSlider) {
@@ -231,6 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slidesPerView: 1.20,
             spaceBetween: 10,
             autoplay: true,
+            loop: true,
             slideClass: 'reviews-slider__slide',
             wrapperClass: 'reviews-slider__wrap',
             pagination: {

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
-    <link rel="stylesheet" href="libs/nouislider.min.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -690,7 +691,7 @@
         <div class="discounts container">
             <h2 class="discounts__title title">Скидки и акции на окна</h2>
             <p class="discounts__text">Наша компания "Завод окон ПВХ" по установке пластиковых окон добилась минимальной цены благодаря собственным заводским мощностям и отсутствием посредников. Но чтобы вы смогли еще больше сэкономить, предлагаем воспользоваться акциями и скидками на окна.</p>
-            <div data-mobile="false" class="discounts-slider">
+            <div class="discounts-slider">
                 <div class="discounts-slider__wrap">
                     <div class="discounts-slider__slide">
                         <div class="discounts-slider__content">
@@ -1438,7 +1439,7 @@
     <!-- // Рассчитайте окна по вашим эскизам и сравните цену -->
 
     <!-- Любые формы окон для дома -->
-    <div class="any-forms-section">
+    <section class="any-forms-section">
         <div class="any-forms container">
             <h2 class="any-forms__title title">Любые формы окон для дома</h2>
             <p class="any-forms__text">Мастера нашей компании изготавливают и проводят монтаж пластиковых оконных систем любых геометрических форм. Для качественного выполнения заказа они имеют необходимый опыт и современное оборудование.</p>
@@ -1461,8 +1462,54 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
     <!-- // Любые формы окон для дома -->
+
+    <!-- Блок ОКНА НА БАЛКОН ОКНА В КОТТЕДЖ ОСТЕКЛЕНИЕ БЕСЕДОК на Главной -->
+    <section class="windows-slider-section">
+        <div class="windows-slider-box container">
+            <div data-mobile="false" class="windows-slider">
+                <div class="windows-slider__wrap">
+                    <div class="windows-slider__slide">
+                        <div class="windows-slider__content">
+                            <img class="windows-slider__img" src="img/windows-slider-1.jpg" alt="Окна на балкон">
+                            <h4 class="windows-slider__title orange">Окна на балкон</h4>
+                            <p class="windows-slider__text"><span class="bold">Изготовление:</span> от 3 дней</p>
+                            <p class="windows-slider__text">Изготавливаем и монтируем ПВХ остекление на балконы и лоджии. При этом размеры помещения и его геометрия не имеют значения. На остекленных балконах становится теплее и комфортнее.</p>
+                            <p class="windows-slider__price orange"><span>от</span> 2 340 <span>₽/м<sup>2</sup></span></p>
+                            <button class="windows-slider__btn btn btn--orange">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="windows-slider__slide">
+                        <div class="windows-slider__content">
+                            <img class="windows-slider__img" src="img/windows-slider-2.jpg" alt="Окна в коттедж">
+                            <h4 class="windows-slider__title orange">Окна в коттедж</h4>
+                            <p class="windows-slider__text"><span class="bold">Изготовление:</span> от 3 дней</p>
+                            <p class="windows-slider__text">Остекляем коттеджи и загородные дома окнами из качественного ПВХ-профиля. Независимо от остекляемой площади, заказ выполняется в кратчайшие сроки по ГОСТу.</p>
+                            <p class="windows-slider__price orange"><span>от</span> 3 300 <span>₽/м<sup>2</sup></span></p>
+                            <button class="windows-slider__btn btn btn--orange">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="windows-slider__slide">
+                        <div class="windows-slider__content">
+                            <img class="windows-slider__img" src="img/windows-slider-3.jpg" alt="Остекление беседок">
+                            <h4 class="windows-slider__title orange">Остекление беседок</h4>
+                            <p class="windows-slider__text"><span class="bold">Изготовление:</span> от 3 дней</p>
+                            <p class="windows-slider__text">Установка на террасах и беседках оконных конструкций из ПВХ предоставляет возможность комфортного пребывания в таких помещениях без оглядки на погоду на улице.</p>
+                            <p class="windows-slider__price orange"><span>от</span> 2 520 <span>₽/м<sup>2</sup></span></p>
+                            <button class="windows-slider__btn btn btn--orange">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-controls__prev windows-slider__prev"></button>
+                <div class="slider-controls__pagination windows-slider__pagination"></div>
+                <button class="slider-controls__next windows-slider__next"></button>
+            </div>
+        </div>
+    </section>
+    <!-- // Блок ОКНА НА БАЛКОН ОКНА В КОТТЕДЖ ОСТЕКЛЕНИЕ БЕСЕДОК на Главной  -->
 
     <!-- За 18 лет мы установили более 20 000 пластиковых окон ПВХ -->
     <section class="statistic-section">
@@ -1494,7 +1541,7 @@
                 <div class="reviews-slider__wrap">
                     <div class="reviews-slider__slide">
                         <div class="reviews-slider__video">
-                            <a data-fslightbox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
                                 <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
                             </a>
                         </div>
@@ -1504,7 +1551,7 @@
                     </div>
                     <div class="reviews-slider__slide">
                         <div class="reviews-slider__video">
-                            <a data-fslightbox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
                                 <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
                             </a>
                         </div>
@@ -1514,7 +1561,7 @@
                     </div>
                     <div class="reviews-slider__slide">
                         <div class="reviews-slider__video">
-                            <a data-fslightbox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
                                 <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
                             </a>
                         </div>
@@ -1524,7 +1571,7 @@
                     </div>
                     <div class="reviews-slider__slide">
                         <div class="reviews-slider__video">
-                            <a data-fslightbox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
                                 <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
                             </a>
                         </div>
@@ -1534,7 +1581,7 @@
                     </div>
                     <div class="reviews-slider__slide">
                         <div class="reviews-slider__video">
-                            <a data-fslightbox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
                                 <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
                             </a>
                         </div>
@@ -1544,7 +1591,7 @@
                     </div>
                     <div class="reviews-slider__slide">
                         <div class="reviews-slider__video">
-                            <a data-fslightbox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
                                 <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
                             </a>
                         </div>
@@ -1901,9 +1948,11 @@
         </div>
     </div>
     <!-- // Попап для хедера мобильное меню -->
-    <script src="libs/swiper-bundle.min.js"></script>
-    <script src="libs/nouislider.min.js"></script>
-    <script src="libs/fslightbox.js"></script>
+    
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/nouislider/nouislider.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
