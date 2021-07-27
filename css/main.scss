@@ -2964,7 +2964,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end------------------------------------------- sketches section ----------------------------------------------------- */
 
-/* start ------------------------------------------- additionally slider section ---------------------------------------- */
+/* start ------------------------------------------- additionally slider section --------------------------------------- */
 .additionally-slider {
     max-width: 380px;
     margin-left: auto;
@@ -3038,7 +3038,61 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
 }
-/* end ------------------------------------------- additionally slider section ------------------------------------------ */
+/* end ------------------------------------------- additionally slider section ------------------------------------------*/
+
+/* start ------------------------------------------- climate section --------------------------------------------------- */
+.climate {
+    background-color: #F9F9F9;
+    border-radius: 3px;
+
+    &-section {
+        margin-bottom: 55px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+        text-align: left;
+        font-size: 24px;
+        line-height: 28px;
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__text {
+        line-height: 19px;
+
+        &:nth-of-type(1) {
+            margin-bottom: 19px;
+        }
+    }
+
+    &__left {
+        padding: 55px 15px 35px;
+    }
+
+    &__right {
+        position: relative;
+        width: 100%;
+        min-height: 260px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/climate-small.jpg');
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(180deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+        }
+    }
+}
+/* end ------------------------------------------- climate section ----------------------------------------------------- */
 
 /* start----------------------------------------- any forms section ---------------------------------------------------- */
 .any-forms {
@@ -5476,6 +5530,47 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end ------------------------------------------- additionally slider section ----------------------------------- */
 
+    /* start ------------------------------------------- climate section --------------------------------------------- */
+    .climate {
+        &-section {
+            margin-bottom: 75px;
+        }
+
+        &__box {
+            display: flex;
+        }
+
+        &__left {
+            padding: 75px 0 75px 30px;
+            flex-basis: 65%;
+        }
+
+        &__title {
+            margin-bottom: 31px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 25px;
+
+            &:nth-of-type(1) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__right {
+            flex-basis: 59%;
+            background-image: url("../img/climate-middle.jpg");
+
+            &::before {
+                width: 80px;
+                height: 100%;
+                background: linear-gradient(90deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+            }
+        }
+    }
+    /* end ------------------------------------------- climate section ----------------------------------------------- */
+
     /* start----------------------------------------- any forms section ---------------------------------------------- */
     .any-forms {
         &-section {
@@ -7093,6 +7188,29 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end ------------------------------------------- additionally slider section ----------------------------------- */
+
+    /* start ------------------------------------------- climate section --------------------------------------------- */
+    .climate {
+        &-section {
+            margin-bottom: 100px;
+        }
+
+        &__title {
+            .block {
+                display: inline;
+            }
+        }
+
+        &__left {
+            padding-left: 40px;
+            flex-basis: 50%;
+        }
+
+        &__right {
+            background-image: url("../img/climate-big.jpg");
+        }
+    }
+    /* end ------------------------------------------- climate section ----------------------------------------------- */
 
     /* start -------------------------------------------- any forms section ------------------------------------------ */
     .any-forms {
