@@ -2275,6 +2275,125 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- benefit section ----------------------------------------------------- */
+/* start ------------------------------------------ quality-windows section --------------------------------------------- */
+.quality-windows {
+  padding: 55px 15px 50px;
+  position: relative;
+  background-image: url("../img/quality-windows-bg-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quality-windows-section {
+  margin-top: 150px;
+  margin-bottom: 35px;
+}
+
+.quality-windows::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.75);
+  border-radius: 3px;
+}
+
+.quality-windows__content {
+  color: #ffffff;
+}
+
+.quality-windows__title, .quality-windows__list, .quality-windows__text {
+  position: relative;
+  z-index: 2;
+}
+
+.quality-windows__title {
+  max-width: 270px;
+  margin-bottom: 27px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.quality-windows__list {
+  margin-bottom: 24px;
+}
+
+.quality-windows__list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.quality-windows__list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #F26422;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/quality-windows-icon.svg");
+}
+
+.quality-windows__text {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.quality-windows__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.quality-item {
+  padding: 12px 19px 7px 28px;
+  display: flex;
+  column-gap: 26px;
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F26422;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quality-item__letter {
+  position: relative;
+  font-weight: 500;
+  font-size: 63px;
+  line-height: 63px;
+  transform: translateY(-3px);
+}
+
+.quality-item__letter::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -11px;
+  width: 1px;
+  height: 70%;
+  background-color: #ffffff;
+}
+
+.quality-item__text {
+  line-height: 18px;
+}
+
+/* end ------------------------------------------ quality-windows section ----------------------------------------------- */
 /* start------------------------------------------ delivery section ----------------------------------------------------- */
 .delivery {
   background-color: #F9F9F9;
@@ -4531,6 +4650,45 @@ input:focus:-ms-input-placeholder {
     margin-left: 1px;
   }
   /* end ------------------------------------------ benefit section ----------------------------------------------- */
+  /* start ------------------------------------------ quality-windows section ------------------------------------- */
+  .quality-windows {
+    background-image: url("../img/quality-windows-bg-middle.jpg");
+    padding: 48px 25px 52px;
+  }
+  .quality-windows::before {
+    background: linear-gradient(90deg, rgba(41, 41, 41, 0.86) 24.6%, rgba(0, 0, 0, 0) 100%);
+  }
+  .quality-windows-section {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+  .quality-windows__title {
+    margin-bottom: 31px;
+    max-width: 330px;
+    line-height: 37px;
+  }
+  .quality-windows__list {
+    margin-bottom: 27px;
+  }
+  .quality-windows__img {
+    z-index: 1;
+  }
+  .quality-windows__list li {
+    font-size: 21px;
+  }
+  .quality-windows__text {
+    max-width: 395px;
+    font-size: 21px;
+  }
+  .quality-item {
+    padding: 11px 14px 8px 14px;
+    top: 39px;
+    left: auto;
+    right: 16px;
+    transform: translateX(0);
+    max-width: 318px;
+  }
+  /* end ------------------------------------------ quality-windows section --------------------------------------- */
   /* start -------------------------------------------- delivery section ------------------------------------------ */
   .delivery {
     min-height: 327px;
@@ -5725,6 +5883,38 @@ input:focus:-ms-input-placeholder {
     font-size: 21px;
   }
   /* end ------------------------------------------ benefit section ------------------------------------------------- */
+  /* start ------------------------------------------ quality-windows section --------------------------------------- */
+  .quality-windows {
+    padding: 62px 38px 67px;
+    background-image: url("../img/quality-windows-bg-big.jpg");
+  }
+  .quality-windows-section {
+    margin-bottom: 60px;
+  }
+  .quality-windows__title {
+    font-weight: 500;
+  }
+  .quality-windows__text {
+    max-width: 421px;
+  }
+  .quality-item {
+    padding: 13px 14px 11px 23px;
+    top: 41px;
+    right: 60px;
+    max-width: 369px;
+  }
+  .quality-item__letter {
+    font-size: 70px;
+  }
+  .quality-item__letter::after {
+    top: 8px;
+    height: 76%;
+  }
+  .quality-item__text {
+    margin-bottom: 2px;
+    font-size: 18px;
+  }
+  /* end ------------------------------------------ quality-windows section ----------------------------------------- */
   /* start -------------------------------------------- delivery section -------------------------------------------- */
   .delivery-section {
     margin-bottom: 60px;

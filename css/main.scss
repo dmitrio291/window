@@ -2370,6 +2370,127 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- benefit section ----------------------------------------------------- */
 
+/* start ------------------------------------------ quality-windows section --------------------------------------------- */
+.quality-windows {
+    padding: 55px 15px 50px;
+    position: relative;
+    background-image: url('../img/quality-windows-bg-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &-section {
+        margin-top: 150px;
+        margin-bottom: 35px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(41, 41, 41, 0.75);
+        border-radius: 3px;
+    }
+
+    &__content {
+        color: #ffffff;
+    }
+
+    &__title,
+    &__list,
+    &__text {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        max-width: 270px;
+        margin-bottom: 27px;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    &__list {
+        margin-bottom: 24px;
+
+        li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 15px;
+            font-size: 18px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1.5px solid #F26422;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url('../img/quality-windows-icon.svg');
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.quality-item {
+    padding: 12px 19px 7px 28px;
+    display: flex;
+    column-gap: 26px;
+    position: absolute;
+    top: -105px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F26422;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__letter {
+        position: relative;
+        font-weight: 500;
+        font-size: 63px;
+        line-height: 63px;
+        transform: translateY(-3px);
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: -11px;
+            width: 1px;
+            height: 70%;
+            background-color: #ffffff;
+        }
+    }
+
+    &__text {
+        line-height: 18px;
+    }
+}
+/* end ------------------------------------------ quality-windows section ----------------------------------------------- */
+
 /* start------------------------------------------ delivery section ----------------------------------------------------- */
 .delivery {
     background-color: #F9F9F9;
@@ -4951,6 +5072,56 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end ------------------------------------------ benefit section ----------------------------------------------- */
 
+    /* start ------------------------------------------ quality-windows section ------------------------------------- */
+    .quality-windows {
+        background-image: url("../img/quality-windows-bg-middle.jpg");
+        padding: 48px 25px 52px;
+
+        &::before {
+            background: linear-gradient(90deg, rgba(41, 41, 41, 0.86) 24.6%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        &-section {
+            margin-top: 0;
+            margin-bottom: 45px;
+        }
+
+        &__title {
+            margin-bottom: 31px;
+            max-width: 330px;
+            line-height: 37px;
+        }
+
+        &__list {
+            margin-bottom: 27px;
+        }
+
+        &__img {
+            z-index: 1;
+        }
+
+        &__list {
+            li {
+                font-size: 21px;
+            }
+        }
+
+        &__text {
+            max-width: 395px;
+            font-size: 21px;
+        }
+    }
+
+    .quality-item {
+        padding: 11px 14px 8px 14px;
+        top: 39px;
+        left: auto;
+        right: 16px;
+        transform: translateX(0);
+        max-width: 318px;
+    }
+    /* end ------------------------------------------ quality-windows section --------------------------------------- */
+
     /* start -------------------------------------------- delivery section ------------------------------------------ */
     .delivery {
         min-height: 327px;
@@ -6548,6 +6719,46 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end ------------------------------------------ benefit section ------------------------------------------------- */
+
+    /* start ------------------------------------------ quality-windows section --------------------------------------- */
+    .quality-windows {
+        padding: 62px 38px 67px;
+        background-image: url("../img/quality-windows-bg-big.jpg");
+
+        &-section {
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            font-weight: 500;
+        }
+
+        &__text {
+            max-width: 421px;
+        }
+    }
+
+    .quality-item {
+        padding: 13px 14px 11px 23px;
+        top: 41px;
+        right: 60px;
+        max-width: 369px;
+
+        &__letter {
+            font-size: 70px;
+
+            &::after {
+                top: 8px;
+                height: 76%;
+            }
+        }
+
+        &__text {
+            margin-bottom: 2px;
+            font-size: 18px;
+        }
+    }
+    /* end ------------------------------------------ quality-windows section ----------------------------------------- */
 
     /* start -------------------------------------------- delivery section -------------------------------------------- */
     .delivery {
