@@ -256,6 +256,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .reviews-section ----------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .profitable-windows-section ---------------------- */
+    const profitableMoreBtn = document.querySelector('.profitable-windows__more-btn');
+
+    if (profitableMoreBtn) {
+        profitableMoreBtn.addEventListener('click', function() {
+            let showPerClick = 3;
+    
+            const hidden = this.parentNode.querySelectorAll('li.hidden');
+            for (let i = 0; i < showPerClick; i++) {
+                if (!hidden[i]) return this.outerHTML = "";
+                hidden[i].classList.remove('hidden');
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .profitable-windows-section ------------------------ */
+
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
     const accordionToggles = document.querySelectorAll('.accordion__toggle');
     

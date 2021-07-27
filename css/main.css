@@ -2999,7 +2999,221 @@ input:focus:-ms-input-placeholder {
   line-height: 21px;
 }
 
-/* end -------------------------------------------- sincere-service section -------------------------------------------- */
+/* end -------------------------------------------- sincere service section -------------------------------------------- */
+/* start -------------------------------------------- profitable windows section --------------------------------------- */
+.profitable-windows {
+  position: relative;
+  z-index: 1;
+}
+
+.profitable-windows-section {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-repeat: no-repeat;
+  background-image: url("../img/profitable-windows-small-1.jpg"), url("../img/profitable-windows-small-2.jpg");
+  background-size: 100% 568px, 100% 568px;
+  background-position: left top, left bottom;
+}
+
+.profitable-windows-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 619px;
+  background: linear-gradient(0, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 34%), linear-gradient(180deg, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 70%);
+}
+
+.profitable-windows-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 619px;
+  background: linear-gradient(180deg, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 19%), linear-gradient(0, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 31%);
+}
+
+.profitable-windows__title {
+  margin-bottom: 38px;
+}
+
+.profitable-windows__text {
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.profitable-windows__text.mb-0 {
+  margin-bottom: 0;
+}
+
+.profitable-windows__text-2 {
+  padding: 0 19px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.profitable-windows__link {
+  text-decoration: none;
+  border-bottom: 1px solid #F26422;
+}
+
+.profitable-windows__list {
+  max-width: 295px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profitable-windows__list li {
+  position: relative;
+  margin-bottom: 25px;
+  padding: 20px 54px 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profitable-windows__list li.padding {
+  padding: 25px;
+  background-color: #F26422;
+  color: #ffffff;
+}
+
+.profitable-windows__list li.hidden {
+  display: none;
+}
+
+.profitable-windows__img {
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.profitable-windows__name {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.profitable-windows__sizes {
+  padding-bottom: 3px;
+  display: inline-block;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #CDCDCD;
+  color: #CDCDCD;
+}
+
+.profitable-windows__old-price {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.profitable-windows__old-price::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #F26422;
+  transform-origin: top left;
+  transform: rotate(7deg) translateY(4px);
+}
+
+.profitable-windows__new-price {
+  margin-bottom: 19px;
+  font-size: 32px;
+}
+
+.profitable-windows__new-price span::before, .profitable-windows__new-price span::after {
+  font-size: 21px;
+  color: #ABABAB;
+}
+
+.profitable-windows__new-price span::before {
+  margin-right: 9px;
+  content: 'от';
+}
+
+.profitable-windows__new-price span::after {
+  margin-left: 9px;
+  content: '₽';
+}
+
+.profitable-windows__btn, .profitable-windows__more-btn {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profitable-windows__btn {
+  max-width: 187px;
+}
+
+.profitable-windows__box {
+  background-color: #F26422;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.profitable-windows__second-title {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.profitable-windows__text-3 {
+  margin-bottom: 26px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.profitable-windows__inputs {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 19px;
+  flex-wrap: wrap;
+}
+
+.profitable-windows__input {
+  width: 46%;
+}
+
+.profitable-windows__input label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.profitable-windows__input input {
+  width: 100%;
+  min-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profitable-windows__calc-btn {
+  margin-top: auto;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+}
+
+.profitable-windows__more-btn {
+  background-color: #ffffff;
+  margin-bottom: 35px;
+  max-width: 295px;
+}
+
+/* end -------------------------------------------- profitable windows section ----------------------------------------- */
 /* start -------------------------------------------- schedule section ------------------------------------------------- */
 .schedule-section {
   padding-top: 40px;
@@ -4554,6 +4768,52 @@ input:focus:-ms-input-placeholder {
     column-gap: 28px;
   }
   /* end -------------------------------------------- sincere service section --------------------------------------- */
+  /* start -------------------------------------------- profitable windows section ---------------------------------- */
+  .profitable-windows-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-image: url("../img/profitable-windows-middle-1.jpg"), url("../img/profitable-windows-middle-2.jpg");
+  }
+  .profitable-windows__title {
+    margin-bottom: 53px;
+  }
+  .profitable-windows__text {
+    margin-bottom: 52px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .profitable-windows__text-2 {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .profitable-windows__list {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+    max-width: 708px;
+  }
+  .profitable-windows__list li {
+    margin-bottom: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 31.4%;
+  }
+  .profitable-windows__list li.hidden:not(:last-child) {
+    display: block;
+  }
+  .profitable-windows__img {
+    margin-bottom: 11px;
+  }
+  .profitable-windows__btn {
+    max-width: 141px;
+  }
+  .profitable-windows__more-btn {
+    display: none;
+  }
+  /* end -------------------------------------------- profitable windows section ------------------------------------ */
   /* start -------------------------------------------- schedule section ------------------------------------------- */
   .schedule__tabs {
     display: flex;
@@ -5617,6 +5877,31 @@ input:focus:-ms-input-placeholder {
     column-gap: 36px;
   }
   /* end -------------------------------------------- sincere service section --------------------------------------- */
+  /* start -------------------------------------------- profitable windows section ---------------------------------- */
+  .profitable-windows-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../img/profitable-windows-big-1.jpg"), url("../img/profitable-windows-big-2.jpg");
+  }
+  .profitable-windows-section::after {
+    background: linear-gradient(180deg, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 74%), linear-gradient(0, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 51%);
+  }
+  .profitable-windows__list {
+    max-width: 960px;
+  }
+  .profitable-windows__list li {
+    width: 23.4%;
+  }
+  .profitable-windows__list li.hidden {
+    display: block;
+  }
+  .profitable-windows__list li.padding {
+    padding: 30px 19px 25px;
+  }
+  .profitable-windows__input {
+    width: 44%;
+  }
+  /* end -------------------------------------------- profitable windows section ------------------------------------ */
   /* start -------------------------------------------- schedule section -------------------------------------------- */
   .schedule__box {
     display: grid;
