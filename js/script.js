@@ -224,6 +224,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .sketches-section ---------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .additionally-slider-section ---------------------- */
+    const additionallySlider = document.querySelector('.additionally-slider');
+
+    if (additionallySlider) {
+        const discountsSwiper = new Swiper(additionallySlider, {
+            slidesPerView: 1.2,
+            autoHeight: true,
+            spaceBetween: 1,
+            autoplay: true,
+            slideClass: 'additionally-slider__slide',
+            wrapperClass: 'additionally-slider__wrap',
+            pagination: {
+                el: '.additionally-slider__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.additionally-slider__next',
+                prevEl: '.additionally-slider__prev'
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.4
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .additionally-slider-section ------------------------ */
+
     /* start ---------------------------------- Скрипты для секции .windows-slider-section -------------------------- */
     const windowsSlider = document.querySelector('.windows-slider');
 
