@@ -2920,7 +2920,7 @@ input:focus:-ms-input-placeholder {
   display: none;
 }
 
-.form-sketches__phone {
+.form-sketches__phone, .form-sketches__name {
   padding: 11px 20px;
   display: block;
   margin-bottom: 15px;
@@ -2981,6 +2981,19 @@ input:focus:-ms-input-placeholder {
 
 .form-sketches__whatsapp span {
   margin-top: -3px;
+}
+
+.form-sketches__text {
+  margin-bottom: 25px;
+  line-height: 21px;
+}
+
+.form-sketches__text .green {
+  color: #26A918;
+}
+
+.form-sketches__text .block {
+  display: block;
 }
 
 .form-sketches__info {
@@ -5185,13 +5198,15 @@ input:focus:-ms-input-placeholder {
     flex-wrap: wrap;
     max-width: 648px;
   }
-  .form-sketches__phone, .form-sketches__file, .form-sketches__btn, .form-sketches__whatsapp {
+  .form-sketches__phone, .form-sketches__name, .form-sketches__file, .form-sketches__btn, .form-sketches__whatsapp {
     margin-bottom: 0;
+  }
+  .form-sketches__phone, .form-sketches__name {
+    border-bottom-width: 2px;
   }
   .form-sketches__phone {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    border-bottom-width: 2px;
   }
   .form-sketches__file {
     grid-row: 1 / 2;
@@ -5206,6 +5221,31 @@ input:focus:-ms-input-placeholder {
   .form-sketches__whatsapp {
     grid-row: 2 / 2;
     grid-column: 2 / 2;
+  }
+  .form-sketches--2 .form-sketches__box {
+    margin-bottom: 30px;
+  }
+  .form-sketches--2 .form-sketches__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .form-sketches--2 .form-sketches__phone {
+    grid-row: 1 / 2;
+    grid-column: 2 / 2;
+  }
+  .form-sketches--2 .form-sketches__file {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+  }
+  .form-sketches--2 .form-sketches__btn {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+  }
+  .form-sketches--2 .form-sketches__text {
+    font-size: 18px;
+  }
+  .form-sketches--2 .form-sketches__text .block {
+    display: inline;
   }
   /* end------------------------------------------- sketches section ----------------------------------------------- */
   /* start ------------------------------------------- additionally slider section --------------------------------- */
@@ -6461,6 +6501,11 @@ input:focus:-ms-input-placeholder {
     max-width: none;
   }
   /* end------------------------------------------- sketches section ----------------------------------------------- */
+  /* start ------------------------------------------- sketches section 2-ой вариант -------------------------------- */
+  .sketches--2 .sketches__img {
+    padding: 53px 32px 53px 18px;
+  }
+  /* end ------------------------------------------- sketches section 2-ой вариант ---------------------------------- */
   /* start ------------------------------------------- additionally slider section --------------------------------- */
   .additionally-slider {
     max-width: 960px;

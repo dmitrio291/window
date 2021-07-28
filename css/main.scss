@@ -3036,7 +3036,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         display: none;
     }
 
-    &__phone {
+    &__phone,
+    &__name {
         padding: 11px 20px;
         display: block;
         margin-bottom: 15px;
@@ -3096,6 +3097,19 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         span {
             margin-top: -3px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        line-height: 21px;
+
+        .green {
+            color: #26A918;
+        }
+
+        .block {
+            display: block;
         }
     }
 
@@ -5685,16 +5699,21 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__phone,
+        &__name,
         &__file,
         &__btn,
         &__whatsapp {
             margin-bottom: 0;
         }
 
+        &__phone,
+        &__name {
+            border-bottom-width: 2px;
+        }
+
         &__phone {
             grid-row: 1 / 2;
             grid-column: 1 / 2;
-            border-bottom-width: 2px;
         }
 
         &__file {
@@ -5712,6 +5731,42 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         &__whatsapp {
             grid-row: 2 / 2;
             grid-column: 2 / 2;
+        }
+    }
+
+    // 2-ой вариант
+    .form-sketches--2 {
+        .form-sketches {
+            &__box {
+                margin-bottom: 30px;
+            }
+
+            &__name {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+            }
+    
+            &__phone {
+                grid-row: 1 / 2;
+                grid-column: 2 / 2;
+            }
+    
+            &__file {
+                grid-row: 2 / 2;
+                grid-column: 1 / 2;
+            }
+
+            &__btn {
+                grid-row: 2 / 2;
+                grid-column: 2 / 2;
+            }
+
+            &__text {
+                font-size: 18px;
+                .block {
+                    display: inline;
+                }
+            }
         }
     }
     /* end------------------------------------------- sketches section ----------------------------------------------- */
@@ -7411,6 +7466,16 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end------------------------------------------- sketches section ----------------------------------------------- */
+
+    /* start ------------------------------------------- sketches section 2-ой вариант -------------------------------- */
+    .sketches--2 {
+        .sketches {
+            &__img {
+                padding: 53px 32px 53px 18px;
+            }
+        }
+    }
+    /* end ------------------------------------------- sketches section 2-ой вариант ---------------------------------- */
 
     /* start ------------------------------------------- additionally slider section --------------------------------- */
     .additionally-slider {
