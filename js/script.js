@@ -341,6 +341,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .profitable-windows-section ------------------------ */
 
+    /* start ---------------------------------- Скрипты для секции .certificates-section ---------------------------- */
+    const certificatesSlider = document.querySelector('.certificates-slider');
+
+    if (certificatesSlider) {
+        const certificatesSwiper = new Swiper(certificatesSlider, {
+            slidesPerView: 1.3,
+            slideClass: 'certificates-slider__slide',
+            wrapperClass: 'certificates-slider__wrap',
+            spaceBetween: 20,
+            pagination: {
+                el: '.certificates-slider__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.certificates-slider__next',
+                prevEl: '.certificates-slider__prev'
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1.37
+                },
+                1024: {
+                    slidesPerView: 1.7
+                }
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .certificates-section ------------------------------ */
+
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
     const accordionToggles = document.querySelectorAll('.accordion__toggle');
     

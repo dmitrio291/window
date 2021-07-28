@@ -2394,6 +2394,134 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end ------------------------------------------ quality-windows section ----------------------------------------------- */
+/* start ------------------------------------------ certificates section ------------------------------------------------ */
+.certificates {
+  position: relative;
+  padding-top: 54px;
+  padding-bottom: 55px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/certificates-bg-small.jpg");
+  background-position: center;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.certificates::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+}
+
+.certificates-section {
+  margin-bottom: 35px;
+}
+
+.certificates__content, .certificates__slider {
+  position: relative;
+}
+
+.certificates__title {
+  text-align: left;
+  font-weight: 700;
+}
+
+.certificates__text {
+  line-height: 22px;
+}
+
+.certificates__text:first-of-type {
+  margin-bottom: 22px;
+}
+
+.certificates__content {
+  margin-bottom: 27px;
+  padding-right: 20px;
+}
+
+.certificates__slider .slider-controls {
+  margin-bottom: 0;
+  padding-right: 22px;
+  max-width: 313px;
+}
+
+.certificates-slider {
+  margin-bottom: 25px;
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.certificates-slider__wrap {
+  display: flex;
+}
+
+.certificates-slider__slide {
+  flex-shrink: 0;
+  padding: 10px 10px 12px;
+  background-color: #ffffff;
+  color: #48494B;
+  border-radius: 3px;
+}
+
+.certificates-slider__img {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.certificates-slider__img::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 37px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.certificates-slider__img img {
+  width: 100%;
+}
+
+.certificates-slider__texts {
+  padding-left: 10px;
+}
+
+.certificates-slider__name {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ABABAB;
+}
+
+.certificates-slider__info {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.certificates-slider__text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.certificates-slider__pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.certificates-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #F26422;
+}
+
+/* end ------------------------------------------ certificates section -------------------------------------------------- */
 /* start------------------------------------------ delivery section ----------------------------------------------------- */
 .delivery {
   background-color: #F9F9F9;
@@ -4815,6 +4943,40 @@ input:focus:-ms-input-placeholder {
     max-width: 318px;
   }
   /* end ------------------------------------------ quality-windows section --------------------------------------- */
+  /* start ------------------------------------------ certificates section ---------------------------------------- */
+  .certificates {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../img/certificates-bg-middle.jpg");
+  }
+  .certificates-section {
+    margin-bottom: 45px;
+  }
+  .certificates__content {
+    margin-bottom: 0;
+    width: 50%;
+  }
+  .certificates__title {
+    margin-bottom: 30px;
+    max-width: 230px;
+  }
+  .certificates__slider {
+    margin-top: 8px;
+    width: 50.8%;
+  }
+  .certificates__slider .slider-controls {
+    padding-right: 0;
+    max-width: 293px;
+  }
+  .certificates-slider {
+    margin-bottom: 30px;
+    max-width: none;
+    width: 100%;
+  }
+  /* end ------------------------------------------ certificates section ------------------------------------------ */
   /* start -------------------------------------------- delivery section ------------------------------------------ */
   .delivery {
     min-height: 327px;
@@ -6081,6 +6243,40 @@ input:focus:-ms-input-placeholder {
     font-size: 18px;
   }
   /* end ------------------------------------------ quality-windows section ----------------------------------------- */
+  /* start ------------------------------------------ certificates section ------------------------------------------ */
+  .certificates {
+    padding-top: 72px;
+    padding-bottom: 77px;
+    padding-left: 40px;
+    margin-bottom: 60px;
+    background-image: url("../img/certificates-bg-big.jpg");
+  }
+  .certificates__content {
+    width: 47%;
+  }
+  .certificates__title {
+    margin-bottom: 34px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .certificates__text {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .certificates__text:first-of-type {
+    margin-bottom: 25px;
+  }
+  .certificates__slider {
+    width: 47.8%;
+    margin-top: 5px;
+  }
+  .certificates-slider {
+    margin-bottom: 39px;
+  }
+  .certificates-slider__img {
+    margin-bottom: 5px;
+  }
+  /* end ------------------------------------------ certificates section -------------------------------------------- */
   /* start -------------------------------------------- delivery section -------------------------------------------- */
   .delivery-section {
     margin-bottom: 60px;
