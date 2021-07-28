@@ -96,6 +96,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .discounts-section --------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .brands-section ---------------------------------- */
+    const brandsSlider = document.querySelector('.brands-slider');
+
+    if (brandsSlider) {
+        const brandsSwiper = new Swiper(brandsSlider, {
+            slidesPerView: 1,
+            autoHeight: true,
+            spaceBetween: 1,
+            slideClass: 'brands-slider__slide',
+            wrapperClass: 'brands-slider__wrap',
+            spaceBetween: 40,
+            autoHeight: true,            
+            pagination: {
+                el: '.brands-pagination',
+                type: 'bullets',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    let productname = document.querySelectorAll('.brands-slider__slide')[index+1].dataset.brand;
+                    return `<span class="${className}">${(productname)}</span>`;
+                }
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.brands-nav__next',
+                prevEl: '.brands-nav__prev'
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .brands-section ------------------------------------ */
+
     /* start ---------------------------------- Скрипты для секции .profile-section --------------------------------- */
     const profileBox = document.querySelector('.profile__box');
     const profileBtn = document.querySelector('.profile__btn');

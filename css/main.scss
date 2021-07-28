@@ -4855,6 +4855,12 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- discounts section --------------------------------------------- */
 
+    /* start -------------------------------------------- brands section ---------------------------------------------- */
+    .brands {
+        display: none;
+    }
+    /* end -------------------------------------------- brands section ------------------------------------------------ */
+
     /* start -------------------------------------------- choose own color section ------------------------------------ */
     .choose-own-color {
         margin-bottom: 75px;
@@ -6683,6 +6689,213 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end ------------------------------------------- discounts section ---------------------------------------------- */
+
+    /* start -------------------------------------------- brands section ---------------------------------------------- */
+    .brands {
+        display: block;
+
+        &-section {
+            margin-bottom: 100px;
+        }
+
+        &__title {
+            margin-bottom: 54px;
+        }
+
+        &__text {
+            margin-bottom: 52px;
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        &-box {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        &-inner {
+            padding: 47px 60px;
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+            background-color: #ffffff;
+        }
+
+        &-pagination {
+            .swiper-pagination-bullet {
+                padding: 10px 20px;
+                width: 137px;
+                height: 44px;
+                border-radius: 20px 20px 0 0;
+                opacity: 1;
+                background-color: #F9F9F9;
+                text-align: center;
+                outline: none;
+                font-size: 18px;
+                color: #48494B;
+
+                &-active {
+                    background-color: #ffffff;
+                    color: #F26422;
+                    position: relative;
+                    z-index: 1;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        height: 10px;
+                        width: 100%;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        &-slider {
+            overflow: hidden;
+
+            &__wrap {
+                display: flex;
+            }
+
+            &__slide {
+                flex-shrink: 0;
+            }
+
+            &__box {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            &__window-img {
+                margin-right: 107px;
+                transform: translateY(19px);
+            }
+
+            &__rating {
+                margin-bottom: 23px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__stars {
+                display: flex;
+                transform: translateY(9px);
+
+                li {
+                    &:not(:last-child) {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            &__star {
+                width: 20px;
+                height: 20px;
+            }
+            
+            &__text {
+                margin-bottom: 65px;
+                font-size: 18px;
+                line-height: 25px;
+
+                &.mb {
+                    margin-bottom: 40px;
+                }
+            }
+
+            &__line {
+                margin-bottom: 10px;
+                position: relative;
+                width: 178px;
+                height: 6px;
+                border-radius: 5px;
+
+                div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 6px;
+                    border-radius: 5px;
+                }
+
+                &.yellow {
+                    background-color: #FFE8B0;
+
+                    div {
+                        width: 130px;
+                        background-color: #F7C858;
+                    }
+                }
+                
+                &.blue {
+                    background-color: #ADD2FF;
+
+                    div {
+                        width: 113px;
+                        background-color: #6C9CD3;
+                    }
+                }
+
+                &.green {
+                    background-color: #C1FFA7;
+
+                    div {
+                        width: 118px;
+                        background-color: #7ACD56;
+                    }
+                }
+            }
+
+            &__data {
+                margin-bottom: 39px;
+                display: flex;
+                justify-content: space-between;
+
+                &-text {
+                    font-size: 14px;
+                    color: #ABABAB;
+                }
+            }
+
+            &__calc {
+                display: flex;
+            }
+
+            &__price {
+                font-size: 32px;
+
+                span {
+                    font-size: 21px;
+                    color: #ABABAB;
+                }
+
+                sup {
+                    font-size: 12px;
+                }
+            }
+
+            &__btn {
+                margin-left: 60px;
+                min-width: 178px;
+                font-weight: 400;
+            }            
+        }
+
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(17px);
+
+            &__prev,
+            &__next {
+                cursor: pointer;
+            }
+        }
+    }
+    /* end -------------------------------------------- brands section ------------------------------------------------ */
 
     /* start ------------------------------------------- profile section ---------------------------------------------- */
     .profile {
