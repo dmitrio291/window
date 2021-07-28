@@ -616,20 +616,16 @@ input:focus:-ms-input-placeholder {
 /* end -------------------------------------------- banner windows section --------------------------------------------- */
 .banner-windows {
   position: relative;
-  color: #ffffff;
-}
-
-.banner-windows-section {
   padding: 55px 0;
-  margin-bottom: 45px;
-  position: relative;
   background-image: url("../img/banner-bg-small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: #ffffff;
+  border-radius: 3px;
 }
 
-.banner-windows-section::before {
+.banner-windows::before {
   content: '';
   position: absolute;
   top: 0;
@@ -638,6 +634,18 @@ input:focus:-ms-input-placeholder {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 3px;
+}
+
+.banner-windows-section {
+  margin-bottom: 45px;
+}
+
+.banner-windows__left, .banner-windows__right {
+  position: relative;
+}
+
+.banner-windows__left {
+  padding-left: 15px;
 }
 
 .banner-windows__title {
@@ -3539,6 +3547,8 @@ input:focus:-ms-input-placeholder {
 }
 
 .profitable-windows__list li {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 25px;
   padding: 20px 54px 25px;
@@ -3546,7 +3556,6 @@ input:focus:-ms-input-placeholder {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   text-align: center;
-  cursor: pointer;
 }
 
 .profitable-windows__list li.padding {
@@ -3562,6 +3571,7 @@ input:focus:-ms-input-placeholder {
 .profitable-windows__img {
   margin-bottom: 12px;
   display: inline-block;
+  align-self: center;
 }
 
 .profitable-windows__name {
@@ -3582,6 +3592,9 @@ input:focus:-ms-input-placeholder {
   position: relative;
   display: inline-block;
   margin-bottom: 5px;
+  max-width: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profitable-windows__old-price::before {
@@ -3624,6 +3637,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .profitable-windows__btn {
+  margin-top: auto;
   max-width: 187px;
 }
 
@@ -3682,6 +3696,10 @@ input:focus:-ms-input-placeholder {
   background-color: #ffffff;
   margin-bottom: 35px;
   max-width: 295px;
+}
+
+.profitable-windows__form {
+  margin-top: auto;
 }
 
 /* end -------------------------------------------- profitable windows section ----------------------------------------- */
@@ -4129,17 +4147,21 @@ input:focus:-ms-input-placeholder {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-  }
-  .banner-windows-section {
-    margin-bottom: 75px;
     background-image: url("../img/banner-bg-middle.jpg");
   }
-  .banner-windows-section::before {
+  .banner-windows::before {
     width: 90%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
   }
+  .banner-windows-section {
+    margin-bottom: 75px;
+  }
   .banner-windows__left {
+    padding-left: 30px;
     max-width: 396px;
+  }
+  .banner-windows__right {
+    padding-right: 15px;
   }
   .banner-windows__title {
     margin-bottom: 30px;
@@ -5403,7 +5425,7 @@ input:focus:-ms-input-placeholder {
     width: 31.4%;
   }
   .profitable-windows__list li.hidden:not(:last-child) {
-    display: block;
+    display: flex;
   }
   .profitable-windows__img {
     margin-bottom: 11px;
@@ -5591,15 +5613,15 @@ input:focus:-ms-input-placeholder {
   }
   /* end ------------------------------------------ banner section --------------------------------------------------- */
   /* start -------------------------------------------- banner windows section --------------------------------------- */
-  .banner-windows-section {
-    padding: 27px 0 31px 6px;
+  .banner-windows {
     background-image: url("../img/banner-bg-big.jpg");
+    background-position: left;
   }
-  .banner-windows-section::before {
+  .banner-windows::before {
     width: 83%;
   }
   .banner-windows__left {
-    max-width: 400px;
+    max-width: 440px;
   }
   .banner-windows__title {
     font-size: 40px;
@@ -6612,7 +6634,7 @@ input:focus:-ms-input-placeholder {
     width: 23.4%;
   }
   .profitable-windows__list li.hidden {
-    display: block;
+    display: flex;
   }
   .profitable-windows__list li.padding {
     padding: 30px 19px 25px;

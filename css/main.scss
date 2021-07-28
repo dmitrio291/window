@@ -642,27 +642,36 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* end -------------------------------------------- banner windows section --------------------------------------------- */
 .banner-windows {
     position: relative;
+    padding: 55px 0;
+    background-image: url('../img/banner-bg-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
+    border-radius: 3px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 3px;
+    }
 
     &-section {
-        padding: 55px 0;
         margin-bottom: 45px;
-        position: relative;
-        background-image: url('../img/banner-bg-small.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    }
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 3px;
-        }
+    &__left,
+    &__right {
+        position: relative;
+    }
+
+    &__left {
+        padding-left: 15px;
     }
 
     &__title {
@@ -3662,6 +3671,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         margin-right: auto;
 
         li {
+            display: flex;
+            flex-direction: column;
             position: relative;
             margin-bottom: 25px;
             padding: 20px 54px 25px;
@@ -3669,7 +3680,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
             border-radius: 3px;
             text-align: center;
-            cursor: pointer;
 
             &.padding {
                 padding: 25px;
@@ -3686,6 +3696,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     &__img {
         margin-bottom: 12px;
         display: inline-block;
+        align-self: center;
     }
 
     &__name {
@@ -3706,6 +3717,9 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         position: relative;
         display: inline-block;
         margin-bottom: 5px;
+        max-width: 90px;
+        margin-left: auto;
+        margin-right: auto;
 
         &::before {
             content: '';
@@ -3752,6 +3766,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__btn {
+        margin-top: auto;
         max-width: 187px;
     }
 
@@ -3810,6 +3825,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         background-color: #ffffff;
         margin-bottom: 35px;
         max-width: 295px;
+    }
+
+    &__form {
+        margin-top: auto;
     }
 }
 /* end -------------------------------------------- profitable windows section ----------------------------------------- */
@@ -4319,19 +4338,23 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        background-image: url("../img/banner-bg-middle.jpg");
+        &::before {
+            width: 90%;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
+        }
 
         &-section {
             margin-bottom: 75px;
-            background-image: url("../img/banner-bg-middle.jpg");
-
-            &::before {
-                width: 90%;
-                background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
-            }
         }
 
         &__left {
+            padding-left: 30px;
             max-width: 396px;
+        }
+
+        &__right {
+            padding-right: 15px;
         }
 
         &__title {
@@ -5981,7 +6004,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 width: 31.4%;
 
                 &.hidden:not(:last-child) {
-                    display: block;
+                    display: flex;
                 }
             }
         }
@@ -6243,17 +6266,15 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- banner windows section --------------------------------------- */
     .banner-windows {
-        &-section {
-            padding: 27px 0 31px 6px;
-            background-image: url("../img/banner-bg-big.jpg");
+        background-image: url("../img/banner-bg-big.jpg");
+        background-position: left;
 
-            &::before {
-                width: 83%;
-            }
+        &::before {
+            width: 83%;
         }
 
         &__left {
-            max-width: 400px;
+            max-width: 440px;
         }
 
         &__title {
@@ -7625,7 +7646,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 width: 23.4%;
 
                 &.hidden {
-                    display: block;
+                    display: flex;
                 }
 
                 &.padding {
