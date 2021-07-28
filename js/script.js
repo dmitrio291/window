@@ -350,6 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slideClass: 'certificates-slider__slide',
             wrapperClass: 'certificates-slider__wrap',
             spaceBetween: 20,
+            autoplay: true,
             pagination: {
                 el: '.certificates-slider__pagination',
                 type: 'bullets',
