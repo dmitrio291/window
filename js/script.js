@@ -29,6 +29,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     /* end -------------------------------- Скрипты для секции .header ---------------------------------------------- */
 
+    /* start -------------------------------- Скрипты для секции .calculator-section -------------------------------- */
+    const rangeHeight = document.querySelector('.calculator__range-height');
+    const rangeWidth = document.querySelector('.calculator__range-width');
+    const inputHeight = document.querySelector('.calculator__input.input-height');
+    const inputWidth = document.querySelector('.calculator__input.input-width');
+
+    function initRange(range, input) {
+        noUiSlider.create(range, {
+            start: 1500,
+            connect: 'lower',
+            range: {
+                'min': 0,
+                'max': 4300
+            },
+            format: {
+                to: function(value) {
+                    return parseInt(value);
+                },
+                from: function(value) {
+                    return parseInt(value);
+                }
+            }
+        });
+
+        range.noUiSlider.on('update', function (values, handle) {
+            const value = values[handle];    
+            input.value = value;
+        });
+
+        input.addEventListener('change', function () {
+            range.noUiSlider.set(this.value);
+        });
+    }
+
+    if (rangeHeight, inputHeight, rangeWidth, inputWidth) {
+        initRange(rangeHeight, inputHeight);
+        initRange(rangeWidth, inputWidth);
+    }
+    /* end -------------------------------- Скрипты для секции .calculator-section ---------------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .windows-factory-section ------------------------- */
     const windowsFactorySlider = document.querySelector('.windows-factory__slider');
 

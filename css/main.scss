@@ -1836,6 +1836,238 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- choose own color section -------------------------------------------- */
 
+/* start -------------------------------------------- calculator section ------------------------------------------------ */
+.calculator {
+    padding-top: 25px;
+    border-top: 1px solid #CDCDCD;
+
+    &-section {
+        margin-bottom: 55px;
+    }
+
+    &-box {      
+        &__title {
+            margin-bottom: 5px;
+        }
+    
+        &__subtitle {
+            margin-bottom: 38px;
+            font-weight: 500;
+            font-size: 19px;
+            text-align: center;
+        }
+    }
+
+    &__type {
+        .calculator {
+            &__text {
+                margin-bottom: 20px;
+            }        
+        }
+    }
+
+    &__list,
+    &__sizes {
+        max-width: 345px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__list {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            &:first-child {
+                width: 51.75px;
+                height: 72px;
+            }
+
+            &:nth-child(2) {
+                width: 93.15px;
+                height: 72px;
+            }
+
+            &:last-child {
+                width: 139.72px;
+                height: 72px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }    
+    
+    &__img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 21px;
+        width: 278px;
+        height: 278px;
+    }
+
+    &__sizes {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__range-height,
+    &__range-width {
+        display: none;
+    }
+
+    &__input {
+        padding: 6px 10px;
+        margin-left: 11px;
+        max-width: 80px;
+        border: 1px solid #F26422;
+        background-color: #ffffff;
+        border-radius: 3px;
+        font-size: 18px;
+        text-align: center;
+        color: #48494B;
+
+        &::-webkit-input-placeholder { color: #48494B; }
+        &:-moz-placeholder { color: #48494B; } /* FF 4-18 */
+        &::-moz-placeholder { color: #48494B; } /* FF 19+ */
+        &:-ms-input-placeholder { color: #48494B; } /* IE 10+ */
+    }
+
+    &__form {
+        padding: 25px 15px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+    }
+
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input {
+            display: none;
+        }
+    }
+
+    &__installment {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #D0D0D0;
+
+        &-offer {
+            margin-bottom: 23px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .calculator {
+                &__text {
+                    margin-top: 9px;
+                }
+            }
+        }
+
+        &-price {
+            font-size: 32px;
+
+            &::after {
+                content: 'Р';
+                margin-left: 10px;
+                font-size: 21px;
+                color: #CDCDCD;
+            }
+        }      
+    }
+
+    &__toggle {
+        position: relative;
+        display: inline-block;
+        width: 74px;
+        height: 28px;
+        border-radius: 20px;
+        box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+        background-color: #CDCDCD;
+        transition: background-color 0.2s ease-in;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2.5px;
+            left: 1.5px;
+            width: 24px;
+            height: 24px;
+            background-color: #ffffff;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            transition: left 0.2s ease-in;
+        }
+    }
+
+    &__checkboxes {
+        margin-bottom: 23px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #CDCDCD;
+        
+        li {           
+            &:first-child {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &__offer {
+        padding: 14px;
+        display: flex;
+        justify-content: space-between;
+        border: 1.5px solid #F26422;
+        border-radius: 3px; 
+
+        .calculator {
+            &__text {
+                margin-top: 2px;
+            }
+        }
+        
+        &-price {
+            font-size: 21px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__order {
+        .calculator {
+            &__text {
+                &:first-child {
+                    margin-bottom: 17px;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 28px;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        max-width: 315px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* end -------------------------------------------- calculator section -------------------------------------------------- */
+
 /* start -------------------------------------------- best price section ------------------------------------------------ */
 .best-price {
     &-section {
@@ -4268,6 +4500,9 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &__img {
             width: 50%;
+            &-img {
+                max-height: 417px;
+            }
         }
 
         &__icon {
@@ -4677,7 +4912,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             margin-bottom: 13px;
 
             li {               
-                max-width: 225px;
+                max-width: 231px;
                 margin-bottom: 29px;
 
                 &:last-child {
@@ -4762,7 +4997,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                     margin-bottom: 0;
 
                     li {
-                        max-width: 199px;
+                        max-width: 207px;
                         margin-bottom: 29px;
                     }
 
@@ -4939,6 +5174,229 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- choose own color section -------------------------------------- */
+
+    /* start -------------------------------------------- calculator section ------------------------------------------ */
+    .calculator {
+        padding-top: 34px;
+        display: grid;
+        grid-template: 
+            'type-window calc-form' 
+            'windows-img calc-form'
+            'calc-ranges calc-form';
+            column-gap: 40px;
+        max-width: 708px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-section {
+            margin-bottom: 75px;
+        }
+
+        &-box {
+            &__title {
+                margin-bottom: 12px;
+            }
+
+            &__subtitle {
+                margin-bottom: 41px;
+                font-size: 21px;
+            }
+        }
+
+        &__type {
+            display: flex;
+            justify-content: space-between;
+            grid-area: type-window;
+
+            .calculator {
+                &__text {
+                    max-width: 130px;
+                }
+            }
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+        &__img {
+            grid-area: windows-img;
+            width: 253px;
+            height: 249px;
+            margin-bottom: 38px;
+        }
+
+        &__list,
+        &__sizes {
+            max-width: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &__list {
+            margin-left: -10px;
+            margin-top: 6px;
+            transform: translateX(-9px);
+
+            li {
+                &.active {
+                    img {
+
+                    }
+                }
+
+                &:not(:first-child) {
+                    margin-left: 12px;
+                }
+
+                &:first-child {
+                    width: 22.76px;
+                    height: 32px;
+                }
+
+                &:nth-child(2) {
+                    width: 41.84px;
+                    height: 32px;
+                }
+
+                &:last-child {
+                    width: 62.4px;
+                    height: 32px;
+                }
+            }
+        }
+
+        &__range {
+            &-height,
+            &-width {
+                display: block;
+                margin-top: 5px;
+                width: 140px;
+                height: 6px;                
+                border: none;
+                background-color: #E8E8E8;           
+
+                .noUi-connect {
+                    background-color: #F26422;
+                }
+
+                .noUi-handle {
+                    width: 16.45px;
+                    height: 16.45px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: #F26422;
+                    border: 1.5px solid #FFFFFF;
+                    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                    cursor: pointer;
+
+                    &::before,
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                .noUi-connects {
+                    border-radius: 5px;
+                }
+            }
+
+            &-height {
+                margin-left: 16px;
+            }
+
+            &-width {
+                margin-left: 11px;
+            }
+        }
+
+        &__sizes {
+            grid-area: calc-ranges;
+            flex-direction: column;
+            margin-bottom: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__form {
+            grid-area: calc-form;
+            margin-top: 7px;
+            padding-top: 33px;
+            padding-bottom: 33px;
+        }
+
+        &__checkboxes {
+            margin-bottom: 26px;
+        }
+
+        &__toggle {
+            cursor: pointer;
+        }
+
+        &__installment {
+            margin-bottom: 22px;
+            padding-bottom: 23px;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 16px;
+
+            &-offer {
+                margin-bottom: 0;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                min-width: 175px;       
+            }
+
+            &-price {
+                margin-top: 10px;
+            }
+
+            .calculator {
+                &__text {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__offer {
+            padding: 8px 7px 10px 7px;
+            flex-direction: column;
+            min-width: 123px;
+            height: 68px;
+
+            .calculator {
+                &__text {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+
+        &__order {
+            .calculator {
+                &__text {
+                    font-size: 16px;
+
+                    &:first-child {                
+                        margin-bottom: 13px;
+                    }
+
+                    &:last-of-type {
+                        margin-bottom: 27px;
+                    }
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- calculator section -------------------------------------------- */
 
     /* start -------------------------------------------- best price section ------------------------------------------ */
     .best-price {
@@ -6722,9 +7180,11 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &-pagination {
+            display: flex;
+
             .swiper-pagination-bullet {
                 padding: 10px 20px;
-                width: 137px;
+                flex-grow: 1;
                 height: 44px;
                 border-radius: 20px 20px 0 0;
                 opacity: 1;
@@ -7070,6 +7530,119 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- choose own color section -------------------------------------- */
+
+    /* end -------------------------------------------- calculator section -------------------------------------------- */
+    .calculator {
+        padding-top: 40px;
+        max-width: none;
+        grid-template: 
+        'windows-img type-window'
+        'windows-img calc-form'
+        'calc-ranges calc-form';
+        column-gap: 68px;
+
+        &-section {
+            margin-bottom: 100px;
+        }
+
+        &__type {
+            flex-direction: column;
+
+            .calculator {
+                &__text {
+                    max-width: none;
+                }
+            }
+        }
+
+        &__list {
+            margin-bottom: 19px;
+            margin-left: 0;
+            margin-top: 0;
+            transform: translateX(0);
+
+            li {
+                &:first-child {
+                    width: 60px;
+                    height: 83px;
+                }
+
+                &:nth-child(2) {
+                    width: 108px;
+                    height: 83px;
+                }
+
+                &:last-child {
+                    width: 162px;
+                    height: 83px;
+                }
+            }
+        }
+
+        &__img {
+            width: 371.68px;
+            height: 365px;
+            margin-bottom: 0;
+        }
+
+        &__sizes {
+            li {
+                &:first-child {
+                    margin-bottom: 34px;
+                }
+            }
+        }
+
+        &__form {
+            padding-top: 23px;
+            padding-bottom: 25px;
+        }
+
+        &__checkboxes {
+            li {
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__order {
+            &-box {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &__range {
+            &-height,
+            &-width {
+                width: 286px;
+                height: 10px;
+
+                .noUi-handle {
+                    width: 30px;
+                    height: 30px;
+                    top: -10px;
+                }
+            }
+        }
+
+        &__offer {
+            padding-left: 15px;
+            min-width: 139px;
+
+            .calculator {
+                &__text {
+                    margin-right: 13px;
+                }
+            }
+        }
+
+        &__btn {
+            max-width: 370px;
+        }
+    }
+    /* start -------------------------------------------- calculator section ------------------------------------------ */
 
     /* start -------------------------------------------- best price section ------------------------------------------ */
     .best-price {

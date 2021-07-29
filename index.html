@@ -1357,7 +1357,7 @@
                 <div class="calculator__type">
                     <p class="calculator__text">Выберите тип окна:</p>
                     <ul class="calculator__list reset">
-                        <li>
+                        <li class="active">
                             <img src="img/calculator-icon-1.svg" alt="Окно">
                         </li>
                         <li>
@@ -1368,17 +1368,17 @@
                         </li>
                     </ul>
                 </div>
-                <img class="calculator__img" src="img/calculator-img-1.png" alt="Окно">
+                <img class="calculator__img" src="img/calculator-img-2.png" alt="Окно">
                 <ul class="calculator__sizes reset">
                     <li>
                         <span class="calculator__text">Высота:</span>
                         <div class="calculator__range-height"></div>
-                        <input class="calculator__input" type="number">
+                        <input class="calculator__input input-height" type="number" placeholder="1500">
                     </li>
                     <li>
-                        <span class="calculator__text">Ширина::</span>
+                        <span class="calculator__text">Ширина:</span>
                         <div class="calculator__range-width"></div>
-                        <input class="calculator__input" type="number">
+                        <input class="calculator__input input-width" type="number" placeholder="1500">
                     </li>
                 </ul>
                 <form class="calculator__form" action="#">
@@ -1401,17 +1401,19 @@
                     <div class="calculator__installment">
                         <div class="calculator__installment-offer">
                             <p class="calculator__text">Стоимость по акции</p>
-                            <p class="calculator__installment-price">8 154</p>
+                            <p class="calculator__installment-price orange">8 154</p>
                         </div>
                         <div class="calculator__offer">
                             <p class="calculator__text orange">Рассрочка</p>
-                            <p class="orange">1 359 <span>Р/мес</span></p>
+                            <p class="calculator__offer-price orange">1 359 <span>Р/мес</span></p>
                         </div>
                     </div>
                     <div class="calculator__order">
-                        <p class="calculator__text">Средняя цена: 11 008 Р</p>
-                        <p class="calculator__text orange">Экономия: 2 854 Р</p>
-                        <button class="btn" type="submit">Заказать со скидкой</button>
+                        <div class="calculator__order-box">
+                            <p class="calculator__text">Средняя цена: 11 008 Р</p>
+                            <p class="calculator__text orange">Экономия: 2 854 Р</p>
+                        </div>
+                        <button class="calculator__btn btn" type="submit">Заказать со скидкой</button>
                     </div>
                 </form>
             </div>
