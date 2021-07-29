@@ -1123,6 +1123,265 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- offer section ------------------------------------------------------- */
+/* start -------------------------------------------- best price section ------------------------------------------------ */
+.best-price-section {
+  display: none;
+}
+
+/* end -------------------------------------------- best price section -------------------------------------------------- */
+/* start -------------------------------------------- calculator section ------------------------------------------------ */
+.calculator {
+  padding-top: 25px;
+  border-top: 1px solid #CDCDCD;
+}
+
+.calculator-section {
+  margin-bottom: 55px;
+}
+
+.calculator-box__title {
+  margin-bottom: 5px;
+}
+
+.calculator-box__subtitle {
+  margin-bottom: 38px;
+  font-weight: 500;
+  font-size: 19px;
+  text-align: center;
+}
+
+.calculator__type .calculator__text {
+  margin-bottom: 20px;
+}
+
+.calculator__list, .calculator__sizes {
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calculator__list {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator__list li {
+  cursor: pointer;
+}
+
+.calculator__list li.active rect,
+.calculator__list li.active path {
+  stroke: #F26422;
+}
+
+.calculator__list li:first-child {
+  width: 51.75px;
+  height: 72px;
+}
+
+.calculator__list li:nth-child(2) {
+  width: 93.15px;
+  height: 72px;
+}
+
+.calculator__list li:last-child {
+  width: 139.72px;
+  height: 72px;
+}
+
+.calculator__list li svg {
+  width: 100%;
+  height: 100%;
+}
+
+.calculator__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 21px;
+}
+
+.calculator__img.img-1 {
+  width: 165px;
+  height: 250px;
+}
+
+.calculator__img.img-2 {
+  width: 278px;
+  height: 278px;
+}
+
+.calculator__img.img-3 {
+  width: 278px;
+  height: 220px;
+}
+
+.calculator__sizes {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator__range-height, .calculator__range-width {
+  display: none;
+}
+
+.calculator__input {
+  padding: 6px 10px;
+  margin-left: 11px;
+  max-width: 80px;
+  border: 1px solid #F26422;
+  background-color: #ffffff;
+  border-radius: 3px;
+  font-size: 18px;
+  text-align: center;
+  color: #48494B;
+  /* FF 4-18 */
+  /* FF 19+ */
+  /* IE 10+ */
+}
+
+.calculator__input::-webkit-input-placeholder {
+  color: #48494B;
+}
+
+.calculator__input:-moz-placeholder {
+  color: #48494B;
+}
+
+.calculator__input::-moz-placeholder {
+  color: #48494B;
+}
+
+.calculator__input:-ms-input-placeholder {
+  color: #48494B;
+}
+
+.calculator__form {
+  padding: 25px 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.calculator__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculator__label input {
+  display: none;
+}
+
+.calculator__installment {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.calculator__installment-offer {
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculator__installment-offer .calculator__text {
+  margin-top: 9px;
+}
+
+.calculator__installment-price {
+  font-size: 32px;
+}
+
+.calculator__installment-price::after {
+  content: 'Р';
+  margin-left: 10px;
+  font-size: 21px;
+  color: #CDCDCD;
+}
+
+.calculator__label input:checked ~ .calculator__toggle {
+  background-color: #F26422;
+}
+
+.calculator__label input:checked ~ .calculator__toggle::before {
+  left: 48px;
+}
+
+.calculator__toggle {
+  position: relative;
+  display: inline-block;
+  width: 74px;
+  height: 28px;
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+  background-color: #CDCDCD;
+  transition: background-color 0.2s ease-in;
+}
+
+.calculator__toggle::before {
+  content: '';
+  position: absolute;
+  top: 2.5px;
+  left: 1.5px;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  transition: left 0.2s ease-in;
+}
+
+.calculator__checkboxes {
+  margin-bottom: 23px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #CDCDCD;
+}
+
+.calculator__checkboxes li:first-child {
+  margin-bottom: 25px;
+}
+
+.calculator__offer {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  border: 1.5px solid #F26422;
+  border-radius: 3px;
+}
+
+.calculator__offer .calculator__text {
+  margin-top: 2px;
+}
+
+.calculator__offer-price {
+  font-size: 21px;
+}
+
+.calculator__offer-price span {
+  font-size: 16px;
+}
+
+.calculator__order .calculator__text:first-child {
+  margin-bottom: 17px;
+}
+
+.calculator__order .calculator__text:last-of-type {
+  margin-bottom: 28px;
+}
+
+.calculator__btn {
+  display: block;
+  width: 100%;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* end -------------------------------------------- calculator section -------------------------------------------------- */
 /* start ------------------------------------------- about section ------------------------------------------------------ */
 .about-section {
   margin-bottom: 55px;
@@ -1286,6 +1545,88 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end ------------------------------------------- windows-factory section ---------------------------------------------- */
+/* start -------------------------------------------- payment section --------------------------------------------------- */
+.payment {
+  border-radius: 3px;
+  background-color: #F3FCFE;
+  background-repeat: no-repeat;
+  background-image: url("../img/payment-gradient-small.svg");
+  background-position: right bottom;
+}
+
+.payment-section {
+  margin-bottom: 35px;
+}
+
+.payment__img {
+  display: none;
+}
+
+.payment__content {
+  padding: 55px 15px 75px;
+}
+
+.payment__title {
+  text-align: left;
+}
+
+.payment__description {
+  margin-bottom: 28px;
+  line-height: 21px;
+}
+
+.payment__list {
+  margin-bottom: 27px;
+}
+
+.payment__list li {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.payment__list li:not(:last-child) {
+  padding-bottom: 19px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #ABABAB;
+}
+
+.payment__list li:first-child .payment__text, .payment__list li:last-child .payment__text {
+  line-height: 24px;
+}
+
+.payment__icon {
+  width: 35px;
+  height: 35px;
+}
+
+.payment__text {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.payment__small {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.payment__small .orange {
+  font-weight: 500;
+}
+
+.payment__small.block {
+  display: block;
+}
+
+.payment__btn {
+  display: block;
+  width: 100%;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* end -------------------------------------------- payment section ----------------------------------------------------- */
 /* start ------------------------------------------- installment section ------------------------------------------------ */
 .installment-section {
   margin-bottom: 35px;
@@ -1765,1197 +2106,6 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- choose own color section -------------------------------------------- */
-/* start -------------------------------------------- calculator section ------------------------------------------------ */
-.calculator {
-  padding-top: 25px;
-  border-top: 1px solid #CDCDCD;
-}
-
-.calculator-section {
-  margin-bottom: 55px;
-}
-
-.calculator-box__title {
-  margin-bottom: 5px;
-}
-
-.calculator-box__subtitle {
-  margin-bottom: 38px;
-  font-weight: 500;
-  font-size: 19px;
-  text-align: center;
-}
-
-.calculator__type .calculator__text {
-  margin-bottom: 20px;
-}
-
-.calculator__list, .calculator__sizes {
-  max-width: 345px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.calculator__list {
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.calculator__list li {
-  cursor: pointer;
-}
-
-.calculator__list li.active rect,
-.calculator__list li.active path {
-  stroke: #F26422;
-}
-
-.calculator__list li:first-child {
-  width: 51.75px;
-  height: 72px;
-}
-
-.calculator__list li:nth-child(2) {
-  width: 93.15px;
-  height: 72px;
-}
-
-.calculator__list li:last-child {
-  width: 139.72px;
-  height: 72px;
-}
-
-.calculator__list li svg {
-  width: 100%;
-  height: 100%;
-}
-
-.calculator__img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 21px;
-}
-
-.calculator__img.img-1 {
-  width: 165px;
-  height: 250px;
-}
-
-.calculator__img.img-2 {
-  width: 278px;
-  height: 278px;
-}
-
-.calculator__img.img-3 {
-  width: 278px;
-  height: 220px;
-}
-
-.calculator__sizes {
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.calculator__range-height, .calculator__range-width {
-  display: none;
-}
-
-.calculator__input {
-  padding: 6px 10px;
-  margin-left: 11px;
-  max-width: 80px;
-  border: 1px solid #F26422;
-  background-color: #ffffff;
-  border-radius: 3px;
-  font-size: 18px;
-  text-align: center;
-  color: #48494B;
-  /* FF 4-18 */
-  /* FF 19+ */
-  /* IE 10+ */
-}
-
-.calculator__input::-webkit-input-placeholder {
-  color: #48494B;
-}
-
-.calculator__input:-moz-placeholder {
-  color: #48494B;
-}
-
-.calculator__input::-moz-placeholder {
-  color: #48494B;
-}
-
-.calculator__input:-ms-input-placeholder {
-  color: #48494B;
-}
-
-.calculator__form {
-  padding: 25px 15px;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-}
-
-.calculator__label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.calculator__label input {
-  display: none;
-}
-
-.calculator__installment {
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #D0D0D0;
-}
-
-.calculator__installment-offer {
-  margin-bottom: 23px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.calculator__installment-offer .calculator__text {
-  margin-top: 9px;
-}
-
-.calculator__installment-price {
-  font-size: 32px;
-}
-
-.calculator__installment-price::after {
-  content: 'Р';
-  margin-left: 10px;
-  font-size: 21px;
-  color: #CDCDCD;
-}
-
-.calculator__label input:checked ~ .calculator__toggle {
-  background-color: #F26422;
-}
-
-.calculator__label input:checked ~ .calculator__toggle::before {
-  left: 48px;
-}
-
-.calculator__toggle {
-  position: relative;
-  display: inline-block;
-  width: 74px;
-  height: 28px;
-  border-radius: 20px;
-  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
-  background-color: #CDCDCD;
-  transition: background-color 0.2s ease-in;
-}
-
-.calculator__toggle::before {
-  content: '';
-  position: absolute;
-  top: 2.5px;
-  left: 1.5px;
-  width: 24px;
-  height: 24px;
-  background-color: #ffffff;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 50%;
-  transition: left 0.2s ease-in;
-}
-
-.calculator__checkboxes {
-  margin-bottom: 23px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #CDCDCD;
-}
-
-.calculator__checkboxes li:first-child {
-  margin-bottom: 25px;
-}
-
-.calculator__offer {
-  padding: 14px;
-  display: flex;
-  justify-content: space-between;
-  border: 1.5px solid #F26422;
-  border-radius: 3px;
-}
-
-.calculator__offer .calculator__text {
-  margin-top: 2px;
-}
-
-.calculator__offer-price {
-  font-size: 21px;
-}
-
-.calculator__offer-price span {
-  font-size: 16px;
-}
-
-.calculator__order .calculator__text:first-child {
-  margin-bottom: 17px;
-}
-
-.calculator__order .calculator__text:last-of-type {
-  margin-bottom: 28px;
-}
-
-.calculator__btn {
-  display: block;
-  width: 100%;
-  max-width: 315px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* end -------------------------------------------- calculator section -------------------------------------------------- */
-/* start -------------------------------------------- best price section ------------------------------------------------ */
-.best-price-section {
-  display: none;
-}
-
-/* end -------------------------------------------- best price section -------------------------------------------------- */
-/* start -------------------------------------------- measuring section ------------------------------------------------ */
-.measuring {
-  position: relative;
-  background-image: url("../img/measuring-bg-small.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 3px;
-}
-
-.measuring::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(240, 250, 255, 0.75);
-}
-
-.measuring__content {
-  padding: 55px 15px;
-  position: relative;
-}
-
-.measuring__text {
-  margin-bottom: 25px;
-  padding-right: 13px;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.measuring__title {
-  margin-bottom: 27px;
-  line-height: 28px;
-}
-
-.measuring__warning {
-  font-size: 10px;
-  line-height: 12px;
-}
-
-.measuring--contacts .measuring__title {
-  margin-bottom: 17px;
-}
-
-.measuring__subtitle {
-  margin-bottom: 27px;
-  font-size: 18.4px;
-}
-
-.measuring__info {
-  margin-bottom: 24px;
-  line-height: 23px;
-}
-
-.measuring__info span {
-  display: block;
-}
-
-/* end -------------------------------------------- measuring section -------------------------------------------------- */
-/* start -------------------------------------------- free consultation section ----------------------------------------- */
-.free-consultation {
-  padding: 30px 15px;
-  background-color: #F26422;
-  border-radius: 3px;
-}
-
-.free-consultation-section {
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
-.free-consultation__title {
-  margin-bottom: 18px;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.free-consultation__title, .free-consultation__text {
-  color: #ffffff;
-}
-
-.free-consultation__text {
-  margin-bottom: 27px;
-}
-
-.free-consultation__phone {
-  margin-bottom: 11px;
-}
-
-.free-consultation__phone-link {
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.free-consultation__whatsapp-link {
-  display: block;
-  position: relative;
-  margin-left: 5px;
-  padding: 4px 10px 4px 33px;
-  max-width: 200px;
-  font-size: 12px;
-  margin-bottom: 35px;
-  text-decoration: none;
-  background-color: #E1EFD0;
-  color: #243542;
-  border-radius: 5px;
-  letter-spacing: -0.1px;
-}
-
-.free-consultation__whatsapp-link::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -7px;
-  width: 30px;
-  height: 30px;
-  background: url("../img/consultation-phone-icon.png");
-  background-repeat: no-repeat;
-}
-
-.free-consultation__work-schedule {
-  color: #ffffff;
-  margin-bottom: 32px;
-}
-
-.free-consultation__about {
-  margin-bottom: 34px;
-}
-
-.free-consultation__about-text {
-  position: relative;
-  padding: 15px 33px;
-  max-width: 313px;
-  margin-bottom: 20px;
-  background-color: #ffffff;
-  border-radius: 6px;
-  line-height: 19px;
-}
-
-.free-consultation__about-text::after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  right: 73px;
-  border-style: solid;
-  border-width: 0 23px 23px 0;
-  border-color: transparent  #fff transparent transparent;
-}
-
-.free-consultation__about-text span {
-  font-weight: 500;
-}
-
-.free-consultation__about-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 261px;
-  margin-left: auto;
-}
-
-.free-consultation__about-box img {
-  border-radius: 50%;
-}
-
-.free-consultation__about-content {
-  text-align: right;
-}
-
-.free-consultation__about-name, .free-consultation__about-position {
-  color: #ffffff;
-}
-
-.free-consultation__about-name {
-  margin-bottom: 4px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.free-consultation__about-position {
-  font-size: 12px;
-  font-weight: 300;
-}
-
-.free-consultation__btn {
-  display: block;
-  width: 100%;
-  max-width: 315px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 500;
-}
-
-/* end -------------------------------------------- free consultation section ------------------------------------------- */
-/* start -------------------------------------------- accordion section ------------------------------------------------- */
-.accordion-section {
-  padding-top: 55px;
-  padding-bottom: 55px;
-  background-color: #F9F9F9;
-}
-
-.accordion-box__title {
-  margin-bottom: 39px;
-}
-
-.accordion-box__info {
-  margin-bottom: 26px;
-  line-height: 21px;
-}
-
-.accordion__item {
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  background-color: #ffffff;
-}
-
-.accordion__item:not(:last-child) {
-  margin-bottom: 17px;
-}
-
-.accordion__toggle {
-  width: 100%;
-  padding: 19px 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 20px;
-  text-align: left;
-  font-size: 18px;
-  font-weight: 500;
-  color: #48494B;
-  cursor: pointer;
-  outline: none;
-  line-height: 21px;
-}
-
-.accordion__toggle.active .accordion__plus {
-  width: 25px;
-  height: 25px;
-  transform: rotate(45deg);
-}
-
-.accordion__plus {
-  display: inline-block;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  pointer-events: none;
-}
-
-.accordion__plus::before, .accordion__plus::after {
-  content: "";
-  position: absolute;
-  background: #F26422;
-}
-
-.accordion__plus::before {
-  left: 50%;
-  top: 5px;
-  bottom: 5px;
-  width: 3px;
-  transform: translateX(-50%);
-}
-
-.accordion__plus::after {
-  top: 50%;
-  left: 5px;
-  right: 5px;
-  height: 3px;
-  transform: translateY(-50%);
-}
-
-.accordion__content {
-  padding-left: 15px;
-  padding-right: 32px;
-  padding-bottom: 20px;
-  display: none;
-}
-
-.accordion__content.active {
-  display: block;
-}
-
-.accordion__list.mb {
-  margin-bottom: 20px;
-}
-
-.accordion__list li {
-  display: flex;
-  padding-left: 10px;
-}
-
-.accordion__list li::before {
-  content: '';
-  display: inline-block;
-  margin-right: 11px;
-  width: 5px;
-  height: 5px;
-  background-color: #48494B;
-  border-radius: 50%;
-  flex-shrink: 0;
-  transform: translateY(7px);
-}
-
-.accordion__text {
-  line-height: 21px;
-}
-
-.accordion__text.bold {
-  font-weight: 500;
-}
-
-.accordion__description {
-  margin-bottom: 17px;
-  line-height: 19px;
-}
-
-/* end -------------------------------------------- accordion section --------------------------------------------------- */
-/* start -------------------------------------------- customers section ------------------------------------------------- */
-.customers {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../img/customers-bg-small.jpg");
-  border-radius: 3px;
-}
-
-.customers::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(249, 249, 249, 0.85);
-}
-
-.customers-section {
-  margin-bottom: 35px;
-}
-
-.customers__content {
-  position: relative;
-  padding: 56px 15px;
-}
-
-.customers__title {
-  margin-bottom: 27px;
-  font-size: 24px;
-}
-
-.customers__title .orange {
-  margin-right: 8px;
-  font-size: 35px;
-}
-
-.customers__title .block {
-  display: block;
-}
-
-.customers__text {
-  margin-bottom: 25px;
-  line-height: 21px;
-}
-
-.customers__icon {
-  width: 47px;
-  height: 47px;
-}
-
-.customers__left, .customers__right {
-  display: flex;
-  column-gap: 15px;
-}
-
-.customers__left {
-  margin-bottom: 20px;
-}
-
-.customers__left .customers__number {
-  color: #7ACD56;
-}
-
-.customers__right .customers__number {
-  color: #F7C858;
-}
-
-.customers__number {
-  display: block;
-  margin-bottom: 3px;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-/* end -------------------------------------------- customers section --------------------------------------------------- */
-/* start ------------------------------------------ benefit section ----------------------------------------------------- */
-.benefit-section {
-  margin-bottom: 35px;
-}
-
-.benefit__img {
-  position: relative;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 35px;
-  margin-bottom: 10px;
-  background-color: #F0FAFF;
-  border-radius: 3px;
-}
-
-.benefit__img::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 80px;
-  height: 100%;
-  background: linear-gradient(270deg, #F0FAFF 40%, rgba(240, 250, 255, 0) 100%);
-}
-
-.benefit__title {
-  max-width: 250px;
-  margin-left: 15px;
-  margin-bottom: 26px;
-  font-size: 25px;
-}
-
-.benefit__img-box {
-  position: relative;
-}
-
-.benefit__img-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 160px;
-  background: linear-gradient(180deg, #F1FBFE 0%, rgba(241, 251, 255, 0) 100%);
-}
-
-.benefit__img-box img {
-  width: 100%;
-}
-
-.benefit__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.benefit__list li {
-  padding: 10px;
-  width: 47.8%;
-  background-color: #F0FAFF;
-  border-radius: 3px;
-}
-
-.benefit__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  width: 57px;
-  height: 57px;
-  border: 2px solid #F26422;
-  border-radius: 50%;
-}
-
-.benefit__icon img {
-  width: 30px;
-  height: 30px;
-}
-
-.benefit__text {
-  position: relative;
-  margin-bottom: 17px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.benefit__text::before {
-  content: '';
-  position: absolute;
-  bottom: -7px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #F26422;
-}
-
-.benefit__saving, .benefit__price {
-  display: block;
-}
-
-.benefit__saving {
-  margin-bottom: 7px;
-  font-size: 12px;
-  color: #ABABAB;
-}
-
-.benefit__price {
-  font-size: 22px;
-}
-
-.benefit__ruble {
-  margin-left: 2px;
-  font-size: 16px;
-}
-
-/* end -------------------------------------------- benefit section ----------------------------------------------------- */
-/* start ------------------------------------------ quality-windows section --------------------------------------------- */
-.quality-windows {
-  padding: 55px 15px 50px;
-  position: relative;
-  background-image: url("../img/quality-windows-bg-small.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.quality-windows-section {
-  margin-top: 150px;
-  margin-bottom: 35px;
-}
-
-.quality-windows::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: rgba(41, 41, 41, 0.75);
-  border-radius: 3px;
-}
-
-.quality-windows__content {
-  color: #ffffff;
-}
-
-.quality-windows__title, .quality-windows__list, .quality-windows__text {
-  position: relative;
-  z-index: 2;
-}
-
-.quality-windows__title {
-  max-width: 270px;
-  margin-bottom: 27px;
-  text-align: left;
-  font-weight: 700;
-}
-
-.quality-windows__list {
-  margin-bottom: 24px;
-}
-
-.quality-windows__list li {
-  position: relative;
-  padding-left: 32px;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.quality-windows__list li::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1.5px solid #F26422;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/quality-windows-icon.svg");
-}
-
-.quality-windows__text {
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.quality-windows__img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.quality-item {
-  padding: 12px 19px 7px 28px;
-  display: flex;
-  column-gap: 26px;
-  position: absolute;
-  top: -105px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  width: 100%;
-  max-width: 345px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #F26422;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.quality-item__letter {
-  position: relative;
-  font-weight: 500;
-  font-size: 63px;
-  line-height: 63px;
-  transform: translateY(-3px);
-}
-
-.quality-item__letter::after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  right: -11px;
-  width: 1px;
-  height: 70%;
-  background-color: #ffffff;
-}
-
-.quality-item__text {
-  line-height: 18px;
-}
-
-/* end ------------------------------------------ quality-windows section ----------------------------------------------- */
-/* start ------------------------------------------ certificates section ------------------------------------------------ */
-.certificates {
-  position: relative;
-  padding-top: 54px;
-  padding-bottom: 55px;
-  padding-left: 20px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/certificates-bg-small.jpg");
-  background-position: center;
-  color: #ffffff;
-  border-radius: 3px;
-}
-
-.certificates::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 3px;
-}
-
-.certificates-section {
-  margin-bottom: 35px;
-}
-
-.certificates__content, .certificates__slider {
-  position: relative;
-}
-
-.certificates__title {
-  text-align: left;
-  font-weight: 700;
-}
-
-.certificates__text {
-  line-height: 22px;
-}
-
-.certificates__text:first-of-type {
-  margin-bottom: 22px;
-}
-
-.certificates__content {
-  margin-bottom: 27px;
-  padding-right: 20px;
-}
-
-.certificates__slider .slider-controls {
-  margin-bottom: 0;
-  padding-right: 22px;
-  max-width: 313px;
-}
-
-.certificates-slider {
-  margin-bottom: 25px;
-  max-width: 470px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-}
-
-.certificates-slider__wrap {
-  display: flex;
-}
-
-.certificates-slider__slide {
-  flex-shrink: 0;
-  padding: 10px 10px 12px;
-  background-color: #ffffff;
-  color: #48494B;
-  border-radius: 3px;
-}
-
-.certificates-slider__img {
-  position: relative;
-  margin-bottom: 8px;
-}
-
-.certificates-slider__img::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 37px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-}
-
-.certificates-slider__img img {
-  width: 100%;
-}
-
-.certificates-slider__texts {
-  padding-left: 10px;
-}
-
-.certificates-slider__name {
-  margin-bottom: 10px;
-  font-size: 12px;
-  font-weight: 500;
-  color: #ABABAB;
-}
-
-.certificates-slider__info {
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.certificates-slider__text {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.certificates-slider__pagination .swiper-pagination-bullet {
-  background-color: #ffffff;
-}
-
-.certificates-slider__pagination .swiper-pagination-bullet-active {
-  background-color: #F26422;
-}
-
-/* end ------------------------------------------ certificates section -------------------------------------------------- */
-/* start------------------------------------------ delivery section ----------------------------------------------------- */
-.delivery {
-  background-color: #F9F9F9;
-  border-radius: 3px;
-}
-
-.delivery-section {
-  margin-bottom: 35px;
-}
-
-.delivery__content {
-  padding: 55px 15px 15px;
-}
-
-.delivery__title {
-  margin-bottom: 25px;
-  text-align: left;
-}
-
-.delivery__title .block {
-  display: block;
-}
-
-.delivery__text {
-  margin-bottom: 65px;
-  line-height: 25px;
-}
-
-.delivery__text .orange {
-  font-weight: 500;
-}
-
-.delivery__img {
-  background-image: url("../img/delivery-bg-small.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  position: relative;
-  min-height: 197px;
-}
-
-.delivery__img::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: linear-gradient(180deg, #F9F9F9 21%, rgba(249, 249, 249, 0) 100%);
-}
-
-.delivery__img img {
-  margin-top: 27px;
-  width: 100%;
-}
-
-.delivery__hint {
-  position: absolute;
-  top: -45px;
-  right: 5%;
-  z-index: 1;
-  width: 173px;
-  padding: 5px;
-  font-weight: 500;
-  background-color: #ffffff;
-  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 3px;
-  text-align: center;
-}
-
-.delivery__hint::before {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  right: 43%;
-  width: 0;
-  height: 0;
-  border-width: 14px 5px 0 9px;
-  border-color: #FFFFFFFF transparent transparent transparent;
-  border-style: solid;
-  transform: rotate(26deg);
-}
-
-/* end -------------------------------------------- delivery section ---------------------------------------------------- */
-/* start -------------------------------------------- payment section --------------------------------------------------- */
-.payment {
-  border-radius: 3px;
-  background-color: #F3FCFE;
-  background-repeat: no-repeat;
-  background-image: url("../img/payment-gradient-small.svg");
-  background-position: right bottom;
-}
-
-.payment-section {
-  margin-bottom: 35px;
-}
-
-.payment__img {
-  display: none;
-}
-
-.payment__content {
-  padding: 55px 15px 75px;
-}
-
-.payment__title {
-  text-align: left;
-}
-
-.payment__description {
-  margin-bottom: 28px;
-  line-height: 21px;
-}
-
-.payment__list {
-  margin-bottom: 27px;
-}
-
-.payment__list li {
-  display: flex;
-  align-items: center;
-  column-gap: 25px;
-}
-
-.payment__list li:not(:last-child) {
-  padding-bottom: 19px;
-  margin-bottom: 22px;
-  border-bottom: 1px solid #ABABAB;
-}
-
-.payment__list li:first-child .payment__text, .payment__list li:last-child .payment__text {
-  line-height: 24px;
-}
-
-.payment__icon {
-  width: 35px;
-  height: 35px;
-}
-
-.payment__text {
-  font-size: 19px;
-  font-weight: 500;
-}
-
-.payment__small {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.payment__small .orange {
-  font-weight: 500;
-}
-
-.payment__small.block {
-  display: block;
-}
-
-.payment__btn {
-  display: block;
-  width: 100%;
-  max-width: 315px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* end -------------------------------------------- payment section ---------------------------------------------------- */
 /* start------------------------------------------- advantages section ------------------------------------------------- */
 .advantages {
   max-width: 345px;
@@ -3975,6 +3125,984 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- profitable windows section ----------------------------------------- */
+/* start------------------------------------------ delivery section ----------------------------------------------------- */
+.delivery {
+  background-color: #F9F9F9;
+  border-radius: 3px;
+}
+
+.delivery-section {
+  margin-bottom: 35px;
+}
+
+.delivery__content {
+  padding: 55px 15px 15px;
+}
+
+.delivery__title {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.delivery__title .block {
+  display: block;
+}
+
+.delivery__text {
+  margin-bottom: 65px;
+  line-height: 25px;
+}
+
+.delivery__text .orange {
+  font-weight: 500;
+}
+
+.delivery__img {
+  background-image: url("../img/delivery-bg-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  position: relative;
+  min-height: 197px;
+}
+
+.delivery__img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg, #F9F9F9 21%, rgba(249, 249, 249, 0) 100%);
+}
+
+.delivery__img img {
+  margin-top: 27px;
+  width: 100%;
+}
+
+.delivery__hint {
+  position: absolute;
+  top: -45px;
+  right: 5%;
+  z-index: 1;
+  width: 173px;
+  padding: 5px;
+  font-weight: 500;
+  background-color: #ffffff;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 3px;
+  text-align: center;
+}
+
+.delivery__hint::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 43%;
+  width: 0;
+  height: 0;
+  border-width: 14px 5px 0 9px;
+  border-color: #FFFFFFFF transparent transparent transparent;
+  border-style: solid;
+  transform: rotate(26deg);
+}
+
+/* end -------------------------------------------- delivery section ---------------------------------------------------- */
+/* start ------------------------------------------ benefit section ----------------------------------------------------- */
+.benefit-section {
+  margin-bottom: 35px;
+}
+
+.benefit__img {
+  position: relative;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  margin-bottom: 10px;
+  background-color: #F0FAFF;
+  border-radius: 3px;
+}
+
+.benefit__img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(270deg, #F0FAFF 40%, rgba(240, 250, 255, 0) 100%);
+}
+
+.benefit__title {
+  max-width: 250px;
+  margin-left: 15px;
+  margin-bottom: 26px;
+  font-size: 25px;
+}
+
+.benefit__img-box {
+  position: relative;
+}
+
+.benefit__img-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(180deg, #F1FBFE 0%, rgba(241, 251, 255, 0) 100%);
+}
+
+.benefit__img-box img {
+  width: 100%;
+}
+
+.benefit__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.benefit__list li {
+  padding: 10px;
+  width: 47.8%;
+  background-color: #F0FAFF;
+  border-radius: 3px;
+}
+
+.benefit__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 57px;
+  height: 57px;
+  border: 2px solid #F26422;
+  border-radius: 50%;
+}
+
+.benefit__icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.benefit__text {
+  position: relative;
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.benefit__text::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F26422;
+}
+
+.benefit__saving, .benefit__price {
+  display: block;
+}
+
+.benefit__saving {
+  margin-bottom: 7px;
+  font-size: 12px;
+  color: #ABABAB;
+}
+
+.benefit__price {
+  font-size: 22px;
+}
+
+.benefit__ruble {
+  margin-left: 2px;
+  font-size: 16px;
+}
+
+/* end -------------------------------------------- benefit section ----------------------------------------------------- */
+/* start ------------------------------------------ quality-windows section --------------------------------------------- */
+.quality-windows {
+  padding: 55px 15px 50px;
+  position: relative;
+  background-image: url("../img/quality-windows-bg-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quality-windows-section {
+  margin-top: 150px;
+  margin-bottom: 35px;
+}
+
+.quality-windows::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.75);
+  border-radius: 3px;
+}
+
+.quality-windows__content {
+  color: #ffffff;
+}
+
+.quality-windows__title, .quality-windows__list, .quality-windows__text {
+  position: relative;
+  z-index: 2;
+}
+
+.quality-windows__title {
+  max-width: 270px;
+  margin-bottom: 27px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.quality-windows__list {
+  margin-bottom: 24px;
+}
+
+.quality-windows__list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.quality-windows__list li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #F26422;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/quality-windows-icon.svg");
+}
+
+.quality-windows__text {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.quality-windows__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.quality-item {
+  padding: 12px 19px 7px 28px;
+  display: flex;
+  column-gap: 26px;
+  position: absolute;
+  top: -105px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F26422;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quality-item__letter {
+  position: relative;
+  font-weight: 500;
+  font-size: 63px;
+  line-height: 63px;
+  transform: translateY(-3px);
+}
+
+.quality-item__letter::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -11px;
+  width: 1px;
+  height: 70%;
+  background-color: #ffffff;
+}
+
+.quality-item__text {
+  line-height: 18px;
+}
+
+/* end ------------------------------------------ quality-windows section ----------------------------------------------- */
+/* start ------------------------------------------ certificates section ------------------------------------------------ */
+.certificates {
+  position: relative;
+  padding-top: 54px;
+  padding-bottom: 55px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/certificates-bg-small.jpg");
+  background-position: center;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.certificates::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+}
+
+.certificates-section {
+  margin-bottom: 35px;
+}
+
+.certificates__content, .certificates__slider {
+  position: relative;
+}
+
+.certificates__title {
+  text-align: left;
+  font-weight: 700;
+}
+
+.certificates__text {
+  line-height: 22px;
+}
+
+.certificates__text:first-of-type {
+  margin-bottom: 22px;
+}
+
+.certificates__content {
+  margin-bottom: 27px;
+  padding-right: 20px;
+}
+
+.certificates__slider .slider-controls {
+  margin-bottom: 0;
+  padding-right: 22px;
+  max-width: 313px;
+}
+
+.certificates-slider {
+  margin-bottom: 25px;
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.certificates-slider__wrap {
+  display: flex;
+}
+
+.certificates-slider__slide {
+  flex-shrink: 0;
+  padding: 10px 10px 12px;
+  background-color: #ffffff;
+  color: #48494B;
+  border-radius: 3px;
+}
+
+.certificates-slider__img {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.certificates-slider__img::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 37px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.certificates-slider__img img {
+  width: 100%;
+}
+
+.certificates-slider__texts {
+  padding-left: 10px;
+}
+
+.certificates-slider__name {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ABABAB;
+}
+
+.certificates-slider__info {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.certificates-slider__text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.certificates-slider__pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.certificates-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #F26422;
+}
+
+/* end ------------------------------------------ certificates section -------------------------------------------------- */
+/* start -------------------------------------------- measuring section ------------------------------------------------ */
+.measuring {
+  position: relative;
+  background-image: url("../img/measuring-bg-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.measuring::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 250, 255, 0.75);
+}
+
+.measuring__content {
+  padding: 55px 15px;
+  position: relative;
+}
+
+.measuring__text {
+  margin-bottom: 25px;
+  padding-right: 13px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.measuring__title {
+  margin-bottom: 27px;
+  line-height: 28px;
+}
+
+.measuring__warning {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.measuring--contacts .measuring__title {
+  margin-bottom: 17px;
+}
+
+.measuring__subtitle {
+  margin-bottom: 27px;
+  font-size: 18.4px;
+}
+
+.measuring__info {
+  margin-bottom: 24px;
+  line-height: 23px;
+}
+
+.measuring__info span {
+  display: block;
+}
+
+/* end -------------------------------------------- measuring section -------------------------------------------------- */
+/* start -------------------------------------------- customers section ------------------------------------------------- */
+.customers {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/customers-bg-small.jpg");
+  border-radius: 3px;
+}
+
+.customers::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(249, 249, 249, 0.85);
+}
+
+.customers-section {
+  margin-bottom: 35px;
+}
+
+.customers__content {
+  position: relative;
+  padding: 56px 15px;
+}
+
+.customers__title {
+  margin-bottom: 27px;
+  font-size: 24px;
+}
+
+.customers__title .orange {
+  margin-right: 8px;
+  font-size: 35px;
+}
+
+.customers__title .block {
+  display: block;
+}
+
+.customers__text {
+  margin-bottom: 25px;
+  line-height: 21px;
+}
+
+.customers__icon {
+  width: 47px;
+  height: 47px;
+}
+
+.customers__left, .customers__right {
+  display: flex;
+  column-gap: 15px;
+}
+
+.customers__left {
+  margin-bottom: 20px;
+}
+
+.customers__left .customers__number {
+  color: #7ACD56;
+}
+
+.customers__right .customers__number {
+  color: #F7C858;
+}
+
+.customers__number {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* end -------------------------------------------- customers section --------------------------------------------------- */
+/* start -------------------------------------------- accordion section ------------------------------------------------- */
+.accordion-section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: #F9F9F9;
+}
+
+.accordion-box__title {
+  margin-bottom: 39px;
+}
+
+.accordion-box__info {
+  margin-bottom: 26px;
+  line-height: 21px;
+}
+
+.accordion__item {
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+
+.accordion__item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.accordion__toggle {
+  width: 100%;
+  padding: 19px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: #48494B;
+  cursor: pointer;
+  outline: none;
+  line-height: 21px;
+}
+
+.accordion__toggle.active .accordion__plus {
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+}
+
+.accordion__plus {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.accordion__plus::before, .accordion__plus::after {
+  content: "";
+  position: absolute;
+  background: #F26422;
+}
+
+.accordion__plus::before {
+  left: 50%;
+  top: 5px;
+  bottom: 5px;
+  width: 3px;
+  transform: translateX(-50%);
+}
+
+.accordion__plus::after {
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  height: 3px;
+  transform: translateY(-50%);
+}
+
+.accordion__content {
+  padding-left: 15px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.accordion__content.active {
+  display: block;
+}
+
+.accordion__list.mb {
+  margin-bottom: 20px;
+}
+
+.accordion__list li {
+  display: flex;
+  padding-left: 10px;
+}
+
+.accordion__list li::before {
+  content: '';
+  display: inline-block;
+  margin-right: 11px;
+  width: 5px;
+  height: 5px;
+  background-color: #48494B;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transform: translateY(7px);
+}
+
+.accordion__text {
+  line-height: 21px;
+}
+
+.accordion__text.bold {
+  font-weight: 500;
+}
+
+.accordion__description {
+  margin-bottom: 17px;
+  line-height: 19px;
+}
+
+/* end -------------------------------------------- accordion section --------------------------------------------------- */
+/* start -------------------------------------------- free consultation section ----------------------------------------- */
+.free-consultation {
+  padding: 30px 15px;
+  background-color: #F26422;
+  border-radius: 3px;
+}
+
+.free-consultation-section {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.free-consultation__title {
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.free-consultation__title, .free-consultation__text {
+  color: #ffffff;
+}
+
+.free-consultation__text {
+  margin-bottom: 27px;
+}
+
+.free-consultation__phone {
+  margin-bottom: 11px;
+}
+
+.free-consultation__phone-link {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.free-consultation__whatsapp-link {
+  display: block;
+  position: relative;
+  margin-left: 5px;
+  padding: 4px 10px 4px 33px;
+  max-width: 200px;
+  font-size: 12px;
+  margin-bottom: 35px;
+  text-decoration: none;
+  background-color: #E1EFD0;
+  color: #243542;
+  border-radius: 5px;
+  letter-spacing: -0.1px;
+}
+
+.free-consultation__whatsapp-link::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -7px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/consultation-phone-icon.png");
+  background-repeat: no-repeat;
+}
+
+.free-consultation__work-schedule {
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.free-consultation__about {
+  margin-bottom: 34px;
+}
+
+.free-consultation__about-text {
+  position: relative;
+  padding: 15px 33px;
+  max-width: 313px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  line-height: 19px;
+}
+
+.free-consultation__about-text::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 73px;
+  border-style: solid;
+  border-width: 0 23px 23px 0;
+  border-color: transparent  #fff transparent transparent;
+}
+
+.free-consultation__about-text span {
+  font-weight: 500;
+}
+
+.free-consultation__about-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 261px;
+  margin-left: auto;
+}
+
+.free-consultation__about-box img {
+  border-radius: 50%;
+}
+
+.free-consultation__about-content {
+  text-align: right;
+}
+
+.free-consultation__about-name, .free-consultation__about-position {
+  color: #ffffff;
+}
+
+.free-consultation__about-name {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.free-consultation__about-position {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.free-consultation__btn {
+  display: block;
+  width: 100%;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+/* end -------------------------------------------- free consultation section ------------------------------------------- */
+/* start -------------------------------------------- footer ----------------------------------------------------------- */
+.footer {
+  background-color: #F9F9F9;
+}
+
+.footer__menu {
+  padding: 22px 10px;
+  border-bottom: 1px solid #ABABAB;
+}
+
+.footer-nav__list {
+  max-width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.footer-nav li {
+  width: 38.7%;
+}
+
+.footer-nav a {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  text-decoration: none;
+  color: #48494B;
+}
+
+.footer-nav .menu-image-title {
+  padding-left: 0;
+  font-size: 14px;
+  line-height: 15px;
+  max-width: 42px;
+}
+
+.footer__contacts {
+  padding: 22px 10px;
+  border-bottom: 1px solid #ABABAB;
+}
+
+.footer-contacts {
+  max-width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-contacts li:first-child {
+  display: flex;
+  column-gap: 15px;
+}
+
+.footer-contacts li:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.footer-contacts__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-contacts__links {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.footer-contacts__text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.footer-contacts__text.orange {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer-contacts__text.border {
+  border-bottom: 1px solid #F26422;
+}
+
+.footer__payment {
+  padding: 22px 10px;
+}
+
+.footer__payment-text {
+  display: none;
+}
+
+.footer-payment {
+  margin-bottom: 12px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.footer__inner {
+  max-width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__copyright {
+  font-family: "Montserrat", sans-serif;
+  color: #AAAAAA;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer__copyright::before {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/footer-copy.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* end -------------------------------------------- footer ------------------------------------------------------------- */
+/* start Страница Контакты */
 /* start -------------------------------------------- schedule section ------------------------------------------------- */
 .schedule-section {
   padding-top: 40px;
@@ -4103,133 +4231,7 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- schedule section --------------------------------------------------- */
-/* start -------------------------------------------- footer ----------------------------------------------------------- */
-.footer {
-  background-color: #F9F9F9;
-}
-
-.footer__menu {
-  padding: 22px 10px;
-  border-bottom: 1px solid #ABABAB;
-}
-
-.footer-nav__list {
-  max-width: 325px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 20px;
-}
-
-.footer-nav li {
-  width: 38.7%;
-}
-
-.footer-nav a {
-  display: flex;
-  align-items: center;
-  column-gap: 12px;
-  text-decoration: none;
-  color: #48494B;
-}
-
-.footer-nav .menu-image-title {
-  padding-left: 0;
-  font-size: 14px;
-  line-height: 15px;
-  max-width: 42px;
-}
-
-.footer__contacts {
-  padding: 22px 10px;
-  border-bottom: 1px solid #ABABAB;
-}
-
-.footer-contacts {
-  max-width: 325px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer-contacts li:first-child {
-  display: flex;
-  column-gap: 15px;
-}
-
-.footer-contacts li:not(:last-child) {
-  margin-bottom: 19px;
-}
-
-.footer-contacts__box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.footer-contacts__links {
-  display: flex;
-  column-gap: 10px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-}
-
-.footer-contacts__text {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.footer-contacts__text.orange {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.footer-contacts__text.border {
-  border-bottom: 1px solid #F26422;
-}
-
-.footer__payment {
-  padding: 22px 10px;
-}
-
-.footer__payment-text {
-  display: none;
-}
-
-.footer-payment {
-  margin-bottom: 12px;
-  display: flex;
-  column-gap: 20px;
-}
-
-.footer__inner {
-  max-width: 325px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer__copyright {
-  font-family: "Montserrat", sans-serif;
-  color: #AAAAAA;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.footer__copyright::before {
-  content: '';
-  display: inline-block;
-  vertical-align: bottom;
-  margin-right: 10px;
-  width: 14px;
-  height: 14px;
-  background-image: url("../img/footer-copy.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* end -------------------------------------------- footer ------------------------------------------------------------- */
+/* end Страница Контакты */
 @media (min-width: 768px) {
   /* start -------------------------------------------- basic -------------------------------------------------------*/
   .container {
@@ -4593,6 +4595,224 @@ input:focus:-ms-input-placeholder {
     margin-bottom: 6px;
   }
   /* end ------------------------------------------ offer section ---------------------------------------------------- */
+  /* start -------------------------------------------- best price section ------------------------------------------ */
+  .best-price {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    border-radius: 3px;
+  }
+  .best-price-section {
+    margin-bottom: 75px;
+    display: block;
+  }
+  .best-price .title {
+    font-weight: 700;
+  }
+  .best-price__title-1 {
+    max-width: 161px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 35px;
+    text-align: left;
+    line-height: 40px;
+  }
+  .best-price__title-2 {
+    margin-bottom: 11px;
+    font-size: 32px;
+    text-align: right;
+  }
+  .best-price__img {
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    transform: translateX(-50%);
+  }
+  .best-price__content {
+    position: relative;
+    z-index: 1;
+    max-width: 356px;
+    text-align: right;
+  }
+  .best-price__subtitle {
+    margin-bottom: 11px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  .best-price__text {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 13px;
+    max-width: 223px;
+    margin-left: auto;
+  }
+  /* end -------------------------------------------- best price section --------------------------------------------- */
+  /* start -------------------------------------------- calculator section ------------------------------------------ */
+  .calculator {
+    padding-top: 34px;
+    display: grid;
+    grid-template: 'type-window calc-form'  'windows-img calc-form' 'calc-ranges calc-form';
+    column-gap: 40px;
+    max-width: 708px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .calculator-section {
+    margin-bottom: 75px;
+  }
+  .calculator-box__title {
+    margin-bottom: 12px;
+  }
+  .calculator-box__subtitle {
+    margin-bottom: 41px;
+    font-size: 21px;
+  }
+  .calculator__type {
+    display: flex;
+    justify-content: space-between;
+    grid-area: type-window;
+  }
+  .calculator__type .calculator__text {
+    max-width: 130px;
+  }
+  .calculator__text {
+    font-size: 18px;
+  }
+  .calculator__img {
+    grid-area: windows-img;
+    width: 253px;
+    height: 249px;
+    margin-bottom: 38px;
+  }
+  .calculator__list, .calculator__sizes {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .calculator__list {
+    margin-left: -10px;
+    margin-top: 6px;
+    transform: translateX(-9px);
+  }
+  .calculator__list li:not(:first-child) {
+    margin-left: 12px;
+  }
+  .calculator__list li:first-child {
+    width: 22.76px;
+    height: 32px;
+  }
+  .calculator__list li:nth-child(2) {
+    width: 41.84px;
+    height: 32px;
+  }
+  .calculator__list li:last-child {
+    width: 62.4px;
+    height: 32px;
+  }
+  .calculator__range-height, .calculator__range-width {
+    display: block;
+    margin-top: 5px;
+    width: 140px;
+    height: 6px;
+    border: none;
+    background-color: #E8E8E8;
+  }
+  .calculator__range-height .noUi-connect, .calculator__range-width .noUi-connect {
+    background-color: #F26422;
+  }
+  .calculator__range-height .noUi-handle, .calculator__range-width .noUi-handle {
+    width: 16.45px;
+    height: 16.45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #F26422;
+    border: 1.5px solid #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  .calculator__range-height .noUi-handle::before, .calculator__range-height .noUi-handle::after, .calculator__range-width .noUi-handle::before, .calculator__range-width .noUi-handle::after {
+    display: none;
+  }
+  .calculator__range-height .noUi-connects, .calculator__range-width .noUi-connects {
+    border-radius: 5px;
+  }
+  .calculator__range-height {
+    margin-left: 16px;
+  }
+  .calculator__range-width {
+    margin-left: 11px;
+  }
+  .calculator__sizes {
+    grid-area: calc-ranges;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .calculator__sizes li {
+    display: flex;
+    align-items: center;
+  }
+  .calculator__sizes li:first-child {
+    margin-bottom: 20px;
+  }
+  .calculator__form {
+    grid-area: calc-form;
+    margin-top: 7px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  .calculator__checkboxes {
+    margin-bottom: 26px;
+  }
+  .calculator__toggle {
+    cursor: pointer;
+  }
+  .calculator__installment {
+    margin-bottom: 22px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+  }
+  .calculator__installment-offer {
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 175px;
+  }
+  .calculator__installment-price {
+    margin-top: 10px;
+  }
+  .calculator__installment .calculator__text {
+    margin-top: 0;
+  }
+  .calculator__offer {
+    padding: 8px 7px 10px 7px;
+    flex-direction: column;
+    min-width: 123px;
+    height: 68px;
+  }
+  .calculator__offer .calculator__text {
+    font-size: 16px;
+    text-align: center;
+  }
+  .calculator__order .calculator__text {
+    font-size: 16px;
+  }
+  .calculator__order .calculator__text:first-child {
+    margin-bottom: 13px;
+  }
+  .calculator__order .calculator__text:last-of-type {
+    margin-bottom: 27px;
+  }
+  /* end -------------------------------------------- calculator section -------------------------------------------- */
   /* start ------------------------------------------- about section-------------------------------------------------- */
   .about-section {
     margin-bottom: 75px;
@@ -4628,6 +4848,55 @@ input:focus:-ms-input-placeholder {
     max-width: 290px;
   }
   /* end ----------------------------------------- windows-factory section ------------------------------------------ */
+  /* start -------------------------------------------- payment section --------------------------------------------- */
+  .payment {
+    background-image: url("../img/payment-bg-small.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .payment-section {
+    margin-bottom: 45px;
+  }
+  .payment__content {
+    padding: 69px 24px 75px;
+    max-width: 430px;
+    margin-left: auto;
+  }
+  .payment__title {
+    margin-bottom: 34px;
+  }
+  .payment__description, .payment__small {
+    font-size: 18px;
+  }
+  .payment__description {
+    margin-bottom: 39px;
+    line-height: 25px;
+  }
+  .payment__list {
+    margin-bottom: 42px;
+  }
+  .payment__list li {
+    column-gap: 36px;
+  }
+  .payment__list li:not(:last-child) {
+    padding-bottom: 21px;
+  }
+  .payment__icon {
+    width: 44px;
+    height: 44px;
+  }
+  .payment__text {
+    font-size: 21px;
+  }
+  .payment__small.block {
+    margin-top: 4px;
+  }
+  .payment__btn {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 346px;
+  }
+  /* end -------------------------------------------- payment section ---------------------------------------------- */
   /* start ------------------------------------------- installment section ------------------------------------------ */
   .installment-section {
     margin-bottom: 45px;
@@ -4862,224 +5131,186 @@ input:focus:-ms-input-placeholder {
     font-size: 14px;
   }
   /* end -------------------------------------------- choose own color section -------------------------------------- */
-  /* start -------------------------------------------- calculator section ------------------------------------------ */
-  .calculator {
-    padding-top: 34px;
-    display: grid;
-    grid-template: 'type-window calc-form'  'windows-img calc-form' 'calc-ranges calc-form';
-    column-gap: 40px;
+  /* start -------------------------------------------- advantages section ----------------------------------------- */
+  .advantages {
     max-width: 708px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .calculator-section {
-    margin-bottom: 75px;
-  }
-  .calculator-box__title {
-    margin-bottom: 12px;
-  }
-  .calculator-box__subtitle {
-    margin-bottom: 41px;
-    font-size: 21px;
-  }
-  .calculator__type {
     display: flex;
     justify-content: space-between;
-    grid-area: type-window;
+    column-gap: 20px;
   }
-  .calculator__type .calculator__text {
-    max-width: 130px;
+  .advantages-section {
+    margin-bottom: 45px;
   }
-  .calculator__text {
+  .advantages__content {
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+  .advantages__title {
+    margin-bottom: 19px;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .advantages__list {
+    width: 50%;
+    gap: 20px;
+  }
+  .advantages__list li {
+    padding: 15px 10px 17px 9px;
+    width: 47%;
+  }
+  .advantages__img {
+    margin-bottom: 14px;
+  }
+  /* end -------------------------------------------- advantages section ------------------------------------------- */
+  /* start------------------------------------------- making windows section --------------------------------------- */
+  .making-windows {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: 38px;
+  }
+  .making-windows-section {
+    margin-bottom: 45px;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background-image: url("../img/making-windows-middle.jpg");
+  }
+  .making-windows__titles, .making-windows__title {
+    margin-bottom: 0;
+  }
+  .making-windows__title {
+    font-size: 32px;
+  }
+  .making-windows__title:first-child {
+    margin-bottom: 28px;
+  }
+  .making-windows__btn {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 224px;
+    transform: translateY(-7px);
+  }
+  /* end------------------------------------------- making windows section ----------------------------------------- */
+  /* start------------------------------------------- sketches section --------------------------------------------- */
+  .sketches-section {
+    margin-bottom: 75px;
+  }
+  .sketches-box {
+    padding: 75px 30px;
+  }
+  .sketches__title {
+    margin-bottom: 45px;
+  }
+  .sketches__text {
+    margin-bottom: 24px;
     font-size: 18px;
+    line-height: 25px;
   }
-  .calculator__img {
-    grid-area: windows-img;
-    width: 253px;
-    height: 249px;
-    margin-bottom: 38px;
+  .sketches__text:nth-child(2) {
+    margin-bottom: 32px;
   }
-  .calculator__list, .calculator__sizes {
-    max-width: none;
+  .form-sketches__box {
+    margin-bottom: 13px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 648px;
+  }
+  .form-sketches__phone, .form-sketches__name, .form-sketches__file, .form-sketches__btn, .form-sketches__whatsapp {
+    margin-bottom: 0;
+  }
+  .form-sketches__phone, .form-sketches__name {
+    border-bottom-width: 2px;
+  }
+  .form-sketches__phone {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .form-sketches__file {
+    grid-row: 1 / 2;
+    grid-column: 2 / 2;
     margin-left: 0;
     margin-right: 0;
   }
-  .calculator__list {
-    margin-left: -10px;
-    margin-top: 6px;
-    transform: translateX(-9px);
+  .form-sketches__btn {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
   }
-  .calculator__list li:not(:first-child) {
-    margin-left: 12px;
+  .form-sketches__whatsapp {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
   }
-  .calculator__list li:first-child {
-    width: 22.76px;
-    height: 32px;
+  .form-sketches--2 .form-sketches__box {
+    margin-bottom: 30px;
   }
-  .calculator__list li:nth-child(2) {
-    width: 41.84px;
-    height: 32px;
+  .form-sketches--2 .form-sketches__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
   }
-  .calculator__list li:last-child {
-    width: 62.4px;
-    height: 32px;
+  .form-sketches--2 .form-sketches__phone {
+    grid-row: 1 / 2;
+    grid-column: 2 / 2;
   }
-  .calculator__range-height, .calculator__range-width {
-    display: block;
-    margin-top: 5px;
-    width: 140px;
-    height: 6px;
-    border: none;
-    background-color: #E8E8E8;
+  .form-sketches--2 .form-sketches__file {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
   }
-  .calculator__range-height .noUi-connect, .calculator__range-width .noUi-connect {
-    background-color: #F26422;
+  .form-sketches--2 .form-sketches__btn {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
   }
-  .calculator__range-height .noUi-handle, .calculator__range-width .noUi-handle {
-    width: 16.45px;
-    height: 16.45px;
-    border: none;
-    border-radius: 50%;
-    background-color: #F26422;
-    border: 1.5px solid #FFFFFF;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+  .form-sketches--2 .form-sketches__text {
+    font-size: 18px;
   }
-  .calculator__range-height .noUi-handle::before, .calculator__range-height .noUi-handle::after, .calculator__range-width .noUi-handle::before, .calculator__range-width .noUi-handle::after {
-    display: none;
+  .form-sketches--2 .form-sketches__text .block {
+    display: inline;
   }
-  .calculator__range-height .noUi-connects, .calculator__range-width .noUi-connects {
-    border-radius: 5px;
+  /* end------------------------------------------- sketches section ----------------------------------------------- */
+  /* start ------------------------------------------- additionally slider section --------------------------------- */
+  .additionally-slider {
+    margin-bottom: 30px;
+    max-width: 738px;
   }
-  .calculator__range-height {
-    margin-left: 16px;
-  }
-  .calculator__range-width {
-    margin-left: 11px;
-  }
-  .calculator__sizes {
-    grid-area: calc-ranges;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-  .calculator__sizes li {
-    display: flex;
-    align-items: center;
-  }
-  .calculator__sizes li:first-child {
-    margin-bottom: 20px;
-  }
-  .calculator__form {
-    grid-area: calc-form;
-    margin-top: 7px;
-    padding-top: 33px;
-    padding-bottom: 33px;
-  }
-  .calculator__checkboxes {
-    margin-bottom: 26px;
-  }
-  .calculator__toggle {
-    cursor: pointer;
-  }
-  .calculator__installment {
-    margin-bottom: 22px;
-    padding-bottom: 23px;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 16px;
-  }
-  .calculator__installment-offer {
-    margin-bottom: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    min-width: 175px;
-  }
-  .calculator__installment-price {
-    margin-top: 10px;
-  }
-  .calculator__installment .calculator__text {
-    margin-top: 0;
-  }
-  .calculator__offer {
-    padding: 8px 7px 10px 7px;
-    flex-direction: column;
-    min-width: 123px;
-    height: 68px;
-  }
-  .calculator__offer .calculator__text {
-    font-size: 16px;
-    text-align: center;
-  }
-  .calculator__order .calculator__text {
-    font-size: 16px;
-  }
-  .calculator__order .calculator__text:first-child {
-    margin-bottom: 13px;
-  }
-  .calculator__order .calculator__text:last-of-type {
-    margin-bottom: 27px;
-  }
-  /* end -------------------------------------------- calculator section -------------------------------------------- */
-  /* start -------------------------------------------- best price section ------------------------------------------ */
-  .best-price {
-    position: relative;
-    padding-left: 25px;
-    padding-right: 25px;
-    min-height: 270px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #F9F9F9;
-    border-radius: 3px;
-  }
-  .best-price-section {
+  .additionally-slider-section {
     margin-bottom: 75px;
-    display: block;
   }
-  .best-price .title {
-    font-weight: 700;
+  /* end ------------------------------------------- additionally slider section ----------------------------------- */
+  /* start ------------------------------------------- climate section --------------------------------------------- */
+  .climate-section {
+    margin-bottom: 75px;
   }
-  .best-price__title-1 {
-    max-width: 161px;
-    margin-bottom: 0;
-    position: relative;
-    z-index: 1;
-    font-size: 35px;
-    text-align: left;
-    line-height: 40px;
+  .climate__box {
+    display: flex;
   }
-  .best-price__title-2 {
-    margin-bottom: 11px;
-    font-size: 32px;
-    text-align: right;
+  .climate__left {
+    padding: 75px 0 75px 30px;
+    flex-basis: 65%;
   }
-  .best-price__img {
-    position: absolute;
-    bottom: 0;
-    left: 42%;
-    transform: translateX(-50%);
+  .climate__title {
+    margin-bottom: 31px;
   }
-  .best-price__content {
-    position: relative;
-    z-index: 1;
-    max-width: 356px;
-    text-align: right;
+  .climate__text {
+    font-size: 18px;
+    line-height: 25px;
   }
-  .best-price__subtitle {
-    margin-bottom: 11px;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 26px;
+  .climate__text:nth-of-type(1) {
+    margin-bottom: 25px;
   }
-  .best-price__text {
-    font-size: 10px;
-    font-weight: 300;
-    line-height: 13px;
-    max-width: 223px;
-    margin-left: auto;
+  .climate__right {
+    flex-basis: 59%;
+    background-image: url("../img/climate-middle.jpg");
   }
-  /* end -------------------------------------------- best price section --------------------------------------------- */
+  .climate__right::before {
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+  }
+  /* end ------------------------------------------- climate section ----------------------------------------------- */
   /* start -------------------------------------------- measuring section -------------------------------------------- */
   .measuring {
     display: flex;
@@ -5308,407 +5539,6 @@ input:focus:-ms-input-placeholder {
     height: 100%;
   }
   /* end -------------------------------------------- customers section ------------------------------------------- */
-  /* start ------------------------------------------ benefit section --------------------------------------------- */
-  .benefit {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 20px;
-  }
-  .benefit-section {
-    margin-bottom: 45px;
-  }
-  .benefit__img {
-    max-width: none;
-    padding-top: 20px;
-    margin-bottom: 0;
-    width: 50%;
-  }
-  .benefit__title {
-    margin-bottom: 18px;
-    margin-left: 25px;
-    font-size: 32px;
-    font-weight: 500;
-  }
-  .benefit__list {
-    width: 50%;
-  }
-  .benefit__list li {
-    display: flex;
-    flex-direction: column;
-  }
-  .benefit__icon {
-    margin-bottom: 12px;
-    width: 50px;
-    height: 50px;
-  }
-  .benefit__icon img {
-    width: 25px;
-    height: 25px;
-  }
-  .benefit__text {
-    margin-bottom: 14px;
-  }
-  .benefit__saving {
-    margin-bottom: 4px;
-  }
-  .benefit__price {
-    margin-top: auto;
-    font-size: 27px;
-    transform: translateY(-9px);
-  }
-  .benefit__ruble {
-    margin-left: 1px;
-  }
-  /* end ------------------------------------------ benefit section ----------------------------------------------- */
-  /* start ------------------------------------------ quality-windows section ------------------------------------- */
-  .quality-windows {
-    background-image: url("../img/quality-windows-bg-middle.jpg");
-    padding: 48px 25px 52px;
-  }
-  .quality-windows::before {
-    background: linear-gradient(90deg, rgba(41, 41, 41, 0.86) 24.6%, rgba(0, 0, 0, 0) 100%);
-  }
-  .quality-windows-section {
-    margin-top: 0;
-    margin-bottom: 45px;
-  }
-  .quality-windows__title {
-    margin-bottom: 31px;
-    max-width: 330px;
-    line-height: 37px;
-  }
-  .quality-windows__list {
-    margin-bottom: 27px;
-  }
-  .quality-windows__img {
-    z-index: 1;
-  }
-  .quality-windows__list li {
-    font-size: 21px;
-  }
-  .quality-windows__text {
-    max-width: 395px;
-    font-size: 21px;
-  }
-  .quality-item {
-    padding: 11px 14px 8px 14px;
-    top: 39px;
-    left: auto;
-    right: 16px;
-    transform: translateX(0);
-    max-width: 318px;
-  }
-  /* end ------------------------------------------ quality-windows section --------------------------------------- */
-  /* start ------------------------------------------ certificates section ---------------------------------------- */
-  .certificates {
-    padding-top: 75px;
-    padding-bottom: 75px;
-    padding-left: 30px;
-    display: flex;
-    justify-content: space-between;
-    background-image: url("../img/certificates-bg-middle.jpg");
-  }
-  .certificates-section {
-    margin-bottom: 45px;
-  }
-  .certificates__content {
-    margin-bottom: 0;
-    width: 50%;
-  }
-  .certificates__title {
-    margin-bottom: 30px;
-    max-width: 230px;
-  }
-  .certificates__slider {
-    margin-top: 8px;
-    width: 50.8%;
-  }
-  .certificates__slider .slider-controls {
-    padding-right: 0;
-    max-width: 293px;
-  }
-  .certificates-slider {
-    margin-bottom: 30px;
-    max-width: none;
-    width: 100%;
-  }
-  /* end ------------------------------------------ certificates section ------------------------------------------ */
-  /* start -------------------------------------------- delivery section ------------------------------------------ */
-  .delivery {
-    min-height: 327px;
-    display: flex;
-  }
-  .delivery-section {
-    margin-bottom: 45px;
-  }
-  .delivery__content {
-    width: 51%;
-    padding: 75px 0px 75px 30px;
-  }
-  .delivery__title {
-    margin-bottom: 30px;
-  }
-  .delivery__text {
-    padding-right: 42px;
-    margin-bottom: 0;
-    font-size: 18px;
-  }
-  .delivery__img {
-    min-height: auto;
-    width: 49%;
-    background-image: url("../img/delivery-bg-middle.jpg");
-  }
-  .delivery__img::before {
-    width: 138px;
-    height: 100%;
-    background: linear-gradient(90deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
-  }
-  .delivery__img img {
-    margin-top: 0;
-    min-width: 447px;
-    position: absolute;
-    right: 0;
-    top: 14%;
-  }
-  .delivery__hint {
-    right: 4.5%;
-    top: 12.7%;
-  }
-  .delivery__hint::before {
-    bottom: -8px;
-    right: 46%;
-    border-width: 11px 3px 0 6px;
-  }
-  /* end -------------------------------------------- delivery section ---------------------------------------------- */
-  /* start -------------------------------------------- payment section --------------------------------------------- */
-  .payment {
-    background-image: url("../img/payment-bg-small.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .payment-section {
-    margin-bottom: 45px;
-  }
-  .payment__content {
-    padding: 69px 24px 75px;
-    max-width: 430px;
-    margin-left: auto;
-  }
-  .payment__title {
-    margin-bottom: 34px;
-  }
-  .payment__description, .payment__small {
-    font-size: 18px;
-  }
-  .payment__description {
-    margin-bottom: 39px;
-    line-height: 25px;
-  }
-  .payment__list {
-    margin-bottom: 42px;
-  }
-  .payment__list li {
-    column-gap: 36px;
-  }
-  .payment__list li:not(:last-child) {
-    padding-bottom: 21px;
-  }
-  .payment__icon {
-    width: 44px;
-    height: 44px;
-  }
-  .payment__text {
-    font-size: 21px;
-  }
-  .payment__small.block {
-    margin-top: 4px;
-  }
-  .payment__btn {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 346px;
-  }
-  /* end -------------------------------------------- payment section ---------------------------------------------- */
-  /* start -------------------------------------------- advantages section ----------------------------------------- */
-  .advantages {
-    max-width: 708px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 20px;
-  }
-  .advantages-section {
-    margin-bottom: 45px;
-  }
-  .advantages__content {
-    width: 50%;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 0;
-  }
-  .advantages__title {
-    margin-bottom: 19px;
-    font-size: 22px;
-    line-height: 25px;
-  }
-  .advantages__list {
-    width: 50%;
-    gap: 20px;
-  }
-  .advantages__list li {
-    padding: 15px 10px 17px 9px;
-    width: 47%;
-  }
-  .advantages__img {
-    margin-bottom: 14px;
-  }
-  /* end -------------------------------------------- advantages section ------------------------------------------- */
-  /* start------------------------------------------- making windows section --------------------------------------- */
-  .making-windows {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    column-gap: 38px;
-  }
-  .making-windows-section {
-    margin-bottom: 45px;
-    padding-top: 115px;
-    padding-bottom: 115px;
-    background-image: url("../img/making-windows-middle.jpg");
-  }
-  .making-windows__titles, .making-windows__title {
-    margin-bottom: 0;
-  }
-  .making-windows__title {
-    font-size: 32px;
-  }
-  .making-windows__title:first-child {
-    margin-bottom: 28px;
-  }
-  .making-windows__btn {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 224px;
-    transform: translateY(-7px);
-  }
-  /* end------------------------------------------- making windows section ----------------------------------------- */
-  /* start------------------------------------------- sketches section --------------------------------------------- */
-  .sketches-section {
-    margin-bottom: 75px;
-  }
-  .sketches-box {
-    padding: 75px 30px;
-  }
-  .sketches__title {
-    margin-bottom: 45px;
-  }
-  .sketches__text {
-    margin-bottom: 24px;
-    font-size: 18px;
-    line-height: 25px;
-  }
-  .sketches__text:nth-child(2) {
-    margin-bottom: 32px;
-  }
-  .form-sketches__box {
-    margin-bottom: 13px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 648px;
-  }
-  .form-sketches__phone, .form-sketches__name, .form-sketches__file, .form-sketches__btn, .form-sketches__whatsapp {
-    margin-bottom: 0;
-  }
-  .form-sketches__phone, .form-sketches__name {
-    border-bottom-width: 2px;
-  }
-  .form-sketches__phone {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-  }
-  .form-sketches__file {
-    grid-row: 1 / 2;
-    grid-column: 2 / 2;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .form-sketches__btn {
-    grid-row: 2 / 2;
-    grid-column: 1 / 2;
-  }
-  .form-sketches__whatsapp {
-    grid-row: 2 / 2;
-    grid-column: 2 / 2;
-  }
-  .form-sketches--2 .form-sketches__box {
-    margin-bottom: 30px;
-  }
-  .form-sketches--2 .form-sketches__name {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-  }
-  .form-sketches--2 .form-sketches__phone {
-    grid-row: 1 / 2;
-    grid-column: 2 / 2;
-  }
-  .form-sketches--2 .form-sketches__file {
-    grid-row: 2 / 2;
-    grid-column: 1 / 2;
-  }
-  .form-sketches--2 .form-sketches__btn {
-    grid-row: 2 / 2;
-    grid-column: 2 / 2;
-  }
-  .form-sketches--2 .form-sketches__text {
-    font-size: 18px;
-  }
-  .form-sketches--2 .form-sketches__text .block {
-    display: inline;
-  }
-  /* end------------------------------------------- sketches section ----------------------------------------------- */
-  /* start ------------------------------------------- additionally slider section --------------------------------- */
-  .additionally-slider {
-    margin-bottom: 30px;
-    max-width: 738px;
-  }
-  .additionally-slider-section {
-    margin-bottom: 75px;
-  }
-  /* end ------------------------------------------- additionally slider section ----------------------------------- */
-  /* start ------------------------------------------- climate section --------------------------------------------- */
-  .climate-section {
-    margin-bottom: 75px;
-  }
-  .climate__box {
-    display: flex;
-  }
-  .climate__left {
-    padding: 75px 0 75px 30px;
-    flex-basis: 65%;
-  }
-  .climate__title {
-    margin-bottom: 31px;
-  }
-  .climate__text {
-    font-size: 18px;
-    line-height: 25px;
-  }
-  .climate__text:nth-of-type(1) {
-    margin-bottom: 25px;
-  }
-  .climate__right {
-    flex-basis: 59%;
-    background-image: url("../img/climate-middle.jpg");
-  }
-  .climate__right::before {
-    width: 80px;
-    height: 100%;
-    background: linear-gradient(90deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
-  }
-  /* end ------------------------------------------- climate section ----------------------------------------------- */
   /* start----------------------------------------- any forms section ---------------------------------------------- */
   .any-forms-section {
     margin-bottom: 75px;
@@ -5898,30 +5728,178 @@ input:focus:-ms-input-placeholder {
     display: none;
   }
   /* end -------------------------------------------- profitable windows section ------------------------------------ */
-  /* start -------------------------------------------- schedule section ------------------------------------------- */
-  .schedule__tabs {
+  /* start -------------------------------------------- delivery section ------------------------------------------ */
+  .delivery {
+    min-height: 327px;
     display: flex;
   }
-  .schedule__tab:first-child {
-    margin-right: 57px;
+  .delivery-section {
+    margin-bottom: 45px;
   }
-  .schedule__map {
-    margin-bottom: 60px;
+  .delivery__content {
+    width: 51%;
+    padding: 75px 0px 75px 30px;
   }
-  .schedule__map iframe {
-    min-height: 363px;
+  .delivery__title {
+    margin-bottom: 30px;
   }
-  .schedule__subtitle {
+  .delivery__text {
+    padding-right: 42px;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .delivery__img {
+    min-height: auto;
+    width: 49%;
+    background-image: url("../img/delivery-bg-middle.jpg");
+  }
+  .delivery__img::before {
+    width: 138px;
+    height: 100%;
+    background: linear-gradient(90deg, #F9F9F9 0%, rgba(249, 249, 249, 0) 100%);
+  }
+  .delivery__img img {
+    margin-top: 0;
+    min-width: 447px;
+    position: absolute;
+    right: 0;
+    top: 14%;
+  }
+  .delivery__hint {
+    right: 4.5%;
+    top: 12.7%;
+  }
+  .delivery__hint::before {
+    bottom: -8px;
+    right: 46%;
+    border-width: 11px 3px 0 6px;
+  }
+  /* end -------------------------------------------- delivery section ---------------------------------------------- */
+  /* start ------------------------------------------ benefit section --------------------------------------------- */
+  .benefit {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+  .benefit-section {
+    margin-bottom: 45px;
+  }
+  .benefit__img {
+    max-width: none;
+    padding-top: 20px;
+    margin-bottom: 0;
+    width: 50%;
+  }
+  .benefit__title {
+    margin-bottom: 18px;
+    margin-left: 25px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .benefit__list {
+    width: 50%;
+  }
+  .benefit__list li {
+    display: flex;
+    flex-direction: column;
+  }
+  .benefit__icon {
+    margin-bottom: 12px;
+    width: 50px;
+    height: 50px;
+  }
+  .benefit__icon img {
+    width: 25px;
+    height: 25px;
+  }
+  .benefit__text {
+    margin-bottom: 14px;
+  }
+  .benefit__saving {
+    margin-bottom: 4px;
+  }
+  .benefit__price {
+    margin-top: auto;
+    font-size: 27px;
+    transform: translateY(-9px);
+  }
+  .benefit__ruble {
+    margin-left: 1px;
+  }
+  /* end ------------------------------------------ benefit section ----------------------------------------------- */
+  /* start ------------------------------------------ quality-windows section ------------------------------------- */
+  .quality-windows {
+    background-image: url("../img/quality-windows-bg-middle.jpg");
+    padding: 48px 25px 52px;
+  }
+  .quality-windows::before {
+    background: linear-gradient(90deg, rgba(41, 41, 41, 0.86) 24.6%, rgba(0, 0, 0, 0) 100%);
+  }
+  .quality-windows-section {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+  .quality-windows__title {
+    margin-bottom: 31px;
+    max-width: 330px;
+    line-height: 37px;
+  }
+  .quality-windows__list {
+    margin-bottom: 27px;
+  }
+  .quality-windows__img {
+    z-index: 1;
+  }
+  .quality-windows__list li {
     font-size: 21px;
   }
-  .schedule__text {
-    font-size: 18px;
-    line-height: 25px;
+  .quality-windows__text {
+    max-width: 395px;
+    font-size: 21px;
   }
-  .work-schedule {
-    margin-bottom: 50px;
+  .quality-item {
+    padding: 11px 14px 8px 14px;
+    top: 39px;
+    left: auto;
+    right: 16px;
+    transform: translateX(0);
+    max-width: 318px;
   }
-  /* end -------------------------------------------- schedule section -------------------------------------------- */
+  /* end ------------------------------------------ quality-windows section --------------------------------------- */
+  /* start ------------------------------------------ certificates section ---------------------------------------- */
+  .certificates {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../img/certificates-bg-middle.jpg");
+  }
+  .certificates-section {
+    margin-bottom: 45px;
+  }
+  .certificates__content {
+    margin-bottom: 0;
+    width: 50%;
+  }
+  .certificates__title {
+    margin-bottom: 30px;
+    max-width: 230px;
+  }
+  .certificates__slider {
+    margin-top: 8px;
+    width: 50.8%;
+  }
+  .certificates__slider .slider-controls {
+    padding-right: 0;
+    max-width: 293px;
+  }
+  .certificates-slider {
+    margin-bottom: 30px;
+    max-width: none;
+    width: 100%;
+  }
+  /* end ------------------------------------------ certificates section ------------------------------------------ */
   /* start -------------------------------------------- footer ----------------------------------------------------- */
   .footer__menu {
     padding-left: 0;
@@ -6003,6 +5981,32 @@ input:focus:-ms-input-placeholder {
     height: 10px;
   }
   /* end ------------------------------------------- footer -------------------------------------------------------- */
+  /* start Страница Контакты */
+  /* start -------------------------------------------- schedule section ------------------------------------------- */
+  .schedule__tabs {
+    display: flex;
+  }
+  .schedule__tab:first-child {
+    margin-right: 57px;
+  }
+  .schedule__map {
+    margin-bottom: 60px;
+  }
+  .schedule__map iframe {
+    min-height: 363px;
+  }
+  .schedule__subtitle {
+    font-size: 21px;
+  }
+  .schedule__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .work-schedule {
+    margin-bottom: 50px;
+  }
+  /* end -------------------------------------------- schedule section -------------------------------------------- */
+  /* end Страница Контакты */
 }
 
 @media (min-width: 1024px) {
@@ -6290,6 +6294,122 @@ input:focus:-ms-input-placeholder {
     max-width: 361px;
   }
   /* end ------------------------------------------ offer section ---------------------------------------------------- */
+  /* start -------------------------------------------- best price section ------------------------------------------ */
+  .best-price {
+    padding-left: 37px;
+    padding-right: 44px;
+    min-height: 280px;
+  }
+  .best-price-section {
+    margin-bottom: 100px;
+  }
+  .best-price__title-1 {
+    margin-top: -14px;
+    max-width: 205px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .best-price__title-2 {
+    margin-bottom: 19px;
+  }
+  .best-price__content {
+    margin-top: -8px;
+  }
+  .best-price__subtitle {
+    margin-bottom: 14px;
+  }
+  .best-price__text {
+    line-height: 15px;
+  }
+  .best-price__img {
+    left: 45.5%;
+  }
+  /* end -------------------------------------------- best price section -------------------------------------------- */
+  /* end -------------------------------------------- calculator section -------------------------------------------- */
+  .calculator {
+    padding-top: 40px;
+    max-width: none;
+    grid-template: 'windows-img type-window' 'windows-img calc-form' 'calc-ranges calc-form';
+    column-gap: 68px;
+  }
+  .calculator-section {
+    margin-bottom: 100px;
+  }
+  .calculator__type {
+    flex-direction: column;
+  }
+  .calculator__type .calculator__text {
+    max-width: none;
+  }
+  .calculator__list {
+    margin-bottom: 19px;
+    margin-left: 0;
+    margin-top: 0;
+    transform: translateX(0);
+  }
+  .calculator__list li:first-child {
+    width: 60px;
+    height: 83px;
+  }
+  .calculator__list li:nth-child(2) {
+    width: 108px;
+    height: 83px;
+  }
+  .calculator__list li:last-child {
+    width: 162px;
+    height: 83px;
+  }
+  .calculator__img {
+    width: 371.68px;
+    height: 365px;
+    margin-bottom: 0;
+  }
+  .calculator__img.img-1 {
+    width: 220px;
+    height: 360px;
+  }
+  .calculator__img.img-2 {
+    width: 371.68px;
+    height: 365px;
+  }
+  .calculator__img.img-3 {
+    width: 379.68px;
+    height: 318px;
+  }
+  .calculator__sizes li:first-child {
+    margin-bottom: 34px;
+  }
+  .calculator__form {
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
+  .calculator__checkboxes li:first-child {
+    margin-bottom: 20px;
+  }
+  .calculator__order-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .calculator__range-height, .calculator__range-width {
+    width: 286px;
+    height: 10px;
+  }
+  .calculator__range-height .noUi-handle, .calculator__range-width .noUi-handle {
+    width: 30px;
+    height: 30px;
+    top: -10px;
+  }
+  .calculator__offer {
+    padding-left: 15px;
+    min-width: 139px;
+  }
+  .calculator__offer .calculator__text {
+    margin-right: 13px;
+  }
+  .calculator__btn {
+    max-width: 370px;
+  }
+  /* start -------------------------------------------- calculator section ------------------------------------------ */
   /* start ----------------------------------------- windows-factory section ----------------------------------------- */
   .windows-factory {
     padding: 75px 40px 75px 20px;
@@ -6316,6 +6436,35 @@ input:focus:-ms-input-placeholder {
     display: none;
   }
   /* end ----------------------------------------- windows-factory section ------------------------------------------- */
+  /* start -------------------------------------------- payment section --------------------------------------------- */
+  .payment {
+    background-image: url("../img/payment-bg-big.png");
+  }
+  .payment__content {
+    padding-top: 72px;
+    max-width: 578px;
+  }
+  .payment__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  .payment__description {
+    margin-bottom: 49px;
+  }
+  .payment__list {
+    margin-bottom: 49px;
+  }
+  .payment__list li:not(:last-child) {
+    padding-bottom: 22px;
+    margin-bottom: 19px;
+  }
+  .payment__list li:first-child .payment__text, .payment__list li:last-child .payment__text {
+    line-height: 26px;
+  }
+  .payment__text .payment__small {
+    display: block;
+  }
+  /* end -------------------------------------------- payment section ---------------------------------------------- */
   /* start ------------------------------------------- installment section ------------------------------------------ */
   .installment-section {
     margin-bottom: 60px;
@@ -6643,122 +6792,60 @@ input:focus:-ms-input-placeholder {
     background-size: 213px;
   }
   /* end -------------------------------------------- choose own color section -------------------------------------- */
-  /* end -------------------------------------------- calculator section -------------------------------------------- */
-  .calculator {
-    padding-top: 40px;
-    max-width: none;
-    grid-template: 'windows-img type-window' 'windows-img calc-form' 'calc-ranges calc-form';
-    column-gap: 68px;
+  /* start -------------------------------------------- advantages section ----------------------------------------- */
+  .advantages__content {
+    padding: 40px 40px 33px;
+    background-image: url("../img/advantages-big-1.jpg");
   }
-  .calculator-section {
-    margin-bottom: 100px;
+  .advantages__title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 35px;
   }
-  .calculator__type {
-    flex-direction: column;
+  .advantages__description {
+    font-size: 18px;
+    line-height: 22px;
   }
-  .calculator__type .calculator__text {
-    max-width: none;
+  .advantages__description:not(:last-child) {
+    margin-bottom: 22px;
   }
-  .calculator__list {
+  .advantages__list li {
+    padding: 30px 10px 18px 19px;
+  }
+  .advantages__list li:first-child {
+    background-image: url("../img/advantages-big-2.jpg");
+  }
+  .advantages__list li:first-child .advantages__icon {
+    width: 45px;
+    height: 45px;
+  }
+  .advantages__list li:nth-child(2) {
+    background-image: url("../img/advantages-big-3.jpg");
+  }
+  .advantages__list li:nth-child(2) .advantages__icon {
+    width: 45px;
+    height: 45px;
+  }
+  .advantages__list li:nth-child(3) {
+    background-image: url("../img/advantages-big-4.jpg");
+  }
+  .advantages__list li:last-child {
+    background-image: url("../img/advantages-big-5.jpg");
+  }
+  .advantages__img {
     margin-bottom: 19px;
-    margin-left: 0;
-    margin-top: 0;
-    transform: translateX(0);
+    width: 78px;
+    height: 78px;
   }
-  .calculator__list li:first-child {
-    width: 60px;
-    height: 83px;
+  .advantages__icon {
+    width: 45px;
+    height: 45px;
   }
-  .calculator__list li:nth-child(2) {
-    width: 108px;
-    height: 83px;
+  .advantages__text {
+    font-size: 21px;
+    line-height: 25px;
   }
-  .calculator__list li:last-child {
-    width: 162px;
-    height: 83px;
-  }
-  .calculator__img {
-    width: 371.68px;
-    height: 365px;
-    margin-bottom: 0;
-  }
-  .calculator__img.img-1 {
-    width: 220px;
-    height: 360px;
-  }
-  .calculator__img.img-2 {
-    width: 371.68px;
-    height: 365px;
-  }
-  .calculator__img.img-3 {
-    width: 379.68px;
-    height: 318px;
-  }
-  .calculator__sizes li:first-child {
-    margin-bottom: 34px;
-  }
-  .calculator__form {
-    padding-top: 23px;
-    padding-bottom: 25px;
-  }
-  .calculator__checkboxes li:first-child {
-    margin-bottom: 20px;
-  }
-  .calculator__order-box {
-    display: flex;
-    justify-content: space-between;
-  }
-  .calculator__range-height, .calculator__range-width {
-    width: 286px;
-    height: 10px;
-  }
-  .calculator__range-height .noUi-handle, .calculator__range-width .noUi-handle {
-    width: 30px;
-    height: 30px;
-    top: -10px;
-  }
-  .calculator__offer {
-    padding-left: 15px;
-    min-width: 139px;
-  }
-  .calculator__offer .calculator__text {
-    margin-right: 13px;
-  }
-  .calculator__btn {
-    max-width: 370px;
-  }
-  /* start -------------------------------------------- calculator section ------------------------------------------ */
-  /* start -------------------------------------------- best price section ------------------------------------------ */
-  .best-price {
-    padding-left: 37px;
-    padding-right: 44px;
-    min-height: 280px;
-  }
-  .best-price-section {
-    margin-bottom: 100px;
-  }
-  .best-price__title-1 {
-    margin-top: -14px;
-    max-width: 205px;
-    font-size: 40px;
-    line-height: 45px;
-  }
-  .best-price__title-2 {
-    margin-bottom: 19px;
-  }
-  .best-price__content {
-    margin-top: -8px;
-  }
-  .best-price__subtitle {
-    margin-bottom: 14px;
-  }
-  .best-price__text {
-    line-height: 15px;
-  }
-  .best-price__img {
-    left: 45.5%;
-  }
-  /* end -------------------------------------------- best price section -------------------------------------------- */
+  /* end -------------------------------------------- advantages section ------------------------------------------- */
   /* start -------------------------------------------- measuring section -------------------------------------------- */
   .measuring {
     margin-bottom: 45px;
@@ -6945,6 +7032,35 @@ input:focus:-ms-input-placeholder {
     font-size: 21px;
   }
   /* end ------------------------------------------ benefit section ------------------------------------------------- */
+  /* start -------------------------------------------- delivery section -------------------------------------------- */
+  .delivery-section {
+    margin-bottom: 60px;
+  }
+  .delivery__content {
+    padding: 73px 0px 75px 38px;
+    width: 45%;
+  }
+  .delivery__text {
+    padding-right: 61px;
+  }
+  .delivery__hint {
+    padding: 5px;
+    right: 5.4%;
+    top: 12.3%;
+  }
+  .delivery__hint::before {
+    right: 47%;
+  }
+  .delivery__img {
+    width: 65%;
+    background-image: url("../img/delivery-bg-big.jpg");
+  }
+  .delivery__img img {
+    min-width: 638px;
+    right: 0.4%;
+    top: 13.6%;
+  }
+  /* end -------------------------------------------- delivery section ---------------------------------------------- */
   /* start ------------------------------------------ quality-windows section --------------------------------------- */
   .quality-windows {
     padding: 62px 38px 67px;
@@ -7011,118 +7127,6 @@ input:focus:-ms-input-placeholder {
     margin-bottom: 5px;
   }
   /* end ------------------------------------------ certificates section -------------------------------------------- */
-  /* start -------------------------------------------- delivery section -------------------------------------------- */
-  .delivery-section {
-    margin-bottom: 60px;
-  }
-  .delivery__content {
-    padding: 73px 0px 75px 38px;
-    width: 45%;
-  }
-  .delivery__text {
-    padding-right: 61px;
-  }
-  .delivery__hint {
-    padding: 5px;
-    right: 5.4%;
-    top: 12.3%;
-  }
-  .delivery__hint::before {
-    right: 47%;
-  }
-  .delivery__img {
-    width: 65%;
-    background-image: url("../img/delivery-bg-big.jpg");
-  }
-  .delivery__img img {
-    min-width: 638px;
-    right: 0.4%;
-    top: 13.6%;
-  }
-  /* end -------------------------------------------- delivery section ---------------------------------------------- */
-  /* start -------------------------------------------- payment section --------------------------------------------- */
-  .payment {
-    background-image: url("../img/payment-bg-big.png");
-  }
-  .payment__content {
-    padding-top: 72px;
-    max-width: 578px;
-  }
-  .payment__title {
-    margin-bottom: 40px;
-    font-size: 40px;
-  }
-  .payment__description {
-    margin-bottom: 49px;
-  }
-  .payment__list {
-    margin-bottom: 49px;
-  }
-  .payment__list li:not(:last-child) {
-    padding-bottom: 22px;
-    margin-bottom: 19px;
-  }
-  .payment__list li:first-child .payment__text, .payment__list li:last-child .payment__text {
-    line-height: 26px;
-  }
-  .payment__text .payment__small {
-    display: block;
-  }
-  /* end -------------------------------------------- payment section ---------------------------------------------- */
-  /* start -------------------------------------------- advantages section ----------------------------------------- */
-  .advantages__content {
-    padding: 40px 40px 33px;
-    background-image: url("../img/advantages-big-1.jpg");
-  }
-  .advantages__title {
-    margin-bottom: 32px;
-    font-size: 32px;
-    line-height: 35px;
-  }
-  .advantages__description {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .advantages__description:not(:last-child) {
-    margin-bottom: 22px;
-  }
-  .advantages__list li {
-    padding: 30px 10px 18px 19px;
-  }
-  .advantages__list li:first-child {
-    background-image: url("../img/advantages-big-2.jpg");
-  }
-  .advantages__list li:first-child .advantages__icon {
-    width: 45px;
-    height: 45px;
-  }
-  .advantages__list li:nth-child(2) {
-    background-image: url("../img/advantages-big-3.jpg");
-  }
-  .advantages__list li:nth-child(2) .advantages__icon {
-    width: 45px;
-    height: 45px;
-  }
-  .advantages__list li:nth-child(3) {
-    background-image: url("../img/advantages-big-4.jpg");
-  }
-  .advantages__list li:last-child {
-    background-image: url("../img/advantages-big-5.jpg");
-  }
-  .advantages__img {
-    margin-bottom: 19px;
-    width: 78px;
-    height: 78px;
-  }
-  .advantages__icon {
-    width: 45px;
-    height: 45px;
-  }
-  .advantages__text {
-    font-size: 21px;
-    line-height: 25px;
-  }
-  /* end -------------------------------------------- advantages section ------------------------------------------- */
   /* start------------------------------------------- making windows section --------------------------------------- */
   .making-windows-section {
     margin-bottom: 60px;
@@ -7360,6 +7364,7 @@ input:focus:-ms-input-placeholder {
     width: 44%;
   }
   /* end -------------------------------------------- profitable windows section ------------------------------------ */
+  /* start Страница Контакты */
   /* start -------------------------------------------- schedule section -------------------------------------------- */
   .schedule__box {
     display: grid;
@@ -7407,6 +7412,7 @@ input:focus:-ms-input-placeholder {
     grid-column: 1 / 2;
   }
   /* end -------------------------------------------- schedule section ---------------------------------------------- */
+  /* end Страница Контакты */
 }
 
 @media (min-width: 1200px) {
