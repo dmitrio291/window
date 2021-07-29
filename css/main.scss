@@ -1920,8 +1920,23 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 21px;
-        width: 278px;
-        height: 278px;
+
+        &.img {
+            &-1 {
+                width: 165px;
+                height: 250px;
+            }
+
+            &-2 {
+                width: 278px;
+                height: 278px;
+            }
+
+            &-3 {
+                width: 278px;
+                height: 220px;
+            }
+        }
     }
 
     &__sizes {
@@ -7601,6 +7616,23 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             width: 371.68px;
             height: 365px;
             margin-bottom: 0;
+
+            &.img {
+                &-1 {
+                    width: 220px;
+                    height: 360px;
+                }
+    
+                &-2 {
+                    width: 371.68px;
+                    height: 365px;
+                }
+    
+                &-3 {
+                    width: 379.68px;
+                    height: 318px;
+                }
+            }
         }
 
         &__sizes {

@@ -1836,8 +1836,21 @@ input:focus:-ms-input-placeholder {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 21px;
+}
+
+.calculator__img.img-1 {
+  width: 165px;
+  height: 250px;
+}
+
+.calculator__img.img-2 {
   width: 278px;
   height: 278px;
+}
+
+.calculator__img.img-3 {
+  width: 278px;
+  height: 220px;
 }
 
 .calculator__sizes {
@@ -6668,6 +6681,18 @@ input:focus:-ms-input-placeholder {
     width: 371.68px;
     height: 365px;
     margin-bottom: 0;
+  }
+  .calculator__img.img-1 {
+    width: 220px;
+    height: 360px;
+  }
+  .calculator__img.img-2 {
+    width: 371.68px;
+    height: 365px;
+  }
+  .calculator__img.img-3 {
+    width: 379.68px;
+    height: 318px;
   }
   .calculator__sizes li:first-child {
     margin-bottom: 34px;

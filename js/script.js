@@ -73,12 +73,15 @@ document.addEventListener('DOMContentLoaded', () => {
             windowsTypes.forEach(window => {
                 window.addEventListener('click', function() {
                     const dataWindow = window.dataset.window;
-                    console.log(dataWindow);
+                    const dataWindowImg = window.dataset.windowImg;
                     windowsTypes.forEach(window => {
                         window.classList.remove('active');
                     });
                     this.classList.add('active');
                     windowImg.src = dataWindow;
+                    windowImg.removeAttribute('class');
+                    windowImg.classList.add('calculator__img');
+                    windowImg.classList.add(dataWindowImg);
                 });
             });
         }        
