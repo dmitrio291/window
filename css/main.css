@@ -2231,6 +2231,151 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- advantages section --------------------------------------------------*/
+/* start------------------------------------------- examples section -------------------------------------------------- */
+.examples__desc {
+  margin-bottom: 25px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.examples__list {
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.examples__list > li {
+  margin-bottom: 25px;
+}
+
+.examples__list > li:last-child {
+  display: none;
+}
+
+.examples-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.examples-slider__wrap {
+  display: flex;
+}
+
+.examples-slider__slide {
+  flex-shrink: 0;
+}
+
+.examples-slider__slide a {
+  display: block;
+}
+
+.examples-slider__prev, .examples-slider__next {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.examples-slider__prev {
+  left: 10px;
+}
+
+.examples-slider__next {
+  right: 10px;
+}
+
+.examples-slider__img {
+  display: block;
+  width: 100%;
+}
+
+.examples-slider__pagination {
+  position: absolute;
+  text-align: center;
+}
+
+.examples-slider__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(249, 249, 249, 0.7);
+  opacity: 1;
+}
+
+.examples-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #F26422;
+}
+
+.examples__title {
+  margin-bottom: 25px;
+}
+
+.examples__inner {
+  padding: 25px 10px 20px;
+  border: 0.5px solid #CDCDCD;
+}
+
+.examples__subtitle {
+  margin-bottom: 19px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.examples__content, .examples__items {
+  margin-bottom: 19px;
+  overflow-y: scroll;
+  background-color: #F9F9F9;
+  border-top: 0.5px solid #CDCDCD;
+}
+
+.examples__content::-webkit-scrollbar-track, .examples__items::-webkit-scrollbar-track {
+  background-color: #C4C4C4;
+}
+
+.examples__content::-webkit-scrollbar, .examples__items::-webkit-scrollbar {
+  width: 5px;
+  background-color: #C4C4C4;
+}
+
+.examples__content::-webkit-scrollbar-thumb, .examples__items::-webkit-scrollbar-thumb {
+  background-color: #F26422;
+}
+
+.examples__content {
+  padding: 8px 10px 10px;
+  height: 95px;
+}
+
+.examples__items {
+  height: 106px;
+}
+
+.examples__items li {
+  padding: 8px 10px;
+  border-bottom: 0.5px solid #CDCDCD;
+}
+
+.examples__items li:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.examples__text {
+  line-height: 19px;
+}
+
+.examples__btn {
+  display: block;
+  width: 100%;
+  max-width: 160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* end------------------------------------------- examples section ---------------------------------------------------- */
 /* start------------------------------------------- making windows section --------------------------------------------- */
 .making-windows {
   position: relative;
@@ -5166,6 +5311,24 @@ input:focus:-ms-input-placeholder {
     margin-bottom: 14px;
   }
   /* end -------------------------------------------- advantages section ------------------------------------------- */
+  /* start------------------------------------------- examples section --------------------------------------------- */
+  .examples__title {
+    margin-bottom: 40px;
+  }
+  .examples__desc {
+    margin-bottom: 65px;
+  }
+  .examples__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 708px;
+  }
+  .examples__list > li {
+    margin-bottom: 0;
+    width: 48%;
+  }
+  /* end------------------------------------------- examples section --------------------------------------------- --*/
   /* start------------------------------------------- making windows section --------------------------------------- */
   .making-windows {
     display: flex;
@@ -6846,6 +7009,17 @@ input:focus:-ms-input-placeholder {
     line-height: 25px;
   }
   /* end -------------------------------------------- advantages section ------------------------------------------- */
+  /* start------------------------------------------- examples section --------------------------------------------- */
+  .examples__list {
+    max-width: none;
+  }
+  .examples__list > li {
+    width: 31.9%;
+  }
+  .examples__list > li:last-child {
+    display: block;
+  }
+  /* end------------------------------------------- examples section ----------------------------------------------- */
   /* start -------------------------------------------- measuring section -------------------------------------------- */
   .measuring {
     margin-bottom: 45px;
@@ -7477,5 +7651,17 @@ input:focus:-ms-input-placeholder {
     right: -31px;
   }
   /* end -------------------------------------------- installment section -------------------------------------------- */
+}
+
+@media (any-hover: hover) {
+  .examples__list li:hover .examples-slider__prev, .examples__list li:hover .examples-slider__next {
+    display: block;
+  }
+  .examples-slider__prev, .examples-slider__next {
+    display: none;
+  }
+  .examples-slider__prev:hover, .examples-slider__next:hover {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

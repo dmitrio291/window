@@ -313,6 +313,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .sketches-section ---------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .examples-section---------------------------------- */
+    const examplesSlider = document.querySelectorAll('.examples-slider');
+
+    const examplesSliderInit = (slider) => {
+        const examplesSwiper = new Swiper(slider, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            slideClass: 'examples-slider__slide',
+            wrapperClass: 'examples-slider__wrap',
+            pagination: {
+                el: '.examples-slider__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.examples-slider__next',
+                prevEl: '.examples-slider__prev'
+            }
+        });
+    };
+
+    examplesSlider.forEach((slider) => examplesSliderInit(slider));
+
+    
+    /* end ---------------------------------- Скрипты для секции .examples-section------------------------------------ */
+
     /* start ---------------------------------- Скрипты для секции .sketches-section 2-ой вариант ------------------- */
     const sketchesInput2 = document.querySelector('.form-sketches--2 .form-sketches__none');
     const sketchesText2 = document.querySelector('.form-sketches--2 .form-sketches__upload-text');
@@ -482,6 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (accordionToggles) accordionToggle(accordionToggles);
     /* end-------------------------------- Скрипты для секции .accordion-section ------------------------------------ */
 
+    /* start Страница Контакты */
     /* start-------------------------------- Скрипты для секции .schedule-section ------------------------------------ */
     const scheduleTabs = document.querySelectorAll('.schedule__tab');
     const scheduleContacts = document.querySelector('.work-schedule__contacts');
@@ -503,4 +531,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     /* end-------------------------------- Скрипты для секции .schedule-section ------------------------------------- */
+    /* end Страница Контакты */
 });
