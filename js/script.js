@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const rangeWidth = document.querySelector('.calculator__range-width');
     const inputHeight = document.querySelector('.calculator__input.input-height');
     const inputWidth = document.querySelector('.calculator__input.input-width');
+    const windowsTypes = document.querySelectorAll('.calculator__list li');
+    const windowImg = document.querySelector('.calculator__img');
 
     function initRange(range, input) {
         noUiSlider.create(range, {
@@ -66,6 +68,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (rangeHeight, inputHeight, rangeWidth, inputWidth) {
         initRange(rangeHeight, inputHeight);
         initRange(rangeWidth, inputWidth);
+
+        if (windowsTypes && windowImg) {
+            windowsTypes.forEach(window => {
+                window.addEventListener('click', function() {
+                    const dataWindow = window.dataset.window;
+                    console.log(dataWindow);
+                    windowsTypes.forEach(window => {
+                        window.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    windowImg.src = dataWindow;
+                });
+            });
+        }        
     }
     /* end -------------------------------- Скрипты для секции .calculator-section ---------------------------------- */
 

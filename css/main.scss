@@ -1879,6 +1879,15 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         justify-content: space-between;
 
         li {
+            cursor: pointer;
+
+            &.active {
+                rect,
+                path {
+                    stroke: #F26422;
+                }
+            }
+
             &:first-child {
                 width: 51.75px;
                 height: 72px;
@@ -1894,7 +1903,12 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 height: 72px;
             }
 
-            img {
+            // img {
+            //     width: 100%;
+            //     height: 100%;
+            // }
+
+            svg {
                 width: 100%;
                 height: 100%;
             }
@@ -1983,6 +1997,16 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 color: #CDCDCD;
             }
         }      
+    }
+
+    &__label {
+        input:checked ~ .calculator__toggle {
+            background-color: #F26422;
+        }
+
+        input:checked ~ .calculator__toggle::before {
+            left: 48px;
+        }
     }
 
     &__toggle {
@@ -5239,12 +5263,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             transform: translateX(-9px);
 
             li {
-                &.active {
-                    img {
-
-                    }
-                }
-
                 &:not(:first-child) {
                     margin-left: 12px;
                 }

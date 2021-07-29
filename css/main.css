@@ -1802,6 +1802,15 @@ input:focus:-ms-input-placeholder {
   justify-content: space-between;
 }
 
+.calculator__list li {
+  cursor: pointer;
+}
+
+.calculator__list li.active rect,
+.calculator__list li.active path {
+  stroke: #F26422;
+}
+
 .calculator__list li:first-child {
   width: 51.75px;
   height: 72px;
@@ -1817,7 +1826,7 @@ input:focus:-ms-input-placeholder {
   height: 72px;
 }
 
-.calculator__list li img {
+.calculator__list li svg {
   width: 100%;
   height: 100%;
 }
@@ -1915,6 +1924,14 @@ input:focus:-ms-input-placeholder {
   margin-left: 10px;
   font-size: 21px;
   color: #CDCDCD;
+}
+
+.calculator__label input:checked ~ .calculator__toggle {
+  background-color: #F26422;
+}
+
+.calculator__label input:checked ~ .calculator__toggle::before {
+  left: 48px;
 }
 
 .calculator__toggle {
