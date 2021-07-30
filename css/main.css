@@ -4541,6 +4541,87 @@ input:focus:-ms-input-placeholder {
 
 /* end -------------------------------------------- discounts-stocks-section ----------------------------------------- */
 /* end Страница Акции */
+/* start Страница Рассрочка */
+/* start -------------------------------------------- installment-info-section --------------------------------------- */
+.installment-info-section {
+  margin-bottom: 50px;
+}
+
+.installment-info > li:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.installment-info__title {
+  margin-bottom: 14px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.installment-info__title::before {
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #F26422;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.installment-info__title.icon-1::before {
+  background-image: url("../img/installment-info-icon-1.svg");
+}
+
+.installment-info__title.icon-2::before {
+  background-image: url("../img/installment-info-icon-2.svg");
+}
+
+.installment-info__text {
+  line-height: 21px;
+  font-weight: 300;
+}
+
+.installment-info__text:not(:last-of-type) {
+  margin-bottom: 21px;
+}
+
+.installment-info__text .orange {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.installment-info__list {
+  margin-top: 20px;
+}
+
+.installment-info__list li {
+  position: relative;
+  line-height: 21px;
+  padding-left: 24px;
+  font-weight: 300;
+}
+
+.installment-info__list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.installment-info__list li::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 3px;
+  height: 3px;
+  background-color: #48494B;
+  border-radius: 50%;
+}
+
+/* end -------------------------------------------- installment-info-section ----------------------------------------- */
+/* end Страница Рассрочка */
 @media (min-width: 768px) {
   /* start -------------------------------------------- basic -------------------------------------------------------*/
   .container {
@@ -6407,6 +6488,50 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- discounts-stocks-section ------------------------------------- */
   /* end Страница Акции */
+  /* start Страница Рассрочка */
+  /* start -------------------------------------------- installment-info-section ----------------------------------- */
+  .installment-info {
+    display: flex;
+    column-gap: 8px;
+    max-width: 708px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .installment-info-section {
+    margin-bottom: 75px;
+  }
+  .installment-info > li:first-child {
+    flex-basis: 344px;
+  }
+  .installment-info > li:last-child {
+    flex-basis: 355px;
+  }
+  .installment-info > li:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .installment-info__title {
+    margin-bottom: 17px;
+    font-size: 21px;
+  }
+  .installment-info__title::before {
+    width: 45px;
+    height: 45px;
+    background-size: 27px;
+  }
+  .installment-info__title.icon-2 {
+    margin-left: 11px;
+  }
+  .installment-info__text .block {
+    display: block;
+  }
+  .installment-info__list li::before {
+    top: 9px;
+  }
+  .installment-info__list li:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  /* end -------------------------------------------- installment-info-section ------------------------------------- */
+  /* end Страница Рассрочка */
 }
 
 @media (min-width: 1024px) {
@@ -7850,6 +7975,42 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- stocks-content ----------------------------------------------- */
   /* end Страница Акции */
+  /* start Страница Рассрочка */
+  /* start -------------------------------------------- installment-info-section ----------------------------------- */
+  .installment-info {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    column-gap: 40px;
+  }
+  .installment-info > li:first-child {
+    flex-basis: 441px;
+  }
+  .installment-info > li:last-child {
+    flex-basis: 481px;
+  }
+  .installment-info__title {
+    margin-bottom: 14px;
+  }
+  .installment-info__title.icon-2 {
+    margin-left: 9px;
+  }
+  .installment-info__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .installment-info__text .block {
+    display: inline;
+  }
+  .installment-info__text:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+  .installment-info__list li {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  /* end -------------------------------------------- installment-info-section ------------------------------------- */
+  /* end Страница Рассрочка */
 }
 
 @media (min-width: 1200px) {
