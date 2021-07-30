@@ -4432,6 +4432,72 @@ input:focus:-ms-input-placeholder {
 
 /* end -------------------------------------------- schedule section --------------------------------------------------- */
 /* end Страница Контакты */
+/* start Страница Акции */
+/* start -------------------------------------------- stocks-content ------------------------------------------------- */
+.stocks-content {
+  margin-bottom: 35px;
+}
+
+.stocks-content__title {
+  margin-bottom: 25px;
+}
+
+.stocks-content__title .orange {
+  display: block;
+}
+
+.stocks-content__text {
+  text-align: center;
+  line-height: 21px;
+}
+
+/* end -------------------------------------------- stocks-content --------------------------------------------------- */
+/* start -------------------------------------------- discounts-stocks-section --------------------------------------- */
+.discounts-stocks {
+  padding: 40px 15px;
+  background-color: #F26422;
+  border-radius: 3px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.discounts-stocks-section {
+  margin-bottom: 35px;
+}
+
+.discounts-stocks__title {
+  margin-bottom: 14px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.discounts-stocks__subtitle {
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.discounts-stocks__text {
+  margin-bottom: 28px;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.discounts-stocks .form {
+  margin-bottom: 25px;
+}
+
+.discounts-stocks .form__phone {
+  background-color: #ffffff;
+}
+
+.discounts-stocks__warning {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+/* end -------------------------------------------- discounts-stocks-section ----------------------------------------- */
+/* end Страница Акции */
 @media (min-width: 768px) {
   /* start -------------------------------------------- basic -------------------------------------------------------*/
   .container {
@@ -6226,6 +6292,60 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- schedule section -------------------------------------------- */
   /* end Страница Контакты */
+  /* start Страница Акции */
+  /* start -------------------------------------------- stocks-content --------------------------------------------- */
+  .stocks-content {
+    margin-bottom: 50px;
+  }
+  .stocks-content__title {
+    margin-bottom: 30px;
+  }
+  .stocks-content__title .orange {
+    display: inline;
+  }
+  /* end -------------------------------------------- stocks-content ----------------------------------------------- */
+  /* start -------------------------------------------- discounts-stocks-section ----------------------------------- */
+  .discounts-stocks {
+    padding: 50px 30px;
+  }
+  .discounts-stocks-section {
+    margin-bottom: 50px;
+  }
+  .discounts-stocks__title {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .discounts-stocks__subtitle {
+    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .discounts-stocks__text {
+    margin-bottom: 35px;
+    font-size: 21px;
+  }
+  .discounts-stocks .form {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .discounts-stocks .form__phone {
+    margin-bottom: 0;
+  }
+  .discounts-stocks .form__phone, .discounts-stocks .form__btn {
+    width: 225px;
+  }
+  .discounts-stocks__warning {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+  /* end -------------------------------------------- discounts-stocks-section ------------------------------------- */
+  /* end Страница Акции */
 }
 
 @media (min-width: 1024px) {
@@ -7642,6 +7762,13 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- schedule section ---------------------------------------------- */
   /* end Страница Контакты */
+  /* start Страница Акции */
+  /* start -------------------------------------------- stocks-content --------------------------------------------- */
+  .stocks-content__title {
+    margin-bottom: 40px;
+  }
+  /* end -------------------------------------------- stocks-content ----------------------------------------------- */
+  /* end Страница Акции */
 }
 
 @media (min-width: 1200px) {

@@ -4609,6 +4609,72 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* end -------------------------------------------- schedule section --------------------------------------------------- */
 /* end Страница Контакты */
 
+/* start Страница Акции */
+/* start -------------------------------------------- stocks-content ------------------------------------------------- */
+.stocks-content {
+    margin-bottom: 35px;
+
+    &__title {
+        margin-bottom: 25px;
+
+        .orange {
+            display: block;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        line-height: 21px;
+    }
+}
+/* end -------------------------------------------- stocks-content --------------------------------------------------- */
+
+/* start -------------------------------------------- discounts-stocks-section --------------------------------------- */
+.discounts-stocks {
+    padding: 40px 15px;
+    background-color: #F26422;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        margin-bottom: 34px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__text {
+        margin-bottom: 28px;
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .form {
+        margin-bottom: 25px;
+
+        &__phone {
+            background-color: #ffffff;
+        }
+    }
+
+    &__warning {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+/* end -------------------------------------------- discounts-stocks-section ----------------------------------------- */
+/* end Страница Акции */
+
 @media (min-width: 768px) {
     /* start -------------------------------------------- basic -------------------------------------------------------*/
     .container {
@@ -6960,6 +7026,73 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- schedule section -------------------------------------------- */
     /* end Страница Контакты */
+
+    /* start Страница Акции */
+    /* start -------------------------------------------- stocks-content --------------------------------------------- */
+    .stocks-content {
+        margin-bottom: 50px;
+
+        &__title {
+            margin-bottom: 30px;
+
+            .orange {
+                display: inline;
+            }
+        }
+    }
+    /* end -------------------------------------------- stocks-content ----------------------------------------------- */
+
+    /* start -------------------------------------------- discounts-stocks-section ----------------------------------- */
+    .discounts-stocks {
+        padding: 50px 30px;
+
+        &-section {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        &__subtitle {
+            margin-bottom: 50px;
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        &__text {
+            margin-bottom: 35px;
+            font-size: 21px;
+        }
+
+        .form {
+            max-width: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            column-gap: 20px;
+
+            &__phone {
+                margin-bottom: 0;
+            }
+
+            &__phone,
+            &__btn {
+                width: 225px;
+            }
+        }
+
+        &__warning {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 480px;
+        }
+    }
+    /* end -------------------------------------------- discounts-stocks-section ------------------------------------- */
+    /* end Страница Акции */
 }
 
 @media (min-width: 1024px) {
@@ -8893,6 +9026,16 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- schedule section ---------------------------------------------- */
     /* end Страница Контакты */
+
+    /* start Страница Акции */
+    /* start -------------------------------------------- stocks-content --------------------------------------------- */
+    .stocks-content {
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+    /* end -------------------------------------------- stocks-content ----------------------------------------------- */
+    /* end Страница Акции */
 }
 
 @media (min-width: 1200px) {

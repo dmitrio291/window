@@ -315,6 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* start ---------------------------------- Скрипты для секции .examples-section---------------------------------- */
     const examplesSlider = document.querySelectorAll('.examples-slider');
+    const dataFancybox = document.querySelector('[data-fancybox]');
 
     const examplesSliderInit = (slider) => {
         const examplesSwiper = new Swiper(slider, {
@@ -337,10 +338,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (examplesSlider) {
         examplesSlider.forEach((slider) => examplesSliderInit(slider));
-        $.fancybox.defaults.backFocus = false;
     }
-
     
+    if (dataFancybox) $.fancybox.defaults.backFocus = false;
     /* end ---------------------------------- Скрипты для секции .examples-section------------------------------------ */
 
     /* start ---------------------------------- Скрипты для секции .sketches-section 2-ой вариант ------------------- */
