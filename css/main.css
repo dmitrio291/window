@@ -223,6 +223,10 @@ input:focus:-ms-input-placeholder {
   cursor: pointer;
 }
 
+.slider-controls__prev, .slider-controls__next, .slider-controls__prev:focus, .slider-controls__next:focus {
+  outline: none;
+}
+
 .slider-controls__prev {
   background-image: url("../img/arrow-left.svg");
 }
@@ -241,6 +245,11 @@ input:focus:-ms-input-placeholder {
   height: 10px;
   background-color: #CDCDCD;
   opacity: 1;
+  outline: none;
+}
+
+.slider-controls__pagination .swiper-pagination-bullet:focus {
+  outline: none;
 }
 
 .slider-controls__pagination .swiper-pagination-bullet:not(:last-child) {
@@ -1897,6 +1906,15 @@ input:focus:-ms-input-placeholder {
 /* start -------------------------------------------- brands section ---------------------------------------------- */
 .brands-section {
   display: none;
+}
+
+.brands-nav__prev, .brands-nav__next, .brands-nav__prev:focus, .brands-nav__next:focus {
+  outline: none;
+}
+
+.brands-pagination .swiper-pagination-bullet,
+.brands-pagination .swiper-pagination-bullet:focus {
+  outline: none;
 }
 
 /* end -------------------------------------------- brands section ------------------------------------------------ */
@@ -4864,6 +4882,7 @@ input:focus:-ms-input-placeholder {
   .calculator__range-height, .calculator__range-width {
     display: block;
     margin-top: 5px;
+    margin-right: 9px;
     width: 140px;
     height: 6px;
     border: none;
@@ -6687,7 +6706,6 @@ input:focus:-ms-input-placeholder {
     opacity: 1;
     background-color: #F9F9F9;
     text-align: center;
-    outline: none;
     font-size: 18px;
     color: #48494B;
   }
@@ -7632,7 +7650,7 @@ input:focus:-ms-input-placeholder {
     margin-bottom: 12px;
   }
   .installment-windows-section .installment-list li {
-    max-width: 225px;
+    max-width: 235px;
   }
   .installment-windows-section .installment-list__text {
     font-size: 18px;

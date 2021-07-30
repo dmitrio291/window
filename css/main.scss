@@ -215,6 +215,13 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         cursor: pointer;
     }
 
+    &__prev,
+    &__next,
+    &__prev:focus,
+    &__next:focus {
+        outline: none;
+    }
+
     &__prev {
         background-image: url('../img/arrow-left.svg');
     }
@@ -232,6 +239,11 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             height: 10px;
             background-color: #CDCDCD;
             opacity: 1;
+            outline: none;
+
+            &:focus {
+                outline: none;
+            }
 
             &:not(:last-child) {
                 margin-right: 11px;
@@ -1978,6 +1990,22 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 .brands {
     &-section {
         display: none;
+    }
+
+    &-nav {
+        &__prev,
+        &__next,
+        &__prev:focus,
+        &__next:focus {
+            outline: none;
+        }
+    }
+
+    &-pagination {
+        .swiper-pagination-bullet,
+        .swiper-pagination-bullet:focus {
+            outline: none;
+        }
     }
 }
 /* end -------------------------------------------- brands section ------------------------------------------------ */
@@ -5159,6 +5187,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             &-width {
                 display: block;
                 margin-top: 5px;
+                margin-right: 9px;
                 width: 140px;
                 height: 6px;                
                 border: none;
@@ -7613,7 +7642,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 opacity: 1;
                 background-color: #F9F9F9;
                 text-align: center;
-                outline: none;
                 font-size: 18px;
                 color: #48494B;
 
@@ -8886,7 +8914,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                     margin-bottom: 12px;
 
                     li {
-                        max-width: 225px;
+                        max-width: 235px;
                     }
 
                     &__text {
