@@ -2343,29 +2343,24 @@ input:focus:-ms-input-placeholder {
   text-align: center;
 }
 
-.examples__content, .examples__items {
+.examples__items {
   margin-bottom: 19px;
   overflow-y: scroll;
   background-color: #F9F9F9;
   border-top: 0.5px solid #CDCDCD;
 }
 
-.examples__content::-webkit-scrollbar-track, .examples__items::-webkit-scrollbar-track {
+.examples__items::-webkit-scrollbar-track {
   background-color: #C4C4C4;
 }
 
-.examples__content::-webkit-scrollbar, .examples__items::-webkit-scrollbar {
+.examples__items::-webkit-scrollbar {
   width: 5px;
   background-color: #C4C4C4;
 }
 
-.examples__content::-webkit-scrollbar-thumb, .examples__items::-webkit-scrollbar-thumb {
+.examples__items::-webkit-scrollbar-thumb {
   background-color: #F26422;
-}
-
-.examples__content {
-  padding: 8px 10px 10px;
-  height: 95px;
 }
 
 .examples__items {
@@ -2394,6 +2389,48 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end------------------------------------------- examples section ---------------------------------------------------- */
+/* start ------------------------------------------- Страница балконы ------------------------------------------------- */
+/* start------------------------------------------- examples section -------------------------------------------------- */
+.examples__content {
+  margin-bottom: 19px;
+  padding: 8px 10px 10px;
+  height: 140px;
+  overflow-y: scroll;
+  background-color: #F9F9F9;
+  border-top: 0.5px solid #CDCDCD;
+  border-bottom: 0.5px solid #CDCDCD;
+}
+
+.examples__content::-webkit-scrollbar-track {
+  background-color: #C4C4C4;
+}
+
+.examples__content::-webkit-scrollbar {
+  width: 5px;
+  background-color: #C4C4C4;
+}
+
+.examples__content::-webkit-scrollbar-thumb {
+  background-color: #F26422;
+}
+
+.examples__content .examples__text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.examples__price {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.examples__price span {
+  font-size: 22px;
+  color: #CDCDCD;
+}
+
+/* end------------------------------------------- examples section ---------------------------------------------------- */
+/* end ------------------------------------------- Страница балконы --------------------------------------------------- */
 /* start------------------------------------------- making windows section --------------------------------------------- */
 .making-windows {
   position: relative;

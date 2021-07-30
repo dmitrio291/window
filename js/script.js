@@ -335,7 +335,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    examplesSlider.forEach((slider) => examplesSliderInit(slider));
+    if (examplesSlider) {
+        examplesSlider.forEach((slider) => examplesSliderInit(slider));
+        $.fancybox.defaults.backFocus = false;
+    }
 
     
     /* end ---------------------------------- Скрипты для секции .examples-section------------------------------------ */

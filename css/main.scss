@@ -2449,7 +2449,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         text-align: center;
     }
 
-    &__content,
     &__items {
         margin-bottom: 19px;        
         overflow-y: scroll;
@@ -2468,11 +2467,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         &::-webkit-scrollbar-thumb {
             background-color: #F26422;
         }
-    }
-
-    &__content {
-        padding: 8px 10px 10px;
-        height: 95px;
     }
 
     &__items {
@@ -2501,6 +2495,54 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* end------------------------------------------- examples section ---------------------------------------------------- */
+
+/* start ------------------------------------------- Страница балконы ------------------------------------------------- */
+/* start------------------------------------------- examples section -------------------------------------------------- */
+.examples {
+    &__content {
+        margin-bottom: 19px;        
+        padding: 8px 10px 10px;
+        height: 140px;
+        overflow-y: scroll;
+        background-color: #F9F9F9;
+        border-top: 0.5px solid #CDCDCD;
+        border-bottom: 0.5px solid #CDCDCD;
+
+        &::-webkit-scrollbar-track {
+            background-color: #C4C4C4;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: #C4C4C4;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #F26422;
+        }
+
+        .examples {
+            &__text {
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    &__price {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 22px;
+            color: #CDCDCD;
+        }
+    }
+}
+/* end------------------------------------------- examples section ---------------------------------------------------- */
+/* end ------------------------------------------- Страница балконы --------------------------------------------------- */
 
 /* start------------------------------------------- making windows section --------------------------------------------- */
 .making-windows {
