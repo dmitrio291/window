@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end ---------------------------------- Скрипты для секции .windows-factory-section --------------------------- */
 
     /* start ---------------------------------- Скрипты для секции .discounts-section ------------------------------- */
-    const discountsSlider = document.querySelector('.discounts-slider');
+    const discountsSlider = document.getElementById('discountsSlider');
 
     if (discountsSlider) {
         const discountsSwiper = new Swiper(discountsSlider, {
@@ -438,4 +438,53 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end-------------------------------- Скрипты для секции .schedule-section ------------------------------------- */
     /* end Страница Контакты */
+
+    /* start Страница Акции */
+    /* start-------------------------------- Скрипты для секции .discounts--stocks ------------------------------------ */
+    const discountsSliderStocks = document.getElementById('discountsSliderStocks');
+    let sliderStocksSwiper;
+
+    const mobileSliderStocks = () => {
+        if (window.innerWidth <= 1023 && discountsSliderStocks.dataset.mobile === 'false') {
+            sliderStocksSwiper = new Swiper(discountsSliderStocks, {
+                slidesPerView: 1.25,
+                autoHeight: true,
+                spaceBetween: 1,
+                slideClass: 'discounts-slider__slide',
+                wrapperClass: 'discounts-slider__wrap',
+                pagination: {
+                    el: '.discounts-slider__pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                loop: true,
+                navigation: {
+                    nextEl: '.discounts-slider__next',
+                    prevEl: '.discounts-slider__prev'
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2.3
+                    }
+                }
+            });
+
+            discountsSliderStocks.dataset.mobile = 'true';
+        }
+
+        if (window.innerWidth > 1023) {
+            discountsSliderStocks.dataset.mobile  = 'false';
+            if (discountsSliderStocks.classList.contains('swiper-container-initialized')) {
+                sliderStocksSwiper.destroy();
+            }
+        }
+    }
+
+    if (discountsSliderStocks) mobileSliderStocks();
+
+    window.addEventListener('resize', () => {
+        if (discountsSliderStocks) mobileSliderStocks();
+    });
+    /* end-------------------------------- Скрипты для секции .discounts--stocks -------------------------------------- */
+    /* end Страница Акции */
 });

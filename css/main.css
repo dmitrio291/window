@@ -4460,6 +4460,22 @@ input:focus:-ms-input-placeholder {
 /* end -------------------------------------------- schedule section --------------------------------------------------- */
 /* end Страница Контакты */
 /* start Страница Акции */
+/* start -------------------------------------------- discounts-section--stocks --------------------------------------- */
+.discounts-section--stocks {
+  margin-bottom: 35px;
+}
+
+.discounts-section--stocks .discounts {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #F9F9F9;
+}
+
+.discounts-section--stocks .discounts__title {
+  text-align: center;
+}
+
+/* end -------------------------------------------- discounts-section--stocks ---------------------------------------- */
 /* start -------------------------------------------- stocks-content ------------------------------------------------- */
 .stocks-content {
   margin-bottom: 35px;
@@ -6320,6 +6336,24 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- schedule section -------------------------------------------- */
   /* end Страница Контакты */
   /* start Страница Акции */
+  /* start -------------------------------------------- discounts-section--stocks ----------------------------------*/
+  .discounts-section--stocks {
+    margin-bottom: 50px;
+  }
+  .discounts-section--stocks .discounts {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .discounts-section--stocks .discounts__title {
+    margin-bottom: 40px;
+  }
+  .discounts-section--stocks .discounts-slider {
+    margin-bottom: 40px;
+  }
+  .discounts-section--stocks .slider-controls {
+    margin-bottom: 0;
+  }
+  /* end -------------------------------------------- discounts-section--stocks  -----------------------------------*/
   /* start -------------------------------------------- stocks-content --------------------------------------------- */
   .stocks-content {
     margin-bottom: 50px;
@@ -7790,6 +7824,26 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- schedule section ---------------------------------------------- */
   /* end Страница Контакты */
   /* start Страница Акции */
+  /* start -------------------------------------------- discounts-section--stocks ----------------------------------- */
+  .discounts-section--stocks {
+    margin-bottom: 50px;
+  }
+  .discounts-section--stocks .discounts-slider {
+    margin-bottom: 0;
+  }
+  .discounts-section--stocks .discounts-slider__wrap {
+    flex-wrap: wrap;
+  }
+  .discounts-section--stocks .discounts-slider__slide {
+    width: 33%;
+  }
+  .discounts-section--stocks .discounts-slider__slide:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .discounts-section--stocks .slider-controls {
+    display: none;
+  }
+  /* end -------------------------------------------- discounts-section--stocks ------------------------------------- */
   /* start -------------------------------------------- stocks-content --------------------------------------------- */
   .stocks-content__title {
     margin-bottom: 40px;
