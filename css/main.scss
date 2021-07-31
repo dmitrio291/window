@@ -861,14 +861,13 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         background-color: #F5F5F5;
     }
 
-    &__text {
-        margin-bottom: 20px;
+    &__wrap {
         position: relative;
         padding: 20px;
-        line-height: 21px;
         border-radius: 6px;
         background-color: #ffffff;
         filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        margin-bottom: 20px;
 
         &::before {
             content: '';
@@ -882,8 +881,16 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             border-style: solid;
             transform: rotate(-20deg);
         }
+    }
 
-        .orange {
+    &__text {
+        line-height: 21px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        .border {
             border-bottom: 1px solid #F26422;
         }
 
@@ -4719,6 +4726,19 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* end Страница Акции */
 
 /* start Страница Рассрочка */
+/* start------------------------------------------- director section ------------------------------------------------- */
+.director--serova-sofia {
+    padding: 0;
+    background-color: #ffffff;
+
+    .director {
+        &__wrap {
+            padding: 20px 15px;
+        }
+    }
+}
+/* end------------------------------------------- director section --------------------------------------------------- */
+
 /* start -------------------------------------------- installment-plan-section --------------------------------------- */
 .installment-plan {
     li {
@@ -5145,14 +5165,25 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         align-items: start;
         padding: 40px 35px 40px 30px;
 
+        &--vlasov-alexey {
+            .director {
+                &__wrap {
+                    padding-bottom: 55px;
+
+                    &::before {
+                        bottom: 43.3%;
+                    }
+                }
+            }
+        }
+
         &__left {
             width: 94%;
         }
 
-        &__text {
+        &__wrap {
+            margin-bottom: 0;
             padding: 30px;
-            font-size: 18px;
-            line-height: 25px;
 
             &::before {
                 bottom: 34.3%;
@@ -5160,6 +5191,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 border-width: 27px 18px 0 8px;
                 transform: rotate(-121deg);
             }
+        }
+
+        &__text {
+            line-height: 25px;            
         }
 
         &__right {
@@ -7287,6 +7322,44 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* end Страница Акции */
 
     /* start Страница Рассрочка */
+    /* start------------------------------------------- director section -------------------------------------------- */
+    .director--serova-sofia {
+        padding: 0;
+        align-items: flex-end;
+
+        .director {
+            &__left {
+                width: 97%;
+            }
+
+            &__wrap {
+                padding: 29px 31px;
+
+                &::before {
+                    bottom: 18.3%;
+                }                
+            }
+
+            &__right {
+                width: 20%;
+            }
+
+            &__text {
+                line-height: 25px;
+
+                &.orange,
+                .orange {
+                    font-size: 18px;
+                }
+
+                &:nth-child(2) {
+                    margin-bottom: 21px;
+                }
+            }
+        }
+    }
+    /* end------------------------------------------- director section ----------------------------------------------- */
+
     /* start -------------------------------------------- installment-plan-section ----------------------------------- */
     .installment-plan {
         display: flex;
@@ -7557,15 +7630,23 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         padding: 50px 69px 40px 40px;
         column-gap: 55px;
 
+        &--vlasov-alexey {
+            .director {
+                &__wrap {
+                    padding-bottom: 40px;
+
+                    &::before {
+                        bottom: 68.3%;
+                    }
+                }
+            }
+        }
+
         &-box {
             .director {
                 padding-top: 37px;
                 padding-right: 50px;
                 column-gap: 67px;
-
-                &__text {
-                    padding: 42px;
-                }
 
                 &__img {
                     margin-bottom: 15px;
@@ -7583,22 +7664,21 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             width: 77.1%;
         }
 
-        &__text {
+        &__wrap {
             padding: 40px;
-            font-size: 21px;
-            line-height: 30px;
 
             &::before {
                 bottom: 66.8%;
             }
         }
 
-        &__right {
-            width: 16.5%;
+        &__text {
+            font-size: 21px;
+            line-height: 30px;
         }
 
-        &__content { 
-            transform: translateX(-15px);
+        &__right {
+            width: 16.5%;
         }
 
         &__img {
@@ -7624,6 +7704,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         .director {
             &__right {
                 width: 20.6%;
+            }
+
+            &__img {
+                margin-bottom: 45px;
             }
         }
     }
@@ -9374,6 +9458,35 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* end Страница Акции */
 
     /* start Страница Рассрочка */
+    /* start------------------------------------------- director section -------------------------------------------- */
+    .director--serova-sofia {
+        padding: 0;
+
+        .director {
+            &__wrap {
+                padding: 39px;
+
+                &::before {
+                    bottom: 73.3%;
+                }
+            }
+
+            &__text {
+                font-size: 16px;
+            }
+
+            &__right {
+                align-items: flex-start;
+            }
+
+            &__img {
+                width: 168px;
+                height: 168px;
+            }            
+        }
+    }
+    /* end------------------------------------------- director section ----------------------------------------------- */
+
     /* start -------------------------------------------- installment-plan-section ----------------------------------- */
     .installment-plan {
         max-width: none;

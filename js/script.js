@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Универсальня функция, которая показывает/скрывает аккордеон
+    /* start Универсальня функция, которая показывает/скрывает аккордеон */
     const accordionToggle = (toggles) => {
         toggles.forEach(toggle => {
             toggle.addEventListener('click', e => {
@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     };
+    /* end Универсальня функция, которая показывает/скрывает аккордеон */
+
+    
+    /* sart Проверка подключен ли fancybox на странице */
+    const dataFancybox = document.querySelector('[data-fancybox]');
+    if (dataFancybox) $.fancybox.defaults.backFocus = false;
+    /* end Проверка подключен ли fancybox на странице */
 
     /* start -------------------------------- Скрипты для секции .header -------------------------------------------- */
     const burgers = document.querySelectorAll('.burger');
@@ -211,14 +218,27 @@ document.addEventListener('DOMContentLoaded', () => {
         sketchesInput.addEventListener('change', () => {
             sketchesText.textContent = 'Эскиз загружен';
             sketchesText.style.color = '#F26422';
-            sketchesIcon.style.backgroundImage = "url('../img/sketches-icon-3.svg')";
+            sketchesIcon.style.backgroundImage = "url('img/sketches-icon-3.svg')";
         });
     }
     /* end ---------------------------------- Скрипты для секции .sketches-section ---------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .sketches-section 2-ой вариант ------------------- */
+    const sketchesInput2 = document.querySelector('.form-sketches--2 .form-sketches__none');
+    const sketchesText2 = document.querySelector('.form-sketches--2 .form-sketches__upload-text');
+    const sketchesIcon2 = document.querySelector('.form-sketches--2 .form-sketches__icon');
+
+    if (sketchesInput2 && sketchesText2 && sketchesIcon2) {
+        sketchesInput2.addEventListener('change', () => {
+            sketchesText2.textContent = 'Эскиз загружен';
+            sketchesText2.style.color = '#F26422';
+            sketchesIcon2.style.backgroundImage = "url('img/sketches-icon-3.svg')";
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .sketches-section 2-ой вариант -------------------- */
+
     /* start ---------------------------------- Скрипты для секции .examples-section---------------------------------- */
     const examplesSlider = document.querySelectorAll('.examples-slider');
-    const dataFancybox = document.querySelector('[data-fancybox]');
 
     const examplesSliderInit = (slider) => {
         const examplesSwiper = new Swiper(slider, {
@@ -242,23 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (examplesSlider) {
         examplesSlider.forEach((slider) => examplesSliderInit(slider));
     }
-    
-    if (dataFancybox) $.fancybox.defaults.backFocus = false;
     /* end ---------------------------------- Скрипты для секции .examples-section------------------------------------ */
-
-    /* start ---------------------------------- Скрипты для секции .sketches-section 2-ой вариант ------------------- */
-    const sketchesInput2 = document.querySelector('.form-sketches--2 .form-sketches__none');
-    const sketchesText2 = document.querySelector('.form-sketches--2 .form-sketches__upload-text');
-    const sketchesIcon2 = document.querySelector('.form-sketches--2 .form-sketches__icon');
-
-    if (sketchesInput2 && sketchesText2 && sketchesIcon2) {
-        sketchesInput2.addEventListener('change', () => {
-            sketchesText2.textContent = 'Эскиз загружен';
-            sketchesText2.style.color = '#F26422';
-            sketchesIcon2.style.backgroundImage = "url('../img/sketches-icon-3.svg')";
-        });
-    }
-    /* end ---------------------------------- Скрипты для секции .sketches-section 2-ой вариант -------------------- */
 
     /* start ---------------------------------- Скрипты для секции .additionally-slider-section ---------------------- */
     const additionallySlider = document.querySelector('.additionally-slider');
