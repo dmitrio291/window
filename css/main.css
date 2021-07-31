@@ -2473,8 +2473,8 @@ input:focus:-ms-input-placeholder {
 
 .making-windows-section {
   position: relative;
-  padding-top: 115px;
-  padding-bottom: 115px;
+  padding-top: 55px;
+  padding-bottom: 55px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2642,6 +2642,10 @@ input:focus:-ms-input-placeholder {
 .form-sketches__info {
   font-size: 10px;
   line-height: 15px;
+}
+
+.form-sketches__link {
+  color: #48494B;
 }
 
 /* end------------------------------------------- sketches section ----------------------------------------------------- */
@@ -3048,7 +3052,6 @@ input:focus:-ms-input-placeholder {
 
 .reviews-slider__text {
   margin-bottom: 10px;
-  font-size: 18px;
   line-height: 25px;
 }
 
@@ -4679,6 +4682,75 @@ input:focus:-ms-input-placeholder {
 
 /* end -------------------------------------------- installment-info-section ----------------------------------------- */
 /* end Страница Рассрочка */
+/* start Страница Окна в дом */
+/* start -------------------------------------------- windows-house-section ------------------------------------------ */
+.windows-house-section {
+  margin-bottom: 50px;
+}
+
+.windows-house-slider__slide {
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+}
+
+.windows-house-slider__box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.windows-house-slider__img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.windows-house-slider__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: 27px 10px 22px;
+}
+
+.windows-house-slider__title {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.windows-house-slider__text {
+  margin-bottom: 22px;
+  line-height: 21px;
+}
+
+.windows-house-slider__btn {
+  margin-top: auto;
+  min-width: 201px;
+}
+
+.windows-house__title {
+  margin-bottom: 28px;
+}
+
+.windows-house__text {
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.windows-house .slider-controls {
+  display: none;
+}
+
+/* end -------------------------------------------- windows-house-section -------------------------------------------- */
+/* end Страница Окна в дом */
 @media (min-width: 768px) {
   /* start -------------------------------------------- basic -------------------------------------------------------*/
   .container {
@@ -5556,8 +5628,7 @@ input:focus:-ms-input-placeholder {
     max-width: 400px;
   }
   .choose-own-color__desc {
-    font-size: 18px;
-    max-width: 470px;
+    max-width: 469px;
   }
   .choose-own-color__box {
     margin-bottom: 18px;
@@ -5648,9 +5719,8 @@ input:focus:-ms-input-placeholder {
     column-gap: 38px;
   }
   .making-windows-section {
-    margin-bottom: 45px;
-    padding-top: 115px;
-    padding-bottom: 115px;
+    padding-top: 110px;
+    padding-bottom: 110px;
     background-image: url("../img/making-windows-middle.jpg");
   }
   .making-windows__titles, .making-windows__title {
@@ -6023,7 +6093,6 @@ input:focus:-ms-input-placeholder {
   }
   .any-forms__text {
     margin-bottom: 40px;
-    font-size: 18px;
     line-height: 25px;
   }
   .any-forms__list {
@@ -6667,6 +6736,49 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- installment-info-section ------------------------------------- */
   /* end Страница Рассрочка */
+  /* start Страница Окна в дом */
+  /* start -------------------------------------------- windows-house-section -------------------------------------- */
+  .windows-house-section {
+    margin-bottom: 75px;
+  }
+  .windows-house__title {
+    margin-bottom: 45px;
+  }
+  .windows-house__text {
+    margin-bottom: 57px;
+    padding: 0 40px;
+    line-height: 25px;
+  }
+  .windows-house-slider {
+    margin-bottom: 31px;
+    overflow: hidden;
+    max-width: 724px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .windows-house-slider__wrap {
+    display: flex;
+  }
+  .windows-house-slider__slide {
+    margin-bottom: 0;
+    flex-shrink: 0;
+    max-width: none;
+    padding: 9px;
+    box-shadow: none;
+  }
+  .windows-house-slider__content {
+    padding-top: 30px;
+    padding-bottom: 21px;
+  }
+  .windows-house-slider__text {
+    margin-bottom: 20px;
+  }
+  .windows-house .slider-controls {
+    max-width: 249px;
+    display: flex;
+  }
+  /* end -------------------------------------------- windows-house-section ---------------------------------------- */
+  /* end Страница Окна в дом */
 }
 
 @media (min-width: 1024px) {
@@ -7425,7 +7537,7 @@ input:focus:-ms-input-placeholder {
     max-width: none;
   }
   .choose-own-color__desc {
-    max-width: 570px;
+    max-width: 582px;
   }
   .choose-own-color__box {
     margin-bottom: 13px;
@@ -7803,7 +7915,8 @@ input:focus:-ms-input-placeholder {
   /* end ------------------------------------------ certificates section -------------------------------------------- */
   /* start------------------------------------------- making windows section --------------------------------------- */
   .making-windows-section {
-    margin-bottom: 60px;
+    padding-top: 110px;
+    padding-bottom: 110px;
     background-image: url("../img/making-windows-big.jpg");
   }
   .making-windows__title:first-child {
@@ -8202,6 +8315,29 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- installment-info-section ------------------------------------- */
   /* end Страница Рассрочка */
+  /* start Страница Окна в дом */
+  /* start -------------------------------------------- windows-house-section -------------------------------------- */
+  .windows-house__text {
+    margin-bottom: 34px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .windows-house-slider {
+    max-width: none;
+  }
+  .windows-house-slider__slide {
+    padding: 7px;
+    flex-shrink: 1;
+    width: 319px;
+  }
+  .windows-house-slider__content {
+    padding: 27px 9px 22px;
+  }
+  .windows-house .slider-controls {
+    display: none;
+  }
+  /* end -------------------------------------------- windows-house-section ---------------------------------------- */
+  /* end Страница Окна в дом */
 }
 
 @media (min-width: 1200px) {

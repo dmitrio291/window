@@ -491,4 +491,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     /* end-------------------------------- Скрипты для секции .discounts--stocks -------------------------------------- */
     /* end Страница Акции */
+
+    /* start Страница Окна в дом */
+    /* start-------------------------------- Скрипты для секции .windows-house-section -------------------------------- */
+    const windowsSliderHouse = document.querySelector('.windows-house-slider');
+    let windowsHouseSwiper;
+
+    const mobileSliderHouse = () => {
+        if ((window.innerWidth > 767 && window.innerWidth < 1024) && windowsSliderHouse.dataset.mobile === 'false') {
+            windowsHouseSwiper = new Swiper(windowsSliderHouse, {
+                slidesPerView: 2,
+                spaceBetween: 1,
+                slideClass: 'windows-house-slider__slide',
+                wrapperClass: 'windows-house-slider__wrap',
+                pagination: {
+                    el: '.windows-house-slider__pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                loop: true,
+                navigation: {
+                    nextEl: '.windows-house-slider__next',
+                    prevEl: '.windows-house-slider__prev'
+                }
+            });
+
+            windowsSliderHouse.dataset.mobile = 'true';
+        }
+
+        if (window.innerWidth < 768 || window.innerWidth > 1023) {
+            windowsSliderHouse.dataset.mobile  = 'false';
+            if (windowsSliderHouse.classList.contains('swiper-container-initialized')) {
+                windowsHouseSwiper.destroy();
+            }
+        }
+    }
+
+    if (windowsSliderHouse) mobileSliderHouse();
+
+    window.addEventListener('resize', () => {
+        if (windowsSliderHouse) mobileSliderHouse();
+    });
+    /* end-------------------------------- Скрипты для секции .windows-house-section ---------------------------------- */
+    /* end Страница Окна в дом */
 });

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Окна в дом</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -153,19 +154,25 @@
     </header>
     <!-- //  Хедер 2-ой вариант -->
 
-    <!-- 15 лет гарантии -->
-    <div class="warning container">
-        <img src="img/warning-icon.svg" alt="Внимание!">
-        <p class="warning__text">Даем 15 лет гарантии на окна ПВХ, все комплектующие и даже монтаж!</p>
-    </div>
-    <!-- // 15 лет гарантии -->
-
-    <!-- Рассрочка на 3 месяца -->
-    <div class="warning container">
-        <img src="img/warning-icon.svg" alt="Внимание!">
-        <p class="warning__text">Рассрочка <span class="warning__bold">на 3 месяца</span> без участия банков</p>
-    </div>
-    <!-- // Рассрочка на 3 месяца -->
+    <!-- Пластиковые окна от производителя -->
+    <section class="banner-windows-section">
+        <div class="banner-windows container">
+            <div class="banner-windows__left">
+                <h2 class="banner-windows__title title">Пластиковые окна <span>от производителя</span></h2>
+                <ul class="banner-windows__list reset">
+                    <li>работаем с 2003 года, собственное производство</li>
+                    <li>свой учебный центр, монтажные бригады в штате, работаем по ГОСТ</li>
+                    <li>пожизненная гарантия на окна</li>
+                    <li>изготовление окон от 3 дней</li>
+                </ul>
+                <button class="banner-windows__btn btn">Бесплатная консультация</button>
+            </div>
+            <div class="banner-windows__right">
+                <img class="banner-windows__icon" src="img/banner-icon.png" alt="Платежные карты">
+            </div>
+        </div>
+    </section>
+    <!-- Пластиковые окна от производителя -->
 
     <!-- Рассрочка на 3 месяца -->
     <div class="warning container">
@@ -173,6 +180,1807 @@
         <p class="warning__text">Только <span class="warning__bold">до 31 июля!</span> Скидка -45% на все окна!</p>
     </div>
     <!-- // Рассрочка на 3 месяца -->
+
+    <!-- Бесплатный замер Тольятти -->
+    <section class="director-section">
+        <div class="container director-box">
+            <div class="director-form">
+                <h2 class="director-form__title title">Бесплатный замер в Тольятти</h2>
+                <p class="director-form__info">При обращении <span>до 14:00</span> можем приехать на замер сегодня!</p>
+                <form class="form" action="#" method="post">
+                    <input class="form__phone form__phone--transparent" type="tel" placeholder="ваш телефон" required>
+                    <button class="form__btn form__btn--orange btn" type="submit">Вызвать замерщика</button>
+                </form>
+            </div>
+
+            <div class="director director--vlasov-alexey">             
+                <div class="director__left">
+                    <div class="director__wrap">
+                        <p class="director__text">К вам приедет не просто замерщик, а настоящий специалист по подбору остекления. Произведёт замер, ответит на все ваши вопросы, даст рекомендации по остеклению именно вашего дома и всё это в удобное для вас время и <a href="#" class="orange">абсолютно бесплатно!</a></p>
+                    </div>
+                </div>
+                <div class="director__right">
+                    <div class="director__content">
+                        <p class="director__name">Власов Алексей</p>
+                        <p class="director__position">Руководитель <span class="block">отдела заказов</span></p>
+                    </div>
+                    <img class="director__img" src="img/director-1.jpg" alt="Власов Алексей">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // Бесплатный замер Тольятти -->
+
+    <!-- Рассчитайте окна по вашим эскизам и сравните цену 2-ой вариант -->
+    <section class="sketches-section">
+        <div class="sketches-box container">
+            <h2 class="sketches__title title">Рассчитайте окна по вашим эскизам и&nbsp;сравните цену</h2>
+            <div class="sketches sketches--2">
+                <div class="sketches__left">
+                    <p class="sketches__text">Отправьте заявку и мы перезвоним вам через 3 минуты</p>
+                    <p class="sketches__text">Если у вас нет эскизов, впишите номер телефона и менеджер перезвонит вам для выяснения размеров!</p>
+                    <form class="form-sketches form-sketches--2" action="#">
+                        <div class="form-sketches__box">
+                            <input class="form-sketches__phone" type="tel" placeholder="ваш телефон">
+                            <input class="form-sketches__name" type="text" placeholder="ваше имя">
+                            <label class="form-sketches__file">
+                                <input class="form-sketches__none" type="file" multiple>
+                                <span class="form-sketches__icon"></span>
+                                <span class="form-sketches__upload-text">Загрузить эскизы</span>
+                            </label>
+                            <button class="form-sketches__btn btn" type="submit">Отправить</button>
+                        </div>
+                        <p class="form-sketches__text">отправить эскиз в <span class="green">WhatsApp</span> <span class="block">или на почту <span class="orange">milo@avoshnikov.ru</span></span></p>
+                        <p class="form-sketches__info">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a class="form-sketches__link" href="#">Правовой информацией</a></p>
+                    </form>
+                </div>
+                <div class="sketches__right">
+                    <div class="sketches__img">
+                        <img src="img/sketches-img.png" alt="Окно">
+                        <img src="img/sketches-icon-2.png" alt="Скрепка">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // Рассчитайте окна по вашим эскизам и сравните цену 2-ой вариант -->
+
+    <!-- Любые формы окон для дома -->
+    <section class="any-forms-section">
+        <div class="any-forms container">
+            <h2 class="any-forms__title title">Любые формы окон для дома</h2>
+            <p class="any-forms__text">Мастера нашей компании изготавливают и проводят монтаж пластиковых оконных систем любых геометрических форм. Для качественного выполнения заказа они имеют необходимый опыт и современное оборудование.</p>
+            <ul class="any-forms__list reset">
+                <li>
+                    <img class="any-forms__img any-forms__img--1" src="img/any-forms-1.png" alt="Форма окон">
+                    <p class="any-forms__price orange">2 750</p>
+                </li>
+                <li>
+                    <img class="any-forms__img any-forms__img--2" src="img/any-forms-2.png" alt="Форма окон">
+                    <p class="any-forms__price orange">2 050</p>
+                </li>
+                <li>
+                    <img class="any-forms__img any-forms__img--3" src="img/any-forms-3.png" alt="Форма окон">
+                    <p class="any-forms__price orange">3 850</p>
+                </li>
+                <li>
+                    <img class="any-forms__img any-forms__img--4" src="img/any-forms-4.png" alt="Форма окон">
+                    <p class="any-forms__price orange">4 850</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- // Любые формы окон для дома -->
+
+    <!-- Выберите свой цвет окна и фурнитуры -->
+    <section class="choose-own-color">        
+        <div class="container choose-own-color__container active">
+            <h2 class="title">Выберите свой цвет окна и фурнитуры</h2> 
+            
+            <p class="choose-own-color__desc">Ламинация позволяет преобразить пластиковые окна для коттеджа. Ламинированные оконные конструкции хорошо и естественно смотрятся в загородном доме, а разнообразие цветовых решений позволяет подобрать вариант под любой фасад и интерьер. Кроме того, ламинированные окна ощутимо дешевле деревянных.</p>
+                
+            <div class="choose-own-color__box">
+                <div class="choose-own-color__content">
+                    <p class="choose-own-color__text">Цвет фурнитуры</p>
+                    <div class="choose-own-color__line choose-own-color__line--accessory">
+                        <span class="choose-own-color__circle"></span>
+                    </div>
+                </div>
+                <div class="choose-own-color__inner choose-own-color__inner--accessory">
+                    <label class="choose-own-color__label active" data-color="silve" data-accessory="accessory">
+                        <span class="choose-own-color__icon choose-own-color__icon--7"></span>
+                        <span class="choose-own-color__title">Серебро</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="gold" data-accessory="accessory">
+                        <span class="choose-own-color__icon choose-own-color__icon--8"></span>
+                        <span class="choose-own-color__title">Золото</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="bronze" data-accessory="accessory">
+                        <span class="choose-own-color__icon choose-own-color__icon--9"></span>
+                        <span class="choose-own-color__title">Бронза</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="titan" data-accessory="accessory">
+                        <span class="choose-own-color__icon choose-own-color__icon--10"></span>
+                        <span class="choose-own-color__title">Титан</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="white-gold" data-accessory="accessory">
+                        <span class="choose-own-color__icon choose-own-color__icon--11"></span>
+                        <span class="choose-own-color__title">Б. золото</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="copper" data-accessory="accessory">
+                        <span class="choose-own-color__icon choose-own-color__icon--12"></span>
+                        <span class="choose-own-color__title">Медь</span>
+                    </label>
+                </div>         
+            </div>
+
+            <div class="choose-own-color__box">
+                <div class="choose-own-color__content">
+                    <p class="choose-own-color__text">Цвет рамы</p>
+                    <div class="choose-own-color__line choose-own-color__line--frame">
+                        <span class="choose-own-color__circle"></span>
+                    </div>
+                </div>  
+                <div class="choose-own-color__inner choose-own-color__inner--frame">
+                    <label class="choose-own-color__label active" data-color="cherry" data-frame="frame">
+                        <span class="choose-own-color__icon choose-own-color__icon--1"></span>
+                        <span class="choose-own-color__title">Вишня</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="oak" data-frame="frame">
+                        <span class="choose-own-color__icon choose-own-color__icon--2"></span>
+                        <span class="choose-own-color__title">Дуб</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="chestnut" data-frame="frame">
+                        <span class="choose-own-color__icon choose-own-color__icon--3"></span>
+                        <span class="choose-own-color__title">Каштан</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="pine" data-frame="frame">
+                        <span class="choose-own-color__icon choose-own-color__icon--4"></span>
+                        <span class="choose-own-color__title">Сосна</span>
+                    </label>
+                    <label class="choose-own-color__label"  data-color="alder" data-frame="frame">
+                        <span class="choose-own-color__icon choose-own-color__icon--5"></span>
+                        <span class="choose-own-color__title">Ольха</span>
+                    </label>
+                    <label class="choose-own-color__label" data-color="maple" data-frame="frame">
+                        <span class="choose-own-color__icon choose-own-color__icon--6"></span>
+                        <span class="choose-own-color__title">Клен</span>
+                    </label>
+                </div>         
+            </div>
+
+            <div class="choose-own-color__accessory-box"></div>
+        </div>
+    </section>
+    <!-- Выберите свой цвет окна и фурнитуры -->
+
+    <!--Профильные системы -->
+    <section class="brands-section">
+        <div class="brands container">
+            <h2 class="brands__title title">Профильные системы</h2>
+            <p class="brands__text">Надёжные профильные ПВХ системы предназначены для остекления разных по назначению помещений. Они удовлетворяют запросы всех заказчиков. Мы гарантируем качество и приемлемые цены, так как предлагаем продукцию напрямую от производителя.</p>
+            <div class="brands-box">
+                <div class="brands-pagination"></div>
+                <div class="brands-inner">
+                    <div class="brands-slider">
+                        <div class="brands-slider__wrap">
+                            <div class="brands-slider__slide" data-brand="Rehau">
+                                <div class="brands-slider__box">
+                                    <img class="brands-slider__window-img" src="img/brands-windows-1.png" alt="Окно Rehau">
+                                    <div class="brands-slider__content">
+                                        <div class="brands-slider__rating">
+                                            <img src="img/brands-icon-1.png" alt="Rehau">
+                                            <ul class="brands-slider__stars reset">
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="brands-slider__text">Продукция немецкого производителя Rehau отличается своим качеством и надёжностью. На протяжении многих десятилетий компания изготавливает профили, отвечающие европейским и отечественным стандартам. Такие окна обеспечат максимальный комфорт как в жилых, так и офисных помещениях.</p>
+                                        <ul class="brands-slider__data reset">
+                                            <li>
+                                                <div class="brands-slider__line yellow">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">сохранение тепла</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line blue">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">количество света</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line green">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">шумоизоляция</p>
+                                            </li>
+                                        </ul>
+                                        <div class="brands-slider__calc">
+                                            <p class="brands-slider__price orange">3 250 <span>₽/м<sup>2</sup></span></p>
+                                            <button class="brands-slider__btn btn">Рассчитать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brands-slider__slide" data-brand="KBE">
+                                <div class="brands-slider__box">
+                                    <img class="brands-slider__window-img" src="img/brands-windows-2.png" alt="Окно KBE">
+                                    <div class="brands-slider__content">
+                                        <div class="brands-slider__rating">
+                                            <img src="img/brands-icon-2.png" alt="KBE">
+                                            <ul class="brands-slider__stars reset">
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="brands-slider__text mb">Профили КВЕ завоевали популярность благодаря своим качественным характеристикам. Вся продукция этой компании изготавливается на высокотехнологичном оборудовании и проходит строгий контроль на каждом этапе производства. Благодаря остеклению окнами из профиля КВЕ, вы создадите уютную атмосферу в помещении на многие годы.</p>
+                                        <ul class="brands-slider__data reset">
+                                            <li>
+                                                <div class="brands-slider__line yellow">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">сохранение тепла</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line blue">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">количество света</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line green">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">шумоизоляция</p>
+                                            </li>
+                                        </ul>
+                                        <div class="brands-slider__calc">
+                                            <p class="brands-slider__price orange">2 750 <span>₽/м<sup>2</sup></span></p>
+                                            <button class="brands-slider__btn btn">Рассчитать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brands-slider__slide" data-brand="Veka">
+                                <div class="brands-slider__box">
+                                    <img class="brands-slider__window-img" src="img/brands-windows-3.png" alt="Окно Veka">
+                                    <div class="brands-slider__content">
+                                        <div class="brands-slider__rating">
+                                            <img src="img/brands-icon-3.png" alt="Veka">
+                                            <ul class="brands-slider__stars reset">
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="brands-slider__text">Продукция немецкого производителя Rehau отличается своим качеством и надёжностью. На протяжении многих десятилетий компания изготавливает профили, отвечающие европейским и отечественным стандартам. Такие окна обеспечат максимальный комфорт как в жилых, так и офисных помещениях.</p>
+                                        <ul class="brands-slider__data reset">
+                                            <li>
+                                                <div class="brands-slider__line yellow">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">сохранение тепла</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line blue">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">количество света</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line green">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">шумоизоляция</p>
+                                            </li>
+                                        </ul>
+                                        <div class="brands-slider__calc">
+                                            <p class="brands-slider__price orange">3 250 <span>₽/м<sup>2</sup></span></p>
+                                            <button class="brands-slider__btn btn">Рассчитать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brands-slider__slide" data-brand="Monblanc">
+                                <div class="brands-slider__box">
+                                    <img class="brands-slider__window-img" src="img/brands-windows-4.png" alt="Окно Monblanc">
+                                    <div class="brands-slider__content">
+                                        <div class="brands-slider__rating">
+                                            <img src="img/brands-icon-4.png" alt="Monblanc">
+                                            <ul class="brands-slider__stars reset">
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="brands-slider__text">Продукция немецкого производителя Rehau отличается своим качеством и надёжностью. На протяжении многих десятилетий компания изготавливает профили, отвечающие европейским и отечественным стандартам. Такие окна обеспечат максимальный комфорт как в жилых, так и офисных помещениях.</p>
+                                        <ul class="brands-slider__data reset">
+                                            <li>
+                                                <div class="brands-slider__line yellow">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">сохранение тепла</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line blue">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">количество света</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line green">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">шумоизоляция</p>
+                                            </li>
+                                        </ul>
+                                        <div class="brands-slider__calc">
+                                            <p class="brands-slider__price orange">3 250 <span>₽/м<sup>2</sup></span></p>
+                                            <button class="brands-slider__btn btn">Рассчитать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brands-slider__slide" data-brand="Trocal">
+                                <div class="brands-slider__box">
+                                    <img class="brands-slider__window-img" src="img/brands-windows-5.png" alt="Окно Trocal">
+                                    <div class="brands-slider__content">
+                                        <div class="brands-slider__rating">
+                                            <img src="img/brands-icon-5.png" alt="Trocal">
+                                            <ul class="brands-slider__stars reset">
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="brands-slider__text">Продукция немецкого производителя Rehau отличается своим качеством и надёжностью. На протяжении многих десятилетий компания изготавливает профили, отвечающие европейским и отечественным стандартам. Такие окна обеспечат максимальный комфорт как в жилых, так и офисных помещениях.</p>
+                                        <ul class="brands-slider__data reset">
+                                            <li>
+                                                <div class="brands-slider__line yellow">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">сохранение тепла</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line blue">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">количество света</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line green">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">шумоизоляция</p>
+                                            </li>
+                                        </ul>
+                                        <div class="brands-slider__calc">
+                                            <p class="brands-slider__price orange">3 250 <span>₽/м<sup>2</sup></span></p>
+                                            <button class="brands-slider__btn btn">Рассчитать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brands-slider__slide" data-brand="Salamander">
+                                <div class="brands-slider__box">
+                                    <img class="brands-slider__window-img" src="img/brands-windows-6.png" alt="Окно Salamander">
+                                    <div class="brands-slider__content">
+                                        <div class="brands-slider__rating">
+                                            <img src="img/brands-icon-6.png" alt="Salamander">
+                                            <ul class="brands-slider__stars reset">
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="brands-slider__text">Продукция немецкого производителя Rehau отличается своим качеством и надёжностью. На протяжении многих десятилетий компания изготавливает профили, отвечающие европейским и отечественным стандартам. Такие окна обеспечат максимальный комфорт как в жилых, так и офисных помещениях.</p>
+                                        <ul class="brands-slider__data reset">
+                                            <li>
+                                                <div class="brands-slider__line yellow">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">сохранение тепла</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line blue">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">количество света</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line green">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">шумоизоляция</p>
+                                            </li>
+                                        </ul>
+                                        <div class="brands-slider__calc">
+                                            <p class="brands-slider__price orange">3 250 <span>₽/м<sup>2</sup></span></p>
+                                            <button class="brands-slider__btn btn">Рассчитать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brands-slider__slide" data-brand="Schuco">
+                                <div class="brands-slider__box">
+                                    <img class="brands-slider__window-img" src="img/brands-windows-7.png" alt="Окно Schuco">
+                                    <div class="brands-slider__content">
+                                        <div class="brands-slider__rating">
+                                            <img src="img/brands-icon-7.png" alt="Schuco">
+                                            <ul class="brands-slider__stars reset">
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                                <li>
+                                                    <img class="brands-slider__star" src="img/star-icon-1.svg" alt="Звезда">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="brands-slider__text">Продукция немецкого производителя Rehau отличается своим качеством и надёжностью. На протяжении многих десятилетий компания изготавливает профили, отвечающие европейским и отечественным стандартам. Такие окна обеспечат максимальный комфорт как в жилых, так и офисных помещениях.</p>
+                                        <ul class="brands-slider__data reset">
+                                            <li>
+                                                <div class="brands-slider__line yellow">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">сохранение тепла</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line blue">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">количество света</p>
+                                            </li>
+                                            <li>
+                                                <div class="brands-slider__line green">
+                                                    <div></div>
+                                                </div>
+                                                <p class="brands-slider__data-text">шумоизоляция</p>
+                                            </li>
+                                        </ul>
+                                        <div class="brands-slider__calc">
+                                            <p class="brands-slider__price orange">3 250 <span>₽/м<sup>2</sup></span></p>
+                                            <button class="brands-slider__btn btn">Рассчитать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="brands-nav">
+                        <img class="brands-nav__prev" src="img/arrow-left-gray.svg" alt="Стрелка влево">
+                        <img class="brands-nav__next" src="img/arrow-right-gray.svg" alt="Стрелка вправо">
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <!-- // Профильные системы -->
+
+    <!-- Какой ПВХ профиль для окна лучше? -->
+    <section class="profile-section">
+        <div class="profile container">
+            <div class="profile__wrap">
+                <h2 class="profile__title title">Какой ПВХ профиль для окна лучше?</h2>
+                <div class="profile-content">
+                    <p class="fw-500">Вы очень часто нас спрашиваете:</p>
+                    <ul class="profile__list reset">
+                        <li>
+                            какой профиль лучше для окон Rehau или Veka?
+                        </li>
+                        <li>
+                            какой профиль лучше для окон KBE или Rehau?
+                        </li>
+                        <li>
+                            какой профиль лучше для окон Monblanc или Salamander?
+                        </li>
+                        <li>
+                            какой профиль лучше для окон Salamander или Rehau?
+                        </li>
+                        <li>
+                            какой профиль лучше для окон Veka или КBЕ?
+                        </li>
+                        <li>
+                            какой профиль лучше для окон Trocal или КBЕ?
+                        </li>
+                    </ul>
+                </div>
+                <p class="profile__text mb0"><span class="fw-500">Или из той же серии вопрос:</span> какой автомобиль лучше - Меrcedes или SsangYong?</p>
+                <p class="profile__text">И тот и тот автомобиль Вас прекрасно довезет до работы или на дачу - все дело в разных ощущениях от владения этим автомобилем.</p>
+
+                <div class="profile__box">
+                    <p class="profile__text">Что лучше Veka или Rehau (уже почти лет 15 в Тольятти и более 20 лет в России) <span class="fw-500">"Оптимальный выбор" среди окон</span> или какой нибудь новичок типа Montblanc (2 года в Тольятти) или еще чуднее какой-нибудь Жиминь-Жибао - <span class="orange">кому вы доверите свой комфорт и нервы на долгие годы?</span>
+                    </p>
+                    <p class="profile__bold orange">Ответ на ваш вопрос про ПВХ - окна на удивление простой:</p>
+                    <h3 class="profile__second-title">Из любого пластикового профиля можно сделать как и очень хорошие так и очень плохие окна.</h3>
+                    <p class="profile__text">Марка профиля, чтобы сделать брак при этом не важна. Пяти- шести- и более камерные профиля 70 мм не дают сильного улучшения качественных характеристик окна при одинаковом стеклопакете в сравнении с трехкамерными профилями 58 мм. <span class="orange">Для изменения нужных характеристик окна - выбирайте именно стеклопакет!</span></p>
+                    <div class="profile-content">
+                        <p class="fw-500">Ориентиры стеклопакетов по теплозащите (по убыванию):</p>
+                        <ul class="profile__list reset">
+                            <li>
+                                однокамерный стеклопакет (4-16-4) - только если окно выходит на застекленный балкон
+                            </li>
+                            <li>
+                                двухкамерный стеклопакет (4-10-4-10-4)
+                            </li>
+                            <li>
+                                однокамерный энергосберегающий стеклопакет (4-16-4i)
+                            </li>
+                            <li>
+                                двухкамерный энергосберегающий стеклопакет (4-16-4-16-4i)
+                            </li>
+                            <li>
+                                двухкамерный энергосберегающий и солнцезащитный стеклопакет (4H-16-4-16-4)
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="profile__text">Все профили 60 мм (трехкамерные) по характеристикам практически одинаковы, аналогично все профили 70 мм (пятикамерные) по характеристикам почти идентичны - все дело в доверии заслуженного долголетней (60 лет в мире, почти 20 лет в Тольятти) безупречной репутацией как у Фаворит или отсутствием онной как у Montblanc или Tecoline.</p>
+                    <p class="profile__text mb-15">Профили изготавливаются производителями практически из одного материала, друг у друга копируются интересные идеи - </p>
+                    <p class="profile__bold orange">Они реально имеют схожие характеристики и почти одинаковую стоимость.</p>
+                </div>
+            </div>
+            <button data-options="hidden" class="profile__btn">
+                <span class="text">Подробнее</span>
+                <svg viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L6.05401 6L11.108 1"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+    <!-- // Какой ПВХ профиль для окна лучше? -->
+
+    <!-- Примеры работ -->
+    <section class="examples-section">
+        <div class="examples container">
+            <h2 class="examples__title title">Примеры работ</h2>
+            <p class="examples__desc">Мастера компании реализовали тысячи проектов разной сложности. Нашим показателем работы являются довольные заказчики, которые рекомендуют знакомым обращаться именно к нам. Мы не только предлагаем качественную продукцию, но и выполняем монтаж без задержек, на высоком профессиональном уровне.</p>
+            <ul class="examples__list reset">
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-1" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-1" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-1" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-1" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-1" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-1" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-2" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-2" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-2" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-2" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-2" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-2" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-3" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-3" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-3" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-3" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-3" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-3" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-4" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-4" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-4" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-4" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-4" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-4" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-5" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-5" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-5" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-5" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-5" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-5" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-6" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-6" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-6" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-6" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-6" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-6" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-7" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-7" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-7" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-7" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-7" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-7" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-8" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-8" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-8" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-8" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-8" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-8" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="examples-slider">
+                        <div class="examples-slider__wrap">
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-9" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-9" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-9" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-9" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-9" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                            <div class="examples-slider__slide">
+                                <a data-fancybox="examples-img-9" href="img/examples-slider-img.jpg">
+                                    <img class="examples-slider__img" src="img/examples-slider-img.jpg" alt="Окно">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="examples-slider__prev">
+                            <img src="img/examples-arrow-left.svg" alt="Стрелка влево">
+                        </button>
+                        <button class="examples-slider__next">
+                            <img src="img/examples-arrow-right.svg" alt="Стрелка влево">
+                        </button>
+                        <div class="examples-slider__pagination"></div>
+                    </div>
+                    <div class="examples__inner">
+                        <h4 class="examples__subtitle">Холодное остекление балкона</h4>
+                        <div class="examples__box">
+                            <ul class="examples__items reset">
+                                <li>Пластиковый профиль</li>
+                                <li>Двухкамерный стеклопакет</li>
+                                <li>Теплоизоляция: 0,07 м2 * С/Вт</li>
+                                <li>Звукоизоляция: 3 класс</li>
+                                <li>Внешняя отделка профлистом</li>
+                                <li>Подоконник ПВХ 250 мм</li>
+                                <li>Отлив 110 (Жесть)</li>
+                            </ul>
+                        </div>
+                        <button class="examples__btn btn btn--orange">Рассчитать</button>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </section>
+    <!-- // Примеры работ -->
+
+    <!-- Отзывы наших клиентов -->
+    <section class="reviews-section">
+        <div class="reviews container">
+            <h2 class="reviews__title title">Отзывы наших клиентов</h2>
+            <div class="reviews-slider">
+                <div class="reviews-slider__wrap">
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-controls__prev reviews-slider__prev"></button>
+                <div class="slider-controls__pagination reviews-slider__pagination"></div>
+                <button class="slider-controls__next reviews-slider__next"></button>
+            </div>
+        </div>
+    </section>
+    <!-- // Отзывы наших клиентов -->
+
+    <!-- За 18 лет мы установили более 20 000 пластиковых окон ПВХ -->
+    <section class="statistic-section">
+        <div class="statistic container">
+            <h2 class="statistic__title title">За 18 лет мы установили <span class="block">более 20 000 пластиковых окон ПВХ</span></h2>
+            <ul class="statistic__list reset">
+                <li>
+                    <span class="statistic__number">53</span>
+                    <p class="statistic__text">Человека стали нашими клиентами в октябре</p>
+                </li>
+                <li>
+                    <span class="statistic__number">6 570</span>
+                    <p class="statistic__text">Клиентов <span class="block">за 18 лет работы</span></p>
+                </li>
+                <li>
+                    <span class="statistic__number">87%</span>
+                    <p class="statistic__text">Клиентов готовы нас&nbsp;рекомендовать</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- // За 18 лет мы установили более 20 000 пластиковых окон ПВХ -->
+
+    <!-- Гарантия лучшей цены! -->
+    <section class="best-price-section">
+        <div class="best-price container">
+            <h2 class="best-price__title-1 title">Гарантия <span class="orange">лучшей цены!</span></h2>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="img/best-price-big.png">
+                <img class="best-price__img" src="img/best-price-small.png" alt="Гарантия лучшей цены!">
+            </picture>
+            <div class="best-price__content">
+                <h2 class="best-price__title-2 title">Нашли окна <span class="orange">дешевле?</span></h2>
+                <p class="best-price__subtitle">Вернем разницу*</p>
+                <p class="best-price__text">Акция распространяется на товар идентичной модели, бренда и конфигугурации. Предложение не является договором  оферты</p>
+            </div>
+        </div>
+    </section>
+    <!-- // Гарантия лучшей цены! -->
+
+    <!-- Оплата после монтажа -->
+    <section class="payment-section">
+        <div class="payment container">
+            <div class="payment__content">
+                <h2 class="payment__title title">Оплата <span class="orange">после монтажа</span></h2>
+                <p class="payment__description">Компания “Завод окон ПВХ” работает с минимальной предоплатой. Оплата заказа производится только после выполнения всех монтажных работ.</p>
+                <ul class="payment__list reset">
+                    <li>
+                        <img class="payment__icon" src="img/payment-icon-1.svg" alt="Изготовление и установка окон">
+                        <p class="payment__text">Изготовление и установка окон <span class="payment__small">предоплата <span class="orange">всего 10%</span></span></p>
+                    </li>
+                    <li>
+                        <img class="payment__icon" src="img/payment-icon-2.svg" alt="Подписание акта">
+                        <p class="payment__text">Подписание акта <span class="payment__small block">о выполненных работах</span></span></p>
+                    </li>
+                    <li>
+                        <img class="payment__icon" src="img/payment-icon-3.svg" alt="Оплата после монтажных
+                        работ">
+                        <p class="payment__text">Оплата <span class="orange">после монтажных работ</span> <span class="payment__small">картой или наличными</span></p>
+                    </li>
+                </ul>
+                <button class="payment__btn btn">Бесплатная консультация</button>
+            </div>
+        </div>
+    </section>
+    <!-- // Оплата после монтажа -->
+
+    <!-- Окна в рассрочку без участия банка -->
+    <section class="installment-section">
+        <div class="installment container">
+            <div class="installment__wrap">
+                <div class="installment__content">
+                    <h2 class="installment__title title">Окна в рассрочку <span class="orange">без участия банка</span></h2>
+                    <p class="installment__text">Остекление в рассрочку без переплат</p>
+                    <ul class="installment-list reset">
+                        <li>
+                            <span class="installment-list__img">
+                                <img src="img/installment-icon-1.svg" alt="3 месяца срок рассрочки">
+                            </span>
+                            <p class="installment-list__text">3 месяца срок рассрочки</p>
+                        </li>
+                        <li>
+                            <span class="installment-list__img">
+                                <img src="img/installment-icon-2.svg" alt="первоначальный взнос 50%">
+                            </span>
+                            <p class="installment-list__text">первоначальный взнос 50%</p>
+                        </li>
+                        <li>
+                            <span class="installment-list__img">
+                                <img src="img/installment-icon-3.svg" alt="0% за пользование рассрочкой">
+                            </span>
+                            <p class="installment-list__text">0% за пользование рассрочкой</p>
+                        </li>
+                        <li>
+                            <span class="installment-list__img">
+                                <img src="img/installment-icon-4.svg" alt="оформляем на дому">
+                            </span>
+                            <p class="installment-list__text">оформляем на дому</p>
+                        </li>
+                    </ul>
+                    <p class="installment__accent orange">Узнайте как получить рассрочку</p>
+                    <div class="form" action="#" method="post">
+                        <button class="form__btn form__btn--orange btn" type="submit">Подробнее</button>
+                        <button class="installment__btn btn">Получить рассрочку</button>
+                    </div>
+                </div>
+            </div>
+            <div class="installment__img">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="img/installment-img-big.jpg">
+                    <source media="(min-width: 768px)" srcset="img/installment-img-middle.jpg">
+                    <img src="img/installment-img-small.jpg" alt="Окна">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <!-- // Окна в рассрочку без участия банка -->
+
+    <!-- Скидки и акции на окна -->
+    <section class="discounts-section">
+        <div class="discounts container">
+            <h2 class="discounts__title title">Скидки и акции на окна</h2>
+            <p class="discounts__text">Наша компания "Завод окон ПВХ" по установке пластиковых окон добилась минимальной цены благодаря собственным заводским мощностям и отсутствием посредников. Но чтобы вы смогли еще больше сэкономить, предлагаем воспользоваться акциями и скидками на окна.</p>
+            <div id="discountsSlider" class="discounts-slider">
+                <div class="discounts-slider__wrap">
+                    <div class="discounts-slider__slide">
+                        <div class="discounts-slider__content">
+                            <img class="discounts-slider__img" src="img/discounts-img-1.jpg" alt="Москитная сетка">
+                            <p class="discounts-slider__small">Специальное предложение</p>
+                            <p class="discounts-slider__bold">При заказе окна</p>
+                            <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
+                            <p class="discounts-slider__text">Защита от насекомых</p>
+                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                        </div>
+                    </div>
+                    <div class="discounts-slider__slide">
+                        <div class="discounts-slider__content">
+                            <img class="discounts-slider__img" src="img/discounts-img-1.jpg" alt="Москитная сетка">
+                            <p class="discounts-slider__small">Специальное предложение</p>
+                            <p class="discounts-slider__bold">При заказе окна</p>
+                            <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
+                            <p class="discounts-slider__text">Защита от насекомых</p>
+                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                        </div>
+                    </div>
+                    <div class="discounts-slider__slide">
+                        <div class="discounts-slider__content">
+                            <img class="discounts-slider__img" src="img/discounts-img-1.jpg" alt="Москитная сетка">
+                            <p class="discounts-slider__small">Специальное предложение</p>
+                            <p class="discounts-slider__bold">При заказе окна</p>
+                            <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
+                            <p class="discounts-slider__text">Защита от насекомых</p>
+                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                        </div>
+                    </div>
+                    <div class="discounts-slider__slide">
+                        <div class="discounts-slider__content">
+                            <img class="discounts-slider__img" src="img/discounts-img-1.jpg" alt="Москитная сетка">
+                            <p class="discounts-slider__small">Специальное предложение</p>
+                            <p class="discounts-slider__bold">При заказе окна</p>
+                            <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
+                            <p class="discounts-slider__text">Защита от насекомых</p>
+                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                        </div>
+                    </div>
+                    <div class="discounts-slider__slide">
+                        <div class="discounts-slider__content">
+                            <img class="discounts-slider__img" src="img/discounts-img-1.jpg" alt="Москитная сетка">
+                            <p class="discounts-slider__small">Специальное предложение</p>
+                            <p class="discounts-slider__bold">При заказе окна</p>
+                            <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
+                            <p class="discounts-slider__text">Защита от насекомых</p>
+                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                        </div>
+                    </div>
+                    <div class="discounts-slider__slide">
+                        <div class="discounts-slider__content">
+                            <img class="discounts-slider__img" src="img/discounts-img-1.jpg" alt="Москитная сетка">
+                            <p class="discounts-slider__small">Специальное предложение</p>
+                            <p class="discounts-slider__bold">При заказе окна</p>
+                            <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
+                            <p class="discounts-slider__text">Защита от насекомых</p>
+                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                        </div>
+                    </div>
+                    <div class="discounts-slider__slide">
+                        <div class="discounts-slider__content">
+                            <img class="discounts-slider__img" src="img/discounts-img-1.jpg" alt="Москитная сетка">
+                            <p class="discounts-slider__small">Специальное предложение</p>
+                            <p class="discounts-slider__bold">При заказе окна</p>
+                            <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
+                            <p class="discounts-slider__text">Защита от насекомых</p>
+                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-controls__prev discounts-slider__prev"></button>
+                <div class="slider-controls__pagination discounts-slider__pagination"></div>
+                <button class="slider-controls__next discounts-slider__next"></button>
+            </div>
+            <button class="discounts__btn btn">Посмотреть все акции</button>
+        </div>
+    </section>
+    <!-- // Скидки и акции на окна -->
+
+    <!-- Окна для загородного дома -->
+    <section class="windows-house-section">
+        <div class="windows-house container">
+            <h2 class="windows-house__title title">Окна для загородного дома</h2>
+            <p class="windows-house__text">Мы занимаемся установкой окон уже <span class="orange">более 18 лет</span>. Изготавливаем и монтируем конструкции любых размеров и форм. От подписания договора до установки проходит <span class="orange">не больше 7 рабочих дней.</span> Собственная современная производственная база позволяет оперативно и качественно выполнять заказы любых объемов.</p>
+            <div data-mobile="false" class="windows-house-slider">
+                <div class="windows-house-slider__wrap">
+                    <div class="windows-house-slider__slide">
+                        <div class="windows-house-slider__box">
+                            <img class="windows-house-slider__img" src="img/windows-house-1.jpg" alt="Окна для дачи">
+                            <div class="windows-house-slider__content">
+                                <h3 class="windows-house-slider__title orange">Окна для дачи</h3>
+                                <p class="windows-house-slider__text">Для остекления дачи предлагаем более бюджетные варианты пластиковых окон, которые позволят Вам сэкономить значительную сумму и не потерять в качестве!</p>
+                                <button class="windows-house-slider__btn btn btn--orange">Узнать подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="windows-house-slider__slide">
+                        <div class="windows-house-slider__box">
+                            <img class="windows-house-slider__img" src="img/windows-house-2.jpg" alt="В деревянный дом">
+                            <div class="windows-house-slider__content">                            
+                                <h3 class="windows-house-slider__title orange">В деревянный дом</h3>
+                                <p class="windows-house-slider__text">Установка окон в деревянных домах требует учет усадки дома, чем значительно отличается от обычной установки. Мы сделаем это качественно!</p>
+                                <button class="windows-house-slider__btn btn btn--orange">Узнать подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="windows-house-slider__slide">
+                        <div class="windows-house-slider__box">
+                            <img class="windows-house-slider__img" src="img/windows-house-3.jpg" alt="Остекление коттеджей">
+                            <div class="windows-house-slider__content">
+                                <h3 class="windows-house-slider__title orange">Остекление коттеджей</h3>
+                                <p class="windows-house-slider__text">Любые формы окон, более 210 цветов по ламинации и более 12 000 цветов по покраске, любые варианты раскладки в стеклопакете.</p>
+                                <button class="windows-house-slider__btn btn btn--orange">Узнать подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-controls__prev windows-house-slider__prev"></button>
+                <div class="slider-controls__pagination windows-house-slider__pagination"></div>
+                <button class="slider-controls__next windows-house-slider__next"></button>
+            </div>
+        </div>
+    </section>
+    <!-- // Окна для загородного дома -->
+
+    <!-- Купите пластиковые окна в Тольятти выгоднее чем всегда! -->
+    <section class="profitable-windows-section">
+        <div class="profitable-windows container">
+            <h2 class="profitable-windows__title title">Купите пластиковые окна в Тольятти выгоднее чем всегда!</h2>
+            <p class="profitable-windows__text mb-0">Цены на наши пластиковые окна.</p>
+            <p class="profitable-windows__text">Для более точного расчёта и подробной консультации предлагаем вам бесплатно <a class="profitable-windows__link orange" href="#">вызвать менеджера заказа</a></p>
+            <ul class="profitable-windows__list reset">
+                <li>
+                    <img class="profitable-windows__img" src="img/profitable-windows-1.png" alt="Окно двухстворчатое глухое / поворотное пластиковое">
+                    <p class="profitable-windows__name">Окно двухстворчатое глухое / поворотное пластиковое</p>
+                    <p class="profitable-windows__sizes">Размер 1000 х 1000 мм</p>
+                    <p class="profitable-windows__old-price">от 9 179 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>4 860</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>                    
+                </li>
+                <li>
+                    <img class="profitable-windows__img" src="img/profitable-windows-2.png" alt="Окно двухстворчатое глухое / поворотно - откидное">
+                    <p class="profitable-windows__name">Окно двухстворчатое глухое / поворотно - откидное</p>
+                    <p class="profitable-windows__sizes">Размер 1160 х 1440 мм</p>
+                    <p class="profitable-windows__old-price">от 13 283 ₽ </p>
+                    <p class="profitable-windows__new-price orange"><span>7 040</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li>
+                    <img class="profitable-windows__img" src="img/profitable-windows-2.png" alt="Окно двухстворчатое глухое / поворотно - откидное">
+                    <p class="profitable-windows__name">Окно двухстворчатое глухое / поворотно - откидное</p>
+                    <p class="profitable-windows__sizes">Размер 1200 х 1200 мм</p>
+                    <p class="profitable-windows__old-price">от 11 698 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>6 200</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li>
+                    <img class="profitable-windows__img" src="img/profitable-windows-1.png" alt="Окно двухстворчатое глухое / поворотное пластиковое">
+                    <p class="profitable-windows__name">Окно двухстворчатое глухое / поворотное пластиковое</p>
+                    <p class="profitable-windows__sizes">Размер 1000 х 1200 мм</p>
+                    <p class="profitable-windows__old-price">от 10 189 ₽ </p>
+                    <p class="profitable-windows__new-price orange"><span>5 400</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li>
+                    <img class="profitable-windows__img" src="img/profitable-windows-3.png" alt="Окно одностворчатое
+                    поворотное пластиковое">
+                    <p class="profitable-windows__name">Окно одностворчатое поворотное пластиковое</p>
+                    <p class="profitable-windows__sizes">Размер 900 х 600 мм</p>
+                    <p class="profitable-windows__old-price">от 6 377 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>3 380</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li>
+                    <img class="profitable-windows__img" src="img/profitable-windows-4.png" alt="Окно одностворчатое белое глухое пластиковое">
+                    <p class="profitable-windows__name">Окно одностворчатое белое глухое пластиковое</p>
+                    <p class="profitable-windows__sizes">Размер 800 х 1160 мм</p>
+                    <p class="profitable-windows__old-price">от 5 151 ₽ </p>
+                    <p class="profitable-windows__new-price orange"><span>2 730</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-5.png" alt="Окно одностворчатое
+                    поворотно - откидное пластиковое">
+                    <p class="profitable-windows__name">Окно одностворчатое поворотно - откидное пластиковое</p>
+                    <p class="profitable-windows__sizes">Размер 600 х 900 мм</p>
+                    <p class="profitable-windows__old-price">от 6 377 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>3 380</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-6.png" alt="Окно трехстворчатое глухое/поворотное/глухое">
+                    <p class="profitable-windows__name">Окно трехстворчатое глухое/поворотное/глухое</p>
+                    <p class="profitable-windows__sizes">Размер 2080 х 1500 мм</p>
+                    <p class="profitable-windows__old-price">от 20 377 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>10 800</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-7.png" alt="Окно трехстворчатое поворотно - откидное/глухое/поворотное">
+                    <p class="profitable-windows__name">Окно трехстворчатое поворотно - откидное/глухое/поворотное</p>
+                    <p class="profitable-windows__sizes">Размер 1750 х 1440 мм</p>
+                    <p class="profitable-windows__old-price">от 21 132 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>11 200</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-8.png" alt="Окно трехстворчатое 2 поворотно - откидные/глухое">
+                    <p class="profitable-windows__name">Окно трехстворчатое 2 поворотно - откидные/глухое</p>
+                    <p class="profitable-windows__sizes">Размер 1800 х 1440 мм</p>
+                    <p class="profitable-windows__old-price">от 22 075 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>11 700</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-9.png" alt="Окно трехстворчатое
+                    глухое/глухое/поворотное">
+                    <p class="profitable-windows__name">Окно трехстворчатое глухое/глухое/поворотное</p>
+                    <p class="profitable-windows__sizes">Размер 2080 х 1500 мм</p>
+                    <p class="profitable-windows__old-price">от 20 377 ₽ </p>
+                    <p class="profitable-windows__new-price orange"><span>10 800</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-10.png" alt="Окно трехстворчатое
+                    глухое/поворотное - откидное/глухое">
+                    <p class="profitable-windows__name">Окно трехстворчатое глухое/поворотное - откидное/глухое</p>
+                    <p class="profitable-windows__sizes">Размер 1800 х 1440 мм</p>
+                    <p class="profitable-windows__old-price">от 18 245 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>9 670</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-11.png" alt="Окно двухстворчатое
+                    поворотное/поворотно-откидное">
+                    <p class="profitable-windows__name">Окно двухстворчатое поворотное/поворотно-откидное</p>
+                    <p class="profitable-windows__sizes">Размер 1400 х 1400 мм</p>
+                    <p class="profitable-windows__old-price">от 18 151 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>9 620</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-12.png" alt="Окно двухстворчатое
+                    глухое/поворотно - откидное">
+                    <p class="profitable-windows__name">Окно двухстворчатое глухое/поворотно - откидное</p>
+                    <p class="profitable-windows__sizes">Размер 1200 х 1160 мм</p>
+                    <p class="profitable-windows__old-price">от 11 443 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>6 065</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden">
+                    <img class="profitable-windows__img" src="img/profitable-windows-12.png" alt="Окно двухстворчатое
+                    глухое/поворотно - откидное">
+                    <p class="profitable-windows__name">Окно двухстворчатое глухое/поворотно - откидное</p>
+                    <p class="profitable-windows__sizes">Размер 1200 х 1160 мм</p>
+                    <p class="profitable-windows__old-price">от 12 677 ₽</p>
+                    <p class="profitable-windows__new-price orange"><span>7 269</span></p>
+                    <button class="profitable-windows__btn btn btn--orange">Заказать</button>
+                </li>
+                <li class="hidden padding">
+                    <h4 class="profitable-windows__second-title">Не нашли окно вашего размера?</h4>
+                    <p class="profitable-windows__text-3">Изготовим за 3 дня по цене готовых</p>
+                    <p class="profitable-windows__text-3 mb-0">Введите размер необходимых окон:</p>
+                    <form class="profitable-windows__form" action="#">
+                        <div class="profitable-windows__inputs">
+                            <div class="profitable-windows__input">
+                                <label for="windows-width-8">Ширина, мм</label>
+                                <input id="windows-width-8" type="number">
+                            </div>
+                            <div class="profitable-windows__input">
+                                <label for="windows-height-8">Высота, мм</label>
+                                <input id="windows-height-8" type="number">
+                            </div>
+                        </div>
+                        <button class="profitable-windows__calc-btn btn btn--white">Рассчитать</button>
+                    </form>                
+                </li>
+            </ul>
+            <button class="profitable-windows__more-btn btn btn--orange">Загрузить еще</button>
+            <p class="profitable-windows__text-2">Цены на сайте указаны на окна в базовой комплектации. Итоговая сумма может отличаться.</p>
+        </div>
+    </section>
+    <!-- // Купите пластиковые окна в Тольятти выгоднее чем всегда! -->
+
+    <!-- Власов Алексей Руководитель монтажного отдела -->
+    <section class="director-section">
+        <div class="director container">
+            <div class="director__left">
+                <div class="director__wrap">
+                    <p class="director__text">Чтобы определить стоимость будущей работы, необходимо правильно измерить оконный проём. Советуем воспользоваться услугой <a href="#"><span class="border orange">бесплатный выезд специалиста</span></a>. Он предложит вам качественные и недорогие варианты остекления.</p>
+                </div>
+            </div>
+            <div class="director__right">
+                <div class="director__content">
+                    <p class="director__name">Власов Алексей</p>
+                    <p class="director__position">Руководитель <span class="block">отдела заказов</span></p>
+                </div>
+                <img class="director__img" src="img/director-1.jpg" alt="Дмитриев Артем">
+            </div>
+        </div>
+    </section>
+    <!-- // Власов Алексей Руководитель монтажного отдела -->
+
+    <!-- Не нужно переплачивать -->
+    <section class="benefit-section">
+        <div class="benefit container">
+            <div class="benefit__img">
+                <h2 class="benefit__title">Не нужно переплачивать</h2>
+                <div class="benefit__img-box">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/benefit-bg-big.jpg">
+                        <img src="img/benefit-bg-small.jpg" alt="Не нужно переплачивать">
+                    </picture>
+                </div>
+            </div>
+            <ul class="benefit__list reset">
+                <li>
+                    <span class="benefit__icon">
+                        <img src="img/benefit-icon-1.svg" alt="За лишний профиль">
+                    </span>
+                    <p class="benefit__text orange">За лишний профиль</p>
+                    <span class="benefit__saving">Экономия</span>
+                    <span class="benefit__price">1 700 <span class="benefit__ruble">₽</span> </span>
+                </li>
+                <li>
+                    <span class="benefit__icon">
+                        <img src="img/benefit-icon-2.svg" alt="За лишние бренды">
+                    </span>
+                    <p class="benefit__text orange">За лишние бренды</p>
+                    <span class="benefit__saving">Экономия</span>
+                    <span class="benefit__price">1 250 <span class="benefit__ruble">₽</span> </span>
+                </li>
+                <li>
+                    <span class="benefit__icon">
+                        <img src="img/benefit-icon-3.svg" alt="За лишние функции">
+                    </span>
+                    <p class="benefit__text orange">За лишние функции</p>
+                    <span class="benefit__saving">Экономия</span>
+                    <span class="benefit__price">900 <span class="benefit__ruble">₽</span> </span>
+                </li>
+                <li>
+                    <span class="benefit__icon">
+                        <img src="img/worker-icon.svg" alt="За лишние работы">
+                    </span>
+                    <p class="benefit__text orange">За лишние работы</p>
+                    <span class="benefit__saving">Экономия</span>
+                    <span class="benefit__price">1 200 <span class="benefit__ruble">₽</span> </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- // Не нужно переплачивать -->
+
+    <!-- Качественные окна по заводским ценам -->
+    <section class="quality-windows-section">
+        <div class="quality-windows container">
+            <div class="quality-windows__content">
+                <h2 class="quality-windows__title title">Качественные окна по заводским ценам</h2>
+                <ul class="quality-windows__list reset">
+                    <li>Высокое качество</li>
+                    <li>Заводские цены</li>
+                </ul>
+                <p class="quality-windows__text">Заказывать от производителя - выгодно! Вы получаете надежные окна по низким ценам. Контроль качества на каждом этапе изготовления. Скроки выполнения заказа минимальные</p>
+                <div class="quality-item">
+                    <span class="quality-item__letter">Я</span>
+                    <div>
+                        <p class="quality-item__text">не принимаю брак от других,</p>
+                        <p class="quality-item__text">не произвожу брак,</p>
+                        <p class="quality-item__text">не передаю брак другому!</p>
+                    </div>
+                </div>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="img/quality-windows-big.png">
+                    <source media="(min-width: 768px)" srcset="img/quality-windows-middle.png">
+                    <img class="quality-windows__img" src="img/quality-windows-small.png" alt="Бережная доставка">
+                </picture> 
+            </div>
+        </div>
+    </section>
+    <!-- Качественные окна по заводским ценам -->
+
+    <!-- Закажите бесплатный замер -->
+    <div>
+        <div class="measuring container">
+            <div class="measuring__content">
+                <p class="measuring__text">Мастер по замерам посоветует как сэкономить и все рассчитает за 20 минут</p>
+                <h2 class="measuring__title"><span class="measuring__word orange">Закажите</span> бесплатный замер</h2>
+                <form class="form form--flex" action="#" method="post">
+                    <input class="form__phone" type="tel" placeholder="ваш телефон" required>
+                    <button class="form__btn btn" type="submit">Вызвать замерщика</button>
+                </form>
+                <p class="measuring__warning">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с Правовой информацией</p>
+            </div>
+            <div class="measuring__img"></div>
+        </div>  
+    </div>
+    <!--// Закажите бесплатный замер -->
+
+     <!-- 38 человек в мае стали нашими клиентами! -->
+     <section class="customers-section">
+        <div class="customers container">
+            <div class="customers__content">
+                <div class="customers__box">
+                    <h3 class="customers__title"><span class="orange">38</span> человек в мае <span class="block">стали нашими клиентами!</span></h3>
+                    <p class="customers__text">Мы еженедельно проводим опросы наших клиентов, измеряя Индекс Удовлетворённости (ИУ):</p>
+                    <div class="customers__icons">
+                        <div class="customers__left">
+                            <img class="customers__icon" src="img/customers-icon-1.svg" alt="82% Очень довольны">
+                            <div class="customers__statistics">
+                                <span class="customers__number">82%</span>
+                                <p class="customers__statistics-text">Очень довольны</p>
+                            </div>
+                        </div>
+                        <div class="customers__right">
+                            <img class="customers__icon" src="img/customers-icon-2.svg" alt="14% довольны">
+                            <div class="customers__statistics">
+                                <span class="customers__number">14%</span>
+                                <p class="customers__statistics-text">Довольны</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="customers__bg">
+
+            </div>
+        </div>
+    </section>
+    <!-- // 38 человек в мае стали нашими клиентами! -->
 
     <!-- Частые вопросы про остекление дома -->
     <section class="accordion-section">
@@ -283,6 +2091,39 @@
         </div>
     </section>
     <!-- // Частые вопросы про остекление дома -->
+
+    <!-- Беслпатная консультация -->
+    <section class="free-consultation-section">
+        <div class="free-consultation container">
+            <h2 class="free-consultation__title">Бесплатная консультация</h2>
+
+            <p class="free-consultation__text">Узнайте цену на окна! Прямо сейчас!</p>
+
+            <p class="free-consultation__phone">
+                <a class="free-consultation__phone-link" href="tel:+79171222880">+7 917 122 28 80</a>
+            </p>
+
+            <a class="free-consultation__whatsapp-link" href="#">Напишите нам в WhatsApp</a>
+
+            <p class="free-consultation__work-schedule">Работаем пн- пт с 9:00 до 21:00</p>
+
+            <div class="free-consultation__about">
+                <p class="free-consultation__about-text">При обращении <span>до 14:00</span> можем приехать на замер сегодня!</p>
+
+                <div class="free-consultation__about-box">
+                    <div class="free-consultation__about-content">
+                        <p class="free-consultation__about-name">Власов Алексей</p>
+                        <p class="free-consultation__about-position">Руководитель отдела заказов</p>
+                    </div>
+
+                    <img src="img/consultation.jpg" alt="Руководитель отдела заказов">
+                </div>
+            </div>
+
+            <button class="free-consultation__btn btn btn--white">Заказать звонок</button>
+        </div>
+    </section>
+    <!-- // Бесплатная консультация -->
 
     <!-- Футер -->
     <footer class="footer">
@@ -411,7 +2252,10 @@
     </div>
     <!-- // Попап для хедера мобильное меню -->
     
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script-img.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
