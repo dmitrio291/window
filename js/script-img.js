@@ -113,4 +113,32 @@ document.addEventListener('DOMContentLoaded', () => {
         activeChooseOwnColor(colorsAccessory);
     }
     /* end ---------------------------------- Скрипты для секции .choose-own-color ---------------------------------- */
+
+    /* start ---------------------------------- Скрипты для секции .montage-section --------------------------------- */
+    const montagePreview = document.querySelector('.montage__preview');
+
+    const changePreviewMontage = (preview) => {
+        if (window.innerWidth < 768) {
+            preview.src = 'img/montage-small.jpg';
+        }
+
+        if (window.innerWidth > 767 && window.innerWidth < 1024) {
+            preview.src = 'img/montage-middle.jpg';
+        }
+
+        if (window.innerWidth > 1023) {
+            preview.src = 'img/montage-big.jpg';
+        }
+    };
+
+    if (montagePreview) {
+        changePreviewMontage(montagePreview);
+    }
+
+    window.addEventListener('resize', () => {
+        if (montagePreview) {
+            changePreviewMontage(montagePreview);
+        } 
+    });
+    /* end ---------------------------------- Скрипты для секции .montage-section ----------------------------------- */
 });

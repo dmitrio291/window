@@ -2158,6 +2158,84 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- choose own color section -------------------------------------------- */
+/* start -------------------------------------------- montage section --------------------------------------------------- */
+.montage-section {
+  margin-bottom: 15px;
+}
+
+.montage__text {
+  margin-bottom: 26px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.montage__title {
+  margin-bottom: 28px;
+}
+
+.montage .video {
+  margin-bottom: 15px;
+  min-height: 224px;
+}
+
+.montage .video, .montage__list {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.montage__preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.montage__img {
+  display: block;
+  width: 100%;
+}
+
+.montage__button {
+  background-color: #ffffff;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
+}
+
+.montage__icon {
+  width: 42px;
+  height: 46px;
+}
+
+.montage .video--enabled .video__button {
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+.montage__item {
+  padding: 8px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  width: 118px;
+  height: 43px;
+  background-color: rgba(255, 255, 255, 0.75);
+  pointer-events: none;
+}
+
+.montage__item img {
+  width: 102px;
+  height: 27px;
+}
+
+.montage__list li {
+  position: relative;
+}
+
+.montage__list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/* end -------------------------------------------- montage section ----------------------------------------------------- */
 /* start------------------------------------------- advantages section ------------------------------------------------- */
 .advantages {
   max-width: 345px;
@@ -5658,6 +5736,57 @@ input:focus:-ms-input-placeholder {
     font-size: 14px;
   }
   /* end -------------------------------------------- choose own color section -------------------------------------- */
+  /* start -------------------------------------------- montage section --------------------------------------------- */
+  .montage-section {
+    margin-bottom: 20px;
+  }
+  .montage__title {
+    margin-bottom: 45px;
+  }
+  .montage__text {
+    margin-bottom: 41px;
+    line-height: 25px;
+  }
+  .montage__icon {
+    width: 73px;
+    height: 80px;
+  }
+  .montage .video {
+    margin-bottom: 20px;
+    min-height: 461px;
+  }
+  .montage .video__button {
+    width: 73px;
+    height: 80px;
+  }
+  .montage .video, .montage__list {
+    max-width: 708px;
+  }
+  .montage__item--video {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 219px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .montage__item--video img {
+    width: 189px;
+    height: 50px;
+  }
+  .montage__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .montage__list li {
+    flex-basis: 48.5%;
+  }
+  .montage__list li:not(:last-child) {
+    margin-bottom: 0;
+  }
+  /* end -------------------------------------------- montage section ----------------------------------------------- */
   /* start -------------------------------------------- advantages section ----------------------------------------- */
   .advantages {
     max-width: 708px;
@@ -7568,6 +7697,24 @@ input:focus:-ms-input-placeholder {
     background-size: 213px;
   }
   /* end -------------------------------------------- choose own color section -------------------------------------- */
+  /* start -------------------------------------------- montage section --------------------------------------------- */
+  .montage__text {
+    margin-bottom: 51px;
+  }
+  .montage .video, .montage__list {
+    max-width: none;
+  }
+  .montage .video {
+    min-height: 625px;
+  }
+  .montage__item--video {
+    top: 30px;
+    left: 31px;
+  }
+  .montage__list li {
+    flex-basis: 48.9%;
+  }
+  /* end -------------------------------------------- montage section ----------------------------------------------- */
   /* start -------------------------------------------- advantages section ----------------------------------------- */
   .advantages__content {
     padding: 40px 40px 33px;

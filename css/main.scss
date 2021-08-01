@@ -2258,6 +2258,89 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- choose own color section -------------------------------------------- */
 
+/* start -------------------------------------------- montage section --------------------------------------------------- */
+.montage {
+    &-section {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        margin-bottom: 26px;
+        text-align: center;
+        line-height: 21px;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+    }
+
+    .video {
+        margin-bottom: 15px;
+        min-height: 224px;
+    }
+
+    .video,
+    &__list {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__preview {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__button {
+        background-color: #ffffff;
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
+    }
+
+    &__icon {
+        width: 42px;
+        height: 46px;
+    }
+
+    .video--enabled .video__button {
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
+        cursor: pointer;
+    }
+
+    &__item {
+        padding: 8px;
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        width: 118px;
+        height: 43px;
+        background-color: rgba(255, 255, 255, 0.75);
+        pointer-events: none;
+
+        img {
+            width: 102px;
+            height: 27px;
+        }
+    }
+
+    &__list {
+        li {
+            position: relative;
+
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+/* end -------------------------------------------- montage section ----------------------------------------------------- */
+
 /* start------------------------------------------- advantages section ------------------------------------------------- */
 .advantages {
     max-width: 345px;
@@ -6128,6 +6211,74 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- choose own color section -------------------------------------- */
 
+    /* start -------------------------------------------- montage section --------------------------------------------- */
+    .montage {
+        &-section {
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            margin-bottom: 45px;
+        }
+
+        &__text {
+            margin-bottom: 41px;
+            line-height: 25px;
+        }
+
+        &__icon {
+            width: 73px;
+            height: 80px;
+        }
+
+        .video {
+            margin-bottom: 20px;
+            min-height: 461px;
+            
+            &__button {
+                width: 73px;
+                height: 80px;
+            }
+        }
+
+        .video,
+        &__list {
+            max-width: 708px;
+        }
+
+        &__item {
+            &--video {
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 219px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                
+                img {
+                    width: 189px;
+                    height: 50px;
+                }
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+
+            li {                
+                flex-basis: 48.5%;
+
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                }
+            }
+        }        
+    }
+    /* end -------------------------------------------- montage section ----------------------------------------------- */
+
     /* start -------------------------------------------- advantages section ----------------------------------------- */
     .advantages {
         max-width: 708px;
@@ -8676,6 +8827,36 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- choose own color section -------------------------------------- */
+
+    /* start -------------------------------------------- montage section --------------------------------------------- */
+    .montage {
+        &__text {
+            margin-bottom: 51px;
+        }
+
+        .video,
+        &__list {
+            max-width: none;
+        }
+
+        .video {
+            min-height: 625px;
+        }
+
+        &__item {
+            &--video {
+                top: 30px;
+                left: 31px;
+            }
+        }
+
+        &__list {
+            li {
+                flex-basis: 48.9%;
+            }
+        }
+    }
+    /* end -------------------------------------------- montage section ----------------------------------------------- */
 
     /* start -------------------------------------------- advantages section ----------------------------------------- */
     .advantages {
