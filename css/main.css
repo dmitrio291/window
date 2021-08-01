@@ -3223,33 +3223,9 @@ input:focus:-ms-input-placeholder {
 }
 
 .profitable-windows-section {
-  position: relative;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   background-repeat: no-repeat;
-  background-image: url("../img/profitable-windows-small-1.jpg"), url("../img/profitable-windows-small-2.jpg");
-  background-size: 100% 568px, 100% 568px;
-  background-position: left top, left bottom;
-}
-
-.profitable-windows-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 619px;
-  background: linear-gradient(0, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 34%), linear-gradient(180deg, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 70%);
-}
-
-.profitable-windows-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 619px;
-  background: linear-gradient(180deg, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 19%), linear-gradient(0, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 31%);
 }
 
 .profitable-windows__title {
@@ -3426,7 +3402,6 @@ input:focus:-ms-input-placeholder {
   margin-top: auto;
   display: block;
   width: 100%;
-  pointer-events: none;
 }
 
 .profitable-windows__more-btn {
@@ -6357,9 +6332,8 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- sincere service section --------------------------------------- */
   /* start -------------------------------------------- profitable windows section ---------------------------------- */
   .profitable-windows-section {
-    padding-top: 75px;
-    padding-bottom: 75px;
-    background-image: url("../img/profitable-windows-middle-1.jpg"), url("../img/profitable-windows-middle-2.jpg");
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .profitable-windows__title {
     margin-bottom: 53px;
@@ -8274,14 +8248,6 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- sincere service section --------------------------------------- */
   /* start -------------------------------------------- profitable windows section ---------------------------------- */
-  .profitable-windows-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-image: url("../img/profitable-windows-big-1.jpg"), url("../img/profitable-windows-big-2.jpg");
-  }
-  .profitable-windows-section::after {
-    background: linear-gradient(180deg, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 74%), linear-gradient(0, #FFFFFF 14.59%, rgba(255, 255, 255, 0) 51%);
-  }
   .profitable-windows__list {
     max-width: 960px;
   }
