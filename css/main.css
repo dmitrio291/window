@@ -4736,6 +4736,35 @@ input:focus:-ms-input-placeholder {
 /* end -------------------------------------------- installment-info-section ----------------------------------------- */
 /* end Страница Рассрочка */
 /* start Страница Окна в дом */
+/* start -------------------------------------------- banner-windows-section ------------------------------------------ */
+.banner-windows--cottages {
+  background-image: url("../img/banner-windows-bg-small.jpg");
+}
+
+.banner-windows--cottages .banner-windows__left {
+  padding-right: 15px;
+}
+
+.banner-windows--cottages .banner-windows__title {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.banner-windows--cottages .banner-windows__list li {
+  padding-left: 0;
+}
+
+.banner-windows--cottages .banner-windows__list li::before {
+  display: none;
+}
+
+.banner-windows__subtitle {
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* end -------------------------------------------- banner-windows-section -------------------------------------------- */
 /* start -------------------------------------------- windows-house-section ------------------------------------------ */
 .windows-house-section {
   margin-bottom: 50px;
@@ -4993,6 +5022,7 @@ input:focus:-ms-input-placeholder {
   /* end ------------------------------------------ banner section --------------------------------------------------- */
   /* start -------------------------------------------- banner windows section --------------------------------------- */
   .banner-windows {
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -6840,6 +6870,18 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- installment-info-section ------------------------------------- */
   /* end Страница Рассрочка */
   /* start Страница Окна в дом */
+  /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+  .banner-windows--cottages {
+    background-image: url("../img/banner-windows-bg-middle.jpg");
+  }
+  .banner-windows--cottages .banner-windows__left {
+    max-width: 444px;
+  }
+  .banner-windows--cottages .banner-windows__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  /* end -------------------------------------------- banner-windows-section --------------------------------------- */
   /* start -------------------------------------------- windows-house-section -------------------------------------- */
   .windows-house-section {
     margin-bottom: 75px;
@@ -8429,6 +8471,25 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- installment-info-section ------------------------------------- */
   /* end Страница Рассрочка */
   /* start Страница Окна в дом */
+  /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+  .banner-windows--cottages {
+    background-image: url("../img/banner-windows-bg-big.jpg");
+  }
+  .banner-windows--cottages .banner-windows__left {
+    max-width: 460px;
+  }
+  .banner-windows--cottages .banner-windows__list {
+    max-width: 300px;
+  }
+  .banner-windows--cottages .banner-windows__list li {
+    font-size: 18px;
+  }
+  .banner-windows__subtitle {
+    max-width: 300px;
+    font-size: 23px;
+    line-height: 27px;
+  }
+  /* end -------------------------------------------- banner-windows-section --------------------------------------- */
   /* start -------------------------------------------- windows-house-section -------------------------------------- */
   .windows-house__text {
     margin-bottom: 34px;

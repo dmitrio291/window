@@ -209,34 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .profile-section ----------------------------------- */
 
-    /* start ---------------------------------- Скрипты для секции .sketches-section---------------------------------- */
-    const sketchesInput = document.querySelector('.form-sketches--1 .form-sketches__none');
-    const sketchesText = document.querySelector('.form-sketches--1 .form-sketches__upload-text');
-    const sketchesIcon = document.querySelector('.form-sketches--1 .form-sketches__icon');
-
-    if (sketchesInput && sketchesText && sketchesIcon) {
-        sketchesInput.addEventListener('change', () => {
-            sketchesText.textContent = 'Эскиз загружен';
-            sketchesText.style.color = '#F26422';
-            sketchesIcon.style.backgroundImage = "url('img/sketches-icon-3.svg')";
-        });
-    }
-    /* end ---------------------------------- Скрипты для секции .sketches-section ---------------------------------- */
-
-    /* start ---------------------------------- Скрипты для секции .sketches-section 2-ой вариант ------------------- */
-    const sketchesInput2 = document.querySelector('.form-sketches--2 .form-sketches__none');
-    const sketchesText2 = document.querySelector('.form-sketches--2 .form-sketches__upload-text');
-    const sketchesIcon2 = document.querySelector('.form-sketches--2 .form-sketches__icon');
-
-    if (sketchesInput2 && sketchesText2 && sketchesIcon2) {
-        sketchesInput2.addEventListener('change', () => {
-            sketchesText2.textContent = 'Эскиз загружен';
-            sketchesText2.style.color = '#F26422';
-            sketchesIcon2.style.backgroundImage = "url('img/sketches-icon-3.svg')";
-        });
-    }
-    /* end ---------------------------------- Скрипты для секции .sketches-section 2-ой вариант -------------------- */
-
     /* start ---------------------------------- Скрипты для секции .examples-section---------------------------------- */
     const examplesSlider = document.querySelectorAll('.examples-slider');
 

@@ -4951,6 +4951,41 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* end Страница Рассрочка */
 
 /* start Страница Окна в дом */
+/* start -------------------------------------------- banner-windows-section ------------------------------------------ */
+.banner-windows {
+    &--cottages {
+        background-image: url("../img/banner-windows-bg-small.jpg");
+
+        .banner-windows {
+            &__left {
+                padding-right: 15px;
+            }
+
+            &__title {
+                font-size: 32px;
+                line-height: 36px;
+            }
+    
+            &__list {
+                li {
+                    padding-left: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    &__subtitle {
+        margin-bottom: 25px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+/* end -------------------------------------------- banner-windows-section -------------------------------------------- */
+
 /* start -------------------------------------------- windows-house-section ------------------------------------------ */
 .windows-house {
     &-section {
@@ -5260,6 +5295,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- banner windows section --------------------------------------- */
     .banner-windows {
+        padding: 40px 0;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -7700,6 +7736,25 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* end Страница Рассрочка */
 
     /* start Страница Окна в дом */
+    /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+    .banner-windows {
+        &--cottages {
+            background-image: url("../img/banner-windows-bg-middle.jpg");
+
+            .banner-windows {
+                &__left {
+                    max-width: 444px;
+                }
+
+                &__title {
+                    font-size: 42px;
+                    line-height: 46px;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
     /* start -------------------------------------------- windows-house-section -------------------------------------- */
     .windows-house {
         &-section {
@@ -9883,6 +9938,34 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* end Страница Рассрочка */
 
     /* start Страница Окна в дом */
+    /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+    .banner-windows {
+        &--cottages {
+            background-image: url("../img/banner-windows-bg-big.jpg");
+
+            .banner-windows {
+                &__left {
+                    max-width: 460px;
+                }
+
+                &__list {
+                    max-width: 300px;
+
+                    li {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        &__subtitle {
+            max-width: 300px;
+            font-size: 23px;
+            line-height: 27px;
+        }
+    }
+    /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
     /* start -------------------------------------------- windows-house-section -------------------------------------- */
     .windows-house {
         &__text {
