@@ -1796,6 +1796,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
             width: 35px;
             height: 35px;
             border-radius: 50%;
@@ -4038,6 +4039,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
 /* start -------------------------------------------- measuring section ------------------------------------------------ */
 .measuring {
+    margin-bottom: 35px;
     position: relative;
     background-image: url('../img/measuring-bg-small.jpg');
     background-repeat: no-repeat;
@@ -4055,15 +4057,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__content {
-        padding: 55px 15px;
+        padding: 40px 15px;
         position: relative;
-    }
-
-    &__text {
-        margin-bottom: 25px;
-        padding-right: 13px;
-        font-size: 18px;
-        line-height: 25px;
     }
 
     &__title {
@@ -4077,6 +4072,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &--contacts {
+        margin-bottom: 0;
+
         .measuring {
             &__title {
                 margin-bottom: 17px;   
@@ -6577,6 +6574,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- measuring section -------------------------------------------- */
     .measuring {
+        margin-bottom: 50px;
         display: flex;
         background-image: none;
 
@@ -6585,8 +6583,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__content {
-            width: 47%;
-            padding: 76px 0 76px 30px;
+            width: 50%;
+            padding: 50px 0 50px 30px;
             background-color: #F0FAFF;           
         }
 
@@ -6608,6 +6606,20 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             line-height: 36px;
         }
 
+        .installment-list {
+            li {
+                max-width: none;
+
+                &:nth-child(2) {
+                    order: 2;
+                }
+            }
+    
+            &__text {
+                font-size: 16px;
+            }
+        }
+
         &__word {
             display: block;
         }
@@ -6617,7 +6629,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             width: 53%;
             background-image: url('../img/measuring-bg-middle.jpg');
             background-size: cover;
-            background-position-x: 90%;
+            background-position-x: 70%;
             background-repeat: no-repeat;
 
             &::before {
@@ -6632,6 +6644,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &--contacts {
+            margin-bottom: 0;
+
             .measuring {
                 &__content {
                     width: 62%;
@@ -9007,11 +9021,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- measuring section -------------------------------------------- */
     .measuring {
-        margin-bottom: 45px;
-
         &__content {
             width: 55%;
-            padding: 75px 0 75px 40px;
         }
 
         &__text {
@@ -9022,7 +9033,13 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &__title {
             margin-bottom: 42px;
-            font-weight: 500;
+            font-weight: 700;
+        }
+
+        .installment-list {
+            li {
+                max-width: 236px;
+            }
         }
 
         &__word {
@@ -9048,17 +9065,17 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         &__img {
             width: 50%;
             background-image: url('../img/measuring-bg-big.jpg');
-            background-position-x: 100%;
+            background-position-x: 50%;
+
+            &::before {
+                width: 110px;
+            }
         }
 
         &--contacts {
             .measuring {
                 &__content {
                     width: 43%;
-                }
-
-                &__title {
-                    font-weight: 700;
                 }
 
                 &__img {

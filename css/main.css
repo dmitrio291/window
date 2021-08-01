@@ -1719,6 +1719,7 @@ input:focus:-ms-input-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -3867,6 +3868,7 @@ input:focus:-ms-input-placeholder {
 /* end ------------------------------------------ certificates section -------------------------------------------------- */
 /* start -------------------------------------------- measuring section ------------------------------------------------ */
 .measuring {
+  margin-bottom: 35px;
   position: relative;
   background-image: url("../img/measuring-bg-small.jpg");
   background-repeat: no-repeat;
@@ -3885,15 +3887,8 @@ input:focus:-ms-input-placeholder {
 }
 
 .measuring__content {
-  padding: 55px 15px;
+  padding: 40px 15px;
   position: relative;
-}
-
-.measuring__text {
-  margin-bottom: 25px;
-  padding-right: 13px;
-  font-size: 18px;
-  line-height: 25px;
 }
 
 .measuring__title {
@@ -3904,6 +3899,10 @@ input:focus:-ms-input-placeholder {
 .measuring__warning {
   font-size: 10px;
   line-height: 12px;
+}
+
+.measuring--contacts {
+  margin-bottom: 0;
 }
 
 .measuring--contacts .measuring__title {
@@ -5991,6 +5990,7 @@ input:focus:-ms-input-placeholder {
   /* end ------------------------------------------- climate section ----------------------------------------------- */
   /* start -------------------------------------------- measuring section -------------------------------------------- */
   .measuring {
+    margin-bottom: 50px;
     display: flex;
     background-image: none;
   }
@@ -5998,8 +5998,8 @@ input:focus:-ms-input-placeholder {
     display: none;
   }
   .measuring__content {
-    width: 47%;
-    padding: 76px 0 76px 30px;
+    width: 50%;
+    padding: 50px 0 50px 30px;
     background-color: #F0FAFF;
   }
   .measuring__text, .measuring__title,
@@ -6015,6 +6015,15 @@ input:focus:-ms-input-placeholder {
     font-size: 32px;
     line-height: 36px;
   }
+  .measuring .installment-list li {
+    max-width: none;
+  }
+  .measuring .installment-list li:nth-child(2) {
+    order: 2;
+  }
+  .measuring .installment-list__text {
+    font-size: 16px;
+  }
   .measuring__word {
     display: block;
   }
@@ -6023,7 +6032,7 @@ input:focus:-ms-input-placeholder {
     width: 53%;
     background-image: url("../img/measuring-bg-middle.jpg");
     background-size: cover;
-    background-position-x: 90%;
+    background-position-x: 70%;
     background-repeat: no-repeat;
   }
   .measuring__img::before {
@@ -6034,6 +6043,9 @@ input:focus:-ms-input-placeholder {
     width: 80px;
     height: 100%;
     background: linear-gradient(90deg, #F0FAFF 0%, rgba(240, 250, 255, 0) 100%);
+  }
+  .measuring--contacts {
+    margin-bottom: 0;
   }
   .measuring--contacts .measuring__content {
     width: 62%;
@@ -7797,12 +7809,8 @@ input:focus:-ms-input-placeholder {
   }
   /* end------------------------------------------- examples section ----------------------------------------------- */
   /* start -------------------------------------------- measuring section -------------------------------------------- */
-  .measuring {
-    margin-bottom: 45px;
-  }
   .measuring__content {
     width: 55%;
-    padding: 75px 0 75px 40px;
   }
   .measuring__text {
     padding-right: 0;
@@ -7811,7 +7819,10 @@ input:focus:-ms-input-placeholder {
   }
   .measuring__title {
     margin-bottom: 42px;
-    font-weight: 500;
+    font-weight: 700;
+  }
+  .measuring .installment-list li {
+    max-width: 236px;
   }
   .measuring__word {
     display: inline-block;
@@ -7829,13 +7840,13 @@ input:focus:-ms-input-placeholder {
   .measuring__img {
     width: 50%;
     background-image: url("../img/measuring-bg-big.jpg");
-    background-position-x: 100%;
+    background-position-x: 50%;
+  }
+  .measuring__img::before {
+    width: 110px;
   }
   .measuring--contacts .measuring__content {
     width: 43%;
-  }
-  .measuring--contacts .measuring__title {
-    font-weight: 700;
   }
   .measuring--contacts .measuring__img {
     width: 57%;
