@@ -5051,7 +5051,89 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- banner-windows-section -------------------------------------------- */
 
-/* start -------------------------------------------- choice-windows-section ----------------------------------------- */
+/* start -------------------------------------------- types-windows-section ------------------------------------------- */
+.types-windows {
+    &-section {
+        margin-bottom: 15px;
+    }
+
+    &-box {
+        position: relative;
+        padding: 38px 17px 38px 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/types-windows-img-1.jpg');
+        color: #ffffff;
+        border-radius: 3px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 3px;
+        }
+    }
+
+    &-list {
+        position: relative;
+
+        li {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__icon {
+            position: relative;
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -4px;
+                left: -4px;
+                width: 41px;
+                height: 41px;
+                border-radius: 50%;
+                border: 1px solid #F26422;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 4px;
+            font-size: 19px;
+            line-height: 24px;
+        }
+
+        &__desc {
+            font-size: 14px;
+        }
+    }
+}
+/* end -------------------------------------------- types-windows-section --------------------------------------------- */
+
+/* start -------------------------------------------- choice-windows-section ------------------------------------------ */
 .choice-windows {
     position: relative;
 
@@ -8125,6 +8207,60 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- banner-windows-section ---------------------------------------- */
 
+    /* start -------------------------------------------- types-windows-section -------------------------------------- */
+    .types-windows {
+        margin-bottom: 20px;
+
+        &-box {
+            padding: 52px 30px 54px 32px;
+            background-image: url("../img/types-windows-img-2.jpg");
+
+            &::before {
+                width: 75%;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
+            }
+        }
+
+        &-list {
+            max-width: 400px;
+
+            &__icon {
+                width: 45px;
+                height: 45px;
+
+                &::before {
+                    top: -5px;
+                    left: -5px;
+                    width: 53px;
+                    height: 53px;
+                }
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+
+            &__title {
+                font-size: 21px;
+                line-height: 25px;
+            }
+
+            &__desc {
+                font-size: 16px;
+            }
+
+            li {
+                column-gap: 34px;
+
+                &:not(:last-child) {
+                    margin-bottom: 33px;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- types-windows-section ---------------------------------------- */
+
     /* start -------------------------------------------- choice-windows-section ------------------------------------- */
     .choice-windows {
         &-section {
@@ -10471,6 +10607,25 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- types-windows-section -------------------------------------- */
+    .types-windows {
+        &-box {
+            padding-left: 42px;
+            background-image: url("../img/types-windows-img-3.jpg");
+        }
+
+        &-list {
+            max-width: none;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- types-windows-section ---------------------------------------- */
 
     /* start -------------------------------------------- choice-windows-section ------------------------------------- */
     .choice-windows {
