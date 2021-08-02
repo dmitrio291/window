@@ -4998,7 +4998,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- banner-windows-section -------------------------------------------- */
 
-/* start -------------------------------------------- choice-windows-section ------------------------------------------ */
+/* start -------------------------------------------- choice-windows-section ----------------------------------------- */
 .choice-windows {
     position: relative;
 
@@ -5083,6 +5083,127 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* end -------------------------------------------- choice-windows-section ------------------------------------------- */
+
+/* start -------------------------------------------- doors-house-section -------------------------------------------- */
+.doors-house {
+    padding: 40px 15px;
+    background-color: #F9F9F9;
+    border-radius: 3px;
+
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        text-align: center;
+        line-height: 21px;
+    }
+
+    &__list {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        li {
+            background-color: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+
+            &:first-child {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &-slider {
+        overflow: hidden;
+        position: relative;
+
+        &__wrap {
+            display: flex;
+        }
+
+        &__slide {
+            flex-shrink: 0;
+        }
+
+        &__prev,
+        &__next,
+        &__pagination {
+            position: absolute;
+        }
+
+        &__prev,
+        &__next {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            height: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background-color: #ffffff;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        &__prev {
+            left: 10px;
+        }
+
+        &__next {
+            right: 10px;
+        }
+
+        &__pagination {
+            text-align: center;
+
+            &.swiper-pagination-bullets .swiper-pagination-bullet {
+                margin: 0 6px;
+            }
+
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                background-color: rgba(249, 249, 249, 0.7);
+                opacity: 1;
+
+                &-active {
+                    background-color: #ffffff;
+                }
+            }
+        }
+
+        &__img {
+            display: block;
+            width: 100%;
+            max-height: 219px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        padding: 30px 15px 20px;
+    }
+
+    &__name {
+        margin-bottom: 18px;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    &__desc {
+        line-height: 21px;
+    }
+}
+/* end -------------------------------------------- doors-house-section ---------------------------------------------- */
 
 /* start -------------------------------------------- windows-house-section ------------------------------------------ */
 .windows-house {
@@ -7941,6 +8062,76 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- choice-windows-section --------------------------------------- */
 
+    /* start -------------------------------------------- doors-house-section ---------------------------------------- */
+    .doors-house {
+        padding: 50px 61px 40px;
+
+        &-section {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            margin-bottom: 33px;
+        }
+
+        &__list {
+            max-width: 600px;
+
+            li {
+                &:first-child {
+                    margin-bottom: 31px;
+                }
+            }
+        }
+
+        &-slider {
+            &__prev,
+            &__next {
+                width: 47px;
+                height: 47px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 12px;
+                    height: 27px;
+                }
+            }
+
+            &__prev {
+                left: 15px;
+
+                img {
+                    margin-left: -4px;
+                }
+            }
+
+            &__next {
+                right: 15px;
+            }
+
+            &__img {
+                max-height: 450px;
+            }
+        }
+
+        &__content {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &__name {
+            margin-bottom: 15px;
+            font-size: 21px;
+        }
+    }
+    /* end -------------------------------------------- doors-house-section ------------------------------------------ */
+
     /* start -------------------------------------------- windows-house-section -------------------------------------- */
     .windows-house {
         &-section {
@@ -10173,6 +10364,40 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- choice-windows-section --------------------------------------- */
 
+    /* start -------------------------------------------- doors-house-section ---------------------------------------- */
+    .doors-house {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+            max-width: none;
+
+            li {
+                &:first-child {
+                    margin-bottom: 0;
+                }
+
+               width: 49%;
+            }
+        }
+
+        &-slider {
+            &__img {
+                max-height: 350px;
+                min-height: 350px;
+            }
+        }
+
+        &__content {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    /* end -------------------------------------------- doors-house-section ------------------------------------------ */
+
     /* start -------------------------------------------- windows-house-section -------------------------------------- */
     .windows-house {
         &__text {
@@ -10295,6 +10520,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 
 @media (any-hover: hover) {
+    /* start -------------------------------------------- examples-section --------------------------------------------- */
     .examples {
         &__list {
             li {
@@ -10321,4 +10547,36 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             }
         }
     }
+    /* end -------------------------------------------- examples-section --------------------------------------------- */
+
+    /* start Страница Окна в дом */
+    /* start -------------------------------------------- doors-house-section ------------------------------------------- */
+    .doors-house {
+        &__list {
+            li {
+                &:hover {
+                    .doors-house-slider {
+                        &__prev,
+                        &__next {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-slider {
+            &__prev,
+            &__next {
+                display: none;
+            }
+
+            &__prev:hover,
+            &__next:hover {
+                opacity: 1;
+            }
+        }
+    }
+    /* end -------------------------------------------- doors-house-section --------------------------------------------- */
+    /* end Страница Окна в дом */
 }

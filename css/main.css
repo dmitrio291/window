@@ -4777,7 +4777,7 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- banner-windows-section -------------------------------------------- */
-/* start -------------------------------------------- choice-windows-section ------------------------------------------ */
+/* start -------------------------------------------- choice-windows-section ----------------------------------------- */
 .choice-windows {
   position: relative;
 }
@@ -4857,6 +4857,124 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- choice-windows-section ------------------------------------------- */
+/* start -------------------------------------------- doors-house-section -------------------------------------------- */
+.doors-house {
+  padding: 40px 15px;
+  background-color: #F9F9F9;
+  border-radius: 3px;
+}
+
+.doors-house-section {
+  margin-bottom: 35px;
+}
+
+.doors-house__title {
+  margin-bottom: 16px;
+}
+
+.doors-house__text {
+  margin-bottom: 25px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.doors-house__list {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.doors-house__list li {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.doors-house__list li:first-child {
+  margin-bottom: 25px;
+}
+
+.doors-house-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.doors-house-slider__wrap {
+  display: flex;
+}
+
+.doors-house-slider__slide {
+  flex-shrink: 0;
+}
+
+.doors-house-slider__prev, .doors-house-slider__next, .doors-house-slider__pagination {
+  position: absolute;
+}
+
+.doors-house-slider__prev, .doors-house-slider__next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.doors-house-slider__prev {
+  left: 10px;
+}
+
+.doors-house-slider__next {
+  right: 10px;
+}
+
+.doors-house-slider__pagination {
+  text-align: center;
+}
+
+.doors-house-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+
+.doors-house-slider__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(249, 249, 249, 0.7);
+  opacity: 1;
+}
+
+.doors-house-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+.doors-house-slider__img {
+  display: block;
+  width: 100%;
+  max-height: 219px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  object-fit: cover;
+}
+
+.doors-house__content {
+  padding: 30px 15px 20px;
+}
+
+.doors-house__name {
+  margin-bottom: 18px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.doors-house__desc {
+  line-height: 21px;
+}
+
+/* end -------------------------------------------- doors-house-section ---------------------------------------------- */
 /* start -------------------------------------------- windows-house-section ------------------------------------------ */
 .windows-house-section {
   margin-bottom: 50px;
@@ -7040,6 +7158,57 @@ input:focus:-ms-input-placeholder {
     line-height: 25px;
   }
   /* end -------------------------------------------- choice-windows-section --------------------------------------- */
+  /* start -------------------------------------------- doors-house-section ---------------------------------------- */
+  .doors-house {
+    padding: 50px 61px 40px;
+  }
+  .doors-house-section {
+    margin-bottom: 50px;
+  }
+  .doors-house__title {
+    margin-bottom: 24px;
+  }
+  .doors-house__text {
+    margin-bottom: 33px;
+  }
+  .doors-house__list {
+    max-width: 600px;
+  }
+  .doors-house__list li:first-child {
+    margin-bottom: 31px;
+  }
+  .doors-house-slider__prev, .doors-house-slider__next {
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .doors-house-slider__prev img, .doors-house-slider__next img {
+    width: 12px;
+    height: 27px;
+  }
+  .doors-house-slider__prev {
+    left: 15px;
+  }
+  .doors-house-slider__prev img {
+    margin-left: -4px;
+  }
+  .doors-house-slider__next {
+    right: 15px;
+  }
+  .doors-house-slider__img {
+    max-height: 450px;
+  }
+  .doors-house__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .doors-house__name {
+    margin-bottom: 15px;
+    font-size: 21px;
+  }
+  /* end -------------------------------------------- doors-house-section ------------------------------------------ */
   /* start -------------------------------------------- windows-house-section -------------------------------------- */
   .windows-house-section {
     margin-bottom: 75px;
@@ -8660,6 +8829,32 @@ input:focus:-ms-input-placeholder {
     padding-left: 66px;
   }
   /* end -------------------------------------------- choice-windows-section --------------------------------------- */
+  /* start -------------------------------------------- doors-house-section ---------------------------------------- */
+  .doors-house {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .doors-house__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    max-width: none;
+  }
+  .doors-house__list li {
+    width: 49%;
+  }
+  .doors-house__list li:first-child {
+    margin-bottom: 0;
+  }
+  .doors-house-slider__img {
+    max-height: 350px;
+    min-height: 350px;
+  }
+  .doors-house__content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  /* end -------------------------------------------- doors-house-section ------------------------------------------ */
   /* start -------------------------------------------- windows-house-section -------------------------------------- */
   .windows-house__text {
     margin-bottom: 34px;
@@ -8749,6 +8944,7 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (any-hover: hover) {
+  /* start -------------------------------------------- examples-section --------------------------------------------- */
   .examples__list li:hover .examples-slider__prev, .examples__list li:hover .examples-slider__next {
     display: block;
   }
@@ -8758,5 +8954,19 @@ input:focus:-ms-input-placeholder {
   .examples-slider__prev:hover, .examples-slider__next:hover {
     opacity: 1;
   }
+  /* end -------------------------------------------- examples-section --------------------------------------------- */
+  /* start Страница Окна в дом */
+  /* start -------------------------------------------- doors-house-section ------------------------------------------- */
+  .doors-house__list li:hover .doors-house-slider__prev, .doors-house__list li:hover .doors-house-slider__next {
+    display: block;
+  }
+  .doors-house-slider__prev, .doors-house-slider__next {
+    display: none;
+  }
+  .doors-house-slider__prev:hover, .doors-house-slider__next:hover {
+    opacity: 1;
+  }
+  /* end -------------------------------------------- doors-house-section --------------------------------------------- */
+  /* end Страница Окна в дом */
 }
 /*# sourceMappingURL=main.css.map */
