@@ -10682,6 +10682,20 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 
 @media (any-hover: hover) {
+    /* start -------------------------------------------- basic -------------------------------------------------------- */
+    .windows-house {
+        &-prev,
+        &-next {
+            display: none;
+        }
+        
+        &-prev:hover,
+        &-next:hover {
+            opacity: 1;
+        }   
+    }
+    /* end -------------------------------------------- basic ---------------------------------------------------------- */
+
     /* start -------------------------------------------- examples-section --------------------------------------------- */
     .examples {
         &__list {
@@ -10709,10 +10723,21 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             }
         }
     }
-    /* end -------------------------------------------- examples-section --------------------------------------------- */
+    /* end -------------------------------------------- examples-section ----------------------------------------------- */
 
     /* start Страница Окна в дом */
-    /* start -------------------------------------------- doors-house-section ------------------------------------------- */
+    /* start -------------------------------------------- gazebos-section ---------------------------------------------- */
+    .gazebos {
+        &-slider:hover {
+            .windows-house-prev,
+            .windows-house-next {
+                display: block;
+            }
+        }
+    }
+    /* end -------------------------------------------- gazebos-section ------------------------------------------------ */
+
+    /* start -------------------------------------------- doors-house-section ------------------------------------------ */
     .doors-house {
         &__list {
             li {
@@ -10724,18 +10749,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                         }
                     }
                 }
-            }
-        }
-
-        &-slider {
-            &__prev,
-            &__next {
-                display: none;
-            }
-
-            &__prev:hover,
-            &__next:hover {
-                opacity: 1;
             }
         }
     }

@@ -9080,6 +9080,14 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (any-hover: hover) {
+  /* start -------------------------------------------- basic -------------------------------------------------------- */
+  .windows-house-prev, .windows-house-next {
+    display: none;
+  }
+  .windows-house-prev:hover, .windows-house-next:hover {
+    opacity: 1;
+  }
+  /* end -------------------------------------------- basic ---------------------------------------------------------- */
   /* start -------------------------------------------- examples-section --------------------------------------------- */
   .examples__list li:hover .examples-slider__prev, .examples__list li:hover .examples-slider__next {
     display: block;
@@ -9090,17 +9098,17 @@ input:focus:-ms-input-placeholder {
   .examples-slider__prev:hover, .examples-slider__next:hover {
     opacity: 1;
   }
-  /* end -------------------------------------------- examples-section --------------------------------------------- */
+  /* end -------------------------------------------- examples-section ----------------------------------------------- */
   /* start Страница Окна в дом */
-  /* start -------------------------------------------- doors-house-section ------------------------------------------- */
-  .doors-house__list li:hover .doors-house-slider__prev, .doors-house__list li:hover .doors-house-slider__next {
+  /* start -------------------------------------------- gazebos-section ---------------------------------------------- */
+  .gazebos-slider:hover .windows-house-prev,
+  .gazebos-slider:hover .windows-house-next {
     display: block;
   }
-  .doors-house-slider__prev, .doors-house-slider__next {
-    display: none;
-  }
-  .doors-house-slider__prev:hover, .doors-house-slider__next:hover {
-    opacity: 1;
+  /* end -------------------------------------------- gazebos-section ------------------------------------------------ */
+  /* start -------------------------------------------- doors-house-section ------------------------------------------ */
+  .doors-house__list li:hover .doors-house-slider__prev, .doors-house__list li:hover .doors-house-slider__next {
+    display: block;
   }
   /* end -------------------------------------------- doors-house-section --------------------------------------------- */
   /* end Страница Окна в дом */
