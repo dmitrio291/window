@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sketchesInput.addEventListener('change', () => {
             sketchesText.textContent = 'Эскиз загружен';
             sketchesText.style.color = '#F26422';
+            sketchesText.style.borderColor = '#F26422';
             sketchesIcon.style.backgroundImage = "url('img/sketches-icon-3.svg')";
         });
     }
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sketchesInput2.addEventListener('change', () => {
             sketchesText2.textContent = 'Эскиз загружен';
             sketchesText2.style.color = '#F26422';
+            sketchesText2.style.borderColor = '#F26422';
             sketchesIcon2.style.backgroundImage = "url('img/sketches-icon-3.svg')";
         });
     }

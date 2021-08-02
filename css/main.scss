@@ -212,6 +212,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 100;
     bottom: 40px;
     right: 40px;
 
@@ -4983,6 +4984,92 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- banner-windows-section -------------------------------------------- */
 
+/* start -------------------------------------------- choice-windows-section ----------------------------------------- */
+.choice-windows {
+    position: relative;
+
+    &-section {
+        position: relative;
+        margin-bottom: 35px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-image: url('../img/choice-windows-small.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.75);
+        }
+    }
+
+    &__title {
+        margin-bottom: 46px;
+    }
+
+    &__list {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 34px;
+            }
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 30px;
+        font-size: 19px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1.5px solid #F26422;
+            background-color: #ffffff;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.icon {
+            &-1::before {
+                background-image: url('../img/choice-windows-icon-1.svg');
+                background-size: 9px;
+            }
+
+            &-2::before {
+                background-image: url('../img/choice-windows-icon-2.svg');
+                background-size: 20px;
+            }
+
+            &-3::before {
+                background-image: url('../img/choice-windows-icon-3.svg');
+                background-size: 27px;
+            }
+
+            &-4::before {
+                background-image: url('../img/choice-windows-icon-4.svg');
+            }
+        }
+    }
+
+    &__text {
+        line-height: 21px;
+    }
+}
+/* end -------------------------------------------- choice-windows-section ------------------------------------------- */
+
 /* start -------------------------------------------- windows-house-section ------------------------------------------ */
 .windows-house {
     &-section {
@@ -5303,7 +5390,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 30px;
         }
 
         &__left {
@@ -6419,7 +6506,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &-box {
-            padding: 75px 30px;
+            padding: 50px 30px;
         }
 
         &__title {
@@ -6511,7 +6598,9 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             }
 
             &__text {
-                font-size: 18px;
+                max-width: 370px;
+                line-height: 25px;
+
                 .block {
                     display: inline;
                 }
@@ -7768,6 +7857,61 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- choice-windows-section ------------------------------------- */
+    .choice-windows {
+        &-section {
+            padding-top: 75px;
+            padding-bottom: 100px;
+            margin-bottom: 50px;
+            background-image: url("../img/choice-windows-middle.jpg");
+        }
+
+        &__title {
+            margin-bottom: 63px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 52px 20px;
+            max-width: 708px;
+            margin-left: auto;
+            margin-right: auto;
+
+            li {
+                flex-basis: 48.5%;
+            }
+        }
+
+        &__subtitle {
+            font-size: 21px;
+
+            &::before {
+                width: 45px;
+                height: 45px;
+            }
+
+            &.icon {
+                &-1::before {
+                    background-size: 10px;
+                }
+
+                &-2::before {
+                    background-size: 23px;
+                }
+
+                &-3::before {
+                    background-size: 32px;
+                }
+            }
+        }
+
+        &__text {
+            line-height: 25px;
+        }
+    }
+    /* end -------------------------------------------- choice-windows-section --------------------------------------- */
 
     /* start -------------------------------------------- windows-house-section -------------------------------------- */
     .windows-house {
@@ -9470,7 +9614,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     .sketches--2 {
         .sketches {
             &__img {
-                padding: 53px 32px 53px 18px;
+                padding: 63px 32px 63px 18px;
             }
         }
     }
@@ -9982,6 +10126,24 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- choice-windows-section ------------------------------------- */
+    .choice-windows {
+        &-section {
+            padding-bottom: 75px;
+            background-image: url("../img/choice-windows-big.jpg");
+        }
+
+        &__list {
+            max-width: none;
+            gap: 29px 24px;
+        }
+
+        &__subtitle {
+            padding-left: 66px;
+        }
+    }
+    /* end -------------------------------------------- choice-windows-section --------------------------------------- */
 
     /* start -------------------------------------------- windows-house-section -------------------------------------- */
     .windows-house {
