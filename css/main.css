@@ -3968,6 +3968,10 @@ input:focus:-ms-input-placeholder {
   display: block;
 }
 
+.measuring__link {
+  color: #48494B;
+}
+
 /* end -------------------------------------------- measuring section -------------------------------------------------- */
 /* start -------------------------------------------- customers section ------------------------------------------------- */
 .customers {
