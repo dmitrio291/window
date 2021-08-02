@@ -4984,7 +4984,21 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- banner-windows-section -------------------------------------------- */
 
-/* start -------------------------------------------- choice-windows-section ----------------------------------------- */
+/* start -------------------------------------------- banner-windows-section ------------------------------------------ */
+.windows-texts {
+    &__title {
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        margin-bottom: 35px;
+        text-align: center;
+        line-height: 21px;
+    }
+}
+/* end -------------------------------------------- banner-windows-section -------------------------------------------- */
+
+/* start -------------------------------------------- choice-windows-section ------------------------------------------ */
 .choice-windows {
     position: relative;
 
@@ -7857,6 +7871,20 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+    .windows-texts {
+        margin-bottom: 50px;
+
+        &__title {
+            margin-bottom: 55px;
+        }
+
+        &__text {
+            line-height: 25px;
+        }
+    }
+    /* end -------------------------------------------- banner-windows-section ---------------------------------------- */
 
     /* start -------------------------------------------- choice-windows-section ------------------------------------- */
     .choice-windows {

@@ -4765,7 +4765,19 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- banner-windows-section -------------------------------------------- */
-/* start -------------------------------------------- choice-windows-section ----------------------------------------- */
+/* start -------------------------------------------- banner-windows-section ------------------------------------------ */
+.windows-texts__title {
+  margin-bottom: 38px;
+}
+
+.windows-texts__text {
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 21px;
+}
+
+/* end -------------------------------------------- banner-windows-section -------------------------------------------- */
+/* start -------------------------------------------- choice-windows-section ------------------------------------------ */
 .choice-windows {
   position: relative;
 }
@@ -6976,6 +6988,17 @@ input:focus:-ms-input-placeholder {
     line-height: 46px;
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+  /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+  .windows-texts {
+    margin-bottom: 50px;
+  }
+  .windows-texts__title {
+    margin-bottom: 55px;
+  }
+  .windows-texts__text {
+    line-height: 25px;
+  }
+  /* end -------------------------------------------- banner-windows-section ---------------------------------------- */
   /* start -------------------------------------------- choice-windows-section ------------------------------------- */
   .choice-windows-section {
     padding-top: 75px;
