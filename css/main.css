@@ -290,6 +290,50 @@ input:focus:-ms-input-placeholder {
   background-color: #F26422;
 }
 
+.windows-house-prev, .windows-house-next, .windows-house-pagination {
+  position: absolute;
+}
+
+.windows-house-prev, .windows-house-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.windows-house-prev {
+  left: 10px;
+}
+
+.windows-house-next {
+  right: 10px;
+}
+
+.windows-house-pagination {
+  text-align: center;
+}
+
+.windows-house-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+
+.windows-house-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(249, 249, 249, 0.7);
+  opacity: 1;
+}
+
+.windows-house-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
 /* end ---------------------------------------------- basic ------------------------------------------------------------ */
 /* start -------------------------------------------- header section---------------------------------------------------- */
 .header {
@@ -4857,6 +4901,88 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- choice-windows-section ------------------------------------------- */
+/* start -------------------------------------------- gazebos-section ------------------------------------------------ */
+.gazebos-section {
+  margin-bottom: 35px;
+}
+
+.gazebos__title {
+  margin-bottom: 38px;
+}
+
+.gazebos__box {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gazebos-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.gazebos-slider__wrap {
+  display: flex;
+}
+
+.gazebos-slider__slide {
+  flex-shrink: 0;
+}
+
+.gazebos-slider__slide img {
+  display: block;
+  width: 100%;
+}
+
+.gazebos__content {
+  padding-top: 22px;
+}
+
+.gazebos__text {
+  margin-bottom: 31px;
+  line-height: 21px;
+}
+
+.gazebos__prices {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.gazebos__price {
+  position: relative;
+  font-size: 32px;
+  color: #ABABAB;
+}
+
+.gazebos__price.before::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1px;
+  width: 104%;
+  height: 2px;
+  background-color: #ABABAB;
+}
+
+.gazebos__price-text {
+  margin-bottom: 6px;
+}
+
+.gazebos__ruble {
+  font-size: 21px;
+}
+
+.gazebos__btn {
+  display: block;
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* end -------------------------------------------- gazebos-section -------------------------------------------------- */
 /* start -------------------------------------------- doors-house-section -------------------------------------------- */
 .doors-house {
   padding: 40px 15px;
@@ -4905,50 +5031,6 @@ input:focus:-ms-input-placeholder {
 
 .doors-house-slider__slide {
   flex-shrink: 0;
-}
-
-.doors-house-slider__prev, .doors-house-slider__next, .doors-house-slider__pagination {
-  position: absolute;
-}
-
-.doors-house-slider__prev, .doors-house-slider__next {
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35px;
-  height: 35px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  background-color: #ffffff;
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.doors-house-slider__prev {
-  left: 10px;
-}
-
-.doors-house-slider__next {
-  right: 10px;
-}
-
-.doors-house-slider__pagination {
-  text-align: center;
-}
-
-.doors-house-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 6px;
-}
-
-.doors-house-slider__pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(249, 249, 249, 0.7);
-  opacity: 1;
-}
-
-.doors-house-slider__pagination .swiper-pagination-bullet-active {
-  background-color: #ffffff;
 }
 
 .doors-house-slider__img {
@@ -5049,8 +5131,6 @@ input:focus:-ms-input-placeholder {
     margin-left: 30px;
     margin-right: 30px;
   }
-  /* end -------------------------------------------- basic -------------------------------------------------------- */
-  /* start -------------------------------------------- basic ------------------------------------------------------ */
   .title {
     margin-bottom: 50px;
     font-size: 32px;
@@ -5060,6 +5140,26 @@ input:focus:-ms-input-placeholder {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+  .windows-house-prev, .windows-house-next {
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .windows-house-prev img, .windows-house-next img {
+    width: 12px;
+    height: 27px;
+  }
+  .windows-house-prev {
+    left: 15px;
+  }
+  .windows-house-prev img {
+    margin-left: -4px;
+  }
+  .windows-house-next {
+    right: 15px;
   }
   /* end -------------------------------------------- basic ---------------------------------------------------------- */
   /* start -------------------------------------------- header section ----------------------------------------------- */
@@ -7158,6 +7258,31 @@ input:focus:-ms-input-placeholder {
     line-height: 25px;
   }
   /* end -------------------------------------------- choice-windows-section --------------------------------------- */
+  /* start -------------------------------------------- gazebos-section -------------------------------------------- */
+  .gazebos-section {
+    margin-bottom: 50px;
+  }
+  .gazebos__title {
+    margin-bottom: 57px;
+  }
+  .gazebos__box {
+    max-width: 586px;
+  }
+  .gazebos__content {
+    padding-top: 24px;
+  }
+  .gazebos__text {
+    margin-bottom: 63px;
+    line-height: 25px;
+  }
+  .gazebos__prices {
+    max-width: 342px;
+  }
+  .gazebos__btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* end -------------------------------------------- gazebos-section ---------------------------------------------- */
   /* start -------------------------------------------- doors-house-section ---------------------------------------- */
   .doors-house {
     padding: 50px 61px 40px;
@@ -7176,26 +7301,6 @@ input:focus:-ms-input-placeholder {
   }
   .doors-house__list li:first-child {
     margin-bottom: 31px;
-  }
-  .doors-house-slider__prev, .doors-house-slider__next {
-    width: 47px;
-    height: 47px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .doors-house-slider__prev img, .doors-house-slider__next img {
-    width: 12px;
-    height: 27px;
-  }
-  .doors-house-slider__prev {
-    left: 15px;
-  }
-  .doors-house-slider__prev img {
-    margin-left: -4px;
-  }
-  .doors-house-slider__next {
-    right: 15px;
   }
   .doors-house-slider__img {
     max-height: 450px;
@@ -8829,6 +8934,37 @@ input:focus:-ms-input-placeholder {
     padding-left: 66px;
   }
   /* end -------------------------------------------- choice-windows-section --------------------------------------- */
+  /* start -------------------------------------------- gazebos-section -------------------------------------------- */
+  .gazebos__box {
+    max-width: none;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 57px;
+  }
+  .gazebos-slider {
+    flex-basis: 63%;
+  }
+  .gazebos-slider__img {
+    min-height: 328px;
+  }
+  .gazebos__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    flex-basis: 40%;
+  }
+  .gazebos__text {
+    margin-top: -7px;
+    margin-bottom: 85px;
+  }
+  .gazebos__prices {
+    max-width: 348px;
+  }
+  .gazebos__btn {
+    max-width: none;
+    margin-top: auto;
+  }
+  /* end -------------------------------------------- gazebos-section ---------------------------------------------- */
   /* start -------------------------------------------- doors-house-section ---------------------------------------- */
   .doors-house {
     padding-left: 40px;

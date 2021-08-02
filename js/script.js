@@ -465,9 +465,34 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end Страница Акции */
 
     /* start Страница Окна в дом */
+    /* start -------------------------------- Скрипты для секции .gazebos-section ------------------------------------- */
+    const gazebosSlider = document.querySelector('.gazebos-slider');
+
+    if (gazebosSlider) {
+        const doorsHouseSwiper = new Swiper(gazebosSlider, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: true,
+            slideClass: 'gazebos-slider__slide',
+            wrapperClass: 'gazebos-slider__wrap',
+            pagination: {
+                el: '.gazebos-slider__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.gazebos-slider__next',
+                prevEl: '.gazebos-slider__prev'
+            }
+        });
+    }
+    /* end -------------------------------- Скрипты для секции .gazebos-section --------------------------------------- */
+
+    /* end -------------------------------- Скрипты для секции .doors-house-section ---------------------------------- */
+
     /* start-------------------------------- Скрипты для секции .doors-house-section ---------------------------------- */
     const doorsHouseSlider = document.querySelectorAll('.doors-house-slider');
-    let doorsHouseSwiper;
 
     const doorsHouseSliderInit = (slider) => {
         const doorsHouseSwiper = new Swiper(slider, {
