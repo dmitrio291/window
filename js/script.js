@@ -146,6 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 nextEl: '.discounts-slider__next',
                 prevEl: '.discounts-slider__prev'
             },
+            preloadImages: false,
+            lazy: {
+                loadOnTransitionStart: false,
+                loadPrevNext: false
+            },
+            watchSlidesProgress: true,
+            watchSlidesVisisbility: true,
             breakpoints: {
                 768: {
                     slidesPerView: 2.6

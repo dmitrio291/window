@@ -2005,8 +2005,19 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__img {
-            margin-bottom: 15px;
+            &-box {
+                position: relative;
+                overflow: hidden;
+                padding-top: calc(2.9 / 4 * 100%);
+                margin-bottom: 15px;
+            }
+
             width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             border-radius: 3px;
         }
 
