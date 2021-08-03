@@ -5340,6 +5340,74 @@ input:focus:-ms-input-placeholder {
 /* end -------------------------------------------- windows-house-section -------------------------------------------- */
 /* end Страница Окна в дом */
 /* start Страница Отделка балконов */
+/* start -------------------------------------------- balconies-discounts-section ------------------------------------ */
+.balconies-discounts {
+  position: relative;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/balconies-discounts-small.jpg");
+}
+
+.balconies-discounts::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(249, 249, 249, 0.8);
+  border-radius: 3px;
+}
+
+.balconies-discounts-section {
+  margin-bottom: 35px;
+}
+
+.balconies-discounts__subtitle {
+  margin-bottom: 35px;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.balconies-discounts__title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.balconies-discounts__title .block {
+  display: block;
+}
+
+.balconies-discounts__title-2 {
+  margin-bottom: 39px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.balconies-discounts__left, .balconies-discounts__right {
+  position: relative;
+}
+
+.balconies-discounts__left {
+  padding: 40px 52px 30px;
+}
+
+.balconies-discounts__right {
+  display: none;
+}
+
+.balconies-discounts__btn {
+  min-width: 225px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* end -------------------------------------------- balconies-discounts-section -------------------------------------- */
+/* start -------------------------------------------- photos-section ------------------------------------------------- */
 .photos-section {
   margin-bottom: 35px;
 }
@@ -5375,6 +5443,7 @@ input:focus:-ms-input-placeholder {
   margin-right: auto;
 }
 
+/* end -------------------------------------------- photos-section --------------------------------------------------- */
 /* end Страница Отделка балконов */
 @media (min-width: 768px) {
   /* start -------------------------------------------- basic -------------------------------------------------------*/
@@ -7683,6 +7752,64 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- windows-house-section ---------------------------------------- */
   /* end Страница Окна в дом */
   /* start Страница Отделка балконов */
+  /* start -------------------------------------------- balconies-discounts-section -------------------------------- */
+  .balconies-discounts {
+    background: none;
+    background-color: #F9F9F9;
+    display: flex;
+    max-height: 363px;
+  }
+  .balconies-discounts::before {
+    display: none;
+  }
+  .balconies-discounts-section {
+    margin-bottom: 50px;
+  }
+  .balconies-discounts__left {
+    padding: 50px 0 50px 30px;
+    width: 42%;
+    z-index: 1;
+  }
+  .balconies-discounts__subtitle {
+    margin-left: 14px;
+    margin-bottom: 39px;
+    font-size: 21px;
+  }
+  .balconies-discounts__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 11px;
+  }
+  .balconies-discounts__title-2 {
+    margin-bottom: 46px;
+    font-size: 35px;
+  }
+  .balconies-discounts__title, .balconies-discounts__title-2 {
+    white-space: nowrap;
+    min-width: 286px;
+  }
+  .balconies-discounts__right {
+    display: block;
+    width: 58%;
+  }
+  .balconies-discounts__right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(90deg, #F9F9F9 11%, rgba(249, 249, 249, 0) 100%);
+  }
+  .balconies-discounts__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .balconies-discounts__btn {
+    transform: translateX(8px);
+  }
+  /* end -------------------------------------------- balconies-discounts-section ---------------------------------- */
   /* start -------------------------------------------- photos-section --------------------------------------------- */
   .photos-section {
     margin-bottom: 50px;
@@ -9388,6 +9515,37 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- windows-house-section ---------------------------------------- */
   /* end Страница Окна в дом */
   /* start Страница Отделка балконов */
+  /* start -------------------------------------------- balconies-discounts-section -------------------------------- */
+  .balconies-discounts__subtitle {
+    margin-left: 66px;
+  }
+  .balconies-discounts__title {
+    margin-bottom: 7px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .balconies-discounts__title .block {
+    display: inline;
+  }
+  .balconies-discounts__title-2 {
+    margin-left: 52px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .balconies-discounts__title, .balconies-discounts__title-2 {
+    min-width: auto;
+  }
+  .balconies-discounts__left {
+    width: 44%;
+    padding-left: 68px;
+  }
+  .balconies-discounts__right {
+    width: 56%;
+  }
+  .balconies-discounts__btn {
+    transform: translateX(33px);
+  }
+  /* end -------------------------------------------- balconies-discounts-section ---------------------------------- */
   /* start -------------------------------------------- photos-section --------------------------------------------- */
   .photos__title {
     margin-bottom: 54px;
