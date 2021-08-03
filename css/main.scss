@@ -5048,7 +5048,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- banner-windows-section -------------------------------------------- */
 
-/* start -------------------------------------------- banner-windows-section ------------------------------------------ */
+/* start -------------------------------------------- windows-texts --------------------------------------------------- */
 .windows-texts {
     &__title {
         margin-bottom: 38px;
@@ -5060,7 +5060,132 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         line-height: 21px;
     }
 }
-/* end -------------------------------------------- banner-windows-section -------------------------------------------- */
+/* end -------------------------------------------- windows-texts ----------------------------------------------------- */
+
+/* start -------------------------------------------- prices-windows-section ------------------------------------------ */
+.prices-windows {
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        margin-bottom: 36px;
+    }
+
+    .slider-controls {
+        display: none;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+        text-align: center;
+        line-height: 21px;
+    }
+
+    &-slider {
+        overflow: hidden;
+        max-width: 345px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__slide {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__img {
+            position: relative;
+            overflow: hidden;
+            padding-top: calc(2.7 / 4 * 100%);
+            margin-bottom: 10px;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        &__content {
+            max-width: 274px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__name {
+            margin-bottom: 13px;
+            max-width: 188px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 13px;
+            line-height: 14px;
+            text-align: center;
+        }
+
+        &__prices {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 11px;
+            margin-bottom: 13px;
+            border-bottom: 1px solid #ABABAB;
+        }
+
+        &__price {
+            &-small {
+                font-size: 20px;
+                font-weight: 500;
+
+                span {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                        height: 2px;
+                        width: 100%;
+                        background-color: #F26422;
+                    }
+                }
+            }
+
+            &-big {
+                font-size: 21px;
+                font-weight: 500;
+
+                .orange {
+                    font-size: 26px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &__text {
+            margin-bottom: 15px;
+            color: #CDCDCD;
+            text-align: center;
+        }
+
+        &__btn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            min-width: 203px;
+            padding: 11px 15px;
+            font-weight: 500;
+            background-color: #F9F9F9;
+            cursor: pointer;
+        }
+    }
+}
+/* end -------------------------------------------- prices-windows-section -------------------------------------------- */
 
 /* start -------------------------------------------- types-windows-section ------------------------------------------- */
 .types-windows {
@@ -8204,7 +8329,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
 
-    /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+    /* start -------------------------------------------- windows-texts ---------------------------------------------- */
     .windows-texts {
         margin-bottom: 50px;
 
@@ -8216,7 +8341,50 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             line-height: 25px;
         }
     }
-    /* end -------------------------------------------- banner-windows-section ---------------------------------------- */
+    /* end -------------------------------------------- windows-texts ------------------------------------------------ */
+
+    /* start -------------------------------------------- prices-windows-section -------------------------------------- */
+    .prices-windows {
+        &-section {
+            margin-bottom: 50px;
+        }
+
+        .slider-controls {
+            display: flex;
+            max-width: 249px;
+        }
+
+        &__title {
+            margin-bottom: 51px;
+        }
+
+        &__text {
+            margin-bottom: 41px;
+            line-height: 25px;
+        }
+
+        &-slider {
+            margin-bottom: 40px;
+            max-width: 708px;
+
+            &__wrap {
+                display: flex;
+            }
+
+            &__slide {
+                flex-shrink: 0;
+
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                }
+            }
+
+            &__img {
+                margin-bottom: 3px;
+            }
+        }
+    }
+    /* end -------------------------------------------- prices-windows-section ---------------------------------------- */
 
     /* start -------------------------------------------- types-windows-section -------------------------------------- */
     .types-windows {
@@ -10618,6 +10786,28 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- prices-windows-section -------------------------------------- */
+    .prices-windows {
+        .slider-controls {
+            display: none;
+        }
+
+        &-slider {
+            max-width: none;
+
+            &__slide {
+                width: 50%;
+                flex-shrink: 1;
+            }
+
+            &__img {
+                margin-bottom: 10px;
+                padding-top: calc(2.9 / 4 * 100%);
+            }
+        }
+    }
+    /* end -------------------------------------------- prices-windows-section ---------------------------------------- */
 
     /* start -------------------------------------------- types-windows-section -------------------------------------- */
     .types-windows {

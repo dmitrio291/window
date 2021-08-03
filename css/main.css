@@ -4824,7 +4824,7 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- banner-windows-section -------------------------------------------- */
-/* start -------------------------------------------- banner-windows-section ------------------------------------------ */
+/* start -------------------------------------------- windows-texts --------------------------------------------------- */
 .windows-texts__title {
   margin-bottom: 38px;
 }
@@ -4835,7 +4835,126 @@ input:focus:-ms-input-placeholder {
   line-height: 21px;
 }
 
-/* end -------------------------------------------- banner-windows-section -------------------------------------------- */
+/* end -------------------------------------------- windows-texts ----------------------------------------------------- */
+/* start -------------------------------------------- prices-windows-section ------------------------------------------ */
+.prices-windows-section {
+  margin-bottom: 35px;
+}
+
+.prices-windows__title {
+  margin-bottom: 36px;
+}
+
+.prices-windows .slider-controls {
+  display: none;
+}
+
+.prices-windows__text {
+  margin-bottom: 25px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.prices-windows-slider {
+  overflow: hidden;
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prices-windows-slider__slide:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.prices-windows-slider__img {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(2.7 / 4 * 100%);
+  margin-bottom: 10px;
+}
+
+.prices-windows-slider__img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  bottom: 0;
+}
+
+.prices-windows-slider__content {
+  max-width: 274px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prices-windows-slider__name {
+  margin-bottom: 13px;
+  max-width: 188px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.prices-windows-slider__prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 11px;
+  margin-bottom: 13px;
+  border-bottom: 1px solid #ABABAB;
+}
+
+.prices-windows-slider__price-small {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.prices-windows-slider__price-small span {
+  position: relative;
+}
+
+.prices-windows-slider__price-small span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #F26422;
+}
+
+.prices-windows-slider__price-big {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.prices-windows-slider__price-big .orange {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.prices-windows-slider__text {
+  margin-bottom: 15px;
+  color: #CDCDCD;
+  text-align: center;
+}
+
+.prices-windows-slider__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 203px;
+  padding: 11px 15px;
+  font-weight: 500;
+  background-color: #F9F9F9;
+  cursor: pointer;
+}
+
+/* end -------------------------------------------- prices-windows-section -------------------------------------------- */
 /* start -------------------------------------------- types-windows-section ------------------------------------------- */
 .types-windows-section {
   margin-bottom: 15px;
@@ -7301,7 +7420,7 @@ input:focus:-ms-input-placeholder {
     line-height: 46px;
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
-  /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+  /* start -------------------------------------------- windows-texts ---------------------------------------------- */
   .windows-texts {
     margin-bottom: 50px;
   }
@@ -7311,7 +7430,39 @@ input:focus:-ms-input-placeholder {
   .windows-texts__text {
     line-height: 25px;
   }
-  /* end -------------------------------------------- banner-windows-section ---------------------------------------- */
+  /* end -------------------------------------------- windows-texts ------------------------------------------------ */
+  /* start -------------------------------------------- prices-windows-section -------------------------------------- */
+  .prices-windows-section {
+    margin-bottom: 50px;
+  }
+  .prices-windows .slider-controls {
+    display: flex;
+    max-width: 249px;
+  }
+  .prices-windows__title {
+    margin-bottom: 51px;
+  }
+  .prices-windows__text {
+    margin-bottom: 41px;
+    line-height: 25px;
+  }
+  .prices-windows-slider {
+    margin-bottom: 40px;
+    max-width: 708px;
+  }
+  .prices-windows-slider__wrap {
+    display: flex;
+  }
+  .prices-windows-slider__slide {
+    flex-shrink: 0;
+  }
+  .prices-windows-slider__slide:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .prices-windows-slider__img {
+    margin-bottom: 3px;
+  }
+  /* end -------------------------------------------- prices-windows-section ---------------------------------------- */
   /* start -------------------------------------------- types-windows-section -------------------------------------- */
   .types-windows {
     margin-bottom: 20px;
@@ -9059,6 +9210,22 @@ input:focus:-ms-input-placeholder {
     line-height: 27px;
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+  /* start -------------------------------------------- prices-windows-section -------------------------------------- */
+  .prices-windows .slider-controls {
+    display: none;
+  }
+  .prices-windows-slider {
+    max-width: none;
+  }
+  .prices-windows-slider__slide {
+    width: 50%;
+    flex-shrink: 1;
+  }
+  .prices-windows-slider__img {
+    margin-bottom: 10px;
+    padding-top: calc(2.9 / 4 * 100%);
+  }
+  /* end -------------------------------------------- prices-windows-section ---------------------------------------- */
   /* start -------------------------------------------- types-windows-section -------------------------------------- */
   .types-windows-box {
     padding-left: 42px;

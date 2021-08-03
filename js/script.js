@@ -472,6 +472,47 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end Страница Акции */
 
     /* start Страница Окна в дом */
+    /* start-------------------------------- Скрипты для секции .prices-windows-section ------------------------------- */
+    const priceswindowsSlider = document.querySelector('.prices-windows-slider');
+    let priceswindowsSwiper;
+
+    const mobilePricesWindowsSlider = () => {
+        if ((window.innerWidth > 767 && window.innerWidth < 1024) && priceswindowsSlider.dataset.mobile === 'false') {
+            priceswindowsSwiper = new Swiper(priceswindowsSlider, {
+                slidesPerView: 2,
+                spaceBetween: 1,
+                slideClass: 'prices-windows-slider__slide',
+                wrapperClass: 'prices-windows-slider__wrap',
+                pagination: {
+                    el: '.prices-windows-slider__pagination',
+                    type: 'bullets',
+                    clickable: true
+                },
+                loop: true,
+                navigation: {
+                    nextEl: '.prices-windows-slider__next',
+                    prevEl: '.prices-windows-slider__prev'
+                }
+            });
+
+            priceswindowsSlider.dataset.mobile = 'true';
+        }
+
+        if (window.innerWidth < 768 || window.innerWidth > 1023) {
+            priceswindowsSlider.dataset.mobile  = 'false';
+            if (priceswindowsSlider.classList.contains('swiper-container-initialized')) {
+                priceswindowsSwiper.destroy();
+            }
+        }
+    }
+
+    if (priceswindowsSlider) mobilePricesWindowsSlider();
+
+    window.addEventListener('resize', () => {
+        if (priceswindowsSlider) mobilePricesWindowsSlider();
+    });
+    /* end -------------------------------- Скрипты для секции .prices-windows-section --------------------------------- */
+
     /* start -------------------------------- Скрипты для секции .gazebos-section ------------------------------------- */
     const gazebosSlider = document.querySelector('.gazebos-slider');
 
