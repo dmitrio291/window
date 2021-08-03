@@ -5587,6 +5587,46 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* end -------------------------------------------- windows-house-section -------------------------------------------- */
 /* end Страница Окна в дом */
 
+/* start Страница Отделка балконов */
+.photos {
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        margin-bottom: 37px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__list {
+        margin-bottom: 33px;
+
+        li {
+            margin-bottom: 13px;
+
+            &.hidden {
+                display: none;
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+    }
+
+    &__list,
+    &__btn {
+        max-width: 345px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* end Страница Отделка балконов */
+
 @media (min-width: 768px) {
     /* start -------------------------------------------- basic -------------------------------------------------------*/
     .container {
@@ -8625,6 +8665,32 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- windows-house-section ---------------------------------------- */
     /* end Страница Окна в дом */
+
+    /* start Страница Отделка балконов */
+    /* start -------------------------------------------- photos-section --------------------------------------------- */
+    .photos {
+        &-section {
+            margin-bottom: 50px;
+        }
+
+        &__list {
+            margin-bottom: 37px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            max-width: 708px;
+
+            li {
+                margin-bottom: 0;
+            }
+        }
+
+        &__btn {
+            max-width: 306px;
+        }
+    }
+    /* end -------------------------------------------- photos-section ----------------------------------------------- */
+    /* end Страница Отделка балконов */
 }
 
 @media (min-width: 1024px) {
@@ -10948,6 +11014,21 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- windows-house-section ---------------------------------------- */
     /* end Страница Окна в дом */
+
+    /* start Страница Отделка балконов */
+    /* start -------------------------------------------- photos-section --------------------------------------------- */
+    .photos {
+        &__title {
+            margin-bottom: 54px;
+        }
+
+        &__list {
+            justify-content: space-between;
+            max-width: none;
+        }
+    }
+    /* end -------------------------------------------- photos-section ----------------------------------------------- */
+    /* end Страница Отделка балконов */
 }
 
 @media (min-width: 1200px) {

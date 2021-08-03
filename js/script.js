@@ -607,4 +607,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     /* end-------------------------------- Скрипты для секции .windows-house-section ---------------------------------- */
     /* end Страница Окна в дом */
+
+    /* start Страница Отделка балконов */
+    /* start -------------------------------- Скрипты для секции .photos-section -------------------------------------- */
+    const photosBtn = document.querySelector('.photos__btn');
+    const photosItems = document.querySelectorAll('.photos__list li');
+
+    if (photosBtn && photosItems) {
+        if (window.innerWidth > 767 && window.innerWidth < 1024) {
+            for (let i = 0; i < photosItems.length; i++) {
+                if (photosItems[i].classList.contains('hidden--tablet')) {
+                    photosItems[i].classList.remove('hidden');
+                }
+            }
+        }
+    
+        if (window.innerWidth > 1023) {
+            for (let i = 0; i < photosItems.length; i++) {
+                if (photosItems[i].classList.contains('hidden--tablet')) {
+                    photosItems[i].classList.remove('hidden');
+                }
+    
+                if (photosItems[i].classList.contains('hidden--desktop')) {
+                    photosItems[i].classList.remove('hidden');
+                }
+            }
+        }
+    
+        photosBtn.addEventListener('click', function() {
+            let showPerClick = 3;
+            let showPerClick2 = 4;
+            
+            const hidden = this.parentNode.querySelectorAll('li.hidden');
+    
+            if (window.innerWidth < 1024) {
+                for (let i = 0; i < showPerClick; i++) {
+                    if (!hidden[i]) return this.outerHTML = "";
+              
+                    hidden[i].classList.remove('hidden');
+                }
+            } else {
+                for (let i = 0; i < showPerClick2; i++) {
+                    if (!hidden[i]) return this.outerHTML = "";
+              
+                    hidden[i].classList.remove('hidden');
+                }
+            }        
+        });
+    }
+
+    /* end -------------------------------- Скрипты для секции .photos-section ----------------------------------------- */
+    /* end Страница Отделка балконов */
 });
