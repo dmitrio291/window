@@ -4384,14 +4384,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
 /* start -------------------------------------------- free consultation section ----------------------------------------- */
 .free-consultation {
+    margin-bottom: 35px;
     padding: 30px 15px;
     background-color: #F26422;
     border-radius: 3px;
-
-    &-section {
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
 
     &__title {
         margin-bottom: 18px;
