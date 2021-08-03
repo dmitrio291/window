@@ -1800,12 +1800,32 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* start ------------------------------------------- installment section ------------------------------------------------ */
 .installment {
     &-section {
-        margin-bottom: 35px;
+        margin-bottom: 15px;
 
         .installment {
+            position: relative;
             background-color: #F9F9F9;
             border-radius: 3px;
+            background-repeat: no-repeat;
+            background-position: 68% 0;
+            background-size: cover;
+            background-image: url('../img/installment-img-small.jpg');
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(249, 249, 249, 0.85);
+                border-radius: 3px;
+            }
         }
+    }
+
+    &__wrap {
+        position: relative;
     }
 
     &__content {
@@ -1869,6 +1889,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__img {
+        display: none;
         position: relative;
 
         &::before {
@@ -1890,6 +1911,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     .form {
         &__btn {
+            background-color: transparent;
             margin-bottom: 15px;
         }
     }
@@ -6609,10 +6631,14 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start ------------------------------------------- installment section ------------------------------------------ */
     .installment {
         &-section {
-            margin-bottom: 45px;
-
             .installment {
+                background: none;
+                background-color: #F9F9F9;
                 display: flex;
+
+                &::before {
+                    display: none;
+                }
             }
         }
 
@@ -6691,6 +6717,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__img {
+            display: block;
             width: 90%;
             max-height: 580px;
 
