@@ -666,6 +666,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } else {
                 for (let i = 0; i < showPerClick2; i++) {
+                    if (hidden.length === 4) {
+                        for (let i = 0; i < hidden.length; i++) {
+                            hidden[i].classList.remove('hidden');
+                        }
+                        return this.outerHTML = "";
+                    }
                     if (!hidden[i]) return this.outerHTML = "";
               
                     hidden[i].classList.remove('hidden');
