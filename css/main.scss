@@ -5839,6 +5839,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- finishing-balconies-texts ---------------------------------------- */
 
+/* start Страница Отделка балконов */
 /* start -------------------------------------------- photos-section ------------------------------------------------- */
 .photos {
     &-section {
@@ -5879,6 +5880,42 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- photos-section --------------------------------------------------- */
 /* end Страница Отделка балконов */
+
+
+/* start Страница Остекление балконов */
+/* start -------------------------------------------- profitable-windows-section --------------------------------- */
+.profitable-windows {
+    &--balconies {
+        .profitable-windows {
+            &__list {
+                li {
+                    padding-left: 41px;
+                    padding-right: 41px;
+
+                    &.padding {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                    }
+                }
+            }
+
+            &__name {
+                font-size: 16px;
+            }
+
+            &__sizes {
+                border-bottom: none;
+                font-size: 14px;
+            }
+
+            &__btn {
+                max-width: 140px;
+            }
+        }
+    }
+}
+/* end -------------------------------------------- profitable-windows-section ----------------------------------- */
+/* end Страница Остекление балконов */
 
 @media (min-width: 768px) {
     /* start -------------------------------------------- basic -------------------------------------------------------*/
@@ -9095,6 +9132,51 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- photos-section ----------------------------------------------- */
     /* end Страница Отделка балконов */
+
+    /* start Страница Остекление балконов */
+    /* start -------------------------------------------- making-windows-section ------------------------------------- */
+    .making-windows--balconies {
+        display: block;
+
+        .making-windows {
+            &__titles {
+                margin-bottom: 40px;
+            }
+
+            &__btn {
+                min-width: 306px;
+            }
+        }
+    }
+    /* end -------------------------------------------- making-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- profitable-windows-section --------------------------------- */
+    .profitable-windows {
+        &--balconies {
+            .profitable-windows {
+                &__list {
+                    li {
+                        padding-top: 30px;
+                        padding-bottom: 25px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+
+                        &.padding {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            order: 1;
+                        }
+                    }
+                }
+
+                &__inputs {
+                    column-gap: 0;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- profitable-windows-section ----------------------------------- */
+    /* end Страница Остекление балконов */
 }
 
 @media (min-width: 1024px) {
@@ -11529,6 +11611,20 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- photos-section ----------------------------------------------- */
     /* end Страница Отделка балконов */
+
+    /* start Страница Остекление балконов */
+    /* start -------------------------------------------- making-windows-section ------------------------------------- */
+    .making-windows--balconies {
+        display: flex;
+
+        .making-windows {
+            &__titles {
+                margin-bottom: 0;
+            }
+        }
+    }
+    /* end -------------------------------------------- making-windows-section --------------------------------------- */
+    /* end Страница Остекление балконов */
 }
 
 @media (min-width: 1200px) {

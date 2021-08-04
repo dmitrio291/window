@@ -5574,6 +5574,7 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- finishing-balconies-texts ---------------------------------------- */
+/* start Страница Отделка балконов */
 /* start -------------------------------------------- photos-section ------------------------------------------------- */
 .photos-section {
   margin-bottom: 35px;
@@ -5612,6 +5613,33 @@ input:focus:-ms-input-placeholder {
 
 /* end -------------------------------------------- photos-section --------------------------------------------------- */
 /* end Страница Отделка балконов */
+/* start Страница Остекление балконов */
+/* start -------------------------------------------- profitable-windows-section --------------------------------- */
+.profitable-windows--balconies .profitable-windows__list li {
+  padding-left: 41px;
+  padding-right: 41px;
+}
+
+.profitable-windows--balconies .profitable-windows__list li.padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.profitable-windows--balconies .profitable-windows__name {
+  font-size: 16px;
+}
+
+.profitable-windows--balconies .profitable-windows__sizes {
+  border-bottom: none;
+  font-size: 14px;
+}
+
+.profitable-windows--balconies .profitable-windows__btn {
+  max-width: 140px;
+}
+
+/* end -------------------------------------------- profitable-windows-section ----------------------------------- */
+/* end Страница Остекление балконов */
 @media (min-width: 768px) {
   /* start -------------------------------------------- basic -------------------------------------------------------*/
   .container {
@@ -8054,6 +8082,35 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- photos-section ----------------------------------------------- */
   /* end Страница Отделка балконов */
+  /* start Страница Остекление балконов */
+  /* start -------------------------------------------- making-windows-section ------------------------------------- */
+  .making-windows--balconies {
+    display: block;
+  }
+  .making-windows--balconies .making-windows__titles {
+    margin-bottom: 40px;
+  }
+  .making-windows--balconies .making-windows__btn {
+    min-width: 306px;
+  }
+  /* end -------------------------------------------- making-windows-section --------------------------------------- */
+  /* start -------------------------------------------- profitable-windows-section --------------------------------- */
+  .profitable-windows--balconies .profitable-windows__list li {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .profitable-windows--balconies .profitable-windows__list li.padding {
+    padding-left: 20px;
+    padding-right: 20px;
+    order: 1;
+  }
+  .profitable-windows--balconies .profitable-windows__inputs {
+    column-gap: 0;
+  }
+  /* end -------------------------------------------- profitable-windows-section ----------------------------------- */
+  /* end Страница Остекление балконов */
 }
 
 @media (min-width: 1024px) {
@@ -9818,6 +9875,16 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- photos-section ----------------------------------------------- */
   /* end Страница Отделка балконов */
+  /* start Страница Остекление балконов */
+  /* start -------------------------------------------- making-windows-section ------------------------------------- */
+  .making-windows--balconies {
+    display: flex;
+  }
+  .making-windows--balconies .making-windows__titles {
+    margin-bottom: 0;
+  }
+  /* end -------------------------------------------- making-windows-section --------------------------------------- */
+  /* end Страница Остекление балконов */
 }
 
 @media (min-width: 1200px) {
