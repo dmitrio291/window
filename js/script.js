@@ -609,6 +609,24 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end Страница Окна в дом */
 
     /* start Страница Отделка балконов */
+    /* start -------------------------------- Скрипты для секции .types-work-section ---------------------------------- */
+    const typesWorkCards = document.querySelector('.types-work-cards');
+
+    if (typesWorkCards) {
+        typesWorkCards.addEventListener('click', (e) => {
+            const target = e.target;
+    
+            if (target.classList.contains('types-work-cards__btn')) {
+                target.closest('.types-work-cards__card').classList.add('flip');
+            }
+    
+            if (target.classList.contains('types-work-cards__icon')) {
+                target.closest('.types-work-cards__card').classList.remove('flip');
+            }
+        });
+    }
+    /* end -------------------------------- Скрипты для секции .types-work-section ------------------------------------ */
+
     /* start -------------------------------- Скрипты для секции .photos-section -------------------------------------- */
     const photosBtn = document.querySelector('.photos__btn');
     const photosItems = document.querySelectorAll('.photos__list li');

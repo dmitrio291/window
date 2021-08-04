@@ -5606,6 +5606,140 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* end Страница Окна в дом */
 
 /* start Страница Отделка балконов */
+/* start -------------------------------------------- types-work-section --------------------------------------------- */
+.types-work {
+    &-section {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 39px;
+    }
+
+    &-cards {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+
+        li {
+            position: relative;
+            margin-bottom: 25px;
+            perspective: 600px;
+            width: 344px;
+            height: 383px;
+            background-color: #FFFFFF;
+            text-align: center;
+
+            &.flip {
+                .types-work-cards {
+                    &__front {
+                        transform: rotateY(180deg);
+                    }
+    
+                    &__back {
+                        transform: rotateY(360deg);
+                    }
+                }
+            }
+        }
+
+        &__img {
+            display: block;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 181px;
+            object-fit: cover;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        &__title {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        &__price {
+            margin-bottom: 20px;
+            font-size: 32px;
+
+            span {
+                font-size: 21px;
+                color: #48494B;
+            }
+        }
+
+        &__btn {
+            min-width: 141px;
+            transition: background-color 0.3s ease,
+                        color 0.3s ease;
+        }
+
+        &__front,
+        &__back {
+            padding: 10px 10px 30px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 3px;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease;
+        }
+
+        &__front {
+            transform: rotateY(0deg);
+            overflow: hidden;
+            z-index: 1;
+
+            .types-work-cards {
+                &__btn:hover {
+                    background-color: #F26422;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        &__back {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            transform: rotateY(180deg);
+            background-color: #F26422;
+            color: #ffffff;
+            z-index: 2;
+
+            .types-work-cards {
+                &__btn {
+                    margin-top: auto;
+                    border: 2px solid #FFFFFF;
+                }
+            }
+        }
+
+        &__icon {
+            width: 10px;
+            height: 10px;
+            margin-left: auto;
+            margin-bottom: 30px;
+            display: block;
+            transform: translate(15px, 5px);
+            cursor: pointer;
+        }
+
+        &__text {
+            margin-bottom: 63px;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+}
+/* end -------------------------------------------- types-work-section ----------------------------------------------- */
+
 /* start -------------------------------------------- balconies-discounts-section ------------------------------------ */
 .balconies-discounts {
     position: relative;
@@ -8760,6 +8894,29 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* end Страница Окна в дом */
 
     /* start Страница Отделка балконов */
+    /* start -------------------------------------------- types-work-section ----------------------------------------- */
+    .types-work {
+        &__title {
+            margin-bottom: 55px;
+        }
+
+        &-cards {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            max-width: 708px;
+
+            li {
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- types-work-section ------------------------------------------- */
+
     /* start -------------------------------------------- balconies-discounts-section -------------------------------- */
     .balconies-discounts {
         background: none;
@@ -11180,6 +11337,33 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* end Страница Окна в дом */
 
     /* start Страница Отделка балконов */
+    /* start -------------------------------------------- types-work-section ----------------------------------------- */
+    .types-work {
+        &-cards {
+            max-width: none;
+            column-gap: 19px;
+
+            li {
+                width: 307px;
+
+                &:nth-child(7),
+                &:nth-child(8) {
+                    margin-bottom: 0;
+                }
+            }
+
+            &__back {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            &__text {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    /* end -------------------------------------------- types-work-section ------------------------------------------- */
+
     /* start -------------------------------------------- balconies-discounts-section -------------------------------- */
     .balconies-discounts {
         &__subtitle {
