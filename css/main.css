@@ -5614,6 +5614,16 @@ input:focus:-ms-input-placeholder {
 /* end -------------------------------------------- photos-section --------------------------------------------------- */
 /* end Страница Отделка балконов */
 /* start Страница Остекление балконов */
+/* start -------------------------------------------- banner-windows-section-------------------------------------- */
+.banner-windows--finishing-balconies {
+  background-image: url("../img/banner-glazing-balconies-small.jpg");
+}
+
+.banner-windows--finishing-balconies .banner-windows__list {
+  max-width: 250px;
+}
+
+/* end -------------------------------------------- banner-windows-section --------------------------------------- */
 /* start -------------------------------------------- profitable-windows-section --------------------------------- */
 .profitable-windows--balconies .profitable-windows__list li {
   padding-left: 41px;
@@ -8083,6 +8093,17 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- photos-section ----------------------------------------------- */
   /* end Страница Отделка балконов */
   /* start Страница Остекление балконов */
+  /* start -------------------------------------------- banner-windows-section-------------------------------------- */
+  .banner-windows--finishing-balconies {
+    background-image: url("../img/banner-glazing-balconies-middle.jpg");
+  }
+  .banner-windows--finishing-balconies .banner-windows__list {
+    max-width: 356px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list li:nth-child(3) {
+    padding-right: 35px;
+  }
+  /* end -------------------------------------------- banner-windows-section --------------------------------------- */
   /* start -------------------------------------------- making-windows-section ------------------------------------- */
   .making-windows--balconies {
     display: block;
@@ -9876,6 +9897,11 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- photos-section ----------------------------------------------- */
   /* end Страница Отделка балконов */
   /* start Страница Остекление балконов */
+  /* start -------------------------------------------- banner-windows-section-------------------------------------- */
+  .banner-windows--finishing-balconies {
+    background-image: url("../img/banner-glazing-balconies-big.jpg");
+  }
+  /* end -------------------------------------------- banner-windows-section --------------------------------------- */
   /* start -------------------------------------------- making-windows-section ------------------------------------- */
   .making-windows--balconies {
     display: flex;
