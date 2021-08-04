@@ -6937,6 +6937,7 @@ input:focus:-ms-input-placeholder {
     padding-right: 54px;
   }
   .accordion__text {
+    font-size: 18px;
     line-height: 25px;
   }
   .accordion__text.bold {
