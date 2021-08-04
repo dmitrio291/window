@@ -797,12 +797,23 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__btn {
-        max-width: 296px;
+        max-width: 315px;
         width: 100%;
     }
 
     &__icon {
         display: none;
+    }
+
+    &__price {
+        margin-bottom: 20px;
+        font-size: 38px;
+        font-weight: 700;
+
+        span {
+            font-size: 20px;
+            font-weight: 800;
+        }
     }
 }
 /* end -------------------------------------------- banner windows section --------------------------------------------- */
@@ -5606,6 +5617,20 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* end Страница Окна в дом */
 
 /* start Страница Отделка балконов */
+/* start -------------------------------------------- banner windows section ------------------------------------------ */
+.banner-windows {
+    &--finishing-balconies {
+        background-image: url("../img/banner-finishing-balconies-small.jpg");
+
+        .banner-windows {
+            &__list {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+/* end -------------------------------------------- banner windows section -------------------------------------------- */
+
 /* start -------------------------------------------- types-work-section --------------------------------------------- */
 .types-work {
     &-section {
@@ -5807,6 +5832,12 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* end -------------------------------------------- balconies-discounts-section -------------------------------------- */
+
+/* start -------------------------------------------- finishing-balconies-texts -------------------------------------- */
+.finishing-balconies-texts {
+    display: none;
+}
+/* end -------------------------------------------- finishing-balconies-texts ---------------------------------------- */
 
 /* start -------------------------------------------- photos-section ------------------------------------------------- */
 .photos {
@@ -6155,6 +6186,19 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                     left: 9px;
                 }
             }
+        }
+
+        &__price {
+            margin-bottom: 25px;
+            font-size: 48px;
+
+            span {
+                font-size: 28px;
+            }
+        }
+
+        &__btn {
+            max-width: 306px;
         }
     }
     /* end -------------------------------------------- banner windows section ----------------------------------------- */
@@ -7634,7 +7678,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__text {
-            font-size: 18px;
             line-height: 25px;
 
             &.bold {
@@ -8895,6 +8938,14 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* end Страница Окна в дом */
 
     /* start Страница Отделка балконов */
+    /* start -------------------------------------------- banner windows section ------------------------------------- */
+    .banner-windows {
+        &--finishing-balconies {
+            background-image: url("../img/banner-finishing-balconies-middle.jpg");
+        }
+    }
+    /* end -------------------------------------------- banner windows section --------------------------------------- */
+
     /* start -------------------------------------------- types-work-section ----------------------------------------- */
     .types-work {
         &__title {
@@ -8988,6 +9039,31 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- balconies-discounts-section ---------------------------------- */
+
+    /* start -------------------------------------------- finishing-balconies-texts ---------------------------------- */
+    .finishing-balconies-texts {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        display: block;
+
+        p {
+            font-size: 18px;
+            line-height: 25px;
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    /* end -------------------------------------------- finishing-balconies-texts ------------------------------------ */
 
     /* start -------------------------------------------- photos-section --------------------------------------------- */
     .photos {
@@ -9141,6 +9217,19 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                     left: 12px;
                 }
             }
+        }
+
+        &__price {
+            margin-bottom: 34px;
+            font-size: 60px;
+
+            span {
+                font-size: 40px;
+            }
+        }
+
+        &__btn {
+            max-width: 411px;
         }
     }
     /* end -------------------------------------------- banner windows section ----------------------------------------- */
@@ -11338,6 +11427,20 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* end Страница Окна в дом */
 
     /* start Страница Отделка балконов */
+    /* start -------------------------------------------- banner-windows-section ------------------------------------- */
+    .banner-windows {
+        &--finishing-balconies {
+            background-image: url("../img/banner-finishing-balconies-big.jpg");
+
+            .banner-windows {
+                &__left {
+                    max-width: 480px;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
     /* start -------------------------------------------- types-work-section ----------------------------------------- */
     .types-work {
         &-cards {
