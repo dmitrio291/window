@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
     /* end Универсальня функция, которая показывает/скрывает аккордеон */
-
     
     /* sart Проверка подключен ли fancybox на странице */
     const dataFancybox = document.querySelector('[data-fancybox]');
@@ -35,6 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     /* end -------------------------------- Скрипты для секции .header ---------------------------------------------- */
+
+    /* start -------------------------------- Скрипты для секции .main-header --------------------------------------- */
+    const mainHeaderToggles = document.querySelectorAll('.main-header-popup__toggle');
+    const mainHeaderBurger = document.querySelector('.main-header-burger');
+    const mainHeaderTop = document.querySelector('.main-header__top');
+    const mainHeaderPopup = document.querySelector('.main-header-popup');
+    
+    if (mainHeaderToggles) accordionToggle(mainHeaderToggles);
+
+    mainHeaderBurger.addEventListener('click', () => {
+        mainHeaderTop.classList.toggle('active');
+        mainHeaderPopup.classList.toggle('active');
+        document.body.classList.toggle('scroll-hidden');
+    });
+    /* end -------------------------------- Скрипты для секции .main-header ----------------------------------------- */
 
     /* start -------------------------------- Скрипты для кнопки вверх .scroll-top ---------------------------------- */
     const ScrollTopBtn = document.querySelector('.scroll-top');
