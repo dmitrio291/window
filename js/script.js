@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const accordionToggle = (toggles) => {
         toggles.forEach(toggle => {
             toggle.addEventListener('click', e => {
-                accordionToggles.forEach(toggle => {
+                toggles.forEach(toggle => {
                     if (toggle !== event.target && toggle.classList.contains('active')) {
                         toggle.classList.remove(('active'));
                         toggle.nextElementSibling.classList.remove('active');
@@ -393,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end ---------------------------------- Скрипты для секции .certificates-section ------------------------------ */
 
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
-    const accordionToggles = document.querySelectorAll('.accordion__toggle');
+    const accordionToggles = document.querySelectorAll('.accordion--main .accordion__toggle');
     
     if (accordionToggles) accordionToggle(accordionToggles);
     /* end-------------------------------- Скрипты для секции .accordion-section ------------------------------------ */
@@ -682,4 +682,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* end -------------------------------- Скрипты для секции .photos-section ----------------------------------------- */
     /* end Страница Отделка балконов */
+
+    /* start Страница Остекление балконов */
+    /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
+    const accordionToggles2 = document.querySelectorAll('.accordion--second .accordion__toggle');
+    
+    if (accordionToggles2 && window.innerWidth < 768) accordionToggle(accordionToggles2);
+    /* end-------------------------------- Скрипты для секции .accordion-section ------------------------------------ */
+    /* end Страница Остекление балконов */
 });

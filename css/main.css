@@ -5624,6 +5624,125 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+/* start -------------------------------------------- windows-quality-section ------------------------------------ */
+.windows-quality {
+  position: relative;
+}
+
+.windows-quality-section {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  margin-bottom: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/choice-windows-small.jpg");
+}
+
+.windows-quality-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.windows-quality-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(0deg, #ffffff 0%, rgba(249, 249, 249, 0) 100%);
+}
+
+.windows-quality__box {
+  margin-bottom: 36px;
+}
+
+.windows-quality__icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.windows-quality__content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.windows-quality__text {
+  line-height: 21px;
+}
+
+.windows-quality__text:first-child {
+  margin-bottom: 15px;
+}
+
+.windows-quality__title {
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.windows-quality__btn {
+  display: none;
+}
+
+.accordion--second .accordion__item {
+  box-shadow: none;
+  background-color: transparent;
+  border: 1px solid #CDCDCD;
+}
+
+.accordion--second .accordion__toggle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.accordion--second .accordion__content {
+  padding-right: 15px;
+}
+
+.accordion--second .accordion__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.accordion--second .accordion__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #ABABAB;
+  flex-shrink: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.accordion--second .accordion__icon.icon-1 {
+  background-image: url("../img/windows-quality-icon-1.svg");
+}
+
+.accordion--second .accordion__icon.icon-2 {
+  background-image: url("../img/windows-quality-icon-2.svg");
+}
+
+.accordion--second .accordion__icon.icon-3 {
+  background-image: url("../img/windows-quality-icon-3.svg");
+}
+
+.accordion--second .accordion__icon.icon-4 {
+  background-image: url("../img/windows-quality-icon-4.svg");
+}
+
+.accordion--second .accordion__text-btn {
+  pointer-events: none;
+}
+
+/* end -------------------------------------------- windows-quality-section -------------------------------------- */
 /* start -------------------------------------------- profitable-windows-section --------------------------------- */
 .profitable-windows--balconies .profitable-windows__list li {
   padding-left: 41px;
@@ -8115,6 +8234,98 @@ input:focus:-ms-input-placeholder {
     min-width: 306px;
   }
   /* end -------------------------------------------- making-windows-section --------------------------------------- */
+  /* start -------------------------------------------- windows-quality-section ------------------------------------ */
+  .windows-quality {
+    display: grid;
+    grid-template-areas: 'windows-quality-title windows-quality-title' 'windows-quality-box windows-quality-items' 'windows-quality-btn windows-quality-btn';
+    grid-template-columns: 153px 495px;
+    column-gap: 60px;
+    max-width: 708px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .windows-quality-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-bottom: 50px;
+    background-image: url("../img/choice-windows-middle.jpg");
+  }
+  .windows-quality__box {
+    grid-area: windows-quality-box;
+  }
+  .windows-quality__content {
+    margin-top: 30px;
+    margin-bottom: 33px;
+  }
+  .windows-quality__icons img:first-child, .windows-quality__icons img:last-child {
+    width: 40px;
+  }
+  .windows-quality__icons img:nth-child(2) {
+    width: 12px;
+    height: 10px;
+  }
+  .windows-quality__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .windows-quality__text:first-child {
+    margin-bottom: 23px;
+  }
+  .windows-quality__title {
+    text-align: center;
+    grid-area: windows-quality-title;
+    margin-left: 5%;
+    margin-bottom: 40px;
+  }
+  .windows-quality .accordion {
+    grid-area: windows-quality-items;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    max-width: 495px;
+    gap: 60px 29px;
+  }
+  .windows-quality .accordion__item {
+    flex-basis: 47%;
+  }
+  .windows-quality .accordion__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .windows-quality .accordion__toggle {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  .windows-quality .accordion__toggle, .windows-quality .accordion__content {
+    padding: 0;
+  }
+  .windows-quality .accordion__icon {
+    margin-bottom: 30px;
+  }
+  .windows-quality .accordion__text-btn {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .windows-quality .accordion__text-btn .block {
+    display: block;
+  }
+  .windows-quality__btn {
+    min-width: 274px;
+    display: block;
+    margin-left: auto;
+    margin-right: 15.6%;
+    grid-area: windows-quality-btn;
+  }
+  .accordion--second .accordion__item {
+    border: none;
+  }
+  .accordion--second .accordion__content {
+    display: block;
+  }
+  .accordion--second .accordion__plus {
+    display: none;
+  }
+  /* end -------------------------------------------- windows-quality-section -------------------------------------- */
   /* start -------------------------------------------- profitable-windows-section --------------------------------- */
   .profitable-windows--balconies .profitable-windows__list li {
     padding-top: 30px;
@@ -9910,6 +10121,57 @@ input:focus:-ms-input-placeholder {
     margin-bottom: 0;
   }
   /* end -------------------------------------------- making-windows-section --------------------------------------- */
+  /* start -------------------------------------------- windows-quality-section ------------------------------------ */
+  .windows-quality {
+    grid-template-columns: 245px 653px;
+    column-gap: 63px;
+  }
+  .windows-quality-section {
+    background-image: url("../img/choice-windows-big.jpg");
+  }
+  .windows-quality__content {
+    margin-top: 38px;
+    margin-bottom: 40px;
+  }
+  .windows-quality__icons img:first-child, .windows-quality__icons img:last-child {
+    width: 50px;
+  }
+  .windows-quality__icons img:nth-child(2) {
+    width: 14px;
+    height: 12px;
+  }
+  .windows-quality__title {
+    margin-left: -2.8%;
+  }
+  .windows-quality__text {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .windows-quality__text:first-child {
+    margin-bottom: 28px;
+  }
+  .windows-quality .accordion {
+    max-width: 653px;
+    gap: 59px 39px;
+    margin-bottom: 41px;
+  }
+  .windows-quality .accordion__text-btn {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  .windows-quality .accordion__text-btn .block {
+    display: inline;
+  }
+  .windows-quality .accordion__item:nth-child(2) .accordion__text {
+    padding-right: 3px;
+  }
+  .windows-quality .accordion__item:nth-child(2) .accordion__text-btn .block {
+    display: block;
+  }
+  .windows-quality__btn {
+    margin-right: 19.9%;
+  }
+  /* end -------------------------------------------- windows-quality-section -------------------------------------- */
   /* end Страница Остекление балконов */
 }
 

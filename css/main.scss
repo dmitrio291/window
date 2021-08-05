@@ -5897,6 +5897,133 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- banner-windows-section --------------------------------------- */
 
+/* start -------------------------------------------- windows-quality-section ------------------------------------ */
+.windows-quality {
+    position: relative;
+
+    &-section {
+        position: relative;
+        padding-top: 45px;
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../img/choice-windows-small.jpg');
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(0deg, #ffffff 0%, rgba(249, 249, 249, 0) 100%);
+        }
+    }
+
+    &__box {
+        margin-bottom: 36px;
+    }
+    
+    &__icons {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+    }
+
+    &__content {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        line-height: 21px;
+
+        &:first-child {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 26px;
+        text-align: left;
+    }
+
+    &__btn {
+        display: none;
+    }
+}
+
+.accordion {
+    &--second {
+        .accordion {
+            &__item {
+                box-shadow: none;
+                background-color: transparent;
+                border: 1px solid #CDCDCD;
+            }
+
+            &__toggle {
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            &__content {
+                padding-right: 15px;
+            }
+
+            &__text {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            &__icon {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid #ABABAB;
+                flex-shrink: 0;
+                pointer-events: none;
+                background-repeat: no-repeat;
+                background-position: center;
+        
+                &.icon {               
+                    &-1 {                
+                        background-image: url('../img/windows-quality-icon-1.svg');
+                    }
+    
+                    &-2 {                
+                        background-image: url('../img/windows-quality-icon-2.svg');
+                    }
+    
+                    &-3 {                
+                        background-image: url('../img/windows-quality-icon-3.svg');
+                    }
+    
+                    &-4 {                
+                        background-image: url('../img/windows-quality-icon-4.svg');
+                    }
+                }
+            }
+        
+            &__text-btn {
+                pointer-events: none;
+            }
+        }
+    }
+}
+/* end -------------------------------------------- windows-quality-section -------------------------------------- */
+
 /* start -------------------------------------------- profitable-windows-section --------------------------------- */
 .profitable-windows {
     &--balconies {
@@ -9184,6 +9311,133 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- making-windows-section --------------------------------------- */
 
+    /* start -------------------------------------------- windows-quality-section ------------------------------------ */
+    .windows-quality {
+        display: grid;
+
+        grid-template-areas: 
+        'windows-quality-title windows-quality-title'
+        'windows-quality-box windows-quality-items'
+        'windows-quality-btn windows-quality-btn';
+        grid-template-columns: 153px 495px;
+        column-gap: 60px;
+        max-width: 708px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-section {
+            padding-top: 75px;
+            padding-bottom: 75px;
+            margin-bottom: 50px;
+            background-image: url("../img/choice-windows-middle.jpg");
+        }
+
+        &__box {
+            grid-area: windows-quality-box;
+        }
+
+        &__content {
+            margin-top: 30px;
+            margin-bottom: 33px;
+        }
+
+        &__icons {
+            img {
+                &:first-child,
+                &:last-child {
+                    width: 40px;
+                }
+
+                &:nth-child(2) {
+                    width: 12px;
+                    height: 10px;
+                }
+            }
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 25px;
+
+            &:first-child {
+                margin-bottom: 23px;
+            }
+        }
+
+        &__title {
+            text-align: center;
+            grid-area: windows-quality-title;
+            margin-left: 5%;
+            margin-bottom: 40px;
+        }
+
+        .accordion {
+            grid-area:  windows-quality-items;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            max-width: 495px;
+            gap: 60px 29px;
+
+            &__item {
+                flex-basis: 47%;
+
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                }
+            }
+
+            &__toggle {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 15px;
+            }
+
+            &__toggle,
+            &__content {
+                padding: 0;
+            }
+
+            &__icon {
+                margin-bottom: 30px;
+            }
+
+            &__text-btn {
+                font-size: 18px;
+                line-height: 23px;
+
+                .block {
+                    display: block;
+                }
+            }
+        }
+
+        &__btn {
+            min-width: 274px;
+            display: block;
+            margin-left: auto;
+            margin-right: 15.6%;
+            grid-area: windows-quality-btn;
+        }
+    }
+
+    .accordion--second {
+        .accordion {
+            &__item {
+                border: none;
+            }
+
+            &__content {
+                display: block;
+            }
+
+            &__plus {
+                display: none;
+            }
+        }
+    }
+    /* end -------------------------------------------- windows-quality-section -------------------------------------- */
+
     /* start -------------------------------------------- profitable-windows-section --------------------------------- */
     .profitable-windows {
         &--balconies {
@@ -11666,6 +11920,82 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- making-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- windows-quality-section ------------------------------------ */
+    .windows-quality {
+        grid-template-columns: 245px 653px;
+        column-gap: 63px;
+
+        &-section {
+            background-image: url("../img/choice-windows-big.jpg");
+        }
+
+        &__content {
+            margin-top: 38px;
+            margin-bottom: 40px;
+        }
+
+        &__icons {
+            img {
+                &:first-child,
+                &:last-child {
+                    width: 50px;
+                }
+
+                &:nth-child(2) {
+                    width: 14px;
+                    height: 12px;
+                }
+            }
+        }
+
+        &__title {
+            margin-left: -2.8%;
+        }
+
+        &__text {
+            font-size: 21px;
+            line-height: 29px;
+
+            &:first-child {
+                margin-bottom: 28px;
+            }
+        }
+
+        .accordion {
+            max-width: 653px;
+            gap: 59px 39px;
+            margin-bottom: 41px;
+
+            &__text-btn {
+                font-size: 21px;
+                line-height: 27px;
+
+                .block {
+                    display: inline;
+                }
+            }
+
+            &__item {
+                &:nth-child(2) {
+                    .accordion__text {
+                        padding-right: 3px;
+                    }
+
+                    .accordion__text-btn {
+                        .block {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            margin-right: 19.9%;
+        }
+    }
+    /* end -------------------------------------------- windows-quality-section -------------------------------------- */
     /* end Страница Остекление балконов */
 }
 
