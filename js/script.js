@@ -25,21 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
     /* start -------------------------------- Скрипты для секции .header -------------------------------------------- */
     const burgers = document.querySelectorAll('.burger');
     const headerPopup = document.querySelector('.header-popup');
-    const headerPopupClose = headerPopup.querySelector('.header-popup__close');
+    const headerPopupClose = document.querySelector('.header-popup__close');
 
-    burgers.forEach(burger => {
-        burger.addEventListener('click', () => {
-            headerPopup.style.display = 'block';
-            headerPopupClose.addEventListener('click', () => headerPopup.style.display = 'none');
+    if (burgers && headerPopup && headerPopupClose) {
+        burgers.forEach(burger => {
+            burger.addEventListener('click', () => {
+                headerPopup.style.display = 'block';
+                headerPopupClose.addEventListener('click', () => headerPopup.style.display = 'none');
+            });
         });
-    });
+    }
     /* end -------------------------------- Скрипты для секции .header ---------------------------------------------- */
 
     /* start -------------------------------- Скрипты для секции .main-header --------------------------------------- */
     const mainHeaderToggles = document.querySelectorAll('.main-header-popup__toggle');
-    const mainHeaderBurger1 = document.getElementById('burger1');
-    const mainHeaderTop1 = document.getElementById('headerTop1');
-    const mainHeaderPopup1 = document.getElementById('headerPopup1');
+    const mainHeaderBurger = document.querySelector('.main-header-burger');
+    const mainHeaderTop = document.querySelector('.main-header__top');
+    const mainHeaderPopup = document.querySelector('.main-header-popup');
     
     if (mainHeaderToggles) accordionToggle(mainHeaderToggles);
 
@@ -52,20 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    if (mainHeaderToggles && mainHeaderBurger1 && mainHeaderTop1 && mainHeaderPopup1) {
-        openHeaderMobileMenu(mainHeaderBurger1, mainHeaderTop1, mainHeaderPopup1);
+    if (mainHeaderToggles && mainHeaderBurger && mainHeaderTop && mainHeaderPopup) {
+        openHeaderMobileMenu(mainHeaderBurger, mainHeaderTop, mainHeaderPopup);
     };
     /* end -------------------------------- Скрипты для секции .main-header ----------------------------------------- */
-
-    /* start -------------------------------- Скрипты для секции .main-header 2-ой вариант -------------------------- */
-    const mainHeaderBurger2 = document.getElementById('burger2');
-    const mainHeaderTop2 = document.getElementById('headerTop2');
-    const mainHeaderPopup2 = document.getElementById('headerPopup2');
-
-    if (mainHeaderToggles && mainHeaderBurger2 && mainHeaderTop2 && mainHeaderPopup2) {
-        openHeaderMobileMenu(mainHeaderBurger2, mainHeaderTop2, mainHeaderPopup2);
-    };
-    /* end -------------------------------- Скрипты для секции .main-header 2-ой вариант ---------------------------- */
 
     /* start -------------------------------- Скрипты для кнопки вверх .scroll-top ---------------------------------- */
     const ScrollTopBtn = document.querySelector('.scroll-top');
