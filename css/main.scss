@@ -839,13 +839,35 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &__inner {
         position: relative;
-    }
 
-    &__item {
-        &:not(:last-child) {
-            border-bottom: 1px solid #ABABAB;
+        .menu {
+            &__item {
+                &:not(:last-child) {
+                    border-bottom: 1px solid #ABABAB;
+                }
+            }
+
+            &__link {
+                display: block;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 15px;
+                font-size: 18px;
+                text-decoration: none;
+                color: #48494B;
+
+                &.pl {
+                    padding-left: 33px;
+                }
+            }
         }
     }
+
+    // &__item {
+    //     &:not(:last-child) {
+    //         border-bottom: 1px solid #ABABAB;
+    //     }
+    // }
 
     &__toggle {
         width: 100%;
@@ -907,6 +929,17 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &__menu {
         margin-bottom: 50px;
+        .menu {
+            &__sub-menu {
+                .menu {
+                    &__item {
+                        &:not(:last-child) {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__submenu {
@@ -928,24 +961,21 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         margin-bottom: 50px;
     }
 
-    &__link {
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 15px;
-        font-size: 18px;
-        text-decoration: none;
-        color: #48494B;
+    // &__link {
+    //     display: block;
+    //     padding-top: 20px;
+    //     padding-bottom: 20px;
+    //     padding-left: 15px;
+    //     font-size: 18px;
+    //     text-decoration: none;
+    //     color: #48494B;
 
-        &.pl {
-            padding-left: 33px;
-        }
-    }
+    //     &.pl {
+    //         padding-left: 33px;
+    //     }
+    // }
 }
 
-#headerPopup1 .main-header-popup__link {
-    padding-left: 10px;
-}
 /* end -------------------------------------------- main-header-popup -------------------------------------------------- */
 
 /* start -------------------------------------------- warning section -------------------------------------------------- */

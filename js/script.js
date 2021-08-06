@@ -155,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (discountsSlider) {
         const discountsSwiper = new Swiper(discountsSlider, {
             slidesPerView: 1.25,
-            // autoHeight: true,
             spaceBetween: 1,
             slideClass: 'discounts-slider__slide',
             wrapperClass: 'discounts-slider__wrap',
