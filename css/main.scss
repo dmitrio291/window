@@ -5005,6 +5005,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             &.border {
                 border-bottom: 1px solid #F26422;
             }
+
+            &.show-desktop {
+                display: none;
+            }
         }
     }
 
@@ -12092,6 +12096,12 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             .menu__item {
                 width: 100%;
 
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    margin-left: -23px;
+                }
+
                 &:nth-child(7) {
                     display: block;
                 }
@@ -12100,6 +12110,28 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 &:last-child {
                     margin-top: 0;
                     margin-bottom: 10px;
+                }
+            }
+        }
+
+        &-contacts {
+            li {
+                &:last-child {
+                    width: 300px;
+
+                    & > .footer-contacts__text {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+
+            &__text {
+                &.hide-desktop {
+                    display: none;
+                }
+
+                &.show-desktop {
+                    display: block;
                 }
             }
         }

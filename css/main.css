@@ -4776,6 +4776,10 @@ input:focus:-ms-input-placeholder {
   border-bottom: 1px solid #F26422;
 }
 
+.footer-contacts__text.show-desktop {
+  display: none;
+}
+
 .footer__payment {
   padding: 22px 10px;
 }
@@ -10333,12 +10337,27 @@ input:focus:-ms-input-placeholder {
   .footer-menu .menu__item {
     width: 100%;
   }
+  .footer-menu .menu__item:nth-child(4), .footer-menu .menu__item:nth-child(5), .footer-menu .menu__item:nth-child(6) {
+    margin-left: -23px;
+  }
   .footer-menu .menu__item:nth-child(7) {
     display: block;
   }
   .footer-menu .menu__item:nth-child(8), .footer-menu .menu__item:last-child {
     margin-top: 0;
     margin-bottom: 10px;
+  }
+  .footer-contacts li:last-child {
+    width: 300px;
+  }
+  .footer-contacts li:last-child > .footer-contacts__text {
+    margin-bottom: 6px;
+  }
+  .footer-contacts__text.hide-desktop {
+    display: none;
+  }
+  .footer-contacts__text.show-desktop {
+    display: block;
   }
   /* end -------------------------------------------- footer -------------------------------------------------------- */
   /* start Страница Контакты */
