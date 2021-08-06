@@ -6225,7 +6225,6 @@ input:focus:-ms-input-placeholder {
     display: block;
   }
   .main-header-tablet__whatsapp {
-    position: relative;
     padding-bottom: 1px;
     display: flex;
     align-items: center;
@@ -6234,17 +6233,13 @@ input:focus:-ms-input-placeholder {
     text-decoration: none;
     border-bottom: 1px dashed #F26422;
   }
-  .main-header-tablet__whatsapp::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -29px;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../img/phone-icon.png");
-    background-size: cover;
+  .main-header-tablet__whatsapp-box {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .main-header-tablet__whatsapp-link img {
+    display: block;
   }
   .main-header-tablet__calc {
     display: none;
@@ -8815,7 +8810,7 @@ input:focus:-ms-input-placeholder {
   }
   .main-header-tablet {
     display: flex;
-    column-gap: 40px;
+    column-gap: 12px;
   }
   .main-header-mobile {
     margin-left: 40px;
@@ -10709,7 +10704,10 @@ input:focus:-ms-input-placeholder {
   .main-header-desktop__schedule {
     transform: translateY(-3px);
   }
-  .main-header-tablet__whatsapp {
+  .main-header-tablet {
+    column-gap: 40px;
+  }
+  .main-header-tablet__whatsapp-box {
     transform: translateX(-46px);
   }
   .main-header-calc {
