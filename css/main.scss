@@ -719,6 +719,36 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         cursor: pointer;
         transform: translateY(-2px);
 
+        &.active {
+            .main-header-burger {
+                &__line {
+                    span,
+                    &::before,
+                    &::after {
+                        background-color: #ABABAB;
+                    }
+
+                    span {
+                        transform: scale(0) translateY(-50%);
+                    }
+
+                    &::before {
+                        top: 50%;
+                        transform: rotate(-45deg) translateY(-50%);
+                    }
+
+                    &::after {
+                        bottom: 50%;
+                        transform: rotate(45deg) translateY(50%);
+                    }
+                }
+
+                &__text {
+                    color: #ABABAB;
+                }
+            }
+        }
+
         &__line {
             position: relative;
             margin-left: auto;
@@ -738,13 +768,14 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 left: 0;
                 width: 100%;
                 height: 2px;
-                transition: transform 0.3s ease;
+                transition: transform 0.3s ease,
+                            background-color 0.3s ease;
                 background-color: #F26422;
             }
 
             span {
                 top: 50%;
-                transform: translateY(-50%);
+                transform: scale(1) translateY(-50%);
             }
 
             &::before {
@@ -758,6 +789,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &__text {
             font-size: 12px;
+            transition: color 0.3s ease,
         }
     }
 
@@ -908,6 +940,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             padding-left: 33px;
         }
     }
+}
+
+#headerPopup1 .main-header-popup__link {
+    padding-left: 10px;
 }
 /* end -------------------------------------------- main-header-popup -------------------------------------------------- */
 
@@ -6616,6 +6652,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     .main-header-popup {
         padding-left: 30px;
         padding-right: 30px;
+        background-image: url("../img/choice-windows-middle.jpg");
 
         &__btn {
             margin-left: 0;
@@ -10042,8 +10079,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 position: absolute;
                 top: 100%;
                 left: -13px;
+                z-index: 10;
                 background-color: #ffffff;
-                // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
                 filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.15));
                 border-bottom-left-radius: 3px;
                 border-bottom-right-radius: 3px;

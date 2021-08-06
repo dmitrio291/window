@@ -37,18 +37,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* start -------------------------------- Скрипты для секции .main-header --------------------------------------- */
     const mainHeaderToggles = document.querySelectorAll('.main-header-popup__toggle');
-    const mainHeaderBurger = document.querySelector('.main-header-burger');
-    const mainHeaderTop = document.querySelector('.main-header__top');
-    const mainHeaderPopup = document.querySelector('.main-header-popup');
+    const mainHeaderBurger1 = document.getElementById('burger1');
+    const mainHeaderTop1 = document.getElementById('headerTop1');
+    const mainHeaderPopup1 = document.getElementById('headerPopup1');
     
     if (mainHeaderToggles) accordionToggle(mainHeaderToggles);
 
-    mainHeaderBurger.addEventListener('click', () => {
-        mainHeaderTop.classList.toggle('active');
-        mainHeaderPopup.classList.toggle('active');
-        document.body.classList.toggle('scroll-hidden');
-    });
+    const openHeaderMobileMenu = (burger, box, popup) => {
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            box.classList.toggle('active');
+            popup.classList.toggle('active');
+            document.body.classList.toggle('scroll-hidden');
+        });
+    };
+
+    if (mainHeaderToggles && mainHeaderBurger1 && mainHeaderTop1 && mainHeaderPopup1) {
+        openHeaderMobileMenu(mainHeaderBurger1, mainHeaderTop1, mainHeaderPopup1);
+    };
     /* end -------------------------------- Скрипты для секции .main-header ----------------------------------------- */
+
+    /* start -------------------------------- Скрипты для секции .main-header 2-ой вариант -------------------------- */
+    const mainHeaderBurger2 = document.getElementById('burger2');
+    const mainHeaderTop2 = document.getElementById('headerTop2');
+    const mainHeaderPopup2 = document.getElementById('headerPopup2');
+
+    if (mainHeaderToggles && mainHeaderBurger2 && mainHeaderTop2 && mainHeaderPopup2) {
+        openHeaderMobileMenu(mainHeaderBurger2, mainHeaderTop2, mainHeaderPopup2);
+    };
+    /* end -------------------------------- Скрипты для секции .main-header 2-ой вариант ---------------------------- */
 
     /* start -------------------------------- Скрипты для кнопки вверх .scroll-top ---------------------------------- */
     const ScrollTopBtn = document.querySelector('.scroll-top');
