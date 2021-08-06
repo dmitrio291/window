@@ -865,7 +865,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
 
-    &__content {
+    &__submenu {
         display: none;
         padding-left: 33px;
 
@@ -10039,7 +10039,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                     position: relative;    
                     
                     &:hover {
-                        & > .main-header-nav__submenu {
+                        & > .menu__sub-menu {
                             display: block;
                         }
                     }
@@ -10072,30 +10072,30 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                     }
                 }
             }
+        }
+    }
 
-            &__submenu {
-                display: none;
-                padding: 20px 20px 15px;
-                position: absolute;
-                top: 100%;
-                left: -13px;
-                z-index: 10;
-                background-color: #ffffff;
-                filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.15));
-                border-bottom-left-radius: 3px;
-                border-bottom-right-radius: 3px;
+    .menu__sub-menu {
+        display: none;
+        padding: 20px 20px 15px;
+        position: absolute;
+        top: 100%;
+        left: -13px;
+        z-index: 10;
+        background-color: #ffffff;
+        filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.15));
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
 
-                li {
-                    &:not(:last-child) {
-                        margin-bottom: 15px;
-                    }
-                }
+        li {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
 
-                .main-header-nav {
-                    &__text {
-                        padding: 0;
-                    }
-                }
+        .main-header-nav {
+            &__text {
+                padding: 0;
             }
         }
     }
