@@ -4663,6 +4663,35 @@ input:focus:-ms-input-placeholder {
   background-color: #F9F9F9;
 }
 
+.footer__nav {
+  padding: 25px 10px;
+}
+
+.footer-menu .menu__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-menu .menu__item:first-child, .footer-menu .menu__item:nth-child(2), .footer-menu .menu__item:nth-child(3), .footer-menu .menu__item:nth-child(4), .footer-menu .menu__item:nth-child(5), .footer-menu .menu__item:nth-child(6), .footer-menu .menu__item:nth-child(7) {
+  display: none;
+}
+
+.footer-menu .menu__link {
+  color: #48494B;
+  text-decoration: none;
+  border-bottom: 1px solid #48494B;
+}
+
+.footer-menu .menu__link.orange {
+  color: #F26422;
+  border-color: #F26422;
+}
+
+.footer__map {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 135px;
+}
+
 .footer__menu {
   padding: 22px 10px;
   border-bottom: 1px solid #ABABAB;
@@ -4699,6 +4728,7 @@ input:focus:-ms-input-placeholder {
 
 .footer__contacts {
   padding: 22px 10px;
+  border-top: 1px solid #ABABAB;
   border-bottom: 1px solid #ABABAB;
 }
 
@@ -7963,6 +7993,64 @@ input:focus:-ms-input-placeholder {
   }
   /* end ------------------------------------------ certificates section ------------------------------------------ */
   /* start -------------------------------------------- footer ----------------------------------------------------- */
+  .footer__nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__nav-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 32px;
+  }
+  .footer__map {
+    width: 224px;
+    height: 127px;
+    margin-bottom: 0;
+  }
+  .footer-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-menu .menu__item {
+    width: 49%;
+  }
+  .footer-menu .menu__item:first-child, .footer-menu .menu__item:nth-child(2), .footer-menu .menu__item:nth-child(3), .footer-menu .menu__item:nth-child(4), .footer-menu .menu__item:nth-child(5), .footer-menu .menu__item:nth-child(6) {
+    display: block;
+  }
+  .footer-menu .menu__item:first-child {
+    order: 1;
+  }
+  .footer-menu .menu__item:nth-child(2) {
+    order: 3;
+  }
+  .footer-menu .menu__item:nth-child(3) {
+    order: 5;
+  }
+  .footer-menu .menu__item:nth-child(4) {
+    order: 2;
+  }
+  .footer-menu .menu__item:nth-child(5) {
+    order: 4;
+  }
+  .footer-menu .menu__item:nth-child(6) {
+    order: 6;
+  }
+  .footer-menu .menu__item:nth-child(8), .footer-menu .menu__item:last-child {
+    margin-top: 23px;
+  }
+  .footer-menu .menu__item:nth-child(8) {
+    order: 7;
+    margin-bottom: 0;
+  }
+  .footer-menu .menu__item:last-child {
+    order: 8;
+  }
+  .footer-menu .menu__item span {
+    font-weight: 500;
+    font-size: 18px;
+    color: #ABABAB;
+    text-transform: uppercase;
+  }
   .footer__menu {
     padding-left: 0;
     padding-right: 0;
@@ -10227,6 +10315,31 @@ input:focus:-ms-input-placeholder {
     width: 44%;
   }
   /* end -------------------------------------------- profitable windows section ------------------------------------ */
+  /* start -------------------------------------------- footer ------------------------------------------------------ */
+  .footer__nav-wrap {
+    justify-content: flex-end;
+  }
+  .footer__map {
+    height: 108px;
+  }
+  .footer-menu {
+    width: 100%;
+  }
+  .footer-menu__list {
+    column-count: 3;
+    display: block;
+  }
+  .footer-menu .menu__item {
+    width: 100%;
+  }
+  .footer-menu .menu__item:nth-child(7) {
+    display: block;
+  }
+  .footer-menu .menu__item:nth-child(8), .footer-menu .menu__item:last-child {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  /* end -------------------------------------------- footer -------------------------------------------------------- */
   /* start Страница Контакты */
   /* start -------------------------------------------- schedule section -------------------------------------------- */
   .schedule__box {

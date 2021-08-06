@@ -4881,6 +4881,45 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 .footer {
     background-color: #F9F9F9;
 
+    &__nav {
+        padding: 25px 10px;
+    }
+
+    &-menu {
+        .menu__item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7) {
+                display: none;
+            }
+        }
+
+        .menu__link {
+            color: #48494B;
+            text-decoration: none;
+            border-bottom: 1px solid #48494B;
+
+            &.orange {
+                color: #F26422;
+                border-color: #F26422;
+            }
+        }
+    }
+    
+    &__map {
+        margin-bottom: 25px;
+        width: 100%;
+        height: 135px;
+    }
+
     &__menu {
         padding: 22px 10px;
         border-bottom: 1px solid #ABABAB;;
@@ -4919,6 +4958,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &__contacts {
         padding: 22px 10px;
+        border-top: 1px solid #ABABAB;
         border-bottom: 1px solid #ABABAB;
     }
 
@@ -8862,6 +8902,88 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- footer ----------------------------------------------------- */
     .footer {
+        &__nav {
+            padding-left: 0;
+            padding-right: 0;
+
+            &-wrap {
+                display: flex;
+                flex-direction: row-reverse;
+                column-gap: 32px;
+            }
+        }
+
+        &__map {
+            width: 224px;
+            height: 127px;
+            margin-bottom: 0;
+        }
+
+        &-menu {
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .menu__item {
+                width: 49%;
+
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    display: block;
+                }
+
+                &:first-child {
+                    order: 1;
+                }
+
+                &:nth-child(2) {
+                    order: 3;
+                }
+
+                &:nth-child(3) {
+                    order: 5;
+                }
+
+                &:nth-child(4) {
+                    order: 2;
+                }
+
+                &:nth-child(5) {
+                    order: 4;
+                }
+                    
+                &:nth-child(6) {
+                    order: 6;
+                }
+
+                &:nth-child(8),
+                &:last-child {
+                    margin-top: 23px;
+                }
+
+                &:nth-child(8) {
+                    order: 7;
+                    margin-bottom: 0;
+                }
+
+                &:last-child {
+                    order: 8;
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #ABABAB;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
         &__menu {
             padding-left: 0;
             padding-right: 0;
@@ -11945,6 +12067,43 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- profitable windows section ------------------------------------ */
+
+    /* start -------------------------------------------- footer ------------------------------------------------------ */
+    .footer {
+        &__nav {
+            &-wrap {
+                justify-content: flex-end;
+            }
+        }
+
+        &__map {
+            height: 108px;
+        }
+
+        &-menu {
+            width: 100%;
+
+            &__list {
+                column-count: 3;
+                display: block;
+            }
+
+            .menu__item {
+                width: 100%;
+
+                &:nth-child(7) {
+                    display: block;
+                }
+
+                &:nth-child(8),
+                &:last-child {
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- footer -------------------------------------------------------- */
 
     /* start Страница Контакты */
     /* start -------------------------------------------- schedule section -------------------------------------------- */
