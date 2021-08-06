@@ -2239,7 +2239,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .discounts-slider__slide {
-  height: 100%;
+  display: flex;
   flex-shrink: 0;
   padding: 9px;
 }
@@ -8845,7 +8845,7 @@ input:focus:-ms-input-placeholder {
   .main-header-nav__list li:hover > .menu__sub-menu {
     display: block;
   }
-  .main-header-nav__text {
+  .menu__link {
     display: block;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -8853,11 +8853,11 @@ input:focus:-ms-input-placeholder {
     text-decoration: none;
     cursor: pointer;
   }
-  .main-header-nav__text.arrow-down {
+  .menu__link.arrow-down {
     display: flex;
     align-items: center;
   }
-  .main-header-nav__text.arrow-down::after {
+  .menu__link.arrow-down::after {
     content: '';
     display: inline-block;
     width: 8px;
