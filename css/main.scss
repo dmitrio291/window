@@ -959,7 +959,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
 }
-
 /* end -------------------------------------------- main-header-popup -------------------------------------------------- */
 
 /* start -------------------------------------------- warning section -------------------------------------------------- */
@@ -4018,11 +4017,11 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     border-radius: 3px;
 
     &-section {
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     &__content {
-        padding: 55px 15px 15px;
+        padding: 40px 15px 29px;
     }   
 
     &__title {
@@ -4035,12 +4034,17 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__text {
-        margin-bottom: 65px;
+        margin-bottom: 25px;
         line-height: 25px;
 
         .orange {
             font-weight: 500;
         }
+    }
+
+    &__btn {
+        display: block;
+        min-width: 315px;
     }
 
     &__img {
@@ -4071,8 +4075,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &__hint {
         position: absolute;
-        top: -45px;
-        right: 5%;
+        top: 1%;
+        right: 8%;
         z-index: 1;
         width: 173px;
         padding: 5px;
@@ -8709,30 +8713,33 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- delivery section ------------------------------------------ */
     .delivery {
-        min-height: 327px;
+        min-height: 348px;
         display: flex;
 
         &-section {
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
 
         &__content {
             width: 51%;
-            padding: 75px 0px 75px 30px;
+            padding: 50px 0 50px 30px;
         }
 
         &__title {
-            margin-bottom: 30px;
+            margin-bottom: 31px;
         }
 
         &__text {
-            padding-right: 42px;
-            margin-bottom: 0;
+            padding-right: 47px;
+            margin-bottom: 32px;
             font-size: 18px;
         }
 
+        &__btn {
+            min-width: 266px;
+        }
+
         &__img {
-            min-height: auto;
             width: 49%;
             background-image: url("../img/delivery-bg-middle.jpg");
 
@@ -8747,13 +8754,13 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 min-width: 447px;
                 position: absolute;
                 right: 0;
-                top: 14%;
+                top: 13%;
             }
         }
 
         &__hint {
             right: 4.5%;
-            top: 12.7%;
+            top: 12%;
 
             &::before {
                 bottom: -8px;
@@ -11641,12 +11648,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- delivery section -------------------------------------------- */
     .delivery {
-        &-section {
-            margin-bottom: 60px;
-        }
-
         &__content {
-            padding: 73px 0px 75px 38px;
+            padding-left: 40px;
             width: 45%;
         }
 
@@ -11654,9 +11657,13 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             padding-right: 61px;
         }
 
+        &__btn {
+            min-width: 307px;
+        }
+
         &__hint {
             padding: 5px;
-            right: 5.4%;
+            right: 6.7%;
             top: 12.3%;
 
             &::before {
@@ -11667,11 +11674,16 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         &__img {
             width: 65%;
             background-image: url("../img/delivery-bg-big.jpg");
+            background-position: right;
+
+            &::before {
+                background: linear-gradient(90deg, #F9F9F9 33%, rgba(249, 249, 249, 0) 100%);
+            }
 
             img {
-                min-width: 638px;
-                right: 0.4%;
-                top: 13.6%;
+                min-width: 621px;
+                right: 1.5%;
+                top: 14.2%;
             }
         }
     }

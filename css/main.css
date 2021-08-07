@@ -3812,11 +3812,11 @@ input:focus:-ms-input-placeholder {
 }
 
 .delivery-section {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .delivery__content {
-  padding: 55px 15px 15px;
+  padding: 40px 15px 29px;
 }
 
 .delivery__title {
@@ -3829,12 +3829,17 @@ input:focus:-ms-input-placeholder {
 }
 
 .delivery__text {
-  margin-bottom: 65px;
+  margin-bottom: 25px;
   line-height: 25px;
 }
 
 .delivery__text .orange {
   font-weight: 500;
+}
+
+.delivery__btn {
+  display: block;
+  min-width: 315px;
 }
 
 .delivery__img {
@@ -3864,8 +3869,8 @@ input:focus:-ms-input-placeholder {
 
 .delivery__hint {
   position: absolute;
-  top: -45px;
-  right: 5%;
+  top: 1%;
+  right: 8%;
   z-index: 1;
   width: 173px;
   padding: 5px;
@@ -7824,26 +7829,28 @@ input:focus:-ms-input-placeholder {
   /* end -------------------------------------------- profitable windows section ------------------------------------ */
   /* start -------------------------------------------- delivery section ------------------------------------------ */
   .delivery {
-    min-height: 327px;
+    min-height: 348px;
     display: flex;
   }
   .delivery-section {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
   .delivery__content {
     width: 51%;
-    padding: 75px 0px 75px 30px;
+    padding: 50px 0 50px 30px;
   }
   .delivery__title {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
   .delivery__text {
-    padding-right: 42px;
-    margin-bottom: 0;
+    padding-right: 47px;
+    margin-bottom: 32px;
     font-size: 18px;
   }
+  .delivery__btn {
+    min-width: 266px;
+  }
   .delivery__img {
-    min-height: auto;
     width: 49%;
     background-image: url("../img/delivery-bg-middle.jpg");
   }
@@ -7857,11 +7864,11 @@ input:focus:-ms-input-placeholder {
     min-width: 447px;
     position: absolute;
     right: 0;
-    top: 14%;
+    top: 13%;
   }
   .delivery__hint {
     right: 4.5%;
-    top: 12.7%;
+    top: 12%;
   }
   .delivery__hint::before {
     bottom: -8px;
@@ -9993,19 +10000,19 @@ input:focus:-ms-input-placeholder {
   }
   /* end ------------------------------------------ benefit section ------------------------------------------------- */
   /* start -------------------------------------------- delivery section -------------------------------------------- */
-  .delivery-section {
-    margin-bottom: 60px;
-  }
   .delivery__content {
-    padding: 73px 0px 75px 38px;
+    padding-left: 40px;
     width: 45%;
   }
   .delivery__text {
     padding-right: 61px;
   }
+  .delivery__btn {
+    min-width: 307px;
+  }
   .delivery__hint {
     padding: 5px;
-    right: 5.4%;
+    right: 6.7%;
     top: 12.3%;
   }
   .delivery__hint::before {
@@ -10014,11 +10021,15 @@ input:focus:-ms-input-placeholder {
   .delivery__img {
     width: 65%;
     background-image: url("../img/delivery-bg-big.jpg");
+    background-position: right;
+  }
+  .delivery__img::before {
+    background: linear-gradient(90deg, #F9F9F9 33%, rgba(249, 249, 249, 0) 100%);
   }
   .delivery__img img {
-    min-width: 638px;
-    right: 0.4%;
-    top: 13.6%;
+    min-width: 621px;
+    right: 1.5%;
+    top: 14.2%;
   }
   /* end -------------------------------------------- delivery section ---------------------------------------------- */
   /* start ------------------------------------------ quality-windows section --------------------------------------- */
