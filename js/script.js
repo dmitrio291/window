@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end -------------------------------- Скрипты для секции .header ---------------------------------------------- */
 
     /* start -------------------------------- Скрипты для секции .main-header --------------------------------------- */
-    const mainHeaderToggles = document.querySelectorAll('.main-header-popup__toggle');
+    const mainHeaderToggles = document.querySelectorAll('.menu__button-toggle');
     const mainHeaderBurger = document.querySelector('.main-header-burger');
     const mainHeaderTop = document.querySelector('.main-header__top');
     const mainHeaderPopup = document.querySelector('.main-header-popup');
