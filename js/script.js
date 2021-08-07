@@ -675,33 +675,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     
         photosBtn.addEventListener('click', function() {
-            let showPerClick = 3;
-            let showPerClick2 = 4;
+            let showPerClick3 = 3;
+            let showPerClick4 = 4;
             
             const hidden = this.parentNode.querySelectorAll('li.hidden');
+
+            const showPhotos = (showPerClick) => {
+                for (let i = 0; i < showPerClick; i++) {
+                    if (!hidden[i]) return this.outerHTML = "";              
+                    hidden[i].classList.remove('hidden');
+                }
+
+                const items = document.querySelectorAll('li.hidden').length;
+                if (items === 0) return this.outerHTML = "";
+            };
     
             if (window.innerWidth < 1024) {
-                for (let i = 0; i < showPerClick; i++) {
-                    if (!hidden[i]) return this.outerHTML = "";
-              
-                    hidden[i].classList.remove('hidden');
-                }
+                showPhotos(showPerClick3);
             } else {
-                for (let i = 0; i < showPerClick2; i++) {
-                    if (hidden.length === 4) {
-                        for (let i = 0; i < hidden.length; i++) {
-                            hidden[i].classList.remove('hidden');
-                        }
-                        return this.outerHTML = "";
-                    }
-                    if (!hidden[i]) return this.outerHTML = "";
-              
-                    hidden[i].classList.remove('hidden');
-                }
+                showPhotos(showPerClick4);
             }        
         });
     }
-
     /* end -------------------------------- Скрипты для секции .photos-section ----------------------------------------- */
     /* end Страница Отделка балконов */
 
