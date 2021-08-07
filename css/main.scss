@@ -4233,8 +4233,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     background-position: center;
 
     &-section {
-        margin-top: 150px;
-        margin-bottom: 35px;
+        margin-top: 120px;
+        margin-bottom: 15px;
     }
 
     &::before {
@@ -6004,6 +6004,16 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* end -------------------------------------------- windows-house-section -------------------------------------------- */
+
+/* start ------------------------------------------ quality-windows-section ------------------------------------------ */
+.quality-windows--house {
+    .quality-windows {
+        &__title {
+            max-width: 287px;
+        }
+    }
+}
+/* end ------------------------------------------ quality-windows-section -------------------------------------------- */
 /* end Страница Окна в дом */
 
 /* start Страница Отделка балконов */
@@ -8846,7 +8856,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &-section {
             margin-top: 0;
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
 
         &__title {
@@ -9712,6 +9722,22 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- windows-house-section ---------------------------------------- */
+
+    /* start ------------------------------------------ quality-windows-section -------------------------------------- */
+    .quality-windows--house {
+        .quality {
+            &-windows {
+                &__title {
+                    max-width: 335px;
+                }
+            }
+
+            &-item {
+                top: 75px;
+            }
+        }
+    }
+    /* end ------------------------------------------ quality-windows-section ----------------------------------------- */
     /* end Страница Окна в дом */
 
     /* start Страница Отделка балконов */
@@ -11694,10 +11720,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         padding: 62px 38px 67px;
         background-image: url("../img/quality-windows-bg-big.jpg");
 
-        &-section {
-            margin-bottom: 60px;
-        }
-
         &__title {
             font-weight: 500;
         }
@@ -12584,6 +12606,22 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- windows-house-section ---------------------------------------- */
+
+    /* start ------------------------------------------ quality-windows-section -------------------------------------- */
+    .quality-windows--house {
+        .quality {
+            &-windows {
+                &__title {
+                    max-width: 480px;
+                }
+            }
+
+            &-item {
+                top: 63px;
+            }
+        }
+    }
+    /* end ------------------------------------------ quality-windows-section ----------------------------------------- */
     /* end Страница Окна в дом */
 
     /* start Страница Отделка балконов */

@@ -10,162 +10,120 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-    <!-- Хедер 1-ый вариант -->
-    <header class="header">
-        <div class="header__top">
-            <div class="header__flex container">
-                <a class="logo" href="#">
+    <!-- Хедер main-header -->
+    <header class="main-header">
+        <div class="main-header__top">
+            <div class="main-header__inner container">
+                <a class="main-header-logo" href="#">
                     <img src="img/logo.svg" alt="лого">
                 </a>
-                <ul class="calc reset">
-                    <li>
-                        <a class="calc__link" href="#">
-                            <img class="calc__icon" src="img/calculator.svg" alt="Калькулятор">
-                            <span class="calc__text">Калькулятор</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="calc__link" href="#">
-                            <img class="calc__icon" src="img/installment.svg" alt="Рассрочка 0%">
-                            <span class="calc__text">Рассрочка 0%</span>
-                        </a>
-                    </li>
-                </ul>
-                <button class="header__btn btn">Бесплатный замер</button>
-                <ul class="header-contacts reset">
-                    <li>
-                        <a class="header-contacts__flex" href="#">
-                            <img class="header-contacts__icon" src="img/location-icon.svg" alt="Адреса офисов">
-                            <p class="header-contacts__text">Адреса <span>офисов</span></p>
-                        </a>
-                    </li>
-                    <li class="header-contacts__flex">
-                        <img class="header-contacts__icon" src="img/time-icon.svg" alt="Работаем до 21:00">
-                        <p class="header-contacts__text">Работаем <span>до 21:00</span></p>
-                    </li>
-                </ul>
-                <div class="menu">
-                    <div class="phone">
-                        <a class="block" href="tel:79171222880">+7 917 122 28 80</a>
-                        <span class="orange">Вам перезвонить?</span>
+                <div class="main-header-desktop">
+                    <a class="main-header-desktop__phone" href="tel:79171222880">+7 917 122 28 80</a>
+                    <p class="main-header-desktop__schedule">( с 9:00 до 21:00)</p>
+                </div>
+                <div class="main-header-tablet">
+                    <div class="main-header-tablet__whatsapp-box">
+                        <a class="main-header-tablet__whatsapp" href="#">Заказать звонок</a>
+                        <a class="main-header-tablet__whatsapp-link" href="https://wa.me/79171222880"><img src="img/phone-icon.png" alt="Whatsapp"></a>
                     </div>
-                    <div class="burger">
-                        <div class="burger__box orange">
+                    <a class="main-header-calc" href="#">Калькулятор <span class="orange">пластиковых</span> окон</a>  
+                </div>              
+                <div class="main-header-mobile">
+                    <div class="main-header-contacts">
+                        <a class="main-header-contacts__phone" href="tel:79171222880">+7 917 122 28 80</a>
+                        <a class="main-header-contacts__whatsapp orange" href="https://wa.me/79171222880">Вам перезвонить?</a>
+                    </div>
+                    <a class="main-header-measuring orange" href="#">Бесплатный замер</a>
+                    <div class="main-header-burger">
+                        <div class="main-header-burger__line">
                             <span></span>
                         </div>
-                        <span class="burger__text orange">меню</span>
+                        <span class="main-header-burger__text orange">меню</span>
                     </div>
                 </div>
             </div>
+            <!-- Попап для хедера .main-header мобильное меню -->
+            <div class="main-header-popup">
+                <nav class="main-header-popup__inner">
+                    <ul class="main-header-popup__menu reset">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Пластиковые окна
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Остекление балконов
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Отделка балконов
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Окна в дом
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Рассрочка
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="main-header-popup__btn btn">Бесплатный замер</button> 
+                </nav>
+            </div>
+            <!-- Попап для хедера .main-header  мобильное меню -->
         </div>
-        <div class="header__bottom">
+        <a class="main-header-calc-btn" href="#">Калькулятор <span class="orange">пластиковых</span> окон</a>
+        <div class="main-header-menu">
             <div class="container">
-                <a href="#" class="header-calc">
-                    <img class="header-calc__img" src="img/calculator-small.svg" alt="Калькулятор пластиковых окон">
-                    <p class="header-calc__text">Калькулятор <span class="orange">пластиковых</span> окон</p>
-                </a>
-                <nav class="header-nav">
-                    <ul class="header-nav__list reset">
-                        <li><a href="#">Пластиковые окна</a></li>
-                        <li><a href="#">Остекление балконов</a></li>
-                        <li><a href="#">Отделка балконов</a></li>
-                        <li><a href="#">Окна в дом</a></li>
-                        <li><a href="#">Акции</a></li>
+                <nav class="main-header-nav">
+                    <ul class="main-header-nav__list reset">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Пластиковые окна</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Остекление балконов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Отделка балконов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Окна в дом</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Акции</a>
+                        </li>
+                        <li class="menu__item">
+                            <span class="arrow-down">Контакты</span>
+                            <ul class="menu__sub-menu reset">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Контакты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Рассрочка</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <!-- // Хедер 2-ой вариант -->
-
-    <!-- Хедер 2-ой вариант -->
-    <header class="header header--width">
-        <div class="header__top">
-            <div class="header__flex container">
-                <a class="logo" href="#">
-                    <img src="img/logo.svg" alt="лого">
-                </a>
-                <ul class="calc reset">
-                    <li>
-                        <a class="calc__link" href="#">                        
-                            <img class="calc__icon" src="img/calculator.svg" alt="Калькулятор">
-                            <span class="calc__text">Калькулятор</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="calc__link" href="#">
-                            <img class="calc__icon" src="img/installment.svg" alt="Рассрочка 0%">
-                            <span class="calc__text">Рассрочка 0%</span>
-                        </a>
-                    </li>
-                </ul>
-                <button class="header__btn btn">Бесплатный замер</button>
-                <ul class="header-contacts reset">
-                    <li>
-                        <a class="header-contacts__flex" href="#">
-                            <img class="header-contacts__icon" src="img/phone-icon.png" alt="Написать в WhatsApp">
-                            <p class="header-contacts__text">Написать <span class="green">в&nbsp;WhatsApp</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="header-contacts__flex" href="#">
-                            <img class="header-contacts__icon" src="img/location-icon.svg" alt="Адреса офисов">
-                            <p class="header-contacts__text">Адреса офисов</p>
-                        </a>
-                    </li>
-                    <li class="header-contacts__flex">
-                        <img class="header-contacts__icon" src="img/time-icon.svg" alt="Работаем до 21:00">
-                        <p class="header-contacts__text">Работаем до 21:00</p>
-                    </li>
-                </ul>
-                <div class="menu">
-                    <div class="phone">
-                        <a class="block" href="tel:79171222880">+7 917 122 28 80</a>
-                        <span class="orange">Вам перезвонить?</span>
-                    </div>
-                    <div class="burger">
-                        <div class="burger__box orange">
-                            <span></span>
-                        </div>
-                        <span class="burger__text orange">меню</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header__bottom">
-            <div class="container">
-                <a href="#" class="header-calc">
-                    <img class="header-calc__img" src="img/calculator-small.svg" alt="Калькулятор пластиковых окон">
-                    <p class="header-calc__text">Калькулятор <span class="orange">пластиковых</span> окон</p>
-                </a>
-                <nav class="header-nav">
-                    <ul class="header-nav__list reset">
-                        <li><a href="#">Пластиковые окна</a></li>
-                        <li><a href="#">Остекление балконов</a></li>
-                        <li><a href="#">Отделка балконов</a></li>
-                        <li><a href="#">Окна в дом</a></li>
-                        <li><a href="#">Акции</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- //  Хедер 2-ой вариант -->
-
-    <!-- 15 лет гарантии -->
-    <div class="warning container">
-        <img src="img/warning-icon.svg" alt="Внимание!">
-        <p class="warning__text">Даем 15 лет гарантии на окна ПВХ, все комплектующие и даже монтаж!</p>
-    </div>
-    <!-- // 15 лет гарантии -->
-
-    <!-- Рассрочка на 3 месяца -->
-    <div class="warning container">
-        <img src="img/warning-icon.svg" alt="Внимание!">
-        <p class="warning__text">Рассрочка <span class="warning__bold">на 3 месяца</span> без участия банков</p>
-    </div>
-    <!-- // Рассрочка на 3 месяца -->
+    <!-- // Хедер main-header -->
 
     <!-- Рассрочка на 3 месяца -->
     <div class="warning container">
@@ -308,38 +266,42 @@
     </section>
     <!-- // Скидка 7% -->
 
-    <!-- Футер -->
+    <!-- Футер основной -->
     <footer class="footer">
-        <div class="footer__menu">
-            <div class="container">
-                <nav class="footer-nav">
-                    <ul class="footer-nav__list reset">
-                        <li>
-                            <a href="#">
-                                <img class="footer-nav__img" src="img/footer-icon-1.svg" alt="Пластиковые окна">
-                                <span class="menu-image-title">Пластиковые окна</span>
-                            </a>
+        <div class="footer__nav">
+            <div class="footer__nav-wrap container">
+                <iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab858a3a7bc88b8909b7b36455561ed6da676ff538a38337979824fe619ef7ccc&amp;source=constructor" frameborder="0"></iframe> 
+                <nav class="footer-menu">
+                    <ul class="footer-menu__list reset">
+                        <li class="menu__item">
+                            <span>Остекление</span>
                         </li>
-                        <li>
-                            <a href="#">
-                                <img class="footer-nav__img" src="img/footer-icon-2.svg" alt="Остекление балконов">
-                                <span class="menu-image-title">Остекление балконов</span>
-                            </a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Пластиковые окна</a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <img class="footer-nav__img" src="img/footer-icon-3.svg" alt="Отделка балконов">
-                                <span class="menu-image-title">Отделка балконов</span>
-                            </a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Окна в дом</a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <img class="footer-nav__img" src="img/footer-icon-4.svg" alt="Окна в дом">
-                                <span class="menu-image-title">Окна в дом</span>
-                            </a>
+                        <li class="menu__item">
+                            <span href="#">Балконы и лоджии</span>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Остекление балконов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Отделка балконов</a>
+                        </li>
+                        <li class="menu__item">
+                            <span>Информация</span>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link orange" href="#">Калькулятор окон</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link orange" href="#">Калкулятор балконов</a>
                         </li>
                     </ul>
-                </nav>
+                </nav>                               
             </div>
         </div>
         <div class="footer__contacts">
@@ -362,7 +324,8 @@
                     </li>                    
                     <li>
                         <p class="footer-contacts__text">Официальный сайт компании “Завод окон ПВХ”</p>
-                        <a href="#" class="footer-contacts__text orange border">Правовая информация</a>
+                        <a href="#" class="footer-contacts__text hide-desktop orange border">Правовая информация</a>
+                        <p class="footer-contacts__text show-desktop">Сайт не является публичной офертой и носит информационный характер. <a class="orange border" href="#">Правовая информация</a></p>
                     </li>
                 </ul>
             </div>
@@ -392,49 +355,8 @@
             </div>
         </div>
     </footer>
-    <!-- // Футер -->
-
-    <!-- Попап для хедера мобильное меню -->
-    <div class="header-popup">
-        <div class="header-popup__content">
-            <div class="header-popup__close"></div>
-            <nav class="header-popup__nav">
-                <ul class="header-popup__list reset">
-                    <li><a href="#">Пластиковые окна</a></li>
-                    <li><a href="#">Остекление балконов</a></li>
-                    <li><a href="#">Отделка балконов</a></li>
-                    <li><a href="#">Окна в дом</a></li>
-                    <li>
-                        <a href="#">
-                            <img class="header-popup__icon" src="img/installment.svg" alt="Рассрочка 0%">
-                            <span class="header-popup__text">Рассрочка</span>
-                        </a>
-                    </li>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="header-popup__contacts reset">
-                <li>
-                    <a class="header-popup__flex" href="#">
-                        <img class="header-popup__icon-1" src="img/phone-icon-popup.png" alt="Написать в WhatsApp">
-                        <p class="header-popup__contacts-text">Написать <span class="green">в&nbsp;WhatsApp</span></p>
-                    </a>
-                </li>
-                <li>
-                <li class="header-popup__flex">
-                    <img class="header-popup__icon-2" src="img/time-icon.svg" alt="Работаем до 21:00">
-                    <p class="header-popup__contacts-text">Работаем до 21:00</p>
-                </li>
-            </ul>
-            <div class="form" action="#" method="post">
-                <button class="form__btn form__btn--orange btn" type="submit">Бесплатный замер</button>
-                <button class="form__btn btn" type="submit">Бесплатная консультация</button>
-            </div>
-        </div>
-    </div>
-    <!-- // Попап для хедера мобильное меню -->
-    
+    <!-- // Футер основной -->
+      
     <script src="libs/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
