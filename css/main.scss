@@ -870,6 +870,22 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         .menu {
             &__sub-menu {
+                display: none;
+                padding-left: 33px;
+
+                &.active {
+                    display: block;
+                }
+
+                li {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #48494B;
+                }
+
                 .menu {
                     &__item {
                         &:not(:last-child) {
@@ -938,24 +954,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             right: 5px;
             height: 3px;
             transform: translateY(-50%);
-        }
-    }
-
-    &__sub-menu {
-        display: none;
-        padding-left: 33px;
-
-        &.active {
-            display: block;
-        }
-
-        li {
-            margin-bottom: 20px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #48494B;
         }
     }
 }
@@ -4902,22 +4900,33 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &__nav {
         padding: 25px 10px;
+
+        &-wrap {
+            .menu {
+                &__item {
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                &__link {
+                    text-decoration: none;
+                    border-bottom: 1px solid#F26422;
+                }
+            }
+        }
     }
 
     &-menu {
-        .menu__item {
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
+        display: none;
 
-            &:first-child,
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5),
-            &:nth-child(6),
-            &:nth-child(7) {
-                display: none;
+        &__list {
+            &.second {
+                .menu__item {
+                    &:first-child {
+                        display: none;
+                    }
+                }
             }
         }
 
@@ -6296,6 +6305,316 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
+/* start -------------------------------------------- balcony-restoration-section -------------------------------- */
+.balcony-restoration {
+    &-section {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #ABABAB;
+    }
+
+    &__box {
+        max-width: 345px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title-second {
+        margin-bottom: 28px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__big-img {
+        margin-bottom: 23px;
+        position: relative;
+
+        .offer {
+            &-discount {
+                top: 10px;
+                left: 10px;
+            }
+            
+            &-item {
+                &.one {
+                    top: 88px;
+                    left: 65px;
+                }
+
+                &.two {
+                    top: 102px;
+                    right: 40px;
+                }
+
+                &.three {
+                    bottom: 32px;
+                    right: 111px;
+                }
+            }
+        }
+    }
+
+    &__titles {
+        margin-bottom: 28px;
+        text-align: center;
+
+        .balcony-restoration {
+            &__title-second {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        color: #ABABAB;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 12px;
+        margin-bottom: 29px;
+    }
+
+    &__item-img {
+        position: relative;
+        margin-bottom: 11px;
+
+        .offer {
+            &-text-item {
+                top: 10px;
+                left: 0;
+            }
+
+            &-item {
+                bottom: 19px;
+                left: 0;
+            }
+        }
+    }
+
+    &__small-img {
+        width: 100%;
+
+        &.one {
+            width: 145px;
+            height: 168px;
+        }
+
+        &.two {
+            width: 165px;
+            height: 168px;
+        }
+
+        &.three {
+            width: 151px;
+            height: 168px;
+        }
+
+        &.four {
+            width: 165px;
+            height: 168px;
+        }
+    }
+
+    &__text {
+        &-top {
+            margin-bottom: 3px;
+            font-size: 14px;
+            font-weight: 500;
+
+            &.nowrap {
+                white-space: nowrap;
+            }
+        }
+
+        &-bottom {
+            font-size: 14px;
+            color: #ABABAB;
+        }
+    }
+
+    &__warning-title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    &__content {
+        display: grid;
+        row-gap: 25px;
+        column-gap: 38px;
+    }
+
+    &__quality {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+
+        &-item {
+            display: inline-block;
+            transform: skew(-21deg);
+            width: 10px;
+            height: 32px;
+            margin-top: 4px;
+
+            &.black {
+                background-color: #48494B;
+            }
+
+            &.red {
+                background-color: #DE0A12;
+            }
+
+            &.yellow {
+                background-color: #F3BC00;
+            }
+        }
+
+        &-title {     
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            
+            .block {
+                display: block;
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        min-width: 345px;
+    }
+}
+
+.offer {
+    &-discount {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+        height: 65px;
+        border: 1.5px solid #F26422;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #F26422;
+
+        &__logo {
+            margin-bottom: 6px;
+            margin-top: 4px;
+            max-width: 42px;
+        }
+
+        &__text {
+            position: relative;
+            font-size: 10px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -2px;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background-color: #F26422;
+                border-radius: 20px;
+            }
+        }
+
+        &__percent {
+            font-size: 19px;
+            font-weight: 700;
+        }
+    }
+
+    &-item {
+        position: absolute;
+
+        &__text {
+            &-bottom {
+                display: inline-block;
+                padding: 2px 4px;
+                background-color: #ABABAB;
+                color: #ffffff;
+                font-size: 10px;
+                line-height: 10px;
+                text-align: center;
+            }
+        }
+
+        &__text,
+        &__old-price {
+            display: inline-block;
+            padding: 1.5px 4px;
+            font-size: 12px;
+            line-height: 14px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
+        &__price {
+            padding: 2px 4px;
+            background-color: #F26422;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: center;
+
+            &::before {
+                content: 'от';
+                margin-right: 5px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            &::after {
+                content: '₽';
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+
+        &__old-price {
+            span {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 101%;
+                    height: 1px;
+                    background-color: #F26422;
+                }
+            }
+        }
+    }
+
+    &-text-item {
+        position: absolute;
+        padding: 5px 5px;
+        display: inline-block;
+        background-color: #F26422;
+        color: #ffffff;
+        font-size: 13px;
+        line-height: 12px;
+        font-weight: 500;
+    }
+}
+/* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
 
 /* start -------------------------------------------- windows-quality-section ------------------------------------ */
 .windows-quality {
@@ -8943,79 +9262,46 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             padding-right: 0;
 
             &-wrap {
-                display: flex;
-                flex-direction: row-reverse;
-                column-gap: 32px;
+                display: grid;
+                justify-content: space-between;
+
+                .menu {
+                    &__title {
+                        display: block;
+                        margin-bottom: 10px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #ABABAB;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
 
         &__map {
+            grid-row: 1 / 3;
+            grid-column: 3 / 4;
             width: 224px;
             height: 127px;
             margin-bottom: 0;
         }
 
         &-menu {
+            display: block;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+
             &__list {
                 display: flex;
-                flex-wrap: wrap;
-            }
+                column-gap: 80px;
 
-            .menu__item {
-                width: 49%;
+                &.second {
+                    grid-row: 2 / 3;
+                    grid-column: 1 / 2;
 
-                &:first-child,
-                &:nth-child(2),
-                &:nth-child(3),
-                &:nth-child(4),
-                &:nth-child(5),
-                &:nth-child(6) {
-                    display: block;
-                }
-
-                &:first-child {
-                    order: 1;
-                }
-
-                &:nth-child(2) {
-                    order: 3;
-                }
-
-                &:nth-child(3) {
-                    order: 5;
-                }
-
-                &:nth-child(4) {
-                    order: 2;
-                }
-
-                &:nth-child(5) {
-                    order: 4;
-                }
-                    
-                &:nth-child(6) {
-                    order: 6;
-                }
-
-                &:nth-child(8),
-                &:last-child {
-                    margin-top: 23px;
-                }
-
-                &:nth-child(8) {
-                    order: 7;
-                    margin-bottom: 0;
-                }
-
-                &:last-child {
-                    order: 8;
-                }
-
-                span {
-                    font-weight: 500;
-                    font-size: 18px;
-                    color: #ABABAB;
-                    text-transform: uppercase;
+                    .menu__item {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
@@ -9919,6 +10205,206 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- balcony-restoration-section -------------------------------- */
+    .balcony-restoration {
+        &-section {
+            margin-bottom: 76px;
+        }
+
+        &__title {
+            padding-bottom: 42px;
+            margin-bottom: 39px;
+        }
+
+        &__box {
+            max-width: 518px;
+        }
+
+        &__title-second {
+            margin-bottom: 38px;
+            font-size: 21px;
+        }
+
+        &__big-img {
+            margin-bottom: 36px;
+
+            .offer {
+                &-discount {
+                    top: 12px;
+                    left: 11px;
+                }
+
+                &-item {
+                    &.one {
+                        top: 125px;
+                        left: 135px;
+                    }
+
+                    &.two {
+                        top: 171px;
+                        right: 60px;
+                    }
+
+                    &.three {
+                        bottom: 63px;
+                        right: 129px;
+                    }
+
+                    &__content {
+                        margin-bottom: 3px;
+                    }
+
+                    &__text {
+                        padding: 4px 7px;
+                        font-size: 14px;
+
+                        &-bottom {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    } 
+
+                    &__price {
+                        padding: 5px 15px;
+                        font-size: 19px;
+                        line-height: 19px;
+
+                        &::before,
+                        &::after {
+                            font-size: 16px;
+                        }
+
+                        &::before {
+                            margin-right: 8px;
+                        }
+
+                        &::after {
+                            margin-left: 9px;
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__list {
+            max-width: 449px;
+            margin-bottom: 45px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__titles {
+            margin-bottom: 32px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__items {
+            margin-bottom: 25px;
+        }
+
+        &__item-img {
+            margin-bottom: 6px;
+        }
+
+        &__small-img {
+            &.one {
+                width: 167px;
+                height: 193px;
+            }
+
+            &.two {
+                width: 190px;
+                height: 193px;
+            }
+
+            &.three {
+                width: 173px;
+                height: 193px;
+            }
+
+            &.four {
+                width: 190px;
+                height: 193px;
+            }
+        }
+
+        &__text {
+            &-top,
+            &-bottom {
+                font-size: 16px;
+            }
+
+            &-top {
+                margin-bottom: 6px;
+            }
+        }
+
+        &__content {
+            column-gap: 0;
+            row-gap: 38px;
+        }
+
+        &__warning-title {
+            grid-column: span 2;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &__quality {
+            align-items: flex-end;
+            min-width: 170px;
+            margin-left: 27px;
+            grid-row: span 1;
+            grid-column: span 1;
+            column-gap: 12px;
+
+            &-item {
+                width: 9px;
+                height: 28px;
+                margin-top: 0;
+            }
+        }
+
+        &__btn {
+            grid-row: span 1;
+            grid-column: span 1;
+            min-width: 287px;
+            max-width: 287px;
+            margin-right: 13px;
+        }
+    }
+
+    .offer {
+        &-discount {
+            width: 108px;
+            height: 108px;
+
+            &__logo {
+                max-width: none;
+                min-width: 66px;
+            }
+    
+            &__text {
+                font-size: 16px;
+
+                &::before {
+                    width: 109%;
+                    left: -3px;
+                }
+            }
+    
+            &__percent {
+                font-size: 31px;
+            }
+        }    
+
+    }
+    /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
 
     /* start -------------------------------------------- making-windows-section ------------------------------------- */
     .making-windows--balconies {
@@ -12124,9 +12610,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start -------------------------------------------- footer ------------------------------------------------------ */
     .footer {
         &__nav {
-            &-wrap {
-                justify-content: flex-end;
-            }
+            padding-top: 30px;
         }
 
         &__map {
@@ -12134,30 +12618,21 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &-menu {
-            width: 100%;
-
             &__list {
-                column-count: 3;
-                display: block;
-            }
-
-            .menu__item {
-                width: 100%;
-
-                &:nth-child(4),
-                &:nth-child(5),
-                &:nth-child(6) {
-                    margin-left: -23px;
-                }
-
-                &:nth-child(7) {
+                &.second {
                     display: block;
-                }
+                    grid-row: 1 / 2;
+                    grid-column: 2 / 3;
 
-                &:nth-child(8),
-                &:last-child {
-                    margin-top: 0;
-                    margin-bottom: 10px;
+                    .menu {
+                        &__item {
+                            margin-bottom: 10px;
+
+                            &:first-child {
+                                display: block;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -12730,6 +13205,83 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- balcony-restoration-section -------------------------------- */
+    .balcony-restoration {
+        &__box,
+        &__list {
+            max-width: none;
+        }
+
+        &__box {
+            display: grid;
+            grid-template: 
+                'balcony-title balcony-items'
+                'balcony-img balcony-items'
+                'balcony-content balcony-items';
+            align-items: flex-start;
+        }
+
+        &__title-second {
+            margin-bottom: 0;
+            grid-area: balcony-title;
+
+            &.align-left {
+                margin-bottom: 23px;
+                text-align: left;
+            }
+        }
+
+        &__big-img {
+            margin-bottom: 0;
+            grid-area: balcony-img;
+        }
+
+        &__list {
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            grid-area: balcony-items;
+            
+            li {
+                &:last-child {
+                    .balcony-restoration__items {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &__titles {
+            margin-bottom: 15px;
+        }
+
+        &__title-second,
+        &__subtitle {
+            text-align: right;
+        }
+
+        &__content {
+            grid-area: balcony-content;
+            align-items: flex-end;
+            row-gap: 0;
+            margin-top: auto;
+        }
+
+        &__warning-title {
+            text-align: left;
+            margin-bottom: 34px;
+        }
+
+        &__quality {
+            margin-left: 0;
+        }
+
+        &__btn {
+            margin-right: 48px;
+        }
+    }
+    /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
 
     /* start -------------------------------------------- making-windows-section ------------------------------------- */
     .making-windows--balconies {

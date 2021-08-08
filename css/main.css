@@ -813,6 +813,24 @@ input:focus:-ms-input-placeholder {
   color: #48494B;
 }
 
+.main-header-popup__menu .menu__sub-menu {
+  display: none;
+  padding-left: 33px;
+}
+
+.main-header-popup__menu .menu__sub-menu.active {
+  display: block;
+}
+
+.main-header-popup__menu .menu__sub-menu li {
+  margin-bottom: 20px;
+}
+
+.main-header-popup__menu .menu__sub-menu a {
+  text-decoration: none;
+  color: #48494B;
+}
+
 .main-header-popup__menu .menu__sub-menu .menu__item:not(:last-child) {
   border: none;
 }
@@ -870,24 +888,6 @@ input:focus:-ms-input-placeholder {
   right: 5px;
   height: 3px;
   transform: translateY(-50%);
-}
-
-.menu__sub-menu {
-  display: none;
-  padding-left: 33px;
-}
-
-.menu__sub-menu.active {
-  display: block;
-}
-
-.menu__sub-menu li {
-  margin-bottom: 20px;
-}
-
-.menu__sub-menu a {
-  text-decoration: none;
-  color: #48494B;
 }
 
 /* end -------------------------------------------- main-header-popup -------------------------------------------------- */
@@ -4670,11 +4670,20 @@ input:focus:-ms-input-placeholder {
   padding: 25px 10px;
 }
 
-.footer-menu .menu__item:not(:last-child) {
+.footer__nav-wrap .menu__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.footer-menu .menu__item:first-child, .footer-menu .menu__item:nth-child(2), .footer-menu .menu__item:nth-child(3), .footer-menu .menu__item:nth-child(4), .footer-menu .menu__item:nth-child(5), .footer-menu .menu__item:nth-child(6), .footer-menu .menu__item:nth-child(7) {
+.footer__nav-wrap .menu__link {
+  text-decoration: none;
+  border-bottom: 1px solid #F26422;
+}
+
+.footer-menu {
+  display: none;
+}
+
+.footer-menu__list.second .menu__item:first-child {
   display: none;
 }
 
@@ -5969,6 +5978,297 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+/* start -------------------------------------------- balcony-restoration-section -------------------------------- */
+.balcony-restoration-section {
+  margin-bottom: 50px;
+}
+
+.balcony-restoration__title {
+  margin-bottom: 25px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #ABABAB;
+}
+
+.balcony-restoration__box {
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.balcony-restoration__title-second {
+  margin-bottom: 28px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.balcony-restoration__big-img {
+  margin-bottom: 23px;
+  position: relative;
+}
+
+.balcony-restoration__big-img .offer-discount {
+  top: 10px;
+  left: 10px;
+}
+
+.balcony-restoration__big-img .offer-item.one {
+  top: 88px;
+  left: 65px;
+}
+
+.balcony-restoration__big-img .offer-item.two {
+  top: 102px;
+  right: 40px;
+}
+
+.balcony-restoration__big-img .offer-item.three {
+  bottom: 32px;
+  right: 111px;
+}
+
+.balcony-restoration__titles {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.balcony-restoration__titles .balcony-restoration__title-second {
+  margin-bottom: 5px;
+}
+
+.balcony-restoration__subtitle {
+  font-size: 14px;
+  color: #ABABAB;
+}
+
+.balcony-restoration__items {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 12px;
+  margin-bottom: 29px;
+}
+
+.balcony-restoration__item-img {
+  position: relative;
+  margin-bottom: 11px;
+}
+
+.balcony-restoration__item-img .offer-text-item {
+  top: 10px;
+  left: 0;
+}
+
+.balcony-restoration__item-img .offer-item {
+  bottom: 19px;
+  left: 0;
+}
+
+.balcony-restoration__small-img {
+  width: 100%;
+}
+
+.balcony-restoration__small-img.one {
+  width: 145px;
+  height: 168px;
+}
+
+.balcony-restoration__small-img.two {
+  width: 165px;
+  height: 168px;
+}
+
+.balcony-restoration__small-img.three {
+  width: 151px;
+  height: 168px;
+}
+
+.balcony-restoration__small-img.four {
+  width: 165px;
+  height: 168px;
+}
+
+.balcony-restoration__text-top {
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.balcony-restoration__text-top.nowrap {
+  white-space: nowrap;
+}
+
+.balcony-restoration__text-bottom {
+  font-size: 14px;
+  color: #ABABAB;
+}
+
+.balcony-restoration__warning-title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.balcony-restoration__content {
+  display: grid;
+  row-gap: 25px;
+  column-gap: 38px;
+}
+
+.balcony-restoration__quality {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.balcony-restoration__quality-item {
+  display: inline-block;
+  transform: skew(-21deg);
+  width: 10px;
+  height: 32px;
+  margin-top: 4px;
+}
+
+.balcony-restoration__quality-item.black {
+  background-color: #48494B;
+}
+
+.balcony-restoration__quality-item.red {
+  background-color: #DE0A12;
+}
+
+.balcony-restoration__quality-item.yellow {
+  background-color: #F3BC00;
+}
+
+.balcony-restoration__quality-title {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.balcony-restoration__quality-title .block {
+  display: block;
+}
+
+.balcony-restoration__btn {
+  display: block;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  min-width: 345px;
+}
+
+.offer-discount {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border: 1.5px solid #F26422;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #F26422;
+}
+
+.offer-discount__logo {
+  margin-bottom: 6px;
+  margin-top: 4px;
+  max-width: 42px;
+}
+
+.offer-discount__text {
+  position: relative;
+  font-size: 10px;
+}
+
+.offer-discount__text::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #F26422;
+  border-radius: 20px;
+}
+
+.offer-discount__percent {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.offer-item {
+  position: absolute;
+}
+
+.offer-item__text-bottom {
+  display: inline-block;
+  padding: 2px 4px;
+  background-color: #ABABAB;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.offer-item__text, .offer-item__old-price {
+  display: inline-block;
+  padding: 1.5px 4px;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.offer-item__price {
+  padding: 2px 4px;
+  background-color: #F26422;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.offer-item__price::before {
+  content: 'от';
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.offer-item__price::after {
+  content: '₽';
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.offer-item__old-price span {
+  position: relative;
+}
+
+.offer-item__old-price span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 101%;
+  height: 1px;
+  background-color: #F26422;
+}
+
+.offer-text-item {
+  position: absolute;
+  padding: 5px 5px;
+  display: inline-block;
+  background-color: #F26422;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 12px;
+  font-weight: 500;
+}
+
+/* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
 /* start -------------------------------------------- windows-quality-section ------------------------------------ */
 .windows-quality {
   position: relative;
@@ -8013,58 +8313,39 @@ input:focus:-ms-input-placeholder {
     padding-right: 0;
   }
   .footer__nav-wrap {
-    display: flex;
-    flex-direction: row-reverse;
-    column-gap: 32px;
+    display: grid;
+    justify-content: space-between;
   }
-  .footer__map {
-    width: 224px;
-    height: 127px;
-    margin-bottom: 0;
-  }
-  .footer-menu__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer-menu .menu__item {
-    width: 49%;
-  }
-  .footer-menu .menu__item:first-child, .footer-menu .menu__item:nth-child(2), .footer-menu .menu__item:nth-child(3), .footer-menu .menu__item:nth-child(4), .footer-menu .menu__item:nth-child(5), .footer-menu .menu__item:nth-child(6) {
+  .footer__nav-wrap .menu__title {
     display: block;
-  }
-  .footer-menu .menu__item:first-child {
-    order: 1;
-  }
-  .footer-menu .menu__item:nth-child(2) {
-    order: 3;
-  }
-  .footer-menu .menu__item:nth-child(3) {
-    order: 5;
-  }
-  .footer-menu .menu__item:nth-child(4) {
-    order: 2;
-  }
-  .footer-menu .menu__item:nth-child(5) {
-    order: 4;
-  }
-  .footer-menu .menu__item:nth-child(6) {
-    order: 6;
-  }
-  .footer-menu .menu__item:nth-child(8), .footer-menu .menu__item:last-child {
-    margin-top: 23px;
-  }
-  .footer-menu .menu__item:nth-child(8) {
-    order: 7;
-    margin-bottom: 0;
-  }
-  .footer-menu .menu__item:last-child {
-    order: 8;
-  }
-  .footer-menu .menu__item span {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 18px;
     color: #ABABAB;
     text-transform: uppercase;
+  }
+  .footer__map {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    width: 224px;
+    height: 127px;
+    margin-bottom: 0;
+  }
+  .footer-menu {
+    display: block;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .footer-menu__list {
+    display: flex;
+    column-gap: 80px;
+  }
+  .footer-menu__list.second {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  .footer-menu__list.second .menu__item {
+    margin-bottom: 0;
   }
   .footer__menu {
     padding-left: 0;
@@ -8738,6 +9019,154 @@ input:focus:-ms-input-placeholder {
     padding-right: 35px;
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+  /* start -------------------------------------------- balcony-restoration-section -------------------------------- */
+  .balcony-restoration-section {
+    margin-bottom: 76px;
+  }
+  .balcony-restoration__title {
+    padding-bottom: 42px;
+    margin-bottom: 39px;
+  }
+  .balcony-restoration__box {
+    max-width: 518px;
+  }
+  .balcony-restoration__title-second {
+    margin-bottom: 38px;
+    font-size: 21px;
+  }
+  .balcony-restoration__big-img {
+    margin-bottom: 36px;
+  }
+  .balcony-restoration__big-img .offer-discount {
+    top: 12px;
+    left: 11px;
+  }
+  .balcony-restoration__big-img .offer-item.one {
+    top: 125px;
+    left: 135px;
+  }
+  .balcony-restoration__big-img .offer-item.two {
+    top: 171px;
+    right: 60px;
+  }
+  .balcony-restoration__big-img .offer-item.three {
+    bottom: 63px;
+    right: 129px;
+  }
+  .balcony-restoration__big-img .offer-item__content {
+    margin-bottom: 3px;
+  }
+  .balcony-restoration__big-img .offer-item__text {
+    padding: 4px 7px;
+    font-size: 14px;
+  }
+  .balcony-restoration__big-img .offer-item__text-bottom {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .balcony-restoration__big-img .offer-item__price {
+    padding: 5px 15px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .balcony-restoration__big-img .offer-item__price::before, .balcony-restoration__big-img .offer-item__price::after {
+    font-size: 16px;
+  }
+  .balcony-restoration__big-img .offer-item__price::before {
+    margin-right: 8px;
+  }
+  .balcony-restoration__big-img .offer-item__price::after {
+    margin-left: 9px;
+    font-size: 19px;
+  }
+  .balcony-restoration__list {
+    max-width: 449px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .balcony-restoration__titles {
+    margin-bottom: 32px;
+  }
+  .balcony-restoration__subtitle {
+    font-size: 16px;
+  }
+  .balcony-restoration__items {
+    margin-bottom: 25px;
+  }
+  .balcony-restoration__item-img {
+    margin-bottom: 6px;
+  }
+  .balcony-restoration__small-img.one {
+    width: 167px;
+    height: 193px;
+  }
+  .balcony-restoration__small-img.two {
+    width: 190px;
+    height: 193px;
+  }
+  .balcony-restoration__small-img.three {
+    width: 173px;
+    height: 193px;
+  }
+  .balcony-restoration__small-img.four {
+    width: 190px;
+    height: 193px;
+  }
+  .balcony-restoration__text-top, .balcony-restoration__text-bottom {
+    font-size: 16px;
+  }
+  .balcony-restoration__text-top {
+    margin-bottom: 6px;
+  }
+  .balcony-restoration__content {
+    column-gap: 0;
+    row-gap: 38px;
+  }
+  .balcony-restoration__warning-title {
+    grid-column: span 2;
+    font-size: 32px;
+    text-align: center;
+  }
+  .balcony-restoration__quality {
+    align-items: flex-end;
+    min-width: 170px;
+    margin-left: 27px;
+    grid-row: span 1;
+    grid-column: span 1;
+    column-gap: 12px;
+  }
+  .balcony-restoration__quality-item {
+    width: 9px;
+    height: 28px;
+    margin-top: 0;
+  }
+  .balcony-restoration__btn {
+    grid-row: span 1;
+    grid-column: span 1;
+    min-width: 287px;
+    max-width: 287px;
+    margin-right: 13px;
+  }
+  .offer-discount {
+    width: 108px;
+    height: 108px;
+  }
+  .offer-discount__logo {
+    max-width: none;
+    min-width: 66px;
+  }
+  .offer-discount__text {
+    font-size: 16px;
+  }
+  .offer-discount__text::before {
+    width: 109%;
+    left: -3px;
+  }
+  .offer-discount__percent {
+    font-size: 31px;
+  }
+  /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
   /* start -------------------------------------------- making-windows-section ------------------------------------- */
   .making-windows--balconies {
     display: block;
@@ -10340,31 +10769,22 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- profitable windows section ------------------------------------ */
   /* start -------------------------------------------- footer ------------------------------------------------------ */
-  .footer__nav-wrap {
-    justify-content: flex-end;
+  .footer__nav {
+    padding-top: 30px;
   }
   .footer__map {
     height: 108px;
   }
-  .footer-menu {
-    width: 100%;
-  }
-  .footer-menu__list {
-    column-count: 3;
+  .footer-menu__list.second {
     display: block;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
   }
-  .footer-menu .menu__item {
-    width: 100%;
-  }
-  .footer-menu .menu__item:nth-child(4), .footer-menu .menu__item:nth-child(5), .footer-menu .menu__item:nth-child(6) {
-    margin-left: -23px;
-  }
-  .footer-menu .menu__item:nth-child(7) {
-    display: block;
-  }
-  .footer-menu .menu__item:nth-child(8), .footer-menu .menu__item:last-child {
-    margin-top: 0;
+  .footer-menu__list.second .menu__item {
     margin-bottom: 10px;
+  }
+  .footer-menu__list.second .menu__item:first-child {
+    display: block;
   }
   .footer-contacts li:last-child {
     width: 300px;
@@ -10766,6 +11186,59 @@ input:focus:-ms-input-placeholder {
     background-image: url("../img/banner-glazing-balconies-big.jpg");
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
+  /* start -------------------------------------------- balcony-restoration-section -------------------------------- */
+  .balcony-restoration__box, .balcony-restoration__list {
+    max-width: none;
+  }
+  .balcony-restoration__box {
+    display: grid;
+    grid-template: 'balcony-title balcony-items' 'balcony-img balcony-items' 'balcony-content balcony-items';
+    align-items: flex-start;
+  }
+  .balcony-restoration__title-second {
+    margin-bottom: 0;
+    grid-area: balcony-title;
+  }
+  .balcony-restoration__title-second.align-left {
+    margin-bottom: 23px;
+    text-align: left;
+  }
+  .balcony-restoration__big-img {
+    margin-bottom: 0;
+    grid-area: balcony-img;
+  }
+  .balcony-restoration__list {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    grid-area: balcony-items;
+  }
+  .balcony-restoration__list li:last-child .balcony-restoration__items {
+    margin-bottom: 0;
+  }
+  .balcony-restoration__titles {
+    margin-bottom: 15px;
+  }
+  .balcony-restoration__title-second, .balcony-restoration__subtitle {
+    text-align: right;
+  }
+  .balcony-restoration__content {
+    grid-area: balcony-content;
+    align-items: flex-end;
+    row-gap: 0;
+    margin-top: auto;
+  }
+  .balcony-restoration__warning-title {
+    text-align: left;
+    margin-bottom: 34px;
+  }
+  .balcony-restoration__quality {
+    margin-left: 0;
+  }
+  .balcony-restoration__btn {
+    margin-right: 48px;
+  }
+  /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
   /* start -------------------------------------------- making-windows-section ------------------------------------- */
   .making-windows--balconies {
     display: flex;
