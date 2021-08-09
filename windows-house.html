@@ -2383,38 +2383,31 @@
     </section>
     <!-- // Частые вопросы про остекление дома -->
 
-    <!-- Бесплатная консультация -->
-    <section class="free-consultation-section">
-        <div class="free-consultation container">
-            <h2 class="free-consultation__title">Бесплатная консультация</h2>
-
-            <p class="free-consultation__text">Узнайте цену на окна! Прямо сейчас!</p>
-
-            <p class="free-consultation__phone">
-                <a class="free-consultation__phone-link" href="tel:+79171222880">+7 917 122 28 80</a>
-            </p>
-
-            <a class="free-consultation__whatsapp-link" href="#">Напишите нам в WhatsApp</a>
-
-            <p class="free-consultation__work-schedule">Работаем пн- пт с 9:00 до 21:00</p>
-
-            <div class="free-consultation__about">
-                <p class="free-consultation__about-text">При обращении <span>до 14:00</span> можем приехать на замер сегодня!</p>
-
-                <div class="free-consultation__about-box">
-                    <div class="free-consultation__about-content">
-                        <p class="free-consultation__about-name">Власов Алексей</p>
-                        <p class="free-consultation__about-position">Руководитель отдела заказов</p>
-                    </div>
-
-                    <img src="img/consultation.jpg" alt="Руководитель отдела заказов">
-                </div>
+    <!-- Бесплатная консультация 2-ой вариант -->
+    <section class="consultation-section">
+        <div class="consultation container">
+            <div class="consultation__img">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="img/consultation-bg-big.jpg">
+                    <source media="(min-width: 768px)" srcset="img/consultation-bg-middle.jpg">
+                    <img src="img/consultation-bg-small.jpg" alt="Бесплатная консультация">
+                </picture>
             </div>
-
-            <button class="free-consultation__btn btn btn--white">Заказать звонок</button>
+            <div class="consultation__content">
+                <h2 class="consultation__title title"><span class="orange">Бесплатная</span> консультация</h2>
+                <p class="consultation__text nowrap">Узнайте цену на окна! Прямо сейчас!</p>
+                <p class="consultation__phone nowrap">
+                    <a href="tel:79171222880">+7 917 122 28 80</a>
+                </p>
+                <p class="consultation__whatsapp">
+                    <a href="https://wa.me/79171222880">Напишите нам в WhаtsApp</a>
+                </p>
+                <p class="consultation__text mgr">При обращении до <span class="bold">14:00</span> можем приехать на замер сегодня!</p>
+                <button class="consultation__btn btn">Заказать звонок</button>
+            </div>
         </div>
     </section>
-    <!-- // Бесплатная консультация -->
+    <!-- // Бесплатная консультация 2-ой вариант -->
 
     <!-- Футер основной -->
     <footer class="footer">
@@ -2424,34 +2417,40 @@
                 <nav class="footer-menu">
                     <ul class="footer-menu__list reset">
                         <li class="menu__item">
-                            <span>Остекление</span>
-                        </li>
+                            <span class="menu__title">Остекление</span>
+                            <ul class="menu__sub-menu reset">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Пластиковые окна</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Окна в дом</a>
+                                </li>
+                            </ul>
+                        </li>                        
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Пластиковые окна</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Окна в дом</a>
-                        </li>
-                        <li class="menu__item">
-                            <span href="#">Балконы и лоджии</span>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Остекление балконов</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Отделка балконов</a>
-                        </li>
-                        <li class="menu__item">
-                            <span>Информация</span>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link orange" href="#">Калькулятор окон</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link orange" href="#">Калкулятор балконов</a>
-                        </li>
+                            <span class="menu__title">Балконы и лоджии</span>
+                            <ul class="menu__sub-menu reset">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Остекление балконов</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Отделка балконов</a>
+                                </li>
+                            </ul>
+                        </li>                                               
                     </ul>
-                </nav>                               
+                </nav>
+                <ul class="footer-menu__list second reset">
+                    <li class="menu__item">
+                        <span class="menu__title">Информация</span>
+                    </li> 
+                    <li class="menu__item">
+                        <a class="menu__link orange" href="#">Калькулятор окон</a>
+                    </li> 
+                    <li class="menu__item">
+                        <a class="menu__link orange" href="#">Калкулятор балконов</a>
+                    </li> 
+                </ul>                               
             </div>
         </div>
         <div class="footer__contacts">

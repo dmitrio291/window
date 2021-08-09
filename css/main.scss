@@ -4484,6 +4484,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     background-size: cover;
     border-radius: 3px;
 
+    &-section {
+        margin-bottom: 35px;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -4893,6 +4897,108 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* end -------------------------------------------- free consultation section ------------------------------------------- */
+
+/* start -------------------------------------------- consultation-section ---------------------------------------------- */
+.consultation {
+    background-color: #EFF9FD;
+    border-radius: 3px;
+
+    &-section {
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        font-weight: 700;
+        text-align: left;
+    }
+    
+    &__img {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 130px;
+            background: linear-gradient(0, #F0FAFF 0%, rgba(240, 250, 255, 0) 80%);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+    }
+
+    &__content {
+        padding: 8px 15px 30px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        line-height: 21px;
+    }
+    
+    &__phone a,
+    &__whatsapp a {
+        text-decoration: none;
+        color: #48494B;
+    }
+
+    &__phone {
+        margin-bottom: 10px;
+
+        a {
+            font-size: 30px;
+            font-weight: 700;            
+        }
+    }
+
+    &__whatsapp {
+        margin-bottom: 20px;
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 4px 15px 4px 38px;
+            background-color: #E1EFD0;
+            border-radius: 5px;
+            font-family: 'HelveticaNeueCyr', sans-serif;
+            font-size: 12px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -5px;
+                left: -3px;
+                width: 30px;
+                height: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-image: url('../img/consultation-phone-icon.png');
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        min-width: 315px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+    }
+}
+/* end -------------------------------------------- consultation-section ------------------------------------------------ */
 
 /* start -------------------------------------------- footer ----------------------------------------------------------- */
 .footer {
@@ -8470,6 +8576,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         display: flex;
         background-image: none;
 
+        &-section {
+            margin-bottom: 50px;
+        }
+
         &::before {
             display: none;
         }
@@ -8661,6 +8771,97 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
       }
     /* end -------------------------------------------- free consultation section ------------------------------------ */
+
+    /* start -------------------------------------------- consultation-section --------------------------------------- */
+    .consultation {
+        display: flex;
+        flex-direction: row-reverse;
+
+        &-section {
+            margin-bottom: 50px;
+        }
+
+        &__img {
+            width: 100%;
+            position: relative;
+
+            &::before {
+                z-index: 1;
+                height: 100%;
+                width: 264px;
+                background: linear-gradient(90deg, #F0FAFF 0%, rgba(240, 250, 255, 0) 95%);
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 3px;
+            }
+        }
+
+        &__content {
+            width: 35%;
+            padding: 40px 0 40px 30px;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+
+            .orange {
+                display: block;
+            }
+        }
+
+        &__text {
+            margin-bottom: 28px;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+
+            &.nowrap {
+                white-space: nowrap;
+            }
+
+            &.mgr {
+                margin-right: -60px;
+                margin-bottom: 31px;
+            }
+
+            .bold {
+                font-weight: 500;
+            }
+        }
+
+        &__phone {
+            margin-bottom: 8px;
+
+            &.nowrap {
+                white-space: nowrap;
+                position: relative;
+                z-index: 1;
+            }
+
+            a {
+                font-size: 32px;
+            }
+        }
+        
+        &__whatsapp {
+            margin-bottom: 17px;
+        }
+
+        &__btn {
+            position: relative;
+            z-index: 1;
+            min-width: 306px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+        }
+    }
+    /* end -------------------------------------------- consultation-section ----------------------------------------- */
 
     /* start -------------------------------------------- accordion section ------------------------------------------ */
     .accordion {
@@ -12021,6 +12222,32 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- free consultation section ------------------------------------- */
+
+    /* start -------------------------------------------- consultation-section --------------------------------------- */
+    .consultation {
+        &__title {
+            margin-bottom: 16px;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+
+            .orange {
+                display: inline;
+            }
+        }
+
+        &__content {
+            padding: 57px 0 62px 39px;
+            width: 43%;
+        }
+
+        &__text {
+            &.mgr {
+                margin-right: 0;
+            }
+        }
+    }
+    /* end -------------------------------------------- consultation-section ----------------------------------------- */
 
     /* start -------------------------------------------- accordion section ------------------------------------------- */
     .accordion {

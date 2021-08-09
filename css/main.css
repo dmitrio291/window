@@ -4270,6 +4270,10 @@ input:focus:-ms-input-placeholder {
   border-radius: 3px;
 }
 
+.measuring-section {
+  margin-bottom: 35px;
+}
+
 .measuring::before {
   content: '';
   position: absolute;
@@ -4661,6 +4665,108 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- free consultation section ------------------------------------------- */
+/* start -------------------------------------------- consultation-section ---------------------------------------------- */
+.consultation {
+  background-color: #EFF9FD;
+  border-radius: 3px;
+}
+
+.consultation-section {
+  margin-bottom: 35px;
+}
+
+.consultation__title {
+  font-weight: 700;
+  text-align: left;
+}
+
+.consultation__img {
+  position: relative;
+}
+
+.consultation__img::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(0, #F0FAFF 0%, rgba(240, 250, 255, 0) 80%);
+}
+
+.consultation__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.consultation__content {
+  padding: 8px 15px 30px;
+}
+
+.consultation__title {
+  margin-bottom: 16px;
+}
+
+.consultation__text {
+  margin-bottom: 20px;
+  line-height: 21px;
+}
+
+.consultation__phone a,
+.consultation__whatsapp a {
+  text-decoration: none;
+  color: #48494B;
+}
+
+.consultation__phone {
+  margin-bottom: 10px;
+}
+
+.consultation__phone a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.consultation__whatsapp {
+  margin-bottom: 20px;
+}
+
+.consultation__whatsapp a {
+  position: relative;
+  display: inline-block;
+  padding: 4px 15px 4px 38px;
+  background-color: #E1EFD0;
+  border-radius: 5px;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 12px;
+}
+
+.consultation__whatsapp a::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -3px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/consultation-phone-icon.png");
+}
+
+.consultation__btn {
+  display: block;
+  min-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+/* end -------------------------------------------- consultation-section ------------------------------------------------ */
 /* start -------------------------------------------- footer ----------------------------------------------------------- */
 .footer {
   background-color: #F9F9F9;
@@ -7710,6 +7816,9 @@ input:focus:-ms-input-placeholder {
     display: flex;
     background-image: none;
   }
+  .measuring-section {
+    margin-bottom: 50px;
+  }
   .measuring::before {
     display: none;
   }
@@ -7851,6 +7960,80 @@ input:focus:-ms-input-placeholder {
     max-width: 306px;
   }
   /* end -------------------------------------------- free consultation section ------------------------------------ */
+  /* start -------------------------------------------- consultation-section --------------------------------------- */
+  .consultation {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .consultation-section {
+    margin-bottom: 50px;
+  }
+  .consultation__img {
+    width: 100%;
+    position: relative;
+  }
+  .consultation__img::before {
+    z-index: 1;
+    height: 100%;
+    width: 264px;
+    background: linear-gradient(90deg, #F0FAFF 0%, rgba(240, 250, 255, 0) 95%);
+  }
+  .consultation__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 3px;
+  }
+  .consultation__content {
+    width: 35%;
+    padding: 40px 0 40px 30px;
+  }
+  .consultation__title {
+    margin-bottom: 15px;
+  }
+  .consultation__title .orange {
+    display: block;
+  }
+  .consultation__text {
+    margin-bottom: 28px;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+  }
+  .consultation__text.nowrap {
+    white-space: nowrap;
+  }
+  .consultation__text.mgr {
+    margin-right: -60px;
+    margin-bottom: 31px;
+  }
+  .consultation__text .bold {
+    font-weight: 500;
+  }
+  .consultation__phone {
+    margin-bottom: 8px;
+  }
+  .consultation__phone.nowrap {
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+  }
+  .consultation__phone a {
+    font-size: 32px;
+  }
+  .consultation__whatsapp {
+    margin-bottom: 17px;
+  }
+  .consultation__btn {
+    position: relative;
+    z-index: 1;
+    min-width: 306px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  /* end -------------------------------------------- consultation-section ----------------------------------------- */
   /* start -------------------------------------------- accordion section ------------------------------------------ */
   .accordion-section {
     margin-bottom: 20px;
@@ -10342,6 +10525,24 @@ input:focus:-ms-input-placeholder {
     max-width: none;
   }
   /* end -------------------------------------------- free consultation section ------------------------------------- */
+  /* start -------------------------------------------- consultation-section --------------------------------------- */
+  .consultation__title {
+    margin-bottom: 16px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+  }
+  .consultation__title .orange {
+    display: inline;
+  }
+  .consultation__content {
+    padding: 57px 0 62px 39px;
+    width: 43%;
+  }
+  .consultation__text.mgr {
+    margin-right: 0;
+  }
+  /* end -------------------------------------------- consultation-section ----------------------------------------- */
   /* start -------------------------------------------- accordion section ------------------------------------------- */
   .accordion-box {
     padding: 50px 40px;
