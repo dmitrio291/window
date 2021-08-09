@@ -1535,7 +1535,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .calculator-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .calculator-box__title {
@@ -6375,6 +6375,23 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
+/* start -------------------------------------------- calculator-section ----------------------------------------- */
+.calculator--glazing-balconies .calculator__list li:first-child {
+  width: 80px;
+  height: 53px;
+}
+
+.calculator--glazing-balconies .calculator__list li:nth-child(2), .calculator--glazing-balconies .calculator__list li:last-child {
+  width: 105px;
+  height: 58px;
+}
+
+.calculator--glazing-balconies .calculator__img.img-1, .calculator--glazing-balconies .calculator__img.img-2, .calculator--glazing-balconies .calculator__img.img-3 {
+  width: 342px;
+  height: 220px;
+}
+
+/* end -------------------------------------------- calculator-section ------------------------------------------- */
 /* start -------------------------------------------- windows-quality-section ------------------------------------ */
 .windows-quality {
   position: relative;
@@ -7100,7 +7117,7 @@ input:focus:-ms-input-placeholder {
     margin-right: auto;
   }
   .calculator-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .calculator-box__title {
     margin-bottom: 12px;
@@ -9361,6 +9378,26 @@ input:focus:-ms-input-placeholder {
     font-size: 31px;
   }
   /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
+  /* start -------------------------------------------- calculator-section ----------------------------------------- */
+  .calculator--glazing-balconies .calculator__list li:not(:first-child) {
+    margin-left: 23px;
+  }
+  .calculator--glazing-balconies .calculator__list li:first-child {
+    width: 53px;
+    height: 35px;
+  }
+  .calculator--glazing-balconies .calculator__list li:nth-child(2), .calculator--glazing-balconies .calculator__list li:last-child {
+    width: 69px;
+    height: 38px;
+  }
+  .calculator--glazing-balconies .calculator__type {
+    margin-bottom: 40px;
+  }
+  .calculator--glazing-balconies .calculator__type .calculator__text {
+    max-width: 100px;
+    line-height: 21px;
+  }
+  /* end -------------------------------------------- calculator-section ------------------------------------------- */
   /* start -------------------------------------------- making-windows-section ------------------------------------- */
   .making-windows--balconies {
     display: block;
@@ -9915,9 +9952,6 @@ input:focus:-ms-input-placeholder {
     max-width: none;
     grid-template: 'windows-img type-window' 'windows-img calc-form' 'calc-ranges calc-form';
     column-gap: 68px;
-  }
-  .calculator-section {
-    margin-bottom: 100px;
   }
   .calculator__type {
     flex-direction: column;
@@ -11454,6 +11488,29 @@ input:focus:-ms-input-placeholder {
     margin-right: 48px;
   }
   /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
+  /* start -------------------------------------------- calculator-section ----------------------------------------- */
+  .calculator--glazing-balconies .calculator__img.img-1, .calculator--glazing-balconies .calculator__img.img-2, .calculator--glazing-balconies .calculator__img.img-3 {
+    width: 459px;
+    height: 343px;
+  }
+  .calculator--glazing-balconies .calculator__type {
+    margin-bottom: 0;
+  }
+  .calculator--glazing-balconies .calculator__type .calculator__text {
+    max-width: none;
+  }
+  .calculator--glazing-balconies .calculator__list {
+    margin-bottom: 29px;
+  }
+  .calculator--glazing-balconies .calculator__list li:first-child {
+    width: 98px;
+    height: 63px;
+  }
+  .calculator--glazing-balconies .calculator__list li:nth-child(2), .calculator--glazing-balconies .calculator__list li:last-child {
+    width: 130px;
+    height: 71px;
+  }
+  /* end -------------------------------------------- calculator-section ------------------------------------------- */
   /* start -------------------------------------------- making-windows-section ------------------------------------- */
   .making-windows--balconies {
     display: flex;

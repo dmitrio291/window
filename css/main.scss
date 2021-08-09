@@ -1625,7 +1625,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     border-top: 1px solid #CDCDCD;
 
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     &-box {      
@@ -6722,6 +6722,38 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
 
+/* start -------------------------------------------- calculator-section ----------------------------------------- */
+.calculator--glazing-balconies {
+    .calculator {
+        &__list {
+            li {
+                &:first-child {
+                    width: 80px;
+                    height: 53px;
+                }
+
+                &:nth-child(2),
+                &:last-child {
+                    width: 105px;
+                    height: 58px;
+                }
+            }
+        }
+
+        &__img {
+            &.img {
+                &-1,
+                &-2,
+                &-3 {
+                    width: 342px;
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+/* end -------------------------------------------- calculator-section ------------------------------------------- */
+
 /* start -------------------------------------------- windows-quality-section ------------------------------------ */
 .windows-quality {
     position: relative;
@@ -7614,7 +7646,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         margin-right: auto;
 
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
         }
 
         &-box {
@@ -10619,6 +10651,40 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
 
+    /* start -------------------------------------------- calculator-section ----------------------------------------- */
+    .calculator--glazing-balconies {
+        .calculator {
+            &__list {
+                li {
+                    &:not(:first-child) {
+                        margin-left: 23px;
+                    }
+
+                    &:first-child {
+                        width: 53px;
+                        height: 35px;
+                    }
+
+                    &:nth-child(2),
+                    &:last-child {
+                        width: 69px;
+                        height: 38px;
+                    }
+                }
+            }
+
+            &__type {
+                margin-bottom: 40px;
+
+                .calculator__text {
+                    max-width: 100px;     
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- calculator-section ------------------------------------------- */
+
     /* start -------------------------------------------- making-windows-section ------------------------------------- */
     .making-windows--balconies {
         display: block;
@@ -11386,10 +11452,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         'windows-img calc-form'
         'calc-ranges calc-form';
         column-gap: 68px;
-
-        &-section {
-            margin-bottom: 100px;
-        }
 
         &__type {
             flex-direction: column;
@@ -13530,6 +13592,48 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
+
+    /* start -------------------------------------------- calculator-section ----------------------------------------- */
+    .calculator--glazing-balconies {
+        .calculator {
+            &__img {
+                &.img {
+                    &-1,
+                    &-2,
+                    &-3 {
+                        width: 459px;
+                        height: 343px;
+                    }
+                }
+            }
+
+            &__type {
+                margin-bottom: 0;
+
+                .calculator__text {
+                    max-width: none;
+                }
+            }
+
+            &__list {
+                margin-bottom: 29px;
+
+                li {
+                    &:first-child {
+                        width: 98px;
+                        height: 63px;
+                    }
+
+                    &:nth-child(2),
+                    &:last-child {
+                        width: 130px;
+                        height: 71px;
+                    }
+                }
+            }
+        }
+    }
+    /* end -------------------------------------------- calculator-section ------------------------------------------- */
 
     /* start -------------------------------------------- making-windows-section ------------------------------------- */
     .making-windows--balconies {
