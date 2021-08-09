@@ -4563,7 +4563,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &-section {
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     &__content {
@@ -6788,7 +6788,48 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         display: none;
     }
 }
+/* end -------------------------------------------- windows-quality-section -------------------------------------- */
 
+/* start -------------------------------------------- profitable-windows-section --------------------------------- */
+.profitable-windows {
+    &--balconies {
+        .profitable-windows {
+            &__list {
+                li {
+                    padding-left: 41px;
+                    padding-right: 41px;
+
+                    &.padding {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                    }
+                }
+            }
+
+            &__name {
+                font-size: 16px;
+            }
+
+            &__sizes {
+                border-bottom: none;
+                font-size: 14px;
+            }
+
+            &__btn {
+                max-width: 140px;
+            }
+        }
+    }
+}
+/* end -------------------------------------------- profitable-windows-section ----------------------------------- */
+
+/* start -------------------------------------------- customers-section ------------------------------------------ */
+.customers--glazing-balconies {
+    background-image: url("../img/customers-bg-small-2.jpg");
+}
+/* end -------------------------------------------- customers-section -------------------------------------------- */
+
+/* start -------------------------------------------- accordion-section ------------------------------------------ */
 .accordion {
     &--second {
         .accordion {
@@ -6847,40 +6888,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
 }
-/* end -------------------------------------------- windows-quality-section -------------------------------------- */
-
-/* start -------------------------------------------- profitable-windows-section --------------------------------- */
-.profitable-windows {
-    &--balconies {
-        .profitable-windows {
-            &__list {
-                li {
-                    padding-left: 41px;
-                    padding-right: 41px;
-
-                    &.padding {
-                        padding-left: 25px;
-                        padding-right: 25px;
-                    }
-                }
-            }
-
-            &__name {
-                font-size: 16px;
-            }
-
-            &__sizes {
-                border-bottom: none;
-                font-size: 14px;
-            }
-
-            &__btn {
-                max-width: 140px;
-            }
-        }
-    }
-}
-/* end -------------------------------------------- profitable-windows-section ----------------------------------- */
+/* end -------------------------------------------- accordion-section -------------------------------------------- */
 /* end Страница Остекление балконов */
 
 @media (min-width: 768px) {
@@ -8928,6 +8936,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         display: flex;
         min-height: 411px;
 
+        &-section {
+            margin-bottom: 20px;
+        }
+
         &::before {
             display: none;
         }
@@ -10733,23 +10745,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
 
-    .accordion--second {
-        .accordion {
-            &__item {
-                border: none;
-            }
-
-            &__content {
-                display: block;
-            }
-
-            &__plus {
-                display: none;
-            }
-        }
-    }
-    /* end -------------------------------------------- windows-quality-section -------------------------------------- */
-
     /* start -------------------------------------------- profitable-windows-section --------------------------------- */
     .profitable-windows {
         &--balconies {
@@ -10776,6 +10771,34 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- profitable-windows-section ----------------------------------- */
+
+    /* start -------------------------------------------- customers-section ------------------------------------------ */
+    .customers--glazing-balconies {
+        .customers {
+            &__bg {
+                background-image: url("../img/customers-bg-middle-2.jpg");
+                background-position: right;
+            }
+        }
+    }
+    /* end -------------------------------------------- customers-section -------------------------------------------- */
+
+    .accordion--second {
+        .accordion {
+            &__item {
+                border: none;
+            }
+
+            &__content {
+                display: block;
+            }
+
+            &__plus {
+                display: none;
+            }
+        }
+    }
+    /* end -------------------------------------------- windows-quality-section -------------------------------------- */
     /* end Страница Остекление балконов */
 }
 
@@ -12279,8 +12302,6 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start ------------------------------------------ customers section --------------------------------------------- */
     .customers {
-        margin-bottom: 100px;
-
         &__content {
             width: 47%;
         }
@@ -13597,6 +13618,16 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- windows-quality-section -------------------------------------- */
+
+    /* start -------------------------------------------- customers-section ------------------------------------------ */
+    .customers--glazing-balconies {
+        .customers {
+            &__bg {
+                background-image: url("../img/customers-bg-big-2.jpg");
+            }
+        }
+    }
+    /* end -------------------------------------------- customers-section -------------------------------------------- */
     /* end Страница Остекление балконов */
 }
 
