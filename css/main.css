@@ -6561,12 +6561,16 @@ input:focus:-ms-input-placeholder {
 
 /* end -------------------------------------------- calculator-section ------------------------------------------- */
 /* start -------------------------------------------- materials-section ------------------------------------------ */
+.materials {
+  margin-top: 31px;
+}
+
 .materials-section {
   margin-bottom: 50px;
 }
 
 .materials-box {
-  padding-top: 40px;
+  padding-top: 36px;
   border-top: 1px solid #ABABAB;
 }
 
@@ -6575,19 +6579,272 @@ input:focus:-ms-input-placeholder {
 }
 
 .materials-box__text {
+  margin-bottom: 20px;
   line-height: 21px;
 }
 
-.materials-box__text:not(:last-child) {
-  margin-bottom: 20px;
+.materials__item {
+  margin-bottom: 32px;
 }
 
 .materials__title {
   display: block;
-  margin-bottom: 18px;
-  padding-bottom: 10px;
+  margin-bottom: 13px;
+  padding-bottom: 12px;
   font-size: 18px;
   border-bottom: 1.5px solid #F26422;
+}
+
+.materials__list {
+  display: flex;
+  column-gap: 37px;
+}
+
+.materials__list li {
+  width: 22%;
+  text-align: center;
+}
+
+.materials__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F3F3F3;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 0 1px #F3F3F3;
+  cursor: pointer;
+}
+
+.materials__icon.active {
+  box-shadow: 0 0 0 1px #F26422;
+}
+
+.materials__icon.icon {
+  margin-bottom: 5px;
+}
+
+.materials__icon.icon-close {
+  background-image: url("../img/materials-icon-close.svg");
+}
+
+.materials__icon.icon-1 {
+  background-image: url("../img/materials-icon-1.png");
+}
+
+.materials__icon.icon-2 {
+  background-image: url("../img/materials-icon-2.png");
+}
+
+.materials__icon.icon-3 {
+  background-image: url("../img/materials-icon-3.png");
+}
+
+.materials__icon.icon-4 {
+  background-image: url("../img/materials-icon-4.png");
+}
+
+.materials__icon.icon-5 {
+  background-image: url("../img/materials-icon-5.png");
+}
+
+.materials__icon.icon-6 {
+  background-image: url("../img/materials-icon-6.png");
+}
+
+.materials__icon.icon-7 {
+  background-image: url("../img/materials-icon-7.png");
+  background-position: 2px -1px;
+}
+
+.materials__icon.icon-8 {
+  background-image: url("../img/materials-icon-8.png");
+}
+
+.materials__icon.icon-9 {
+  background-image: url("../img/materials-icon-9.png");
+}
+
+.materials__icon.icon-10 {
+  background-image: url("../img/materials-icon-10.png");
+}
+
+.materials__icon.icon-11 {
+  background-image: url("../img/materials-icon-11.png");
+}
+
+.materials__icon.icon-12 {
+  background-image: url("../img/materials-icon-12.png");
+}
+
+.materials__icon.icon-13 {
+  background-image: url("../img/materials-icon-13.png");
+}
+
+.materials__icon.icon-14 {
+  background-image: url("../img/materials-icon-14.png");
+}
+
+.materials__name {
+  font-size: 12px;
+  color: #CDCDCD;
+}
+
+.materials__details {
+  position: relative;
+  width: 310px;
+  height: 423px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 121px;
+  margin-bottom: 21px;
+}
+
+.materials__detail {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 310px;
+  height: 509px;
+}
+
+.materials__detail.detail-one {
+  top: 0;
+  left: 0;
+  background-image: url("../img/materials-img-1.png");
+  background-position: 0 -86px;
+  z-index: 1;
+}
+
+.materials__detail.detail-two {
+  top: -86px;
+  right: 0;
+  background-image: url("../img/materials-img-2.png");
+}
+
+.materials__detail.detail-three {
+  top: -6px;
+  right: 0;
+  background-image: url("../img/materials-img-5.png");
+  background-position: 0 -80px;
+  z-index: 1;
+}
+
+.materials__detail.detail-four {
+  bottom: -12px;
+  left: 0;
+  width: 315px;
+  height: 535px;
+  background-image: url("../img/materials-img-7.png");
+}
+
+.materials__detail.detail-five {
+  top: -86px;
+  left: 0;
+  background-image: url("../img/materials-img-9.png");
+}
+
+.materials__detail.detail-six {
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/materials-img-14.png");
+}
+
+.materials__detail.detail-seven {
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/materials-img-15.png");
+}
+
+.materials__stock {
+  position: relative;
+  max-width: 289px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 31px;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.materials__rect {
+  min-height: 27px;
+  border: 10px solid #F2F2F2;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.materials__content {
+  position: relative;
+  padding: 22px 0;
+  margin-top: -17px;
+  margin-left: 14px;
+  width: 92%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.materials__content::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background-image: url("../img/materials-icon-triangle.svg");
+  background-size: 20px;
+}
+
+.materials__text-small {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.materials__text-big {
+  font-size: 30px;
+  letter-spacing: 0.03em;
+}
+
+.materials__percent, .materials__btn {
+  max-width: 249px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.materials__percent {
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.materials__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1.5px solid #F26422;
+  color: #F26422;
+  font-size: 31px;
+}
+
+.materials__installment-text-big {
+  font-size: 26px;
+}
+
+.materials__installment-text-small {
+  font-size: 10px;
+}
+
+.materials__btn {
+  display: block;
+  min-width: 249px;
 }
 
 /* end -------------------------------------------- materials-section -------------------------------------------- */
@@ -9626,6 +9883,88 @@ input:focus:-ms-input-placeholder {
     min-width: 306px;
   }
   /* end -------------------------------------------- making-windows-section --------------------------------------- */
+  /* start -------------------------------------------- materials-section ------------------------------------------ */
+  .materials {
+    display: grid;
+    grid-template: 'material-item-1 material-item-2' 'material-item-3 material-item-4' 'material-item-5 material-item-6' 'material-details material-details' 'material-percent material-stock' 'material-btn material-stock';
+    column-gap: 60px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 612px;
+  }
+  .materials-section {
+    margin-bottom: 75px;
+  }
+  .materials-box {
+    padding-top: 43px;
+  }
+  .materials-box__title {
+    margin-bottom: 40px;
+  }
+  .materials-box__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .materials-box__text:nth-of-type(2) {
+    padding-right: 35px;
+  }
+  .materials__item {
+    margin-bottom: 53px;
+    min-width: 270px;
+  }
+  .materials__item:first-of-type {
+    grid-area: material-item-1;
+  }
+  .materials__item:nth-of-type(2) {
+    grid-area: material-item-3;
+  }
+  .materials__item:nth-of-type(3) {
+    grid-area: material-item-5;
+  }
+  .materials__item:nth-of-type(4) .materials__title, .materials__item:nth-of-type(5) .materials__title, .materials__item:nth-of-type(6) .materials__title {
+    text-align: right;
+  }
+  .materials__item:nth-of-type(4) {
+    grid-area: material-item-2;
+  }
+  .materials__item:nth-of-type(5) {
+    grid-area: material-item-4;
+  }
+  .materials__item:nth-of-type(6) {
+    grid-area: material-item-6;
+  }
+  .materials__list {
+    column-gap: 22px;
+  }
+  .materials__list li {
+    width: 100%;
+  }
+  .materials__details {
+    margin-top: 79px;
+    margin-bottom: 17px;
+    grid-area: material-details;
+  }
+  .materials__stock {
+    margin-bottom: 0;
+    max-width: none;
+    min-width: 290px;
+    margin-left: -32px;
+    grid-area: material-stock;
+  }
+  .materials__percent {
+    grid-area: material-percent;
+    margin-right: 8px;
+    max-width: none;
+    margin-top: 14px;
+    column-gap: 34px;
+  }
+  .materials__btn {
+    grid-area: material-btn;
+    max-width: none;
+    margin-right: 6px;
+  }
+  /* end -------------------------------------------- materials-section -------------------------------------------- */
   /* start -------------------------------------------- windows-quality-section ------------------------------------ */
   .windows-quality {
     display: grid;
@@ -11751,6 +12090,61 @@ input:focus:-ms-input-placeholder {
     margin-bottom: 0;
   }
   /* end -------------------------------------------- making-windows-section --------------------------------------- */
+  /* start -------------------------------------------- materials-section ------------------------------------------ */
+  .materials {
+    max-width: none;
+    grid-template: 'material-item-1 material-details material-item-2' 'material-item-3 material-details material-item-4' 'material-item-5 material-details material-item-6' 'material-percent material-stock material-btn';
+    column-gap: 0;
+  }
+  .materials-section {
+    margin-bottom: 87px;
+  }
+  .materials-box__text:nth-of-type(2) {
+    padding-right: 0;
+  }
+  .materials__item:nth-of-type(3), .materials__item:nth-of-type(6) {
+    margin-bottom: 17px;
+  }
+  .materials__stock, .materials__percent {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .materials__stock {
+    position: relative;
+    min-width: 290px;
+    margin-left: 22px;
+  }
+  .materials__rect::before, .materials__rect::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    background-color: #F26422;
+    width: 120%;
+    height: 1.5px;
+  }
+  .materials__rect::before {
+    left: -120%;
+  }
+  .materials__rect::after {
+    right: -120%;
+  }
+  .materials__percent, .materials__btn {
+    align-self: center;
+  }
+  .materials__percent {
+    max-width: 250px;
+    margin-top: 22px;
+    margin-bottom: 0;
+  }
+  .materials__installment-text-big {
+    margin-bottom: 2px;
+  }
+  .materials__btn {
+    margin-top: 20px;
+    max-width: 249px;
+    margin-right: 0;
+  }
+  /* end -------------------------------------------- materials-section -------------------------------------------- */
   /* start -------------------------------------------- windows-quality-section ------------------------------------ */
   .windows-quality {
     grid-template-columns: 245px 653px;

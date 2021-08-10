@@ -6939,12 +6939,14 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
 /* start -------------------------------------------- materials-section ------------------------------------------ */
 .materials {
+    margin-top: 31px;
+
     &-section {
         margin-bottom: 50px;
     }
 
     &-box {
-        padding-top: 40px;
+        padding-top: 36px;
         border-top: 1px solid #ABABAB;
 
         &__title {
@@ -6952,20 +6954,278 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__text {
+            margin-bottom: 20px;
             line-height: 21px;
-
-            &:not(:last-child) {
-                margin-bottom: 20px;
-            }
         }
+    }
+
+    &__item {
+        margin-bottom: 32px;
     }
 
     &__title {
         display: block;
-        margin-bottom: 18px;
-        padding-bottom: 10px;
+        margin-bottom: 13px;
+        padding-bottom: 12px;
         font-size: 18px;
         border-bottom: 1.5px solid #F26422;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 37px;
+
+        li {
+            width: 22%;
+            text-align: center;
+        }
+    }
+
+    &__icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #F3F3F3;
+        border: 1px solid #ffffff;
+        box-shadow: 0 0 0 1px #F3F3F3;
+        cursor: pointer;
+
+        &.active {
+            box-shadow: 0 0 0 1px #F26422;
+        }
+
+        &.icon {
+            margin-bottom: 5px;
+
+            &-close {
+                background-image: url('../img/materials-icon-close.svg');
+            }
+
+            &-1 {
+                background-image: url('../img/materials-icon-1.png');
+            }
+
+            &-2 {
+                background-image: url('../img/materials-icon-2.png');
+            }
+
+            &-3 {
+                background-image: url('../img/materials-icon-3.png');
+            }
+
+            &-4 {
+                background-image: url('../img/materials-icon-4.png');
+            }
+
+            &-5 {
+                background-image: url('../img/materials-icon-5.png');
+            }
+
+            &-6 {
+                background-image: url('../img/materials-icon-6.png');
+            }
+
+            &-7 {
+                background-image: url('../img/materials-icon-7.png');
+                background-position: 2px -1px;
+            }
+
+            &-8 {
+                background-image: url('../img/materials-icon-8.png');
+            }
+
+            &-9 {
+                background-image: url('../img/materials-icon-9.png');
+            }
+
+            &-10 {
+                background-image: url('../img/materials-icon-10.png');
+            }
+
+            &-11 {
+                background-image: url('../img/materials-icon-11.png');
+            }
+
+            &-12 {
+                background-image: url('../img/materials-icon-12.png');
+            }
+
+            &-13 {
+                background-image: url('../img/materials-icon-13.png');
+            }
+
+            &-14 {
+                background-image: url('../img/materials-icon-14.png');
+            }
+        }
+    }
+
+    &__name {
+        font-size: 12px;
+        color: #CDCDCD;
+    }
+
+    &__details {
+        position: relative;    
+        width: 310px;
+        height: 423px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 121px;
+        margin-bottom: 21px;
+    }
+
+    &__detail {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 310px;
+        height: 509px;
+
+        &.detail {
+            &-one {
+                top: 0;
+                left: 0;                
+                background-image: url('../img/materials-img-1.png');
+                background-position: 0 -86px;
+                z-index: 1;
+            }
+
+            &-two {
+                top: -86px;
+                right: 0;
+                background-image: url('../img/materials-img-2.png');
+            }
+
+            &-three {
+                top: -6px;
+                right: 0;
+                background-image: url('../img/materials-img-5.png');
+                background-position: 0 -80px;
+                z-index: 1;
+            }
+
+            &-four {
+                bottom: -12px;
+                left: 0;
+                width: 315px;
+                height: 535px;
+                background-image: url('../img/materials-img-7.png');
+            }
+
+            &-five {
+                top: -86px;
+                left: 0;
+                background-image: url('../img/materials-img-9.png');
+            }
+
+            &-six {
+                bottom: 0;
+                left: 0;
+                background-image: url('../img/materials-img-14.png');
+            }
+
+            &-seven {
+                bottom: 0;
+                left: 0;
+                background-image: url('../img/materials-img-15.png');
+            }
+        }
+    }
+
+    &__stock {
+        position: relative;
+        max-width: 289px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 31px;
+        filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+    }
+
+    &__rect {
+        min-height: 27px;
+        border: 10px solid #F2F2F2;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+    }
+
+    &__content {
+        position: relative;
+        padding: 22px 0;
+        margin-top: -17px;
+        margin-left: 14px;
+        width: 92%;
+        background-color: #ffffff;
+        text-align: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 24px;
+            background-image: url('../img/materials-icon-triangle.svg');
+            background-size: 20px;
+        }
+    }
+
+    &__text-small {
+        margin-bottom: 6px;
+        font-size: 18px;
+    }
+
+    &__text-big {
+        font-size: 30px;
+        letter-spacing: 0.03em;
+    }
+
+    &__percent,
+    &__btn {
+        max-width: 249px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__percent {
+        margin-bottom: 26px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        border: 1.5px solid #F26422;
+        color: #F26422;
+        font-size: 31px;
+    }
+
+    &__installment { 
+        &-text-big {
+            font-size: 26px;
+        }
+
+        &-text-small {
+            font-size: 10px;
+        }
+    }
+
+    &__btn {
+        display: block;        
+        min-width: 249px;
     }
 }
 /* end -------------------------------------------- materials-section -------------------------------------------- */
@@ -10941,6 +11201,120 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- making-windows-section --------------------------------------- */
 
+    /* start -------------------------------------------- materials-section ------------------------------------------ */
+    .materials {
+        display: grid;
+        grid-template: 
+            'material-item-1 material-item-2'
+            'material-item-3 material-item-4'
+            'material-item-5 material-item-6'
+            'material-details material-details'
+            'material-percent material-stock'
+            'material-btn material-stock';
+        column-gap: 60px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 612px;
+
+        &-section {
+            margin-bottom: 75px;
+        }
+
+        &-box {
+            padding-top: 43px;
+
+            &__title {
+                margin-bottom: 40px;
+            }
+
+            &__text {
+                font-size: 18px;
+                line-height: 25px;
+
+                &:nth-of-type(2) {
+                    padding-right: 35px;
+                }
+            }
+        }
+
+        &__item {
+            margin-bottom: 53px;
+            min-width: 270px;
+
+            &:first-of-type {
+                grid-area: material-item-1;
+            }
+
+            &:nth-of-type(2) {
+                grid-area: material-item-3;
+            }
+
+            &:nth-of-type(3) {
+                grid-area: material-item-5;
+            }
+
+            &:nth-of-type(4),
+            &:nth-of-type(5),
+            &:nth-of-type(6) {
+                .materials {
+                    &__title {
+                        text-align: right;
+                    }
+                }
+            }
+
+            &:nth-of-type(4) {
+                grid-area: material-item-2;
+            }
+
+            &:nth-of-type(5) {
+                grid-area: material-item-4;
+            }
+
+            &:nth-of-type(6) {
+                grid-area: material-item-6;
+            }
+        }
+
+        &__list {
+            column-gap: 22px;
+
+            li {
+                width: 100%;
+            }
+        }
+
+        &__details {
+            margin-top: 79px;
+            margin-bottom: 17px;
+            grid-area: material-details;
+        }
+
+        &__stock {
+            margin-bottom: 0;
+            max-width: none;
+            min-width: 290px;
+            margin-left: -32px;
+            grid-area: material-stock;
+        }
+
+        &__percent {
+            grid-area: material-percent;
+            margin-right: 8px;
+            max-width: none;
+            margin-top: 14px;
+            column-gap: 34px;
+        }
+
+        &__btn {
+            grid-area: material-btn;
+            max-width: none;
+            margin-right: 6px;
+        }
+    }
+    /* end -------------------------------------------- materials-section -------------------------------------------- */
+
     /* start -------------------------------------------- windows-quality-section ------------------------------------ */
     .windows-quality {
         display: grid;
@@ -13909,6 +14283,93 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- making-windows-section --------------------------------------- */
+
+    /* start -------------------------------------------- materials-section ------------------------------------------ */
+    .materials {
+        max-width: none;
+        grid-template: 
+        'material-item-1 material-details material-item-2'
+        'material-item-3 material-details material-item-4'
+        'material-item-5 material-details material-item-6'
+        'material-percent material-stock material-btn';
+        column-gap: 0;
+
+        &-section {
+            margin-bottom: 87px;
+        }
+
+        &-box {
+            &__text {
+                &:nth-of-type(2) {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        &__item {
+            &:nth-of-type(3),
+            &:nth-of-type(6) {
+                margin-bottom: 17px;
+            }
+        }
+
+        &__stock,
+        &__percent {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &__stock {
+            position: relative;
+            min-width: 290px;
+            margin-left: 22px;
+        }
+
+
+        &__rect {
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 10%;
+                background-color: #F26422;
+                width: 120%;
+                height: 1.5px;
+            }
+
+            &::before {        
+                left: -120%;
+            }
+
+            &::after {
+                right: -120%;         
+            }
+        }
+
+        &__percent,
+        &__btn {
+            align-self: center;
+        }
+
+        &__percent {
+            max-width: 250px;
+            margin-top: 22px;
+            margin-bottom: 0;
+        }
+
+        &__installment {
+            &-text-big {
+                margin-bottom: 2px;
+            }
+        }
+
+        &__btn {
+            margin-top: 20px;
+            max-width: 249px;
+            margin-right: 0;
+        }
+    }
+    /* end -------------------------------------------- materials-section -------------------------------------------- */
 
     /* start -------------------------------------------- windows-quality-section ------------------------------------ */
     .windows-quality {

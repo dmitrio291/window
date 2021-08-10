@@ -171,4 +171,39 @@ document.addEventListener('DOMContentLoaded', () => {
         } 
     });
     /* end ---------------------------------- Скрипты для секции .montage-section ----------------------------------- */
+
+    /* start Страница Остекление баклона */
+    const materialsIcons1 = document.querySelectorAll('.roof .materials__icon');
+    const materialsIcons2 = document.querySelectorAll('.glazing .materials__icon');
+    const materialsIcons3 = document.querySelectorAll('.finishing .materials__icon');
+    const materialsIcons4 = document.querySelectorAll('.walls .materials__icon');
+    const materialsIcons5 = document.querySelectorAll('.floor .materials__icon');
+    const materialsIcons6 = document.querySelectorAll('.wardrobe .materials__icon');
+    const detailTwo = document.querySelector('.detail-two');
+    const detailThree = document.querySelector('.detail-three');
+    const detailFour = document.querySelector('.detail-four');
+    const detailFive = document.querySelector('.detail-five');
+    const detailSix = document.querySelector('.detail-six');
+    const detailSeven = document.querySelector('.detail-seven');
+
+    const changeImgMaterials = (icons, detail) => {
+        icons.forEach(icon => {
+            icon.addEventListener('click', function() {
+                icons.forEach(icon => {
+                    icon.classList.remove('active');
+                });
+                this.classList.add('active');
+                const dataImg = this.dataset.img;
+                detail.style.backgroundImage = dataImg;
+            });
+        });
+    };
+
+    changeImgMaterials(materialsIcons1, detailTwo);
+    changeImgMaterials(materialsIcons2, detailThree);
+    changeImgMaterials(materialsIcons3, detailFour);
+    changeImgMaterials(materialsIcons4, detailFive);
+    changeImgMaterials(materialsIcons5, detailSix);
+    changeImgMaterials(materialsIcons6, detailSeven);
+    /* end Страница Остекление баклона */
 });
