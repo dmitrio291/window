@@ -2224,7 +2224,7 @@ input:focus:-ms-input-placeholder {
 }
 
 .discounts-slider {
-  max-width: 500px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -5097,6 +5097,10 @@ input:focus:-ms-input-placeholder {
   display: block;
 }
 
+.stocks-content__title a {
+  text-decoration: none;
+}
+
 .stocks-content__text {
   text-align: center;
   line-height: 21px;
@@ -5145,6 +5149,10 @@ input:focus:-ms-input-placeholder {
 .discounts-stocks__warning {
   font-size: 10px;
   line-height: 12px;
+}
+
+.discounts-stocks__warning a {
+  color: #ffffff;
 }
 
 /* end -------------------------------------------- discounts-stocks-section ----------------------------------------- */
@@ -6552,6 +6560,37 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- calculator-section ------------------------------------------- */
+/* start -------------------------------------------- materials-section ------------------------------------------ */
+.materials-section {
+  margin-bottom: 50px;
+}
+
+.materials-box {
+  padding-top: 40px;
+  border-top: 1px solid #ABABAB;
+}
+
+.materials-box__title {
+  margin-bottom: 35px;
+}
+
+.materials-box__text {
+  line-height: 21px;
+}
+
+.materials-box__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.materials__title {
+  display: block;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1.5px solid #F26422;
+}
+
+/* end -------------------------------------------- materials-section -------------------------------------------- */
 /* start -------------------------------------------- windows-quality-section ------------------------------------ */
 .windows-quality {
   position: relative;
@@ -7672,8 +7711,8 @@ input:focus:-ms-input-placeholder {
     padding-right: 24px;
   }
   .discounts-slider {
+    max-width: 750px;
     margin-bottom: 45px;
-    max-width: none;
   }
   .discounts__text {
     margin-bottom: 35px;
@@ -10284,6 +10323,9 @@ input:focus:-ms-input-placeholder {
   }
   .discounts-section {
     margin-bottom: 100px;
+  }
+  .discounts-slider {
+    max-width: none;
   }
   /* end ------------------------------------------- discounts section ---------------------------------------------- */
   /* start -------------------------------------------- brands section ---------------------------------------------- */

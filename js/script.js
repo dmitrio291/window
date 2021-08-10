@@ -453,7 +453,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth <= 1023 && discountsSliderStocks.dataset.mobile === 'false') {
             sliderStocksSwiper = new Swiper(discountsSliderStocks, {
                 slidesPerView: 1.25,
-                autoHeight: true,
                 spaceBetween: 1,
                 slideClass: 'discounts-slider__slide',
                 wrapperClass: 'discounts-slider__wrap',

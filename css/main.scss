@@ -2349,7 +2349,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &-slider {
-        max-width: 500px;
+        max-width: 450px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
@@ -5352,6 +5352,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         .orange {
             display: block;
         }
+
+        a {
+            text-decoration: none;
+        }
     }
 
     &__text {
@@ -5402,6 +5406,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     &__warning {
         font-size: 10px;
         line-height: 12px;
+
+        a {
+            color: #ffffff;
+        }
     }
 }
 /* end -------------------------------------------- discounts-stocks-section ----------------------------------------- */
@@ -6929,6 +6937,39 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end -------------------------------------------- calculator-section ------------------------------------------- */
 
+/* start -------------------------------------------- materials-section ------------------------------------------ */
+.materials {
+    &-section {
+        margin-bottom: 50px;
+    }
+
+    &-box {
+        padding-top: 40px;
+        border-top: 1px solid #ABABAB;
+
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__text {
+            line-height: 21px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        border-bottom: 1.5px solid #F26422;
+    }
+}
+/* end -------------------------------------------- materials-section -------------------------------------------- */
+
 /* start -------------------------------------------- windows-quality-section ------------------------------------ */
 .windows-quality {
     position: relative;
@@ -8357,8 +8398,8 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &-slider {
+            max-width: 750px;
             margin-bottom: 45px;
-            max-width: none;
         }
 
         &__text {
@@ -11880,6 +11921,10 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &-section {
             margin-bottom: 100px;
+        }
+
+        &-slider {
+            max-width: none;
         }
     }
     /* end ------------------------------------------- discounts section ---------------------------------------------- */
