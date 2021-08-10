@@ -199,11 +199,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    changeImgMaterials(materialsIcons1, detailTwo);
-    changeImgMaterials(materialsIcons2, detailThree);
-    changeImgMaterials(materialsIcons3, detailFour);
-    changeImgMaterials(materialsIcons4, detailFive);
-    changeImgMaterials(materialsIcons5, detailSix);
-    changeImgMaterials(materialsIcons6, detailSeven);
+    if (materialsIcons1 && detailTwo) changeImgMaterials(materialsIcons1, detailTwo);
+    if (materialsIcons2 && detailThree) changeImgMaterials(materialsIcons2, detailThree);
+    if (materialsIcons3 && detailFour) changeImgMaterials(materialsIcons3, detailFour);
+    if (materialsIcons4 && detailFive) changeImgMaterials(materialsIcons4, detailFive);
+    if (materialsIcons5 && detailSix) changeImgMaterials(materialsIcons5, detailSix);
+    if (materialsIcons6 && detailSeven) changeImgMaterials(materialsIcons6, detailSeven);
     /* end Страница Остекление баклона */
 });
