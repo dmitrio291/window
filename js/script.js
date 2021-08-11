@@ -700,6 +700,108 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end Страница Отделка балконов */
 
     /* start Страница Остекление балконов */
+    /* start ---------------------------------- Скрипты для секции .right-balcony-section ----------------------------- */
+    const rightBalconySliderOne = document.querySelector('.right-balcony-slider.slider-1');
+    const rightBalconySliderTwo = document.querySelector('.right-balcony-slider.slider-2');
+    const rightBalconyTabs = document.querySelectorAll('.right-balcony__tab-name');
+    const rightBalconyContent1 = document.querySelector('.right-balcony__content.sliding');
+    const rightBalconySliderBox1 = document.querySelector('.right-balcony__slider.sliding');
+    const rightBalconyPrices1 = document.querySelector('.right-balcony__prices.sliding');
+    const rightBalconyContent2 = document.querySelector('.right-balcony__content.swing');
+    const rightBalconySliderBox2 = document.querySelector('.right-balcony__slider.swing');
+    const rightBalconyPrices2 = document.querySelector('.right-balcony__prices.swing');
+    const rightBalconyLink = document.querySelectorAll('.right-balcony__link-tab');
+
+    const rightBalconySliderInit = (slider) => {
+        const rightBalconySwiper = new Swiper(slider, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.right-balcony-slider__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.right-balcony-slider__next',
+                prevEl: '.right-balcony-slider__prev'
+            }
+        });
+    }
+
+    const rightBalconyActiveTab = (tabLink) => {
+        rightBalconyTabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+        
+
+        rightBalconyTabs.forEach(tab => {
+            const dataTab = tab.dataset.tab;
+            if (tabLink === dataTab) {
+                tab.classList.add('active');
+            }
+        });
+    }
+
+    if (rightBalconySliderOne && rightBalconySliderTwo) {
+        rightBalconySliderInit(rightBalconySliderOne);
+        rightBalconySliderInit(rightBalconySliderTwo);
+    }
+
+    if (rightBalconyTabs) {
+        rightBalconyTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                rightBalconyTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                this.classList.add('active');
+                const dataTab = this.dataset.tab;
+                if (dataTab === 'sliding') {        
+                    rightBalconyContent1.classList.remove('hide');
+                    rightBalconySliderBox1.classList.remove('hide');
+                    rightBalconyPrices1.classList.remove('hide');            
+                    rightBalconyContent2.classList.add('swing');
+                    rightBalconySliderBox2.classList.add('swing');
+                    rightBalconyPrices2.classList.add('swing');
+                }
+                if (dataTab === 'swing') {
+                    rightBalconyContent2.classList.remove('swing');
+                    rightBalconySliderBox2.classList.remove('swing');
+                    rightBalconyPrices2.classList.remove('swing');
+                    rightBalconyContent1.classList.add('hide');
+                    rightBalconySliderBox1.classList.add('hide');
+                    rightBalconyPrices1.classList.add('hide');
+                }
+            });
+        });
+    }
+
+    if (rightBalconyLink) {
+        rightBalconyLink.forEach(link => {
+            link.addEventListener('click', function() {
+                const dataTab = link.dataset.tab;
+                if (dataTab === 'sliding') {
+                    rightBalconyContent1.classList.remove('hide');
+                    rightBalconySliderBox1.classList.remove('hide');
+                    rightBalconyPrices1.classList.remove('hide');            
+                    rightBalconyContent2.classList.add('swing');
+                    rightBalconySliderBox2.classList.add('swing');
+                    rightBalconyPrices2.classList.add('swing');
+                    rightBalconyActiveTab(dataTab);
+                } else {
+                    rightBalconyContent2.classList.remove('swing');
+                    rightBalconySliderBox2.classList.remove('swing');
+                    rightBalconyPrices2.classList.remove('swing');
+                    rightBalconyContent1.classList.add('hide');
+                    rightBalconySliderBox1.classList.add('hide');
+                    rightBalconyPrices1.classList.add('hide');
+                    rightBalconyActiveTab(dataTab);
+                }
+            });
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .right-balcony-section ------------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .accordion-section ------------------------------- */
     const accordionToggles2 = document.querySelectorAll('.accordion--second .accordion__toggle');
     

@@ -6543,6 +6543,352 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
+/* start -------------------------------------------- right-balcony-section -------------------------------------- */
+.right-balcony .hide {
+  display: none;
+}
+
+.right-balcony-section {
+  margin-bottom: 15px;
+}
+
+.right-balcony-box__title {
+  margin-bottom: 38px;
+}
+
+.right-balcony-box__text {
+  margin-bottom: 25px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.right-balcony__tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.right-balcony__tabs li {
+  position: relative;
+}
+
+.right-balcony__tabs li:first-child {
+  margin-left: 8px;
+}
+
+.right-balcony__tabs li:last-child {
+  margin-right: 20px;
+}
+
+.right-balcony__tab-name {
+  display: inline-block;
+  margin-bottom: 9px;
+  border-bottom: 1px solid #F26422;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.right-balcony__tab-name.active {
+  color: #48494B;
+  border-color: #48494B;
+}
+
+.right-balcony__tab-name.active + .right-balcony__temperature {
+  display: block;
+}
+
+.right-balcony__temperature {
+  display: none;
+  position: absolute;
+  bottom: -9px;
+  left: -10px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.right-balcony__temperature .blue {
+  color: #01D2E9;
+}
+
+.right-balcony__content.swing, .right-balcony__prices.swing {
+  display: none;
+}
+
+.right-balcony__slider.swing {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.right-balcony__content, .right-balcony-slider {
+  max-width: 552px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right-balcony__content {
+  padding: 25px 15px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.right-balcony__content.swing .right-balcony__advantages {
+  column-gap: 13px;
+}
+
+.right-balcony__slider {
+  margin-bottom: 40px;
+}
+
+.right-balcony__title {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.right-balcony__icon {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ABABAB;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-balcony__icon.icon-1 {
+  background-image: url("../img/right-balcony-icon-1.svg");
+}
+
+.right-balcony__icon.icon-2 {
+  background-image: url("../img/right-balcony-icon-2.svg");
+}
+
+.right-balcony__icon.icon-3 {
+  background-image: url("../img/right-balcony-icon-3.svg");
+}
+
+.right-balcony__icon.icon-4 {
+  background-image: url("../img/right-balcony-icon-5.svg");
+}
+
+.right-balcony__icon.icon-5 {
+  background-image: url("../img/right-balcony-icon-6.svg");
+}
+
+.right-balcony__icon.icon-6 {
+  background-image: url("../img/right-balcony-icon-7.svg");
+}
+
+.right-balcony__advantages {
+  display: flex;
+  column-gap: 24px;
+  margin-bottom: 25px;
+}
+
+.right-balcony__advantages li {
+  text-align: center;
+}
+
+.right-balcony__advantages-text {
+  max-width: 96px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ABABAB;
+  letter-spacing: 0.03em;
+}
+
+.right-balcony__text {
+  margin-bottom: 20px;
+  line-height: 21px;
+}
+
+.right-balcony__text.center {
+  text-align: center;
+}
+
+.right-balcony__text .orange {
+  text-decoration: none;
+}
+
+.right-balcony__info {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 25px;
+  margin-top: 24px;
+}
+
+.right-balcony__info-icon {
+  display: inline-block;
+  min-width: 29px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/right-balcony-icon-4.svg");
+}
+
+.right-balcony__info-title {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.right-balcony__link {
+  text-decoration: none;
+  color: #48494B;
+  border-bottom: 1px solid #48494B;
+}
+
+.right-balcony-slider {
+  margin-bottom: 27px;
+}
+
+.right-balcony-slider img {
+  display: block;
+  width: 100%;
+}
+
+.right-balcony-slider__pagination.swiper-pagination {
+  bottom: 15px;
+}
+
+.right-balcony-slider__pagination.swiper-pagination > .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+
+.right-balcony-slider__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(249, 249, 249, 0.7);
+  opacity: 1;
+}
+
+.right-balcony-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+.right-balcony-slider__prev, .right-balcony-slider__next {
+  width: 47px;
+  height: 47px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.right-balcony-slider__prev {
+  background-image: url("../img/arrow-left-slider.svg");
+}
+
+.right-balcony-slider__next {
+  background-image: url("../img/arrow-right-slider.svg");
+}
+
+.right-balcony-slider__prev::after, .right-balcony-slider__next::after {
+  display: none;
+}
+
+.right-balcony__prices {
+  padding: 40px 15px;
+  background-color: #F0FAFF;
+}
+
+.right-balcony__desc {
+  margin-bottom: 14px;
+  line-height: 19px;
+}
+
+.right-balcony__text-small {
+  font-size: 14px;
+  color: #CDCDCD;
+}
+
+.right-balcony__price {
+  font-size: 21px;
+}
+
+.right-balcony__price::after {
+  content: '₽';
+  margin-left: 5px;
+  font-size: 16px;
+  color: #48494B;
+}
+
+.right-balcony__price-list {
+  margin-bottom: 25px;
+}
+
+.right-balcony__price-list .tablet {
+  display: none;
+}
+
+.right-balcony__price-list .align-right {
+  text-align: right;
+}
+
+.right-balcony__price-list li {
+  padding: 8.2px 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  border-bottom: 0.5px solid #ABABAB;
+}
+
+.right-balcony__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  min-width: 315px;
+}
+
+.right-balcony__link-tab {
+  position: relative;
+  display: block;
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.right-balcony__link-tab span {
+  border-bottom: 1px solid #F26422;
+}
+
+.right-balcony__link-tab.before::before, .right-balcony__link-tab.after::after {
+  content: '';
+  position: absolute;
+  width: 47px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.right-balcony__link-tab.before {
+  text-align: right;
+}
+
+.right-balcony__link-tab.before::before {
+  top: 3px;
+  left: 0;
+  background-image: url("../img/arrow-left.svg");
+}
+
+.right-balcony__link-tab.after::after {
+  top: 4px;
+  right: 0;
+  background-image: url("../img/arrow-right.svg");
+}
+
+/* end -------------------------------------------- right-balcony-section ---------------------------------------- */
 /* start -------------------------------------------- calculator-section ----------------------------------------- */
 .calculator--glazing-balconies .calculator__list li:first-child {
   width: 80px;
@@ -9852,6 +10198,125 @@ input:focus:-ms-input-placeholder {
     font-size: 31px;
   }
   /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
+  /* start -------------------------------------------- right-balcony-section -------------------------------------- */
+  .right-balcony-section {
+    margin-bottom: 20px;
+  }
+  .right-balcony-box__text, .right-balcony__text, .right-balcony__link {
+    font-size: 18px;
+  }
+  .right-balcony-box__title {
+    margin-bottom: 45px;
+  }
+  .right-balcony-box__text {
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  .right-balcony__tabs {
+    margin-bottom: 32px;
+    max-width: 508px;
+  }
+  .right-balcony__tab-name {
+    font-size: 21px;
+  }
+  .right-balcony__content {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .right-balcony__title {
+    margin-bottom: 32px;
+  }
+  .right-balcony__advantages {
+    margin-bottom: 29px;
+    column-gap: 26px;
+  }
+  .right-balcony__icon {
+    margin-bottom: 7px;
+  }
+  .right-balcony__temperature {
+    font-size: 16px;
+    bottom: -15px;
+  }
+  .right-balcony__text {
+    margin-bottom: 25px;
+    line-height: 22px;
+  }
+  .right-balcony__text .orange {
+    font-weight: 500;
+  }
+  .right-balcony__text.center {
+    max-width: 503px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .right-balcony__text-small {
+    font-size: 16px;
+  }
+  .right-balcony__text-price {
+    font-size: 18px;
+  }
+  .right-balcony__info {
+    margin-bottom: 32px;
+    margin-top: 30px;
+  }
+  .right-balcony__info-title {
+    font-size: 21px;
+  }
+  .right-balcony-slider {
+    margin-bottom: 32px;
+  }
+  .right-balcony__prices {
+    padding: 50px 30px;
+  }
+  .right-balcony__desc {
+    margin-bottom: 21px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .right-balcony__price-list {
+    margin-bottom: 37px;
+  }
+  .right-balcony__price-list .tablet {
+    display: block;
+  }
+  .right-balcony__price-list li {
+    grid-template-columns: 1.2fr 1.2fr 0.7fr;
+  }
+  .right-balcony__price {
+    font-size: 25px;
+  }
+  .right-balcony__price::after {
+    font-size: 18px;
+  }
+  .right-balcony__btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right-balcony__btn {
+    margin-bottom: 0;
+    min-width: 250px;
+  }
+  .right-balcony__btn, .right-balcony__link-tab {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .right-balcony__link-tab {
+    max-width: none;
+    min-width: 353px;
+    font-size: 21px;
+  }
+  .right-balcony__link-tab.before::after, .right-balcony__link-tab.after::after {
+    width: 53px;
+    height: 18px;
+  }
+  .right-balcony__link-tab.before::after {
+    top: 5px;
+  }
+  /* end -------------------------------------------- right-balcony-section ---------------------------------------- */
   /* start -------------------------------------------- calculator-section ----------------------------------------- */
   .calculator--glazing-balconies .calculator__list li:not(:first-child) {
     margin-left: 23px;
@@ -12059,6 +12524,75 @@ input:focus:-ms-input-placeholder {
     margin-right: 48px;
   }
   /* end -------------------------------------------- balcony-restoration-section ---------------------------------- */
+  /* start -------------------------------------------- right-balcony-section -------------------------------------- */
+  .right-balcony {
+    display: grid;
+    grid-template: 'right-balcony-content right-balcony-tabs' 'right-balcony-content right-balcony-slider' 'right-balcony-prices right-balcony-prices';
+    column-gap: 20px;
+  }
+  .right-balcony-box__text {
+    margin-bottom: 32px;
+  }
+  .right-balcony__tabs {
+    grid-area: right-balcony-tabs;
+    max-width: none;
+    width: 93%;
+    margin-top: -3px;
+  }
+  .right-balcony__tabs li:first-child {
+    margin-left: 11px;
+  }
+  .right-balcony__tabs li:last-child {
+    margin-right: 15px;
+  }
+  .right-balcony__tab-name {
+    font-size: 24px;
+  }
+  .right-balcony__temperature {
+    bottom: -9px;
+  }
+  .right-balcony__content, .right-balcony__slider, .right-balcony__text.center {
+    margin-bottom: 0;
+  }
+  .right-balcony__content {
+    grid-area: right-balcony-content;
+    width: 388px;
+  }
+  .right-balcony__advantages {
+    column-gap: 30px;
+  }
+  .right-balcony__text.center {
+    margin-top: -3px;
+  }
+  .right-balcony__text.center .orange {
+    font-weight: 500;
+  }
+  .right-balcony__text .orange {
+    font-weight: 400;
+  }
+  .right-balcony__slider {
+    grid-area: right-balcony-slider;
+  }
+  .right-balcony__prices {
+    margin-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-area: right-balcony-prices;
+  }
+  .right-balcony__price-list li {
+    grid-template-columns: 1.2fr 1.4fr 0.7fr;
+  }
+  .right-balcony__btn {
+    min-width: 344px;
+  }
+  .right-balcony__link-tab {
+    min-width: 400px;
+    font-size: 24px;
+  }
+  .right-balcony__link-tab.before::before {
+    top: 7px;
+  }
+  /* end -------------------------------------------- right-balcony-section ---------------------------------------- */
   /* start -------------------------------------------- calculator-section ----------------------------------------- */
   .calculator--glazing-balconies .calculator__img.img-1, .calculator--glazing-balconies .calculator__img.img-2, .calculator--glazing-balconies .calculator__img.img-3 {
     width: 459px;
@@ -12332,5 +12866,15 @@ input:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- doors-house-section --------------------------------------------- */
   /* end Страница Окна в дом */
+  /* start Страница Остекление балкона */
+  /* start -------------------------------------------- right-balcony-section ----------------------------------------- */
+  .right-balcony-slider:hover .right-balcony-slider__prev, .right-balcony-slider:hover .right-balcony-slider__next {
+    display: block;
+  }
+  .right-balcony-slider__prev:hover, .right-balcony-slider__next:hover {
+    background-color: #ffffff;
+  }
+  /* end -------------------------------------------- right-balcony-section ------------------------------------------- */
+  /* end Страница Остекление балкона */
 }
 /*# sourceMappingURL=main.css.map */
