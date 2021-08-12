@@ -701,8 +701,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* start Страница Остекление балконов */
     /* start ---------------------------------- Скрипты для секции .right-balcony-section ----------------------------- */
-    const rightBalconySliderOne = document.querySelector('.right-balcony-slider.slider-1');
-    const rightBalconySliderTwo = document.querySelector('.right-balcony-slider.slider-2');
+    const rightBalconySlider = document.querySelectorAll('.right-balcony-slider');
     const rightBalconyTabs = document.querySelectorAll('.right-balcony__tab-name');
     const rightBalconyContent1 = document.querySelector('.right-balcony__content.sliding');
     const rightBalconySliderBox1 = document.querySelector('.right-balcony__slider.sliding');
@@ -732,8 +731,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rightBalconyActiveTab = (tabLink) => {
         rightBalconyTabs.forEach(tab => {
             tab.classList.remove('active');
-        });
-        
+        });        
 
         rightBalconyTabs.forEach(tab => {
             const dataTab = tab.dataset.tab;
@@ -743,9 +741,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (rightBalconySliderOne && rightBalconySliderTwo) {
-        rightBalconySliderInit(rightBalconySliderOne);
-        rightBalconySliderInit(rightBalconySliderTwo);
+    if (rightBalconySlider) {
+        rightBalconySlider.forEach(slider => rightBalconySliderInit(slider));
     }
 
     if (rightBalconyTabs) {
