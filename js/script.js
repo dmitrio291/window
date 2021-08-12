@@ -805,4 +805,81 @@ document.addEventListener('DOMContentLoaded', () => {
     if (accordionToggles2 && window.innerWidth < 768) accordionToggle(accordionToggles2);
     /* end-------------------------------- Скрипты для секции .accordion-section ------------------------------------ */
     /* end Страница Остекление балконов */
+
+    /* start Страница Рассрочка */
+    /* start ---------------------------------- Скрипты для секции .installment-calculato --------------------------- */
+    const sliderCalc = document.querySelectorAll('.slider-calc');
+
+    if (sliderCalc) {
+        jQuery( function($){
+            // КАЛЬКУЛЯТОР РАССРОЧКИ
+            if($('.slider-calc').length) {
+                $(function() {
+                var sum_min = '15 000',
+                    sum_max = '500 000'
+                    period_max = '12',
+                    period_min = '3';
+                    $( '#slider-range-min' ).slider({
+                        range: 'min',
+                        value: 0,
+                        //min: 15000,
+                        //max: 100000,
+                        min: parseInt(sum_min.replace(/\s+/g, ''),10),
+                        max: parseInt(sum_max.replace(/\s+/g, ''),10),				
+                        slide: function( event, ui ) {
+                            
+                            ui.value;
+                            var ui_val = ui.value;
+                            month = $( '.summ-box__month-rs' ).text();
+                            month = parseInt(month.replace(/\s+/g, ''),10); // строку в число
+                            ui_val = ui_val.toLocaleString();
+                            
+                            let math_ceil = Math.ceil(ui.value / month);
+                            math_ceil = math_ceil.toLocaleString();
+                            
+                            $( '.installment-calculator-slider_sum' ).html( ui_val );
+                            $( '.installment-calculator-slider_month_pay' ).html( math_ceil );
+                            
+                            /* console.log(ui_val);
+                            console.log(month);
+                            console.log(math_ceil); */
+                        }
+                    });
+                    $( '#slider-range-month' ).slider({
+                        range: 'min',
+                        //value: 6,
+                        //min: 2,
+                        //max: 12,
+                        value: Math.ceil( parseInt(period_max.replace(/\s+/g, ''),10) / 2 ),
+                        min: parseInt(period_min.replace(/\s+/g, ''),10),
+                        max: parseInt(period_max.replace(/\s+/g, ''),10),				
+                        slide: function( event, ui ) {
+                            
+                            ui.value;
+                            var ui_val = ui.value,
+                                sum_itog = $( '.installment-calculator-slider_sum.summ-box__summ-rs' ).text();
+                                sum_itog = parseInt(sum_itog.replace(/\s+/g, ''),10); // строку в число
+                                
+                            ui_val = ui_val.toLocaleString();
+                            
+                            let math_ceil = Math.ceil(sum_itog / ui_val);
+                            math_ceil = math_ceil.toLocaleString();
+                            
+                            $( '.summ-box__month-rs' ).html( ui_val );
+                            $( '.installment-calculator-slider_month_pay' ).html( math_ceil );
+        
+                            /* console.log(sum_itog);
+                            console.log(ui_val);
+                            console.log(math_ceil); */				
+                        }
+                    });
+                    $( '.summ-box__month-rs' ).html( Math.ceil( parseInt(period_max.replace(/\s+/g, ''),10) / 2 ) );
+                });
+            // передвижение ползунка в мобильных устройствах	
+            $( '.ui-slider-handle' ).draggable(); 	
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .installment-calculato --------------------------- */
+    /* end Страница Рассрочка */
 });

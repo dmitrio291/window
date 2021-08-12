@@ -5205,6 +5205,208 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- installment-plan-section ----------------------------------------- */
+/* start -------------------------------------------- installment-calculator ----------------------------------------- */
+.installment-calculator {
+  margin-bottom: 50px;
+}
+
+.installment-calculator__title {
+  margin-bottom: 38px;
+}
+
+.installment-calculator-list {
+  margin-bottom: 35px;
+}
+
+.installment-calculator-list__item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.installment-calculator-list__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #F26422;
+  border-radius: 50%;
+}
+
+.installment-calculator-list__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.installment-calculator-list__icon.time {
+  width: 23px;
+  height: 23px;
+}
+
+.installment-calculator-list__item-text {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.installment-calculator-list__item-text .bold {
+  margin-left: 6px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.installment-calculator-slider__top {
+  margin-bottom: 25px;
+}
+
+.installment-calculator-slider__content {
+  margin-bottom: 23px;
+}
+
+.installment-calculator-slider__content.flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.installment-calculator-slider__total {
+  font-size: 25px;
+  letter-spacing: 0.03em;
+}
+
+.installment-calculator-slider__range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.installment-calculator-slider__value {
+  font-size: 14px;
+  color: #CDCDCD;
+}
+
+.installment-calculator-slider__bottom {
+  margin-bottom: 35px;
+}
+
+.installment-calculator .slider-calc {
+  width: 98%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  background-color: #CDCDCD;
+}
+
+.installment-calculator .slider-calc .ui-slider-handle {
+  width: 16px;
+  height: 16px;
+  top: -7px;
+}
+
+.summ-box__rectangle {
+  width: 345px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 20px solid #F2F2F2;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), -7px 4px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.summ-box__content {
+  position: relative;
+  max-width: 281px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -43px;
+  padding: 32px 20px;
+  background-color: #ffffff;
+  text-align: right;
+  box-shadow: -2px 18px 38px rgba(0, 0, 0, 0.22);
+}
+
+.summ-box__content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 23px;
+  background-color: #ffffff;
+}
+
+.summ-box__content::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  background-image: url("../img/materials-icon-triangle.svg");
+  background-repeat: repeat-x;
+}
+
+.summ-box__text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  column-gap: 14px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.summ-box__text.margin {
+  margin-top: 10px;
+}
+
+.summ-box__text .summ-box__text-rs {
+  font-size: 12px;
+}
+
+.summ-box__word {
+  font-size: 24px;
+  letter-spacing: 0.03em;
+}
+
+.summ-box__span {
+  font-size: 14px;
+  font-weight: 300;
+  flex-basis: 85%;
+}
+
+.summ-box__words-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-basis: 16%;
+  text-align: left;
+}
+
+.summ-box__summ {
+  margin-bottom: 14px;
+}
+
+.summ-box__value {
+  font-size: 30px;
+  letter-spacing: 0.03em;
+}
+
+.summ-box__installment {
+  padding-top: 19px;
+  margin-bottom: 20px;
+  margin-top: 16px;
+  border-top: 1px dashed #ABABAB;
+}
+
+.summ-box__btn {
+  display: block;
+  width: 100%;
+}
+
+/* end -------------------------------------------- installment-calculator ------------------------------------------- */
 /* start -------------------------------------------- installment-info-section --------------------------------------- */
 .installment-info-section {
   margin-bottom: 50px;
@@ -9608,6 +9810,70 @@ input:focus:-ms-input-placeholder {
     padding-right: 4px;
   }
   /* end -------------------------------------------- installment-plan-section ------------------------------------- */
+  /* start -------------------------------------------- installment-calculator ------------------------------------- */
+  .installment-calculator {
+    margin-bottom: 75px;
+  }
+  .installment-calculator__title {
+    margin-bottom: 56px;
+  }
+  .installment-calculator__container {
+    max-width: 586px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .installment-calculator-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .installment-calculator-list__item {
+    display: block;
+  }
+  .installment-calculator-list__item-text {
+    font-size: 16px;
+  }
+  .installment-calculator-list__item-text .bold {
+    display: block;
+    margin-left: 0;
+    margin-top: 4px;
+    font-size: 21px;
+  }
+  .installment-calculator-list__circle {
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+  }
+  .installment-calculator-list__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .installment-calculator-list__icon.time {
+    width: 45px;
+    height: 45px;
+  }
+  .installment-calculator-slider__top {
+    margin-bottom: 39px;
+  }
+  .installment-calculator-slider__text {
+    font-size: 21px;
+  }
+  .installment-calculator-slider__total {
+    font-size: 30px;
+  }
+  .installment-calculator-slider__bottom {
+    margin-bottom: 29px;
+  }
+  .summ-box__rectangle {
+    width: 405px;
+  }
+  .summ-box__content {
+    max-width: 331px;
+    padding: 34px 27px 27px;
+  }
+  .summ-box__content::after {
+    background-size: 7.7%;
+  }
+  /* end -------------------------------------------- installment-calculator --------------------------------------- */
   /* start -------------------------------------------- installment-info-section ----------------------------------- */
   .installment-info {
     display: flex;
@@ -12201,6 +12467,23 @@ input:focus:-ms-input-placeholder {
     padding-right: 0;
   }
   /* end -------------------------------------------- installment-plan-section ------------------------------------- */
+  /* start -------------------------------------------- installment-calculator ------------------------------------- */
+  .installment-calculator__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .installment-calculator .left {
+    flex-basis: 60%;
+  }
+  .summ-box__rectangle {
+    width: 327px;
+  }
+  .summ-box__content {
+    max-width: 267px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+  /* end -------------------------------------------- installment-calculator --------------------------------------- */
   /* start -------------------------------------------- installment-info-section ----------------------------------- */
   .installment-info {
     max-width: none;

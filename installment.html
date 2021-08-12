@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рассрочка</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css">	
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -237,6 +240,110 @@
     </section>
     <!-- // Беспроцентная рассрочка -->
 
+    <!-- Калькулятор рассрочки -->
+    <section class="installment-calculator">
+        <h2 class="installment-calculator__title title">Калькулятор рассрочки</h2>  
+        <div class="container installment-calculator__container">
+            <div class="left">
+                <ul class="installment-calculator-list reset">
+                    <li class="installment-calculator-list__item">
+                        <div class="installment-calculator-list__circle">
+                            <img class="installment-calculator-list__icon currency" src="img/installment-calculator-icon-1.svg" alt="Сумма рассрочки">
+                        </div>
+                        <p class="installment-calculator-list__item-text">Сумма рассрочки <span class="bold">до 500 000 ₽</span></p>
+                    </li>
+                    <li class="installment-calculator-list__item">
+                        <div class="installment-calculator-list__circle">
+                            <img class="installment-calculator-list__icon time" src="img/installment-calculator-icon-2.svg" alt="Решение по заявке">
+                        </div>
+                        <p class="installment-calculator-list__item-text">Решение по заявке <span class="bold">от 3 минут</span></p>
+                    </li>
+                    <li class="installment-calculator-list__item">
+                        <div class="installment-calculator-list__circle">
+                            <img class="installment-calculator-list__icon document" src="img/installment-calculator-icon-3.svg" alt="Условия получения">
+                        </div>
+                        <p class="installment-calculator-list__item-text">Условия получения <span class="bold">2 документа</span></p>
+                    </li>
+                </ul>
+                <div class="installment-calculator-slider">                    
+                    <div class="installment-calculator-slider__top">
+                        <div class="installment-calculator-slider__content flex">
+                            <span class="installment-calculator-slider__text">Сколько стоит остекление?</span>
+							<span class="installment-calculator-slider__total"><span class="installment-calculator-slider_sum">15&nbsp;000</span> &#8381;</span>
+                        </div>
+                        <div class="installment-calculator-slider__box">
+                            <div class="installment-calculator-slider__line" style="display: none;">
+                                <div class="installment-calculator-slider__line-inner">
+                                    <span></span>
+                                </div>                                
+                            </div>
+                            <div class="slider-calc" id="slider-range-min"></div>
+                            <div class="installment-calculator-slider__range">
+                                <span class="installment-calculator-slider__value">15 000 <span class="installment-calculator-slider__rubble">&#8381;</span></span>
+                                <span class="installment-calculator-slider__value">500 000 <span class="installment-calculator-slider__rubble">&#8381;</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="installment-calculator-slider__bottom">
+                        <div class="installment-calculator-slider__content">
+                            <span class="installment-calculator-slider__text">Срок рассрочки</span>
+                        </div>
+                        <div class="installment-calculator-slider__box">
+							<div class="slider-calc" id="slider-range-month"></div>
+                            <div class="installment-calculator-slider__range">
+                                <span class="installment-calculator-slider__value">0 мес <span class="installment-calculator-slider__rubble">&#8381;</span></span>
+                                <span class="installment-calculator-slider__value">6 мес <span class="installment-calculator-slider__rubble">&#8381;</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="summ-box">
+                    <div class="summ-box__rectangle"></div>
+                    <div class="summ-box__content">
+                        <div class="summ-box__summ">
+                            <div>
+                                <p class="summ-box__text">Суммма рассрочки:</p>
+                                <p class="summ-box__value">
+                                    <span class="installment-calculator-slider_sum summ-box__summ-rs">15 000</span> &#8381;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="summ-box__text">
+                            <span class="summ-box__span">Первоначальный взнос:</span>
+                            <span class="summ-box__words-wrap">
+                                <span class="summ-box__word orange">0</span>
+                                <span class="summ-box__word orange">&#8381;</span>
+                            </span>
+                        </div>
+                        <div class="summ-box__text">
+                            <span class="summ-box__span">Срок рассрочки:</span> 
+                            <span class="summ-box__words-wrap">
+                                <span class="summ-box__word orange summ-box__month-rs">3</span>
+                                <span class="orange summ-box__text-rs">мес</span></div>
+                            </span>
+                        <div class="summ-box__text margin">
+                            <span class="summ-box__span">Переплата</span>
+                            <span class="summ-box__words-wrap"> 
+                                <span class="summ-box__word orange">0</span>
+                                <span class="summ-box__word orange">&#8381;</span>
+                            </span>
+                        </div>
+                        <div class="summ-box__installment">
+                            <div class="summ-box__text">Ежемесячный платеж:</div>
+                            <div class="summ-box__value">
+                                <span class="installment-calculator-slider_month_pay">7 050</span> &#8381;
+                            </div>
+                        </div>
+                        <button class="summ-box__btn btn">Подать заявку</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // Калькулятор рассрочки -->
+
     <!-- Как воспользоваться услугой? -->
     <section class="installment-info-section">
         <div class="container">
@@ -264,6 +371,109 @@
         </div>
     </section>
     <!-- // Как воспользоваться услугой? -->
+
+    <!-- Отзывы наших клиентов -->
+    <section class="reviews-section">
+        <div class="reviews container">
+            <h2 class="reviews__title title">Отзывы наших клиентов</h2>
+            <div class="reviews-slider">
+                <div class="reviews-slider__wrap">
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                    <div class="reviews-slider__slide">
+                        <div class="reviews-slider__video">
+                            <a data-fancybox="reviews-gallery" href="https://www.youtube.com/watch?v=hBXtqvjxN2c&t=2s&ab_channel=%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%D0%9E%D0%BA%D0%BE%D0%BD">
+                                <img src="img/reviews-slider-img.jpg" alt="Завод окон ПВХ">
+                            </a>
+                        </div>
+                        <p class="reviews-slider__text gray">Видео - отзыв</p>
+                        <p class="reviews-slider__text">Отзыв о работе по замене окна в квартире по улице Тополиная в г. Тольятти </p>
+                        <p class="reviews-slider__text gray">20 февраля 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-controls__prev reviews-slider__prev"></button>
+                <div class="slider-controls__pagination reviews-slider__pagination"></div>
+                <button class="slider-controls__next reviews-slider__next"></button>
+            </div>
+        </div>
+    </section>
+    <!-- // Отзывы наших клиентов -->
+
+    <!-- Бесплатная консультация 2-ой вариант -->
+    <section class="consultation-section">
+        <div class="consultation container">
+            <div class="consultation__img">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="img/consultation-bg-big.jpg">
+                    <source media="(min-width: 768px)" srcset="img/consultation-bg-middle.jpg">
+                    <img src="img/consultation-bg-small.jpg" alt="Бесплатная консультация">
+                </picture>
+            </div>
+            <div class="consultation__content">
+                <h2 class="consultation__title title"><span class="orange">Бесплатная</span> консультация</h2>
+                <p class="consultation__text nowrap">Узнайте цену на окна! Прямо сейчас!</p>
+                <p class="consultation__phone nowrap">
+                    <a href="tel:79171222880">+7 917 122 28 80</a>
+                </p>
+                <p class="consultation__whatsapp">
+                    <a href="https://wa.me/79171222880">Напишите нам в WhаtsApp</a>
+                </p>
+                <p class="consultation__text mgr">При обращении до <span class="bold">14:00</span> можем приехать на замер сегодня!</p>
+                <button class="consultation__btn btn">Заказать звонок</button>
+            </div>
+        </div>
+    </section>
+    <!-- // Бесплатная консультация 2-ой вариант -->
 
     <!-- Футер основной -->
     <footer class="footer">
@@ -362,6 +572,11 @@
     </footer>
     <!-- // Футер основной -->
     
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/jquery-ui/jquery-ui.min.js"></script>	
+    <script src="libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
