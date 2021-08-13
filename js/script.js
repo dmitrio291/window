@@ -68,10 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (popupClass === null) return;
 
-        // if (target.href) {
-        //     event.preventDefault();
-        // }
-
         const popup = document.querySelector(`.${popupClass}`);
 
         if (popup) {
