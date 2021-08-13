@@ -147,7 +147,7 @@
                             <p class="discounts-slider__bold">При заказе окна</p>
                             <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
                             <p class="discounts-slider__text">Защита от насекомых</p>
-                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                            <button data-popup="popup-call" class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
                         </div>
                     </div>
                     <div class="discounts-slider__slide">
@@ -159,7 +159,7 @@
                             <p class="discounts-slider__bold">При заказе окна</p>
                             <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
                             <p class="discounts-slider__text">Защита от насекомых</p>
-                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                            <button data-popup="popup-call" class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
                         </div>
                     </div>
                     <div class="discounts-slider__slide">
@@ -171,7 +171,7 @@
                             <p class="discounts-slider__bold">При заказе окна</p>
                             <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
                             <p class="discounts-slider__text">Защита от насекомых</p>
-                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                            <button data-popup="popup-call" class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
                         </div>
                     </div>
                     <div class="discounts-slider__slide">
@@ -183,7 +183,7 @@
                             <p class="discounts-slider__bold">При заказе окна</p>
                             <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
                             <p class="discounts-slider__text">Защита от насекомых</p>
-                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                            <button data-popup="popup-call" class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
                         </div>
                     </div>
                     <div class="discounts-slider__slide">
@@ -195,7 +195,7 @@
                             <p class="discounts-slider__bold">При заказе окна</p>
                             <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
                             <p class="discounts-slider__text">Защита от насекомых</p>
-                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                            <button data-popup="popup-call" class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
                         </div>
                     </div>
                     <div class="discounts-slider__slide">
@@ -207,7 +207,7 @@
                             <p class="discounts-slider__bold">При заказе окна</p>
                             <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
                             <p class="discounts-slider__text">Защита от насекомых</p>
-                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                            <button data-popup="popup-call" class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
                         </div>
                     </div>
                     <div class="discounts-slider__slide">
@@ -219,7 +219,7 @@
                             <p class="discounts-slider__bold">При заказе окна</p>
                             <h4 class="discounts-slider__title orange">москитная сетка в&nbsp;подарок</h4>
                             <p class="discounts-slider__text">Защита от насекомых</p>
-                            <button class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
+                            <button data-popup="popup-call" class="discounts-slider__btn btn btn--orange">Воспользоваться акцией</button>
                         </div>
                     </div>
                 </div>
@@ -353,6 +353,107 @@
         </div>
     </footer>
     <!-- // Футер основной -->
+
+    <!-- Модальные окна -->
+    <div class="popups">
+        <!-- Модальное окно Скидка 10% -->
+        <div data-popup="popup-discount" class="popup popup-discount">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content">
+                        <button class="popup__close popup__btn-close"></button>
+                        <h2 class="popup-discount__title orange">Скидка 10%</h2>
+                        <p class="popup__subtitle">Только сегодня при заявке с сайта</p>
+                        <form class="form form-popup" action="#" method="post">
+                            <input class="form__phone form__phone--transparent" type="tel" placeholder="ваш телефон" required>
+                            <button class="form__btn form__btn--orange btn" type="submit">Перезвонить</button>
+                        </form>
+                        <p class="legal-information">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a href="#">Правовой информацией</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Модальное окно Скидка 10% -->
+
+        <!-- Модальное окно Закажите бесплатный звонок -->
+        <div data-popup="popup-call" class="popup popup-call">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content">
+                        <button class="popup__close popup__btn-close"></button>
+                        <h2 class="popup__title">Закажите бесплатный звонок</h2>
+                        <form class="form form-popup" action="#" method="post">
+                            <input class="form__phone form__phone--transparent" type="tel" placeholder="ваш телефон" required>
+                            <button class="form__btn form__btn--orange btn" type="submit">Перезвонить</button>
+                        </form>
+                        <p class="legal-information">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a href="#">Правовой информацией</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Модальное окно Закажите бесплатный звонок -->
+
+        <!-- Модальное окно Записаться на бесплатный замер -->
+        <div data-popup="popup-measuring" class="popup popup-measuring">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content">
+                        <button class="popup__close popup__btn-close"></button>
+                        <h2 class="popup__title">Закажите бесплатный замер</h2>
+                        <form class="form form-popup" action="#" method="post">
+                            <input class="form__phone form__phone--transparent" type="tel" placeholder="ваш телефон" required>
+                            <button class="form__btn form__btn--orange btn" type="submit">Перезвонить</button>
+                        </form>
+                        <p class="legal-information">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a href="#">Правовой информацией</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Модальное окно Записаться на бесплатный замер -->
+
+        <!-- Модальное окно Спасибо -->
+        <div data-popup="popup-thanks" class="popup popup-thanks">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content">
+                        <button class="popup__close popup__btn-close"></button>
+                        <h2 class="popup__title">Спасибо</h2>
+                        <p class="popup__subtitle">Мы приняли вашу заявку, наш менеджер скоро с&nbsp;вами свяжется!</p>
+                        <button class="popup__close btn btn--orange">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Модальное окно Спасибо -->
+
+        <!-- Модальное окно Заказать балкон дешевле? -->
+        <div data-popup="popup-order" class="popup popup-order">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content">
+                        <button class="popup__close popup__btn-close"></button>
+                        <div class="order-balcony">
+                            <h2 class="popup__title">Заказать балкон дешевле?</h2>
+                            <div class="order-balcony__content">
+                                <p class="popup__subtitle">Отправьте заявку для получения самой низкой цены.</p>
+                                <p class="popup__subtitle orange"><span class="bold">Обязательно</span> зафиксируйте свою скидку!</p>
+                            </div>
+                            <picture class="order-balcony__img-box">
+                                <source media="(min-width: 768px)" srcset="img//popup-img-middle.png">
+                                <img class="order-balcony__img" src="img/popup-img-small.png" alt="Заказать балкон дешевле?">
+                            </picture>
+                            <form class="form form-popup" action="#" method="post">
+                                <input class="form__phone" type="tel" placeholder="ваш телефон" required>
+                                <button class="form__btn form__btn--orange btn" type="submit">Хочу дешевле</button>
+                            </form>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Модальное окно Заказать балкон дешевле? -->
+    </div>
+    <!-- Модальные окна -->
       
     <script src="libs/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

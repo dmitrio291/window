@@ -339,6 +339,195 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end ---------------------------------------------- basic ------------------------------------------------------------ */
+/* start ---------------------------------------------- popup ---------------------------------------------------------- */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: auto;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup.active {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.popup__inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.popup__content {
+  position: relative;
+  padding: 60px 20px 40px;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.popup__btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  display: inline-block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: none;
+  width: 9px;
+  height: 12px;
+}
+
+.popup__btn-close::before, .popup__btn-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ABABAB;
+  height: 12px;
+  width: 3px;
+  border-radius: 10px;
+}
+
+.popup__btn-close::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.popup__btn-close::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.popup__title {
+  padding: 0 14px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.popup__subtitle {
+  margin-bottom: 33px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.legal-information {
+  padding: 0 12px;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.legal-information a {
+  color: #48494B;
+  text-decoration: none;
+  border-bottom: 1px solid #48494B;
+}
+
+.form-popup {
+  margin-bottom: 30px;
+}
+
+.form-popup .form__btn {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-popup .form__btn:hover {
+  background-color: #F26422;
+  color: #ffffff;
+}
+
+/* end ---------------------------------------------- popup ------------------------------------------------------------ */
+/* start ---------------------------------------------- popup-discount ------------------------------------------------- */
+.popup-discount__title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* end ---------------------------------------------- popup-discount --------------------------------------------------- */
+/* start ---------------------------------------------- popup-thanks --------------------------------------------------- */
+.popup-thanks .popup__title {
+  margin-bottom: 25px;
+}
+
+.popup-thanks .popup__subtitle {
+  margin-bottom: 25px;
+  padding: 0 13px;
+}
+
+.popup-thanks .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 305px;
+}
+
+/* end ---------------------------------------------- popup-thanks ----------------------------------------------------- */
+/* start ---------------------------------------------- popup-order ---------------------------------------------------- */
+.popup-order .popup__title {
+  padding: 0;
+  margin-bottom: 18px;
+  grid-area: order-balcony-title;
+}
+
+.popup-order .popup__title, .popup-order .popup__subtitle {
+  text-align: left;
+}
+
+.popup-order .popup__subtitle {
+  margin-bottom: 15px;
+}
+
+.popup-order .form {
+  position: relative;
+  grid-area: order-balcony-form;
+  max-width: none;
+  width: 100%;
+  margin-top: -41px;
+  margin-bottom: 0;
+  background-color: #ffffff;
+}
+
+.order-balcony {
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template: 'order-balcony-title order-balcony-title' 'order-balcony-content order-balcony-img' 'order-balcony-form order-balcony-form';
+}
+
+.order-balcony__content {
+  grid-area: order-balcony-content;
+  padding-top: 8px;
+  margin-right: -56px;
+}
+
+.order-balcony__img {
+  display: block;
+  grid-area: order-balcony-img;
+}
+
+/* end ---------------------------------------------- popup-order ------------------------------------------------------ */
 /* start -------------------------------------------- header section---------------------------------------------------- */
 .header {
   margin-bottom: 20px;
@@ -7586,6 +7775,109 @@ input:focus:-ms-input-placeholder {
     right: 15px;
   }
   /* end -------------------------------------------- basic ---------------------------------------------------------- */
+  /* start -------------------------------------------- popup ------------------------------------------------------ */
+  .popup__inner {
+    padding: 50px 0;
+  }
+  .popup__content {
+    padding: 56px 20px 29px;
+    max-width: 601px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+  .popup__content .popup__btn-close {
+    display: block;
+  }
+  .popup__btn-close {
+    top: 25px;
+    right: 25px;
+  }
+  .popup__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .form-popup {
+    display: flex;
+    justify-content: space-between;
+    max-width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-popup .form__phone {
+    flex-basis: 200px;
+    margin-bottom: 0;
+  }
+  .form-popup .form__btn {
+    flex-basis: 190px;
+  }
+  /* end -------------------------------------------- popup -------------------------------------------------------- */
+  /* start -------------------------------------------- popup-discount --------------------------------------------- */
+  .popup-discount__title {
+    margin-bottom: 14px;
+  }
+  /* end -------------------------------------------- popup-discount ----------------------------------------------- */
+  /* start ---------------------------------------------- popup-thanks --------------------------------------------- */
+  .popup-thanks .popup__content {
+    padding: 60px 20px 31px;
+  }
+  .popup-thanks .popup__subtitle {
+    padding: 0 49px;
+  }
+  .popup-thanks .btn {
+    max-width: 190px;
+  }
+  /* end ---------------------------------------------- popup-thanks ----------------------------------------------- */
+  /* start ---------------------------------------------- popup-order --------------------------------------------- */
+  .popup-order .popup__content {
+    padding: 47px 0 0 35px;
+  }
+  .popup-order .popup__title {
+    grid-area: auto;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    font-size: 26px;
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
+  .popup-order .form {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 19px;
+    grid-area: auto;
+    grid-row: 3 / 4;
+  }
+  .popup-order .form__phone {
+    margin-bottom: 15px;
+  }
+  .order-balcony {
+    max-width: none;
+    grid-template: none;
+    column-gap: 19px;
+    grid-template-columns: 48% 49%;
+  }
+  .order-balcony__content {
+    padding-top: 28px;
+    margin-right: 0;
+    grid-area: auto;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  .order-balcony__img {
+    grid-area: auto;
+    position: relative;
+    left: -2px;
+    top: 2px;
+  }
+  .order-balcony__img-box {
+    grid-row: 2 / 4;
+    grid-column: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  /* end ---------------------------------------------- popup-order ----------------------------------------------- */
   /* start -------------------------------------------- header section ----------------------------------------------- */
   .header .calc {
     display: flex;

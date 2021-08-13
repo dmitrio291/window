@@ -17,10 +17,111 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     /* end Универсальня функция, которая показывает/скрывает аккордеон */
     
-    /* sart Проверка подключен ли fancybox на странице */
+    /* start Проверка подключен ли fancybox на странице */
     const dataFancybox = document.querySelector('[data-fancybox]');
     if (dataFancybox) $.fancybox.defaults.backFocus = false;
     /* end Проверка подключен ли fancybox на странице */
+
+    /* start Модальные окна */
+    const body = document.querySelector('body');
+
+    const closestItemByClass = (item, className) => {
+        let node = item;
+
+        while (node) {
+            if (node.classList.contains(className)) {
+                return node;
+            }
+
+            node = node.parentElement;
+        }
+
+        return null;
+    };
+
+    const closestAttr = (item, attr) => {
+        let node = item;
+
+        while (node) {
+            const attrValue = node.getAttribute(attr);
+            if (attrValue) {
+                return attrValue;
+            }
+
+            node = node.parentElement;
+        }
+
+        return null;
+    };
+
+    const showPopup = (target) => {
+        target.classList.add('active');
+    };
+
+    const closePopup = (target) => {
+        target.classList.remove('active');
+    };
+
+    body.addEventListener('click', (event) => {
+        const target = event.target,
+            popupClass = closestAttr(target, 'data-popup');
+
+        if (popupClass === null) return;
+
+        event.preventDefault();
+        const popup = document.querySelector(`.${popupClass}`);
+
+        if (popup) {
+            showPopup(popup);
+            body.classList.add('scroll-hidden');
+        }
+    });
+
+    body.addEventListener('click', (event) => {
+        const target = event.target;
+
+        if (target.classList.contains('popup__close') || target.classList.contains('popup__inner')) {
+            const popup = closestItemByClass(target, 'popup');
+            closePopup(popup);
+            body.classList.remove('scroll-hidden');
+        }
+    });
+
+    // const popupButtons = document.querySelectorAll('*[data-popup-btn]');
+    // const popups = document.querySelectorAll('.popup');
+
+    // if (popupButtons && popups) {
+    //     popupButtons.forEach(button => {
+    //         button.addEventListener('click', (event) => {
+    //             event.preventDefault();
+
+    //             let dataName = button.getAttribute('data-popup-btn'),
+    //                 popup = document.querySelector(`[data-popup="${dataName}"]`),
+    //                 close = popup.querySelectorAll('.popup__btn-close');
+               
+    //             popup.classList.add('active');
+    //             document.body.style.overflow = 'hidden';
+
+    //             close.forEach(close => {
+    //                 close.addEventListener('click', () => {
+    //                     popup.classList.remove('active');
+    //                     document.body.style.overflow = '';
+    //                 });
+    //             });                
+    //         });
+    //     });
+
+    //     popups.forEach(popup => {
+    //         popup.addEventListener('click', event => {
+    //             const target = event.target;
+    //             if (target.classList.contains('popup__inner')) {
+    //                 popup.classList.remove('active');
+    //                 document.body.style.overflow = '';
+    //             };
+    //         });
+    //     });
+    // };
+    /* end Модальные окна */
 
     /* start -------------------------------- Скрипты для секции .header -------------------------------------------- */
     const burgers = document.querySelectorAll('.burger');
@@ -810,7 +911,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* start ---------------------------------- Скрипты для секции .installment-calculato --------------------------- */
     const sliderCalc = document.querySelectorAll('.slider-calc');
 
-    if (sliderCalc) {
+    if (sliderCalc.length) {
         jQuery( function($){
             // КАЛЬКУЛЯТОР РАССРОЧКИ
             if($('.slider-calc').length) {
