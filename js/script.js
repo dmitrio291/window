@@ -68,7 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (popupClass === null) return;
 
-        event.preventDefault();
+        if (target.href) {
+            event.preventDefault();
+        }
+
         const popup = document.querySelector(`.${popupClass}`);
 
         if (popup) {
@@ -86,42 +89,17 @@ document.addEventListener('DOMContentLoaded', () => {
             body.classList.remove('scroll-hidden');
         }
     });
-
-    // const popupButtons = document.querySelectorAll('*[data-popup-btn]');
-    // const popups = document.querySelectorAll('.popup');
-
-    // if (popupButtons && popups) {
-    //     popupButtons.forEach(button => {
-    //         button.addEventListener('click', (event) => {
-    //             event.preventDefault();
-
-    //             let dataName = button.getAttribute('data-popup-btn'),
-    //                 popup = document.querySelector(`[data-popup="${dataName}"]`),
-    //                 close = popup.querySelectorAll('.popup__btn-close');
-               
-    //             popup.classList.add('active');
-    //             document.body.style.overflow = 'hidden';
-
-    //             close.forEach(close => {
-    //                 close.addEventListener('click', () => {
-    //                     popup.classList.remove('active');
-    //                     document.body.style.overflow = '';
-    //                 });
-    //             });                
-    //         });
-    //     });
-
-    //     popups.forEach(popup => {
-    //         popup.addEventListener('click', event => {
-    //             const target = event.target;
-    //             if (target.classList.contains('popup__inner')) {
-    //                 popup.classList.remove('active');
-    //                 document.body.style.overflow = '';
-    //             };
-    //         });
-    //     });
-    // };
     /* end Модальные окна */
+
+    /* start Скрипт на загрузку файлов формы form-contacts */
+    const formContactsUpload = document.querySelector('.form-contacts__upload');
+    const formContactsUploadText = document.querySelector('.form-contacts__upload-text');
+
+    formContactsUpload.addEventListener('change', (event) => {
+        let uploadedFileName = event.target.files[0].name;
+        formContactsUploadText.textContent = uploadedFileName;
+    });
+    /* end Скрипт на загрузку файлов формы form-contacts */
 
     /* start -------------------------------- Скрипты для секции .header -------------------------------------------- */
     const burgers = document.querySelectorAll('.burger');

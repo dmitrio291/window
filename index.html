@@ -3145,7 +3145,7 @@
                         <img class="footer-contacts__icon" src="img/footer-icon-5.svg" alt="Написать сообщение">
                         <div class="footer-contacts__box">
                             <p class="footer-contacts__text">Написать сообщение генеральному директору</p>
-                            <a href="#" class="footer-contacts__text orange border">Написать сообщение ></a>
+                            <a data-popup="popup-letter" href="#" class="footer-contacts__text orange border">Написать сообщение ></a>
                         </div>
                     </li>
                     <li>
@@ -3289,6 +3289,39 @@
             </div>
         </div>
         <!-- // Модальное окно Заказать балкон дешевле? -->
+
+        <!-- Письмо генеральному директору -->
+        <div data-popup="popup-letter" class="popup popup-letter">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content">
+                        <button class="popup__close popup__btn-close"></button>
+                        <h2 class="popup__title">Письмо генеральному директору</h2>
+                        <form class="form-contacts" action="#" method="post">
+                            <div class="form-contacts__inputs">
+                                <input class="form-contacts__input" type="text" placeholder="Ваше имя">
+                                <input class="form-contacts__input" type="tel" placeholder="Ваш телефон">
+                            </div>
+                            <div class="form-contacts__inputs">
+                                <input class="form-contacts__input" type="email" placeholder="E-mail">
+                                <input class="form-contacts__input" type="text" placeholder="№ договора">
+                            </div>
+                            <textarea class="form-contacts__input message" placeholder="Текст письма"></textarea>
+                            <div class="form-contacts__upload-box">
+                                <span class="form-contacts__upload-text"></span>
+                                <label class="form-contacts__upload-label">
+                                    <input class="form-contacts__upload" type="file">
+                                    <span>Прикрепить файл</span>
+                                </label>
+                            </div>
+                            <button class="form-contacts__btn btn btn--orange">Отправить сообщение</button>
+                            <p class="legal-information">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a href="#">Правовой информацией</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Письмо генеральному директору -->
     </div>
     <!-- Модальные окна -->
 
@@ -3297,7 +3330,7 @@
         <svg viewBox="0 0 12 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.53033 0.469669C6.23744 0.176777 5.76256 0.176777 5.46967 0.469669L0.696699 5.24264C0.403806 5.53553 0.403806 6.01041 0.696699 6.3033C0.989593 6.59619 1.46447 6.59619 1.75736 6.3033L6 2.06066L10.2426 6.3033C10.5355 6.59619 11.0104 6.59619 11.3033 6.3033C11.5962 6.01041 11.5962 5.53553 11.3033 5.24264L6.53033 0.469669ZM6.75 27L6.75 1H5.25L5.25 27H6.75Z" fill="#7D8290"/>
         </svg>
-    </diva>
+    </div>
     <!-- // Кнопка вверх -->
     
     <script src="libs/jquery/jquery-3.6.0.min.js"></script>

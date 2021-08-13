@@ -105,7 +105,8 @@ h6 {
 }
 
 button,
-input {
+input,
+textarea {
     border: none;
     outline: none;
 }
@@ -201,10 +202,20 @@ input:-moz-placeholder { color: #CDCDCD; } /* FF 4-18 */
 input::-moz-placeholder { color: #CDCDCD; } /* FF 19+ */
 input:-ms-input-placeholder { color: #CDCDCD; } /* IE 10+ */
 
+textarea::-webkit-input-placeholder { color: #CDCDCD; }
+textarea:-moz-placeholder { color: #CDCDCD; } /* FF 4-18 */
+textarea::-moz-placeholder { color: #CDCDCD; } /* FF 19+ */
+textarea:-ms-input-placeholder { color: #CDCDCD; } /* IE 10+ */
+
 input:focus::-webkit-input-placeholder { color: transparent; }
 input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
+
+textarea:focus::-webkit-input-placeholder { color: transparent; }
+textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
 .scroll-top {
     width: 56px;
@@ -546,6 +557,64 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* end ---------------------------------------------- popup-order ------------------------------------------------------ */
+
+/* start ---------------------------------------------- popup-letter --------------------------------------------------- */
+.popup-letter {
+    .popup {
+        &__content {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        &__title {
+            margin-bottom: 42px;
+        }
+    }
+}
+
+.form-contacts {
+    &__upload {
+        display: none;
+
+        &-box {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        & + span {
+            font-size: 14px;
+            border-bottom: 1px solid #48494B;
+            cursor: pointer;
+        }
+    }
+
+    &__input {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #D0D0D0;
+        background-color: #FFFFFF;
+        color: #D0D0D0;
+
+        &.message {
+            margin-bottom: 12px;
+            height: 169px;
+            resize: vertical;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 315px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* end ---------------------------------------------- popup-letter ----------------------------------------------------- */
 
 /* start -------------------------------------------- header section---------------------------------------------------- */
 .header {
@@ -8305,7 +8374,7 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end ---------------------------------------------- popup-thanks ----------------------------------------------- */
 
-    /* start ---------------------------------------------- popup-order --------------------------------------------- */
+    /* start ---------------------------------------------- popup-order ----------------------------------------------- */
     .popup-order {
         .popup {
             &__content {
@@ -8364,7 +8433,37 @@ input:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             }
         }
     }
-    /* end ---------------------------------------------- popup-order ----------------------------------------------- */
+    /* end ---------------------------------------------- popup-order -------------------------------------------------- */
+
+    /* start ---------------------------------------------- popup-letter ----------------------------------------------- */
+    .popup-letter {
+        .popup {
+            &__title {
+                margin-bottom: 44px;
+                font-size: 26px;
+            }
+        }
+    }
+
+    .form-contacts {
+        &__inputs {
+            display: flex;
+            column-gap: 20px;
+        }
+
+        &__input {
+            margin-bottom: 20px;
+
+            &.message {
+                height: 178px;
+            }
+        }
+
+        &__btn {
+            max-width: 260px;
+        }
+    }
+    /* end ---------------------------------------------- popup-letter ------------------------------------------------- */
 
     /* start -------------------------------------------- header section ----------------------------------------------- */
     .header {

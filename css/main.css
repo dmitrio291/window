@@ -88,7 +88,8 @@ h6 {
 }
 
 button,
-input {
+input,
+textarea {
   border: none;
   outline: none;
 }
@@ -195,6 +196,25 @@ input:-ms-input-placeholder {
 }
 
 /* IE 10+ */
+textarea::-webkit-input-placeholder {
+  color: #CDCDCD;
+}
+
+textarea:-moz-placeholder {
+  color: #CDCDCD;
+}
+
+/* FF 4-18 */
+textarea::-moz-placeholder {
+  color: #CDCDCD;
+}
+
+/* FF 19+ */
+textarea:-ms-input-placeholder {
+  color: #CDCDCD;
+}
+
+/* IE 10+ */
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -210,6 +230,25 @@ input:focus::-moz-placeholder {
 
 /* FF 19+ */
 input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* IE 10+ */
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 4-18 */
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 19+ */
+textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
@@ -528,6 +567,58 @@ input:focus:-ms-input-placeholder {
 }
 
 /* end ---------------------------------------------- popup-order ------------------------------------------------------ */
+/* start ---------------------------------------------- popup-letter --------------------------------------------------- */
+.popup-letter .popup__content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.popup-letter .popup__title {
+  margin-bottom: 42px;
+}
+
+.form-contacts__upload {
+  display: none;
+}
+
+.form-contacts__upload-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form-contacts__upload + span {
+  font-size: 14px;
+  border-bottom: 1px solid #48494B;
+  cursor: pointer;
+}
+
+.form-contacts__input {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #D0D0D0;
+  background-color: #FFFFFF;
+  color: #D0D0D0;
+}
+
+.form-contacts__input.message {
+  margin-bottom: 12px;
+  height: 169px;
+  resize: vertical;
+}
+
+.form-contacts__btn {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* end ---------------------------------------------- popup-letter ----------------------------------------------------- */
 /* start -------------------------------------------- header section---------------------------------------------------- */
 .header {
   margin-bottom: 20px;
@@ -7829,7 +7920,7 @@ input:focus:-ms-input-placeholder {
     max-width: 190px;
   }
   /* end ---------------------------------------------- popup-thanks ----------------------------------------------- */
-  /* start ---------------------------------------------- popup-order --------------------------------------------- */
+  /* start ---------------------------------------------- popup-order ----------------------------------------------- */
   .popup-order .popup__content {
     padding: 47px 0 0 35px;
   }
@@ -7877,7 +7968,26 @@ input:focus:-ms-input-placeholder {
     flex-direction: column;
     justify-content: flex-end;
   }
-  /* end ---------------------------------------------- popup-order ----------------------------------------------- */
+  /* end ---------------------------------------------- popup-order -------------------------------------------------- */
+  /* start ---------------------------------------------- popup-letter ----------------------------------------------- */
+  .popup-letter .popup__title {
+    margin-bottom: 44px;
+    font-size: 26px;
+  }
+  .form-contacts__inputs {
+    display: flex;
+    column-gap: 20px;
+  }
+  .form-contacts__input {
+    margin-bottom: 20px;
+  }
+  .form-contacts__input.message {
+    height: 178px;
+  }
+  .form-contacts__btn {
+    max-width: 260px;
+  }
+  /* end ---------------------------------------------- popup-letter ------------------------------------------------- */
   /* start -------------------------------------------- header section ----------------------------------------------- */
   .header .calc {
     display: flex;
