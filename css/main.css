@@ -5177,6 +5177,10 @@ textarea:focus:-ms-input-placeholder {
   display: none;
 }
 
+.footer-contacts__popup {
+  cursor: pointer;
+}
+
 .footer__payment {
   padding: 22px 10px;
 }

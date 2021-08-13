@@ -5419,6 +5419,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 display: none;
             }
         }
+
+        &__popup {
+            cursor: pointer;
+        }
     }
 
     &__payment {
