@@ -684,6 +684,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     margin-top: -2px;
     display: flex;
     column-gap: 17px;
+
+    &__link {
+        transition: 0.3s color ease;
+    }
 }
 
 .phone {
@@ -905,7 +909,17 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 .main-header {
     margin-bottom: 20px;
 
+    &.fixed {
+        position: fixed;
+        z-index: 200;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
     &__top {
+        background-color: #ffffff;
+
         &.active {
             position: fixed;
             top: 0;
@@ -1508,7 +1522,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__offer {
-        padding: 7px 17px;
+        padding: 7px 12px;
         background-color: #F9F9F9;
         border-radius: 3px;
 
@@ -1974,21 +1988,16 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 21px;
+        height: 365px;
 
         &.img {
             &-1 {
-                width: 165px;
-                height: 250px;
+                width: 229px;
             }
 
-            &-2 {
-                width: 278px;
-                height: 278px;
-            }
-
+            &-2,
             &-3 {
-                width: 278px;
-                height: 220px;
+                width: 345px;
             }
         }
     }
@@ -7472,7 +7481,16 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         display: none;
     }
 
+    &__sliders {
+        position: relative;
+    }
+
     &__slider.swing {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
         opacity: 0;
         pointer-events: none;
     }
@@ -8837,6 +8855,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &__icon {
             display: block;
+            transform: translateY(15px);
         }
 
         &__list {
@@ -9176,9 +9195,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &__img {
             grid-area: windows-img;
-            width: 253px;
             height: 249px;
             margin-bottom: 38px;
+
+            &.img-1 {
+                width: 170px;
+            }
         }
 
         &__list,
@@ -10759,12 +10781,17 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
             li {
                 margin-bottom: 20px;
-                padding-left: 18px;
-                padding-right: 18px;
+                padding-left: 17px;
+                padding-right: 17px;
                 width: 31.4%;
 
                 &.hidden:not(:last-child) {
                     display: flex;
+                }
+
+                &.pd {
+                    padding-left: 13px;
+                    padding-right: 13px;
                 }
             }
         }
@@ -13376,17 +13403,14 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             &.img {
                 &-1 {
                     width: 220px;
-                    height: 360px;
                 }
     
                 &-2 {
                     width: 371.68px;
-                    height: 365px;
                 }
     
                 &-3 {
                     width: 379.68px;
-                    height: 318px;
                 }
             }
         }
@@ -15569,8 +15593,11 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__content {
-            grid-area: right-balcony-content;
             width: 388px;
+
+            &-wrap {
+                grid-area: right-balcony-content;
+            }
         }
 
         &__advantages {
@@ -15591,7 +15618,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             }
         }
 
-        &__slider {
+        &__sliders {
             grid-area: right-balcony-slider;
         }
 
@@ -15599,7 +15626,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             margin-top: 50px;
             padding-left: 40px;
             padding-right: 40px;
-            grid-area: right-balcony-prices;
+            
+            &-box {
+                grid-area: right-balcony-prices;
+            }
         }
 
         &__price-list {
@@ -16000,6 +16030,14 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }   
     }
     /* end -------------------------------------------- basic ---------------------------------------------------------- */
+
+    /* start -------------------------------------------- header ------------------------------------------------------- */
+    .menu {
+        &__link:hover {
+            color: #F26422;
+        }
+    }
+     /* end -------------------------------------------- header -------------------------------------------------------- */
 
     /* start -------------------------------------------- examples-section --------------------------------------------- */
     .examples {

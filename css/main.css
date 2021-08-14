@@ -680,6 +680,10 @@ textarea:focus:-ms-input-placeholder {
   column-gap: 17px;
 }
 
+.menu__link {
+  transition: 0.3s color ease;
+}
+
 .phone {
   text-align: right;
 }
@@ -879,6 +883,18 @@ textarea:focus:-ms-input-placeholder {
 /* start -------------------------------------------- main-header ------------------------------------------------------ */
 .main-header {
   margin-bottom: 20px;
+}
+
+.main-header.fixed {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-header__top {
+  background-color: #ffffff;
 }
 
 .main-header__top.active {
@@ -1434,7 +1450,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .categories__offer {
-  padding: 7px 17px;
+  padding: 7px 12px;
   background-color: #F9F9F9;
   border-radius: 3px;
 }
@@ -1879,21 +1895,15 @@ textarea:focus:-ms-input-placeholder {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 21px;
+  height: 365px;
 }
 
 .calculator__img.img-1 {
-  width: 165px;
-  height: 250px;
+  width: 229px;
 }
 
-.calculator__img.img-2 {
-  width: 278px;
-  height: 278px;
-}
-
-.calculator__img.img-3 {
-  width: 278px;
-  height: 220px;
+.calculator__img.img-2, .calculator__img.img-3 {
+  width: 345px;
 }
 
 .calculator__sizes {
@@ -7104,7 +7114,16 @@ textarea:focus:-ms-input-placeholder {
   display: none;
 }
 
+.right-balcony__sliders {
+  position: relative;
+}
+
 .right-balcony__slider.swing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -8289,6 +8308,7 @@ textarea:focus:-ms-input-placeholder {
   }
   .banner-windows__icon {
     display: block;
+    transform: translateY(15px);
   }
   .banner-windows__list {
     margin-bottom: 32px;
@@ -8549,9 +8569,11 @@ textarea:focus:-ms-input-placeholder {
   }
   .calculator__img {
     grid-area: windows-img;
-    width: 253px;
     height: 249px;
     margin-bottom: 38px;
+  }
+  .calculator__img.img-1 {
+    width: 170px;
   }
   .calculator__list, .calculator__sizes {
     max-width: none;
@@ -9737,12 +9759,16 @@ textarea:focus:-ms-input-placeholder {
   }
   .profitable-windows__list li {
     margin-bottom: 20px;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 17px;
+    padding-right: 17px;
     width: 31.4%;
   }
   .profitable-windows__list li.hidden:not(:last-child) {
     display: flex;
+  }
+  .profitable-windows__list li.pd {
+    padding-left: 13px;
+    padding-right: 13px;
   }
   .profitable-windows__img {
     margin-bottom: 11px;
@@ -11677,15 +11703,12 @@ textarea:focus:-ms-input-placeholder {
   }
   .calculator__img.img-1 {
     width: 220px;
-    height: 360px;
   }
   .calculator__img.img-2 {
     width: 371.68px;
-    height: 365px;
   }
   .calculator__img.img-3 {
     width: 379.68px;
-    height: 318px;
   }
   .calculator__sizes li:first-child {
     margin-bottom: 34px;
@@ -13244,8 +13267,10 @@ textarea:focus:-ms-input-placeholder {
     margin-bottom: 0;
   }
   .right-balcony__content {
-    grid-area: right-balcony-content;
     width: 388px;
+  }
+  .right-balcony__content-wrap {
+    grid-area: right-balcony-content;
   }
   .right-balcony__advantages {
     column-gap: 30px;
@@ -13259,13 +13284,15 @@ textarea:focus:-ms-input-placeholder {
   .right-balcony__text .orange {
     font-weight: 400;
   }
-  .right-balcony__slider {
+  .right-balcony__sliders {
     grid-area: right-balcony-slider;
   }
   .right-balcony__prices {
     margin-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .right-balcony__prices-box {
     grid-area: right-balcony-prices;
   }
   .right-balcony__price-list li {
@@ -13531,6 +13558,11 @@ textarea:focus:-ms-input-placeholder {
     opacity: 1;
   }
   /* end -------------------------------------------- basic ---------------------------------------------------------- */
+  /* start -------------------------------------------- header ------------------------------------------------------- */
+  .menu__link:hover {
+    color: #F26422;
+  }
+  /* end -------------------------------------------- header -------------------------------------------------------- */
   /* start -------------------------------------------- examples-section --------------------------------------------- */
   .examples__list li:hover .examples-slider__prev, .examples__list li:hover .examples-slider__next {
     display: block;

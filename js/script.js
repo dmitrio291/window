@@ -98,6 +98,20 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end Скрипт на загрузку файлов формы form-contacts */
 
     /* start -------------------------------- Скрипты для секции .header -------------------------------------------- */
+    /* start Скрипт на фиксацию шапки */
+    const mainHeader = document.querySelector('.main-header');
+
+    window.addEventListener('scroll', () => {
+        const srollPos = mainHeader.offsetHeight;
+        
+        if (document.body.scrollTop > srollPos || document.documentElement.scrollTop > srollPos) {
+            mainHeader.classList.add('fixed');
+        } else {
+            mainHeader.classList.remove('fixed');
+        }
+    });
+    /* end Скрипт на фиксацию шапки */
+
     const burgers = document.querySelectorAll('.burger');
     const headerPopup = document.querySelector('.header-popup');
     const headerPopupClose = document.querySelector('.header-popup__close');
@@ -239,6 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 clickable: true
             },
             loop: true,
+            autoplay: true,
             navigation: {
                 nextEl: '.discounts-slider__next',
                 prevEl: '.discounts-slider__prev'
@@ -388,6 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     clickable: true
                 },
                 loop: true,
+                autoplay: true,
                 navigation: {
                     nextEl: '.windows-slider__next',
                     prevEl: '.windows-slider__prev'
