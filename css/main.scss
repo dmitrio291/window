@@ -134,6 +134,8 @@ button {
     color: #FFFFFF;
     font-weight: 500;
     cursor: pointer;
+    transition: 0.3s background-color ease,
+        0.3s color ease;
 }
 
 .btn--white {
@@ -5587,6 +5589,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__schedule {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
         &-work {
             margin-bottom: 10px;
         }
@@ -16041,6 +16047,13 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             opacity: 1;
         }   
     }
+
+    .form__btn--orange:hover,
+    .btn--orange:hover {
+        background-color: #F26422;
+        color: #ffffff;
+    }
+
     /* end -------------------------------------------- basic ---------------------------------------------------------- */
 
     /* start -------------------------------------------- header ------------------------------------------------------- */
