@@ -4734,7 +4734,6 @@ textarea:focus:-ms-input-placeholder {
   font-size: 18px;
   font-weight: 500;
   color: #48494B;
-  cursor: pointer;
   outline: none;
   line-height: 21px;
 }
@@ -11189,6 +11188,7 @@ textarea:focus:-ms-input-placeholder {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 15px;
+    cursor: auto;
   }
   .windows-quality .accordion__toggle, .windows-quality .accordion__content {
     padding: 0;
@@ -11224,6 +11224,11 @@ textarea:focus:-ms-input-placeholder {
   }
   .profitable-windows--balconies .profitable-windows__inputs {
     column-gap: 0;
+  }
+  .profitable-windows--balconies .profitable-windows__img-box {
+    min-height: 115px;
+    display: flex;
+    justify-content: center;
   }
   /* end -------------------------------------------- profitable-windows-section ----------------------------------- */
   /* start -------------------------------------------- customers-section ------------------------------------------ */
@@ -13563,6 +13568,11 @@ textarea:focus:-ms-input-placeholder {
     color: #F26422;
   }
   /* end -------------------------------------------- header -------------------------------------------------------- */
+  /* start -------------------------------------------- accordion section ------------------------------------------- */
+  .accordion__toggle {
+    cursor: pointer;
+  }
+  /* end -------------------------------------------- accordion section --------------------------------------------- */
   /* start -------------------------------------------- examples-section --------------------------------------------- */
   .examples__list li:hover .examples-slider__prev, .examples__list li:hover .examples-slider__next {
     display: block;

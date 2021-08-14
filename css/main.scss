@@ -4954,7 +4954,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         font-size: 18px;
         font-weight: 500;
         color: #48494B;
-        cursor: pointer;
         outline: none;
         line-height: 21px;
 
@@ -12689,6 +12688,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 flex-direction: column;
                 align-items: flex-start;
                 margin-bottom: 15px;
+                cursor: auto;
             }
 
             &__toggle,
@@ -12740,6 +12740,14 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
                 &__inputs {
                     column-gap: 0;
+                }
+
+                &__img {
+                    &-box {
+                        min-height: 115px;
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
             }
         }
@@ -16038,6 +16046,14 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
      /* end -------------------------------------------- header -------------------------------------------------------- */
+
+     /* start -------------------------------------------- accordion section ------------------------------------------- */
+     .accordion {
+         &__toggle {
+             cursor: pointer;
+         }
+     }
+     /* end -------------------------------------------- accordion section --------------------------------------------- */
 
     /* start -------------------------------------------- examples-section --------------------------------------------- */
     .examples {
