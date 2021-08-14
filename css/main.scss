@@ -12047,7 +12047,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
             .banner-windows {
                 &__list {
-                    max-width: 356px;
+                    max-width: 376px;
 
                     li {
                         &:nth-child(3) {
@@ -15360,6 +15360,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             .banner-windows {
                 &__left {
                     max-width: 480px;
+                }
+
+                &__list {
+                    max-width: none;
                 }
             }
         }

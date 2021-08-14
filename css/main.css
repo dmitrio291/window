@@ -10723,7 +10723,7 @@ textarea:focus:-ms-input-placeholder {
     background-image: url("../img/banner-glazing-balconies-middle.jpg");
   }
   .banner-windows--finishing-balconies .banner-windows__list {
-    max-width: 356px;
+    max-width: 376px;
   }
   .banner-windows--finishing-balconies .banner-windows__list li:nth-child(3) {
     padding-right: 35px;
@@ -13108,6 +13108,9 @@ textarea:focus:-ms-input-placeholder {
   }
   .banner-windows--finishing-balconies .banner-windows__left {
     max-width: 480px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list {
+    max-width: none;
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
   /* start -------------------------------------------- types-work-section ----------------------------------------- */
