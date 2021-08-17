@@ -1337,6 +1337,10 @@ input:checked ~ .quiz-step-mark > span {
   .quiz-container.quiz .quiz-step-8 h2, .quiz-container.npo .quiz-step-11 h2 {
     font-size: 30px;
   }
+  .quiz-overlay.quiz-open > .quiz-container {
+    padding-top: 0;
+    margin: auto;
+  }
   .quiz-title {
     margin-bottom: 41px;
   }

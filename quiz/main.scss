@@ -1530,6 +1530,11 @@ input:checked~.quiz-step-mark > span {
         font-size: 30px;
     }
 
+    .quiz-overlay.quiz-open > .quiz-container {
+        padding-top: 0;
+        margin: auto;
+    }
+
     .quiz-title {
         margin-bottom: 41px;
     }
