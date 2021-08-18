@@ -9,15 +9,9 @@ if (quizBtn) {
             const calcWindowsQuiz = document.querySelector('.calc-windows-quiz.none');
             if (calcWindowsQuiz) {
                 calcWindowsQuiz.classList.remove('none');
+                calcWindowsQuiz.classList.add('quiz-open__modal');
             }
         });
-    });
-}
-
-if (calcWindowsQuiz) {
-    calcWindowsQuiz.addEventListener('click', (e) => {
-        const target = e;
-        console.log(target);
     });
 }
 
@@ -33,12 +27,14 @@ if(quizStep) {
         }
         
         $('.tooltips').tooltipster({
-                        interactive: true,
-                        theme: 'tooltipster-shadow'
-                    });
+            interactive: true,
+            theme: 'tooltipster-shadow'
+        });
+
         $('.tooltip_templates img').on('load', function(){
-                        $('.tooltips').tooltipster('reposition')
-                    })
+            $('.tooltips').tooltipster('reposition')
+        });
+
         var pfx = ["webkit", "moz", "MS", "o", ""];
         
         function scroll_to_header() {
@@ -48,7 +44,7 @@ if(quizStep) {
         function PrefixedEvent(element, type, callback) {
         for (var p = 0; p < pfx.length; p++) {
             if (!pfx[p]) type = type.toLowerCase();
-            element.addEventListener(pfx[p]+type, callback, false);
+                element.addEventListener(pfx[p]+type, callback, false);
             }
         }
         
@@ -70,12 +66,15 @@ if(quizStep) {
         function quiz_open() {
             $('.quiz-step', form).removeClass('quiz-show-step');
             pbl.removeClass('quiz-full-p');
+            document.getElementById("quiz_form").reset();
             currstep = 1;
             stepmark.text('Шаг '+currstep+' из 8');
             bprev.prop('disabled', true);
+            bnext.prop('disabled', false);
             $('.quiz-step-1', form).addClass('quiz-show-step');
             nav.removeClass('quiz-hide');
-            ovrl.addClass('quiz-open');    
+            ovrl.addClass('quiz-open');
+            $('body').addClass('scroll-hidden');    
         }
 
         function quiz_close() {
@@ -91,6 +90,11 @@ if(quizStep) {
             bnext.prop('disabled', false);
             $('.quiz-step-1', form).addClass('quiz-show-step');
             nav.removeClass('quiz-hide');
+            if($('.calc-windows-quiz.quiz-open__modal').length){
+				$('.calc-windows-quiz.quiz-open__modal').removeClass('quiz-open__modal');
+				$('.calc-windows-quiz').addClass('none');
+			}
+			$('body').removeAttr('class');
         }
 
         $('label',form).on('click',function(e) {
