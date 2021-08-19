@@ -74,6 +74,11 @@ if(quizStep) {
             $('.quiz-step-1', form).addClass('quiz-show-step');
             nav.removeClass('quiz-hide');
             ovrl.addClass('quiz-open');
+            
+			if( $('.quiz-overlay').hasClass('quiz-open__inline') ){
+				$('.quiz-overlay').removeClass('quiz-open__inline');
+			}			
+			
             $('body').addClass('scroll-hidden');    
         }
 
@@ -94,6 +99,11 @@ if(quizStep) {
 				$('.calc-windows-quiz.quiz-open__modal').removeClass('quiz-open__modal');
 				$('.calc-windows-quiz').addClass('none');
 			}
+            
+			if( $('.quiz-overlay').hasClass('quiz-open__inline') ){
+				$('.quiz-overlay').removeClass('quiz-open__inline');
+			}			
+			
 			$('body').removeAttr('class');
         }
 
@@ -104,7 +114,8 @@ if(quizStep) {
         });
 
         bnext.on('click', function() {
-            bprev.prop('disabled', false);i_check=false;
+            bprev.prop('disabled', false);
+            i_check=false;
             if(++currstep>8) {            
                 nav.addClass('quiz-hide');
                 setTimeout( function(){pbl.addClass('quiz-full-p');}, 100 );
@@ -118,7 +129,14 @@ if(quizStep) {
 
             $(step+currstep).addClass('quiz-show-step');
 
-            stepmark.text('Шаг '+currstep+' из 8');            
+            stepmark.text('Шаг '+currstep+' из 8');  
+            
+			if( $('.quiz-show-step .quiz-showroom').length ){
+				if( !$('.quiz-overlay').hasClass('quiz-open') ){
+					$('.quiz-overlay').addClass('quiz-open quiz-open__inline');
+				}
+			}
+			       
         });
 
         $(main).on('click', function(e){e.stopPropagation()});
