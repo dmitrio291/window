@@ -66,6 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const target = event.target,
             popupClass = closestAttr(target, 'data-popup');
 
+        if (target.dataset.popup) {
+            event.preventDefault();
+        }
+
         if (popupClass === null) return;
 
         const popup = document.querySelector(`.${popupClass}`);
