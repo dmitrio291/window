@@ -1934,6 +1934,9 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__type {
+        position: relative;
+        z-index: 1;
+
         .calculator {
             &__text {
                 margin-bottom: 20px;
@@ -1953,34 +1956,53 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         display: flex;
         justify-content: space-between;
 
-        li {
-            cursor: pointer;
-
-            &.active {
-                rect,
-                path {
-                    stroke: #F26422;
+        & > {
+            li {
+                // cursor: pointer;
+    
+                // &.active {
+                //     rect,
+                //     path {
+                //         stroke: #F26422;
+                //     }
+                // }
+    
+                &:first-child {
+                    width: 51.75px;
+                    height: 72px;
+                }
+    
+                &:nth-child(2) {
+                    width: 93.15px;
+                    height: 72px;
+                }
+    
+                &:last-child {
+                    width: 139.72px;
+                    height: 72px;
+                }
+    
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: #ffffff;
                 }
             }
+        }
 
-            &:first-child {
-                width: 51.75px;
-                height: 72px;
+        &-img {
+            display: none;
+            margin-top: 15px;
+
+            &.active {
+                display: block;
             }
 
-            &:nth-child(2) {
-                width: 93.15px;
-                height: 72px;
-            }
-
-            &:last-child {
-                width: 139.72px;
-                height: 72px;
-            }
-
-            svg {
-                width: 100%;
-                height: 100%;
+            & > {
+                li {
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                }
             }
         }
     }    
@@ -2000,6 +2022,17 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             &-2,
             &-3 {
                 width: 345px;
+            }
+        }
+
+        &-tab {
+            cursor: pointer;
+
+            &.active {
+                rect,
+                path {
+                    stroke: #F26422;
+                }
             }
         }
     }
@@ -7786,6 +7819,15 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     .calculator {
         &__list {
             li {
+                cursor: pointer;
+    
+                &.active {
+                    rect,
+                    path {
+                        stroke: #F26422;
+                    }
+                }
+
                 &:first-child {
                     width: 80px;
                     height: 53px;
@@ -9220,24 +9262,26 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             margin-top: 6px;
             transform: translateX(-9px);
 
-            li {
-                &:not(:first-child) {
-                    margin-left: 12px;
-                }
-
-                &:first-child {
-                    width: 22.76px;
-                    height: 32px;
-                }
-
-                &:nth-child(2) {
-                    width: 41.84px;
-                    height: 32px;
-                }
-
-                &:last-child {
-                    width: 62.4px;
-                    height: 32px;
+            & > {
+                li {
+                    &:not(:first-child) {
+                        margin-left: 12px;
+                    }
+    
+                    &:first-child {
+                        width: 22.76px;
+                        height: 32px;
+                    }
+    
+                    &:nth-child(2) {
+                        width: 41.84px;
+                        height: 32px;
+                    }
+    
+                    &:last-child {
+                        width: 62.4px;
+                        height: 32px;
+                    }
                 }
             }
         }
@@ -13391,20 +13435,22 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             margin-top: 0;
             transform: translateX(0);
 
-            li {
-                &:first-child {
-                    width: 60px;
-                    height: 83px;
-                }
-
-                &:nth-child(2) {
-                    width: 108px;
-                    height: 83px;
-                }
-
-                &:last-child {
-                    width: 162px;
-                    height: 83px;
+            & > {
+                li {
+                    &:first-child {
+                        width: 60px;
+                        height: 83px;
+                    }
+    
+                    &:nth-child(2) {
+                        width: 108px;
+                        height: 83px;
+                    }
+    
+                    &:last-child {
+                        width: 162px;
+                        height: 83px;
+                    }
                 }
             }
         }
