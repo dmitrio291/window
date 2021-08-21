@@ -69,6 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 calculatorImgTabs.forEach(tab => {
                     tab.classList.remove('active');
                 });
+                calculatorListImg.forEach(img => {
+                    img.classList.remove('active');
+                });
+                this.classList.add('active');
                 const item = img.innerHTML;
                 const imgTab = img.parentElement.parentElement.querySelector('.calculator__img-tab');
                 imgTab.classList.add('active');
@@ -79,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 calculatorImg.src = dataWindow;
                 calculatorImg.removeAttribute('class'); 
                 calculatorImg.classList.add('calculator__img');
-                calculatorImg.classList.add(dataWindowImg);       
+                calculatorImg.classList.add(dataWindowImg);
             });
         });
     }

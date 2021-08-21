@@ -1902,6 +1902,11 @@ textarea:focus:-ms-input-placeholder {
   cursor: pointer;
 }
 
+.calculator__list-img > li.active rect,
+.calculator__list-img > li.active path {
+  stroke: #F26422;
+}
+
 .calculator__img {
   display: block;
   margin-left: auto;

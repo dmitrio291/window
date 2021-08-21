@@ -2002,6 +2002,13 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 li {
                     margin-bottom: 5px;
                     cursor: pointer;
+
+                    &.active {
+                        rect,
+                        path {
+                            stroke: #F26422;
+                        }
+                    }
                 }
             }
         }
