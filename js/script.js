@@ -186,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'min': min,
                 'max': max
             },
+            step: 1,
             format: {
                 to: function(value) {
                     return parseInt(value);
