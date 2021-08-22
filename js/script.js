@@ -168,18 +168,23 @@ document.addEventListener('DOMContentLoaded', () => {
     /* end -------------------------------- Скрипты для кнопки вверх .scroll-top ------------------------------------ */
 
     /* start -------------------------------- Скрипты для секции .calculator-section -------------------------------- */
-    const rangeHeight = document.querySelector('.calculator__range-height');
-    const rangeWidth = document.querySelector('.calculator__range-width');
-    const inputHeight = document.querySelector('.calculator__input.input-height');
-    const inputWidth = document.querySelector('.calculator__input.input-width');
+    const rangeHeightWindows = document.querySelector('.calculator--windows .calculator__range-height');
+    const rangeWidthWindows = document.querySelector('.calculator--windows .calculator__range-width');
+    const inputHeightWindows = document.querySelector('.calculator--windows .calculator__input.input-height');
+    const inputWidthWindows = document.querySelector('.calculator--windows .calculator__input.input-width');
 
-    function initRange(range, input) {
+    const rangeHeightBalconies = document.querySelector('.calculator--glazing-balconies .calculator__range-height');
+    const rangeWidthBalconies = document.querySelector('.calculator--glazing-balconies .calculator__range-width');
+    const inputHeightBalconies = document.querySelector('.calculator--glazing-balconies .calculator__input.input-height');
+    const inputWidthBalconies = document.querySelector('.calculator--glazing-balconies .calculator__input.input-width');
+
+    function initRange(range, input, startValue, min, max) {
         noUiSlider.create(range, {
-            start: 1500,
+            start: startValue,
             connect: 'lower',
             range: {
-                'min': 0,
-                'max': 4300
+                'min': min,
+                'max': max
             },
             format: {
                 to: function(value) {
@@ -201,9 +206,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (rangeHeight, inputHeight, rangeWidth, inputWidth) {
-        initRange(rangeHeight, inputHeight);
-        initRange(rangeWidth, inputWidth);      
+    if (rangeHeightWindows, inputHeightWindows, rangeWidthWindows, inputWidthWindows) {
+        initRange(rangeHeightWindows, inputHeightWindows, 110, 40, 220);
+        initRange(rangeWidthWindows, inputWidthWindows, 40, 40, 130);      
+    }
+
+    if (rangeHeightBalconies, inputHeightBalconies, rangeWidthBalconies, inputWidthBalconies) {
+        initRange(rangeHeightBalconies, inputHeightBalconies, 150, 50, 220);
+        initRange(rangeWidthBalconies, inputWidthBalconies, 150, 150, 600);      
     }
     /* end -------------------------------- Скрипты для секции .calculator-section ---------------------------------- */
 
