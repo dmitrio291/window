@@ -1328,30 +1328,30 @@ textarea:focus:-ms-input-placeholder {
 
 .banner-windows__title {
   margin-bottom: 25px;
-  text-align: left;
   font-weight: 700;
-}
-
-.banner-windows__title span {
-  display: block;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: left;
 }
 
 .banner-windows__list {
-  margin-bottom: 37px;
+  margin-bottom: 27px;
 }
 
 .banner-windows__list li {
-  padding-left: 22px;
+  padding-left: 19px;
+  padding-right: 10px;
   position: relative;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 22px;
 }
 
 .banner-windows__list li::before {
   content: '.';
   position: absolute;
   top: -8px;
-  left: 7px;
+  left: 0;
   font-size: 30px;
 }
 
@@ -1362,6 +1362,7 @@ textarea:focus:-ms-input-placeholder {
 .banner-windows__btn {
   max-width: 315px;
   width: 100%;
+  font-size: 18px;
 }
 
 .banner-windows__icon {

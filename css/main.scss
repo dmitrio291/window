@@ -1396,28 +1396,28 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &__title {
         margin-bottom: 25px;
-        text-align: left;
         font-weight: 700;
-
-        span {
-            display: block;
-        }
+        font-size: 28px;
+        line-height: 32px;
+        text-align: left;
     }
 
     &__list {
-        margin-bottom: 37px;
+        margin-bottom: 27px;
 
         li {
-            padding-left: 22px;
+            padding-left: 19px;
+            padding-right: 10px;
             position: relative;
+            font-size: 18px;
             font-weight: 500;
-            line-height: 19px;
+            line-height: 22px;
 
             &::before {
                 content: '.';
                 position: absolute;
                 top: -8px;
-                left: 7px;
+                left: 0;
                 font-size: 30px;
             }
 
@@ -1430,6 +1430,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     &__btn {
         max-width: 315px;
         width: 100%;
+        font-size: 18px;
     }
 
     &__icon {

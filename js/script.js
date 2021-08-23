@@ -178,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputHeightBalconies = document.querySelector('.calculator--glazing-balconies .calculator__input.input-height');
     const inputWidthBalconies = document.querySelector('.calculator--glazing-balconies .calculator__input.input-width');
 
+    /* Универсальный скрипт на инициализацию ползунков слайдера для окон и балконов */
     function initRange(range, input, startValue, min, max) {
         noUiSlider.create(range, {
             start: startValue,
@@ -215,6 +216,65 @@ document.addEventListener('DOMContentLoaded', () => {
     if (rangeHeightBalconies, inputHeightBalconies, rangeWidthBalconies, inputWidthBalconies) {
         initRange(rangeHeightBalconies, inputHeightBalconies, 150, 50, 220);
         initRange(rangeWidthBalconies, inputWidthBalconies, 150, 150, 600);      
+    }
+
+    const windowsTypes = document.querySelectorAll('.calculator--glazing-balconies .calculator__list > li');
+    const windowImg = document.querySelector('.calculator--glazing-balconies .calculator__img');
+
+    if (windowsTypes && windowImg) {
+        windowsTypes.forEach(window => {
+            window.addEventListener('click', function() {
+                const dataWindow = window.dataset.window;
+                const dataWindowImg = window.dataset.windowImg;
+                windowsTypes.forEach(window => {
+                    window.classList.remove('active');
+                });
+                this.classList.add('active');
+                windowImg.src = dataWindow;
+                windowImg.removeAttribute('class');
+                windowImg.classList.add('calculator__img');
+                windowImg.classList.add(dataWindowImg);
+            });
+        });
+    }
+    
+    /* Скрипт на открытие выпающего списка с вариантами выбора окон */
+    const calculatorImgTabs = document.querySelectorAll('.calculator--windows .calculator__img-tab');
+    const calculatorListImg = document.querySelectorAll('.calculator--windows .calculator__list-img > li');
+    const calculatorImg = document.querySelector('.calculator--windows .calculator__img');
+
+    if (calculatorImgTabs && calculatorListImg && calculatorImg) {
+        calculatorImgTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const nextElementSibling = this.nextElementSibling;
+                const listImgActive = document.querySelectorAll('.calculator__list-img.active');
+                listImgActive.forEach(list => list !== nextElementSibling ? list.classList.remove('active') : null);
+                nextElementSibling.classList.toggle('active');
+            });
+        });
+    
+        calculatorListImg.forEach(img => {
+            img.addEventListener('click', function() {
+                calculatorImgTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                calculatorListImg.forEach(img => {
+                    img.classList.remove('active');
+                });
+                this.classList.add('active');
+                const item = img.innerHTML;
+                const imgTab = img.parentElement.parentElement.querySelector('.calculator__img-tab');
+                imgTab.classList.add('active');
+                imgTab.innerHTML = item;
+                img.parentElement.classList.remove('active');
+                const dataWindow = img.dataset.window;
+                const dataWindowImg = img.dataset.windowImg;    
+                calculatorImg.src = dataWindow;
+                calculatorImg.removeAttribute('class'); 
+                calculatorImg.classList.add('calculator__img');
+                calculatorImg.classList.add(dataWindowImg);
+            });
+        });
     }
     /* end -------------------------------- Скрипты для секции .calculator-section ---------------------------------- */
 
