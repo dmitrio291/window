@@ -165,7 +165,6 @@ button {
   background-color: #ffffff;
   text-align: center;
   border-bottom: 2px solid #ABABAB;
-  color: #CDCDCD;
 }
 
 .form__phone--transparent {
@@ -1315,7 +1314,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .banner-windows-section {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .banner-windows__left, .banner-windows__right {
@@ -1392,7 +1391,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .categories-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .categories li {
@@ -1400,6 +1399,10 @@ textarea:focus:-ms-input-placeholder {
   text-align: center;
   width: 44%;
   cursor: pointer;
+}
+
+.categories li:nth-child(3), .categories li:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .categories li:hover .categories__img {
@@ -1474,7 +1477,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .director-section {
-  margin-bottom: 55px;
+  margin-bottom: 15px;
 }
 
 .director-box {
@@ -1574,7 +1577,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .offer-section {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .offer__title {
@@ -2100,7 +2103,7 @@ textarea:focus:-ms-input-placeholder {
 /* end -------------------------------------------- calculator section -------------------------------------------------- */
 /* start ------------------------------------------- about section ------------------------------------------------------ */
 .about-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .about__title {
@@ -2121,7 +2124,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .windows-factory-section {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .windows-factory__box {
@@ -5831,17 +5834,8 @@ textarea:focus:-ms-input-placeholder {
   padding-right: 15px;
 }
 
-.banner-windows--cottages .banner-windows__title {
-  font-size: 32px;
-  line-height: 36px;
-}
-
-.banner-windows--cottages .banner-windows__list li {
-  padding-left: 0;
-}
-
-.banner-windows--cottages .banner-windows__list li::before {
-  display: none;
+.banner-windows--cottages .banner-windows__list {
+  margin-bottom: 20px;
 }
 
 .banner-windows__subtitle {
@@ -6378,8 +6372,20 @@ textarea:focus:-ms-input-placeholder {
   background-image: url("../img/banner-finishing-balconies-small.jpg");
 }
 
+.banner-windows--finishing-balconies .banner-windows__left {
+  padding-right: 10px;
+}
+
+.banner-windows--finishing-balconies .banner-windows__title span {
+  display: block;
+}
+
 .banner-windows--finishing-balconies .banner-windows__list {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
+}
+
+.banner-windows--finishing-balconies .banner-windows__price span:nth-of-type(2) {
+  font-weight: 600;
 }
 
 /* end -------------------------------------------- banner windows section -------------------------------------------- */
@@ -6619,12 +6625,8 @@ textarea:focus:-ms-input-placeholder {
 /* end Страница Отделка балконов */
 /* start Страница Остекление балконов */
 /* start -------------------------------------------- banner-windows-section-------------------------------------- */
-.banner-windows--finishing-balconies {
+.banner-windows--glazing-balconies {
   background-image: url("../img/banner-glazing-balconies-small.jpg");
-}
-
-.banner-windows--finishing-balconies .banner-windows__list {
-  max-width: 250px;
 }
 
 /* end -------------------------------------------- banner-windows-section --------------------------------------- */
@@ -8332,7 +8334,7 @@ textarea:focus:-ms-input-placeholder {
   /* end ------------------------------------------ banner section --------------------------------------------------- */
   /* start -------------------------------------------- banner windows section --------------------------------------- */
   .banner-windows {
-    padding: 40px 0;
+    padding: 28px 0 32px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -8342,33 +8344,38 @@ textarea:focus:-ms-input-placeholder {
     width: 90%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
   }
+  .banner-windows--main .banner-windows__title span {
+    display: block;
+  }
   .banner-windows-section {
     margin-bottom: 30px;
   }
   .banner-windows__left {
     padding-left: 30px;
-    max-width: 396px;
+    max-width: 450px;
   }
   .banner-windows__right {
     padding-right: 15px;
   }
   .banner-windows__title {
-    margin-bottom: 30px;
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 27px;
   }
   .banner-windows__icon {
     display: block;
-    transform: translateY(15px);
+    transform: translateY(6px);
   }
   .banner-windows__list {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
   .banner-windows__list li {
-    font-size: 18px;
-    padding-left: 28px;
-    line-height: 21px;
+    font-size: 20px;
+    padding-left: 18px;
+    line-height: 25px;
   }
   .banner-windows__list li::before {
-    left: 9px;
+    left: 0;
   }
   .banner-windows__price {
     margin-bottom: 25px;
@@ -8379,6 +8386,8 @@ textarea:focus:-ms-input-placeholder {
   }
   .banner-windows__btn {
     max-width: 306px;
+    min-height: 50px;
+    font-size: 20px;
   }
   /* end -------------------------------------------- banner windows section ----------------------------------------- */
   /* end -------------------------------------------- categories section --------------------------------------------- */
@@ -8386,8 +8395,14 @@ textarea:focus:-ms-input-placeholder {
     max-width: 708px;
     column-gap: 28px;
   }
+  .categories-section {
+    margin-bottom: 50px;
+  }
   .categories li {
     width: 22%;
+  }
+  .categories li:nth-child(1), .categories li:nth-child(2) {
+    margin-bottom: 0;
   }
   /* end -------------------------------------------- categories section --------------------------------------------- */
   /* start -------------------------------------------- director section---------------------------------------------- */
@@ -8396,6 +8411,9 @@ textarea:focus:-ms-input-placeholder {
     column-gap: 31px;
     align-items: start;
     padding: 40px 35px 40px 30px;
+  }
+  .director-section {
+    margin-bottom: 20px;
   }
   .director--vlasov-alexey .director__wrap {
     padding-bottom: 55px;
@@ -8457,7 +8475,7 @@ textarea:focus:-ms-input-placeholder {
     padding: 70px 30px;
   }
   .offer-section {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
   .offer__title {
     margin-bottom: 18px;
@@ -8539,7 +8557,7 @@ textarea:focus:-ms-input-placeholder {
     border-radius: 3px;
   }
   .best-price-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     display: block;
   }
   .best-price .title {
@@ -8749,7 +8767,7 @@ textarea:focus:-ms-input-placeholder {
   /* end -------------------------------------------- calculator section -------------------------------------------- */
   /* start ------------------------------------------- about section-------------------------------------------------- */
   .about-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .about__title {
     margin-bottom: 54px;
@@ -8761,7 +8779,7 @@ textarea:focus:-ms-input-placeholder {
   /* end ------------------------------------------- about section---------------------------------------------------- */
   /* start ----------------------------------------- windows-factory section ---------------------------------------- */
   .windows-factory-section {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
   .windows-factory__slider {
     margin-bottom: 31px;
@@ -10406,9 +10424,9 @@ textarea:focus:-ms-input-placeholder {
   .banner-windows--cottages .banner-windows__left {
     max-width: 444px;
   }
-  .banner-windows--cottages .banner-windows__title {
-    font-size: 42px;
-    line-height: 46px;
+  .banner-windows--cottages .banner-windows__subtitle {
+    font-size: 23px;
+    line-height: 27px;
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
   /* start -------------------------------------------- windows-texts ---------------------------------------------- */
@@ -10650,7 +10668,25 @@ textarea:focus:-ms-input-placeholder {
     background-image: url("../img/banner-finishing-balconies-middle.jpg");
   }
   .banner-windows--finishing-balconies .banner-windows__left {
-    max-width: 410px;
+    max-width: none;
+  }
+  .banner-windows--finishing-balconies .banner-windows__title {
+    margin-bottom: 28px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list {
+    margin-bottom: 15px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list li {
+    padding-left: 20px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list li:first-child, .banner-windows--finishing-balconies .banner-windows__list li:nth-child(2) {
+    max-width: 403px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__price {
+    margin-bottom: 21px;
   }
   /* end -------------------------------------------- banner windows section --------------------------------------- */
   /* start -------------------------------------------- types-work-section ----------------------------------------- */
@@ -10769,13 +10805,13 @@ textarea:focus:-ms-input-placeholder {
   /* end Страница Отделка балконов */
   /* start Страница Остекление балконов */
   /* start -------------------------------------------- banner-windows-section-------------------------------------- */
-  .banner-windows--finishing-balconies {
+  .banner-windows--glazing-balconies {
     background-image: url("../img/banner-glazing-balconies-middle.jpg");
   }
-  .banner-windows--finishing-balconies .banner-windows__list {
+  .banner-windows--glazing-balconies .banner-windows__list {
     max-width: 376px;
   }
-  .banner-windows--finishing-balconies .banner-windows__list li:nth-child(3) {
+  .banner-windows--glazing-balconies .banner-windows__list li:nth-child(3) {
     padding-right: 35px;
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
@@ -11459,6 +11495,7 @@ textarea:focus:-ms-input-placeholder {
   /* end ------------------------------------------ banner section --------------------------------------------------- */
   /* start -------------------------------------------- banner windows section --------------------------------------- */
   .banner-windows {
+    padding: 35px 10px 40px;
     background-image: url("../img/banner-bg-big.jpg");
     background-position: left;
   }
@@ -11466,19 +11503,27 @@ textarea:focus:-ms-input-placeholder {
     width: 83%;
   }
   .banner-windows__left {
-    max-width: 440px;
+    max-width: 530px;
   }
   .banner-windows__title {
-    font-size: 40px;
-    line-height: 45px;
+    margin-bottom: 39px;
+    font-size: 50px;
+    line-height: 54px;
+  }
+  .banner-windows__list {
+    margin-bottom: 31px;
   }
   .banner-windows__list li {
-    padding-left: 33px;
-    font-size: 21px;
-    line-height: 25px;
+    padding-left: 27px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .banner-windows__list li:not(:last-child) {
+    margin-bottom: 20px;
   }
   .banner-windows__list li::before {
-    left: 12px;
+    top: -14px;
+    font-size: 45px;
   }
   .banner-windows__price {
     margin-bottom: 34px;
@@ -11488,7 +11533,9 @@ textarea:focus:-ms-input-placeholder {
     font-size: 40px;
   }
   .banner-windows__btn {
-    max-width: 330px;
+    max-width: 411px;
+    font-size: 26px;
+    min-height: 55px;
   }
   /* end -------------------------------------------- banner windows section ----------------------------------------- */
   /* start------------------------------------------ categories section ---------------------------------------------- */
@@ -11574,9 +11621,6 @@ textarea:focus:-ms-input-placeholder {
   /* start ------------------------------------------ offer section -------------------------------------------------- */
   .offer {
     padding: 75px 40px;
-  }
-  .offer-section {
-    margin-bottom: 60px;
   }
   .offer__title {
     padding-bottom: 45px;
@@ -11693,10 +11737,7 @@ textarea:focus:-ms-input-placeholder {
   .best-price {
     padding-left: 37px;
     padding-right: 44px;
-    min-height: 280px;
-  }
-  .best-price-section {
-    margin-bottom: 100px;
+    min-height: 285px;
   }
   .best-price__title-1 {
     margin-top: -14px;
@@ -11718,6 +11759,8 @@ textarea:focus:-ms-input-placeholder {
   }
   .best-price__img {
     left: 45.5%;
+    transform: translateX(-55%);
+    height: 270px;
   }
   /* end -------------------------------------------- best price section -------------------------------------------- */
   /* end -------------------------------------------- calculator section -------------------------------------------- */
@@ -11802,9 +11845,6 @@ textarea:focus:-ms-input-placeholder {
   /* start ----------------------------------------- windows-factory section ----------------------------------------- */
   .windows-factory {
     padding: 75px 40px 75px 20px;
-  }
-  .windows-factory-section {
-    margin-bottom: 59px;
   }
   .windows-factory__slider {
     margin-bottom: 22px;
@@ -13009,13 +13049,18 @@ textarea:focus:-ms-input-placeholder {
     background-image: url("../img/banner-windows-bg-big.jpg");
   }
   .banner-windows--cottages .banner-windows__left {
-    max-width: 460px;
+    max-width: 520px;
+  }
+  .banner-windows--cottages .banner-windows__subtitle {
+    max-width: none;
+    font-size: 32px;
+    line-height: 37px;
   }
   .banner-windows--cottages .banner-windows__list {
-    max-width: 300px;
+    margin-bottom: 29px;
   }
-  .banner-windows--cottages .banner-windows__list li {
-    font-size: 18px;
+  .banner-windows--cottages .banner-windows__icon {
+    transform: translate(6px, 16px);
   }
   .banner-windows__subtitle {
     max-width: 300px;
@@ -13156,11 +13201,36 @@ textarea:focus:-ms-input-placeholder {
   .banner-windows--finishing-balconies {
     background-image: url("../img/banner-finishing-balconies-big.jpg");
   }
-  .banner-windows--finishing-balconies .banner-windows__left {
-    max-width: 480px;
+  .banner-windows--finishing-balconies .banner-windows__title {
+    margin-bottom: 38px;
   }
   .banner-windows--finishing-balconies .banner-windows__list {
+    margin-bottom: 27px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list li {
+    padding-left: 27px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list li:first-child {
     max-width: none;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list li:nth-child(2) {
+    max-width: 550px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__price {
+    margin-bottom: 30px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__price span:nth-of-type(2) {
+    margin-left: -7px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__price sup {
+    font-size: 25px;
+    top: -9px;
+  }
+  .banner-windows--finishing-balconies .banner-windows__icon {
+    transform: translateY(16px);
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
   /* start -------------------------------------------- types-work-section ----------------------------------------- */
@@ -13225,8 +13295,17 @@ textarea:focus:-ms-input-placeholder {
   /* end Страница Отделка балконов */
   /* start Страница Остекление балконов */
   /* start -------------------------------------------- banner-windows-section-------------------------------------- */
-  .banner-windows--finishing-balconies {
+  .banner-windows--glazing-balconies {
     background-image: url("../img/banner-glazing-balconies-big.jpg");
+  }
+  .banner-windows--glazing-balconies .banner-windows__left {
+    max-width: 640px;
+  }
+  .banner-windows--glazing-balconies .banner-windows__list {
+    max-width: 480px;
+  }
+  .banner-windows--glazing-balconies .banner-windows__icon {
+    transform: translateY(15px);
   }
   /* end -------------------------------------------- banner-windows-section --------------------------------------- */
   /* start -------------------------------------------- types-glaing-section --------------------------------------- */

@@ -183,7 +183,6 @@ button {
         background-color: #ffffff;
         text-align: center;
         border-bottom: 2px solid #ABABAB;
-        color: #CDCDCD;
 
         &--transparent {
             background-color: transparent;
@@ -1382,7 +1381,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &-section {
-        margin-bottom: 45px;
+        margin-bottom: 20px;
     }
 
     &__left,
@@ -1457,7 +1456,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     margin-right: auto;
 
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     display: flex;
@@ -1469,6 +1468,11 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         text-align: center;
         width: 44%;
         cursor: pointer;
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
 
         &:hover {
             .categories {
@@ -1547,7 +1551,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     border-radius: 3px;
 
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 15px;
     }
 
     &-box {
@@ -1647,7 +1651,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     border-radius: 3px;
 
     &-section {
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     &__title {
@@ -2215,7 +2219,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* start ------------------------------------------- about section ------------------------------------------------------ */
 .about {
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     &__title {
@@ -2236,7 +2240,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     padding: 55px 15px;
 
     &-section {
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     &__box {
@@ -6116,19 +6120,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 padding-right: 15px;
             }
 
-            &__title {
-                font-size: 32px;
-                line-height: 36px;
-            }
-    
             &__list {
-                li {
-                    padding-left: 0;
-
-                    &::before {
-                        display: none;
-                    }
-                }
+                margin-bottom: 20px;
             }
         }
     }
@@ -6697,8 +6690,26 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         background-image: url("../img/banner-finishing-balconies-small.jpg");
 
         .banner-windows {
+            &__left {
+                padding-right: 10px;
+            }
+
+            &__title {
+                span {
+                    display: block;
+                }
+            }
+
             &__list {
-                margin-bottom: 25px;
+                margin-bottom: 21px;
+            }
+
+            &__price {
+                span {
+                    &:nth-of-type(2) {
+                        font-weight: 600;
+                    }
+                }
             }
         }
     }
@@ -6959,14 +6970,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* start Страница Остекление балконов */
 /* start -------------------------------------------- banner-windows-section-------------------------------------- */
 .banner-windows {
-    &--finishing-balconies {
+    &--glazing-balconies {
         background-image: url("../img/banner-glazing-balconies-small.jpg");
-
-        .banner-windows {
-            &__list {
-                max-width: 250px;
-            }
-        }
     }
 }
 /* end -------------------------------------------- banner-windows-section --------------------------------------- */
@@ -8891,7 +8896,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- banner windows section --------------------------------------- */
     .banner-windows {
-        padding: 40px 0;
+        padding: 28px 0 32px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -8901,13 +8906,23 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 52.08%, rgba(0, 0, 0, 0) 100%);
         }
 
+        &--main {
+            .banner-windows {
+                &__title {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+
         &-section {
             margin-bottom: 30px;
         }
 
         &__left {
             padding-left: 30px;
-            max-width: 396px;
+            max-width: 450px;
         }
 
         &__right {
@@ -8915,24 +8930,26 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__title {
-            margin-bottom: 30px;
+            font-size: 38px;
+            line-height: 42px;
+            margin-bottom: 27px;
         }
 
         &__icon {
             display: block;
-            transform: translateY(15px);
+            transform: translateY(6px);
         }
 
         &__list {
-            margin-bottom: 32px;
+            margin-bottom: 20px;
 
             li {
-                font-size: 18px;   
-                padding-left: 28px;
-                line-height: 21px;
+                font-size: 20px;   
+                padding-left: 18px;
+                line-height: 25px;
 
                 &::before {
-                    left: 9px;
+                    left: 0;
                 }
             }
         }
@@ -8948,6 +8965,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &__btn {
             max-width: 306px;
+            min-height: 50px;
+            font-size: 20px;
         }
     }
     /* end -------------------------------------------- banner windows section ----------------------------------------- */
@@ -8957,8 +8976,17 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         max-width: 708px;
         column-gap: 28px;
 
+        &-section {
+            margin-bottom: 50px;
+        }
+
         li {
             width: 22%;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-bottom: 0;
+            }
         }
     }
     /* end -------------------------------------------- categories section --------------------------------------------- */
@@ -8969,6 +8997,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         column-gap: 31px;
         align-items: start;
         padding: 40px 35px 40px 30px;
+
+        &-section {
+            margin-bottom: 20px;
+        }
 
         &--vlasov-alexey {
             .director {
@@ -9051,7 +9083,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         padding: 70px 30px;
 
         &-section {
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
 
         &__title {
@@ -9157,7 +9189,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         border-radius: 3px;
 
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
             display: block;
         }
 
@@ -9440,7 +9472,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start ------------------------------------------- about section-------------------------------------------------- */
     .about {
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
         }
 
         &__title {
@@ -9457,7 +9489,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start ----------------------------------------- windows-factory section ---------------------------------------- */
     .windows-factory {
         &-section {
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
 
         &__slider {
@@ -11626,9 +11658,9 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                     max-width: 444px;
                 }
 
-                &__title {
-                    font-size: 42px;
-                    line-height: 46px;
+                &__subtitle {
+                    font-size: 23px;
+                    line-height: 27px;
                 }
             }
         }
@@ -11956,7 +11988,32 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
             .banner-windows {
                 &__left {
-                    max-width: 410px;
+                    max-width: none;
+                }
+
+                &__title {
+                    margin-bottom: 28px;
+                }
+
+                &__list {
+                    margin-bottom: 15px;
+
+                    & li {
+                        padding-left: 20px;
+
+                        &:not(:last-child) {
+                            margin-bottom: 16px;
+                        }
+
+                        &:first-child,
+                        &:nth-child(2) {
+                            max-width: 403px;
+                        }
+                    }
+                }
+
+                &__price {
+                    margin-bottom: 21px;
                 }
             }
         }
@@ -12110,7 +12167,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start Страница Остекление балконов */
     /* start -------------------------------------------- banner-windows-section-------------------------------------- */
     .banner-windows {
-        &--finishing-balconies {
+        &--glazing-balconies {
             background-image: url("../img/banner-glazing-balconies-middle.jpg");
 
             .banner-windows {
@@ -13067,6 +13124,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- banner windows section --------------------------------------- */
     .banner-windows {
+        padding: 35px 10px 40px;
         background-image: url("../img/banner-bg-big.jpg");
         background-position: left;
 
@@ -13075,22 +13133,30 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__left {
-            max-width: 440px;
+            max-width: 530px;
         }
 
         &__title {
-            font-size: 40px;
-            line-height: 45px;
+            margin-bottom: 39px;
+            font-size: 50px;
+            line-height: 54px;
         }
 
         &__list {
+            margin-bottom: 31px;
+
             li {
-                padding-left: 33px;
-                font-size: 21px;
-                line-height: 25px;
+                padding-left: 27px;
+                font-size: 26px;
+                line-height: 32px;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
 
                 &::before {
-                    left: 12px;
+                    top: -14px;
+                    font-size: 45px;
                 }
             }
         }
@@ -13105,7 +13171,9 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__btn {
-            max-width: 330px;
+            max-width: 411px;
+            font-size: 26px;
+            min-height: 55px;
         }
     }
     /* end -------------------------------------------- banner windows section ----------------------------------------- */
@@ -13230,10 +13298,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start ------------------------------------------ offer section -------------------------------------------------- */
     .offer {
         padding: 75px 40px;
-
-        &-section {
-            margin-bottom: 60px;
-        }
 
         &__title {
             padding-bottom: 45px;
@@ -13390,11 +13454,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     .best-price {
         padding-left: 37px;
         padding-right: 44px;
-        min-height: 280px;
-
-        &-section {
-            margin-bottom: 100px;
-        }
+        min-height: 285px;
 
         &__title {
             &-1 {
@@ -13423,6 +13483,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &__img {
             left: 45.5%;
+            transform: translateX(-55%);
+            height: 270px;
         }
     }
     /* end -------------------------------------------- best price section -------------------------------------------- */
@@ -13555,10 +13617,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start ----------------------------------------- windows-factory section ----------------------------------------- */
     .windows-factory {
         padding: 75px 40px 75px 20px;
-
-        &-section {
-            margin-bottom: 59px;
-        }
 
         &__slider {
             margin-bottom: 22px;
@@ -15222,15 +15280,21 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
             .banner-windows {
                 &__left {
-                    max-width: 460px;
+                    max-width: 520px;
+                }
+
+                &__subtitle {
+                    max-width: none;
+                    font-size: 32px;
+                    line-height: 37px;
                 }
 
                 &__list {
-                    max-width: 300px;
+                    margin-bottom: 29px;
+                }
 
-                    li {
-                        font-size: 18px;
-                    }
+                &__icon {
+                    transform: translate(6px, 16px);
                 }
             }
         }
@@ -15428,12 +15492,47 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             background-image: url("../img/banner-finishing-balconies-big.jpg");
 
             .banner-windows {
-                &__left {
-                    max-width: 480px;
+                &__title {
+                    margin-bottom: 38px;
                 }
 
                 &__list {
-                    max-width: none;
+                    margin-bottom: 27px;
+
+                    li {
+                        padding-left: 27px;
+
+                        &:first-child {
+                            max-width: none;
+                        }
+
+                        &:nth-child(2) {
+                            max-width: 550px;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+
+                &__price {           
+                    margin-bottom: 30px;
+
+                    span {
+                        &:nth-of-type(2) {
+                            margin-left: -7px;
+                        }
+                    }
+
+                    sup {
+                        font-size: 25px;
+                        top: -9px;
+                    }
+                }
+
+                &__icon {
+                    transform: translateY(16px);
                 }
             }
         }
@@ -15526,8 +15625,22 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start Страница Остекление балконов */
     /* start -------------------------------------------- banner-windows-section-------------------------------------- */
     .banner-windows {
-        &--finishing-balconies {
+        &--glazing-balconies {
             background-image: url("../img/banner-glazing-balconies-big.jpg");
+
+            .banner-windows {
+                &__left {
+                    max-width: 640px;
+                }
+
+                &__list {
+                    max-width: 480px;
+                }
+
+                &__icon {
+                    transform: translateY(15px);
+                }
+            }
         }
     }
     /* end -------------------------------------------- banner-windows-section --------------------------------------- */
