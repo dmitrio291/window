@@ -2457,6 +2457,9 @@ textarea:focus:-ms-input-placeholder {
 .installment .form__btn {
   background-color: transparent;
   margin-bottom: 15px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
 }
 
 .installment-windows-section {
@@ -2641,6 +2644,9 @@ textarea:focus:-ms-input-placeholder {
   max-width: 315px;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
 }
 
 /* end -------------------------------------------- discounts section --------------------------------------------------- */

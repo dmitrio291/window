@@ -2591,6 +2591,9 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         &__btn {
             background-color: transparent;
             margin-bottom: 15px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
         }
     }
 
@@ -2778,6 +2781,9 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         max-width: 315px;
         margin-left: auto;
         margin-right: auto;
+        text-decoration: none;
+        text-align: center;
+        line-height: 40px;
     }
 }
 /* end -------------------------------------------- discounts section --------------------------------------------------- */
