@@ -360,7 +360,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     z-index: 1000;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     overflow: auto;
     pointer-events: none;
     opacity: 0;
@@ -411,8 +411,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             top: 50%;
             transform: translateY(-50%);
             background-color: #ABABAB;
-            height: 12px;
-            width: 3px;
+            height: 20px;
+            width: 2px;
             border-radius: 10px;
         }
 
@@ -3120,7 +3120,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     margin-right: auto;
 
     &-section {
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     &__content {
@@ -3495,7 +3495,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* start------------------------------------------- sketches section --------------------------------------------------- */
 .sketches {
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     &-box {
@@ -3631,7 +3631,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     overflow: hidden;
 
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     &-box {
@@ -3704,7 +3704,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     border-radius: 3px;
 
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     &__title {
@@ -3755,7 +3755,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* start----------------------------------------- any forms section ---------------------------------------------------- */
 .any-forms {
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     &__title {
@@ -3845,8 +3845,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &-box {
-        padding-top: 55px;
-        padding-bottom: 55px;
+        padding-top: 40px;
+        padding-bottom: 30px;
         padding-left: 5px;
         background-color: #F0FAFF;
         border-radius: 3px;
@@ -3940,7 +3940,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &-section {
         position: relative;
-        margin-bottom: 55px;
+        margin-bottom: 35px;
         padding-top: 55px;
         padding-bottom: 55px;
         background-repeat: no-repeat;
@@ -3995,7 +3995,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 /* start -------------------------------------------- reviews section -------------------------------------------------- */
 .reviews {
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     &__title {
@@ -4709,7 +4709,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &-section {
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     &__content,
@@ -9978,7 +9978,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         column-gap: 20px;
 
         &-section {
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
 
         &__content {
@@ -10072,7 +10072,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start------------------------------------------- sketches section --------------------------------------------- */
     .sketches {
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
         }
 
         &-box {
@@ -10185,7 +10185,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         max-width: 738px;
 
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
         }
     }
     /* end ------------------------------------------- additionally slider section ----------------------------------- */
@@ -10193,7 +10193,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start ------------------------------------------- climate section --------------------------------------------- */
     .climate {
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
         }
 
         &__box {
@@ -10655,7 +10655,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start----------------------------------------- any forms section ---------------------------------------------- */
     .any-forms {
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
         }
 
         &__title {
@@ -10709,12 +10709,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         margin-bottom: 31px;
 
         &-section {
-            margin-bottom: 45px;
+            margin-bottom: 50px;
         }
 
         &-box {
-            padding-top: 75px;
-            padding-bottom: 75px;
+            padding-top: 50px;
+            padding-bottom: 40px;
             padding-left: 20px;
         }
 
@@ -10729,7 +10729,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start -------------------------------------------- statistic section ------------------------------------------- */
     .statistic {
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
             padding-top: 75px;
             padding-bottom: 75px;
             background-image: url("../img/statistic-bg-middle.jpg");
@@ -10802,7 +10802,9 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- reviews section --------------------------------------------- */
     .reviews {
-        margin-bottom: 75px;
+        &-section {
+            margin-bottom: 50px;
+        }
 
         &__title {
             margin-bottom: 57px;
@@ -10978,7 +10980,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         column-gap: 20px;
 
         &-section {
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
 
         &__img {
@@ -11095,7 +11097,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         background-image: url("../img/certificates-bg-middle.jpg");
 
         &-section {
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
 
         &__content {
@@ -14444,10 +14446,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start ------------------------------------------ benefit section ----------------------------------------------- */
     .benefit {
-        &-section {
-            margin-bottom: 60px;
-        }
-
         &__img {
             padding-top: 33px;
         }
@@ -14584,7 +14582,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         padding-top: 72px;
         padding-bottom: 77px;
         padding-left: 40px;
-        margin-bottom: 60px;
         background-image: url("../img/certificates-bg-big.jpg");
 
         &__content {
@@ -14643,10 +14640,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start------------------------------------------- sketches section --------------------------------------------- */
     .sketches {
-        &-section {
-            margin-bottom: 100px;
-        }
-
         display: flex;
         column-gap: 40px;
 
@@ -14706,10 +14699,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     .additionally-slider {
         max-width: 960px;
 
-        &-section {
-            margin-bottom: 100px;
-        }
-
         &__img {
             height: 173px;
         }
@@ -14718,10 +14707,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start ------------------------------------------- climate section --------------------------------------------- */
     .climate {
-        &-section {
-            margin-bottom: 100px;
-        }
-
         &__title {
             .block {
                 display: inline;
@@ -14741,10 +14726,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- any forms section ------------------------------------------ */
     .any-forms {
-        &-section {
-            margin-bottom: 100px;
-        }
-
         &__text {
             margin-bottom: 54px;
         }
@@ -14789,10 +14770,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     .windows-slider {
         overflow: visible;
         max-width: none;
-
-        &-section {
-            margin-bottom: 60px;
-        }
+        margin-bottom: 0;
 
         &-box {
             padding-left: 40px;
@@ -14822,7 +14800,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start -------------------------------------------- statistic section ------------------------------------------ */
     .statistic {
         &-section {
-            margin-bottom: 100px;
             background-image: url("../img/statistic-bg-big.jpg");
         }
 

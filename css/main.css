@@ -386,7 +386,7 @@ textarea:focus:-ms-input-placeholder {
   z-index: 1000;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   overflow: auto;
   pointer-events: none;
   opacity: 0;
@@ -438,8 +438,8 @@ textarea:focus:-ms-input-placeholder {
   top: 50%;
   transform: translateY(-50%);
   background-color: #ABABAB;
-  height: 12px;
-  width: 3px;
+  height: 20px;
+  width: 2px;
   border-radius: 10px;
 }
 
@@ -2960,7 +2960,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .advantages-section {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .advantages__content {
@@ -3320,7 +3320,7 @@ textarea:focus:-ms-input-placeholder {
 /* end------------------------------------------- making-windows section ----------------------------------------------- */
 /* start------------------------------------------- sketches section --------------------------------------------------- */
 .sketches-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .sketches-box {
@@ -3453,7 +3453,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .additionally-slider-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .additionally-slider-box .slider-controls {
@@ -3522,7 +3522,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .climate-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .climate__title {
@@ -3571,7 +3571,7 @@ textarea:focus:-ms-input-placeholder {
 /* end ------------------------------------------- climate section ----------------------------------------------------- */
 /* start----------------------------------------- any forms section ---------------------------------------------------- */
 .any-forms-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .any-forms__title {
@@ -3660,8 +3660,8 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .windows-slider-box {
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   padding-left: 5px;
   background-color: #F0FAFF;
   border-radius: 3px;
@@ -3755,7 +3755,7 @@ textarea:focus:-ms-input-placeholder {
 
 .statistic-section {
   position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
   padding-top: 55px;
   padding-bottom: 55px;
   background-repeat: no-repeat;
@@ -3808,7 +3808,7 @@ textarea:focus:-ms-input-placeholder {
 /* start -------------------------------------------- statistic section ------------------------------------------------ */
 /* start -------------------------------------------- reviews section -------------------------------------------------- */
 .reviews-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .reviews__title {
@@ -4488,7 +4488,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .certificates-section {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .certificates__content, .certificates__slider {
@@ -9149,7 +9149,7 @@ textarea:focus:-ms-input-placeholder {
     column-gap: 20px;
   }
   .advantages-section {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
   .advantages__content {
     width: 50%;
@@ -9222,7 +9222,7 @@ textarea:focus:-ms-input-placeholder {
   /* end------------------------------------------- making windows section ----------------------------------------- */
   /* start------------------------------------------- sketches section --------------------------------------------- */
   .sketches-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .sketches-box {
     padding: 50px 30px;
@@ -9303,12 +9303,12 @@ textarea:focus:-ms-input-placeholder {
     max-width: 738px;
   }
   .additionally-slider-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   /* end ------------------------------------------- additionally slider section ----------------------------------- */
   /* start ------------------------------------------- climate section --------------------------------------------- */
   .climate-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .climate__box {
     display: flex;
@@ -9661,7 +9661,7 @@ textarea:focus:-ms-input-placeholder {
   /* end -------------------------------------------- customers section ------------------------------------------- */
   /* start----------------------------------------- any forms section ---------------------------------------------- */
   .any-forms-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .any-forms__title {
     margin-bottom: 54px;
@@ -9695,11 +9695,11 @@ textarea:focus:-ms-input-placeholder {
     margin-bottom: 31px;
   }
   .windows-slider-section {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
   .windows-slider-box {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     padding-left: 20px;
   }
   .windows-slider__text:nth-of-type(2) {
@@ -9708,7 +9708,7 @@ textarea:focus:-ms-input-placeholder {
   /* end ---------------------------------------- "windows slider section ------------------------------------------ */
   /* start -------------------------------------------- statistic section ------------------------------------------- */
   .statistic-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     padding-top: 75px;
     padding-bottom: 75px;
     background-image: url("../img/statistic-bg-middle.jpg");
@@ -9764,8 +9764,8 @@ textarea:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- statistic section --------------------------------------------- */
   /* start -------------------------------------------- reviews section --------------------------------------------- */
-  .reviews {
-    margin-bottom: 75px;
+  .reviews-section {
+    margin-bottom: 50px;
   }
   .reviews__title {
     margin-bottom: 57px;
@@ -9906,7 +9906,7 @@ textarea:focus:-ms-input-placeholder {
     column-gap: 20px;
   }
   .benefit-section {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
   .benefit__img {
     max-width: none;
@@ -10000,7 +10000,7 @@ textarea:focus:-ms-input-placeholder {
     background-image: url("../img/certificates-bg-middle.jpg");
   }
   .certificates-section {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
   .certificates__content {
     margin-bottom: 0;
@@ -12454,9 +12454,6 @@ textarea:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- customers section --------------------------------------------- */
   /* start ------------------------------------------ benefit section ----------------------------------------------- */
-  .benefit-section {
-    margin-bottom: 60px;
-  }
   .benefit__img {
     padding-top: 33px;
   }
@@ -12563,7 +12560,6 @@ textarea:focus:-ms-input-placeholder {
     padding-top: 72px;
     padding-bottom: 77px;
     padding-left: 40px;
-    margin-bottom: 60px;
     background-image: url("../img/certificates-bg-big.jpg");
   }
   .certificates__content {
@@ -12610,9 +12606,6 @@ textarea:focus:-ms-input-placeholder {
     display: flex;
     column-gap: 40px;
   }
-  .sketches-section {
-    margin-bottom: 100px;
-  }
   .sketches-box {
     padding-left: 40px;
     padding-right: 40px;
@@ -12652,17 +12645,11 @@ textarea:focus:-ms-input-placeholder {
   .additionally-slider {
     max-width: 960px;
   }
-  .additionally-slider-section {
-    margin-bottom: 100px;
-  }
   .additionally-slider__img {
     height: 173px;
   }
   /* end ------------------------------------------- additionally slider section ----------------------------------- */
   /* start ------------------------------------------- climate section --------------------------------------------- */
-  .climate-section {
-    margin-bottom: 100px;
-  }
   .climate__title .block {
     display: inline;
   }
@@ -12675,9 +12662,6 @@ textarea:focus:-ms-input-placeholder {
   }
   /* end ------------------------------------------- climate section ----------------------------------------------- */
   /* start -------------------------------------------- any forms section ------------------------------------------ */
-  .any-forms-section {
-    margin-bottom: 100px;
-  }
   .any-forms__text {
     margin-bottom: 54px;
   }
@@ -12711,9 +12695,7 @@ textarea:focus:-ms-input-placeholder {
   .windows-slider {
     overflow: visible;
     max-width: none;
-  }
-  .windows-slider-section {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
   .windows-slider-box {
     padding-left: 40px;
@@ -12735,7 +12717,6 @@ textarea:focus:-ms-input-placeholder {
   /* end ---------------------------------------- "windows slider section ------------------------------------------ */
   /* start -------------------------------------------- statistic section ------------------------------------------ */
   .statistic-section {
-    margin-bottom: 100px;
     background-image: url("../img/statistic-bg-big.jpg");
   }
   .statistic__title {
