@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (popup) {
             showPopup(popup);
-            body.classList.add('scroll-hidden');
         }
     });
 
@@ -90,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (target.classList.contains('popup__close') || target.classList.contains('popup__inner')) {
             const popup = closestItemByClass(target, 'popup');
             closePopup(popup);
-            body.classList.remove('scroll-hidden');
         }
     });
     /* end Модальные окна */
@@ -147,7 +145,8 @@ document.addEventListener('DOMContentLoaded', () => {
             burger.classList.toggle('active');
             box.classList.toggle('active');
             popup.classList.toggle('active');
-            document.body.classList.toggle('scroll-hidden');
+            (body.classList.contains('scroll-hidden')) ? body.classList.remove('scroll-hidden') : body.classList.add('scroll-hidden'); 
+            // document.body.classList.toggle('scroll-hidden');
         });
     };
 
