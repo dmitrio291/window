@@ -2274,7 +2274,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .payment-section {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .payment__img {
@@ -2467,7 +2467,7 @@ textarea:focus:-ms-input-placeholder {
 
 .installment-windows-section {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   background-image: url("../img/installment-bg-small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -2527,13 +2527,13 @@ textarea:focus:-ms-input-placeholder {
 /* end ------------------------------------------- installment section -------------------------------------------------- */
 /* start -------------------------------------------- discounts section ------------------------------------------------- */
 .discounts {
-  padding: 55px 0 55px 15px;
+  padding: 40px 0 30px 15px;
   background-color: #F0FAFF;
   border-radius: 3px;
 }
 
 .discounts-section {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .discounts__title {
@@ -2676,7 +2676,7 @@ textarea:focus:-ms-input-placeholder {
 /* end ------------------------------------------- profile section ------------------------------------------------------ */
 /* start -------------------------------------------- choose own color section ------------------------------------------ */
 .choose-own-color {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .choose-own-color__container {
@@ -8807,7 +8807,7 @@ textarea:focus:-ms-input-placeholder {
     background-size: cover;
   }
   .payment-section {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
   .payment__content {
     padding: 69px 24px 75px;
@@ -8850,6 +8850,9 @@ textarea:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- payment section ---------------------------------------------- */
   /* start ------------------------------------------- installment section ------------------------------------------ */
+  .installment-section {
+    margin-bottom: 20px;
+  }
   .installment-section .installment {
     background: none;
     background-color: #F9F9F9;
@@ -8939,7 +8942,7 @@ textarea:focus:-ms-input-placeholder {
     min-width: 225px;
   }
   .installment-windows-section {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     background-image: url("../img/installment-bg-middle.jpg");
     position: relative;
   }
@@ -8999,10 +9002,10 @@ textarea:focus:-ms-input-placeholder {
   /* end ------------------------------------------- installment section -------------------------------------------- */
   /* start -------------------------------------------- discounts section ------------------------------------------- */
   .discounts {
-    padding: 70px 0 70px 30px;
+    padding: 50px 0 40px 30px;
   }
   .discounts-section {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .discounts__title {
     margin-bottom: 54px;
@@ -9029,7 +9032,7 @@ textarea:focus:-ms-input-placeholder {
   /* end -------------------------------------------- discounts section --------------------------------------------- */
   /* start -------------------------------------------- choose own color section ------------------------------------ */
   .choose-own-color {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
   .choose-own-color__container {
     padding: 75px 30px;
@@ -11895,9 +11898,6 @@ textarea:focus:-ms-input-placeholder {
   }
   /* end -------------------------------------------- payment section ---------------------------------------------- */
   /* start ------------------------------------------- installment section ------------------------------------------ */
-  .installment-section {
-    margin-bottom: 60px;
-  }
   .installment__wrap {
     width: 72%;
   }
@@ -11907,16 +11907,10 @@ textarea:focus:-ms-input-placeholder {
   .installment__img {
     width: 73%;
   }
-  .installment-windows-section {
-    margin-bottom: 60px;
-  }
   /* end ------------------------------------------- installment section -------------------------------------------- */
   /* start ------------------------------------------- discounts section ------------------------------------------- */
   .discounts {
     padding-left: 38px;
-  }
-  .discounts-section {
-    margin-bottom: 100px;
   }
   .discounts-slider {
     max-width: none;
@@ -11924,7 +11918,7 @@ textarea:focus:-ms-input-placeholder {
   /* end ------------------------------------------- discounts section ---------------------------------------------- */
   /* start -------------------------------------------- brands section ---------------------------------------------- */
   .brands-section {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     display: block;
   }
   .brands__title {
@@ -12090,7 +12084,7 @@ textarea:focus:-ms-input-placeholder {
   /* start ------------------------------------------- profile section ---------------------------------------------- */
   .profile-section {
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .profile__wrap {
     border-bottom: 1px solid #CDCDCD;
@@ -12182,9 +12176,6 @@ textarea:focus:-ms-input-placeholder {
   }
   /* end ------------------------------------------- profile section ------------------------------------------------ */
   /* start -------------------------------------------- choose own color section ------------------------------------ */
-  .choose-own-color {
-    margin-bottom: 100px;
-  }
   .choose-own-color__container.active {
     background: #F9F9F9 url("../img/choose-own-bg-1.png") no-repeat top 0 right 0/322px;
   }

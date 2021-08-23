@@ -2401,7 +2401,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     background-position: right bottom;
 
     &-section {
-        margin-bottom: 35px;
+        margin-bottom: 15px;
     }
 
     &__img {
@@ -2604,7 +2604,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     // 2-ой вариант
     &-windows-section {
         position: relative;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
         background-image: url('../img/installment-bg-small.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -2665,12 +2665,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
 /* start -------------------------------------------- discounts section ------------------------------------------------- */
 .discounts {
-    padding: 55px 0 55px 15px;
+    padding: 40px 0 30px 15px;
     background-color: #F0FAFF;
     border-radius: 3px;
 
     &-section {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
     }
 
     &__title {
@@ -2826,7 +2826,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
 /* start -------------------------------------------- choose own color section ------------------------------------------ */
 .choose-own-color {
-    margin-bottom: 55px;
+    margin-bottom: 35px;
 
     &__container { 
         position: relative;
@@ -9534,7 +9534,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         background-size: cover;
 
         &-section {
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
 
         &__content {
@@ -9595,6 +9595,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start ------------------------------------------- installment section ------------------------------------------ */
     .installment {
         &-section {
+            margin-bottom: 20px;
+
             .installment {
                 background: none;
                 background-color: #F9F9F9;
@@ -9708,7 +9710,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         // 2-ой вариант
         &-windows-section {
-            margin-bottom: 45px;
+            margin-bottom: 20px;
             background-image: url("../img/installment-bg-middle.jpg");
             position: relative;
 
@@ -9786,10 +9788,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- discounts section ------------------------------------------- */
     .discounts {
-        padding: 70px 0 70px 30px;
+        padding: 50px 0 40px 30px;
 
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 50px;
         }
 
         &__title {
@@ -9824,7 +9826,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- choose own color section ------------------------------------ */
     .choose-own-color {
-        margin-bottom: 75px;
+        margin-bottom: 50px;
 
         &__container {
             padding: 75px 30px;
@@ -13693,10 +13695,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start ------------------------------------------- installment section ------------------------------------------ */
     .installment {
-        &-section {
-            margin-bottom: 60px;
-        }
-
         &__wrap {
             width: 72%;
         }
@@ -13708,21 +13706,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         &__img {
             width: 73%;
         }
-
-        // 2-ой вариант
-        &-windows-section {
-            margin-bottom: 60px;
-        }
     }
     /* end ------------------------------------------- installment section -------------------------------------------- */
 
     /* start ------------------------------------------- discounts section ------------------------------------------- */
     .discounts {
         padding-left: 38px;
-
-        &-section {
-            margin-bottom: 100px;
-        }
 
         &-slider {
             max-width: none;
@@ -13733,7 +13722,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     /* start -------------------------------------------- brands section ---------------------------------------------- */
     .brands {
         &-section {
-            margin-bottom: 100px;
+            margin-bottom: 75px;
             display: block;
         }
 
@@ -13941,7 +13930,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     .profile {
         &-section {
             display: block;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
 
         &__wrap {
@@ -14054,8 +14043,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     /* start -------------------------------------------- choose own color section ------------------------------------ */
     .choose-own-color {
-        margin-bottom: 100px;
-
         &__container {
             &.active {
                 background: #F9F9F9 url('../img/choose-own-bg-1.png') no-repeat top 0 right 0/322px;
