@@ -3736,8 +3736,12 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .windows-slider__btn {
+  display: block;
+  text-decoration: none;
   max-width: 150px;
   margin-top: auto;
+  text-align: center;
+  line-height: 40px;
 }
 
 /* end ---------------------------------------- "windows slider section ------------------------------------------------ */
