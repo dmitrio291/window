@@ -187,9 +187,10 @@
 
     <!-- Закажите бесплатный замер -->
     <div>
-        <div class="measuring container">
+        <div class="measuring measuring--contacts container">
             <div class="measuring__content">
-                <h2 class="measuring__title"><span class="measuring__word orange">Закажите</span> бесплатный замер</h2>
+                <h2 class="measuring__title"><span class="block">Заключение</span> договора <span class="measuring__word orange">на дому</span></h2>
+                <p class="measuring__subtitle orange">Нет времени посещать офис?</p>
                 <ul class="installment-list reset">
                     <li>
                         <span class="installment-list__img">
@@ -220,7 +221,13 @@
                     <input class="form__phone" type="tel" placeholder="ваш телефон" required>
                     <button data-popup="popup-measuring" class="form__btn btn" type="submit">Вызвать замерщика</button>
                 </form>
-                <p class="measuring__warning">Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a class="measuring__link" href="#">Правовой информацией</a></p>
+                <label class="privacy-policy">
+                    <input class="privacy-policy__checkbox-real" type="checkbox" checked>
+                    <span class="privacy-policy__checkbox-fake"></span>
+                    <p class="privacy-policy__text">
+                        Оставляя свои контактные данные, я подтверждаю свое совершеннолетие, согласие на обработку персональных данных в соответствии с <a class="privacy-policy__link" href="#">Политикой конфиденциальности</a> и <a class="privacy-policy__link" href="#">Пользовательским соглашением</a> данного сайта
+                    </p>
+                </label> 
             </div>
             <div class="measuring__img"></div>
         </div>  

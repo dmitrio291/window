@@ -619,6 +619,57 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /* end ---------------------------------------------- popup-letter ----------------------------------------------------- */
+/* start ---------------------------------------------- privacy-policy ------------------------------------------------- */
+.privacy-policy {
+  display: flex;
+  cursor: pointer;
+}
+
+.privacy-policy__checkbox-real {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  opacity: 0;
+  appearance: none;
+}
+
+.privacy-policy__checkbox-real:checked + .privacy-policy__checkbox-fake::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 4px;
+  background-image: url("../img/check-mark.svg");
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%);
+}
+
+.privacy-policy__checkbox-fake {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ABABAB;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.privacy-policy__text {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.privacy-policy__link {
+  color: #48494B;
+  text-decoration: none;
+  border-bottom: 0.1px solid #48494B;
+}
+
+/* end ---------------------------------------------- privacy-policy --------------------------------------------------- */
 /* start -------------------------------------------- header section---------------------------------------------------- */
 .header {
   margin-bottom: 20px;
@@ -4624,37 +4675,6 @@ textarea:focus:-ms-input-placeholder {
   line-height: 28px;
 }
 
-.measuring__warning {
-  font-size: 10px;
-  line-height: 12px;
-}
-
-.measuring--contacts {
-  margin-bottom: 0;
-}
-
-.measuring--contacts .measuring__title {
-  margin-bottom: 17px;
-}
-
-.measuring__subtitle {
-  margin-bottom: 27px;
-  font-size: 18.4px;
-}
-
-.measuring__info {
-  margin-bottom: 24px;
-  line-height: 23px;
-}
-
-.measuring__info span {
-  display: block;
-}
-
-.measuring__link {
-  color: #48494B;
-}
-
 /* end -------------------------------------------- measuring section -------------------------------------------------- */
 /* start -------------------------------------------- customers section ------------------------------------------------- */
 .customers {
@@ -5403,6 +5423,19 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- schedule section --------------------------------------------------- */
+/* start -------------------------------------------- measuring section ------------------------------------------------ */
+.measuring--contacts .measuring__title {
+  margin-bottom: 15px;
+  max-width: 264px;
+}
+
+.measuring--contacts .measuring__subtitle {
+  margin-bottom: 25px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+/* start -------------------------------------------- measuring section ------------------------------------------------ */
 /* start -------------------------------------------- not-found ------------------------------------------------------- */
 .not-found {
   padding: 103px 0;
@@ -9386,7 +9419,7 @@ textarea:focus:-ms-input-placeholder {
     background-color: #F0FAFF;
   }
   .measuring__text, .measuring__title,
-  .measuring .form, .measuring__warning {
+  .measuring .form {
     position: relative;
   }
   .measuring__text {
@@ -9426,33 +9459,6 @@ textarea:focus:-ms-input-placeholder {
     width: 80px;
     height: 100%;
     background: linear-gradient(90deg, #F0FAFF 0%, rgba(240, 250, 255, 0) 100%);
-  }
-  .measuring--contacts {
-    margin-bottom: 0;
-  }
-  .measuring--contacts .measuring__content {
-    width: 62%;
-  }
-  .measuring--contacts .measuring__title {
-    margin-bottom: 21px;
-  }
-  .measuring--contacts .measuring__img {
-    background-position-x: 30%;
-  }
-  .measuring--contacts .measuring__img::before {
-    width: 51px;
-  }
-  .measuring--contacts .form {
-    max-width: 362px;
-  }
-  .measuring__subtitle {
-    margin-bottom: 31px;
-    font-size: 20.4px;
-  }
-  .measuring__info {
-    margin-bottom: 32px;
-    font-size: 18px;
-    line-height: 25px;
   }
   /* end -------------------------------------------- measuring section ---------------------------------------------- */
   /* start -------------------------------------------- free consultation section --------------------------------- */
@@ -10200,6 +10206,21 @@ textarea:focus:-ms-input-placeholder {
     margin-bottom: 50px;
   }
   /* end -------------------------------------------- schedule section --------------------------------------------- */
+  /* start -------------------------------------------- measuring section ------------------------------------------ */
+  .measuring--contacts .measuring__title {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+  .measuring--contacts .measuring__title .block {
+    display: block;
+  }
+  .measuring--contacts .measuring__word {
+    display: inline;
+  }
+  .measuring--contacts .measuring__subtitle {
+    font-size: 21px;
+  }
+  /* start -------------------------------------------- measuring section ------------------------------------------- */
   /* start -------------------------------------------- not-found -------------------------------------------------- */
   .not-found {
     padding: 130px 0;
@@ -12386,25 +12407,8 @@ textarea:focus:-ms-input-placeholder {
   .measuring__img::before {
     width: 110px;
   }
-  .measuring--contacts .measuring__content {
-    width: 43%;
-  }
-  .measuring--contacts .measuring__img {
-    width: 57%;
-    background-image: url("../img/measuring-contacts-bg-big.jpg");
-    background-position-x: 100%;
-  }
-  .measuring--contacts .measuring__img::before {
-    width: 82px;
-  }
-  .measuring--contacts .form {
-    max-width: 348px;
-  }
-  .measuring--contacts .form__phone {
-    margin-bottom: 16px;
-  }
-  .measuring__info {
-    margin-bottom: 31px;
+  .measuring .privacy-policy {
+    padding-right: 10px;
   }
   /* end -------------------------------------------- measuring section --------------------------------------------- */
   /* start -------------------------------------------- free consultation section ----------------------------------- */
@@ -12934,6 +12938,21 @@ textarea:focus:-ms-input-placeholder {
     grid-column: 1 / 2;
   }
   /* end -------------------------------------------- schedule section ---------------------------------------------- */
+  /* start -------------------------------------------- measuring section ------------------------------------------ */
+  .measuring--contacts .measuring__title {
+    max-width: none;
+    margin-bottom: 30px;
+    margin-right: -17px;
+    position: relative;
+    z-index: 1;
+  }
+  .measuring--contacts .measuring__title .block {
+    display: inline;
+  }
+  .measuring--contacts .measuring__subtitle {
+    margin-bottom: 40px;
+  }
+  /* start -------------------------------------------- measuring section ------------------------------------------- */
   /* start -------------------------------------------- not-found --------------------------------------------------- */
   .not-found {
     padding: 161px 0;

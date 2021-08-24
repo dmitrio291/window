@@ -617,6 +617,63 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 /* end ---------------------------------------------- popup-letter ----------------------------------------------------- */
 
+/* start ---------------------------------------------- privacy-policy ------------------------------------------------- */
+.privacy-policy {
+    display: flex;
+    cursor: pointer;
+
+    &__checkbox-real {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        opacity: 0;
+        appearance: none;
+
+        &:checked {
+            & + {
+                .privacy-policy {
+                    &__checkbox-fake::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 6px;
+                        height: 4px;
+                        background-image: url('../img/check-mark.svg');
+                        background-size: cover;
+                        background-position: center;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+
+    &__checkbox-fake {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        width: 12px;
+        height: 12px;
+        background-color: #ffffff;
+        border: 1px solid #ABABAB;
+        border-radius: 2px;
+        flex-shrink: 0;
+    }
+
+    &__text {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    &__link {
+        color: #48494B;
+        text-decoration: none;
+        border-bottom: 0.1px solid #48494B;
+    }
+}
+/* end ---------------------------------------------- privacy-policy --------------------------------------------------- */
+
 /* start -------------------------------------------- header section---------------------------------------------------- */
 .header {
     margin-bottom: 20px;
@@ -4849,39 +4906,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         margin-bottom: 27px;
         line-height: 28px;
     }
-
-    &__warning {
-        font-size: 10px;
-        line-height: 12px;
-    }
-
-    &--contacts {
-        margin-bottom: 0;
-
-        .measuring {
-            &__title {
-                margin-bottom: 17px;   
-            }
-        }
-    }
-
-    &__subtitle {
-        margin-bottom: 27px;
-        font-size: 18.4px;
-    }
-
-    &__info {
-        margin-bottom: 24px;
-        line-height: 23px;
-
-        span {
-            display: block;
-        }
-    }
-
-    &__link {
-        color: #48494B;
-    }
 }
 /* end -------------------------------------------- measuring section -------------------------------------------------- */
 
@@ -5672,6 +5696,23 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 }
 /* end -------------------------------------------- schedule section --------------------------------------------------- */
+
+/* start -------------------------------------------- measuring section ------------------------------------------------ */
+.measuring--contacts {
+    .measuring {
+        &__title {
+            margin-bottom: 15px;
+            max-width: 264px;
+        }
+
+        &__subtitle {
+            margin-bottom: 25px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+    }
+}
+/* start -------------------------------------------- measuring section ------------------------------------------------ */
 
 /* start -------------------------------------------- not-found ------------------------------------------------------- */
 .not-found {
@@ -10294,8 +10335,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &__text,
         &__title,
-        .form,
-        &__warning {
+        .form {
             position: relative;
         }
 
@@ -10345,43 +10385,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                 height: 100%;
                 background: linear-gradient(90deg, #F0FAFF 0%, rgba(240, 250, 255, 0) 100%);
             } 
-        }
-
-        &--contacts {
-            margin-bottom: 0;
-
-            .measuring {
-                &__content {
-                    width: 62%;
-                }
-
-                &__title {
-                    margin-bottom: 21px;
-                }
-
-                &__img {
-                    background-position-x: 30%;
-
-                    &::before {
-                        width: 51px;
-                    }
-                }                
-            }
-
-            .form {
-                max-width: 362px;
-            }
-        }
-
-        &__subtitle {
-            margin-bottom: 31px;
-            font-size: 20.4px;
-        }
-
-        &__info {
-            margin-bottom: 32px;
-            font-size: 18px;
-            line-height: 25px;
         }
     }
     /* end -------------------------------------------- measuring section ---------------------------------------------- */
@@ -11360,6 +11363,29 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         margin-bottom: 50px;
     }
     /* end -------------------------------------------- schedule section --------------------------------------------- */
+
+    /* start -------------------------------------------- measuring section ------------------------------------------ */
+    .measuring--contacts {
+        .measuring {
+            &__title {
+                max-width: none;
+                margin-bottom: 20px;
+
+                .block {
+                    display: block;
+                }
+            }
+
+            &__word {
+                display: inline;
+            }
+
+            &__subtitle {
+                font-size: 21px;
+            }
+        }
+    }
+    /* start -------------------------------------------- measuring section ------------------------------------------- */
 
     /* start -------------------------------------------- not-found -------------------------------------------------- */
     .not-found {
@@ -14342,34 +14368,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             }
         }
 
-        &--contacts {
-            .measuring {
-                &__content {
-                    width: 43%;
-                }
-
-                &__img {
-                    width: 57%;
-                    background-image: url("../img/measuring-contacts-bg-big.jpg");
-                    background-position-x: 100%;
-
-                    &::before {
-                        width: 82px;
-                    }
-                }
-            }
-
-            .form {
-                max-width: 348px;
-
-                &__phone {
-                    margin-bottom: 16px;
-                }
-            }
-        }
-
-        &__info {
-            margin-bottom: 31px;
+        .privacy-policy {
+            padding-right: 10px;
         }
     }
     /* end -------------------------------------------- measuring section --------------------------------------------- */
@@ -15119,6 +15119,28 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- schedule section ---------------------------------------------- */
+
+    /* start -------------------------------------------- measuring section ------------------------------------------ */
+    .measuring--contacts {
+        .measuring {
+            &__title {
+                max-width: none;
+                margin-bottom: 30px;
+                margin-right: -17px;
+                position: relative;
+                z-index: 1;
+
+                .block {
+                    display: inline;
+                }
+            }
+
+            &__subtitle {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    /* start -------------------------------------------- measuring section ------------------------------------------- */
 
     /* start -------------------------------------------- not-found --------------------------------------------------- */
     .not-found {
