@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* start -------------------------------- Скрипты для секции .header -------------------------------------------- */
     /* start Скрипт на фиксацию шапки */
-    const mainHeader = document.querySelector('.main-header');
+    const mainHeader = document.querySelector('.main-header--scroll-fixed');
 
     window.addEventListener('scroll', () => {
         const srollPos = mainHeader.offsetHeight;
