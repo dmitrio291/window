@@ -5496,6 +5496,10 @@ textarea:focus:-ms-input-placeholder {
 /* end Страница Акции */
 /* start Страница Рассрочка */
 /* start------------------------------------------- director section ------------------------------------------------- */
+.director-section--installment {
+  margin-bottom: 35px;
+}
+
 .director--serova-sofia {
   padding: 0;
   background-color: #ffffff;
@@ -10252,6 +10256,9 @@ textarea:focus:-ms-input-placeholder {
   /* end Страница Акции */
   /* start Страница Рассрочка */
   /* start------------------------------------------- director section -------------------------------------------- */
+  .director-section--installment {
+    margin-bottom: 50px;
+  }
   .director--serova-sofia {
     padding: 0;
     align-items: flex-end;
@@ -12926,6 +12933,9 @@ textarea:focus:-ms-input-placeholder {
   /* end Страница Акции */
   /* start Страница Рассрочка */
   /* start------------------------------------------- director section -------------------------------------------- */
+  .director-section--installment {
+    margin-bottom: 75px;
+  }
   .director--serova-sofia {
     padding: 0;
   }
