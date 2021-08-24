@@ -6603,10 +6603,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
 /* start -------------------------------------------- windows-house-section ------------------------------------------ */
 .windows-house {
-    &-section {
-        margin-bottom: 50px;
-    }
-
     &-slider {
         &__slide {
             max-width: 345px;
@@ -11937,10 +11933,16 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
     /* end -------------------------------------------- doors-house-section ------------------------------------------ */
 
+    /* start -------------------------------------------- examples-section ------------------------------------------- */
+    .examples-section--windows {
+        margin-bottom: 50px;
+    }
+    /* end -------------------------------------------- examples-section ------------------------------------------- */
+
     /* start -------------------------------------------- windows-house-section -------------------------------------- */
     .windows-house {
         &-section {
-            margin-bottom: 75px;
+            margin-bottom: 25px;
         }
 
         &__title {
@@ -11985,6 +11987,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         .slider-controls {
             max-width: 249px;
             display: flex;
+            margin-bottom: 0;
         }
     }
     /* end -------------------------------------------- windows-house-section ---------------------------------------- */
@@ -15128,7 +15131,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             }
 
             &__text {
-                font-size: 16px;
+                font-size: 18px;
             }
 
             &__right {
@@ -15425,6 +15428,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
     }
     /* end -------------------------------------------- doors-house-section ------------------------------------------ */
+
+    /* start -------------------------------------------- examples-section ------------------------------------------- */
+    .examples-section--windows {
+        margin-bottom: 75px;
+    }
+    /* end -------------------------------------------- examples-section ------------------------------------------- */
 
     /* start -------------------------------------------- windows-house-section -------------------------------------- */
     .windows-house {
