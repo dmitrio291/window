@@ -5829,6 +5829,30 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             color: #ffffff;
         }
     }
+
+    .privacy-policy {
+        text-align: left;
+
+        &__checkbox-real:checked {
+            & + {
+                .privacy-policy {
+                    &__checkbox-fake::before {
+                        background-image: url("../img/check-mark-white.svg");
+                    }
+                }
+            }
+        }
+
+        &__checkbox-fake {
+            border-color: #ffffff;
+            background-color: transparent;
+        }
+
+        &__link {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+    }
 }
 /* end -------------------------------------------- discounts-stocks-section ----------------------------------------- */
 /* end Страница Акции */
@@ -11524,6 +11548,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             margin-left: auto;
             margin-right: auto;
             max-width: 480px;
+        }
+
+        .privacy-policy {
+            max-width: 592px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     /* end -------------------------------------------- discounts-stocks-section ------------------------------------- */

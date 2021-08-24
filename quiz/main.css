@@ -1182,6 +1182,12 @@ input:checked ~ .quiz-step-mark > span {
   margin-bottom: 10px;
 }
 
+.quiz-step-10 .privacy-policy {
+  display: flex;
+  text-align: left;
+  padding: 0 20px 20px 20px;
+}
+
 @media (min-width: 768px) {
   .calc-windows-quiz {
     margin-bottom: 50px;
@@ -1318,6 +1324,9 @@ input:checked ~ .quiz-step-mark > span {
   }
   .quiz-overlay.quiz-open .quiz-nav-step {
     margin-left: 7px;
+  }
+  .quiz-step-10 .privacy-policy {
+    padding: 0;
   }
 }
 
