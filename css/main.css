@@ -1532,7 +1532,12 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .director-box {
+  padding-bottom: 40px;
   background-color: #F5F5F5;
+}
+
+.director-box .privacy-policy {
+  padding: 0 15px;
 }
 
 .director__wrap {
@@ -1603,7 +1608,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .director-form {
-  padding: 75px 35px 0 30px;
+  padding: 40px 15px 0 15px;
 }
 
 .director-form__title {
@@ -1611,7 +1616,12 @@ textarea:focus:-ms-input-placeholder {
   text-align: left;
 }
 
+.director-form .form {
+  margin-bottom: 0;
+}
+
 .director-form__info {
+  margin-bottom: 37px;
   line-height: 21px;
 }
 
@@ -3375,7 +3385,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .sketches-box {
-  padding: 55px 15px;
+  padding: 40px 15px;
   background-color: #F3FCFE;
   border-radius: 3px;
 }
@@ -3484,13 +3494,12 @@ textarea:focus:-ms-input-placeholder {
   display: block;
 }
 
-.form-sketches__info {
-  font-size: 10px;
-  line-height: 15px;
+.form-sketches__text a {
+  text-decoration: none;
 }
 
-.form-sketches__link {
-  color: #48494B;
+.form-sketches__text a:hover {
+  text-decoration: underline;
 }
 
 /* end------------------------------------------- sketches section ----------------------------------------------------- */
@@ -8479,6 +8488,22 @@ textarea:focus:-ms-input-placeholder {
   .director-section {
     margin-bottom: 20px;
   }
+  .director-box {
+    padding-bottom: 50px;
+  }
+  .director-box .privacy-policy {
+    padding: 0 30px;
+    max-width: 719px;
+  }
+  .director-box .director {
+    align-items: flex-end;
+  }
+  .director-box .director--vlasov-alexey .director__wrap {
+    padding-bottom: 30px;
+  }
+  .director-box .director__text {
+    font-size: 18px;
+  }
   .director--vlasov-alexey .director__wrap {
     padding-bottom: 55px;
   }
@@ -8514,11 +8539,14 @@ textarea:focus:-ms-input-placeholder {
     height: 100px;
     order: -1;
   }
+  .director-form {
+    padding: 50px 30px 0 30px;
+  }
   .director-form__title {
-    margin-bottom: 56px;
+    margin-bottom: 30px;
   }
   .director-form__info {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
     font-size: 18px;
   }
   .director-form .form {
@@ -9289,7 +9317,7 @@ textarea:focus:-ms-input-placeholder {
     margin-bottom: 50px;
   }
   .sketches-box {
-    padding: 50px 30px;
+    padding: 40px 30px;
   }
   .sketches__title {
     margin-bottom: 45px;
@@ -11640,17 +11668,25 @@ textarea:focus:-ms-input-placeholder {
     bottom: 68.3%;
   }
   .director-box .director {
-    padding-top: 37px;
+    padding-top: 0;
+    padding-bottom: 32px;
     padding-right: 50px;
     column-gap: 67px;
+  }
+  .director-box .director--vlasov-alexey .director__wrap {
+    padding-bottom: 40px;
+    padding-right: 44px;
+  }
+  .director-box .director__text {
+    font-size: 21px;
   }
   .director-box .director__img {
     margin-bottom: 15px;
     width: 168px;
     height: 168px;
   }
-  .director-box .director__right {
-    margin-top: -29px;
+  .director-box .privacy-policy {
+    padding: 0 40px;
   }
   .director__left {
     width: 77.1%;
@@ -12663,8 +12699,7 @@ textarea:focus:-ms-input-placeholder {
     column-gap: 40px;
   }
   .sketches-box {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 50px 40px;
   }
   .sketches__text {
     margin-bottom: 29px;
@@ -12694,7 +12729,7 @@ textarea:focus:-ms-input-placeholder {
   /* end------------------------------------------- sketches section ----------------------------------------------- */
   /* start ------------------------------------------- sketches section 2-ой вариант -------------------------------- */
   .sketches--2 .sketches__img {
-    padding: 63px 32px 63px 18px;
+    padding: 63px 32px 75px 18px;
   }
   /* end ------------------------------------------- sketches section 2-ой вариант ---------------------------------- */
   /* start ------------------------------------------- additionally slider section --------------------------------- */

@@ -1612,7 +1612,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &-box {
+        padding-bottom: 40px;
         background-color: #F5F5F5;
+
+        .privacy-policy {
+            padding: 0 15px;
+        }
     }
 
     &__wrap {
@@ -1684,14 +1689,19 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 }
 
 .director-form {
-    padding: 75px 35px 0 30px;
+    padding: 40px 15px 0 15px;
 
     &__title {
         margin-bottom: 28px;
         text-align: left;
     }
 
+    .form {
+        margin-bottom: 0;
+    }
+
     &__info {
+        margin-bottom: 37px;
         line-height: 21px;
 
         span {
@@ -3556,7 +3566,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &-box {
-        padding: 55px 15px;
+        padding: 40px 15px;
         background-color: #F3FCFE;
         border-radius: 3px;
     }
@@ -3666,15 +3676,14 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         .block {
             display: block;
         }
-    }
 
-    &__info {
-        font-size: 10px;
-        line-height: 15px;
-    }
+        a {
+            text-decoration: none;
 
-    &__link {
-        color: #48494B;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 /* end------------------------------------------- sketches section ----------------------------------------------------- */
@@ -9084,6 +9093,31 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             margin-bottom: 20px;
         }
 
+        &-box {
+            padding-bottom: 50px;
+
+            .privacy-policy {
+                padding: 0 30px;
+                max-width: 719px;
+            }
+
+            .director {
+                align-items: flex-end;
+
+                &--vlasov-alexey {
+                    .director {
+                        &__wrap {
+                            padding-bottom: 30px;
+                        }
+                    }
+                }
+
+                &__text {
+                    font-size: 18px;
+                }
+            }
+        }
+
         &--vlasov-alexey {
             .director {
                 &__wrap {
@@ -9134,12 +9168,14 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     .director-form {
+        padding: 50px 30px 0 30px;
+
         &__title {
-            margin-bottom: 56px;
+            margin-bottom: 30px;
         }
 
         &__info {
-            margin-bottom: 44px;
+            margin-bottom: 40px;
             font-size: 18px;
         }
 
@@ -10158,7 +10194,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &-box {
-            padding: 50px 30px;
+            padding: 40px 30px;
         }
 
         &__title {
@@ -13312,19 +13348,33 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &-box {
             .director {
-                padding-top: 37px;
+                padding-top: 0;
+                padding-bottom: 32px;
                 padding-right: 50px;
                 column-gap: 67px;
+
+                &--vlasov-alexey {
+                    .director {
+                        &__wrap {
+                            padding-bottom: 40px;
+                            padding-right: 44px;
+                        }
+                    }
+                }
+
+                &__text {
+                    font-size: 21px;
+                }
 
                 &__img {
                     margin-bottom: 15px;
                     width: 168px;
                     height: 168px;
                 }
+            }
 
-                &__right {
-                    margin-top: -29px;
-                }
+            .privacy-policy {
+                padding: 0 40px;
             }
         }
 
@@ -14711,8 +14761,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         column-gap: 40px;
 
         &-box {
-            padding-left: 40px;
-            padding-right: 40px;
+            padding: 50px 40px;
         }
 
         &__text {
@@ -14756,7 +14805,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     .sketches--2 {
         .sketches {
             &__img {
-                padding: 63px 32px 63px 18px;
+                padding: 63px 32px 75px 18px;
             }
         }
     }
