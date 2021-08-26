@@ -2549,6 +2549,10 @@ input:checked~.quiz-step-mark > span {
 	}
 }
 
+.calc-balcony.none {
+    display: none;
+}
+
 .calc-balcony {
     margin-bottom: 35px;
 }
