@@ -466,17 +466,16 @@ textarea:focus:-ms-input-placeholder {
   line-height: 21px;
 }
 
-.legal-information {
-  padding: 0 12px;
-  font-size: 11px;
-  line-height: 14px;
-  text-align: center;
+.popup .privacy-policy {
+  margin-top: 133px;
 }
 
-.legal-information a {
-  color: #48494B;
-  text-decoration: none;
-  border-bottom: 1px solid #48494B;
+.popup .privacy-policy__checkbox-fake {
+  margin-left: 10px;
+}
+
+.popup .privacy-policy__text {
+  padding-right: 9px;
 }
 
 .form-popup {
@@ -575,6 +574,14 @@ textarea:focus:-ms-input-placeholder {
 
 .popup-letter .popup__title {
   margin-bottom: 42px;
+}
+
+.popup-letter .privacy-policy {
+  margin-top: 32px;
+}
+
+.popup-letter .privacy-policy__checkbox-fake {
+  margin-left: 0;
 }
 
 .form-contacts__upload {
@@ -8054,6 +8061,12 @@ textarea:focus:-ms-input-placeholder {
     font-size: 18px;
     line-height: 25px;
   }
+  .popup .privacy-policy {
+    margin-top: 32px;
+  }
+  .popup .privacy-policy__checkbox-fake {
+    margin-left: 35px;
+  }
   .form-popup {
     display: flex;
     justify-content: space-between;
@@ -8087,7 +8100,7 @@ textarea:focus:-ms-input-placeholder {
   /* end ---------------------------------------------- popup-thanks ----------------------------------------------- */
   /* start ---------------------------------------------- popup-order ----------------------------------------------- */
   .popup-order .popup__content {
-    padding: 47px 0 0 35px;
+    padding: 47px 0 30px 35px;
   }
   .popup-order .popup__title {
     grid-area: auto;
@@ -8106,6 +8119,13 @@ textarea:focus:-ms-input-placeholder {
   }
   .popup-order .form__phone {
     margin-bottom: 15px;
+  }
+  .popup-order .privacy-policy {
+    margin-top: 0;
+    padding-right: 35px;
+  }
+  .popup-order .privacy-policy__checkbox-fake {
+    margin-left: 0;
   }
   .order-balcony {
     max-width: none;
@@ -8138,6 +8158,12 @@ textarea:focus:-ms-input-placeholder {
   .popup-letter .popup__title {
     margin-bottom: 44px;
     font-size: 26px;
+  }
+  .popup-letter .privacy-policy__checkbox-fake {
+    margin-left: 0;
+  }
+  .popup-letter .privacy-policy__text {
+    padding-right: 0;
   }
   .form-contacts__inputs {
     display: flex;
