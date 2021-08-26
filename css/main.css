@@ -9912,12 +9912,15 @@ textarea:focus:-ms-input-placeholder {
   }
   .profitable-windows__list li {
     margin-bottom: 20px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 31.4%;
   }
-  .profitable-windows__list li.hidden:not(:last-child) {
+  .profitable-windows__list li.hidden {
     display: flex;
+  }
+  .profitable-windows__list li.hidden--tablet, .profitable-windows__list li:last-child {
+    display: none;
   }
   .profitable-windows__list li.pd {
     padding-left: 13px;
@@ -12909,6 +12912,9 @@ textarea:focus:-ms-input-placeholder {
   }
   .profitable-windows__list li.hidden {
     display: flex;
+  }
+  .profitable-windows__list li.hidden--tablet {
+    display: none;
   }
   .profitable-windows__list li.padding {
     padding: 30px 19px 25px;

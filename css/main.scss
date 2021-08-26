@@ -10988,12 +10988,17 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
             li {
                 margin-bottom: 20px;
-                padding-left: 17px;
-                padding-right: 17px;
+                padding-left: 16px;
+                padding-right: 16px;
                 width: 31.4%;
 
-                &.hidden:not(:last-child) {
+                &.hidden {
                     display: flex;
+                }
+
+                &.hidden--tablet,
+                &:last-child {
+                    display: none;
                 }
 
                 &.pd {
@@ -15058,6 +15063,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
                 &.hidden {
                     display: flex;
+                }
+
+                &.hidden--tablet {
+                    display: none;
                 }
 
                 &.padding {
