@@ -1616,6 +1616,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &-section {
         margin-bottom: 15px;
+
+        &--mg-main {
+            margin-bottom: 35px;
+        }
     }
 
     &-box {
@@ -7130,6 +7134,20 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     
             &:nth-child(2) {
                 background-image: url('../img/types-glazing-2.jpg');
+
+                .types-glazing {
+                    &__list {
+                        & > li {
+                            &:first-child {
+                                background-image: url('../img/types-glazing-circle-3.svg');
+                            }
+
+                            &:last-child {
+                                background-image: url('../img/types-glazing-circle-4.svg');
+                            }
+                        }
+                    }
+                }
             }
 
             &:nth-child(3) {
@@ -8304,7 +8322,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         position: relative;
         padding-top: 45px;
         padding-bottom: 30px;
-        margin-bottom: 35px;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('../img/choice-windows-small.jpg');
@@ -8359,7 +8376,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
     }
 
     &__btn {
-        display: none;
+        margin-top: 35px;
+        max-width: 345px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 /* end -------------------------------------------- windows-quality-section -------------------------------------- */
@@ -9152,6 +9174,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &-section {
             margin-bottom: 20px;
+
+            &--mg-main {
+                margin-bottom: 50px;
+            }
         }
 
         &-box {
@@ -12965,7 +12991,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         &-section {
             padding-top: 75px;
             padding-bottom: 75px;
-            margin-bottom: 50px;
             background-image: url("../img/choice-windows-middle.jpg");
         }
 
