@@ -12139,6 +12139,69 @@ textarea:focus:-ms-input-placeholder {
   .brands-slider__slide {
     flex-shrink: 0;
   }
+  .brands-slider__slide.rehau .yellow div {
+    width: 112px;
+  }
+  .brands-slider__slide.rehau .blue div {
+    width: 152px;
+  }
+  .brands-slider__slide.rehau .green div {
+    width: 100px;
+  }
+  .brands-slider__slide.kbe .yellow div {
+    width: 166px;
+  }
+  .brands-slider__slide.kbe .blue div {
+    width: 161px;
+  }
+  .brands-slider__slide.kbe .green div {
+    width: 140px;
+  }
+  .brands-slider__slide.veka .yellow div {
+    width: 74px;
+  }
+  .brands-slider__slide.veka .blue div {
+    width: 149px;
+  }
+  .brands-slider__slide.veka .green div {
+    width: 162px;
+  }
+  .brands-slider__slide.monblanc .yellow div {
+    width: 147px;
+  }
+  .brands-slider__slide.monblanc .blue div {
+    width: 94px;
+  }
+  .brands-slider__slide.monblanc .green div {
+    width: 93px;
+  }
+  .brands-slider__slide.trocal .yellow div {
+    width: 69px;
+  }
+  .brands-slider__slide.trocal .blue div {
+    width: 75px;
+  }
+  .brands-slider__slide.trocal .green div {
+    width: 94px;
+  }
+  .brands-slider__slide.salamander .yellow div {
+    width: 157px;
+  }
+  .brands-slider__slide.salamander .blue div {
+    width: 95px;
+  }
+  .brands-slider__slide.salamander .green div {
+    width: 118px;
+  }
+  .brands-slider__slide.schuco .yellow div {
+    width: 139px;
+  }
+  .brands-slider__slide.schuco .blue div {
+    width: 113px;
+  }
+  .brands-slider__slide.schuco .green div {
+    width: 118px;
+  }
   .brands-slider__box {
     display: flex;
     align-items: flex-start;
