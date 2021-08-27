@@ -2755,6 +2755,14 @@ input:checked~.quiz-step-mark > span {
     .calc-balcony .quiz-open .quiz-nav-step {
         right: 14px;
     }
+
+    .calc-balcony .quiz-name--height {
+        min-height: auto;
+    }
+
+    .quiz-name .block {
+        display: inline;
+    }
 }
 
 @media (min-width: 1024px) {
