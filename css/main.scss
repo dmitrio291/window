@@ -2337,7 +2337,6 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &__wrap {
         display: flex;
-        align-items: flex-end;
         width: 100%;
         height: 100%;
         flex-wrap: nowrap;
@@ -2397,6 +2396,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         padding: 19px 20px 16px;
         text-align: center;
         background-color: #ffffff;
+        
+        &.mg {
+            margin-top: 8px;
+        }
     }
 
     &__list {
@@ -9673,6 +9676,10 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
             max-width: 670px;
         }
 
+        &__wrap {
+            align-items: flex-end;
+        }
+
         &__list {
             li {
                 padding-top: 16px;
@@ -9694,6 +9701,12 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                         }
                     }
                 }
+            }
+        }
+
+        &__title {
+            &.mg {
+                margin-top: 0;
             }
         }
 
