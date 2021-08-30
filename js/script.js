@@ -244,6 +244,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     /* end ---------------------------------- Скрипты для секции .discounts-section --------------------------------- */
 
+    /* start ---------------------------------- Скрипты для секции .brands-mobile-section --------------------------- */
+    const brandsMobileSlider = document.querySelector('.brands-mobile-slider');
+
+    if (brandsMobileSlider) {
+        const brandsMobileSwiper = new Swiper(brandsMobileSlider, {
+            slidesPerView: 1.2,
+            autoHeight: true,
+            spaceBetween: 1,
+            slideClass: 'brands-mobile-slider__slide',
+            wrapperClass: 'brands-mobile-slider__wrap',
+            pagination: {
+                el: '.brands-mobile-slider__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            loop: true,
+            autoplay: true,
+            navigation: {
+                nextEl: '.brands-mobile-slider__next',
+                prevEl: '.brands-mobile-slider__prev'
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.5
+                }
+            }
+        });
+    }
+    /* end ---------------------------------- Скрипты для секции .brands-mobile-section ----------------------------- */
+
     /* start ---------------------------------- Скрипты для секции .brands-section ---------------------------------- */
     const brandsSlider = document.querySelector('.brands-slider');
 

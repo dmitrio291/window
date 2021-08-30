@@ -2728,7 +2728,99 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /* end -------------------------------------------- discounts section --------------------------------------------------- */
-/* start -------------------------------------------- brands section ---------------------------------------------- */
+/* start -------------------------------------------- brands-section-mobile --------------------------------------------- */
+.brands-section-mobile {
+  margin-bottom: 42px;
+}
+
+.brands-mobile__text {
+  margin-bottom: 26px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.brands-mobile-slider {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.brands-mobile-slider__wrap {
+  display: flex;
+}
+
+.brands-mobile-slider__slide {
+  flex-shrink: 0;
+  padding: 9px;
+}
+
+.brands-mobile-slider__content {
+  padding: 25px 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.brands-mobile-slider__about, .brands-mobile-slider__price, .brands-mobile-slider__list {
+  display: flex;
+}
+
+.brands-mobile-slider__about {
+  column-gap: 16px;
+  margin-bottom: 18px;
+}
+
+.brands-mobile-slider__price {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brands-mobile-slider__rating {
+  margin-top: 5px;
+}
+
+.brands-mobile-slider__logo {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.brands-mobile-slider__list {
+  column-gap: 6px;
+}
+
+.brands-mobile-slider__cost {
+  transform: translateY(-4px);
+}
+
+.brands-mobile-slider__cost-text {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.brands-mobile-slider__price-text {
+  font-size: 32px;
+}
+
+.brands-mobile-slider__square {
+  margin-left: 6px;
+  font-size: 21px;
+  color: #ABABAB;
+}
+
+.brands-mobile-slider__btn {
+  display: block;
+  width: 100%;
+}
+
+.brands-mobile .slider-controls {
+  max-width: 325px;
+}
+
+/* end -------------------------------------------- brands-section-mobile ----------------------------------------------- */
+/* start -------------------------------------------- brands section ---------------------------------------------------- */
 .brands-section {
   display: none;
 }
@@ -2742,7 +2834,7 @@ textarea:focus:-ms-input-placeholder {
   outline: none;
 }
 
-/* end -------------------------------------------- brands section ------------------------------------------------ */
+/* end -------------------------------------------- brands section ------------------------------------------------------ */
 /* start ------------------------------------------- profile section ---------------------------------------------------- */
 .profile-section {
   display: none;
@@ -9194,6 +9286,22 @@ textarea:focus:-ms-input-placeholder {
     max-width: 334px;
   }
   /* end -------------------------------------------- discounts section --------------------------------------------- */
+  /* start -------------------------------------------- brands-section-mobile --------------------------------------- */
+  .brands-section-mobile {
+    margin-bottom: 50px;
+  }
+  .brands-mobile__title {
+    margin-bottom: 54px;
+  }
+  .brands-mobile__text {
+    margin-bottom: 34px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .brands-mobile-slider {
+    max-width: 800px;
+  }
+  /* end -------------------------------------------- brands-section-mobile ----------------------------------------- */
   /* start -------------------------------------------- choose own color section ------------------------------------ */
   .choose-own-color {
     margin-bottom: 50px;
@@ -12332,6 +12440,11 @@ textarea:focus:-ms-input-placeholder {
     cursor: pointer;
   }
   /* end -------------------------------------------- brands section ------------------------------------------------ */
+  /* start -------------------------------------------- brands-section-mobile --------------------------------------- */
+  .brands-section-mobile {
+    display: none;
+  }
+  /* end -------------------------------------------- brands-section-mobile ----------------------------------------- */
   /* start ------------------------------------------- profile section ---------------------------------------------- */
   .profile-section {
     display: block;
