@@ -112,6 +112,10 @@
   margin-right: 0;
 }
 
+.quiz-overlay.quiz-open .quiz-container .quiz-step:not(.quiz-step-10) h2 {
+  display: none;
+}
+
 .quiz-overlay.quiz-open .quiz-mess {
   max-width: 340px;
   margin: 0 auto;
