@@ -97,25 +97,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const formContactsUpload = document.querySelector('.form-contacts__upload');
     const formContactsUploadText = document.querySelector('.form-contacts__upload-text');
 
-    formContactsUpload.addEventListener('change', (event) => {
-        let uploadedFileName = event.target.files[0].name;
-        formContactsUploadText.textContent = uploadedFileName;
-    });
+    if (formContactsUpload) {
+        formContactsUpload.addEventListener('change', (event) => {
+            let uploadedFileName = event.target.files[0].name;
+            formContactsUploadText.textContent = uploadedFileName;
+        });
+    }
     /* end Скрипт на загрузку файлов формы form-contacts */
 
     /* start -------------------------------- Скрипты для секции .header -------------------------------------------- */
     /* start Скрипт на фиксацию шапки */
     const mainHeader = document.querySelector('.main-header--scroll-fixed');
 
-    window.addEventListener('scroll', () => {
-        const srollPos = mainHeader.offsetHeight;
-        
-        if (document.body.scrollTop > srollPos || document.documentElement.scrollTop > srollPos) {
-            mainHeader.classList.add('fixed');
-        } else {
-            mainHeader.classList.remove('fixed');
-        }
-    });
+    if (mainHeader) {
+        window.addEventListener('scroll', () => {
+            const srollPos = mainHeader.offsetHeight;
+            
+            if (document.body.scrollTop > srollPos || document.documentElement.scrollTop > srollPos) {
+                mainHeader.classList.add('fixed');
+            } else {
+                mainHeader.classList.remove('fixed');
+            }
+        });
+    }
     /* end Скрипт на фиксацию шапки */
 
     const burgers = document.querySelectorAll('.burger');
