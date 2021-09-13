@@ -2140,7 +2140,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
     &__input {
         padding: 6px 10px;
-        margin-left: 11px;
+        margin-left: 21px;
         max-width: 80px;
         border: 1px solid #F26422;
         background-color: #ffffff;
@@ -9566,7 +9566,7 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
 
         &-box {
             &__title {
-                margin-bottom: 12px;
+                margin-bottom: 40px;
             }
 
             &__subtitle {
@@ -9638,6 +9638,26 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__range {
+            &-height,
+            &-width {
+                .ui-slider-handle {
+                    width: 16.45px;
+                    height: 16.45px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: #F26422;
+                    border: 1.5px solid #FFFFFF;
+                    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                    cursor: pointer;
+                    top: -5px;
+
+                    &::before,
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
             &-height,
             &-width {
                 display: block;
@@ -12938,8 +12958,8 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
                     }
 
                     &:first-child {
-                        width: 53px;
-                        height: 35px;
+                            width: 60px;
+                            height: 39px;
                     }
 
                     &:nth-child(2),
@@ -13956,6 +13976,15 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE 10+ */
         }
 
         &__range {
+            &-height,
+            &-width {
+                .ui-slider-handle {
+                    width: 30px;
+                    height: 30px;
+                    top: -10px;
+                }
+            }
+
             &-height,
             &-width {
                 width: 286px;

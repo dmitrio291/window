@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+    <!-- <link rel="stylesheet" href="libs/nouislider/nouislider.min.css"> -->
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" href="libs/video/video.css">
     <link rel="stylesheet" href="libs/tooltipster/tooltipster.bundle.min.css">
     <link rel="stylesheet" href="quiz/main.css">
@@ -436,47 +437,14 @@
     <!-- // Гарантия лучшей цены! -->
 
     <!-- Калькулятор цен на окна -->
-    <section class="calculator-section">
+    <section class="calculator-section windows">
         <div class="calculator-box container">
             <h2 class="calculator-box__title title">Калькулятор цен на окна</h2>
-            <p class="calculator-box__subtitle orange">Предоплата всего 10%</p>
             <div class="calculator calculator--windows">
                 <div class="calculator__type">
                     <p class="calculator__text">Выберите тип окна:</p>
-                    <!-- <ul class="calculator__list reset">
-                        <li data-window="img/calculator-img-1.png" data-window-img="img-1" class="active">
-                            <svg viewBox="0 0 60 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.75" y="0.75" width="58.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="10.4253" y="10.1821" width="39.1452" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
-                                <path d="M29.996 35.841V41.5001M29.996 47.1592V41.5001M29.996 41.5001H24.1904M29.996 41.5001H35.8017" stroke="#ABABAB" stroke-width="1.5"/>
-                            </svg>
-                        </li>
-                        <li data-window="img/calculator-img-2.png"  data-window-img="img-2">
-                            <svg viewBox="0 0 108 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="10.2314" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="54.75" y="0.75" width="52.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="63.2744" y="10.1821" width="34.4998" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
-                                <path d="M80.5281 35.8411V41.5002M80.5281 47.1592V41.5002M80.5281 41.5002H74.8447M80.5281 41.5002H86.2114" stroke="#ABABAB" stroke-width="1.5"/>
-                                <path d="M11.3677 11.3181L43.578 41.4999L11.3677 71.6818" stroke="#ABABAB" stroke-width="1.5"/>
-                            </svg>
-                        </li>
-                        <li data-window="img/calculator-img-3.png"  data-window-img="img-3">
-                            <svg viewBox="0 0 162 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="10.2295" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
-                                <path d="M27.4996 35.841V41.5001M27.4996 47.1592V41.5001M27.4996 41.5001H21.8108M27.4996 41.5001H33.1885" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="54.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="64.2336" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="108.75" y="0.75" width="52.4996" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
-                                <rect x="118.059" y="10.1821" width="33.8791" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
-                                <path d="M134.999 35.841V41.5001M134.999 47.1592V41.5001M134.999 41.5001H129.414M134.999 41.5001H140.585" stroke="#ABABAB" stroke-width="1.5"/>
-                                <path d="M65 11L97.1992 41.5L64.5 72.5" stroke="#ABABAB" stroke-width="1.5"/>
-                            </svg>
-                        </li>
-                    </ul> -->
                     <ul class="calculator__list reset">
-                        <li>
+                        <li id="m1">
                             <div class="calculator__img-tab active">
                                 <svg viewBox="0 0 60 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.75" y="0.75" width="58.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
@@ -485,21 +453,21 @@
                                 </svg>
                             </div>
                             <ul class="calculator__list-img reset">
-                                <li class="active" data-window="img/calculator-img-1.png" data-window-img="img-1">
+                                <li id="m1_1" class="active" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-1.png" data-window-img="img-1">
                                     <svg viewBox="0 0 60 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="58.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.4253" y="10.1821" width="39.1452" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
                                         <path d="M29.996 35.841V41.5001M29.996 47.1592V41.5001M29.996 41.5001H24.1904M29.996 41.5001H35.8017" stroke="#ABABAB" stroke-width="1.5"/>
                                     </svg>
                                 </li>
-                                <li data-window="img/calculator-img-7.png" data-window-img="img-1">
+                                <li id="m1_2" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-7.png" data-window-img="img-1">
                                     <svg width="60" height="83" viewBox="0 0 60 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="58.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.4253" y="10.1821" width="39.1452" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
                                         <path d="M11 11L48 42L11 72" stroke="#ABABAB" stroke-width="1.5"/>
                                     </svg>
                                 </li>
-                                <li data-window="img/calculator-img-8.png" data-window-img="img-1">
+                                <li id="m1_3" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-8.png" data-window-img="img-1">
                                     <svg width="60" height="83" viewBox="0 0 60 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="58.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.4253" y="10.1821" width="39.1452" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
@@ -508,7 +476,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id="m2">
                             <div class="calculator__img-tab">
                                 <svg viewBox="0 0 108 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
@@ -520,7 +488,7 @@
                                 </svg>
                             </div>
                             <ul class="calculator__list-img reset">
-                                <li data-window="img/calculator-img-2.png" data-window-img="img-2">
+                                <li id="m2_1" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-2.png" data-window-img="img-2">
                                     <svg viewBox="0 0 108 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.2314" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
@@ -530,7 +498,7 @@
                                         <path d="M11.3677 11.3181L43.578 41.4999L11.3677 71.6818" stroke="#ABABAB" stroke-width="1.5"/>
                                     </svg>
                                 </li>
-                                <li data-window="img/calculator-img-9.png" data-window-img="img-2">
+                                <li id="m2_2" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-9.png" data-window-img="img-2">
                                     <svg width="108" height="83" viewBox="0 0 108 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.2314" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
@@ -540,7 +508,7 @@
                                         <path d="M97.2104 11L64.5001 41.5L97.0001 72" stroke="#ABABAB" stroke-width="1.5"/>
                                     </svg>
                                 </li>
-                                <li data-window="img/calculator-img-10.png" data-window-img="img-2">
+                                <li id="m2_3" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-10.png" data-window-img="img-2">
                                     <svg width="108" height="83" viewBox="0 0 108 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.2314" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
@@ -550,7 +518,7 @@
                                         <path d="M97.2104 11L64.5001 41.5L97.0001 72" stroke="#ABABAB" stroke-width="1.5"/>
                                     </svg>
                                 </li>
-                                <li data-window="img/calculator-img-11.png" data-window-img="img-2">
+                                <li id="m2_4" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-11.png" data-window-img="img-2">
                                     <svg width="108" height="83" viewBox="0 0 108 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M80.6834 36V41.6591M80.6834 47.3182V41.6591M80.6834 41.6591H75M80.6834 41.6591H86.3667" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
@@ -562,7 +530,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li id="m3">
                             <div class="calculator__img-tab">
                                 <svg viewBox="0 0 162 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
@@ -577,7 +545,7 @@
                                 </svg>
                             </div>
                             <ul class="calculator__list-img reset">
-                                <li data-window="img/calculator-img-3.png" data-window-img="img-3">
+                                <li id="m3_1" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-3.png" data-window-img="img-3">
                                     <svg viewBox="0 0 162 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.2295" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
@@ -590,7 +558,7 @@
                                         <path d="M65 11L97.1992 41.5L64.5 72.5" stroke="#ABABAB" stroke-width="1.5"/>
                                     </svg>
                                 </li>
-                                <li data-window="img/calculator-img-12.png" data-window-img="img-3">
+                                <li id="m3_2" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-12.png" data-window-img="img-3">
                                     <svg width="162" height="83" viewBox="0 0 162 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.2295" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
@@ -603,7 +571,7 @@
                                         <path d="M151.699 11L119 41.5L151.699 72.5" stroke="#ABABAB" stroke-width="1.5"/>
                                     </svg>
                                 </li>
-                                <li data-window="img/calculator-img-13.png" data-window-img="img-3">
+                                <li id="m3_3" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-13.png" data-window-img="img-3">
                                     <svg width="162" height="83" viewBox="0 0 162 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.75" y="0.75" width="53.5" height="81.5" stroke="#ABABAB" stroke-width="1.5"/>
                                         <rect x="10.2295" y="10.1821" width="34.5345" height="62.6364" stroke="#ABABAB" stroke-width="1.5"/>
@@ -620,31 +588,31 @@
                         </li>
                     </ul>
                 </div>
-                <img class="calculator__img img-1" src="img/calculator-img-1.png" alt="Окно">
+                <img class="calculator__img img-1" src="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-1.png" alt="Окно">
                 <ul class="calculator__sizes reset">
                     <li>
                         <span class="calculator__text">Высота:</span>
-                        <div class="calculator__range-height"></div>
-                        <input class="calculator__input input-height" type="number" placeholder="110">
+                        <div class="calculator__range-height" id="range-height"></div>
+                        <input id="input-height" class="calculator__input input-height" value="110" placeholder="110">
                     </li>
                     <li>
                         <span class="calculator__text">Ширина:</span>
-                        <div class="calculator__range-width"></div>
-                        <input class="calculator__input input-width" type="number" placeholder="40">
+                        <div class="calculator__range-width" id="range-width"></div>
+                        <input id="input-width" class="calculator__input input-width" value="40" placeholder="40">
                     </li>
                 </ul>
                 <form class="calculator__form" action="#">
                     <ul class="calculator__checkboxes reset">
                         <li>
                             <label class="calculator__label">
-                                <input type="checkbox">
+                                <input class="need_otliv" type="checkbox">
                                 <span class="calculator__text">Подоконник, отлив:</span>
                                 <span class="calculator__toggle"></span>
                             </label>                            
                         </li>
                         <li>
                             <label class="calculator__label">
-                                <input type="checkbox">
+                                <input class="need_montazh" type="checkbox">
                                 <span class="calculator__text">Монтажные работы:</span>
                                 <span class="calculator__toggle"></span>
                             </label>
@@ -662,10 +630,10 @@
                     </div>
                     <div class="calculator__order">
                         <div class="calculator__order-box">
-                            <p class="calculator__text">Средняя цена: 11 008 Р</p>
-                            <p class="calculator__text orange">Экономия: 2 854 Р</p>
+                            <p class="calculator__text average-price">Средняя цена: <span>11 008</span> Р</p>
+                            <p class="calculator__text economy orange">Экономия: <span>2 854</span> Р</p>
                         </div>
-                        <button class="calculator__btn btn" type="submit">Заказать со скидкой</button>
+                        <button data-popup="glazing-discount" class="calculator__btn btn" type="submit">Заказать со скидкой</button>
                     </div>
                 </form>
             </div>
@@ -4270,7 +4238,9 @@
     <script src="libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="libs/swiper/swiper-bundle.min.js"></script>
-    <script src="libs/nouislider/nouislider.min.js"></script>
+    <!-- <script src="libs/nouislider/nouislider.min.js"></script> -->
+    <script src="libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
     <script src="libs/video/video.js"></script>
     <script src="libs/tooltipster/tooltipster.bundle.min.js"></script>
     <script src="quiz/script.js"></script>

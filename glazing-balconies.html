@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
+    <!-- <link rel="stylesheet" href="libs/nouislider/nouislider.min.css"> -->
     <link rel="stylesheet" href="libs/video/video.css">
     <link rel="stylesheet" href="libs/tooltipster/tooltipster.bundle.min.css">
     <!-- <link rel="stylesheet" href="quiz/main.css"> -->
@@ -726,15 +726,14 @@
     <!-- // Гарантия лучшей цены! -->
 
     <!-- Калькулятор цен на балконы -->
-    <section class="calculator-section">
+    <section class="calculator-section balconies">
         <div class="calculator-box container">
             <h2 class="calculator-box__title title">Калькулятор цен на балконы</h2>
-            <p class="calculator-box__subtitle orange">Предоплата всего 10%</p>
             <div class="calculator calculator--glazing-balconies">
                 <div class="calculator__type">
                     <p class="calculator__text">Тип балкона:</p>
                     <ul class="calculator__list reset">
-                        <li data-window="img/calculator-img-4.png" data-window-img="img-1" class="active">
+                        <li id="b1" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-4.png" data-window-img="img-1" class="active">
                             <svg viewBox="0 0 98 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M32.0154 1.65108H1.66044V61.0901H32.0154V1.65108ZM0 0V62.7412H33.6758V0H0Z" fill="#ABABAB"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M64.1638 1.65108H33.8089V61.0901H64.1638V1.65108ZM32.1484 0V62.7412H65.8243V0H32.1484Z" fill="#ABABAB"/>
@@ -744,12 +743,12 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M88.6525 8.78023H73.6048V53.9599H88.6525V8.78023ZM71.9443 7.12915V55.611H90.313V7.12915H71.9443Z" fill="#ABABAB"/>
                             </svg>
                         </li>
-                        <li data-window="img/calculator-img-5.png"  data-window-img="img-2">
+                        <li id="b2" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-5.png"  data-window-img="img-2">
                             <svg viewBox="0 0 130 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M98.4096 1.86684L128.007 9.97839V68.8785L98.4096 61.4429V61.1581V1.86684ZM98.1454 0.0817816L97.847 0L97.8243 0.0817816H96.7492H66.5455H66.4059H64.8851H64.7455H34.5418H32.8814V0.0817895H32.7479H2.54423H0.883789V1.73287V61.1581V62.8092H2.54423H32.7479L32.8814 62.8091L34.4083 62.8092L34.5418 62.8091H64.7455L64.8851 62.8092L66.4059 62.8091L66.5455 62.8092H96.7492H97.4456L97.423 62.898L128.634 70.7389L129.668 70.9986V69.9385V9.3496V8.72081L129.058 8.55373L98.4096 0.154191V0.0817816H98.1454ZM34.5418 1.73287H64.7455V61.1581H34.5418V1.73287ZM2.54423 1.73287H32.7479V61.1581H2.54423V1.73287ZM96.7492 1.73287V61.1581H66.5455V1.73287H96.7492ZM103.819 8.97425L104.873 9.26723L120.478 13.6061L121.085 13.7748V14.4011V59.9591V61.0246L120.047 60.7584L104.442 56.7552L103.819 56.5955V55.9559V10.0623V8.97425ZM105.479 11.1503V55.3163L119.424 58.8935V15.0275L105.479 11.1503ZM10.1581 8.8618H25.1233V54.0308H10.1581V8.8618ZM8.49763 7.21071H10.1581H25.1233H26.7837V8.8618V54.0308V55.6819H25.1233H10.1581H8.49763V54.0308V8.8618V7.21071ZM57.127 8.8618H42.1618V54.0308H57.127V8.8618ZM42.1618 7.21071H40.5013V8.8618V54.0308V55.6819H42.1618H57.127H58.7874V54.0308V8.8618V7.21071H57.127H42.1618ZM74.1594 8.8618H89.1246V54.0308H74.1594V8.8618ZM72.499 7.21071H74.1594H89.1246H90.7851V8.8618V54.0308V55.6819H89.1246H74.1594H72.499V54.0308V8.8618V7.21071Z" fill="#ABABAB"/>
                             </svg>
                         </li>
-                        <li data-window="img/calculator-img-6.png"  data-window-img="img-3">
+                        <li id="b3" data-window="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-6.png"  data-window-img="img-3">
                             <svg viewBox="0 0 129 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M126.619 9.97823L97.2332 1.86846V61.1566V61.4423L126.619 68.8763V9.97823ZM96.6774 0.00158691L96.9679 0.0817661H97.2332V0.154964L127.672 8.55512L128.28 8.72297V9.3506V69.9381V71L127.245 70.7382L96.2507 62.8975L96.2736 62.8077H95.5727H65.602H63.9415V62.8076H63.7914H33.8206H32.1602V61.1565V1.73276V0.0816749H33.8206H63.7914H65.4518V0.0817661H65.602H95.5727H96.655L96.6774 0.00158691ZM33.8206 1.73276H63.7914V61.1565H33.8206V1.73276ZM95.5727 61.1566V1.73285H65.602V61.1566H95.5727ZM103.654 9.26739L102.599 8.97196V10.062V55.9546V56.5931L103.22 56.7536L118.718 60.7567L119.757 61.0251V59.9577V14.4008V13.7756L119.151 13.6061L103.654 9.26739ZM104.259 55.3161V11.1521L118.096 15.026V58.8903L104.259 55.3161ZM56.2256 8.86162H41.3876V54.0295H56.2256V8.86162ZM41.3876 7.21053H39.7272V8.86162V54.0295V55.6806H41.3876H56.2256H57.886V54.0295V8.86162V7.21053H56.2256H41.3876ZM73.1629 8.86162H88.0011V54.0295H73.1629V8.86162ZM71.5025 7.21053H73.1629H88.0011H89.6615V8.86162V54.0295V55.6806H88.0011H73.1629H71.5025V54.0295V8.86162V7.21053Z" fill="#ABABAB"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.9758 9.28322L32.8945 1.62681L32.4933 0.0246582L0.315361 7.99289V70.2656L32.8823 62.7199L32.5055 61.1118L1.9758 68.1856V9.28322Z" fill="#ABABAB"/>
@@ -758,31 +757,31 @@
                         </li>
                     </ul>
                 </div>
-                <img class="calculator__img img-1" src="img/calculator-img-4.png" alt="Окно">
+                <img class="calculator__img img-1" loading="lazy" src="https://okna-plastikoviye.ru/wp-content/themes/windows/img/calculator-img-4.png" alt="Окно">
                 <ul class="calculator__sizes reset">
                     <li>
                         <span class="calculator__text">Высота:</span>
-                        <div class="calculator__range-height"></div>
-                        <input class="calculator__input input-height" type="number" placeholder="150">
+                        <div class="calculator__range-height" id="range-height"></div>
+                        <input id="input-height" class="calculator__input input-height" value="110" placeholder="1500">
                     </li>
                     <li>
                         <span class="calculator__text">Ширина:</span>
-                        <div class="calculator__range-width"></div>
-                        <input class="calculator__input input-width" type="number" placeholder="150">
+                        <div class="calculator__range-width" id="range-width"></div>
+                        <input id="input-width" class="calculator__input input-width" value="150" placeholder="1500">
                     </li>
                 </ul>
                 <form class="calculator__form" action="#">
                     <ul class="calculator__checkboxes reset">
                         <li>
                             <label class="calculator__label">
-                                <input type="checkbox">
+                                <input class="need_otliv" type="checkbox">
                                 <span class="calculator__text">Подоконник, отлив:</span>
                                 <span class="calculator__toggle"></span>
                             </label>                            
                         </li>
                         <li>
                             <label class="calculator__label">
-                                <input type="checkbox">
+                                <input class="need_montazh" type="checkbox">
                                 <span class="calculator__text">Монтажные работы:</span>
                                 <span class="calculator__toggle"></span>
                             </label>
@@ -800,10 +799,10 @@
                     </div>
                     <div class="calculator__order">
                         <div class="calculator__order-box">
-                            <p class="calculator__text">Средняя цена: 16 038 Р</p>
-                            <p class="calculator__text orange">Экономия: 4 158 Р</p>
+                            <p class="calculator__text average-price">Средняя цена: <span>16 038</span> Р</p>
+                            <p class="calculator__text economy orange">Экономия: <span>4 158</span> Р</p>
                         </div>
-                        <button class="calculator__btn btn" type="submit">Заказать со скидкой</button>
+                        <button data-popup="glazing-discount" class="calculator__btn btn" type="submit">Заказать со скидкой</button>
                     </div>
                 </form>
             </div>
@@ -3488,7 +3487,7 @@
     <script src="libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="libs/swiper/swiper-bundle.min.js"></script>
-    <script src="libs/nouislider/nouislider.min.js"></script>
+    <!-- <script src="libs/nouislider/nouislider.min.js"></script> -->
     <script src="libs/video/video.js"></script>
     <script src="libs/jquery-ui/jquery-ui.min.js"></script>	
     <script src="libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
